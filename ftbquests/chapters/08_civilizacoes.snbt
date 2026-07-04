@@ -1,0 +1,798 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "01_primeiros_passos"
+	group: ""
+	icon: ["minecraft:compass", "minecraft:iron_pickaxe", "minecraft:crafting_table", "minecraft:diamond"]
+	id: "AA01000000000001"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["§7Bem-vindo a este mundo vasto e perigoso.", "", "§7Você acordou sem nada. O primeiro passo é simples:", "§eConstrua uma mesa de trabalho e forne de pedra.", "", "§6Dica: §7Colete madeira, faça tábuas, depois a mesa.", "§7Com a forne, você poderá fundir minerais.", "§7Graças ao §eFallingTree§7, basta cortar a base de uma árvore", "§7e o resto cai automaticamente — corte rápido garantido!"]
+			icon: "minecraft:crafting_table"
+			id: "1A00000000000002"
+			rewards: [
+				{
+					count: 16
+					id: "1A00000000000003"
+					item: "minecraft:torch"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1A00000000000004"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					id: "1A00000000000005"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1A00000000000006"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					id: "1A00000000000007"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+			]
+			title: "Do Zero ao Fogo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A00000000000002"]
+			description: ["§7Pedra quebra pedra, mas §6ferro §7quebra tudo.", "§7É o primeiro material que separa quem sobrevive", "§7de quem simplesmente resiste.", "", "§eMine ao menos 16 ferros brutos e funda-os na fornalha.", "§eCrie um conjunto completo de ferramentas de ferro.", "", "§6Dica: §7Y=-16 a Y=-58 é a faixa mais rica para ferro.", "§7Leve tochas — minas escuras escondem surpresas desagradáveis.", "", "§8§o(245 mods instalados e você ainda vai cavar com pá de madeira.)", "", "§8§o(Parabéns, você tecnicamente evoluiu da Idade da Pedra.)"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A00000000000008"
+			rewards: [
+				{
+					id: "1A00000000000009"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1A0000000000000A"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "1A0000000000000B"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1A0000000000000C"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "1A0000000000000D"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "A Era do Ferro"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A00000000000008"]
+			description: ["§7As noites aqui não perdoam os despreparados.", "§7Mobs de mods como §eBorn in Chaos §7e §eThe Graveyard", "§7são muito mais perigosos do que os vanilla.", "", "§eCrie pelo menos uma peça de armadura de ferro", "§ee uma espada ou machado de ferro.", "", "§6Dica: §7§eBetterCombat §7ativa combos únicos por arma!", "§7Clique com ritmo — não só spam. Cada arma tem seu tempo."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A0000000000000E"
+			rewards: [
+				{
+					id: "1A0000000000000F"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1A00000000000010"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "1A00000000000011"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "1A00000000000012"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A00000000000013"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Forjado para Sobreviver"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A0000000000000E"]
+			description: ["§7Sobreviver é fácil. Prosperar é outra história.", "", "§eCrie uma cama e durma em um ponto seguro.", "§eConstrua um abrigo com pelo menos 4 paredes e teto.", "§eInstale uma porta e pelo menos 4 tochas.", "", "§7O abrigo será sua base de operações. Cuide bem dele!", "", "§6Atenção: §7com §eSleep Tight§7, monstros podem espiar pela", "§7janela e te dar pesadelos se virem você dormindo!", "§7Tochas do lado de fora ajudam a mantê-los afastados."]
+			icon: "minecraft:white_bed"
+			id: "1A00000000000014"
+			rewards: [
+				{
+					id: "1A00000000000015"
+					item: "comforts:sleeping_bag_blue"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1A00000000000016"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					id: "1A00000000000017"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:adventure/sleep_in_bed"
+					criterion: ""
+					id: "1A00000000000018"
+					type: "advancement"
+				}
+			]
+			title: "Lar Doce Lar"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A00000000000002"]
+			description: ["§7Farmer's Delight transforma a culinária neste mundo.", "§7Com a §ePanela de Cozinheiro §7você prepara refeições", "§7que concedem buffs poderosos e regeneram mais fome.", "", "§eCrie uma Panela de Cozinheiro (Cooking Pot)", "§ee uma Tábua de Corte (Cutting Board).", "§ePrepare pelo menos 3 pratos diferentes.", "", "§6Dica: §7A faca prepara ingredientes especiais na Tábua!"]
+			icon: "farmersdelight:cooking_pot"
+			id: "1A00000000000019"
+			rewards: [
+				{
+					id: "1A0000000000001A"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1A0000000000001B"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "1A0000000000001C"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "1A0000000000001D"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1A0000000000001E"
+					item: "farmersdelight:fish_stew"
+					type: "item"
+				}
+			]
+			title: "Arte Culinária"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A00000000000019"]
+			description: ["§7Para longas expedições, você precisará de comida", "§7que reponha muita fome e dê resistência.", "", "§ePlante trigo, cenoura e batata.", "§eCrie uma fazenda com pelo menos 3 tipos de cultura.", "", "§6Dica: §7Serene Seasons faz as estações mudarem!", "§7Plante na primavera para colheitas maiores no verão.", "§7Arroz precisa de Rich Soil molhado — vira Rice Bale quando empacotado."]
+			icon: "minecraft:wheat_seeds"
+			id: "1A0000000000001F"
+			rewards: [
+				{
+					count: 16
+					id: "1A00000000000020"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A00000000000021"
+					item: "farmersdelight:rice_bale"
+					type: "item"
+				}
+				{
+					id: "1A00000000000022"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "1A00000000000023"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1A00000000000024"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1A00000000000025"
+					item: "minecraft:potato"
+					type: "item"
+				}
+			]
+			title: "Fazenda Sustentável"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A0000000000000E"]
+			description: ["§7Diamante é o próximo passo para se tornar mais poderoso.", "", "§eMine ao menos 8 diamantes.", "§eCrie uma picareta e uma espada de diamante.", "", "§6Dica: §7Y=-58 é o melhor nível para diamante!", "§7Use Fortune III para triplicar seu rendimento."]
+			icon: "minecraft:diamond"
+			id: "1A00000000000026"
+			rewards: [
+				{
+					count: 4
+					id: "1A00000000000027"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1A00000000000028"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "1A00000000000029"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1A0000000000002A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "1A0000000000002B"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Olhos de Diamante"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A00000000000026"]
+			description: ["§7O encantamento é o próximo salto de poder.", "§7Este modpack usa o §eImmersive Enchanting§7,", "§7que torna a mesa interativa e mais satisfatória.", "", "§eCrie uma mesa de encantamentos.", "§eEncante sua espada ou picareta de diamante.", "", "§6Dica: §7Cerque a mesa com estantes de livros!", "{image: width:100 height:100 align:center}"]
+			icon: "minecraft:enchanting_table"
+			id: "1A0000000000002C"
+			rewards: [
+				{
+					count: 32
+					id: "1A0000000000002D"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1A0000000000002E"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "1A0000000000002F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "1A00000000000030"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					advancement: "minecraft:story/enchant_item"
+					criterion: ""
+					id: "1A00000000000031"
+					type: "advancement"
+				}
+			]
+			title: "Palavras de Poder"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A00000000000014"]
+			description: ["§7Para explorar o mundo enorme deste modpack,", "§7você vai precisar carregar muito mais do que uma mochila normal.", "", "§eCrie uma Traveler's Backpack.", "§7Ela tem slots de fluido e ferramenta dedicados.", "", "§6Dica: §7Diferentes mochilas têm temas visuais únicos!", "§7Explore os tipos — vulcânica, gelada, da floresta..."]
+			icon: {
+				Count: 1
+				id: "travelersbackpack:standard"
+				tag: {
+					Tier: 1
+				}
+			}
+			id: "1A00000000000032"
+			rewards: [
+				{
+					count: 16
+					id: "1A00000000000033"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "1A00000000000034"
+					item: "sophisticatedbackpacks:copper_backpack"
+					type: "item"
+				}
+				{
+					id: "1A00000000000035"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "travelersbackpack:standard"
+						tag: { }
+					}
+					id: "1A00000000000036"
+					item: {
+						Count: 1
+						id: "travelersbackpack:standard"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Bagagem do Aventureiro"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A0000000000002C"]
+			description: ["§7Obsidiana é a porta para outros mundos.", "§7Com 10 obsidianas e um isqueiro, você abre o caminho.", "", "§eConsiga pelo menos 12 obsidianas.", "§eCrie um isqueiro (Flint \\& Steel).", "", "§6Dica: §7Obsidiana se forma onde água encontra lava!"]
+			icon: "minecraft:obsidian"
+			id: "1A00000000000037"
+			rewards: [
+				{
+					count: 3
+					id: "1A00000000000038"
+					item: "minecraft:fire_resistance"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1A00000000000039"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "1A0000000000003A"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "1A0000000000003B"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "1A0000000000003C"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Porta para o Desconhecido"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A00000000000002"]
+			description: ["§7JourneyMap registra automaticamente o mundo enquanto você explora.", "§7Configure o minimap para aparecer na tela.", "", "§eExplore o suficiente para registrar ao menos 500 blocos", "§ede distância da sua base em qualquer direção.", "", "§6Dica: §7Use §eM §7para abrir o mapa completo!", "§7Você pode adicionar waypoints marcando pontos importantes."]
+			icon: "irons_spellbooks:furled_map"
+			id: "1A0000000000003D"
+			rewards: [
+				{
+					id: "1A0000000000003F"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1A00000000000040"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "1A00000000000041"
+					item: "minecraft:filled_map"
+					type: "item"
+				}
+			]
+			title: "Cartógrafo Iniciante"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A00000000000008"]
+			description: ["§7Nem tudo precisa ser minerado ou craftado por você.", "§7Os aldeões deste mundo têm nomes próprios graças ao", "§7§eVillager Names §7— eles são pessoas, não NPCs genéricos.", "", "§eEncontre uma aldeia e faça pelo menos 3 trocas.", "§eAtinja reputação §eAmistoso §7com pelo menos uma aldeia.", "", "§6Dica: §7§eGoblin Traders §7aparecem à noite na floresta", "§7e vendem itens raros de mods por preços... interessantes."]
+			icon: "minecraft:emerald"
+			id: "1A00000000000042"
+			rewards: [
+				{
+					count: 8
+					id: "1A00000000000043"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "1A00000000000044"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "1A00000000000045"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:adventure/trade"
+					criterion: ""
+					id: "1A00000000000046"
+					type: "advancement"
+				}
+			]
+			title: "Redes de Comércio"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A00000000000026"]
+			description: ["§7Netherite é o material mais avançado do Overworld.", "§7Para obtê-lo, você precisa explorar o Nether e encontrar", "§7Minério Antigo nos níveis mais baixos.", "", "§eConsiga ao menos 4 fragmentos de netherite.", "§eCrie pelo menos 1 peça de armadura de netherite.", "", "§6Dica: §7Use camas para explodir blocos no Nether!"]
+			icon: "minecraft:netherite_ingot"
+			id: "1A00000000000047"
+			rewards: [
+				{
+					count: 2
+					id: "1A00000000000048"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1A00000000000049"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "1A0000000000004A"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1A0000000000004B"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "1A0000000000004C"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			title: "Além do Ferro e Diamante"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A00000000000047"]
+			description: ["§7Um aventureiro experiente precisa de mobilidade.", "§7O Elytra te permite voar pelo mundo — mas é difícil de obter.", "", "§eConsiga um Elytra e combine com foguetes para voar.", "§eVoe pelo menos 500 blocos usando Elytra.", "", "§6Dica: §7O slot de Elytra do mod §ecaelus §7permite usar", "§7Elytra E armadura ao mesmo tempo!"]
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A0000000000004D"
+			rewards: [
+				{
+					count: 1
+					id: "1A0000000000004E"
+					item: "create_jetpack:jetpack"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "1A0000000000004F"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
+				{
+					id: "1A00000000000050"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:end/find_end_city"
+					criterion: ""
+					id: "1A00000000000051"
+					type: "advancement"
+				}
+			]
+			title: "Asas de Liberdade"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A0000000000001F"]
+			description: ["§7Mystical Agriculture permite cultivar quase qualquer recurso.", "§7Desde minérios até mob drops — tudo vira semente!", "", "§eCrie pelo menos 3 tipos de sementes místicas.", "§eHarveste pelo menos 32 essências de qualquer tipo.", "", "§6Dica: §7Comece pelas sementes mais simples: §eInferium!", "§7Com Inferium você cria essências superiores."]
+			icon: "mysticalagriculture:apatite_essence"
+			id: "1A00000000000052"
+			rewards: [
+				{
+					count: 8
+					id: "1A00000000000053"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A00000000000054"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "1A00000000000055"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "1A00000000000056"
+					item: "mysticalagriculture:mystical_seeds"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "1A00000000000057"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+			]
+			title: "Agricultura Mística"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A00000000000002"]
+			description: ["§7Um aventureiro de verdade não precisa de uma cama fixa.", "§7O §eSleeping Bag §7do Comforts permite dormir em qualquer lugar", "§7sem redefinir seu ponto de respawn — perfeito para expedições.", "", "§eCrie um §eSleeping Bag §7e durma em campo aberto.", "", "§6Aviso: §7§eSleep Tight §7faz monstros espiarem pela janela", "§7enquanto você dorme. Iluminação externa é vital.", "§7Sente-se — literalmente — antes de dormir com o §eSit §7mod."]
+			icon: "comforts:sleeping_bag_white"
+			id: "1A00000000000058"
+			rewards: [
+				{
+					id: "1A00000000000059"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					id: "1A0000000000005A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "1A0000000000005B"
+					item: "comforts:sleeping_bag_white"
+					type: "item"
+				}
+			]
+			title: "Nômade das Noites"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1A0000000000002C"]
+			description: ["§7§lIron's Spellbooks §r§7adiciona magia baseada em livros.", "§7Mesmo que você prefira tecnologia, aprender feitiços básicos", "§7pode salvar sua vida em momentos críticos.", "", "§eCrie um §eScroll §7ou §eSpell Book §7de Iron's Spellbooks.", "§eUse pelo menos 1 feitiço em combate.", "", "§6Dica: §7Feitiços de cura e escudo são os mais úteis no início!"]
+			icon: "irons_spellbooks:scroll"
+			id: "1A0000000000005C"
+			rewards: [
+				{
+					count: 3
+					id: "1A0000000000005D"
+					item: "irons_spellbooks:scroll"
+					type: "item"
+				}
+				{
+					id: "1A0000000000005E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "1A0000000000005F"
+					item: "irons_spellbooks:scroll"
+					type: "item"
+				}
+			]
+			title: "Primeiras Palavras Arcanas"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1A00000000000047"]
+			description: ["§7Você tem ferro, diamante e Netherite.", "§7Você aprendeu a comer, a lutar e a sobreviver às noites.", "§7Agora começa a parte boa.", "", "§7Os outros capítulos estão abertos — siga o que te chama:", "§a⚙ Tecnologia §7— Automatize tudo com §eCreate", "§d✦ Magia §7— Domine as artes com §eArs Nouveau", "§b✈ Exploração §7— Descubra o mundo com aeronaves e mapas", "§2⚒ Civilizações §7— Construa impérios com §eMineColonies", "", "§6Não há caminho certo. Só o seu."]
+			icon: "minecraft:filled_map"
+			id: "1A00000000000060"
+			rewards: [
+				{
+					count: 5
+					id: "1A00000000000061"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1A00000000000062"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "1A00000000000063"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "1A00000000000064"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+			]
+			title: "§aO Mundo é Seu"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7§eSerene Seasons §7adiciona estações do ano de verdade —", "§7primavera, verão, outono e inverno afetam colheitas,", "§7temperatura e até a neve.", "", "§eCrie um Calendar e um Season Sensor."]
+			icon: "minecraft:book"
+			id: "F47F5FC1BC27DB17"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:wheat_seeds"
+					count: 8
+					id: "305A7B51E0154DD9"
+				}
+				{
+					type: "xp"
+					xp: 100
+					id: "E1064795AD35A97B"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "sereneseasons:calendar"
+					id: "86D9AC1F526786F3"
+				}
+				{
+					type: "item"
+					item: "sereneseasons:season_sensor"
+					id: "582A46E41E8534C5"
+				}
+			]
+			title: "As Quatro Estações"
+			x: 4.0d
+			y: 2.0d
+		}
+	]
+	title: "§6Primeiros Passos"
+}

@@ -1,0 +1,676 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "03_mekanism"
+	group: "AA00000000000001"
+	icon: ["mekanism:enrichment_chamber", "mekanism:digital_miner", "mekanism:jetpack", "mekanism:mekasuit_bodyarmor"]
+	id: "AA03000000000001"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["§7§eMekanism §7começa com §eOsmio §7— um minério azulado abundante.", "§7Do Osmio vem o §eAço (Steel Ingot)§7 — base de toda a progressão.", "§7Você vai precisar de muito aço. Comece a acumular agora.", "", "§eCrafite §e8 Steel Ingots §7usando o §eMetallurgic Infuser§7.", "", "§6Dica: §7Osmium aparece do Y=0 ao Y=60 em grandes veios.", "§7O Metallurgic Infuser usa §eCarvão §7como catalisador para o aço.", "", "§8§o(Osmium: o metal que só o Mekanism liga a mínima pra ele.)"]
+			icon: "mekanism:ingot_steel"
+			id: "ME0000000000001"
+			rewards: [
+				{
+					count: 16
+					id: "ME000000000000B"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "ME000000000000C"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+				{
+					id: "ME000000000000D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:steel_ingot"
+					criterion: "ingot_steel"
+					id: "ME000000000000A"
+					type: "advancement"
+				}
+				{
+					count: 1
+					id: "45CC40897609DAB4"
+					item: "mekanism:crusher"
+					type: "item"
+				}
+			]
+			title: "Osmium e Aço"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["ME0000000000001"]
+			description: ["§7O §eEnrichment Chamber §7é a primeira grande máquina do Mekanism:", "§7ela §edobra §7o rendimento de minérios — ore vira 2 pós,", "§7cada pó fundido rende 1 ingot. Dobro de tudo, sem esforço extra.", "", "§eCrafite e ative uma §eEnrichment Chamber§7.", "", "§6Dica: §7Processe o ore bruto, não o ingot já fundido!", "§8§o(Dobrar minério. O verdadeiro objetivo de qualquer tech mod.)"]
+			icon: "mekanism:enrichment_chamber"
+			id: "ME0000000000011"
+			rewards: [
+				{
+					id: "ME000000000001B"
+					item: "mekanism:enrichment_chamber"
+					type: "item"
+				}
+				{
+					id: "ME000000000001C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:enricher"
+					criterion: "enrichment_chamber"
+					id: "ME000000000001A"
+					type: "advancement"
+				}
+				{
+					count: 1
+					id: "75C5419E871760B3"
+					item: "mekanism:purification_chamber"
+					type: "item"
+				}
+			]
+			title: "A Câmara de Enriquecimento"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["ME0000000000011"]
+			description: ["§7Máquinas Mekanism precisam de §eenergia elétrica (Forge Energy)§7.", "§7O §eBasic Energy Cube §7armazena e o §eUniversal Cable §7transporta.", "§7Geradores de outros mods — Create, Solar — também funcionam!", "", "§eCrafite um §eBasic Energy Cube §7e §e4 Universal Cables§7.", "", "§6Dica: §7Conecte um §eSolar Generator §7para geração passiva.", "§7Mekanism aceita toda fonte de FE do modpack.", "", "§8§o(Energia infinita, fiação finita — bem-vindo ao inferno dos cabos.)"]
+			icon: "mekanism:basic_energy_cube"
+			id: "ME0000000000021"
+			rewards: [
+				{
+					id: "ME000000000002C"
+					item: "mekanism:basic_energy_cube"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "ME000000000002D"
+					item: "mekanism:basic_universal_cable"
+					type: "item"
+				}
+				{
+					id: "ME000000000002E"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:energy_cube"
+					criterion: "basic_energy_cube"
+					id: "ME000000000002A"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:energy_transport"
+					criterion: "basic_universal_cable"
+					id: "ME000000000002B"
+					type: "advancement"
+				}
+			]
+			title: "Rede de Energia"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["ME0000000000021"]
+			description: ["§7Os §eCircuitos de Controle §7são os componentes mais usados.", "§7Basic → Advanced → Elite → Ultimate — cada nível exige o anterior", "§7mais materiais processados na §eEnrichment Chamber§7.", "", "§eCrafite um §eAdvanced Control Circuit§7.", "", "§6Dica: §7Você vai precisar de dezenas deles.", "§7Automatize a produção com a §eCombining Factory §7logo que puder.", "", "§8§o(Quanto mais avançado o circuito, mais chance de você esquecer como fez.)"]
+			icon: "mekanism:advanced_control_circuit"
+			id: "ME0000000000031"
+			rewards: [
+				{
+					count: 4
+					id: "ME000000000003B"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "ME000000000003C"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+				{
+					id: "ME000000000003D"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:advanced_control_circuit"
+					criterion: "advanced_control_circuit"
+					id: "ME000000000003A"
+					type: "advancement"
+				}
+				{
+					count: 2
+					id: "1F827C57CBFA9629"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Circuitos de Controle"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["ME0000000000031"]
+			description: ["§7O §eMetallurgic Infuser §7processa metais com catalisadores", "§7para criar as §eLigas (Alloys)§7 — materiais compostos únicos:", "§eInfused §7→ §eReinforced §7→ §eAtomic Alloy§7.", "§7Cada liga abre um tier novo de máquinas e armaduras.", "", "§eCrafite uma §eReinforced Alloy§7.", "", "§6Dica: §7Reinforced Alloy usa §eDiamond §7processado na Crusher.", "", "§8§o(Misturar metais e rezar pra dar liga — literalmente.)"]
+			icon: "mekanism:metallurgic_infuser"
+			id: "ME0000000000041"
+			rewards: [
+				{
+					count: 4
+					id: "ME000000000004B"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "ME000000000004C"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+				{
+					id: "ME000000000004D"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:reinforced_alloy"
+					criterion: "alloy_reinforced"
+					id: "ME000000000004A"
+					type: "advancement"
+				}
+			]
+			title: "Ligas e o Metallurgic Infuser"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["ME0000000000041"]
+			description: ["§7§eFábricas §7são versões paralelas das máquinas do Mekanism.", "§7Basic (3x), Advanced (5x), Elite (7x) e Ultimate (9x simultâneos.", "§7A §ePurification Chamber §7com Oxigênio triplica o rendimento!", "", "§eCrafite e ative uma §eBasic Crushing Factory §7ou §eSmelting Factory§7.", "", "§6Dica: §7Acorrente: §eElectrolytic Separator §7(O₂)", "§7→ §ePurification Chamber §7→ §eCrusher §7→ §eSmelter §7= §e3x ore§7!", "§8§o(Triplicar minério. Apenas Mekanism faz isso direito.)"]
+			icon: "mekanism:basic_crushing_factory"
+			id: "ME0000000000051"
+			rewards: [
+				{
+					id: "ME000000000005B"
+					item: "mekanism:basic_crushing_factory"
+					type: "item"
+				}
+				{
+					id: "ME000000000005C"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:factory"
+					criterion: "factory"
+					id: "ME000000000005A"
+					type: "advancement"
+				}
+				{
+					count: 2
+					id: "29127E663D849500"
+					item: "mekanism:logistical_sorter"
+					type: "item"
+				}
+			]
+			title: "Fábricas de Processamento"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["ME0000000000051"]
+			description: ["§7O §eLogistical Transporter §7move itens automaticamente", "§7entre máquinas por redes de cor configuráveis.", "§7O §eLogistical Sorter §7categoriza e direciona por filtro.", "", "§eMonte uma linha com §eTransportadores §7e §e1 Sorter§7.", "", "§6Dica: §7Cores no Sorter: vermelho = descarte,", "§7verde = próxima máquina, laranja = armazenamento.", "", "§8§o(Itens andando sozinhos pela tubulação. A automação te olha e sorri.)"]
+			icon: "mekanism:logistical_sorter"
+			id: "ME0000000000061"
+			rewards: [
+				{
+					count: 16
+					id: "ME000000000006C"
+					item: "mekanism:basic_logistical_transporter"
+					type: "item"
+				}
+				{
+					id: "ME000000000006D"
+					item: "mekanism:logistical_sorter"
+					type: "item"
+				}
+				{
+					id: "ME000000000006E"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:item_transport"
+					criterion: "basic_logistical_transporter"
+					id: "ME000000000006A"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:logistical_sorter"
+					criterion: "logistical_sorter"
+					id: "ME000000000006B"
+					type: "advancement"
+				}
+			]
+			title: "Transporte Logístico"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["ME0000000000061"]
+			description: ["§7Mekanism tem sistema completo de §eGases e Produtos Químicos§7.", "§7Chemical Tank armazena, Pressurized Tube transporta.", "§7A §ePurification Chamber §7usa §eOxigênio §7para triplicar minérios.", "§7A §eElectrolytic Separator §7separa água em H₂ + O₂.", "", "§eCrafite §eChemical Tank §7e conecte §ePressurized Tubes§7.", "", "§6Dica: §7Com O₂ + Purification Chamber = §e3x ore output§7 garantido!", "", "§8§o(Química de verdade, com tanque, cano e risco de vazamento.)"]
+			icon: "mekanism:basic_chemical_tank"
+			id: "ME0000000000071"
+			rewards: [
+				{
+					count: 2
+					id: "ME000000000007C"
+					item: "mekanism:basic_chemical_tank"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "ME000000000007D"
+					item: "mekanism:basic_pressurized_tube"
+					type: "item"
+				}
+				{
+					id: "ME000000000007E"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:chemical_tank"
+					criterion: "basic_chemical_tank"
+					id: "ME000000000007A"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:chemical_transport"
+					criterion: "basic_pressurized_tube"
+					id: "ME000000000007B"
+					type: "advancement"
+				}
+			]
+			title: "Química Industrial"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["ME0000000000071"]
+			description: ["§7O §eDigital Miner §7minera automaticamente uma área de", "§7até §e63 blocos de raio §7com filtros precisos.", "§7Defina: apenas minérios, apenas um tipo, exceto certos blocos.", "", "§eCrafite e ative um §eDigital Miner§7.", "", "§6Dica: §7Fortune e Silk Touch funcionam com upgrades no Miner.", "§7Use §eSpeed Upgrades §7para acelerar a mineração automática.", "§8§o(Mineração manual é para os outros. Você tem tecnologia.)"]
+			icon: "mekanism:digital_miner"
+			id: "ME0000000000081"
+			rewards: [
+				{
+					count: 4
+					id: "ME000000000008B"
+					item: "mekanism:upgrade_speed"
+					type: "item"
+				}
+				{
+					id: "ME000000000008C"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:digital_miner"
+					criterion: "digital_miner"
+					id: "ME000000000008A"
+					type: "advancement"
+				}
+			]
+			title: "O Minerador Digital"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["ME0000000000081"]
+			description: ["§7O §eJetpack do Mekanism §7usa §eHidrogênio §7como combustível.", "§7O H₂ é produzido na §eElectrolytic Separator §7separando água.", "§7Combine com §eFree Runners §7para velocidade extra no chão.", "", "§eCrafite o §eJetpack §7e os §eFree Runners§7.", "", "§6Dica: §7Jetpack Armored tem defesa além do voo.", "§7Free Runners eliminam dano de queda e aumentam velocidade horizontal.", "", "§8§o(Voar com gás inflamável nas costas. O que pode dar errado?)"]
+			icon: "mekanism:jetpack"
+			id: "ME0000000000091"
+			rewards: [
+				{
+					id: "ME000000000009C"
+					item: "mekanism:jetpack"
+					type: "item"
+				}
+				{
+					id: "ME000000000009D"
+					item: "mekanism:free_runners"
+					type: "item"
+				}
+				{
+					id: "ME000000000009E"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:hydrogen_powered_flight"
+					criterion: "jetpack"
+					id: "ME000000000009A"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:running_free"
+					criterion: "free_runners"
+					id: "ME000000000009B"
+					type: "advancement"
+				}
+			]
+			title: "Voando com Hidrogênio"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["ME0000000000091"]
+			description: ["§7O §eQIO §7armazena §ebilhões §7de itens por Drive.", "§7O §ePortable QIO Dashboard §7acessa o inventário de qualquer lugar.", "§7Drives de tier maior (Hyper-Dense, Supermassive) escalam ainda mais.", "", "§eCrafite um §eQIO Drive Array §7e um §eBasic QIO Drive§7.", "", "§6Dica: §7Configure §eFrequências §7para redes separadas.", "§7Uma frequência para minérios, outra para comida, outra para equipamento.", "", "§8§o(Fim dos baús rotulados errado — agora é tudo culpa da física quântica.)"]
+			icon: "mekanism:qio_drive_array"
+			id: "ME00000000000A1"
+			rewards: [
+				{
+					count: 2
+					id: "ME00000000000AC"
+					item: "mekanism:qio_drive_base"
+					type: "item"
+				}
+				{
+					id: "ME00000000000AD"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:qio_drive_array"
+					criterion: "qio_drive_array"
+					id: "ME00000000000AA"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:basic_qio_drive"
+					criterion: "qio_drive_base"
+					id: "ME00000000000AB"
+					type: "advancement"
+				}
+			]
+			title: "QIO — Armazenamento Quântico"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["ME00000000000A1"]
+			description: ["§7O §eTeleporter §7permite teletransporte entre pontos fixos", "§7na mesma §eFrequência §7— sem Ender Pearls, só energia.", "§7O §ePortable Teleporter §7carrega a frequência consigo.", "", "§eCrafite um §eTeleporter §7fixo e um §ePortable Teleporter§7.", "", "§6Dica: §7Frequências diferentes = rotas independentes.", "§7Uma para a mina, outra para a base, outra para o farm.", "§8§o(Ender Pearls são tecnologia obsoleta.)"]
+			icon: "mekanism:teleporter"
+			id: "ME00000000000B1"
+			rewards: [
+				{
+					id: "ME00000000000BC"
+					item: "mekanism:portable_teleporter"
+					type: "item"
+				}
+				{
+					id: "ME00000000000BD"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:teleporter"
+					criterion: "teleport"
+					id: "ME00000000000BA"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:portable_teleporter"
+					criterion: "portable_teleporter"
+					id: "ME00000000000BB"
+					type: "advancement"
+				}
+			]
+			title: "Teleportação"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["ME00000000000B1"]
+			description: ["§7A §eAtomic Alloy §7é o material de tier máximo —", "§7exige materiais processados em condições especiais", "§7no §eMetallurgic Infuser §7com catalisadores avançados.", "§7É a liga que habilita os componentes do §eMekaSuit§7.", "", "§eProduzca uma §eAtomic Alloy§7.", "", "§6Dica: §7Atomic Alloy requer §eRefined Obsidian §7como catalisador.", "§7Produzida comprimindo Obsidiana na §eOsmium Compressor§7."]
+			icon: "mekanism:alloy_atomic"
+			id: "ME00000000000C1"
+			rewards: [
+				{
+					count: 4
+					id: "ME00000000000CB"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "ME00000000000CC"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+				{
+					id: "ME00000000000CD"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:atomic_alloy"
+					criterion: "alloy_atomic"
+					id: "ME00000000000CA"
+					type: "advancement"
+				}
+				{
+					count: 4
+					id: "9DB3ACADDDA196CC"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+			]
+			title: "Liga Atômica"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["ME00000000000C1"]
+			description: ["§7O §eMekaSuit §7é a armadura de tier máximo — totalmente modular,", "§7usa energia para absorver dano, voar, respirar e mais.", "§7Cada peça tem slots de §eMódulos §7configuráveis.", "", "§eCrafite o conjunto completo de §eMekaSuit§7.", "§7(Capacete + Peitoral + Calças + Botas)", "", "§6Dica: §7Instale §eEnergy Modules §7primeiro para autonomia.", "§7Module Gravitational = voo sem Jetpack!", "§8§o(Você não precisa mais de nada. Mas o modpack continua mesmo assim.)"]
+			icon: "mekanism:mekasuit_bodyarmor"
+			id: "ME00000000000D1"
+			rewards: [
+				{
+					count: 2
+					id: "ME00000000000DB"
+					item: "mekanism:module_base"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "ME00000000000DC"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+				{
+					id: "ME00000000000DD"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:mekasuit"
+					criterion: "full_set"
+					id: "ME00000000000DA"
+					type: "advancement"
+				}
+			]
+			title: "MekaSuit — Armadura do Futuro"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["ME00000000000D1"]
+			description: ["§7A §eInduction Matrix §7é o maior banco de energia do Mekanism —", "§7um multi-bloco de 3x3x3 a 18x18x18 blocos.", "§eInduction Cells §7armazenam, §eInduction Providers §7fazem I/O.", "§7Uma matriz completa armazena quantidades absurdas de energia.", "", "§eConstrua uma §eInduction Matrix §7funcional", "§ecom pelo menos §e1 Cell §7e §e1 Provider§7.", "", "§6Dica: §7A carcaça usa §eInduction Casing §7e §eInduction Port§7.", "", "§8§o(Bateria gigante o suficiente pra ter ansiedade de espaço.)"]
+			icon: "mekanism:basic_induction_cell"
+			id: "ME00000000000E1"
+			rewards: [
+				{
+					count: 2
+					id: "ME00000000000EC"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "ME00000000000ED"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					id: "ME00000000000EA"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "ME00000000000EB"
+					item: "mekanism:basic_induction_provider"
+					type: "item"
+				}
+			]
+			title: "Induction Matrix"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["ME00000000000E1"]
+			description: ["§7O §ePellet of Antimatter §7é o pico da progressão química.", "§7O caminho: Urânio → Plutônio (Fission Reactor) →", "§7Polônio (Solar Neutron Activator) → Antimatéria (SPS).", "§7A §eSPS §7(Supercritical Phase Shifter) é um multi-bloco monumental.", "", "§eProduzca um §ePellet of Antimatter§7.", "", "§8§o(Você acabou de sintetizar antimatéria em Minecraft.)", "§8§o(Einstein estaria orgulhoso. Heisenberg também.)"]
+			icon: "mekanism:sps_casing"
+			id: "ME00000000000F1"
+			rewards: [
+				{
+					id: "ME00000000000FB"
+					item: "mekanism:pellet_antimatter"
+					type: "item"
+				}
+				{
+					id: "ME00000000000FC"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:antimatter"
+					criterion: "pellet_antimatter"
+					id: "ME00000000000FA"
+					type: "advancement"
+				}
+			]
+			title: "Antimatéria"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7Osmium, Steel e Lead — os três pilares que separam quem só", "§7brinca de Mekanism de quem realmente processa matéria-prima", "§7em escala industrial.", "", "§eProcesse e traga 8 Osmium Ingots, 8 Steel Ingots e 8 Lead Ingots."]
+			icon: "mekanism:ingot_osmium"
+			id: "4E5039D05F2939D0"
+			rewards: [
+				{
+					type: "item"
+					item: "mekanism:ingot_refined_obsidian"
+					count: 4
+					id: "AC2BD4793E7239FF"
+				}
+				{
+					type: "xp"
+					xp: 400
+					id: "63A8E69A6279A284"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "mekanism:ingot_osmium"
+					count: 8
+					id: "9A39A9F6E8247955"
+				}
+				{
+					type: "item"
+					item: "mekanism:ingot_steel"
+					count: 8
+					id: "A6F0E62C72170699"
+				}
+				{
+					type: "item"
+					item: "mekanism:ingot_lead"
+					count: 8
+					id: "739DEB088EB9A3F4"
+				}
+			]
+			title: "A Tríade dos Metais"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: ["§7Se você chegou até aqui, já processou minério suficiente pra", "§7abastecer uma cidade pequena. Hora de vestir o resultado.", "", "§eForje pelo menos a peça do capacete do Mekasuit."]
+			icon: "mekanism:mekasuit_helmet"
+			id: "01266555EE478B0B"
+			rewards: [
+				{
+					type: "item"
+					item: "mekanism:ingot_osmium"
+					count: 16
+					id: "3C0B951DAC753411"
+				}
+				{
+					type: "xp"
+					xp: 800
+					id: "8B22EF85F9A715A0"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "mekanism:mekasuit_helmet"
+					id: "3FDBF155FE4C13CC"
+				}
+			]
+			title: "Mekasuit: O Traje Definitivo"
+			x: 12.0d
+			y: 6.0d
+		}
+	]
+	title: "§bMekanism — Física Quântica"
+}

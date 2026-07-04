@@ -1,0 +1,1303 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "09_criaturas"
+	group: "AA00000000000004"
+	icon: ["minecraft:diamond_sword", "minecraft:zombie_head", "minecraft:nether_star"]
+	id: "AA09000000000001"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["§7Este mundo não tem mobs genéricos.", "§7§eBorn in Chaos §7trouxe criaturas distorcidas.", "§7§eAlex's Mobs §7adicionou fauna que reage ao ambiente.", "§7§eLegendary Monsters §7faz qualquer mob comum", "§7virar uma ameaça de outra categoria.", "", "§eDerrote §e50 mobs hostis §7de qualquer tipo.", "", "§6Dica: §7§eBetterCombat §7tem combos — use-os.", "§7Spam de clique é o jeito mais lento de matar mobs aqui."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E00000000000002"
+			rewards: [
+				{
+					id: "5E00000000000003"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5E00000000000004"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "5E00000000000005"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "5E00000000000006"
+					type: "kill"
+					value: 15L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "F1AA000000000101"
+					type: "kill"
+					value: 15L
+				}
+				{
+					entity: "minecraft:spider"
+					id: "F1AA000000000102"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecraft:creeper"
+					id: "F1AA000000000103"
+					type: "kill"
+					value: 10L
+				}
+			]
+			title: "Batismo de Fogo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E00000000000002"]
+			description: ["§7Três crânios de Wither Skeleton.", "§7Quatro blocos de Soul Sand.", "§7Uma explosão de invocação.", "§7E então — silêncio. Depois, um rugido.", "", "§eDerrote o §eWither §7— o boss do Nether.", "", "§6Dica: §7Arco com Power V derruba o Wither antes", "§7que ele chegue na fase de escudo.", "§7Armadura de Netherite é o mínimo aceitável aqui."]
+			icon: "minecraft:nether_star"
+			id: "5E00000000000007"
+			rewards: [
+				{
+					id: "5E00000000000008"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5E00000000000009"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000000A"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:nether/summon_wither"
+					criterion: ""
+					id: "5E0000000000000B"
+					type: "advancement"
+				}
+			]
+			title: "A Tempestade do Nether"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E00000000000002"]
+			description: ["§7§eBorn in Chaos §7adiciona bosses únicos ao jogo:", "§7a §eSmith do Caos§7, o §eMutant Zombie §7e outros.", "", "§eDerrote qualquer boss do mod Born in Chaos.", "", "§6Dica: §7Bosses do Born in Chaos têm fases de combate!", "§7Observe os padrões de ataque antes de atacar cegamente."]
+			icon: "born_in_chaos_v1:seedof_chaos"
+			id: "5E0000000000000C"
+			rewards: [
+				{
+					count: 3
+					id: "5E0000000000000D"
+					item: "born_in_chaos_v1:seedof_chaos"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E0000000000000E"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000000F"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:chaos_knight"
+					criterion: "chaos_knight_0"
+					id: "C6A500AE47345EDA"
+					type: "advancement"
+				}
+			]
+			title: "Filho do Caos"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E0000000000000C"]
+			description: ["§7§eBossominium §7e §eBosses Rise §7adicionam bosses épicos", "§7com mecânicas complexas e recompensas únicas.", "", "§eDerrote pelo menos 1 boss de §eBossominium §7ou §eBosses Rise§7.", "", "§6Dica: §7Use Boss Checklist para localizar esses bosses!", "§7Tenha poções de cura e velocidade em quantidade."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 0
+					}
+				}
+				id: "bossominium:the_bossdexium"
+				tag: {
+					Inventory: {
+						Items: [ ]
+						Size: 0
+					}
+				}
+			}
+			id: "5E00000000000011"
+			rewards: [
+				{
+					count: 8
+					id: "5E00000000000012"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5E00000000000013"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000014"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000015"
+					item: "bossominium:the_bossdexium"
+					type: "item"
+				}
+			]
+			title: "Caçador de Bosses"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E00000000000007"]
+			description: ["§7O §eEnder Dragon §7é o boss final do End.", "§7Este modpack expande o End com §eThe Outer End §7e novos biomas.", "", "§eDerrote o Ender Dragon.", "", "§6Dica: §7Destrua todos os End Crystals primeiro!", "§7Tenha Pearls e Elytra pronto para a batalha."]
+			icon: "minecraft:dragon_egg"
+			id: "5E00000000000016"
+			rewards: [
+				{
+					id: "5E00000000000017"
+					item: "minecraft:dragon_egg"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5E00000000000018"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000019"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:end/kill_dragon"
+					criterion: ""
+					id: "5E0000000000001A"
+					type: "advancement"
+				}
+			]
+			title: "Morte do Dragão"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E00000000000016"]
+			description: ["§7Ressuscite o Ender Dragon e derrote-o novamente.", "§7Cada ressurreição gera um novo Ovo de Dragão.", "", "§eDerrote o Ender Dragon pela §e2ª vez§7 (ressuscitado).", "", "§6Dica: §7Use 4 End Crystals nos pedestais ao redor do portal!", "§7A batalha ressuscitada é levemente diferente."]
+			icon: "minecraft:end_crystal"
+			id: "5E0000000000001B"
+			rewards: [
+				{
+					count: 4
+					id: "5E0000000000001C"
+					item: "minecraft:end_crystal"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "5E0000000000001D"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000001E"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:end/respawn_dragon"
+					criterion: ""
+					id: "5E0000000000001F"
+					type: "advancement"
+				}
+			]
+			title: "Ressurreição do Dragão"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E00000000000002"]
+			description: ["§7§eAlex's Mobs §7adiciona mais de 80 criaturas únicas ao jogo.", "§7Cada uma tem comportamentos, drops e interações especiais.", "", "§eDerrote um de cada: Gorila, Crocodilo, Urso Pardo, Cascavel e Serpente Óssea.", "", "§6Dica: §7O Bone Serpent vive em cavernas profundas, já o Urso Pardo prefere biomas frios."]
+			icon: "alexsmobs:spawn_egg_fly"
+			id: "5E00000000000020"
+			rewards: [
+				{
+					count: 5
+					id: "5E00000000000021"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000022"
+					item: "alexsmobs:shark_tooth"
+					type: "item"
+				}
+				{
+					id: "5E00000000000023"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					entity: "alexsmobs:gorilla"
+					id: "5E00000000000024"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexsmobs:crocodile"
+					id: "F1AA000000000111"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexsmobs:grizzly_bear"
+					id: "F1AA000000000112"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexsmobs:rattlesnake"
+					id: "F1AA000000000113"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexsmobs:bone_serpent"
+					id: "F1AA000000000114"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Caçador de Espécies"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E00000000000020"]
+			description: ["§7Nas tundras cobertas de neve, existe uma coisa", "§7que não é urso, não é golem e não é wither.", "§7É o §eFrostmaw §7— e ele vai te jogar longe", "§7antes de você sequer ver o que aconteceu.", "", "§eDerrote o §eFrostmaw §7do Mowzie's Mobs.", "", "§6Dica: §7Fogo e poções de Fraqueza são eficazes.", "§7Mantenha distância — o corpo-a-corpo é suicida.", "§7Flechas envenenadas ajudam a drená-lo entre ataques."]
+			icon: {
+				Count: 1
+				id: "mowziesmobs:ice_crystal"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E00000000000025"
+			rewards: [
+				{
+					id: "5E00000000000026"
+					item: {
+						Count: 1
+						id: "mowziesmobs:ice_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E00000000000027"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000028"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [
+				{
+					entity: "mowziesmobs:frostmaw"
+					id: "5E00000000000029"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "A Fera do Gelo"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5E00000000000025"]
+			description: ["§7§eBarako §7é o Xamã boss do Mowzie's Mobs.", "§7Ele conjura raios e mobs para se defender.", "", "§eDerrote o §eBarako the Sun Chief§7.", "", "§6Dica: §7Barako vive em savanas quentes!", "§7Ele chama reforços — mate os adeptos primeiro."]
+			icon: "mowziesmobs:sol_visage"
+			id: "5E0000000000002A"
+			rewards: [
+				{
+					id: "5E0000000000002B"
+					item: "mowziesmobs:sol_visage"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5E0000000000002C"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000002D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					entity: "mowziesmobs:umvuthi"
+					id: "5E0000000000002E"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "O Chefe do Sol"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E00000000000011"]
+			description: ["§7Os Ilusionistas não atacam ao acaso.", "§7Eles planejam, coordenam e visam os mais fracos.", "§7§eIllager Invasion §7torna os ataques em eventos reais —", "§7esquadrões organizados, capitães liderando tropas.", "", "§eDerrote um §eCapitão de Raid §7para provocar", "§7e depois sobreviver ao ataque à aldeia.", "", "§6Dica: §7Ilusionistas cegam — leve §eleite de vaca§7.", "§7§eGuard Villagers §7pode te ajudar se você equipar os aldeões."]
+			icon: "minecraft:ominous_banner"
+			id: "5E0000000000002F"
+			rewards: [
+				{
+					count: 16
+					id: "5E00000000000030"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E00000000000031"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000032"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:adventure/voluntary_exile"
+					criterion: ""
+					id: "5E00000000000033"
+					type: "advancement"
+				}
+			]
+			title: "Defensor da Aldeia"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E0000000000002A"]
+			description: ["§7§eLegendary Monsters §7transforma mobs comuns em versões épicas", "§7com mais vida, dano e habilidades especiais.", "", "§eDerrote um §eLegendary Monster §7de qualquer tipo.", "§7Você saberá que é Legendary pelo nome dourado acima deles.", "", "§6Dica: §7Legendary Creepers explodem duas vezes!", "§7Legendary Spiders têm veneno mais longo. Cuidado!"]
+			icon: "legendary_monsters:enderitium_ingot"
+			id: "5E00000000000034"
+			rewards: [
+				{
+					count: 2
+					id: "5E00000000000035"
+					item: "legendary_monsters:enderitium_ingot"
+					type: "item"
+				}
+				{
+					id: "5E00000000000036"
+					item: {
+						Count: 1
+						id: "legendary_monsters:soul_great_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E00000000000037"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000038"
+					item: "legendary_monsters:enderitium_ingot"
+					type: "item"
+				}
+			]
+			title: "Lendário Caído"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E0000000000002F"]
+			description: ["§7O §eGoblin Tyrant §7é o chefe dos Goblins Tiranos.", "§7Ele lidera hordas de goblins que atacam a noite.", "", "§eDerrote o §eGoblin Tyrant §7do mod Goblin's Tyranny.", "", "§6Dica: §7Goblins Tiranos vêm em hordas grandes!", "§7Construa uma torre de defesa antes de enfrentá-los."]
+			icon: "goblins_tyranny:glitteron_armor"
+			id: "5E00000000000039"
+			rewards: [
+				{
+					count: 3
+					id: "5E0000000000003A"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5E0000000000003B"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000003C"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [
+				{
+					id: "5E0000000000003D"
+					item: "goblins_tyranny:glitteron_armor"
+					type: "item"
+				}
+			]
+			title: "Rei dos Goblins"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E00000000000016"]
+			description: ["§7§eIDAS §7(Idas' Dungeon Adventuring System) adiciona", "§7masmorras geradas proceduralmente com bosses únicos.", "§7Algumas guardam discos de música raros como tesouro.", "", "§eExplore uma dungeon do IDAS e encontre o", "§eMusic Disc Slither §7escondido nela.", "", "§6Dica: §7Masmorras IDAS escalam com seu equipamento!", "§7Leve comida extra, tochas e itens de cura."]
+			icon: "minecraft:tripwire_hook"
+			id: "5E0000000000003E"
+			rewards: [
+				{
+					count: 5
+					id: "5E0000000000003F"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "5E00000000000040"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000041"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000042"
+					item: "idas:music_disc_slither"
+					type: "item"
+				}
+			]
+			title: "Mestre de Masmorras"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E0000000000003E"]
+			description: ["§7§eRelics §7adiciona relíquias que concedem habilidades", "§7passivas únicas — algumas sutis, outras absurdas.", "", "§7§eBastion Ring §7— escudo ativo on-demand.", "§7§eSpace Dissector §7— projéteis que fragmentam ao atingir.", "§7§eShadow Glaive §7— ricocheteante e letal.", "§7§eEnders Hand §7— teleporte instantâneo.", "", "§eCollecte a §eResearching Table §7e pesquise", "§epelo menos §e2 relíquias §7de combate diferentes.", "", "§6Dica: §7Relíquias são obtidas em baús de dungeon", "§7e derrotando bosses — explora mais, encontra mais."]
+			icon: "relics:shadow_glaive"
+			id: "5E00000000000301"
+			rewards: [
+				{
+					id: "5E00000000000302"
+					item: "relics:bastion_ring"
+					type: "item"
+				}
+				{
+					id: "5E00000000000303"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000304"
+					item: "relics:researching_table"
+					type: "item"
+				}
+				{
+					id: "5E00000000000305"
+					item: "relics:shadow_glaive"
+					type: "item"
+				}
+			]
+			title: "Relíquias do Combate"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E0000000000003E"]
+			description: ["§7§eFarmer's Delight Bosses §7adiciona bosses que guardam", "§7receitas e itens culinários especiais.", "", "§eDerrote um boss do §eFDB §7(Farmer's Delight Bosses).", "", "§6Dica: §7Eles ficam próximos a aldeias agrícolas!", "§7Drops únicos são usados em receitas especiais do FD."]
+			icon: "fdbosses:malkuth_trophy"
+			id: "5E00000000000043"
+			rewards: [
+				{
+					count: 4
+					id: "5E00000000000044"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E00000000000045"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000046"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000047"
+					item: "fdbosses:malkuth_trophy"
+					type: "item"
+				}
+			]
+			title: "O Cozinheiro dos Bosses"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E0000000000003E"]
+			description: ["§7§eKnight Quest §7adiciona cavaleiros boss que guardam", "§7armaduras e armas únicas de sua cavalaria.", "", "§eDerrote um §eKnight Boss §7do Knight Quest.", "§eConsiga pelo menos 1 item de armadura de cavaleiro.", "", "§6Dica: §7Knights têm escudos poderosos — use armas pesadas!", "§7Hammer ou Battleaxe passam pela guarda.", "", "§8§o(Ele treinou a vida toda pra isso. Você passou 10 minutos.)"]
+			icon: {
+				Count: 1
+				id: "knightquest:steel_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E00000000000048"
+			rewards: [
+				{
+					id: "5E00000000000049"
+					item: {
+						Count: 1
+						id: "knightquest:steel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5E0000000000004A"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000004B"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [
+				{
+					id: "5E0000000000004C"
+					item: {
+						Count: 1
+						id: "knightquest:warlord_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Quebra-Cavaleiros"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5E0000000000001B"]
+			description: ["§7§eThe Outer End §7expande o End com novos biomas e criaturas.", "§7Novas ilhas flutuantes escondem estruturas e recursos únicos.", "", "§eColete os 3 cristais das ilhas: Rose, Mint e Cobalt Crystal —", "§ecada um vem de um bioma diferente do mod.", "", "§6Dica: §7Leve muita comida e Ender Pearls pra cruzar as ilhas!", "§7Cada cristal também vira uma armadura própria, se você", "§7quiser continuar explorando depois dessa missão."]
+			icon: "outer_end:rose_crystal"
+			id: "5E0000000000004D"
+			rewards: [
+				{
+					count: 8
+					id: "5E0000000000004E"
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "5E0000000000004F"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000050"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000051"
+					item: "outer_end:rose_crystal"
+					type: "item"
+				}
+				{
+					id: "FX000000000006A"
+					item: "outer_end:mint_crystal"
+					type: "item"
+				}
+				{
+					id: "FX000000000006B"
+					item: "outer_end:cobalt_crystal"
+					type: "item"
+				}
+			]
+			title: "Além do Fim"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5E00000000000048"]
+			description: ["§7§eRealmRPG Skeletons §7não são mobs — são estátuas decorativas", "§7de esqueletos em poses variadas, ótimas pra decorar suas construções", "§7ou dar um clima mais sombrio à sua base.", "", "§eColete 3 esqueletos decorativos diferentes: Comum, Cristal e Queimado."]
+			icon: "realmrpg_skeletons:crystal_skeleton"
+			id: "5E00000000000052"
+			rewards: [
+				{
+					count: 5
+					id: "5E00000000000053"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E00000000000054"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000055"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000056"
+					item: "realmrpg_skeletons:common_skeleton"
+					type: "item"
+				}
+				{
+					id: "F1AA000000000121"
+					item: "realmrpg_skeletons:crystal_skeleton"
+					type: "item"
+				}
+				{
+					id: "F1AA000000000122"
+					item: "realmrpg_skeletons:burnt_skeleton"
+					type: "item"
+				}
+			]
+			title: "Caçador de Mortos"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5E00000000000052"]
+			description: ["§7Você provou seu valor em combate contra criaturas de mods.", "§7Agora prove que você é o §l§cCaçador Supremo§r§7.", "", "§eDerrote pelo menos §e1 boss de cada um§7 desses mods:", "§e- Born in Chaos", "§e- Mowzie's Mobs", "§e- Bossominium / Bosses Rise", "§e- Knight Quest", "", "§6A elite de caçadores não teme nenhum boss!", "", "§7§eDica de sobrevivência: §7com §ePlayerRevive §7e §eHardcore Revival§7,", "§7uma morte em grupo não precisa ser o fim — leve sempre um", "§eDesfibrilador §7na mochila para reanimar aliados em combate!"]
+			icon: "born_in_chaos_v1:seedof_chaos"
+			id: "5E00000000000057"
+			rewards: [
+				{
+					count: 20
+					id: "5E00000000000058"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000059"
+					item: "irons_spellbooks:diamond_spell_book"
+					type: "item"
+				}
+				{
+					id: "5E0000000000005A"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:chaos_knight"
+					criterion: "chaos_knight_0"
+					id: "D4953EA147E67507"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:kill_umvuthi"
+					criterion: "barako"
+					id: "E0FCCF2F4C044D90"
+					type: "advancement"
+				}
+				{
+					id: "5E0000000000005D"
+					item: {
+						Count: 1
+						id: "knightquest:warlord_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§c§lO Caçador Supremo"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5E0000000000000C"]
+			description: ["§7§eBosses Rise §7é outro mod de bosses independente do Bossominium —", "§7adiciona criaturas titânicas próprias com mecânicas de fases", "§7e arenas exclusivas geradas pelo mundo.", "", "§eEncontre e derrote um boss do mod §eBosses Rise§7.", "", "§6Dica: §7Bosses Rise costuma avisar com efeitos visuais", "§7e sons antes de invocar ataques em área — fique atento!"]
+			icon: "minecraft:totem_of_undying"
+			id: "5E0000000000005E"
+			rewards: [
+				{
+					id: "5E0000000000005F"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E00000000000060"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000061"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000062"
+					item: "block_factorys_bosses:dragon_shank"
+					type: "item"
+				}
+			]
+			title: "A Ascensão"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7§eLegendary Monsters §7adiciona criaturas colossais totalmente novas,", "§7escondidas em estruturas próprias espalhadas pelo mundo —", "§7não são variantes de mobs comuns, são bichos de verdade.", "", "§eEncontre a Ancient Stronghold e derrote o Ambusher.", "", "§6Dica: §7Cada chefe do mod tem sua própria estrutura de origem.", "§7Procure por biomas de pedregulho e cavernas profundas."]
+			icon: "legendary_monsters:chiseled_ancient_dripstone_shard"
+			id: "LM0000000001"
+			rewards: [
+				{
+					id: "F4975CC859F3C060"
+					item: "legendary_monsters:chiseled_ancient_dripstone_shard"
+					type: "item"
+				}
+				{
+					id: "F81DB37B99B09D19"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_ambusher"
+					criterion: "ambusher"
+					id: "1982818B92E7EC77"
+					type: "advancement"
+				}
+			]
+			title: "Encontrando o Lendário"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["LM0000000001"]
+			description: ["§7O §eFrostbitten Golem §7guarda o Templo Congelado — um colosso", "§7de gelo que ataca em área e ignora resistência ao frio comum.", "", "§eEncontre o Templo Congelado e derrote o Frostbitten Golem.", "", "§6Dica: §7Armas de fogo (Fire Aspect) são muito mais eficientes", "§7contra ele do que armas normais."]
+			icon: "legendary_monsters:the_great_frost"
+			id: "LM0000000002"
+			rewards: [
+				{
+					id: "3DDD55F6465708F6"
+					item: "legendary_monsters:the_great_frost"
+					type: "item"
+				}
+				{
+					id: "B7414335FA7A7ECF"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_frostbitten_golem"
+					criterion: "frostbitten_golem"
+					id: "DE36F3024BAC7948"
+					type: "advancement"
+				}
+			]
+			title: "O Golem Glacial"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["LM0000000002"]
+			description: ["§7O §eAncient Guardian §7é um Guardião do Oceano evoluído: §7tamanho", "§7triplo, raio laser que atravessa armadura, e Fadiga de Mineração III", "§7permanente em área. Solta a Monstrous Anchor ao morrer — uma arma", "§7que causa dano em área ao atingir o chão.", "", "§eEncontre a Ancient Stronghold e derrote o Ancient Guardian.", "", "§6Dica: §7Poções de Respiração Aquática são essenciais.", "§7Respiration III no capacete e Depth Strider nas botas."]
+			icon: "legendary_monsters:monstrous_anchor"
+			id: "LM0000000003"
+			rewards: [
+				{
+					id: "F0D49C0BD832507D"
+					item: "legendary_monsters:monstrous_anchor"
+					type: "item"
+				}
+				{
+					id: "E494BD1CED2B9F70"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_the_ancient_guardian"
+					criterion: "guardian"
+					id: "76DD3807637D84C1"
+					type: "advancement"
+				}
+			]
+			title: "O Guardião Antigo"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["LM0000000003"]
+			description: ["§7O §eSkeletosaurus §7Lendário é um esqueleto-dinossauro colossal", "§7que usa o §eDinosaur Bone Club §7para causar dano em área.", "§7Drop: §eDino Shield §7— um escudo com HP bônus passivo.", "", "§eDerrote o §eLegendary Skeletosaurus§7.", "", "§6Dica: §7Mantenha distância — o clube tem alcance inesperado.", "§7Arcos com §ePower §7são mais eficientes que espadas corpo a corpo."]
+			icon: "legendary_monsters:dino_shield"
+			id: "LM0000000004"
+			rewards: [
+				{
+					id: "LM000000004B"
+					item: "legendary_monsters:dino_shield"
+					type: "item"
+				}
+				{
+					id: "LM000000004C"
+					item: "legendary_monsters:dinosaur_bone_club"
+					type: "item"
+				}
+				{
+					id: "LM000000004D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_skeletosaurus"
+					criterion: "skeletosaurus"
+					id: "EA57982F12F326C3"
+					type: "advancement"
+				}
+			]
+			title: "O Dragão de Osso"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["LM0000000004"]
+			description: ["§7O §eCloud Golem §7vive no Templo das Nuvens e invoca relâmpagos", "§7constantemente. Solta a Axe of Lightning — cada golpe da machado", "§7invoca um relâmpago na posição do alvo.", "", "§eEncontre o Templo das Nuvens e derrote o Cloud Golem.", "", "§6Dica: §7Poções de Resistência ajudam com o dano de relâmpago.", "§7A Axe of Lightning é uma das armas mais divertidas do modpack.", "§8§o(Relâmpago a cada golpe. O equilíbrio saiu de férias.)"]
+			icon: "legendary_monsters:axe_of_lightning"
+			id: "LM0000000005"
+			rewards: [
+				{
+					id: "00BDD9C6D7DCDA99"
+					item: "legendary_monsters:axe_of_lightning"
+					type: "item"
+				}
+				{
+					id: "CDEA3F4BAC92B91F"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_cloud_golem"
+					criterion: "cloud_golem"
+					id: "980D760EC60685C7"
+					type: "advancement"
+				}
+			]
+			title: "O Relâmpago"
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["LM0000000005"]
+			description: ["§7O §eWithered Abomination §7ronda as Ruínas da Fortaleza da Alma —", "§7um horror necrótico que solta a Withered Scythe, foice amaldiçoada", "§7com efeitos de vida roubada.", "", "§eEncontre as Ruínas da Soul Fortress e derrote o Withered Abomination.", "", "§6Dica: §7Leve Milk Buckets — os efeitos de status dele acumulam rápido.", "§8§o(Uma foice roubada de um horror do Nether. Ninguém questionou isso.)"]
+			icon: "legendary_monsters:withered_scythe"
+			id: "LM0000000006"
+			rewards: [
+				{
+					id: "F13816801EDE01F6"
+					item: "legendary_monsters:withered_scythe"
+					type: "item"
+				}
+				{
+					id: "AA68DDB971BE76BA"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_withered_abomination"
+					criterion: "abomination"
+					id: "22A33F4AB7D69764"
+					type: "advancement"
+				}
+			]
+			title: "A Foice Amaldiçoada"
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7§eDragN's Livestock Overhaul §7substitui (quase) todo animal do", "§7jogo por uma versão \"O-\" com mais variedade genética — porque", "§7cinco cores de vaca simplesmente não eram suficientes.", "", "§eColete Raw Cheese (de vacas O-) e Raw Sheep Cheese (de ovelhas O-).", "", "§6Dica: §7Esses bichos já substituem os vanilla no mundo — você", "§7provavelmente já esbarrou com um sem perceber."]
+			icon: "dragnlivestock:o_cow_spawn_egg"
+			id: "A3C6439EDC106B45"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:hay_block"
+					count: 8
+					id: "8FC9D640075FCC2E"
+				}
+				{
+					type: "xp"
+					xp: 150
+					id: "FB086DFEDE1589CA"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "dragnlivestock:raw_cheese"
+					id: "DFB81DF82A180422"
+				}
+				{
+					type: "item"
+					item: "dragnlivestock:raw_sheep_cheese"
+					id: "5F969F1A6E7C618C"
+				}
+			]
+			title: "Gado Turbinado"
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			description: ["§7§eIllager Invasion §7adiciona novos tipos de illager: Alquimistas,", "§7Necromantes, Invocadores... a vila nunca mais foi segura.", "", "§eCrie uma Imbuing Table e derrote um illager: Alchemist, Marauder ou Necromancer."]
+			icon: "illagerinvasion:imbuing_table"
+			id: "DF505189CF6077C9"
+			rewards: [
+				{
+					type: "item"
+					item: "illagerinvasion:hallowed_gem"
+					count: 2
+					id: "80C00B0E695A97FB"
+				}
+				{
+					type: "xp"
+					xp: 300
+					id: "333DB700394A428A"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "illagerinvasion:imbuing_table"
+					id: "E43067EBA2D6A71A"
+				}
+				{
+					type: "kill"
+					entity: "illagerinvasion:necromancer"
+					value: 1
+					id: "14C8275C0CF112A4"
+				}
+			]
+			title: "A Segunda Invasão"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			description: ["§7§eUseful Ribbits §7ensina os sapinhos do Ribbits a trabalhar de", "§7verdade — e ainda dá pra montar móveis temáticos pra eles.", "", "§eConstrua um Ribbit Chest e uma Ribbit Bed."]
+			icon: "useful_ribbits:farmer_ribbit_spawn_egg"
+			id: "95DF17FC35133443"
+			rewards: [
+				{
+					type: "item"
+					item: "useful_ribbits:ribbit_chest"
+					id: "BE3D29D3A4C8F1C0"
+				}
+				{
+					type: "xp"
+					xp: 100
+					id: "D0722BBF110073C8"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "useful_ribbits:ribbit_chest"
+					id: "FB30264AC8D9BE72"
+				}
+				{
+					type: "item"
+					item: "useful_ribbits:ribbit_bed"
+					id: "A169CBF9855A01AA"
+				}
+			]
+			title: "Sapos Contratados"
+			x: 26.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7Goblins organizados são pior que goblins soltos.", "§7§eGoblin's Tyranny §7traz tribos inteiras com totens e martelos.", "", "§eColete um Totem Block e forje um Goblin Hammer."]
+			icon: "goblins_tyranny:totem_block"
+			id: "F7160279AB45D96F"
+			rewards: [
+				{
+					type: "item"
+					item: "goblins_tyranny:bear_hide"
+					count: 2
+					id: "1DAB82B9F90D0D3D"
+				}
+				{
+					type: "xp"
+					xp: 150
+					id: "6107BD9786DC8EF7"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "goblins_tyranny:totem_block"
+					id: "9A2907DFD6AB6917"
+				}
+				{
+					type: "item"
+					item: "goblins_tyranny:goblin_mace"
+					id: "26138D7D7B45ECE5"
+				}
+			]
+			title: "Bando Goblin"
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			description: ["§7Golem de vela, golem de mel, golem de sculk — se existe", "§7um bloco, alguém fez um golem dele. Construa o seu.", "", "§eCrie um Peter O'Lantern e uma TNT Air Golem Statue."]
+			icon: "plenty_of_golems:soulsand_golem_spawn_egg"
+			id: "7A7C0298A3C13BA7"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:honeycomb"
+					count: 8
+					id: "7324AFDC40515C47"
+				}
+				{
+					type: "xp"
+					xp: 150
+					id: "CF4CAD7A3AB6E070"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "plenty_of_golems:peter_o_lantern"
+					id: "97439F96B468B231"
+				}
+				{
+					type: "item"
+					item: "plenty_of_golems:tnt_air_golem_statue"
+					id: "E1405D2E5664AA57"
+				}
+			]
+			title: "Exército de Golems"
+			x: 22.0d
+			y: 6.0d
+		}
+		{
+			description: ["§7§eAnimalistic §7finalmente ganha o destaque que merece:", "§7talismãs elementais e uma Mesa de Invocação pra chamar", "§7criaturas específicas do mod.", "", "§eColete um Black Talisman e construa uma Mesa de Invocação (Mesainvo)."]
+			icon: "animalistic_a:black_talisman"
+			id: "DA87F4E7BFE34749"
+			rewards: [
+				{
+					type: "item"
+					item: "animalistic_a:soul_bottle"
+					id: "B8EB2D9174B168BA"
+				}
+				{
+					type: "xp"
+					xp: 150
+					id: "FE01E5D1603E5976"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "animalistic_a:black_talisman"
+					id: "8D5C3CA23793685A"
+				}
+				{
+					type: "item"
+					item: "animalistic_a:mesainvo"
+					id: "4C7766F2E1235AC8"
+				}
+			]
+			title: "Talismãs Animais"
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7§eFD Bosses §7traz uma trindade de chefes cabalísticos:", "§7Chesed, Geburah e Malkuth. Cada um tem uma arena e", "§7mecânica própria — não é pra amador.", "", "§eDerrote os 3 bosses do Qliphoth Awakening: Chesed, Geburah e Malkuth."]
+			icon: "minecraft:nether_star"
+			id: "60A8660A370F9544"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 2
+					id: "EB9CF70A2F969F68"
+				}
+				{
+					type: "item"
+					item: "minecraft:experience_bottle"
+					count: 32
+					id: "0C45C4CA065A65C9"
+				}
+				{
+					type: "xp"
+					xp: 1500
+					id: "6CA2B379514A8F4C"
+				}
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "fdbosses:qliphoth_awakening/chesed"
+					criterion: "killed_chesed"
+					id: "53042C31A178BD94"
+				}
+				{
+					type: "advancement"
+					advancement: "fdbosses:qliphoth_awakening/geburah"
+					criterion: "killed_geburah"
+					id: "19291F05B4AA98CE"
+				}
+				{
+					type: "advancement"
+					advancement: "fdbosses:qliphoth_awakening/malkuth"
+					criterion: "killed_malkuth"
+					id: "84656C84C2614C35"
+				}
+			]
+			title: "O Despertar de Qliphoth"
+			x: 26.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7§eBossominium §7reimagina bosses clássicos com fases,", "§7arenas e um senso de humor peculiar pra quem gosta de sofrer.", "", "§eDerrote o boss principal do Bossominium."]
+			icon: "minecraft:nether_star"
+			id: "7F84405B3B6578D5"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:nether_star"
+					id: "484FC989D9676B5F"
+				}
+				{
+					type: "item"
+					item: "minecraft:experience_bottle"
+					count: 16
+					id: "613D6B02F59EE7BD"
+				}
+				{
+					type: "xp"
+					xp: 800
+					id: "155AAB1316D267D8"
+				}
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "bossominium:down_with_the_king"
+					criterion: "down_with_the_king"
+					id: "001A81AE1DB97F3C"
+				}
+			]
+			title: "Abaixo o Rei"
+			x: 28.0d
+			y: 8.0d
+		}
+	]
+	title: "§cCriaturas e Bosses"
+}

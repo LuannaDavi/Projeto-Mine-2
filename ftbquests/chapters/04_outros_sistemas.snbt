@@ -1,0 +1,482 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "06_magia_combate"
+	group: "AA00000000000002"
+	icon: ["irons_spellbooks:copper_spell_book", "mna:wand_vinteum", "enhancedcelestials:meteor"]
+	id: "AA06000000000001"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4D00000000000006"]
+			description: ["§7§eIron's Spellbooks §7é o segundo sistema de magia do modpack.", "§7Focado em arquétipos como Mago, Curandeiro e Necromante.", "", "§eCrie ou encontre um §eSpell Book §7de Iron's Spellbooks.", "§eAtinga pelo menos o §eMagic Level 10§7.", "", "§6Dica: §7Derrotar mobs arcanos e usar feitiços dá XP mágico!", "§7Cada nível dá mais poder e slots de feitiço."]
+			icon: "irons_spellbooks:copper_spell_book"
+			id: "4D00000000000017"
+			rewards: [
+				{
+					count: 3
+					id: "4D00000000000018"
+					item: "irons_spellbooks:scroll"
+					type: "item"
+				}
+				{
+					id: "4D00000000000019"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000001A"
+					item: "irons_spellbooks:copper_spell_book"
+					type: "item"
+				}
+			]
+			title: "Arquétipo Mágico"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000017"]
+			description: ["§7O §eIron Spell Book §7é o segundo degrau da progressão", "§7mágica — mais slots de feitiço e mais poder de conjuração", "§7que o Copper, mas ainda longe do topo.", "", "§eForje um §eIron Spell Book §7e equipe-o.", "§eVista uma peça de armadura temática de mago", "§e(Pyromancer, Cryomancer ou Electromancer).", "", "§6Dica: §7Cada armadura temática dá bônus à escola", "§7de magia correspondente — fogo, gelo ou raio!"]
+			icon: "irons_spellbooks:iron_spell_book"
+			id: "4D00000000000090"
+			rewards: [
+				{
+					count: 4
+					id: "4D00000000000091"
+					item: "irons_spellbooks:scroll"
+					type: "item"
+				}
+				{
+					id: "4D00000000000092"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000093"
+					item: "irons_spellbooks:iron_spell_book"
+					type: "item"
+				}
+				{
+					id: "4D00000000000094"
+					item: "irons_spellbooks:pyromancer_helmet"
+					type: "item"
+				}
+			]
+			title: "Segundo Grau"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000090"]
+			description: ["§7Iron's Spellbooks tem feitiços de diferentes escolas:", "§7Fogo, Gelo, Raio, Cura, Sangue, Sombra...", "", "§eConsiga um Enchanted Spell Book (tier diamante) e construa um Scroll Forge", "§epra criar seus próprios pergaminhos de feitiço.", "", "§6Dica: §7Tombe bosses e explore masmorras pra encontrar pergaminhos", "§7raros de escolas poderosas! O jogo não verifica quais feitiços você", "§7aprendeu, então essa parte fica por sua conta — mas vale a pena."]
+			icon: "irons_spellbooks:arcane_essence"
+			id: "4D0000000000001B"
+			rewards: [
+				{
+					count: 5
+					id: "4D0000000000001C"
+					item: "irons_spellbooks:scroll"
+					type: "item"
+				}
+				{
+					id: "4D0000000000001D"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					id: "4D0000000000001E"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000001F"
+					item: "irons_spellbooks:diamond_spell_book"
+					type: "item"
+				}
+				{
+					id: "FX000000000002A"
+					item: "irons_spellbooks:scroll_forge"
+					type: "item"
+				}
+			]
+			title: "Mestre de Múltiplas Escolas"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D0000000000001B"]
+			description: ["§7§eCelestiSynth §7potencializa magias usando energia cósmica.", "§7O §eStar Monolith §7é um bloco ritualístico que canaliza", "§7o poder de corpos celestes para criar equipamentos únicos.", "", "§eConstrua um §eStar Monolith §7e ative-o.", "§eForje uma peça de armadura §eLunar Stone §7ou §eSolar Crystal§7.", "", "§6Dica: §7Lunar Stone é defensivo, Solar Crystal é ofensivo!", "§7Acompanhe as fases com Enhanced Celestials para maximizar o efeito."]
+			icon: "celestisynth:celestial_core"
+			id: "4D0000000000002E"
+			rewards: [
+				{
+					count: 4
+					id: "4D0000000000002F"
+					item: "celestisynth:celestial_core"
+					type: "item"
+				}
+				{
+					id: "4D00000000000030"
+					item: "celestisynth:star_monolith"
+					type: "item"
+				}
+				{
+					id: "4D00000000000031"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "4D000000000000B1"
+					item: "celestisynth:celestial_core"
+					type: "item"
+				}
+			]
+			title: "Magia Celestial"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000002"]
+			description: ["§7§eMana and Artifice (MNA) §7é o terceiro grande sistema mágico", "§7deste modpack — focado em §eVaras (Wands) §7e um pool de", "§7Mana pessoal que regenera com o tempo.", "", "§7Tudo começa na §eInscription Table§7: combine um", "§e§lWand Core §r§7+ um §e§lWand Cap §r§7para montar sua primeira Vara.", "", "§eCrie uma §eInscription Table §7do MNA.", "§eMonte sua primeira §eVara (Wand)§7.", "", "§6Dica: §7O livro §eCodex of Artifice §7explica tudo passo a passo!", "§7Ele é dado automaticamente ao tocar na Inscription Table."]
+			icon: {
+				Count: 1
+				id: "mna:wand_vinteum"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4D00000000000037"
+			rewards: [
+				{
+					count: 4
+					id: "4D00000000000038"
+					item: "mna:mana_resevoir"
+					type: "item"
+				}
+				{
+					id: "4D00000000000039"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000003A"
+					item: {
+						Count: 1
+						id: "mna:wand_vinteum"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D00000000000070"
+					item: "mna:inscription_table"
+					type: "item"
+				}
+			]
+			title: "Artífice da Mana"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000037"]
+			description: ["§7Uma vara sem runas é só um pedaço de madeira caro.", "§7§eRunescribing §7é o sistema que grava poder elemental", "§7diretamente nos componentes da sua vara.", "", "§eConstrua uma §eRunescribing Table §7e inscreva pelo", "§emenos §e2 runas elementais §7diferentes (Fire, Water,", "§eAir, Earth, Arcane...) em peças da sua vara.", "", "§6Dica: §7Cada runa muda como seus feitiços se comportam!", "§7Combine runas opostas para efeitos interessantes."]
+			icon: "mna:runescribing_table"
+			id: "4D00000000000095"
+			rewards: [
+				{
+					count: 3
+					id: "4D00000000000096"
+					item: "mna:rune_fire"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4D00000000000097"
+					item: "mna:rune_water"
+					type: "item"
+				}
+				{
+					id: "4D00000000000098"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000099"
+					item: "mna:runescribing_table"
+					type: "item"
+				}
+				{
+					id: "4D0000000000009A"
+					item: "mna:rune_fire"
+					type: "item"
+				}
+				{
+					id: "4D0000000000009B"
+					item: "mna:rune_water"
+					type: "item"
+				}
+			]
+			title: "Gravando Poder"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000095"]
+			description: ["§7§eAurum §7é o metal mágico do MNA — extraído do Aurum Ore", "§7e refinado na Inscription Table usando Mana.", "§7Varas feitas de Aurum são muito mais poderosas que as iniciais.", "", "§eRefine pelo menos §e8 Aurum Ingots §7na Inscription Table.", "§eMonte uma §eVara de Aurum §7(troque o Core e/ou Cap por Aurum).", "§eInscreva pelo menos §e1 Runa §7na sua vara para criar um feitiço.", "", "§6Dica: §7O Mana Battery armazena excedente de mana para", "§7feitiços mais caros — sempre tenha um por perto!"]
+			icon: "mna:vinteum_ingot"
+			id: "4D00000000000071"
+			rewards: [
+				{
+					count: 16
+					id: "4D00000000000072"
+					item: "mna:vinteum_dust"
+					type: "item"
+				}
+				{
+					id: "4D00000000000073"
+					item: "mna:mana_resevoir"
+					type: "item"
+				}
+				{
+					id: "4D00000000000074"
+					type: "xp"
+					xp: 450
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4D00000000000075"
+					item: "mna:vinteum_ingot"
+					type: "item"
+				}
+			]
+			title: "Vara de Aurum"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000037"]
+			description: ["§7§eImprovable Skills §7adiciona um sistema de habilidades", "§7que crescem com uso — magia inclusa!", "", "§eAtinja pelo menos Nível 10 em qualquer habilidade mágica", "§edo Improvable Skills.", "", "§6Dica: §7Use feitiços repetidamente para ganhar XP de habilidade!", "§7Habilidades mágicas reduzem custo de mana."]
+			icon: "improvableskills:skills_book"
+			id: "4D0000000000003B"
+			rewards: [
+				{
+					count: 5
+					id: "4D0000000000003C"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4D0000000000003D"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000003E"
+					item: "improvableskills:skills_book"
+					type: "item"
+				}
+			]
+			title: "Maestria nas Artes"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D0000000000003B"]
+			description: ["§7§eRelics §7adiciona artefatos mágicos poderosos que são encontrados em baús de dungeons.", "§eEncontre 2 Relics diferentes: o Bastion Ring e o Arrow Quiver.", "§7Eles ocupam slots de Curios e dão poderes passivos.", "", "§6Dica: §7Relics mais raros têm efeitos combinados únicos!", "§7Cheque dungeons do Dungeons Arise para Relics raras."]
+			icon: "relics:bastion_ring"
+			id: "4D0000000000003F"
+			rewards: [
+				{
+					id: "4D00000000000040"
+					item: "relics:space_dissector"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4D00000000000041"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4D00000000000042"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000043"
+					item: "relics:bastion_ring"
+					type: "item"
+				}
+				{
+					id: "F1AA000000000301"
+					item: "relics:arrow_quiver"
+					type: "item"
+				}
+			]
+			title: "Caçador de Relíquias"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D0000000000002E"]
+			description: ["§7§eArtifacts §7adiciona dezenas de itens usáveis nos slots de Curios,", "§7cada um com um efeito passivo único.", "", "§eConsiga 3 Artifacts diferentes: Obsidian Skull, Golden Hook e Running Shoes.", "", "§6Dica: §7Equipe-os nos slots de Curios pra ativar os efeitos — só ter no", "§7inventário não faz nada!"]
+			icon: "artifacts:obsidian_skull"
+			id: "4D00000000000049"
+			rewards: [
+				{
+					id: "4D0000000000004A"
+					item: "artifacts:obsidian_skull"
+					type: "item"
+				}
+				{
+					id: "4D0000000000004B"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "4D000000000000B2"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000004C"
+					item: "artifacts:obsidian_skull"
+					type: "item"
+				}
+				{
+					id: "F1AA000000000401"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "F1AA000000000402"
+					item: "artifacts:running_shoes"
+					type: "item"
+				}
+			]
+			title: "Colecionador de Artefatos"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D00000000000049"]
+			description: ["§7§eEnhanced Celestials §7transforma as luas em eventos.", "§7Durante a §cLua de Sangue§7, os mobs ficam mais fortes,", "§7mais rápidos — mas os drops são melhores.", "§7É a noite mais perigosa e mais lucrativa do modpack.", "", "§eSobreviva a uma §cLua de Sangue §7e colete um", "§eMeteoro §7que cai durante o evento.", "", "§6Dica: §7Feitiços de área do §eArs Nouveau §7são ideais.", "§7Prepare §eSource Jars §7extras — você vai conjurar muito."]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "sleep_tight:textures/gui/moon.png"
+				}
+			}
+			id: "4D00000000000051"
+			rewards: [
+				{
+					count: 8
+					id: "4D00000000000053"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4D00000000000054"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000055"
+					item: "enhancedcelestials:meteor"
+					type: "item"
+				}
+			]
+			title: "Lua de Sangue"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D00000000000051"]
+			description: ["§7A fusão entre magia e tecnologia é rara, mas poderosa.", "§7Crie um §eMagic Automaton §7— um golem mágico", "§7que trabalha para você.", "", "§eCrie um §eGolem §7do §ePlenty of Golems §7e", "§econfigure-o para coletar recursos.", "", "§6Dica: §7Golems precisam de um coração de golem!", "§7Diferentes materiais criam golems com habilidades únicas."]
+			icon: "plenty_of_golems:golems_staff"
+			id: "4D00000000000056"
+			rewards: [
+				{
+					id: "4D00000000000057"
+					item: "plenty_of_golems:golems_staff"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4D00000000000058"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4D00000000000059"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000005A"
+					item: "plenty_of_golems:golems_staff"
+					type: "item"
+				}
+			]
+			title: "Criador de Golems"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7§eCelestisynth §7traz duas armaduras opostas: Solar Crystal", "§7(ofensiva, queima quem te acerta) e Lunar Stone (defensiva,", "§7reduz dano ao ser atingido). Escolha um lado.", "", "§eForje o elmo de Solar Crystal ou de Lunar Stone."]
+			icon: "celestisynth:solar_crystal_helmet"
+			id: "32B776698697A5FD"
+			rewards: [
+				{
+					type: "item"
+					item: "celestisynth:lunar_stone_helmet"
+					id: "D95C472040061C8A"
+				}
+				{
+					type: "xp"
+					xp: 400
+					id: "FAC788E6AE596E05"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "celestisynth:solar_crystal_helmet"
+					id: "123201B464C0B393"
+				}
+			]
+			title: "Armadura Celestial"
+			x: 14.0d
+			y: 6.0d
+		}
+	]
+	title: "§cMagia de Batalha"
+}

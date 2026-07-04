@@ -1,0 +1,465 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "05_ars_nouveau"
+	group: "AA00000000000002"
+	icon: ["ars_nouveau:novice_spell_book", "ars_nouveau:source_gem", "ars_nouveau:drygmy_charm"]
+	id: "AA05000000000001"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["§7A magia não é encontrada em livros — ela está no mundo.", "§7§eArs Nouveau §7usa §eGlifos §7como blocos de construção:", "§7combine-os para criar feitiços únicos que não existem", "§7em nenhum outro sistema mágico.", "", "§eProcure §eSource Gems §7no mundo — emergem naturalmente", "§7em cavernas e próximos de tocas de fadas.", "§eConsiga pelo menos §e16 unidades.", "", "§6Dica: §7Olhe para o chão em florestas densas à noite.", "§7Os cristais brilham levemente no escuro."]
+			icon: "ars_nouveau:source_gem"
+			id: "4D00000000000002"
+			rewards: [
+				{
+					count: 16
+					id: "4D00000000000003"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "4D00000000000004"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 16L
+					id: "4D00000000000005"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+			]
+			title: "Despertar Arcano"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000002"]
+			description: ["§7O §eNovice Spell Book §7é o primeiro passo para um mago.", "§7Com ele, você armazena e lança seus feitiços personalizados.", "", "§eCrie um §eNovice Spell Book §7do Ars Nouveau.", "§eCrie também uma §eScribing Table §7para criar feitiços.", "", "§6Como criar glifos: §7Use a Scribing Table com Mana Essence!", "§7Combine glifos de §eLançamento + Efeito §7para criar magias."]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "4D00000000000006"
+			rewards: [
+				{
+					count: 2
+					id: "4D00000000000007"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4D00000000000008"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+				{
+					id: "4D00000000000009"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000000A"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+				{
+					id: "4D0000000000000B"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+			]
+			title: "Novato nas Artes"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000006"]
+			description: ["§7Seus primeiros feitiços! Comece pelos básicos:", "§7um §eFeitiço de Fogo §7e um §eFeitiço de Cura§7.", "", "§eCrie um feitiço que cause dano.", "§eCrie um feitiço que te cure.", "§eUse cada um em combate pelo menos uma vez.", "", "§6Exemplo: §7Projectile + Ignite = Bola de Fogo", "§7Self + Heal = Cura Pessoal"]
+			icon: "ars_nouveau:blank_glyph"
+			id: "4D0000000000000C"
+			rewards: [
+				{
+					count: 3
+					id: "4D0000000000000D"
+					item: "ars_nouveau:spell_parchment"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4D0000000000000E"
+					item: "ars_nouveau:source_berry_roll"
+					type: "item"
+				}
+				{
+					id: "4D0000000000000F"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000010"
+					item: "ars_nouveau:blank_glyph"
+					type: "item"
+				}
+				{
+					count: 1
+					id: "BE0ED1E8732E05D5"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+			]
+			title: "Primeiros Feitiços"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D0000000000000C"]
+			description: ["§7Um mago sem Mana é um mortal com um livro bonito.", "§7§eSource Jars §7coletam Mana do ambiente —", "§7luz solar, plantas e criaturas ao redor alimentam o sistema.", "", "§eCrie e posicione pelo menos §e2 Source Jars §7na sua torre.", "", "§6Dica: §7Cerque os Source Jars com flores e plantas.", "§7Quanto mais vida ao redor, mais rápida a coleta de Mana."]
+			icon: "ars_nouveau:source_jar"
+			id: "4D00000000000011"
+			rewards: [
+				{
+					count: 16
+					id: "4D00000000000012"
+					item: "ars_nouveau:sourcestone"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4D00000000000013"
+					item: "ars_nouveau:source_berry_roll"
+					type: "item"
+				}
+				{
+					id: "4D00000000000014"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "4D00000000000015"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+			]
+			title: "Reservatório de Mana"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000011"]
+			description: ["§7O §eApprentice Spell Book §7é uma evolução do Novice.", "§7Ele armazena mais glifos e tem mais poder de conjuração.", "", "§eCrie um §eApprentice Spell Book§7.", "§eConjure feitiços para ao menos §e50 mobs§7.", "", "§6Dica: §7Exp com magia vem do uso — conjure sempre!", "§7Combine glifos como §eProjectile + Burst + Ignite§7!"]
+			icon: "ars_nouveau:apprentice_spell_book"
+			id: "4D00000000000020"
+			rewards: [
+				{
+					id: "4D00000000000021"
+					item: "ars_nouveau:apprentice_spell_book"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4D00000000000022"
+					item: "ars_nouveau:source_berry_roll"
+					type: "item"
+				}
+				{
+					id: "4D00000000000023"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000024"
+					item: "ars_nouveau:apprentice_spell_book"
+					type: "item"
+				}
+			]
+			title: "Aprendiz de Feiticeiro"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000020"]
+			description: ["§7Magos de verdade não trabalham sozinhos.", "§7§eDrygmys §7coletam drops de mobs próximos sem matar ninguém.", "§7§eStarbuncles §7correm pelo mundo transportando itens para você.", "§7§eWhirlisprig §7protegem fazendas e se alimentam de flores.", "", "§eCrie um §eDrygmy Charm §7e invoque seu primeiro familiar.", "", "§6Dica: §7Drygmys precisam de um §eSummon Henge §7e de mobs", "§7próximos (vivos!) para coletar drops — não mate os mobs.", "", "§8§o(Seu familiar trabalha mais que você. Não conte pra ele.)"]
+			icon: "ars_nouveau:drygmy_charm"
+			id: "4D00000000000025"
+			rewards: [
+				{
+					count: 3
+					id: "4D00000000000026"
+					item: "ars_nouveau:whirlisprig_charm"
+					type: "item"
+				}
+				{
+					id: "4D00000000000027"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000028"
+					item: "ars_nouveau:drygmy_charm"
+					type: "item"
+				}
+				{
+					count: 1
+					id: "7B995DAA0EA62EF1"
+					item: "ars_nouveau:wilden_horn"
+					type: "item"
+				}
+			]
+			title: "Familiar Mágico"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000025"]
+			description: ["§7Com Ars Nouveau, você pode encantar suas armaduras", "§7com buffs mágicos permanentes!", "", "§eCrie uma §eArmadura Mágica §7do Ars Nouveau", "§7(Helmet, Chestplate, Leggings ou Boots arcanos).", "§eEnchante ela com pelo menos 1 glifo de armadura.", "", "§6Dica: §7Blazing e Frost podem ser combinados!", "§7Armor glyphs dão resistências e habilidades passivas."]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:battlemage_robes"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4D00000000000029"
+			rewards: [
+				{
+					count: 16
+					id: "4D0000000000002A"
+					item: "ars_nouveau:sourcestone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4D0000000000002B"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+				{
+					id: "4D0000000000002C"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000002D"
+					item: {
+						Count: 1
+						id: "ars_nouveau:battlemage_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Mago Blindado"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000029"]
+			description: ["§7O §eArchmage Spell Book §7é o ápice do Ars Nouveau.", "§7Com ele, feitiços ganham uma dimensão extra de poder.", "", "§eCrie o §eArchmage Spell Book§7.", "§eCrie um feitiço com pelo menos 5 glifos combinados.", "", "§6Dica: §7Projectile + Burst + Ignite + Amplify + Extend", "§7cria uma chuva de fogo devastadora!"]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "4D00000000000032"
+			rewards: [
+				{
+					count: 16
+					id: "4D00000000000033"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "4D00000000000034"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4D00000000000035"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000036"
+					item: "ars_nouveau:archmage_spell_book"
+					type: "item"
+				}
+			]
+			title: "Arquimago"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D00000000000032"]
+			description: ["§7Com todo esse poder arcano, construa uma §eTorre de Mago§7.", "§7Uma torre com pelo menos 3 andares com:", "§7- Scribing Table no 1° andar", "§7- Source Jars em volta", "§7- Familiar no topo", "", "§eConstrua a torre e ative pelo menos §e5 Source Jars§7.", "", "§6Sua torre deve irradiar magia!"]
+			icon: "ars_nouveau:source_jar"
+			id: "4D00000000000044"
+			rewards: [
+				{
+					count: 32
+					id: "4D00000000000045"
+					item: "ars_nouveau:sourcestone"
+					type: "item"
+				}
+				{
+					id: "4D00000000000046"
+					item: "ars_nouveau:vitalic_sourcelink"
+					type: "item"
+				}
+				{
+					id: "4D00000000000047"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					count: 5L
+					id: "4D00000000000048"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+			]
+			title: "Torre do Arquimago"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D00000000000044"]
+			description: ["§7A magia pode automatizar coisas que a tecnologia não consegue.", "§7Combine Ars Nouveau + Create para criar sistemas híbridos!", "", "§eCrie um feitiço de §eSummon §7para invocar um familiar", "§eque trabalhe automaticamente para você.", "§eConfigure um §eWatcher §7do Ars Nouveau para detectar mobs.", "", "§6Dica: §7Starbuncle coletam itens automaticamente!"]
+			icon: "ars_nouveau:starbuncle_charm"
+			id: "4D0000000000004D"
+			rewards: [
+				{
+					count: 3
+					id: "4D0000000000004E"
+					item: "ars_nouveau:starbuncle_charm"
+					type: "item"
+				}
+				{
+					id: "4D0000000000004F"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000050"
+					item: "ars_nouveau:starbuncle_charm"
+					type: "item"
+				}
+				{
+					count: 1
+					id: "F9383D34C52A5247"
+					item: "ars_nouveau:wilden_wing"
+					type: "item"
+				}
+			]
+			title: "Automação Arcana"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D00000000000032"]
+			description: ["§7§lO Arquimago Supremo §r§7usa magia para tudo:", "§7combate, exploração, automação e defesa.", "", "§eTenha equipado simultaneamente:", "§e- Archmage Spell Book", "§e- Pelo menos 2 Artifacts do mod Artifacts", "§e- Armadura mágica completa do Ars Nouveau", "§e- Pelo menos 1 Relic do mod Relics", "", "§6O verdadeiro Arquimago não precisa de nada mais!"]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "4D0000000000005B"
+			rewards: [
+				{
+					count: 16
+					id: "4D0000000000005C"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4D0000000000005D"
+					item: "ars_nouveau:sourcestone"
+					type: "item"
+				}
+				{
+					id: "4D0000000000005E"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000005F"
+					item: "ars_nouveau:archmage_spell_book"
+					type: "item"
+				}
+				{
+					id: "4D00000000000060"
+					item: {
+						Count: 1
+						id: "ars_nouveau:battlemage_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§dO Arquimago Supremo"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7Magia de verdade não é só apontar e clicar — envolve altares,", "§7rituais e um Enchanter's Eye espiando tudo que você faz.", "", "§eConstrua um Arcane Pedestal, um Ritual Brazier e um Enchanter's Eye."]
+			icon: "ars_nouveau:arcane_pedestal"
+			id: "5F7BF09CC2D06605"
+			rewards: [
+				{
+					type: "item"
+					item: "ars_nouveau:warp_scroll"
+					count: 2
+					id: "58E498C6A52245CB"
+				}
+				{
+					type: "xp"
+					xp: 400
+					id: "CF2CF004E6131B14"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "ars_nouveau:arcane_pedestal"
+					id: 1312653071469903
+				}
+				{
+					type: "item"
+					item: "ars_nouveau:ritual_brazier"
+					id: "C950F3F0F633EEAD"
+				}
+				{
+					type: "item"
+					item: "ars_nouveau:enchanters_eye"
+					id: "E83213B914C42C7A"
+				}
+			]
+			title: "Ritual e Enfeitiçamento"
+			x: 10.0d
+			y: 4.0d
+		}
+	]
+	title: "§dArs Nouveau — Magia Arcana"
+}

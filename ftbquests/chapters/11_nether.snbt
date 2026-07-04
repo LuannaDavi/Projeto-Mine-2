@@ -1,0 +1,1100 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "17_desafios"
+	group: ""
+	icon: ["minecraft:nether_star", "mysticalagriculture:awakened_supremium_staff", "aether:valkyrie_lance"]
+	id: "AA17000000000001"
+	order_index: 16
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["§c§lVocê chegou até aqui.", "", "§7Isso por si só já diz muito.", "§7Mas chegar não é suficiente.", "", "§7Estes desafios não foram feitos para serem rápidos.", "§7Cada um exige horas de preparação, recursos raros", "§7e domínio real dos sistemas deste modpack.", "", "§7Não existe atalho. Não existe sorte.", "§7Só trabalho, paciência e vontade.", "", "§c§lProve que você merece o título."]
+			icon: "minecraft:nether_star"
+			id: "459BE27BE8C6B6F9"
+			rewards: [
+				{
+					count: 10
+					id: "03E4BECD0D626570"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "56BFECFD60B07DA1"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "727E75622EEB7326"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "§c§lO Caminho do Lendário"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["§c§lDesafio I: O Armeiro Supremo", "", "§7§eAwakened Supremium §7é o fim da linha do", "§7Mystical Agriculture. Para chegar até ele,", "§7você precisa cultivar, processar e despertar", "§7essências por uma cadeia inteira de materiais.", "", "§eConsiga um set completo de Awakened Supremium:", "§e- Awakened Supremium Helmet", "§e- Awakened Supremium Chestplate", "§e- Awakened Supremium Leggings", "§e- Awakened Supremium Boots", "", "§6Ordem: §7Inferium → Prudentium → Intermedium", "§7→ Superium → Supremium → §6Awakened Supremium§7.", "§7Cada estágio exige essências do anterior."]
+			icon: {
+				Count: 1
+				id: "mysticalagriculture:awakened_supremium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5010FC4E5854B6EF"
+			rewards: [
+				{
+					id: "47FA43371F4F604B"
+					item: "mysticalagriculture:awakened_supremium_sword"
+					type: "item"
+				}
+				{
+					id: "43C3AB54F0F9001F"
+					item: "mysticalagriculture:awakened_supremium_pickaxe"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "0E898B93810886C2"
+					item: "mysticalagriculture:supremium_essence"
+					type: "item"
+				}
+				{
+					count: 40
+					id: "24734BFB78C05B49"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "7F739F75B7E6ED12"
+					type: "xp"
+					xp: 15000
+				}
+			]
+			tasks: [
+				{
+					id: "3450D1DB8677007B"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F5B226E2F95763C"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C2F0B0CBCCDF092"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0BDCEF326778326B"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§6O Armeiro Supremo"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: ["§c§lDesafio II: O Arquimago Completo", "", "§7Dominar um sistema de magia é difícil.", "§7Dominar §ldois §r§7ao ponto de combiná-los", "§7é outra categoria de desafio.", "", "§7§eArs Nouveau §7e §eIron's Spellbooks §7têm progressões", "§7completamente independentes. Para este desafio,", "§7você precisa ter chegado ao topo dos dois.", "", "§eConsiga simultaneamente:", "§e- Archmage Spell Book (Ars Nouveau)", "§e- Netherite Spell Book (Iron's Spellbooks)", "§e- Dragonskin §7— drop raro do Ender Dragon", "§e- Netherite Mage Chestplate (Iron's Spellbooks)"]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "4C930C37813660A7"
+			rewards: [
+				{
+					id: "473E0D2D0CEA06C7"
+					item: "irons_spellbooks:scroll_pouch"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3CDE356BBEAA8D73"
+					item: "irons_spellbooks:scroll"
+					type: "item"
+				}
+				{
+					id: "3CCE0B8122600438"
+					item: "ars_nouveau:spell_prism"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "748D5BE27D86C8A2"
+					item: "ars_nouveau:sourcestone"
+					type: "item"
+				}
+				{
+					count: 50
+					id: "4E2796ED8A0E6E9D"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4CE766523DC3EDC8"
+					type: "xp"
+					xp: 18000
+				}
+			]
+			tasks: [
+				{
+					id: "0175BC9FBD809552"
+					item: "ars_nouveau:archmage_spell_book"
+					type: "item"
+				}
+				{
+					id: "00494B951881DFAC"
+					item: "irons_spellbooks:netherite_spell_book"
+					type: "item"
+				}
+				{
+					id: "10019BF30BEAD4FC"
+					item: "irons_spellbooks:dragonskin"
+					type: "item"
+				}
+				{
+					id: "17EA113D5E1E1EB4"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:netherite_mage_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§dO Arquimago Completo"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: ["§c§lDesafio III: O Senhor das Varas", "", "§7§eMana and Artifice §7tem um sistema de progressão", "§7profundo baseado em varas, runas e rituais arcanos.", "§7Chegar ao topo exige muitas horas de crafting, exploração e falta de emprego.", "", "§eConsiga simultaneamente:", "§e- 1 Grimoire do MNA (qualquer faction)", "§e- 1 Wand de Vinteum Avançado (Manaweaver Wand Advanced)", "§e- 64 Vinteum Ingots", "§e- 1 Eldrin Altar construído e ativo", "", "§6Dica: §7O §eGrimoire §7é o livro de fações do MNA.", "§7O §eEldrin Altar §7processa recursos arcanos de alto nível."]
+			icon: {
+				Count: 1
+				id: "mna:wand_vinteum"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2482C9D37EECC67F"
+			rewards: [
+				{
+					id: "0B85989C0C81440B"
+					item: "mna:arcane_crown"
+					type: "item"
+				}
+				{
+					id: "28BB4CB7A06134E0"
+					item: "mna:mana_resevoir"
+					type: "item"
+				}
+				{
+					id: "06D602BE46E3C0BA"
+					item: "mna:eldritch_orb"
+					type: "item"
+				}
+				{
+					count: 45
+					id: "235C9C3B2D449EE8"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "7F0D3554698E8EA5"
+					type: "xp"
+					xp: 15000
+				}
+			]
+			tasks: [
+				{
+					id: "2B8CBA75120C75F2"
+					item: "mna:grimoire"
+					type: "item"
+				}
+				{
+					id: "6640E047D7CBE837"
+					item: "mna:manaweaver_wand_advanced"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "68975E3BA1959ECB"
+					item: "mna:vinteum_ingot"
+					type: "item"
+				}
+				{
+					id: "18073B427C6BB460"
+					item: "mna:eldrin_altar"
+					type: "item"
+				}
+			]
+			title: "§5O Senhor das Varas"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: ["§c§lDesafio IV: O Engenheiro de Ferro", "", "§7A automação máxima do §eCreate §7exige recursos raros.", "§7A Steam Engine em escala industrial consome enormes", "§7quantidades de cobre e latão processado.", "", "§eConsiga simultaneamente:", "§e- 512 Brass Ingots (Create)", "§e- 3 Steam Engines construídas e ativas", "§e- 1 Netherite Backtank (Create)", "§e- 1 Hyper Experience Bottle (Create Enchantment Industry)", "", "§6Dica: §7Netherite Backtank guarda ar comprimido para", "§7respirar no Nether e no End sem poções!"]
+			icon: "create:netherite_backtank"
+			id: "72B166828B115448"
+			rewards: [
+				{
+					id: "57627DBAC7BB18DF"
+					item: "create_jetpack:netherite_jetpack"
+					type: "item"
+				}
+				{
+					id: "350D63CBD0E29106"
+					item: "create:linked_controller"
+					type: "item"
+				}
+				{
+					id: "05BFAF5112886333"
+					item: "create:schematicannon"
+					type: "item"
+				}
+				{
+					count: 50
+					id: "5C7DD8658465A675"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "25D49F845AAD5F5D"
+					type: "xp"
+					xp: 15000
+				}
+			]
+			tasks: [
+				{
+					count: 512L
+					id: "0CC8B753BA931F4E"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "19AC569D4C513548"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					id: "422488282DEA6601"
+					item: "create:netherite_backtank"
+					type: "item"
+				}
+				{
+					id: "7CFD3A162F778A5C"
+					item: "create_enchantment_industry:hyper_experience_bottle"
+					type: "item"
+				}
+			]
+			title: "§6O Engenheiro de Ferro"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: ["§c§lDesafio V: Conquistador dos Céus", "", "§7O §eAether §7guarda os itens mais poderosos das alturas.", "§7Chegar ao topo do Aether exige enfrentar suas três", "§7dungeons e a Valkyrie Queen — a governante do céu.", "", "§eConsiga simultaneamente:", "§e- 1 Valkyrie Lance (drop da Valkyrie Queen)", "§e- Armadura completa de §eGravitite §7(4 peças)", "§e- 1 Phoenix Bow (drop da dungeon dourada)", "§e- 32 Zanite Gemstones", "", "§6Dica: §7Gravitite levita quando exposto à luz do sol —", "§7minere-o à noite ou com Silk Touch!"]
+			icon: {
+				Count: 1
+				id: "aether:gravitite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "05DE9367682739A8"
+			rewards: [
+				{
+					id: "07D0377FC8B04EA3"
+					item: "aether:valkyrie_cape"
+					type: "item"
+				}
+				{
+					id: "3F683AD95A01C83B"
+					item: {
+						Count: 1
+						id: "aether:zanite_pendant"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4141CA3363CA76D3"
+					item: {
+						Count: 1
+						id: "aether:phoenix_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 50
+					id: "69092DFFF189858E"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4F8C950559E4D20F"
+					type: "xp"
+					xp: 20000
+				}
+			]
+			tasks: [
+				{
+					id: "598512B999286D26"
+					item: {
+						Count: 1
+						id: "aether:valkyrie_lance"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63993CA218A23F36"
+					item: {
+						Count: 1
+						id: "aether:gravitite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1AF4F6063A865698"
+					item: {
+						Count: 1
+						id: "aether:gravitite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "324DB7EF99A61C44"
+					item: {
+						Count: 1
+						id: "aether:gravitite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7266F06DA69E4B84"
+					item: {
+						Count: 1
+						id: "aether:gravitite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28BF9E3676BE0EFB"
+					item: {
+						Count: 1
+						id: "aether:phoenix_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "4B5F316B2ABEF368"
+					item: "aether:zanite_gemstone"
+					type: "item"
+				}
+			]
+			title: "§eConquistador dos Céus"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: ["§c§lDesafio VII: Caçador de Chefes", "", "§7Os bosses de mods são os inimigos mais poderosos do modpack.", "§7Provar que você os dominou exige os drops mais raros de cada um.", "", "§eConsiga todos estes drops de bosses:", "§e- Sol Visage (drop do Barako, Mowzie's Mobs)", "§e- Ice Crystal (drop do Frostmaw, Mowzie's Mobs)", "§e- Seedof Chaos (drop de Born in Chaos)", "§e- The Bossdexium (drop de Bossominium)", "§e- Malkuth Trophy (drop de FD Bosses)", "§e- Frozen Fist (drop de Bosses Rise)", "", "§6Dica: §7Itens de boss têm baixíssima chance de drop.", "§7Prepare-se para múltiplas tentativas."]
+			icon: "mowziesmobs:sol_visage"
+			id: "57FB4D6C1F18453E"
+			rewards: [
+				{
+					id: "393F63B691D96183"
+					item: {
+						Count: 1
+						id: "mowziesmobs:earthrend_gauntlet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E07AD8F796D265B"
+					item: {
+						Count: 1
+						id: "legendary_monsters:soul_great_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6CD80B47B8C600EE"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "11D2EEEB9518119A"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "59BE8B7C1591E558"
+					type: "xp"
+					xp: 25000
+				}
+			]
+			tasks: [
+				{
+					advancement: "mowziesmobs:kill_umvuthi"
+					criterion: "barako"
+					id: "F9929E6801A56C5F"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:kill_frostmaw"
+					criterion: "frostmaw"
+					id: "CC719BACBBECCAC5"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:chaos_knight"
+					criterion: "chaos_knight_0"
+					id: "96B59FADD60A4053"
+					type: "advancement"
+				}
+				{
+					id: "6C494FE538BCBB9F"
+					item: "bossominium:the_bossdexium"
+					type: "item"
+				}
+				{
+					id: "488109BD4D6067DB"
+					item: "fdbosses:malkuth_trophy"
+					type: "item"
+				}
+				{
+					id: "7734AEED73A36709"
+					item: {
+						Count: 1
+						id: "block_factorys_bosses:frozen_fist"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§cCaçador de Chefes"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: ["§c§lDesafio VIII: Mochileiro do Infinito", "", "§7A mochila de Netherite do §eSophisticated Backpacks", "§7com Infinity Upgrade, Everlasting e Omega Stack.", "§7Porque aparentemente carregar 2304 itens não era suficiente", "§7e você precisava de §lmais§r§7.", "", "§eConsiga:", "§e- 1 Netherite Backpack", "§e- 1 Infinity Upgrade instalado", "§e- 1 Everlasting Upgrade instalado", "§e- 1 Stack Upgrade Omega Tier instalado", "", "§6Dica: §7O Infinity Upgrade é caro e difícil.", "§7Mas você chegou ao capítulo 10, então provavelmente", "§7já não mede esforço em termos de horas gastas.", "", "§8§o(É tudo sobre inventário. Sempre foi.)"]
+			icon: "sophisticatedbackpacks:netherite_backpack"
+			id: "06C9265A4A347B71"
+			rewards: [
+				{
+					id: "0D98F46D3B061688"
+					item: "sophisticatedbackpacks:inception_upgrade"
+					type: "item"
+				}
+				{
+					id: "0CC768FFA130EB6A"
+					item: "sophisticatedbackpacks:survival_infinity_upgrade"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "04D0161AEC99DD97"
+					item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+					type: "item"
+				}
+				{
+					count: 50
+					id: "21F8F4F887A8167E"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "3DBE298D438A32BA"
+					type: "xp"
+					xp: 18000
+				}
+			]
+			tasks: [
+				{
+					id: "0F502992A28EEB57"
+					item: "sophisticatedbackpacks:netherite_backpack"
+					type: "item"
+				}
+				{
+					id: "3ACBE0BBC1E80A6C"
+					item: "sophisticatedbackpacks:infinity_upgrade"
+					type: "item"
+				}
+				{
+					id: "32E5C6B156FA6B89"
+					item: "sophisticatedbackpacks:everlasting_upgrade"
+					type: "item"
+				}
+				{
+					id: "46BCC3E5E7B2E90F"
+					item: "sophisticatedbackpacks:stack_upgrade_omega_tier"
+					type: "item"
+				}
+			]
+			title: "§bMochileiro do Infinito"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: ["§c§lDesafio IX: Arsenal da Ordem", "", "§7§eKnight Quest §7tem dezenas de armaduras temáticas.", "§7As mais raras são drops de bosses e mini-bosses", "§7espalhados pelo mundo, cada um com habilidades únicas.", "", "§eConsiga 5 sets de armadura §ediferentes §7do Knight Quest:", "§e(qualquer combinação de peças distintas de sets)", "", "§eMais: 1 Chaotic Essence, 1 Great Essence e 1 Radiant Essence", "§7(as essências mais raras do mod)", "", "§6Dica: §7As Essências caem de bosses específicos do Knight Quest.", "§7Radiant Essence é a mais difícil — boss de luz."]
+			icon: {
+				Count: 1
+				id: "knightquest:warlord_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1314677B1371FE42"
+			rewards: [
+				{
+					id: "1100C4D2A109EE62"
+					item: {
+						Count: 1
+						id: "knightquest:uchigatana_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64934C3CA1A1244F"
+					item: "knightquest:great_chalice"
+					type: "item"
+				}
+				{
+					count: 50
+					id: "224B4C5457D32550"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "573627B1F0E2DDC6"
+					type: "xp"
+					xp: 20000
+				}
+			]
+			tasks: [
+				{
+					count: 20L
+					id: "08EBA92FF890F7FA"
+					item: {
+						Count: 1
+						id: "knightquest:warlord_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FB34DC1D1250923"
+					item: "knightquest:chaotic_essence"
+					type: "item"
+				}
+				{
+					id: "1D6751953836309F"
+					item: "knightquest:great_essence"
+					type: "item"
+				}
+				{
+					id: "585A52EB75606925"
+					item: "knightquest:radiant_essence"
+					type: "item"
+				}
+			]
+			title: "§7Arsenal da Ordem"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: ["§c§l✦ DESAFIO FINAL I: A Grande Fábrica Arcana ✦", "", "§7A combinação entre §eCreate §7e §eArs Nouveau§7:", "§7uma fábrica que automatiza Mana §epor meio da indústria§7.", "", "§eConsiga simultâneos:", "§e- 100 Source Jars do Ars Nouveau ativos", "§e- 1000 Brass Ingots produzidos automaticamente", "§e- 64 Awakened Supremium Essence", "§e- 5 Hyper Experience Bottles", "§e- 1 Linked Controller do Create", "", "§7Provar esse domínio requer um §lmundo inteiro§r§7 funcionando.", "§6Recompensa §7proporcional ao esforço."]
+			icon: "create:linked_controller"
+			id: "69A1B87011C5899B"
+			rewards: [
+				{
+					id: "052F483B2656AAF2"
+					item: "mysticalagriculture:awakened_supremium_staff"
+					type: "item"
+				}
+				{
+					id: "478BBE012BF3FF84"
+					item: "ars_nouveau:spell_prism"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "4519D627ECC31762"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 100
+					id: "538C4EAE681AB596"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "13244D9298749114"
+					type: "xp"
+					xp: 40000
+				}
+			]
+			tasks: [
+				{
+					count: 100L
+					id: "06E88894B12AA8C5"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					count: 1000L
+					id: "327D05E747F509E9"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "248B125580195200"
+					item: "mysticalagriculture:awakened_supremium_essence"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "70BF4E9C1BF091A1"
+					item: "create_enchantment_industry:hyper_experience_bottle"
+					type: "item"
+				}
+				{
+					id: "519D9172180D1C6A"
+					item: "create:linked_controller"
+					type: "item"
+				}
+			]
+			title: "§6§lA Grande Fábrica Arcana"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: ["§c§l✦ DESAFIO FINAL III: O Guerreiro Absoluto ✦", "", "§7O pico do equipamento de combate deste modpack:", "§7materiais de mods combinados com os melhores recursos", "§7de todas as dimensões exploradas.", "", "§eConsiga simultaneamente:", "§e- Set completo Awakened Supremium (4 peças)", "§e- Set completo Gravitite do Aether (4 peças)", "§e- Netherite Backpack com Infinity + Everlasting upgrades", "§e- Radiant Essence e Chaotic Essence (Knight Quest)", "§e- Valkyrie Cape (Aether)", "", "§7O guerreiro que possui isso sobrevive a qualquer coisa."]
+			icon: {
+				Count: 1
+				id: "mysticalagriculture:awakened_supremium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0EE3CF886DD39C10"
+			rewards: [
+				{
+					id: "2D52F717C8D0240D"
+					item: "mysticalagriculture:awakened_supremium_scythe"
+					type: "item"
+				}
+				{
+					id: "2ED639563D345C11"
+					item: {
+						Count: 1
+						id: "aether:valkyrie_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46DF8784957BCF8A"
+					item: {
+						Count: 1
+						id: "knightquest:uchigatana_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "4A728F87BE8531F9"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "55979CCF940F6E45"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "18C3E1C1981B10EB"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "472985F41020B25C"
+					type: "xp"
+					xp: 50000
+				}
+			]
+			tasks: [
+				{
+					id: "6662CEAA245C6716"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D5882F61C2F9F8A"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EA58E5EFAB6605C"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5AABBDECAB575866"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "074CC784D62C7464"
+					item: {
+						Count: 1
+						id: "aether:gravitite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38003ACDB3BDF7F1"
+					item: {
+						Count: 1
+						id: "aether:gravitite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46C1C275DB45B5A0"
+					item: {
+						Count: 1
+						id: "aether:gravitite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "54BCB7BDC09642CD"
+					item: {
+						Count: 1
+						id: "aether:gravitite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "471B0A146595EF36"
+					item: "sophisticatedbackpacks:netherite_backpack"
+					type: "item"
+				}
+				{
+					id: "6A6FD1789F324963"
+					item: "knightquest:radiant_essence"
+					type: "item"
+				}
+				{
+					id: "013A002CE7DC9156"
+					item: "knightquest:chaotic_essence"
+					type: "item"
+				}
+				{
+					id: "1C79C91877365494"
+					item: "aether:valkyrie_cape"
+					type: "item"
+				}
+			]
+			title: "§6§lO Guerreiro Absoluto"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2B00000000000060", "5E00000000000007", "5E00000000000016"]
+			description: ["§7Você foi ao Nether e sobreviveu.", "§7Você venceu o Dragão no End.", "§7Cruzou a Twilight Forest e derrotou o Ur-Ghast.", "§7Escalou o Aether e tomou a lança da Valkyrie Queen.", "§7Explorou os dois céus do Blue Skies.", "", "§7Nenhuma porta fechada resistiu a você.", "§7Nenhuma dimensão te expulsou permanentemente.", "", "§5§lVocê conquistou todos os mundos."]
+			icon: "minecraft:ender_eye"
+			id: "728DA301E0D54BC8"
+			rewards: [
+				{
+					count: 30
+					id: "161CC24F9E0B1F7F"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7F53CD5038702892"
+					item: "aether:ambrosium_shard"
+					type: "item"
+				}
+				{
+					id: "736D430F9A5BCF3F"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			tasks: [
+				{
+					id: "45A9DEEF2FF547FB"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
+			title: "§5§lConquistador de Dimensões"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7Com os recursos de todas as dimensões em mãos,", "§7você pode criar itens impossivelmente raros.", "", "§eCrie um item que use materiais de pelo menos", "§e§l3 dimensões diferentes §r§7(ex: Netherite + Aether Ore + End Crystal).", "", "§6Cada dimensão contribui com algo único.", "§7Combine para criar o maior poder possível!"]
+			icon: "minecraft:netherite_ingot"
+			id: "20D4D55C4FE40BCE"
+			rewards: [
+				{
+					count: 5
+					id: "55490419440EAE4C"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "7927356E7DE2DC66"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 20
+					id: "5BB2FDE175536AC0"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "599446B5C3AF99F5"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			tasks: [
+				{
+					id: "72C6E1EB2A0FB062"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "2F106D9BD641E043"
+					item: "aether:zanite_gemstone"
+					type: "item"
+				}
+				{
+					id: "2BE20DCA8E08E736"
+					item: "minecraft:end_crystal"
+					type: "item"
+				}
+			]
+			title: "Poder das Dimensões"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7Você já matou deuses e desmontou dimensões. Agora prove que", "§7também sabe cuidar de bichinho — o desafio final da paciência.", "", "§eTenha ao menos: um Alfalfa Bale (SWEM), um Moa domado (Aether)", "§ee um Raw Llama Cheese (DragN's Livestock Overhaul)."]
+			icon: "minecraft:nether_star"
+			id: "4928328A642FB290"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:golden_apple"
+					count: 8
+					id: "898E29F8584D4E0A"
+				}
+				{
+					type: "item"
+					item: "minecraft:diamond"
+					count: 16
+					id: "F53D3A00E6019360"
+				}
+				{
+					type: "xp"
+					xp: 12000
+					id: "E18EE61ED706C74E"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "swem:alfalfa_bale"
+					id: "4D45D2F5E0153BF5"
+				}
+				{
+					type: "advancement"
+					advancement: "aether:incubate_moa"
+					criterion: "incubate_moa"
+					id: "6FFFA1168B9EAEF0"
+				}
+				{
+					type: "item"
+					item: "dragnlivestock:raw_llama_cheese"
+					id: "9CD2C1D4C0994D36"
+				}
+			]
+			title: "§eO Domador Definitivo"
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7Não basta jogar o modpack — é preciso ter posse física de", "§7pelo menos um item lendário de cada grande sistema.", "", "§eTenha em mãos, ao mesmo tempo: Awakened Supremium Essence,", "§eum Relic equipado, e um Artifact equipado."]
+			icon: "minecraft:nether_star"
+			id: "9DA5B02197ED277F"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					count: 8
+					id: "B148E37573017C2C"
+				}
+				{
+					type: "item"
+					item: "minecraft:experience_bottle"
+					count: 64
+					id: "62BB10FA8D50A34D"
+				}
+				{
+					type: "xp"
+					xp: 14000
+					id: "CFC794B13453A5D2"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "mysticalagriculture:awakened_supremium_essence"
+					count: 4
+					id: "8485FE873BFEF194"
+				}
+				{
+					type: "item"
+					item: "relics:bastion_ring"
+					id: "719D6BA6009188E0"
+				}
+				{
+					type: "item"
+					item: "artifacts:crystal_heart"
+					id: "6A8304186AADE932"
+				}
+			]
+			title: "§bO Colecionador Absoluto"
+			x: 18.0d
+			y: 8.0d
+		}
+	]
+	title: "§c§lDesafios Finais"
+}
