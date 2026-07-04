@@ -1,0 +1,405 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "13_end"
+	group: "AA00000000000005"
+	icon: ["minecraft:ender_eye", "outer_end:cobalt_crystal_chestplate", "minecraft:elytra"]
+	id: "AA13000000000001"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["§7Com Blaze Rods e Ender Pearls, você tem os ingredientes", "§7para criar §eOlhos do End §7e encontrar a Fortaleza.", "", "§eCrie pelo menos §e12 Eyes of Ender §7e encontre a Fortaleza.", "§eConserte o §eEnd Portal §7e entre no End.", "", "§6Dica: §7Siga a direção que o olho voa antes de quebrar!", "§7Costuma estar abaixo de uma stronghold subterrânea."]
+			icon: "minecraft:ender_eye"
+			id: "6701564232D0A003"
+			rewards: [
+				{
+					count: 8
+					id: "325F7E21105ABB5A"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3D60E66A4778273E"
+					item: "minecraft:end_stone"
+					type: "item"
+				}
+				{
+					id: "0F07057C1032D41E"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:end/root"
+					criterion: ""
+					id: "5096D9346055E5CF"
+					type: "advancement"
+				}
+			]
+			title: "Porta para o Fim"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["§7O End expandido pelo §eThe Outer End §7tem:", "§7- Florestas Azure com madeira própria", "§7- Cristais Cobalto, Menta e Rosa, cada um com armadura única", "§7- O Stalker, uma criatura nova rondando as ilhas", "", "§eForje uma peça de armadura de §eCobalt Crystal§7,", "§eo material de tier mais alto do mod.", "", "§6Dica: §7Os cristais aparecem como veios (buds) nas ilhas —", "§7explore com cuidado, o Stalker é hostil e persistente."]
+			icon: "outer_end:cobalt_crystal_chestplate"
+			id: "3DCA41D3099C142D"
+			rewards: [
+				{
+					count: 16
+					id: "2367760BF0588D98"
+					item: "minecraft:chorus_fruit"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "3CD2D3AB8EAC422D"
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+				{
+					id: "24AC04319C64E85C"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "5096D9346055E5DA"
+					item: "outer_end:cobalt_crystal_chestplate"
+					type: "item"
+				}
+				{
+					id: "4552889C70954039"
+					item: "outer_end:cobalt_crystal_leggings"
+					type: "item"
+				}
+			]
+			title: "O Fim Expandido"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DCA41D3099C142D"]
+			description: ["§7§eThe Outer End §7tem três famílias de cristais:", "§7§eCobalt §7(azul, o mais poderoso), §eMint §7(verde,", "§7com propriedades de velocidade) e §eRose §7(rosa, resistência).", "§7Cada cristal tem armadura, arcos e lanternas exclusivas.", "", "§eComplete o conjunto: colete pelo menos §e1 armadura", "§ede §eMint Crystal §7(capacete ou peitoral).", "", "§6Dica: §7Cristais aparecem como buds (flores) nas paredes", "§7das ilhas flutuantes — procure brilho azulado ou rosado."]
+			icon: "outer_end:mint_crystal_chestplate"
+			id: "08D0000000000501"
+			rewards: [
+				{
+					count: 8
+					id: "08D0000000000502"
+					item: "outer_end:cobalt_crystal_shard"
+					type: "item"
+				}
+				{
+					id: "08D0000000000503"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					id: "08D0000000000504"
+					item: "outer_end:mint_crystal_chestplate"
+					type: "item"
+				}
+				{
+					id: "96EEE725DA60E00F"
+					item: "outer_end:mint_crystal_leggings"
+					type: "item"
+				}
+			]
+			title: "Cristais do Fim"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: ["§7§eMoog's End Structures §7adiciona estruturas únicas ao End —", "§7ruínas, torres e construções antigas do povo Enderman,", "§7geradas naturalmente pelo mundo.", "", "§eTraga 4 blocos de Purpur recolhidos nessas ruínas.", "", "§6Dica: §7O mod não deixa rastro verificável de qual estrutura", "§7você visitou — então essa parte é confiança mesmo. Mas procure", "§7por silhuetas diferentes das ilhas vanilla, elas valem a pena."]
+			icon: "minecraft:end_stone_bricks"
+			id: "40FD166EC60389ED"
+			rewards: [
+				{
+					count: 8
+					id: "08808DF0DA1CC09E"
+					item: "minecraft:purpur_block"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "597A758D1FC0B46B"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "7CE3E158EB4D7865"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "149B9DAA79624FEA"
+					item: "minecraft:purpur_block"
+					type: "item"
+				}
+			]
+			title: "Ruínas do Fim"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: ["§7§eYung's Better End Island §7refaz a ilha principal do End", "§7tornando-a muito mais imponente e detalhada.", "", "§eExplore a §eMain End Island §7renovada pelo YUNG's.", "§eEncontre o §eDragon's Nest §7(ninho do dragão) único.", "", "§6Dica: §7A ilha reformulada tem áreas secretas!", "§7Explore cada canto antes de enfrentar o dragão."]
+			icon: "minecraft:end_portal_frame"
+			id: "11DDBC23897B6A43"
+			rewards: [
+				{
+					count: 8
+					id: "247F85271A5FBB7E"
+					item: "minecraft:end_stone_bricks"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "47D35E3419950249"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "394AA1FE070464A1"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "5C35B989F63FEF2A"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+			]
+			title: "A Ilha Renovada"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: ["§7O §eEnder Dragon §7é o boss final do End vanilla.", "§7Destrua os §eEnd Crystals §7nas torres antes de atacar o dragão.", "§7Cada crystal revive sua vida — não destruí-los impossibilita a luta.", "", "§eDerrote o §eEnder Dragon §7pela primeira vez.", "", "§6Dica: §7Arco com Infinity é essencial para os crystals altos.", "§7A saída final (portal) aparece ao centro após a morte do Dragão.", "§8§o(Dezoito horas de jogo pra isso. Aproveite o momento.)"]
+			icon: "minecraft:ender_eye"
+			id: "EN0000000000001"
+			rewards: [
+				{
+					id: "EN000000000000B"
+					item: "minecraft:dragon_egg"
+					type: "item"
+				}
+				{
+					id: "EN000000000000C"
+					item: "minecraft:end_crystal"
+					type: "item"
+				}
+				{
+					id: "EN000000000000D"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:end/kill_dragon"
+					criterion: "killed_dragon"
+					id: "EN000000000000A"
+					type: "advancement"
+				}
+			]
+			title: "O Dragão do Fim"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["EN0000000000001"]
+			description: ["§7Após matar o Dragão, o §eEnd externo §7abre — ilhas flutuantes", "§7com §eEnd Cities §7e §eEnd Ships§7.", "§7O §eEnd Ship §7de cada city tem um §eElytra §7na sala do tesouro.", "§7Elytra + Foguetes = voo verdadeiro. Prioridade máxima.", "", "§eEncontre uma §eEnd City §7e colete um §eElytra§7.", "", "§6Dica: §7Use um §eChorus Fruit §7para teleportar em caso de queda.", "§7End Ships podem estar nos quatro lados da city — procure todos."]
+			icon: "minecraft:elytra"
+			id: "EN0000000000011"
+			rewards: [
+				{
+					id: "EN000000000001B"
+					item: "minecraft:elytra"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "EN000000000001C"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
+				{
+					id: "EN000000000001D"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:end/find_end_city"
+					criterion: "find_end_city"
+					id: "EN000000000001A"
+					type: "advancement"
+				}
+			]
+			title: "End Cities e Elytra"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["EN0000000000011"]
+			description: ["§7§eShulkers §7são os habitantes das End Cities.", "§7Eles disparam projéteis que causam §eLevitation §7— efeito de levitação.", "§7A §eShulker Shell §7é obtida derrotando-os e é usada para", "§7craftar §eShulker Boxes §7— o melhor inventário portátil do jogo.", "", "§eDerrote §e4 Shulkers §7e colete §e2 Shulker Shells§7.", "", "§6Dica: §7Shulkers se fecham na concha quando tomam dano —", "§7espere abrirem para atacar novamente."]
+			icon: "minecraft:shulker_shell"
+			id: "EN0000000000021"
+			rewards: [
+				{
+					count: 2
+					id: "EN000000000002B"
+					item: "minecraft:shulker_box"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "EN000000000002C"
+					item: "minecraft:purpur_block"
+					type: "item"
+				}
+				{
+					id: "EN000000000002D"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "EN000000000002A"
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+				{
+					id: "83467309A0B11E0C"
+					item: "minecraft:shulker_box"
+					type: "item"
+				}
+			]
+			title: "Shulkers e Caixas"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["EN0000000000021"]
+			description: ["§7O §eEnder Dragon §7pode ser reinvocado colocando §e4 End Crystals", "§7nos 4 lados do portal central do End.", "§7Cada reinvocação regenera as End Crystals nas torres.", "§7Derrote-o novamente para obter §eDragon Breath §7em quantidade.", "", "§eReinvoque e derrote o §eEnder Dragon §7pela segunda vez.", "", "§6Dica: §7Dragon Breath é usado para fazer §ePoções Persistentes§7.", "§7Cada derrota do Dragão também libera um §eEnd Gateway §7novo."]
+			icon: "minecraft:dragon_breath"
+			id: "EN0000000000031"
+			rewards: [
+				{
+					count: 4
+					id: "EN000000000003B"
+					item: "minecraft:dragon_breath"
+					type: "item"
+				}
+				{
+					id: "EN000000000003C"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:end/respawn_dragon"
+					criterion: "respawn_dragon"
+					id: "EN000000000003A"
+					type: "advancement"
+				}
+			]
+			title: "Respirar o Dragão de Novo"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["EN0000000000031"]
+			description: ["§7§eThe Outer End §7expande o End com ilhas de §eCristais§7:", "§eCobalt §7(azul, mais forte), §eMint §7(verde, velocidade)", "§7e §eRose §7(rosa, resistência). Cada um tem armadura completa.", "", "§eForje o conjunto completo de §eArmadura de Cobalt Crystal§7.", "§7(tier mais alto do mod)", "", "§6Dica: §7Crystals aparecem como buds brilhantes nas ilhas.", "§7Stalkers habitam as ilhas de cristal — cuidado com emboscadas."]
+			icon: "outer_end:cobalt_crystal_chestplate"
+			id: "EN0000000000041"
+			rewards: [
+				{
+					count: 8
+					id: "EN000000000004C"
+					item: "outer_end:cobalt_crystal_shard"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "EN000000000004D"
+					item: "outer_end:cobalt_crystal_arrow"
+					type: "item"
+				}
+				{
+					id: "EN000000000004E"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					id: "EN000000000004A"
+					item: "outer_end:cobalt_crystal_chestplate"
+					type: "item"
+				}
+				{
+					id: "EN000000000004B"
+					item: "outer_end:cobalt_crystal_helmet"
+					type: "item"
+				}
+			]
+			title: "O Cristal Cobalto — Outer End"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["EN0000000000041"]
+			description: ["§7Com §eElytra §7e a dimensão do End completamente explorada,", "§7você domina o espaço entre mundos.", "§7§eEnd Gateways §7teleportam para ilhas externas mais distantes.", "§7As ilhas mais remotas têm biomas únicos do §eOuter End§7.", "", "§eUse um §eEnd Gateway §7para explorar as ilhas mais distantes.", "§eSobreviva por §e30 minutos §7no End externo sem voltar.", "", "§6Dica: §7End Gateways aparecem a cada morte do Dragão.", "§7Carregue Chorus Fruit como segurança em caso de queda."]
+			icon: "minecraft:chorus_flower"
+			id: "EN0000000000051"
+			rewards: [
+				{
+					count: 16
+					id: "EN000000000005B"
+					item: "minecraft:chorus_fruit"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "EN000000000005C"
+					item: "outer_end:cobalt_crystal_shard"
+					type: "item"
+				}
+				{
+					id: "EN000000000005D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:end/explore_end_island"
+					criterion: "explored_end_island"
+					id: "EN000000000005A"
+					type: "advancement"
+				}
+			]
+			title: "Além das Estrelas"
+			x: 10.0d
+			y: 0.0d
+		}
+	]
+	title: "§5O Fim e Além"
+}

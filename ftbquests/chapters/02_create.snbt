@@ -1,0 +1,797 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "12_twilight"
+	group: "AA00000000000005"
+	icon: ["twilightforest:naga_trophy", "twilightforest:hydra_trophy", "twilightforest:ur_ghast_trophy"]
+	id: "AA12000000000001"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2B0000000000000C"]
+			description: ["§7Existe uma floresta onde o sol nunca se põe.", "§7A §eTwilight Forest §7é uma dimensão inteira de exploração —", "§7bosses sequenciais, masmorras labirínticas e itens", "§7impossíveis de obter em qualquer outro lugar.", "", "§eConstrua o portal da Twilight Forest:", "§7Crie um lago 2x2, coloque flores ao redor", "§7e jogue um diamante na água.", "", "§6Atenção: §7Os bosses têm uma §eordem obrigatória§7.", "§7Ignorar a sequência deixa certas áreas inacessíveis."]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "2B00000000000016"
+			rewards: [
+				{
+					count: 5
+					id: "2B00000000000017"
+					item: "twilightforest:magic_map_focus"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2B00000000000018"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "2B00000000000019"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:root"
+					criterion: "in_tf"
+					id: "2B0000000000001A"
+					type: "advancement"
+				}
+			]
+			title: "A Floresta Encantada"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B00000000000016"]
+			description: ["§7A Twilight Forest tem um sistema de progressão de bosses.", "§7Comece pelo §eNaga §7— a serpente que ronda a floresta.", "", "§eDerrote o Naga na Twilight Forest.", "§7Ele circula uma arena de pedra circular.", "", "§6Dica: §7Escudo ou armadura de diamante são essenciais!", "§7O Naga carrega carga e pode te jogar longe."]
+			icon: "twilightforest:naga_scale"
+			id: "2B0000000000002E"
+			rewards: [
+				{
+					id: "2B0000000000002F"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2B00000000000030"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2B00000000000031"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_naga"
+					criterion: "trophy"
+					id: "2B00000000000032"
+					type: "advancement"
+				}
+			]
+			title: "A Serpente da Floresta"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B0000000000002E"]
+			description: ["§7O Lich é o segundo boss da Twilight Forest.", "§7Ele habita uma torre alta e lança feitiços mortais.", "", "§eDerrote o Twilight Lich em sua torre.", "", "§6Dica: §7Destrua os escudos dele primeiro!", "§7Tenha flechas em quantidade — ele teleporta muito."]
+			icon: "twilightforest:lich_trophy"
+			id: "2B00000000000033"
+			rewards: [
+				{
+					id: "2B00000000000034"
+					item: {
+						Count: 1
+						id: "twilightforest:twilight_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2B00000000000035"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2B00000000000036"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_lich"
+					criterion: "kill_lich"
+					id: "2B00000000000037"
+					type: "advancement"
+				}
+			]
+			title: "O Lich Eterno"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B00000000000033"]
+			description: ["§7O Snow Queen é o terceiro boss maior da Twilight Forest.", "§7Ela habita o Glacier Palace, um palácio de gelo.", "", "§eDerrote a Snow Queen na Twilight Forest.", "", "§6Dica: §7O Fiery Sword (do Naga) funciona bem contra ela!", "§7Evite o espaço aberto — use pilares de gelo como cobertura."]
+			icon: "twilightforest:snow_queen_trophy"
+			id: "2B0000000000005B"
+			rewards: [
+				{
+					count: 16
+					id: "2B0000000000005C"
+					item: "minecraft:packed_ice"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2B0000000000005D"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2B0000000000005E"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_glacier"
+					criterion: "trophy"
+					id: "2B0000000000005F"
+					type: "advancement"
+				}
+			]
+			title: "A Rainha do Gelo"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B0000000000005B"]
+			description: ["§7O §eUrghast §7é o boss final da Twilight Forest.", "§7Uma criatura colossal de fogo que guarda as Dark Towers.", "", "§eDerrote o Ur-Ghast na Dark Tower da Twilight Forest.", "", "§6Dica: §7Coletores de Lágrimas (Carminite Ghastguard) ajudam!", "§7A torre é repleta de armadilhas carminite — tome cuidado."]
+			icon: "twilightforest:ur_ghast_trophy"
+			id: "2B00000000000060"
+			rewards: [
+				{
+					id: "2B00000000000061"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2B00000000000062"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2B00000000000063"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_ur_ghast"
+					criterion: "trophy"
+					id: "2B00000000000064"
+					type: "advancement"
+				}
+			]
+			title: "O Urghast das Sombras"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B00000000000033"]
+			description: ["§7No coração do §eLabirinto da Floresta Crepuscular§7", "§7existe o §cMinoshroom §7— um minotauro-cogumelo que guarda", "§7o caminho para a §cHidra§7, a criatura de múltiplas cabeças", "§7que regenera a cada golpe mal dado.", "", "§eDerrote a §cHidra §7na Twilight Forest.", "§eConsiga o §eHydra Chop §7como prova da vitória.", "", "§6Dica: §7Foque em uma cabeça por vez — espadas §eFiery §7", "§7cauterizam e impedem a regeneração das cabeças cortadas!", "", "§8§o(Três cabeças. Depois cinco. Depois sete. Boa sorte.)"]
+			icon: "twilightforest:hydra_trophy"
+			id: "2B00000000000201"
+			rewards: [
+				{
+					id: "2B00000000000202"
+					item: "twilightforest:fiery_sword"
+					type: "item"
+				}
+				{
+					id: "2B00000000000203"
+					item: "twilightforest:fiery_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2B00000000000204"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2B00000000000205"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_hydra"
+					criterion: "kill_hydra"
+					id: "2B00000000000206"
+					type: "advancement"
+				}
+			]
+			title: "A Hidra das Chamas"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B00000000000201"]
+			description: ["§7Os §eKnight Phantoms §7são os guardiões do §eCastelo do Caos§7.", "§7São cavaleiros fantasmas que só tomam dano de um tipo de arma", "§7de cada vez — você precisa descobrir qual na hora.", "", "§eDerrote os §eKnight Phantoms §7e colete o troféu.", "§eConsiga ao menos §e1 Knightmetal Ingot§7.", "", "§6Dica: §7A §eGhast Trap §7dentro do castelo é essencial", "§7para diminuir o número de inimigos antes do combate."]
+			icon: "twilightforest:knight_phantom_trophy"
+			id: "2B00000000000207"
+			rewards: [
+				{
+					count: 4
+					id: "2B00000000000208"
+					item: "twilightforest:knightmetal_ingot"
+					type: "item"
+				}
+				{
+					id: "2B00000000000209"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_knights"
+					criterion: "all_knights"
+					id: "2B0000000000020A"
+					type: "advancement"
+				}
+			]
+			title: "Cavaleiros Fantasmas"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B00000000000207"]
+			description: ["§7O §eAlpha Yeti §7habita as geleiras mais altas da Twilight Forest.", "§7Ele lança blocos de gelo como projéteis e invoca Yetis menores.", "§7Derrotá-lo abre o caminho para a Snow Queen mais adiante.", "", "§eDerrote o §eAlpha Yeti §7e colete sua §ePele de Yeti.", "", "§6Dica: §7Yetis são lentos — use o terreno das geleiras a seu favor.", "§7A armadura §eArctic §7pode ser forjada com a pele do Alpha Yeti."]
+			icon: "twilightforest:alpha_yeti_trophy"
+			id: "2B0000000000020B"
+			rewards: [
+				{
+					count: 4
+					id: "2B0000000000020C"
+					item: "twilightforest:alpha_yeti_fur"
+					type: "item"
+				}
+				{
+					id: "2B0000000000020D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_yeti"
+					criterion: "yeti"
+					id: "2B0000000000020E"
+					type: "advancement"
+				}
+			]
+			title: "O Yeti das Geleiras"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B00000000000060"]
+			description: ["§7O §eTroll §7é o boss mais alto da Twilight Forest —", "§7literalmente. Ele vive no §eTroll Cave §7nos penhascos glaciais.", "§7Para chegar até ele, você precisa passar pelos §eGigantes§7", "§7e plantar §eMagic Beans §7para alcançar as alturas.", "", "§eDerrote o §eTroll §7e conclua a jornada pela Twilight Forest.", "", "§6Dica: §7O §eLamp of Cinders §7é a chave — queima a saída do Troll.", "§7Consiga-a derrotando os Trolls menores primeiro."]
+			icon: "twilightforest:lamp_of_cinders"
+			id: "2B0000000000020F"
+			rewards: [
+				{
+					id: "2B00000000000210"
+					item: "twilightforest:crumble_horn"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2B00000000000211"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2B00000000000212"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_troll"
+					criterion: "lamp"
+					id: "2B00000000000213"
+					type: "advancement"
+				}
+			]
+			title: "O Gigante das Cavernas"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: ["§c§lDesafio VI: Senhor da Floresta Crepuscular", "", "§7A §eTwilight Forest §7tem uma progressão sequencial", "§7de bosses — cada um abre o caminho para o próximo.", "§7Completar todos exige equipamento de alto nível.", "", "§eConsiga os troféus dos 4 bosses principais:", "§e- Naga Trophy", "§e- Lich Trophy", "§e- Hydra Trophy", "§e- Ur-Ghast Trophy", "§eMais: 1 Fiery Sword e 1 Ice Bomb", "", "§6Dica: §7A ordem importa — cada boss desbloqueia o próximo!", "§7Naga → Lich → Hydra → Snow Queen → Ur-Ghast"]
+			icon: "twilightforest:ur_ghast_trophy"
+			id: "7DD743A027A9EB06"
+			rewards: [
+				{
+					id: "79D193349742DB9A"
+					item: {
+						Count: 1
+						id: "twilightforest:twilight_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "577AA067C8A5AB30"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5E5EAA822F7AD449"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "5FDC3FA02E49A22B"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "10671A6D84DCDD81"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [
+				{
+					id: "35E6BFFBB77842D2"
+					item: "twilightforest:naga_trophy"
+					type: "item"
+				}
+				{
+					id: "6EBA8F3EBC42A5C6"
+					item: "twilightforest:lich_trophy"
+					type: "item"
+				}
+				{
+					id: "37E66A275AAE5B81"
+					item: "twilightforest:hydra_trophy"
+					type: "item"
+				}
+				{
+					id: "328FFF4006338B03"
+					item: "twilightforest:ur_ghast_trophy"
+					type: "item"
+				}
+				{
+					id: "2D797F1C30D30828"
+					item: {
+						Count: 1
+						id: "twilightforest:fiery_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "634EFC7545DE5FAF"
+					item: "twilightforest:ice_bomb"
+					type: "item"
+				}
+			]
+			title: "§2Senhor da Floresta Crepuscular"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: ["§c§l✦ DESAFIO FINAL II: O Caçador Supremo ✦", "", "§7Provar domínio sobre os bosses mais poderosos do modpack", "§7exige acumular os drops mais raros de cada dimensão.", "", "§eConsiga todos os drops abaixo:", "§e- Valkyrie Lance (Aether — Valkyrie Queen)", "§e- Ur-Ghast Trophy (Twilight Forest)", "§e- Sol Visage (Mowzie's Mobs — Barako)", "§e- Earthrend Gauntlet (Mowzie's Mobs — Wroughtnaut)", "§e- Dragonskin (Iron's Spellbooks — Ender Dragon)", "§e- Soul Great Sword (Legendary Monsters)", "", "§7Seis drops raros de seis bosses de mods diferentes."]
+			icon: {
+				Count: 1
+				id: "aether:valkyrie_lance"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "72F9FAFF45FF75AB"
+			rewards: [
+				{
+					id: "53AEC3DB0C85FEFD"
+					item: {
+						Count: 1
+						id: "aether:zanite_ring"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "705A3311225A0D71"
+					item: {
+						Count: 1
+						id: "twilightforest:naga_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6320E28CAFC0A550"
+					item: {
+						Count: 1
+						id: "mowziesmobs:ice_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1C10D801562EACC4"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 48
+					id: "1FDF129136ED11AD"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "16ADFD54597819DC"
+					type: "xp"
+					xp: 4000
+				}
+			]
+			tasks: [
+				{
+					id: "4B947090717BE516"
+					item: {
+						Count: 1
+						id: "aether:valkyrie_lance"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27473CC8CCF14853"
+					item: "twilightforest:ur_ghast_trophy"
+					type: "item"
+				}
+				{
+					advancement: "mowziesmobs:kill_umvuthi"
+					criterion: "barako"
+					id: "432C9A6DB0EBAC5B"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
+					criterion: "ferrous_wroughtnaut"
+					id: "9DADF19D7DB11A7E"
+					type: "advancement"
+				}
+				{
+					id: "6A8E13ACAB199045"
+					item: "irons_spellbooks:dragonskin"
+					type: "item"
+				}
+				{
+					id: "1445AC1A67BECBFB"
+					item: {
+						Count: 1
+						id: "legendary_monsters:soul_great_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§2§lO Fim da Floresta"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: ["§6§l✦ ✦ ✦ O LENDÁRIO ✦ ✦ ✦", "", "§7Você completou tudo.", "", "§7Cada boss derrotado. Cada dimensão conquistada.", "§7Cada essência obtida. Cada feitiço dominado.", "§7Cada fábrica erguida. Cada drop coletado.", "", "§7Este mundo foi construído para testar os limites", "§7de quem ousa habitá-lo.", "§7Você ultrapassou todos eles.", "", "§6§lVocê é o Lendário deste mundo.", "", "§8§o(Ou simplesmente não tem vida social. Quem sabe.", "§8§oDe qualquer forma — parabéns, de verdade.)", "", "§e§l✦ Parabéns, aventureiro. ✦"]
+			icon: "mysticalagriculture:awakened_supremium_staff"
+			id: "6A51798D57ADD838"
+			rewards: [
+				{
+					id: "5802D94340BDDE8F"
+					item: "mysticalagriculture:awakened_supremium_staff"
+					type: "item"
+				}
+				{
+					id: "3FA2080B512C92B9"
+					item: "ars_nouveau:spell_prism"
+					type: "item"
+				}
+				{
+					id: "4723134361096A7D"
+					item: "irons_spellbooks:scroll_pouch"
+					type: "item"
+				}
+				{
+					id: "22C6D9344E0763F5"
+					item: "create_jetpack:netherite_jetpack"
+					type: "item"
+				}
+				{
+					id: "7E6D715185BD3347"
+					item: "twilightforest:twilight_scepter"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6D59BD6D6A3F52E1"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "74ECA3207492BE02"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "7A5EBDB79361959C"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E190182B7D2489B"
+					type: "xp"
+					xp: 6000
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "7E121FF9E4EAC96B"
+					item: "mysticalagriculture:awakened_supremium_essence"
+					type: "item"
+				}
+				{
+					id: "6EFEA9B94B974477"
+					item: "mna:grimoire"
+					type: "item"
+				}
+				{
+					id: "500ACF83B98E6190"
+					item: "twilightforest:ur_ghast_trophy"
+					type: "item"
+				}
+				{
+					id: "3E97CD5B57A44789"
+					item: {
+						Count: 1
+						id: "aether:valkyrie_lance"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					advancement: "mowziesmobs:kill_umvuthi"
+					criterion: "barako"
+					id: "921941B670DF4C14"
+					type: "advancement"
+				}
+			]
+			title: "§6§l✦ O Lendário ✦"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7A §eTwilight Forest §7tem biomas únicos: Mushroom Forest,", "§7Dark Forest, Snowy Forest, Fire Swamp, Glacier...", "§7O §eMagic Map §7revela estruturas próximas no mapa.", "§7Sem ele, navegar é lento — a floresta é §eenorme§7.", "", "§eCrafite um §eMagic Map §7e use-o para revelar o terreno.", "", "§6Dica: §7Combine com §eAtlas §7para mapas em escala maior.", "§7Procure o §eFire Swamp §7— tem §eRosebush §7e recursos únicos."]
+			icon: "twilightforest:magic_map"
+			id: "TF0000000101"
+			rewards: [
+				{
+					count: 2
+					id: "TF000000010B"
+					item: "twilightforest:magic_map_focus"
+					type: "item"
+				}
+				{
+					id: "TF000000010C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:magic_map"
+					criterion: "magic_map"
+					id: "TF000000010A"
+					type: "advancement"
+				}
+			]
+			title: "O Mapa Mágico"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: ["§7O §eHedge Maze §7e o §eLarge Hollow Hill §7são estruturas", "§7de progressão intermediária da Twilight Forest.", "§7O §eMinoshroom §7guarda o interior — um minotauro-cogumelo.", "§7Derrotá-lo abre o caminho para a Hydra e além.", "", "§eDerrote o §eMinoshroom §7e colete seu troféu.", "", "§6Dica: §7Leve tochas — o labirinto é imenso e escuro.", "§8§o(Minotauro-cogumelo. A Twilight Forest não tem vergonha nenhuma.)"]
+			icon: "twilightforest:minoshroom_trophy"
+			id: "TF0000000111"
+			rewards: [
+				{
+					id: "TF000000011B"
+					item: "twilightforest:fiery_helmet"
+					type: "item"
+				}
+				{
+					id: "TF000000011C"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					id: "TF000000011A"
+					item: "twilightforest:minoshroom_trophy"
+					type: "item"
+				}
+			]
+			title: "O Labirinto e o Minoshroom"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: ["§7A §eArmadura Fiery §7usa §eFiery Ingots §7obtidos da Hydra.", "§7O conjunto completo §eimuniza ao fogo §7— essencial para o Ur-Ghast.", "§7É o upgrade intermediário antes da §eKnightmetal§7.", "", "§eCrafite §e2 peças §7da §eArmadura Fiery§7.", "", "§6Dica: §7Fiery Blood (drop da Hydra) + Iron Ingot = Fiery Ingot.", "§7Imunidade ao fogo é crucial pro Nether e pra Ur-Ghast Tower."]
+			icon: "twilightforest:fiery_chestplate"
+			id: "TF0000000121"
+			rewards: [
+				{
+					count: 8
+					id: "TF000000012B2"
+					item: "twilightforest:fiery_ingot"
+					type: "item"
+				}
+				{
+					id: "TF000000012C"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					id: "TF000000012A"
+					item: "twilightforest:fiery_chestplate"
+					type: "item"
+				}
+				{
+					id: "TF000000012B"
+					item: "twilightforest:fiery_helmet"
+					type: "item"
+				}
+			]
+			title: "Armadura Fiery"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: ["§7A Twilight Forest dropa armas únicas em cada boss:", "§7§eFiery Sword §7— cauteriza cabeças da Hydra e derrete gelo.", "§7§eKnightmetal Sword §7— forjada com restos dos Cavaleiros.", "§7§eCrumble Horn §7— destrói blocos sem mineração.", "", "§eConsiga a §eFiery Sword §7e crafite uma §eKnightmetal Sword§7.", "", "§6Dica: §7Fiery Sword é a arma mais importante do mid-game na TF.", "§7Knightmetal Ingots são drops dos §eKnight Phantoms§7."]
+			icon: "twilightforest:fiery_sword"
+			id: "TF0000000131"
+			rewards: [
+				{
+					count: 4
+					id: "TF000000013C"
+					item: "twilightforest:fiery_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "TF000000013D"
+					item: "twilightforest:knightmetal_ingot"
+					type: "item"
+				}
+				{
+					id: "TF000000013E"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [
+				{
+					id: "TF000000013A"
+					item: "twilightforest:fiery_sword"
+					type: "item"
+				}
+				{
+					id: "TF000000013B"
+					item: "twilightforest:knightmetal_sword"
+					type: "item"
+				}
+			]
+			title: "Armas da Floresta"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: ["§7A §eTwilight Forest §7usa um sistema de §eProgressão por Portais§7.", "§7Cada boss colocado no §eTrophy Pedestal §7abre regiões novas.", "§7Sem seguir a ordem, campos mágicos §eimpedem qualquer dano§7", "§7nos bosses posteriores — a sequência é obrigatória.", "", "§eComplete a progressão até o §eUr-Ghast §7(derrote §e6 bosses§7).", "", "§6Dica: §7Naga→Lich→Minoshroom→Hydra→Knights→Yeti→SnowQueen→Ur-Ghast.", "§7O Trophy Pedestal fica nos biomas centrais da floresta."]
+			icon: "twilightforest:ur_ghast_trophy"
+			id: "TF0000000141"
+			rewards: [
+				{
+					id: "TF000000014B"
+					item: "twilightforest:ur_ghast_trophy"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "TF000000014C"
+					item: "twilightforest:fiery_tears"
+					type: "item"
+				}
+				{
+					id: "TF000000014D"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					advancement: "twilightforest:progress_ur_ghast"
+					criterion: "ghast"
+					id: "TF000000014A"
+					type: "advancement"
+				}
+			]
+			title: "A Progressão da Floresta"
+			x: 8.0d
+			y: 2.0d
+		}
+	]
+	title: "§2Floresta Crepuscular"
+}

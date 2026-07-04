@@ -1,0 +1,1226 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "10_equipamento"
+	group: "AA00000000000004"
+	icon: ["minecraft:netherite_chestplate", "minecraft:shield", "artifacts:lucky_scarf"]
+	id: "AA10000000000001"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["§7Este modpack tem dezenas de armas e armaduras de mods.", "§7§eBetterCombat §7transforma cada arma em estilo único de combate.", "", "§eConsiga um conjunto completo de armadura de ferro.", "§eEncante-a com pelo menos §e3 encantamentos diferentes§7.", "", "§6Dica: §7Proteção, Durabildiade e Queda Suave são essenciais!", "§7Use a mesa do Immersive Enchanting para melhores resultados."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A00000000000002"
+			rewards: [
+				{
+					count: 3
+					id: "6A00000000000003"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6A00000000000004"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A00000000000005"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "6A00000000000006"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A00000000000007"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A00000000000008"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A00000000000009"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arsenal de Ferro"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A00000000000002"]
+			description: ["§7§eSimple Weapons §7e §eFantasy Weapons §7adicionam", "§7dezenas de armas únicas ao jogo.", "§7Martelos, lanças, machados duplos, alabardas e mais!", "", "§eConsiga pelo menos §e2 armas §7de mods de armas (Simple Weapons,", "§eFantasy Weapons ou equivalente) e use-as em combate.", "", "§6Dica: §7Cada arma tem alcance e combo únicos com BetterCombat!"]
+			icon: {
+				Count: 1
+				id: "fantasy_weapons:weapon_savage_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A0000000000000A"
+			rewards: [
+				{
+					id: "6A0000000000000B"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_savage_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6A0000000000000C"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "6A0000000000000D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "6A0000000000000E"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_savage_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arsenal Expandido"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A0000000000000A"]
+			description: ["§7200 mortes. Não importa como, importa que aconteçam.", "", "§eDerrote 200 mobs hostis (zumbis, esqueletos e aranhas).", "", "§6Dica: §7O jogo não sabe (nem se importa) qual arma você usa —", "§7mas Simple Weapons, Fantasy Weapons, l2archery e TACZ tornam isso", "§7bem mais rápido (e mais divertido) do que soco."]
+			icon: {
+				Count: 1
+				id: "fantasy_weapons:weapon_savage_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A0000000000000F"
+			rewards: [
+				{
+					id: "6A00000000000010"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_savage_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6A00000000000011"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "6A00000000000012"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:zombie"
+					id: "6A00000000000013"
+					type: "kill"
+					value: 80L
+				}
+				{
+					entity: "minecraft:skeleton"
+					id: "F1AA000000000201"
+					type: "kill"
+					value: 60L
+				}
+				{
+					entity: "minecraft:spider"
+					id: "F1AA000000000202"
+					type: "kill"
+					value: 60L
+				}
+			]
+			title: "Mestre dos Combos"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A00000000000002"]
+			description: ["§7Nem todo Artifact é básico. Alguns exigem mais esforço pra conseguir", "§7— e entregam efeitos bem mais fortes em troca.", "", "§eConsiga 3 Artifacts avançados: Crystal Heart, Vampiric Glove e Umbrella.", "", "§6Dica: §7Crystal Heart dá corações extras de verdade — não é só decoração."]
+			icon: "artifacts:cross_necklace"
+			id: "6A00000000000014"
+			rewards: [
+				{
+					id: "6A00000000000015"
+					item: "artifacts:obsidian_skull"
+					type: "item"
+				}
+				{
+					id: "6A00000000000016"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "6A00000000000017"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000018"
+					item: "artifacts:crystal_heart"
+					type: "item"
+				}
+				{
+					id: "F1AA000000000403"
+					item: "artifacts:vampiric_glove"
+					type: "item"
+				}
+				{
+					id: "F1AA000000000404"
+					item: "artifacts:umbrella"
+					type: "item"
+				}
+			]
+			title: "Curios e Relíquias"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A0000000000000F"]
+			description: ["§7§eUniversal Enchants §7permite encantamentos em itens", "§7onde normalmente não são possíveis.", "§7Coloque Fortune em picareta de netherite, Unbreaking em armas...", "", "§eCrie pelo menos 1 combinação de encantamento incomum", "§eusando Universal Enchants.", "", "§6Dica: §7Silk Touch em espada = drops especiais de mobs!"]
+			icon: "minecraft:enchanted_book"
+			id: "6A00000000000019"
+			rewards: [
+				{
+					count: 5
+					id: "6A0000000000001A"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "6A0000000000001B"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "6A0000000000001C"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+			]
+			title: "Encantamentos Incomuns"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A00000000000019"]
+			description: ["§7§eEnchanting Infuser §7permite infundir encantamentos", "§7diretamente em itens com mais controle do que a mesa normal.", "", "§eCrie o §eEnchanting Infuser §7e use-o para infundir", "§epelo menos 2 encantamentos de alto nível.", "", "§6Dica: §7O Infuser permite escolher o encantamento exato!", "§7Muito melhor do que depender da sorte da mesa padrão."]
+			icon: "enchantinginfuser:enchanting_infuser"
+			id: "6A0000000000001D"
+			rewards: [
+				{
+					count: 3
+					id: "6A0000000000001E"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "6A0000000000001F"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "6A00000000000020"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000021"
+					item: "enchantinginfuser:enchanting_infuser"
+					type: "item"
+				}
+			]
+			title: "Infusão de Poder"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A00000000000014"]
+			description: ["§7Bloquear é instinto. §lAparar §r§7é arte.", "§7§eJust Parry §7adiciona uma janela de parry perfeito —", "§7se você acertar o timing exato, o ataque é completamente", "§7negado e o inimigo fica atordoado por um segundo.", "", "§eEquipe o item do Just Parry e pratique o §eparry perfeito.", "§eEncante seu escudo com pelo menos §e1 encantamento§7.", "", "§6Dica: §7Pratique em zumbis lentos antes de usar", "§7em bosses. O timing é apertado mas vale a pena."]
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A00000000000022"
+			rewards: [
+				{
+					id: "6A00000000000023"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6A00000000000024"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A00000000000025"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000026"
+					item: "just_parry:justparryiteminhand"
+					type: "item"
+				}
+			]
+			title: "Arte da Defesa"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A0000000000001D"]
+			description: ["§7§el2archery §7transforma o arco em uma arma complexa e poderosa.", "§7Cargas de flecha, tipos especiais e habilidades de arqueiro.", "", "§eCrie um arco de alto nível do §el2archery§7.", "§eDerrote 20 mobs usando §eapenas o arco§7.", "", "§6Dica: §7Flechas de fogo + Enchant de Flame = devastador!", "§7l2archery tem flechas especiais com efeitos únicos.", "", "§8§o(E sim, você vai perder a maioria delas dentro de blocos.)"]
+			icon: {
+				Count: 1
+				id: "l2archery:flame_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A00000000000027"
+			rewards: [
+				{
+					count: 64
+					id: "6A00000000000029"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "6A0000000000002A"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "6A0000000000002B"
+					item: {
+						Count: 1
+						id: "l2archery:flame_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "O Arqueiro"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A00000000000027"]
+			description: ["§7§eTACZ §7traz armamento moderno para um mundo de espadas.", "§7Animações fluidas, sistemas de mira e munição limitada", "§7— cada bala conta.", "", "§eCrie ou encontre uma §earma de fogo §7do TACZ.", "§eDerrote §e10 mobs §7usando armas de fogo.", "", "§6Dica: §7NPCs do add-on do TACZ vendem armas e munição.", "§7Não desperdice em mobs fracos — guarde para os difíceis."]
+			icon: "tacz:gun_smith_table"
+			id: "6A0000000000002C"
+			rewards: [
+				{
+					count: 64
+					id: "6A0000000000002D"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6A0000000000002E"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A0000000000002F"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000030"
+					item: "tacz:gun_smith_table"
+					type: "item"
+				}
+			]
+			title: "Pólvora e Chumbo"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A0000000000002C"]
+			description: ["§7§ePointBlank §7é outro mod de armas de fogo com foco", "§7em rifles de precisão e snipers.", "", "§eCrie ou encontre uma arma do §ePointBlank§7.", "§eDerrote um mob à §edistância de 50+ blocos§7.", "", "§6Dica: §7Escopo + rifle + mob parado = shot perfeito!", "§7PointBlank tem customização de armas detalhada."]
+			icon: "pointblank:l96a1"
+			id: "6A00000000000031"
+			rewards: [
+				{
+					count: 64
+					id: "6A00000000000032"
+					item: "pointblank:ammo338lapua"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6A00000000000033"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A00000000000034"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000035"
+					item: "pointblank:l96a1"
+					type: "item"
+				}
+			]
+			title: "Sniper do Mundo"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A00000000000022"]
+			description: ["§7§eMob Lassos §7permite capturar mobs vivos — guarde criaturas raras", "§7pra criação ou pra assistir de longe enquanto elas sofrem, sua escolha.", "", "§eCrie um Diamond Lasso e um Hostile Lasso.", "", "§6Dica: §7Lassos não funcionam em bosses! Capture mobs únicos de mods", "§7pra usar como pet ou pra criação."]
+			icon: "moblassos:diamond_lasso"
+			id: "6A00000000000036"
+			rewards: [
+				{
+					id: "6A00000000000037"
+					item: "moblassos:diamond_lasso"
+					type: "item"
+				}
+				{
+					id: "6A00000000000038"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 1
+					id: "6A00000000000039"
+					item: "moblassos:diamond_lasso"
+					type: "item"
+				}
+				{
+					count: 1
+					id: "F1AA000000000302"
+					item: "moblassos:hostile_lasso"
+					type: "item"
+				}
+			]
+			title: "Caçador de Criaturas"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7§eGliders §7adiciona planadores construíveis.", "§7Mais leves que aeronaves e não precisam de combustível!", "", "§eCrie um §eGlider §7e voe pelo menos 300 blocos com ele.", "", "§6Dica: §7Gliders aproveitam correntes de ar quente!", "§7Lançar de montanhas aumenta muito a distância de voo."]
+			icon: {
+				Count: 1
+				id: "vc_gliders:paraglider_diamond"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A0000000000003A"
+			rewards: [
+				{
+					id: "6A0000000000003B"
+					item: {
+						Count: 1
+						id: "vc_gliders:paraglider_diamond"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6A0000000000003C"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A0000000000003D"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "6A0000000000003E"
+					item: {
+						Count: 1
+						id: "vc_gliders:paraglider_diamond"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Asas de Pano"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A00000000000036"]
+			description: ["§7§eGrappling Hook §7permite criar um gancho de escalar", "§7que te puxa para onde você atirar.", "", "§eCrie um §eGrappling Hook §7e use-o para escalar estruturas.", "§eChegue ao topo de uma montanha ou estrutura alta usando-o.", "", "§6Dica: §7Gancho + Elytra = mobilidade máxima!", "§7Ative o Elytra no pico do gancho para voar!"]
+			icon: {
+				Count: 1
+				id: "grapplemod:grapplinghook"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A0000000000003F"
+			rewards: [
+				{
+					count: 32
+					id: "6A00000000000040"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "6A00000000000041"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000042"
+					item: {
+						Count: 1
+						id: "grapplemod:grapplinghook"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Escalador de Mundos"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A0000000000001D"]
+			description: ["§7§eSophisticated Backpacks §7é o mod de mochila mais avançado.", "§7Com upgrades de sorting, auto-replanting, filtering e mais!", "", "§eCrie uma §eSophisticated Backpack §7de ferro.", "§eInstale pelo menos §e2 upgrades §7nela.", "", "§6Dica: §7Pick-Up Upgrade coleta itens do chão automaticamente!", "§7Item Filter Upgrade filtra o que entra e sai."]
+			icon: "sophisticatedbackpacks:iron_backpack"
+			id: "6A00000000000043"
+			rewards: [
+				{
+					id: "6A00000000000044"
+					item: "sophisticatedbackpacks:gold_backpack"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6A00000000000045"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+				{
+					id: "6A00000000000046"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000047"
+					item: "sophisticatedbackpacks:iron_backpack"
+					type: "item"
+				}
+			]
+			title: "Mochila Suprema"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A00000000000043"]
+			description: ["§7§eCarry On §7permite carregar blocos e entidades com as mãos!", "§7Perfeito para mover caixas, animais e até entidades especiais.", "", "§eTenha §e3 baús §7em mãos, prontos para mudar de base", "§ecarregando-os com o Carry On.", "", "§6Dica: §7Carry On não funciona em baús com Sophisticated Backpacks!", "§7Use para mover seu setup de base de lugar."]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecolonies:textures/gui/chest.png"
+				}
+			}
+			id: "6A00000000000048"
+			rewards: [
+				{
+					count: 4
+					id: "6A00000000000049"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					id: "6A0000000000004A"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "6A0000000000004B"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			title: "Carregador de Mundos"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A00000000000031"]
+			description: ["§7§eImprovable Skills §7cresce com o uso.", "§7Quanto mais você usa um estilo de jogo,", "§7mais habilidades ele desbloqueia.", "§7No fim, você não joga mais como qualquer aventureiro —", "§7você joga como §lseu §r§7personagem.", "", "§eAtinja §eNível 20 §7em qualquer habilidade.", "§eUse §e5 pontos §7na mesma árvore de especialização.", "", "§6Dica: §7Mago? Foque em Magia. Atirador? Archery.", "§7Especializar é sempre melhor do que diversificar aqui."]
+			icon: {
+				Count: 1
+				id: "improvableskills:scroll_normal"
+				tag: {
+					Skill: "improvableskills:health"
+				}
+			}
+			id: "6A0000000000004C"
+			rewards: [
+				{
+					count: 10
+					id: "6A0000000000004D"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A0000000000004E"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "6A0000000000004F"
+					item: {
+						Count: 1
+						id: "improvableskills:scroll_normal"
+						tag: {
+							Skill: "improvableskills:health"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Especialização Máxima"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6A0000000000004C"]
+			description: ["§7§eRPG Damage Overhaul §7transforma o sistema de dano do jogo.", "§7Crits, mitigação, penetração de armadura e mais —", "§7tudo acontece nos bastidores, sem item próprio.", "", "§eForje uma espada com §eAfiação V §7(Sharpness 5)", "§ee sinta a diferença no próximo combate.", "", "§6Dica: §7Machados ignoram parte da armadura do inimigo.", "§7Combine encantamentos para maximizar o dano por golpe."]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "celestisynth:textures/abilityicon/skill/keres_skill_icon_1.png"
+				}
+			}
+			id: "6A00000000000050"
+			rewards: [
+				{
+					count: 3
+					id: "6A00000000000051"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "6A00000000000052"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A00000000000053"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000054"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_sword"
+						tag: {
+							Enchantments: [
+								{
+									id: "minecraft:sharpness"
+									lvl: 5
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Um Golpe Decisivo"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6A00000000000050"]
+			description: ["§7O guerreiro lendário possui o arsenal perfeito:", "§7armadura máxima, arma dominante e skills desenvolvidas.", "", "§eTenha simultaneamente equipado:", "§e- Armadura de Netherite completa encantada", "§e- Arma de mod encantada com pelo menos 4 encantamentos", "§e- Pelo menos 3 Artifacts nos slots Curios", "§e- Mochila Sophisticated de diamante ou acima", "", "§6Você é agora um §lGuerreiro Lendário§r§6!"]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A00000000000055"
+			rewards: [
+				{
+					count: 20
+					id: "6A00000000000056"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6A00000000000057"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "6A00000000000058"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000059"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A0000000000005A"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A0000000000005B"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A0000000000005C"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§6§lGuerreiro Lendário"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6A0000000000000A"]
+			description: ["§7§eFantasy Weapons §7adiciona um arsenal enorme de armas", "§7temáticas — rapieiras, lanças, espadões e mais,", "§7cada uma com seu próprio visual e estilo de combate.", "", "§eForje uma §eRapieira (Generic Rapier) §7e um", "§eMachado Selvagem (Savage Hammer) §7do Fantasy Weapons.", "", "§6Dica: §7Rapieiras são rápidas mas fracas — ideais contra", "§7grupos de inimigos fracos. Martelos atordoam em área!"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A00000000000070"
+			rewards: [
+				{
+					count: 2
+					id: "6A00000000000071"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6A00000000000075"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "6A00000000000072"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000073"
+					item: "fantasy_weapons:weapon_generic_rapier"
+					type: "item"
+				}
+				{
+					id: "6A00000000000077"
+					item: "fantasy_weapons:weapon_savage_hammer"
+					type: "item"
+				}
+			]
+			title: "Arsenal e Ferramentas Alternativas"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7§eFantasiacraft §7traz espadonas e martelos absurdamente grandes", "§7pra quem acha que um Netherite Sword comum é modéstia demais.", "", "§eForje uma arma de Fantasiacraft: Master Sword ou Adventurer's Warhammer."]
+			icon: "fc:master_sword"
+			id: "F22B975644C90A95"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+					id: "DE1AD23C7B2F5BDD"
+				}
+				{
+					type: "xp"
+					xp: 350
+					id: "B2EC21487CEB527D"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "fc:master_sword"
+					id: "C79001B15D5DF0C9"
+				}
+			]
+			title: "Arsenal Fantástico"
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			description: ["§7§eSimple Weapons §7adiciona lanças, katanas e foices —", "§7pra quem cansou de ficar batendo com espada reta feito plebeu.", "", "§eForje um Iron Greatsword e uma Stone Spear."]
+			icon: "simple_weapons:iron_greatsword"
+			id: "58246ABD66457288"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8
+					id: "253520D3E061D874"
+				}
+				{
+					type: "xp"
+					xp: 150
+					id: "4B9BEC9975F26AD5"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simple_weapons:iron_greatsword"
+					id: "688EED230A426A88"
+				}
+				{
+					type: "item"
+					item: "simple_weapons:stone_spear"
+					id: "1D782969D56514FE"
+				}
+			]
+			title: "Ferro e Katana"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			description: ["§7Antes do TACZ ficar chique com trilhos Picatinny e customização,", "§7já tinha gente andando por aí com pistola e minigun.", "§7§eHWG §7é isso: simples, direto, e violento.", "", "§eConstrua uma Pistol e uma Sniper Rifle."]
+			icon: "hwg:pistol"
+			id: "A75FF42475CA4E1B"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 8
+					id: "81EBB9CDB790A831"
+				}
+				{
+					type: "xp"
+					xp: 250
+					id: "6B5A9B85E50D76E8"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "hwg:pistol"
+					id: "2BD12A76BCF10E29"
+				}
+				{
+					type: "item"
+					item: "hwg:sniper_rifle"
+					id: "DA4F70BBD5206644"
+				}
+			]
+			title: "Arsenal Improvisado"
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7O escudo de madeira vanilla quebra olhando torto.", "§7§eShield Expansion §7adiciona uma escada inteira de escudos —", "§7até um Netherite, pra quem já cansou de perder parry por 1 de dano.", "", "§eForje um Iron Shield e um Diamond Shield."]
+			icon: "shieldexp:iron_shield"
+			id: "4E18DB1B01696FC9"
+			rewards: [
+				{
+					type: "item"
+					item: "shieldexp:netherite_shield"
+					id: "BD87AEA3585CE88E"
+				}
+				{
+					type: "xp"
+					xp: 200
+					id: "25EF1196C4D2649B"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "shieldexp:iron_shield"
+					id: "ACD8E1A86A3CBBD9"
+				}
+				{
+					type: "item"
+					item: "shieldexp:diamond_shield"
+					id: "CD985EB651CE47C9"
+				}
+			]
+			title: "Escudos de Verdade"
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			description: ["§7Minerar bloco por bloco é coisa de quem tem tempo sobrando.", "§7§eDiff's Tools §7resolve isso com escavação em área 3x3.", "", "§eForje um Excavator ou um Hammer."]
+			icon: "diffs_tools:excavator"
+			id: "789229AADF1EDA66"
+			rewards: [
+				{
+					type: "item"
+					item: "diffs_tools:sturdy_handle"
+					count: 2
+					id: "7173806CC0643A32"
+				}
+				{
+					type: "xp"
+					xp: 150
+					id: "23E16CC6AA11DDE7"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "diffs_tools:excavator"
+					id: "680D0E08D01DD52E"
+				}
+			]
+			title: "Escavação em Massa"
+			x: 26.0d
+			y: 10.0d
+		}
+		{
+			description: ["§7Nem só de espada gigante vive o guerreiro fantástico.", "§7Às vezes você só precisa de um bom escudo divino.", "", "§eForje o Shield of the Goddess."]
+			icon: "fc:shield_of_the_goddess"
+			id: "91348832DC97514E"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+					id: "94EEBE2280ABA613"
+				}
+				{
+					type: "xp"
+					xp: 300
+					id: "77FF2E204D755D8F"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "fc:shield_of_the_goddess"
+					id: "70608AA1E960C0D8"
+				}
+			]
+			title: "Escudo da Deusa"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			description: ["§7§ePoint Blank §7é outro mod de armas de fogo — dessa vez com", "§7impressora 3D de armas incluída. O futuro chegou (violentamente).", "", "§eConstrua uma Weapon Printer e imprima uma Glock-17."]
+			icon: "pointblank:workstation"
+			id: "F4B4CC93DC9E6CD6"
+			rewards: [
+				{
+					type: "item"
+					item: "pointblank:gunmetal_ingot"
+					count: 4
+					id: "4DBE0D3C43CC453E"
+				}
+				{
+					type: "xp"
+					xp: 200
+					id: "D766E2ECF8B332B6"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "pointblank:workstation"
+					id: "15822854711BC78B"
+				}
+				{
+					type: "item"
+					item: "pointblank:glock17"
+					id: "B251CE9B381A4518"
+				}
+			]
+			title: "Fábrica de Armas"
+			x: 20.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7§eCompanions! §7deixa seu companheiro (ou você mesmo, se for", "§7corajoso) trocar um braço de carne por um de metal.", "", "§eForje um Whip Arm e um Blade Arm."]
+			icon: "companions:whip_arm"
+			id: "68AE25A214613641"
+			rewards: [
+				{
+					type: "item"
+					item: "companions:netherite_chains"
+					count: 2
+					id: "43BA0AE24A16AE81"
+				}
+				{
+					type: "xp"
+					xp: 300
+					id: "B50D4C796140D022"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "companions:whip_arm"
+					id: "74F36DD594938AE6"
+				}
+				{
+					type: "item"
+					item: "companions:blade_arm"
+					id: "B07A088146FA532A"
+				}
+			]
+			title: "Braços Mecânicos"
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			description: ["§7Sua Traveler's Backpack já carrega tudo — que tal ela", "§7carregar até sua cama?", "", "§eColoque um Sleeping Bag em qualquer cor na sua backpack."]
+			icon: "travelersbackpack:white_sleeping_bag"
+			id: "F24AE3E41D2FCB00"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:white_wool"
+					count: 4
+					id: "6B2586AFE038AE50"
+				}
+				{
+					type: "xp"
+					xp: 100
+					id: "09FFF2AA7515F452"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "travelersbackpack:white_sleeping_bag"
+					id: "57C0AF4F457C41D6"
+				}
+			]
+			title: "Acampamento Portátil"
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			description: ["§7Vara de madeira vanilla é coisa de amador. §eTide §7tem", "§7uma vara pra cada ocasião — até uma de Netherite.", "", "§eForje uma Diamond Fishing Rod e uma Netherite Fishing Rod."]
+			icon: "minecraft:book"
+			id: "9A64968F953185F3"
+			rewards: [
+				{
+					type: "item"
+					item: "tide:midas_fishing_rod"
+					id: "AB9EAD11F8F1C2D1"
+				}
+				{
+					type: "xp"
+					xp: 400
+					id: "A5B4037A2B81FA85"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "tide:diamond_fishing_rod"
+					id: "BE334288CD930DED"
+				}
+				{
+					type: "item"
+					item: "tide:netherite_fishing_rod"
+					id: "8DD7B64B7E121874"
+				}
+			]
+			title: "Varas de Verdade"
+			x: 26.0d
+			y: 12.0d
+		}
+		{
+			description: ["§7Halberd e Katana — pra quem já cansou de espada e lança", "§7comuns e quer variar o estilo de combo.", "", "§eForje um Diamond Halberd e uma Netherite Katana."]
+			icon: "minecraft:book"
+			id: "540A06914AB6A060"
+			rewards: [
+				{
+					type: "item"
+					item: "minecraft:netherite_scrap"
+					count: 2
+					id: "1053D4E6A238A38D"
+				}
+				{
+					type: "xp"
+					xp: 400
+					id: "4B0DC0894AEDA373"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simple_weapons:diamond_halberd"
+					id: "C77E8CEFFE0F337B"
+				}
+				{
+					type: "item"
+					item: "simple_weapons:netherite_katana"
+					id: "EAA3366297F2CD5B"
+				}
+			]
+			title: "Arsenal Alternativo II"
+			x: 16.0d
+			y: 6.0d
+		}
+	]
+	title: "§6Arsenal e Equipamento"
+}

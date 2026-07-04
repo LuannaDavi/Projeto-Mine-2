@@ -1,0 +1,511 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "11_nether"
+	group: "AA00000000000005"
+	icon: ["minecraft:netherite_ingot", "minecraft:blaze_rod", "minecraft:ancient_debris"]
+	id: "AA11000000000001"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["§7O Overworld é só o começo.", "§7Este modpack tem §e5 dimensões §7para explorar,", "§7cada uma com suas próprias regras, criaturas e segredos.", "", "§5🔥 §cNether §7— Expandido por Bygone Nether e Incendium", "§5⭐ §fEnd §7— Expandido por The Outer End", "§5🌲 §dTwilight Forest §7— Floresta com bosses sequenciais", "§5☀ §eAether §7— Paraíso celestial com regras invertidas", "§5💧 §bBlue Skies §7— Dois reinos além das nuvens", "", "§7Construa o Portal do Nether. O resto começa por aí.", "", "§8§o(Portal construído, arrependimento chegando em 3, 2, 1...)"]
+			icon: "minecraft:obsidian"
+			id: "2B700D5045AE1FE4"
+			rewards: [
+				{
+					count: 3
+					id: "2323B7690E8E66F4"
+					item: "minecraft:fire_resistance"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "096D4C88F624A827"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "4383AA6D69084392"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					advancement: "minecraft:nether/root"
+					criterion: ""
+					id: "181223AAB7AE5579"
+					type: "advancement"
+				}
+			]
+			title: "Entre Mundos"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["§7§eBygone Nether §7adiciona ruínas e estruturas antigas ao Nether.", "§7§eIncendium §7adiciona biomas ardentes únicos como", "§7Magma Wastes, Quartz Flats e o Volcanic Deltas.", "", "§eExplore pelo menos §e3 biomas §7diferentes do Nether.", "§eVisite uma estrutura do §eBygone Nether§7.", "", "§6Dica: §7O Nether tem recursos únicos essenciais para magia e tecnologia!", "§7Cogumelos do Nether, Blocos de Alma e Quartz são valiosos.", "", "§8§o(O Nether não tem clima ameno. Só \"quente\" e \"mais quente ainda\".)"]
+			icon: "minecraft:nether_brick"
+			id: "71DAC18FECC1211E"
+			rewards: [
+				{
+					count: 16
+					id: "6DE3BA40710E8DDB"
+					item: "minecraft:nether_quartz"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "747050C6A168F39C"
+					item: "minecraft:crying_obsidian"
+					type: "item"
+				}
+				{
+					id: "280DC65524C47BCE"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:nether/explore_nether"
+					criterion: ""
+					id: "4A1301B3D741E424"
+					type: "advancement"
+				}
+			]
+			title: "As Profundezas Flamejantes"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: ["§7§eIncendium §7reconstrói o Nether inteiro com biomas próprios:", "§7Ash Barrens, Infernal Dunes, Quartz Flats e mais.", "§7No Ash Barrens existe um §eForbidden Castle §7— uma fortaleza", "§7Piglin guardada por Sentries armados até os dentes.", "", "§eInvada o §eForbidden Castle §7e elimine todos os Piglins", "§eque vivem lá dentro.", "", "§6Dica: §7Resistência ao Fogo é fortemente recomendada!", "§7Sentries atiram à distância — não fique parado no aberto.", "", "§8§o(Todo castelo tem dono. Agora não tem mais.)"]
+			icon: "minecraft:netherite_axe"
+			id: "6A3858589CC1A739"
+			rewards: [
+				{
+					count: 4
+					id: "0CED3BEDEE96929D"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "7A07E18449A7AB59"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "30E8FFCC1D6CFA25"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "51A00DD854F1C2EB"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "incendium:ash_barrens/conquer_castle"
+					criterion: "requirement"
+					id: "11F1CF0ACA721E5C"
+					type: "advancement"
+				}
+			]
+			title: "O Conquistador do Castelo"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71DAC18FECC1211E"]
+			description: ["§7As §eInfernal Dunes §7são um dos biomas mais hostis do", "§7Incendium — dunas de areia vermelha com estruturas", "§7únicas como o §ePipeline §7e o §eInferno§7.", "", "§7No Pipeline, sentinelas robóticos guardam", "§7baús com loot de alta qualidade.", "", "§eExplore as §eInfernal Dunes §7e encontre o Pipeline.", "", "§6Dica: §7O bioma aparece em latitudes medianas do Nether.", "§7Procure por dunas vermelhas sem vegetação.", "", "§8§o(Praia, só que tudo quer te matar.)"]
+			icon: "minecraft:red_sand"
+			id: "08D0000000000401"
+			rewards: [
+				{
+					count: 16
+					id: "08D0000000000402"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "08D0000000000403"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "incendium:infernal_dunes/root"
+					criterion: "incendium:infernal_dunes"
+					id: "08D0000000000404"
+					type: "advancement"
+				}
+			]
+			title: "Dunas do Inferno"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71DAC18FECC1211E"]
+			description: ["§7O §eIncendium §7reimagina o Nether com §e8 biomas únicos§7:", "§7Infernal Dunes, Quartz Flats, Toxic Heap,", "§7Withered Forest, Ash Barrens, Inverted Forest,", "§7Weeping Valley e Volcanic Deltas.", "", "§eVisite todos os §e8 biomas §7do Incendium.", "", "§6Dica: §7JourneyMap registra automaticamente biomas visitados.", "§7Volcanic Deltas são raros — procure por lagos de lava com basalto.", "", "§8§o(Sim, você vai morrer em alguns deles. Faz parte.)"]
+			icon: "minecraft:netherite_boots"
+			id: "08D0000000000405"
+			rewards: [
+				{
+					count: 2
+					id: "08D0000000000406"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "08D0000000000407"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "08D0000000000408"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					advancement: "incendium:misc/soul_searcher"
+					id: "08D0000000000409"
+					type: "advancement"
+				}
+			]
+			title: "Explorador do Nether"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: ["§7A §eNether Fortress §7é a estrutura mais importante do Nether vanilla.", "§7Blazes, Wither Skeletons, e o loot necessário para a progressão.", "§7Sem a Fortaleza, não há varetas de blaze. Sem vareta, sem poções.", "", "§eEncontre uma §eNether Fortress §7e colete §e5 Blaze Rods§7.", "", "§6Dica: §7Fortalezas sempre geram próximas a biomas de Netherwart.", "§7Leve escudo e armadura — Blazes atiram em grupo.", "", "§8§o(Corredores estreitos, blaze por toda parte — arquitetura clássica de pesadelo.)"]
+			icon: "minecraft:blaze_rod"
+			id: "NT0000000000001"
+			rewards: [
+				{
+					count: 16
+					id: "NT000000000000B"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "NT000000000000C"
+					item: "minecraft:fire_charge"
+					type: "item"
+				}
+				{
+					id: "NT000000000000D"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					count: 5L
+					id: "NT000000000000A"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "D34BB8FEE6D4C239"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+			]
+			title: "A Fortaleza do Nether"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: ["§7Os §eBastion Remnants §7são as ruínas onde Piglins habitam.", "§7Têm alguns dos melhores baús do jogo — e os Piglins mais agressivos.", "§7Com §eArmadura de Ouro §7equipada, eles ficam neutros.", "", "§eExplore um §eBastion Remnant §7e saqueie seus baús.", "§eColete pelo menos §e16 Golden Ingots §7negociando com Piglins.", "", "§6Dica: §7Jogue Ouro no chão para os Piglins trocarem itens!", "§7Bastião de §eTesouro §7tem o melhor loot — procure o cofre central.", "", "§8§o(Ouro compra amizade. Falta de ouro compra uma perseguição.)"]
+			icon: "minecraft:gilded_blackstone"
+			id: "NT0000000000011"
+			rewards: [
+				{
+					id: "NT000000000001C"
+					item: "minecraft:piglin_banner_pattern"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "NT000000000001D"
+					item: "minecraft:crying_obsidian"
+					type: "item"
+				}
+				{
+					id: "NT000000000001E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "NT000000000001A"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					advancement: "minecraft:nether/loot_bastion"
+					criterion: "loot_bastion"
+					id: "NT000000000001B"
+					type: "advancement"
+				}
+			]
+			title: "Bastião dos Piglins"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: ["§7O §eWither §7é o boss invocável mais poderoso do Overworld/Nether.", "§7Invocado com §e3 Wither Skeleton Skulls §7e §eSouls Sand§7,", "§7ele explode ao ser invocado e atira §eWither Skulls §7explosivas.", "§7Derrotá-lo é a única forma de obter a §eNether Star§7.", "", "§eInvoque e derrote o §eWither§7.", "", "§6Dica: §7Invoque-o em um §eTúnel estreito §7para limitar movimento.", "§7§eBeacons §7usam a Nether Star — vale muito a pena derrotá-lo.", "§8§o(Três caveiras. Uma invocação. Muita dor.)"]
+			icon: "minecraft:nether_star"
+			id: "NT0000000000021"
+			rewards: [
+				{
+					id: "NT000000000002B"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "NT000000000002C"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					id: "NT000000000002D"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:nether/summon_wither"
+					criterion: "summon_wither"
+					id: "NT000000000002A"
+					type: "advancement"
+				}
+			]
+			title: "Wither — O Chefe do Nether"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			description: ["§7O §eNetherite §7é obtido fundindo §eAncient Debris §7no Nether.", "§7Ancient Debris aparece nas §ecamadas Y=8 a Y=22§7.", "§74 Ancient Debris → 4 Netherite Scraps → 1 Netherite Ingot.", "§74 ingots = capacete, 4 = peitoral, 3 = calças, 4 = botas.", "", "§eColete §e4 Ancient Debris §7e produza §e1 Netherite Ingot§7.", "", "§6Dica: §7Incendium adiciona estruturas próximas a §eveios de debris§7!", "§7Bed exploding é o método mais rápido de minerar (e o mais perigoso).", "", "§8§o(Netherite não enferruja, não queima, e ainda por cima é chique.)"]
+			icon: "minecraft:ancient_debris"
+			id: "NT0000000000031"
+			rewards: [
+				{
+					count: 2
+					id: "NT000000000003B"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "NT000000000003C"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "NT000000000003D"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "NT000000000003A"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "CCB3945000D826F2"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+			]
+			title: "Netherrite — O Material Supremo"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			description: ["§7O §eIncendium §7transforma o Nether em §e8 biomas únicos§7.", "§7O §eQuartz Flats §7é um deserto de quartzo com §eTemples §7escondidos", "§7cheios de loot e puzzles de Quartz.", "", "§eExplore o bioma §eQuartz Flats §7e encontre um §eQuartz Temple§7.", "", "§6Dica: §7Quartz Flats são planícies brancas e lisas.", "§7Os Temples têm Piglins guardando — leve armadura de ouro!", "", "§8§o(Quartzo branco brilhando — a única coisa bonita nessa dimensão inteira.)"]
+			icon: "minecraft:quartz_block"
+			id: "NT0000000000041"
+			rewards: [
+				{
+					count: 16
+					id: "NT000000000004B"
+					item: "minecraft:quartz_block"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "NT000000000004C"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "NT000000000004D"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "incendium:quartz_flats/root"
+					criterion: "requirement"
+					id: "NT000000000004A"
+					type: "advancement"
+				}
+			]
+			title: "Templos das Quartz Flats"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7O §eWithered Forest §7do Incendium é um bioma de árvores carbonizadas", "§7onde §eBlaze §7e §eWithered Husks §7vagam sem parar.", "§7Tem as §eSoul Blossom §7— flores que produzem fogo de alma.", "", "§eExplore o §eWithered Forest §7e colete recursos únicos do bioma.", "", "§6Dica: §7Fogo de Alma causa §eduplo dano §7em Piglins e mortos-vivos.", "§7Soul Campfire e Soul Torch usam Soul Sand + Coal.", "", "§8§o(Uma floresta murcha no meio do Nether. Ninguém regou.)"]
+			icon: "minecraft:soul_sand"
+			id: "NT0000000000051"
+			rewards: [
+				{
+					count: 2
+					id: "NT000000000005C"
+					item: "minecraft:soul_campfire"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "NT000000000005D"
+					item: "minecraft:soul_torch"
+					type: "item"
+				}
+				{
+					id: "NT000000000005E"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "NT000000000005A"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "NT000000000005B"
+					item: "minecraft:soul_soil"
+					type: "item"
+				}
+			]
+			title: "A Floresta Murcha"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7§eIncendium §7expande o Nether com biomas próprios — as", "§7Infernal Dunes escondem o §eInferno§7, o desafio mais brutal", "§7da região: sobreviva ao feitiço final dele e reivindique", "§7sua recompensa.", "", "§eSobreviva ao Inferno nas Infernal Dunes do Incendium.", "", "§6Dica: §7Poções de Resistência ao Fogo são essenciais.", "§7Leve tônico de cura e comida pra recuperação entre ataques."]
+			icon: "minecraft:blaze_rod"
+			id: "NT0000000000061"
+			rewards: [
+				{
+					count: 2
+					id: "2135A64B1A0A237E"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "DBFDD16E3144845A"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "252BC60FA85419A2"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [
+				{
+					advancement: "incendium:infernal_dunes/inferno/kill"
+					criterion: "requirement"
+					id: "0E50235705C7B972"
+					type: "advancement"
+				}
+			]
+			title: "O Inferno das Dunas Ardentes"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7Um §eBeacon §7alimentado por uma §eNether Star §7e coberto", "§7por um §epirâmide de mineral §7concede §ebuffs permanentes§7:", "§7Speed, Haste, Strength, Jump Boost, Regeneration...", "§7Uma pirâmide de §eNetherite §7dá alcance de §e50 blocos§7!", "", "§eConstrua e ative um §eBeacon §7com pelo menos §e1 pilar§7.", "", "§6Dica: §7Pirâmide mínima: §e9 blocos de mineral §7(3x3).", "§7Upgradesde tier (nível 2/3/4) aumentam alcance e tipos de buff.", "", "§8§o(Um farol gigante gritando \"aqui mora alguém importante\".)"]
+			icon: "minecraft:beacon"
+			id: "NT0000000000071"
+			rewards: [
+				{
+					id: "NT000000000007B"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+				{
+					id: "NT000000000007C"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "minecraft:nether/create_beacon"
+					criterion: "create_beacon"
+					id: "NT000000000007A"
+					type: "advancement"
+				}
+			]
+			title: "Beacon — A Torre de Luz"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: ["§7§eBygone Nether §7prova que dava pra fazer o Nether mais bonito", "§7o tempo todo — só faltava alguém se importar.", "", "§eForje o Gilded Netherite Shield.", "", "§8§o(Ouro E netherite. Ele não escolheu um, ele quis os dois.)"]
+			icon: "bygonenether:gilded_netherite_shield"
+			id: "4BFC08B7435FE016"
+			rewards: [
+				{
+					type: "item"
+					item: "bygonenether:withered_debris"
+					count: 2
+					id: "6722FCC34450FF40"
+				}
+				{
+					type: "xp"
+					xp: 250
+					id: "8FE51329D2CDC1D9"
+				}
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "bygonenether:gilded_netherite_shield"
+					id: "C80738445C5B7A34"
+				}
+			]
+			title: "Netherite Dourada"
+			x: 10.0d
+			y: 6.0d
+		}
+	]
+	title: "§cNether — As Profundezas"
+}
