@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "plenty_of_golems:guardian_of_the_deep_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 177,
+    "separation": 80,
+    "salt": 834643104,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

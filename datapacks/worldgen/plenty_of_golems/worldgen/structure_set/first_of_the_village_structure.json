@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "plenty_of_golems:first_of_the_village_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 142,
+    "separation": 64,
+    "salt": 1205896115,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

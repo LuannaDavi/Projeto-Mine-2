@@ -1,0 +1,459 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "18_culinaria"
+	group: "7E445E30196C8ACF"
+	id: "286CF65093240206"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"§7§eAquaculture Delight §7tem receitas... peculiares."
+				"§7Alguém, em algum lugar, decidiu que §eJellyfish Jelly"
+				"§7precisava existir como prato. Não perguntamos por quê."
+				""
+				"§ePesque o suficiente e prepare uma porção de"
+				"§eGeleia de Água-Viva (Jellyfish Jelly)§7."
+				""
+				"§8§o(Ninguém testou o sabor. Os criadores se recusam"
+				"§8§oa confirmar se é seguro para consumo.)"
+			]
+			icon: "aquaculturedelight:jellyfish_jelly"
+			id: "1F733349850C37AD"
+			rewards: [
+				{
+					count: 4
+					id: "026B1B129FBE4621"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6617E37570CEC3DD"
+					item: "aquaculturedelight:jellyfish_jelly"
+					type: "item"
+				}
+				{
+					id: "6B0CE7185213882F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "0F8E6F5589E6FBAF"
+				item: "aquaculturedelight:jellyfish_jelly"
+				type: "item"
+			}]
+			title: "O Prato Duvidoso"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Cinco mods de comida coexistem neste modpack."
+				"§7Isso é, objetivamente, demais. E está ótimo assim."
+				""
+				"§7§eFarmer's Delight §7tem receitas que vão muito além"
+				"§7de pão e ensopado básico — torta de pastor incluída."
+				""
+				"§ePrepare uma §eShepherd's Pie §7(Torta de Pastor)"
+				"§ena sua Cooking Pot."
+				""
+				"§8§o(Ninguém pediu uma torta de pastor no Minecraft."
+				"§8§oAlguém fez mesmo assim. Aproveite.)"
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "2809A347D1CBA403"
+			rewards: [
+				{
+					count: 4
+					id: "3A7B150AE28B271A"
+					item: "farmersdelight:wheat_dough"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7580EC5D56008CA6"
+					item: "farmersdelight:dumplings"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A7A21CA2592C752"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "42B42063B21F61FF"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [{
+				id: "65481B863FF88EF4"
+				item: "farmersdelight:shepherds_pie"
+				type: "item"
+			}]
+			title: "Receita Duvidosa"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eBrazilian Delight §7traz açaí, feijão e bolo de cenoura —"
+				"§7a trindade sagrada de qualquer domingo em família."
+				""
+				"§eColha Açaí Berries e asse um Carrot Cake."
+			]
+			icon: "braziliandelight:acai_berries_crate"
+			id: "236FEC6BEAF7367A"
+			rewards: [
+				{
+					count: 4
+					id: "4CB8D287F34ACC56"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "5B49B338E0C77F2B"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "3176F348A6838C82"
+					item: "braziliandelight:acai_berries_crate"
+					type: "item"
+				}
+				{
+					id: "75EEE4987D325DC6"
+					item: "braziliandelight:carrot_cake"
+					type: "item"
+				}
+			]
+			title: "Sabor Brasileiro"
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eFarm & Charm §7adiciona utensílios de cozinha rústica —"
+				"§7panelas, sacos de farinha e muito charme pra sua fazenda."
+				""
+				"§eCrie uma Cooking Pot e um Bag of Flour."
+			]
+			icon: "farm_and_charm:cooking_pot"
+			id: "0BACF517075F9092"
+			rewards: [
+				{
+					count: 16
+					id: "189A3AC3CEC24773"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "666E367D97873A02"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "6E85D68272726B12"
+					item: "farm_and_charm:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "36FD02B5A819ABB1"
+					item: "farm_and_charm:flour_bag"
+					type: "item"
+				}
+			]
+			title: "Charme da Fazenda"
+			x: 22.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eBakery §7transforma sua cozinha numa confeitaria de verdade."
+				"§7Chega de comer pão cru feito animal."
+				""
+				"§eAsse um Apple Pie e monte uma Cake Display."
+			]
+			icon: "bakery:apple_pie"
+			id: "3CDB0B6FE7191DB9"
+			rewards: [
+				{
+					count: 8
+					id: "5E5B9DB42E44E65C"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "0001AFF3E529728F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "497DB840CA3A1468"
+					item: "bakery:apple_pie"
+					type: "item"
+				}
+				{
+					id: "4F4AF60BCADA07C7"
+					item: "bakery:cake_display"
+					type: "item"
+				}
+			]
+			title: "Padaria Completa"
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eBuzzier Bees §7expande o tema das abelhas com blocos de mel"
+				"§7cristalizado e tijolos de favo — pra quem quer uma base"
+				"§7que pareça um comercial de xarope."
+				""
+				"§eCrie um bloco de Honeycomb Bricks e um Honey Lamp."
+			]
+			icon: "buzzier_bees:honeycomb_bricks"
+			id: "60D786E34FFFA8C5"
+			rewards: [
+				{
+					count: 8
+					id: "12419D0F329760CE"
+					item: "minecraft:honeycomb"
+					type: "item"
+				}
+				{
+					id: "54EA7A31EA457517"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "3B3C2E0E40660B2D"
+					item: "buzzier_bees:honeycomb_bricks"
+					type: "item"
+				}
+				{
+					id: "5A710BFDABF7E504"
+					item: "buzzier_bees:honey_lamp"
+					type: "item"
+				}
+			]
+			title: "Colmeia de Luxo"
+			x: 24.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Chorus Fruit sempre foi estranha de comer crua. Alguém finalmente"
+				"§7teve a decência de transformar isso numa torta decente."
+				""
+				"§eAsse um Chorus Pie e prepare um Chorus Stew."
+			]
+			icon: "endersdelight:chorus_pie"
+			id: "5BDFFFEB3C43FF34"
+			rewards: [
+				{
+					count: 8
+					id: "155DF6549659BF87"
+					item: "minecraft:chorus_fruit"
+					type: "item"
+				}
+				{
+					id: "41667AC66395F831"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "31D8AB1BE2611F41"
+					item: "endersdelight:chorus_pie"
+					type: "item"
+				}
+				{
+					id: "265A5C86805A3118"
+					item: "endersdelight:chorus_stew"
+					type: "item"
+				}
+			]
+			title: "Culinária do Fim"
+			x: 28.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Chocolate e pão de mel automatizados usando engrenagens —"
+				"§7porque nem doce escapa da era industrial."
+				""
+				"§eProduza uma barra de chocolate e um bloco de gingerbread."
+			]
+			icon: {
+				Count: 1
+				id: "create_confectionery:full_chocolate_bar"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1DD353BCE063F411"
+			rewards: [
+				{
+					count: 8
+					id: "2D108EF9D5E81880"
+					item: "create_confectionery:cocoa_powder"
+					type: "item"
+				}
+				{
+					id: "6030818E4533821E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "693465075E1EDF3B"
+					item: {
+						Count: 1
+						id: "create_confectionery:full_chocolate_bar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7CB6992B80DF3B13"
+					item: "create_confectionery:gingerbread_block"
+					type: "item"
+				}
+			]
+			title: "Doceria Create"
+			x: 34.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Pão de queijo é bloco, coxinha é comida — e ambos são"
+				"§7inegociáveis num boteco brasileiro decente."
+				""
+				"§eAsse um Cheese Bread e frite uma Coxinha."
+			]
+			icon: "braziliandelight:coxinha"
+			id: "4FD422DC83B80014"
+			rewards: [
+				{
+					count: 4
+					id: "4C96D4A4542ADEB4"
+					item: "braziliandelight:brigadeiro_cream"
+					type: "item"
+				}
+				{
+					id: "09A205ACE56ED74B"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [
+				{
+					id: "55940DA1D10CA430"
+					item: "braziliandelight:cheese_bread"
+					type: "item"
+				}
+				{
+					id: "709490CDCDC0B2BD"
+					item: "braziliandelight:coxinha"
+					type: "item"
+				}
+			]
+			title: "Boteco Mineiro"
+			x: 22.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7Galinha solta pelo mundo é ineficiente. Um Chicken Coop"
+				"§7de verdade resolve isso com estilo rústico."
+				""
+				"§eConstrua um Chicken Coop e uma Feeding Trough."
+			]
+			icon: "farm_and_charm:chicken_coop"
+			id: "5E20D2D8C4E1A5BF"
+			rewards: [
+				{
+					count: 4
+					id: "7D4FAD46BE7F32EF"
+					item: "farm_and_charm:flour_bag"
+					type: "item"
+				}
+				{
+					id: "70EACFC50E495C8D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "2322B1404EC339C7"
+					item: "farm_and_charm:chicken_coop"
+					type: "item"
+				}
+				{
+					id: "0D84F7E33941E7FF"
+					item: "farm_and_charm:feeding_trough"
+					type: "item"
+				}
+			]
+			title: "Galinheiro de Respeito"
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Croissant e cookie de chocolate são obrigatórios em qualquer"
+				"§7padaria que se preze — mesmo uma no meio do mundo do Minecraft."
+				""
+				"§eAsse um Croissant e um Chocolate Cookie."
+			]
+			icon: "bakery:croissant"
+			id: "3D042849742B1820"
+			rewards: [
+				{
+					count: 8
+					id: "4372D62317EF7FC2"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "2FD03F410AE541CB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "20C425E4A426F526"
+					item: "bakery:chocolate_glazed_cookie"
+					type: "item"
+				}
+				{
+					id: "649E73DA52E66F1F"
+					item: "bakery:croissant"
+					type: "item"
+				}
+			]
+			title: "Café da Padaria"
+			x: 16.0d
+			y: 10.0d
+		}
+	]
+	title: "§eCulinária do Mundo"
+}

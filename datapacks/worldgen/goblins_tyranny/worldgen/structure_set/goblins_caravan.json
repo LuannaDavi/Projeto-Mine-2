@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "goblins_tyranny:goblins_caravan",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 30,
+    "separation": 15,
+    "salt": 1937604403,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

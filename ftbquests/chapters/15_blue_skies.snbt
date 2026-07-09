@@ -1,1399 +1,639 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "16_extras"
-	group: ""
-	icon: ["artifacts:lucky_scarf", "minecraft:jukebox", "lucky:lucky_block"]
-	id: "AA16000000000001"
-	order_index: 15
+	filename: "15_blue_skies"
+	group: "42DFD8A84753DCE2"
+	id: "2F6EBF249ABC6480"
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7Este modpack tem mais de 150 mods.", "§7Há automação industrial, magia arcana, batalhas épicas,", "§7civilizações inteiras para construir, bosses para derrotar", "§7e dimensões para conquistar.", "", "§7E a primeira missão deste capítulo é §lsentar numa cadeira§r§7.", "", "§eCrie uma cadeira do §eHandcrafted §7e use o §eSit Mod", "§epara sentar nela.", "", "§8§o(Você merece. Sério. Você instalou 150 mods.)"]
-			icon: "handcrafted:oak_chair"
-			id: "7EBCBF9DA1AEDAE1"
+			description: [
+				"§7§eBlue Skies §7adiciona §eduas dimensões §7celestiais:"
+				"§7- §eEverbright §7— mundo eterno de luz e neve"
+				"§7- §eEverdawn §7— mundo de crepúsculo eterno e floresta"
+				""
+				"§eConstrua o portal para §eEverbright §7ou §eEverdawn§7."
+				"§eEntre pela primeira vez em Blue Skies."
+				""
+				"§6Dica: §7Portal de Blue Skies usa blocos específicos de cada dimensão!"
+				"§7Consulte a wiki do mod para os materiais corretos."
+				""
+				"§8§o(Subir uma escada até o céu. Sem elevador, sem desculpa.)"
+			]
+			icon: "blue_skies:winter_leaf_seeds"
+			id: "45F1C9E1A3987BE2"
 			rewards: [
 				{
 					count: 8
-					id: "0DFA28855D5F0DE9"
-					item: "minecraft:cooked_beef"
+					id: "7A975AB48D4BE3FE"
+					item: "blue_skies:comet_berries"
 					type: "item"
 				}
-				{
-					id: "26F367530A47C09B"
-					type: "xp"
-					xp: 50
-				}
-			]
-			shape: "gear"
-			tasks: [
-				{
-					id: "1E2EBCE2BDA1124C"
-					item: "handcrafted:oak_chair"
-					type: "item"
-				}
-			]
-			title: "Hora do Descanso"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§ePresence Footsteps §7faz cada passo ter um som diferente", "§7dependendo do bloco. Pedra, grama, madeira, água...", "", "§7§eCamera Overhaul §7adiciona efeitos de câmera cinematográficos", "§7enquanto você corre e se move.", "", "§eCrie um par de §eRunning Shoes §7(Artifacts) e sinta", "§ea diferença ao correr — combine com os efeitos visuais", "§eda câmera para uma experiência completa."]
-			icon: {
-				Count: 1
-				id: "minecraft:leather_boots"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "505059FCD9D184A2"
-			rewards: [
-				{
-					count: 4
-					id: "356699B12CA6F74B"
-					item: "minecraft:leather"
-					type: "item"
-				}
-				{
-					id: "1812E6B2F8125405"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "4BFFA6CF6507F031"
-					item: "artifacts:running_shoes"
-					type: "item"
-				}
-			]
-			title: "A Leveza dos Passos"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eEmotecraft §7adiciona emotes animados para o personagem!", "§7Dance, cumprimente, comemore suas vitórias.", "", "§eToque um §eNote Block §7para comemorar — combine", "§ecom seus emotes favoritos do Emotecraft.", "", "§6Dica: §7Configure atalhos de teclado para emotes favoritos!", "§7Perfeito para celebrar ao derrotar um boss difícil.", "", "§8§o(Ninguém está vendo. Dance assim mesmo.)"]
-			icon: "minecraft:note_block"
-			id: "284E3DAACB6D7712"
-			rewards: [
-				{
-					id: "14CF8B9F376C9094"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "31ADB47CA6452C91"
-					item: "minecraft:note_block"
-					type: "item"
-				}
-			]
-			title: "Dançarino do Mundo"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eImmersive Melodies §7transforma instrumentos", "§7em ferramentas de composição real.", "§7Você pode tocar músicas em formato MIDI dentro do jogo.", "", "§eCrie um instrumento e toque pelo menos uma melodia.", "§eTocar para pelo menos §e1 ser vivo §7(aldeão, animal ou mob).", "", "§6Dica: §7Construa um palco. Decore. Convide aldeões.", "§7§eEmotecraft §7tem emotes de comemoração — celebre", "§7sua própria apresentação se quiser."]
-			icon: "immersive_melodies:flute"
-			id: "79898617404E06A5"
-			rewards: [
 				{
 					count: 3
-					id: "59669D79807F1FAF"
-					item: "immersive_melodies:lute"
-					type: "item"
-				}
-				{
-					id: "0A601DF29AE461B0"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					id: "4DAFE97249CA6FB0"
-					item: "immersive_melodies:flute"
-					type: "item"
-				}
-			]
-			title: "Músico do Realm"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eBetter Jukebox §7expande a jukebox com controles de volume,", "§7fila de músicas e visual aprimorado — tudo direto na jukebox vanilla.", "", "§eColete 3 discos diferentes e toque na sua Jukebox: Cat, Pigstep e Otherside.", "", "§6Dica: §7Combine com §eImmersive Melodies §7pra estações de rádio!", "§7Coloque jukeboxes em pontos diferentes da base."]
-			icon: "minecraft:jukebox"
-			id: "29E2D72F3BAE639C"
-			rewards: [
-				{
-					count: 3
-					id: "3A850F079560B55C"
-					item: "minecraft:music_disc_13"
-					type: "item"
-				}
-				{
-					id: "4AC631E31812A504"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "19710975E3CDFC5E"
-					item: "minecraft:music_disc_cat"
-					type: "item"
-				}
-				{
-					id: "FX000000000008A"
-					item: "minecraft:music_disc_pigstep"
-					type: "item"
-				}
-				{
-					id: "FX000000000008B"
-					item: "minecraft:music_disc_otherside"
-					type: "item"
-				}
-			]
-			title: "DJ da Base"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eFalling Leaves §7faz as árvores soltarem folhas que caem", "§7suavemente, tornando as florestas cinematográficas.", "§7§eDynamic Lights §7faz tochas e outros itens iluminar ao segurar!", "", "§eCaminhe por uma floresta densa à noite com uma tocha na mão.", "§7Aprecie as folhas caindo ao seu redor.", "§eColete 5 tipos diferentes de folha: Carvalho, Bétula, Abeto, Selva e Acácia.", "", "§6Este é um dos momentos mais bonitos do modpack.", "§8§o(Foram precisos uns 15 mods só pra você sentir isso.)"]
-			icon: "minecraft:oak_leaves"
-			id: "2CDBC238ADA56C06"
-			rewards: [
-				{
-					count: 5
-					id: "60A419B1EB48E224"
-					item: "minecraft:oak_sapling"
-					type: "item"
-				}
-				{
-					id: "303E545227113326"
-					type: "xp"
-					xp: 80
-				}
-			]
-			tasks: [
-				{
-					id: "2C7E47A82716498A"
-					item: "minecraft:oak_leaves"
-					type: "item"
-				}
-				{
-					id: "FX0000000000091"
-					item: "minecraft:birch_leaves"
-					type: "item"
-				}
-				{
-					id: "FX0000000000092"
-					item: "minecraft:spruce_leaves"
-					type: "item"
-				}
-				{
-					id: "FX0000000000093"
-					item: "minecraft:jungle_leaves"
-					type: "item"
-				}
-				{
-					id: "FX0000000000094"
-					item: "minecraft:acacia_leaves"
-					type: "item"
-				}
-			]
-			title: "Floresta Viva"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eSwashbucklers! §7adiciona navios piratas construíveis,", "§7batalhas navais e armas temáticas — o mod usa namespace §ehpm§7.", "§7Construa um Swashbuckler (navio) e navegue pelos mares!", "", "§eConstrua ou encontre um navio do §eSwashbucklers§7.", "§eDerrote pelo menos §e1 inimigo §7com estilo pirata.", "", "§6Dica: §7O §eHand Cannon §7é a arma pirata do mod.", "§7Swashbucklers tem navios de vários tamanhos — do Raft ao Corvette."]
-			icon: "hpm:swashbuckleritem"
-			id: "3A6D68B9DF6D4FC8"
-			rewards: [
-				{
-					count: 3
-					id: "0D52BD751DC70F95"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "3931468241EC4C5C"
-					item: "hpm:hand_cannon"
-					type: "item"
-				}
-				{
-					id: "5C4AADCDDAE23E43"
-					type: "xp"
-					xp: 300
-				}
-			]
-			tasks: [
-				{
-					id: "3176E843A78533F9"
-					item: "hpm:swashbuckleritem"
-					type: "item"
-				}
-			]
-			title: "Ahoy, Pirata!"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eBuddycards §7adiciona cartas colecionáveis de mobs, com raridades", "§7e variações (holográfica, dourada...) igual card física de verdade.", "", "§eAbra 3 pacotes de cartas.", "", "§6Dica: §7Construa um Card Stand ou Display pra expor sua coleção!"]
-			icon: "buddycards:buddycard_pack_base"
-			id: "144A5332E5639DAC"
-			rewards: [
-				{
-					count: 3
-					id: "32D3922823D0C227"
-					item: "buddycards:buddycard_pack_base"
-					type: "item"
-				}
-				{
-					id: "5FD4F5A947E6745B"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					count: 3
-					id: "1693AF8CE9E20263"
-					item: "buddycards:buddycard_pack_base"
-					type: "item"
-				}
-			]
-			title: "Colecionador de Cartas"
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eAquaculture Delight §7tem receitas... peculiares.", "§7Alguém, em algum lugar, decidiu que §eJellyfish Jelly", "§7precisava existir como prato. Não perguntamos por quê.", "", "§ePesque o suficiente e prepare uma porção de", "§eGeleia de Água-Viva (Jellyfish Jelly)§7.", "", "§8§o(Ninguém testou o sabor. Os criadores se recusam", "§8§oa confirmar se é seguro para consumo.)"]
-			icon: "aquaculturedelight:jellyfish_jelly"
-			id: "1F733349850C37AD"
-			rewards: [
-				{
-					count: 2
-					id: "6617E37570CEC3DD"
-					item: "aquaculturedelight:jellyfish_jelly"
-					type: "item"
-				}
-				{
-					id: "6B0CE7185213882F"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "0F8E6F5589E6FBAF"
-					item: "aquaculturedelight:jellyfish_jelly"
-					type: "item"
-				}
-			]
-			title: "O Prato Duvidoso"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eAnimalistic §7adiciona criaturas que definitivamente", "§7não pertencem a este bioma. Um Quetzal — pássaro", "§7sul-americano colorido — vagando por uma floresta", "§7de carvalho é uma escolha de design e tanto.", "", "§eColete um Aqua Talisman.", "", "§8§o(Ninguém sabe como ele chegou aqui. Ele também não sabe.)"]
-			icon: "animalistic_a:quetzal_spawn_egg"
-			id: "398B19298CE0792E"
-			rewards: [
-				{
-					count: 3
-					id: "10A5504993F4A0CC"
-					item: "minecraft:name_tag"
-					type: "item"
-				}
-				{
-					id: "46F9CAC58E709149"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					id: "5D61C6492CB4D5CD"
-					item: "animalistic_a:aqua_talisman"
-					type: "item"
-				}
-			]
-			title: "Visitante Inesperado"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eCompanions §7adiciona companheiros personalizáveis", "§7que te seguem, carregam itens e te ajudam em combate.", "", "§eCrie e nomeie um §eCompanion §7do mod Companions.", "§eViaje pelo menos §e500 blocos §7junto com ele.", "", "§6Dica: §7Companions podem ser equipados com armadura!", "§7Configure o comportamento dele em combate.", "", "§8§o(Seu único amigo que nunca cancela os planos.)"]
-			icon: "minecraft:name_tag"
-			id: "2357F3239C46113A"
-			rewards: [
-				{
-					count: 3
-					id: "5C050A4D3FC7254C"
-					item: "minecraft:name_tag"
-					type: "item"
-				}
-				{
-					id: "705F96C8EBFEA327"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "2B7B763B5BAE3C7F"
-					item: "companions:empty_puppet_block"
-					type: "item"
-				}
-			]
-			title: "Inseparáveis"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eDouble Doors §7faz portas duplas abrirem juntas, sincronizadas.", "§7§eDiagonal Fences §7deixa cercas virarem ângulos de 45°.", "", "§7Nenhum dos dois muda absolutamente nada na sua sobrevivência.", "§7Mas portas que abrem fora de sincronia incomodam", "§7um certo tipo de pessoa. Você sabe quem é.", "", "§eColoque 2 portas lado a lado e veja a mágica acontecer.", "", "§8§o(Sim, essa é a missão inteira. Aproveite a simetria.)"]
-			icon: "minecraft:oak_door"
-			id: "5F0E9807B505442B"
-			rewards: [
-				{
-					count: 4
-					id: "75480EC1CAE100C2"
-					item: "minecraft:oak_door"
-					type: "item"
-				}
-				{
-					id: "50BC17353D3140FC"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					count: 2L
-					id: "39EF1870F6CCF888"
-					item: "minecraft:oak_door"
-					type: "item"
-				}
-			]
-			title: "Sincronia Perfeita"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eHearth and Home §7adiciona decoração temática de lar aconchegante.", "§7Paper Lanterns em 16 cores, telhas, treliças de madeira", "§7e muito mais para dar personalidade à sua base.", "", "§eCrie uma §eWhite Paper Lantern §7e pendure-a", "§eem algum cômodo da sua casa.", "", "§6Dica: §7A Paper Lantern existe em todas as 16 cores —", "§7escolha a que combinar com sua decoração.", "§7Combine com §eHandcrafted §7para ambientes ainda mais detalhados."]
-			icon: "hearth_and_home:white_paper_lantern"
-			id: "26633316F23357DB"
-			rewards: [
-				{
-					count: 2
-					id: "675C95F3287780CB"
-					item: "hearth_and_home:white_paper_lantern"
-					type: "item"
-				}
-				{
-					id: "62B08C2E646A0638"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "23966C064DD67CD3"
-					item: "hearth_and_home:white_paper_lantern"
-					type: "item"
-				}
-			]
-			title: "Calor do Lar"
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eDark Paintings §7e §eVisual Workbench §7melhoram", "§7a experiência visual do jogo.", "§7Dark Paintings adiciona dezenas de texturas novas", "§7que aparecem aleatoriamente nas pinturas vanilla.", "", "§eCrie e coloque pelo menos §e5 pinturas §7(Paintings)", "§eem diferentes paredes da sua base.", "", "§6Dica: §7Sua galeria de arte merece atenção!", "§7Combine tamanhos diferentes para um visual impressionante.", "", "§8§o(Pelo menos uma vai ser perturbadora. É sempre assim.)"]
-			icon: "minecraft:painting"
-			id: "07FC9C400F829FAF"
-			rewards: [
-				{
-					count: 5
-					id: "6C866393659504CD"
-					item: "minecraft:painting"
-					type: "item"
-				}
-				{
-					id: "409B0BA817D8BC50"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					count: 5L
-					id: "0CECB1EB0EC10E62"
-					item: "minecraft:painting"
-					type: "item"
-				}
-			]
-			title: "Galeria de Arte"
-			x: 10.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eCrop Critters §7adiciona criaturas minúsculas", "§7que vivem nas suas plantações — cada uma baseada", "§7em um vegetal diferente, com personalidade própria.", "", "§eConsiga um §eCarrot Critter §7(criatura-cenoura)", "§ee dê um lar a ele na sua fazenda.", "", "§8§o(É uma cenoura com pernas. Você vai se acostumar.)"]
-			icon: "cropcritters:carrot_critter_spawn_egg"
-			id: "6667A1D38C1B1876"
-			rewards: [
-				{
-					count: 5
-					id: "1C6278AC256F76CE"
-					item: "minecraft:bone_meal"
-					type: "item"
-				}
-				{
-					id: "3B472C9CDBA02812"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					entity: "cropcritters:carrot_critter"
-					id: "4C7B271AC806670C"
-					type: "kill"
-					value: 1L
-				}
-			]
-			title: "Jardineiro e seus Amigos"
-			x: 12.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eAlex's Mobs §7adiciona criaturas reais do mundo todo —", "§7e algumas nem tão reais assim. O §eDrop Bear §7é", "§7uma piada australiana que vira um urso assassino", "§7que cai das árvores. Sim, é real. Pesquise depois.", "", "§eEncontre um §eDrop Bear §7e tenha muito cuidado", "§ecom o que está em cima de você.", "", "§8§o(Australianos avisaram. Ninguém acreditou. Agora", "§8§oo bicho existe no seu modpack.)"]
-			icon: "minecraft:golden_apple"
-			id: "4D97FF141BBBB4A2"
-			rewards: [
-				{
-					count: 5
-					id: "2F3ADA8156057661"
+					id: "55198AEADBB151F9"
 					item: "minecraft:golden_apple"
 					type: "item"
 				}
 				{
-					id: "3499C90BB62F7EB0"
+					id: "6E27120D7EB63BE6"
 					type: "xp"
-					xp: 300
+					xp: 600
 				}
 			]
-			tasks: [
-				{
-					entity: "alexsmobs:dropbear"
-					id: "CC17B60033EE72D5"
-					type: "kill"
-					value: 1L
-				}
-			]
-			title: "Cuidado Acima"
-			x: 14.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eLuggage §7adiciona uma §emala mágica §7que te segue!", "§7Ela carrega itens automaticamente e nunca deixa você para trás —", "§7ao contrário daquele baú que você esqueceu em algum lugar", "§7há três sessões de jogo e nunca mais encontrou.", "", "§eCrie uma §eLuggage §7e viaje com ela por pelo menos 1000 blocos.", "", "§6Dica: §7Luggage pode ser equipada com upgrades de velocidade!"]
-			icon: "luggage:luggage"
-			id: "54D7AF2942169103"
-			rewards: [
-				{
-					count: 3
-					id: "160BA1EA9CCD01D9"
-					item: "minecraft:name_tag"
-					type: "item"
-				}
-				{
-					id: "236BB8EE78313AB7"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					id: "3D2D40F08DEC0686"
-					item: "luggage:luggage"
-					type: "item"
-				}
-			]
-			title: "A Mala Fiel"
+			tasks: [{
+				advancement: "blue_skies:everbright/enter"
+				criterion: "enter_everbright"
+				id: "65A4D13000B5F03D"
+				type: "advancement"
+			}]
+			title: "Além das Nuvens"
 			x: 0.0d
-			y: 8.0d
+			y: 0.0d
 		}
 		{
-			description: ["§7§eSubtle Effects §7torna os efeitos de poção mais visuais —", "§7partículas, brilhos e detalhes que tornam a alquimia viva.", "§7§eSpawn Animations §7dá animações únicas quando mobs surgem.", "", "§7Lua de Sangue, poções brilhando no cinto, sem espada", "§7à vista. Um alquimista de verdade não precisa de lâminas.", "", "§eMonte um §eArsenal Alquímico§7: tenha em mãos ao mesmo tempo", "§euma Poção de Arremesso de Dano, uma de Veneno e uma", "§ede Fraqueza §7— pronto para qualquer Lua de Sangue.", "", "§8§o(Use-as ou não. A missão só liga pra você ter o kit.)"]
-			icon: "minecraft:lingering_potion"
-			id: "2E24996404693A1E"
+			description: [
+				"§7§eBlue Skies §7tem criaturas, recursos e estruturas únicos"
+				"§7em CADA dimensão — Everbright e Everdawn são mundos diferentes."
+				""
+				"§eColete Comet Berries (Everbright) e Winter Leaves (Everdawn)."
+				""
+				"§6Dica: §7Everbright tem gelo azul, Everdawn tem madeiras únicas!"
+				"§7Minerais de Blue Skies têm usos especiais no crafting."
+				""
+				"§8§o(Um lado claro, outro sombrio — Blue Skies também tem crise de identidade.)"
+			]
+			icon: "blue_skies:pine_fruit_seeds"
+			id: "474BD769AB883020"
 			rewards: [
 				{
 					count: 8
-					id: "5D659C5CF55AC6B7"
-					item: "minecraft:experience_bottle"
+					id: "27843BC981088DF1"
+					item: "blue_skies:comet_berries"
 					type: "item"
 				}
 				{
-					count: 5
-					id: "2C087F9A70079D99"
-					item: "minecraft:potion"
+					count: 8
+					id: "1840105CFA7F5202"
+					item: "blue_skies:pine_fruit"
 					type: "item"
 				}
 				{
-					id: "2AB1A095D8D5C9C0"
+					id: "0F2062034F8F635F"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "65992C4312EF3946"
+					item: "blue_skies:comet_berries"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1B62D13B91A9474C"
+					item: "blue_skies:dusk_leaves"
+					type: "item"
+				}
+			]
+			title: "Duas Faces do Céu"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eBlue Skies §7tem bosses dimensionais próprios. O §eSummoner§7,"
+				"§7guardião do Everbright, invoca aliados e ataca à distância."
+				""
+				"§eDerrote o Summoner no Everbright."
+				""
+				"§6Dica: §7Ele invoca mobs constantemente — priorize atacá-lo"
+				"§7direto em vez de limpar os adds."
+			]
+			icon: "blue_skies:ethereal_arc"
+			id: "2328C3E2C521A915"
+			rewards: [
+				{
+					id: "595C0FD7580C03DA"
+					item: "blue_skies:ethereal_arc"
+					type: "item"
+				}
+				{
+					id: "644CFBF1CE18953A"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [{
+				advancement: "blue_skies:everbright/kill_summoner"
+				criterion: "kill_summoner"
+				id: "35246969712FE296"
+				type: "advancement"
+			}]
+			title: "O Invocador do Everbright"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Cada dimensão do §eBlue Skies §7tem seu próprio mineral."
+				"§eFalsite §7é o material do Everbright — brilha no escuro."
+				"§eHorizonite §7é o do Everdawn — forja armaduras com"
+				"§7regeneração natural. Ambos superam Netherite em atributos."
+				""
+				"§eColete §eFalsite Ingot §7e §eHorizonite Ingot§7."
+				""
+				"§6Dica: §7Horizonite só aparece nas camadas mais profundas"
+				"§7do Everdawn — vale a pena minerar antes de enfrentar o boss."
+				""
+				"§8§o(Minerar nas nuvens. A NR-35 daria um troço.)"
+			]
+			icon: "blue_skies:falsite_ingot"
+			id: "08D0000000000309"
+			rewards: [
+				{
+					count: 4
+					id: "08D000000000030A"
+					item: "blue_skies:horizonite_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "08D000000000030B"
+					item: "blue_skies:falsite_ingot"
+					type: "item"
+				}
+				{
+					id: "08D000000000030C"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "blue_skies:everbright/get_falsite"
+					criterion: "obtain_material"
+					id: "08D000000000030D"
+					type: "advancement"
+				}
+				{
+					advancement: "blue_skies:everdawn/get_horizonite"
+					criterion: "obtain_material"
+					id: "08D000000000030E"
+					type: "advancement"
+				}
+			]
+			title: "Minérios das Alturas"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eStarlit Crusher §7é o boss do §eEverbright —"
+				"§7uma construção de pedra viva que guarda a Nature Dungeon."
+				"§7Ele é invulnerável sem o §eNature Arc §7— arma"
+				"§7craftada com recursos exclusivos desta dimensão."
+				""
+				"§eDerrote o §eStarlit Crusher §7no Everbright."
+				""
+				"§6Dica: §7Craft o Nature Arc antes de entrar —"
+				"§7sem ele o boss é literalmente imortal."
+				""
+				"§8§o(Invulnerável. Uma escolha de design interessante.)"
+			]
+			icon: "blue_skies:nature_arc"
+			id: "08D000000000030F"
+			rewards: [
+				{
+					id: "08D0000000000310"
+					item: "blue_skies:nature_arc"
+					type: "item"
+				}
+				{
+					id: "08D0000000000311"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [{
+				advancement: "blue_skies:everbright/kill_starlit_crusher"
+				criterion: "kill_starlit_crusher"
+				id: "08D0000000000312"
+				type: "advancement"
+			}]
+			title: "Destruidor de Estrelas"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eAlchemist §7é o boss do §eEverdawn §7— um feiticeiro"
+				"§7que usa transmutação para criar itens mágicos."
+				"§7A §ePoison Dungeon §7que o abriga está cheia de"
+				"§7aranhas venenosas e armadilhas de veneno."
+				""
+				"§eDerrote o §eAlchemist §7no Everdawn."
+				""
+				"§6Dica: §7Leve leite — as armadilhas de veneno são constantes."
+				"§7O §eDusk Arc §7é a arma necessária para penetrar sua defesa."
+			]
+			icon: "blue_skies:dusk_arc"
+			id: "08D0000000000313"
+			rewards: [
+				{
+					id: "08D0000000000314"
+					item: "blue_skies:dusk_arc"
+					type: "item"
+				}
+				{
+					id: "08D0000000000315"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [{
+				advancement: "blue_skies:everdawn/kill_alchemist"
+				criterion: "kill_alchemist"
+				id: "08D0000000000316"
+				type: "advancement"
+			}]
+			title: "O Alquimista do Crepúsculo"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eEverbright §7é um mundo de luz eterna — nunca anoitece."
+				"§7Tem flora única: §eWinter Leaves§7, §ePine Trees§7, §eStar Flowers§7."
+				"§7A fauna inclui §eStarlit Deer §7e criaturas luminosas exclusivas."
+				""
+				"§eColete §e8 Winter Leaf Seeds §7e §e8 Pine Fruit Seeds§7."
+				""
+				"§6Dica: §7Winter Leaves produzem frutos que regeneram mais que maçã."
+				"§7Pine Fruit Seeds podem ser plantadas no Overworld também!"
+				""
+				"§8§o(Frutas que crescem no céu. Ninguém questiona mais nada nesse ponto.)"
+			]
+			icon: "blue_skies:winter_leaf_seeds"
+			id: "19773EED111748D3"
+			rewards: [
+				{
+					count: 4
+					id: "49E466664D022384"
+					item: "blue_skies:falsite_ingot"
+					type: "item"
+				}
+				{
+					id: "4D7F2FACD019B42B"
 					type: "xp"
 					xp: 400
 				}
 			]
 			tasks: [
 				{
-					id: "524AF46DB1FBA486"
-					item: {
-						Count: 1
-						id: "minecraft:splash_potion"
-						tag: {
-							Potion: "minecraft:harming"
-						}
-					}
+					count: 8L
+					id: "339820FE4AF966B5"
+					item: "blue_skies:winter_leaf_seeds"
 					type: "item"
 				}
 				{
-					id: "524AF46DB1FBA4A1"
-					item: {
-						Count: 1
-						id: "minecraft:splash_potion"
-						tag: {
-							Potion: "minecraft:poison"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "524AF46DB1FBA4A2"
-					item: {
-						Count: 1
-						id: "minecraft:splash_potion"
-						tag: {
-							Potion: "minecraft:weakness"
-						}
-					}
+					count: 8L
+					id: "6C85605FD359412D"
+					item: "blue_skies:pine_fruit_seeds"
 					type: "item"
 				}
 			]
-			title: "Alquimista de Batalha"
+			title: "Flora do Everbright"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7O §eEverdawn §7é um eterno crepúsculo roxo — nunca amanhece."
+				"§7§eBrewberries §7crescem em arbustos — ingrediente de poções únicas."
+				"§7§eDusk Butterflies §7aparecem à noite e soltam §eDust §7brilhante."
+				""
+				"§eColete §e16 Brewberries §7no Everdawn."
+				""
+				"§6Dica: §7Brewberries crescem em arbustos baixos espalhados."
+				"§7São o ingrediente-chave das poções exclusivas do Blue Skies."
+				""
+				"§8§o(O lado sombrio de Blue Skies também cultiva sua horta.)"
+			]
+			icon: "blue_skies:brewberry"
+			id: "41666A7E3BA62ED2"
+			rewards: [
+				{
+					count: 4
+					id: "533FF497E8B39297"
+					item: "blue_skies:horizonite_ingot"
+					type: "item"
+				}
+				{
+					id: "019D7B6964BA4C4B"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "758CCAD57CB69ED7"
+				item: "blue_skies:brewberry"
+				type: "item"
+			}]
+			title: "Flora do Everdawn"
 			x: 2.0d
-			y: 8.0d
+			y: 2.0d
 		}
 		{
-			description: ["§7O campo deste mundo é cheio de vida graças a vários mods:", "", "§7§eBuzzier Bees §7adiciona novas espécies de abelhas e flores.", "§7§eDragN's Livestock Overhaul §7dá variedade a vacas, porcos,", "§7galinhas e ovelhas — cada uma com aparências únicas.", "§7§eEcologics §7adiciona capivaras, patos e sapos-bois.", "", "§eAdote um animal de estimação com §eDeed of Ownership", "§e(Domestication Innovation) §7e dê um leito (Pet Bed) a ele.", "", "§8§o(Capivaras não fazem nada de especial. Elas só existem", "§8§opara serem admiradas. É o suficiente.)"]
-			icon: "minecraft:beehive"
-			id: "4564B3502C9D4DA7"
+			description: [
+				"§7§eFalsite §7é o mineral do Everbright — brilha no escuro"
+				"§7e é bonito, mas não serve pra ferramentas nem armadura,"
+				"§7só pra construção e como material de crafting."
+				""
+				"§eMinere e traga §e8 Falsite Ingots§7."
+				""
+				"§6Dica: §7Falsite aparece em veios grandes nas profundezas do Everbright."
+				"§7Guarde alguns — vão ser úteis em receitas do Everdawn também."
+			]
+			icon: "blue_skies:falsite_ingot"
+			id: "579018B31576D2D2"
 			rewards: [
 				{
-					count: 6
-					id: "468C19DCC6C35F80"
-					item: "minecraft:honeycomb"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "0BF5C141B676E215"
-					item: "minecraft:oak_sapling"
-					type: "item"
-				}
-				{
 					count: 4
-					id: "32E8167CEB0A199F"
-					item: "minecraft:lead"
+					id: "2CEDDF0675D9141B"
+					item: "blue_skies:horizonite_ingot"
 					type: "item"
 				}
 				{
-					id: "329DDD31339C45F0"
-					item: "domesticationinnovation:collar_tag"
-					type: "item"
-				}
-				{
-					id: "1DB1B51AA63BA589"
+					id: "077E62E6834C86F8"
 					type: "xp"
 					xp: 300
 				}
 			]
-			tasks: [
-				{
-					id: "395682257B638901"
-					item: "domesticationinnovation:deed_of_ownership"
-					type: "item"
-				}
-			]
-			title: "Vida no Campo"
+			tasks: [{
+				count: 8L
+				id: "155135885154D6CE"
+				item: "blue_skies:falsite_ingot"
+				type: "item"
+			}]
+			title: "Minerando Falsite"
 			x: 4.0d
-			y: 8.0d
+			y: 2.0d
 		}
 		{
-			description: ["§7Cinco mods de comida coexistem neste modpack.", "§7Isso é, objetivamente, demais. E está ótimo assim.", "", "§7§eFarmer's Delight §7tem receitas que vão muito além", "§7de pão e ensopado básico — torta de pastor incluída.", "", "§ePrepare uma §eShepherd's Pie §7(Torta de Pastor)", "§ena sua Cooking Pot.", "", "§8§o(Ninguém pediu uma torta de pastor no Minecraft.", "§8§oAlguém fez mesmo assim. Aproveite.)"]
-			icon: "farmersdelight:cooking_pot"
-			id: "2809A347D1CBA403"
+			description: [
+				"§7§eHorizonite §7é o mineral do Everdawn — mais raro que Falsite."
+				"§7A §eArmadura de Horizonite §7tem §eRegeneração Passiva §7lenta."
+				"§7É o tier mais alto do Blue Skies — superior ao Netherite."
+				""
+				"§eCrafite pelo menos §e2 peças §7da §eArmadura de Horizonite§7."
+				""
+				"§6Dica: §7Horizonite só nas camadas profundas do Everdawn."
+				"§7A regeneração passiva é especialmente útil contra bosses longos."
+			]
+			icon: {
+				Count: 1
+				id: "blue_skies:horizonite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "764AE93E857BEC7D"
 			rewards: [
 				{
-					count: 4
-					id: "3A7B150AE28B271A"
-					item: "farmersdelight:wheat_dough"
+					count: 8
+					id: "750FD1A8925FA30E"
+					item: "blue_skies:horizonite_ingot"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "7580EC5D56008CA6"
-					item: "farmersdelight:dumplings"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "5A7A21CA2592C752"
-					item: "minecraft:golden_carrot"
-					type: "item"
-				}
-				{
-					id: "42B42063B21F61FF"
+					id: "4D752572D99E24EA"
 					type: "xp"
-					xp: 350
+					xp: 700
 				}
 			]
 			tasks: [
 				{
-					id: "65481B863FF88EF4"
-					item: "farmersdelight:shepherds_pie"
+					id: "7EDC165F0C6D8B7E"
+					item: {
+						Count: 1
+						id: "blue_skies:horizonite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38125514D66930DE"
+					item: {
+						Count: 1
+						id: "blue_skies:horizonite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
-			title: "Receita Duvidosa"
+			title: "Armadura de Horizonite"
 			x: 6.0d
-			y: 8.0d
+			y: 2.0d
 		}
 		{
-			description: ["§7Em algum lugar do mundo existe um bloco dourado", "§7com um ponto de interrogação.", "§7Pode ser um set completo de Netherite.", "§7Pode ser um creeper na sua cara.", "§7A diferença é que com o creeper você sabe o que esperar.", "", "§7O mod também esconde uma §eEspada da Sorte§7, um", "§eArco da Sorte §7e uma §ePoção da Sorte §7— ninguém sabe", "§7exatamente o que cada um faz até usar. É essa a graça.", "", "§eEncontre e quebre §e1 Lucky Block §7no mundo.", "", "§7Lucky Blocks são §lextremamente raros §r§7por design.", "§7Quando encontrar um, respire fundo.", "§7Pense nas suas escolhas de vida.", "§7Quebre.", "", "§8§o(Ou não. Também é uma opção válida.)"]
-			icon: "lucky:lucky_block"
-			id: "473CEB784BA320A4"
+			description: [
+				"§7§eBlue Skies §7tem dois arcos exclusivos de boss:"
+				"§7§eNature Arc §7— necessário para o §eStarlit Crusher§7."
+				"§7§eDusk Arc §7— necessário para o §eAlchemist§7."
+				"§7§bSem eles os bosses são completamente invulneráveis§7."
+				""
+				"§eCrafite o §eNature Arc §7e o §eDusk Arc§7."
+				""
+				"§6Dica: §7Nature Arc usa recursos do Everbright."
+				"§7Dusk Arc usa recursos do Everdawn. Craft antes de entrar."
+				""
+				"§8§o(Arcos mágicos de dois mundos diferentes. Nenhum deles vem com manual.)"
+			]
+			icon: "blue_skies:nature_arc"
+			id: "6DBF598CAEC1FC22"
 			rewards: [
 				{
-					id: "23295051F52C4F4B"
-					item: "lucky:lucky_sword"
+					count: 4
+					id: "10C1B043C89D8D11"
+					item: "blue_skies:falsite_ingot"
 					type: "item"
 				}
 				{
-					count: 5
-					id: "536D80D5433B85A5"
-					item: "minecraft:experience_bottle"
+					count: 4
+					id: "20DF6ADB442F70FE"
+					item: "blue_skies:horizonite_ingot"
 					type: "item"
 				}
 				{
-					id: "338A35923043D4C6"
+					id: "71E6D7BE290B5DDF"
 					type: "xp"
-					xp: 300
+					xp: 800
 				}
 			]
 			tasks: [
 				{
-					id: "49FED2685CF8E94C"
-					item: "lucky:lucky_block"
+					id: "1C44E1AE656100E2"
+					item: "blue_skies:nature_arc"
+					type: "item"
+				}
+				{
+					id: "3338FBC4687C28F8"
+					item: "blue_skies:dusk_arc"
 					type: "item"
 				}
 			]
-			title: "Sorte ou Azar?"
-			x: 8.0d
-			y: 8.0d
+			title: "Os Arcos dos Mundos"
+			x: 4.0d
+			y: 4.0d
 		}
 		{
-			description: ["§8§o...", "", "§8§oAlgo antigo observa este mundo.", "§8§oMais antigo do que qualquer dimensão que você cruzou.", "§8§oMais antigo do que qualquer boss que você derrotou.", "", "§8§oEle não está no JourneyMap.", "§8§oNão está em nenhum livro de quests.", "§8§oMas se você explorar o suficiente...", "", "§8§o...talvez encontre o que não deveria existir aqui."]
-			icon: "minecraft:suspicious_gravel"
-			id: "9D00000000000065"
-			hide: true
+			description: [
+				"§7Blue Skies tem 5 gemas próprias espalhadas pelas duas"
+				"§7dimensões: Aquite, Charoite, Diopside, Moonstone e Pyrope."
+				"§7Cada uma tem cor e uso de crafting diferente."
+				""
+				"§eColete as 5 gemas: Aquite, Charoite, Diopside Gemstone,"
+				"§eMoonstone Shard e Pyrope Gemstone."
+				""
+				"§6Dica: §7Cada gema tem sua própria linha de ferramentas"
+				"§7e armadura completa — vale a pena explorar depois."
+			]
+			icon: "blue_skies:moonstone_shard"
+			id: "0A47C17861C87C05"
 			rewards: [
 				{
-					id: "9D00000000000066"
-					item: "mysti:sea_serpent_skull"
-					type: "item"
-				}
-				{
-					id: "9D00000000000067"
-					item: "mysti:nectar"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "9D00000000000068"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "9D00000000000069"
-					type: "xp"
-					xp: 2000
-				}
-			]
-			tasks: [
-				{
-					count: 3L
-					id: "9D0000000000006A"
-					item: "mysti:coin"
-					type: "item"
-				}
-			]
-			title: "§8§o???"
-			x: 10.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7Caixotes empilhados não são decoração, são um cry for help.", "§7§eMrCrayfish's Furniture: Refurbished §7resolve isso.", "", "§eMonte uma mesa e uma cadeira (de qualquer madeira)."]
-			icon: "refurbished_furniture:oak_table"
-			id: "BA552ABB45DEB93F"
-			rewards: [
-				{
-					type: "item"
+					count: 8
+					id: "4C101443D447B896"
 					item: "minecraft:emerald"
-					count: 2
-					id: "D19F5359FC591CE4"
+					type: "item"
 				}
 				{
+					id: "78E2B00C64F63298"
 					type: "xp"
-					xp: 100
-					id: "54400DF255CE3A0B"
+					xp: 400
 				}
 			]
 			tasks: [
 				{
+					id: "3661607BFD5D37E0"
+					item: "blue_skies:aquite"
 					type: "item"
-					item: "refurbished_furniture:oak_table"
-					id: "1F4AEFBB6E04F477"
 				}
 				{
+					id: "12694D6123F8B5F6"
+					item: "blue_skies:charoite"
 					type: "item"
-					item: "refurbished_furniture:oak_chair"
-					id: "29FA283962C00EED"
+				}
+				{
+					id: "454DF4648336F7F7"
+					item: "blue_skies:diopside_gem"
+					type: "item"
+				}
+				{
+					id: "546ECD48D87DF5C1"
+					item: "blue_skies:moonstone_shard"
+					type: "item"
+				}
+				{
+					id: "4DEA643A9FCE34C6"
+					item: "blue_skies:pyrope_gem"
+					type: "item"
 				}
 			]
-			title: "Mobília de Verdade"
-			x: 16.0d
-			y: 6.0d
-		}
-		{
-			description: ["§7§eSupplementaries §7enche seu mundo de detalhes que o vanilla", "§7esqueceu de inventar: foles, quadros-negros, pilhas de livro...", "", "§eCrie um Bellows e um Blackboard."]
-			icon: "supplementaries:bellows"
-			id: "835A2D4247B96231"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:bookshelf"
-					count: 2
-					id: "7DBE30B06B7DA642"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "B090E674A36F8C85"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "supplementaries:bellows"
-					id: "1DBC4042680E971B"
-				}
-				{
-					type: "item"
-					item: "supplementaries:blackboard"
-					id: "79CA4EB8D7BE0450"
-				}
-			]
-			title: "Suplementos do Cotidiano"
-			x: 18.0d
-			y: 6.0d
-		}
-		{
-			description: ["§7§eBrazilian Delight §7traz açaí, feijão e bolo de cenoura —", "§7a trindade sagrada de qualquer domingo em família.", "", "§eColha Açaí Berries e asse um Carrot Cake."]
-			icon: "braziliandelight:acai_berries_crate"
-			id: "236FEC6BEAF7367A"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:golden_carrot"
-					count: 4
-					id: "4CB8D287F34ACC56"
-				}
-				{
-					type: "xp"
-					xp: 120
-					id: "8AA62BA12E5DAEEA"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "braziliandelight:acai_berries_crate"
-					id: "E2779B93F7D8490C"
-				}
-				{
-					type: "item"
-					item: "braziliandelight:carrot_cake"
-					id: "ABECDCF9314F36C3"
-				}
-			]
-			title: "Sabor Brasileiro"
-			x: 20.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7§eFarm & Charm §7adiciona utensílios de cozinha rústica —", "§7panelas, sacos de farinha e muito charme pra sua fazenda.", "", "§eCrie uma Cooking Pot e um Bag of Flour."]
-			icon: "farm_and_charm:cooking_pot"
-			id: "9213C38F247C4557"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:wheat"
-					count: 16
-					id: "189A3AC3CEC24773"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "DB77C58E845A72D5"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "farm_and_charm:cooking_pot"
-					id: "6E85D68272726B12"
-				}
-				{
-					type: "item"
-					item: "farm_and_charm:flour_bag"
-					id: "D922E42B6C2CF1EC"
-				}
-			]
-			title: "Charme da Fazenda"
-			x: 22.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7§eBakery §7transforma sua cozinha numa confeitaria de verdade.", "§7Chega de comer pão cru feito animal.", "", "§eAsse um Apple Pie e monte uma Cake Display."]
-			icon: "bakery:apple_pie"
-			id: "3CDB0B6FE7191DB9"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:apple"
-					count: 8
-					id: "ACB0CD1DDAB5E303"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "DB4D4F7127AB1BE4"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "bakery:apple_pie"
-					id: "B5F813A3B21698E1"
-				}
-				{
-					type: "item"
-					item: "bakery:cake_display"
-					id: "9BCA4F699582C71B"
-				}
-			]
-			title: "Padaria Completa"
-			x: 16.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7§eBuzzier Bees §7expande o tema das abelhas com blocos de mel", "§7cristalizado e tijolos de favo — pra quem quer uma base", "§7que pareça um comercial de xarope.", "", "§eCrie um bloco de Honeycomb Bricks e um Honey Lamp."]
-			icon: "buzzier_bees:honeycomb_bricks"
-			id: "60D786E34FFFA8C5"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:honeycomb"
-					count: 8
-					id: "B985CF9A72B4A4FB"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "54EA7A31EA457517"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "buzzier_bees:honeycomb_bricks"
-					id: "3B3C2E0E40660B2D"
-				}
-				{
-					type: "item"
-					item: "buzzier_bees:honey_lamp"
-					id: "D716687440CB663E"
-				}
-			]
-			title: "Colmeia de Luxo"
-			x: 24.0d
-			y: 6.0d
-		}
-		{
-			description: ["§7§eFramedBlocks §7deixa qualquer bloco se disfarçar de outro formato.", "§7Rampas, painéis, cubos com textura emprestada — o pedreiro que", "§7existe em você finalmente pode brilhar.", "", "§eCrie um Framed Bookshelf e um Framed Bars."]
-			icon: "framedblocks:framed_bookshelf"
-			id: "E302123B7000BFE4"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:bookshelf"
-					count: 4
-					id: "2640B349E1D81584"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "94E1CBFAEF1F5EE9"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "framedblocks:framed_bookshelf"
-					id: "2530F72E221829FB"
-				}
-				{
-					type: "item"
-					item: "framedblocks:framed_bars"
-					id: "876E020A4FC512F5"
-				}
-			]
-			title: "Blocos Camuflados"
-			x: 26.0d
-			y: 6.0d
-		}
-		{
-			description: ["§7Chorus Fruit sempre foi estranha de comer crua. Alguém finalmente", "§7teve a decência de transformar isso numa torta decente.", "", "§eAsse um Chorus Pie e prepare um Chorus Stew."]
-			icon: "endersdelight:chorus_pie"
-			id: "5BDFFFEB3C43FF34"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:chorus_fruit"
-					count: 8
-					id: "DAA9D5CC099A746E"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "EDA8DC8FA7955D51"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "endersdelight:chorus_pie"
-					id: "872AC9BC6FEAE3E2"
-				}
-				{
-					type: "item"
-					item: "endersdelight:chorus_stew"
-					id: "265A5C86805A3118"
-				}
-			]
-			title: "Culinária do Fim"
-			x: 28.0d
-			y: 6.0d
-		}
-		{
-			description: ["§7§eBushier Flowers §7faz suas flores crescerem em touceiras densas", "§7em vez daquele único caule solitário e triste do vanilla.", "", "§eColha um arbusto de Poppies e um de Wither Roses."]
-			icon: "bushierflowers:grown_poppy"
-			id: "7B6DE0C2227CFC79"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:bone_meal"
-					count: 16
-					id: "4C6646AD0B6700BE"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "70DDFDA7F9F0093E"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "bushierflowers:grown_poppy"
-					id: "AE290544CD5493FA"
-				}
-				{
-					type: "item"
-					item: "bushierflowers:grown_wither_rose"
-					id: "48DF8A52E7E72848"
-				}
-			]
-			title: "Jardim Exagerado"
+			title: "Gemas dos Dois Céus"
 			x: 30.0d
 			y: 6.0d
 		}
 		{
-			description: ["§7Ter cartas guardadas na mochila é desperdício. Exponha sua", "§7coleção como manda o figurino.", "", "§eConstrua um Card Display (qualquer madeira)."]
-			icon: "buddycards:oak_card_display"
-			id: "E71A3A841B3A1688"
+			description: [
+				"§7Com o Summoning Tome certo, é possível convocar um golem"
+				"§7artificial no Everbright — proteção extra pra sua base"
+				"§7nas nuvens."
+				""
+				"§eUse um Summoning Tome pra convocar um Artificial Golem."
+			]
+			icon: {
+				Count: 1
+				id: "blue_skies:summoning_tome"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2AB773A920DD6229"
 			rewards: [
 				{
+					id: "199A0D05A27CD434"
+					item: {
+						Count: 1
+						id: "blue_skies:summoning_tome"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "buddycards:buddycard_pack_base"
-					count: 2
-					id: "4F90E52AF1C4FB6F"
 				}
 				{
+					id: "787D997C0870199C"
 					type: "xp"
-					xp: 100
-					id: "C3195ED89E238E4E"
+					xp: 300
 				}
 			]
-			tasks: [
-				{
-					type: "item"
-					item: "buddycards:oak_card_display"
-					id: "46EF966C6A6B975E"
-				}
-			]
-			title: "Vitrine de Cartas"
+			tasks: [{
+				advancement: "blue_skies:everbright/summon_artificial_golem"
+				criterion: "summon_golem"
+				id: "595969B0DDBE9A70"
+				type: "advancement"
+			}]
+			title: "Golem Artificial"
 			x: 32.0d
 			y: 6.0d
 		}
 		{
-			description: ["§7Mesa e cadeira só fazem você comer decentemente.", "§7Uma cozinha de verdade precisa de pia.", "", "§eCrie uma Kitchen Sink e um Workbench (móveis, não o de crafting)."]
-			icon: "refurbished_furniture:oak_kitchen_sink"
-			id: "8B4B20798926EC0E"
+			description: [
+				"§7O Everdawn tem uma variedade generosa (e nojenta) de"
+				"§7insetos hostis: Arachnarch, Emberback, Infested Swarmer,"
+				"§7Nested Spider, Nyctofly e Venom Spider."
+				""
+				"§eDerrote pelo menos um de cada tipo de inseto do Everdawn"
+				"§e(advancement kill_bug rastreia isso automaticamente)."
+				""
+				"§6Dica: §7Venom Spider envenena — leve leite ou Milk Bucket"
+				"§7pra limpar o status rapidamente."
+			]
+			icon: "blue_skies:bug_guts"
+			id: "5E01C350E7050FE2"
 			rewards: [
 				{
+					count: 4
+					id: "35E3D87F271A344A"
+					item: "blue_skies:bug_guts"
 					type: "item"
-					item: "minecraft:emerald"
-					count: 2
-					id: "3FAB8899DED75069"
 				}
 				{
+					id: "78B3C36EF1256C3F"
 					type: "xp"
-					xp: 100
-					id: "376568BB2AE671B3"
+					xp: 500
 				}
 			]
-			tasks: [
-				{
-					type: "item"
-					item: "refurbished_furniture:oak_kitchen_sink"
-					id: "8C13801049E8F79F"
-				}
-				{
-					type: "item"
-					item: "refurbished_furniture:workbench"
-					id: "46162FF66E353B4C"
-				}
-			]
-			title: "Cozinha Funcional"
-			x: 18.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7Shoji, bambu tecido, colunas de pedra — construa algo que", "§7pareça um dojo em vez de um galpão de sobrevivência.", "", "§eCrie um Shoji e um Bamboo Mat."]
-			icon: "hearth_and_home:shoji"
-			id: "466084FA61CB5F76"
-			rewards: [
-				{
-					type: "item"
-					item: "hearth_and_home:red_paper_lantern"
-					id: "DFC1ECB52E34AAC2"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "F30DD3FC221C1925"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "hearth_and_home:shoji"
-					id: "F279BCB5744FDC9F"
-				}
-				{
-					type: "item"
-					item: "hearth_and_home:bamboo_mat"
-					id: "C8952BBBC20B5F01"
-				}
-			]
-			title: "Estilo Oriental"
-			x: 18.0d
-			y: 10.0d
-		}
-		{
-			description: ["§7Nem toda defesa precisa ser high-tech. Espigões de bambu", "§7fazem qualquer invasor repensar a vida.", "", "§eCrie Bamboo Spikes e um bloco de Ash Bricks."]
-			icon: "supplementaries:bamboo_spikes"
-			id: "214E815314E717FE"
-			rewards: [
-				{
-					type: "item"
-					item: "supplementaries:ash"
-					count: 8
-					id: "9E6EFB4B993CE3E4"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "2F3324C4587FFBDA"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "supplementaries:bamboo_spikes"
-					id: "82E26E375A49E2FD"
-				}
-				{
-					type: "item"
-					item: "supplementaries:ash_bricks"
-					id: "7216F64033482163"
-				}
-			]
-			title: "Defesas Baratas"
-			x: 20.0d
-			y: 6.0d
-		}
-		{
-			description: ["§7Rampas ajustáveis, painéis duplos, blocos que fingem ser", "§7outra coisa. Isso aqui é engenharia de disfarce de blocos.", "", "§eCrie um Framed Adjustable Double Slab."]
-			icon: "framedblocks:framed_adj_double_slab"
-			id: "5758A4A9B1E216E6"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:stone"
-					count: 16
-					id: "BD32701A7ACD5F90"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "905795B453D7CEB5"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "framedblocks:framed_adj_double_slab"
-					id: "879832822BC0BB96"
-				}
-			]
-			title: "Formas Impossíveis"
-			x: 26.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7Chocolate e pão de mel automatizados usando engrenagens —", "§7porque nem doce escapa da era industrial.", "", "§eProduza uma barra de chocolate e um bloco de gingerbread."]
-			icon: "create_confectionery:full_chocolate_bar"
-			id: "1DD353BCE063F411"
-			rewards: [
-				{
-					type: "item"
-					item: "create_confectionery:cocoa_powder"
-					count: 8
-					id: "A6487922BA2D4D81"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "6030818E4533821E"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "create_confectionery:full_chocolate_bar"
-					id: "CE467CC8EC3C8CFB"
-				}
-				{
-					type: "item"
-					item: "create_confectionery:gingerbread_block"
-					id: "FE9241A0EF8CF64F"
-				}
-			]
-			title: "Doceria Create"
+			tasks: [{
+				advancement: "blue_skies:everdawn/kill_bug"
+				criterion: ""
+				id: "6A1243E7ACEC3887"
+				type: "advancement"
+			}]
+			title: "Extermínio de Insetos"
 			x: 34.0d
 			y: 6.0d
 		}
-		{
-			description: ["§7Pão de queijo é bloco, coxinha é comida — e ambos são", "§7inegociáveis num boteco brasileiro decente.", "", "§eAsse um Cheese Bread e frite uma Coxinha."]
-			icon: "minecraft:book"
-			id: "C266E1089A8F7588"
-			rewards: [
-				{
-					type: "item"
-					item: "braziliandelight:brigadeiro_cream"
-					count: 4
-					id: "4C96D4A4542ADEB4"
-				}
-				{
-					type: "xp"
-					xp: 120
-					id: "09A205ACE56ED74B"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "braziliandelight:cheese_bread"
-					id: "F755136D89EDB868"
-				}
-				{
-					type: "item"
-					item: "braziliandelight:coxinha"
-					id: "709490CDCDC0B2BD"
-				}
-			]
-			title: "Boteco Mineiro"
-			x: 22.0d
-			y: 10.0d
-		}
-		{
-			description: ["§7Uma boa ponte de corda também merece um pilar decente", "§7pra sustentar. Macaw's Bridges cobre os dois.", "", "§eConstrua uma Acacia Bridge e um Acacia Bridge Support."]
-			icon: "minecraft:book"
-			id: "8D23580A38B10353"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:acacia_planks"
-					count: 16
-					id: "7A9D3212ADBA0806"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "E1CD75AC1137E7C7"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "mcwbridges:acacia_log_bridge_middle"
-					id: "F378FAFF70D8ACB1"
-				}
-				{
-					type: "item"
-					item: "mcwbridges:acacia_bridge_pier"
-					id: "1F1D12C291BED47E"
-				}
-			]
-			title: "Travessias Elegantes"
-			x: 24.0d
-			y: 10.0d
-		}
-		{
-			description: ["§7Galinha solta pelo mundo é ineficiente. Um Chicken Coop", "§7de verdade resolve isso com estilo rústico.", "", "§eConstrua um Chicken Coop e uma Feeding Trough."]
-			icon: "minecraft:book"
-			id: "5E20D2D8C4E1A5BF"
-			rewards: [
-				{
-					type: "item"
-					item: "farm_and_charm:flour_bag"
-					count: 4
-					id: "7D4FAD46BE7F32EF"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "70EACFC50E495C8D"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "farm_and_charm:chicken_coop"
-					id: "FE473267394EA1A5"
-				}
-				{
-					type: "item"
-					item: "farm_and_charm:feeding_trough"
-					id: "0D84F7E33941E7FF"
-				}
-			]
-			title: "Galinheiro de Respeito"
-			x: 24.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7Azaleia também vira madeira de construção — não é só", "§7flor decorativa, é matéria-prima de verdade.", "", "§eCrie uma Azalea Door e um Coconut Door."]
-			icon: "minecraft:book"
-			id: "E46271935F74DA3D"
-			rewards: [
-				{
-					type: "item"
-					item: "ecologics:coconut"
-					count: 4
-					id: "D4B558FA33637A59"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "C84D952FD344A7D8"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "ecologics:azalea_door"
-					id: "3E78F3D44A9ED82C"
-				}
-				{
-					type: "item"
-					item: "ecologics:coconut_door"
-					id: "B04C66F66CC0F0BA"
-				}
-			]
-			title: "Madeira Tropical"
-			x: 28.0d
-			y: 10.0d
-		}
-		{
-			description: ["§7Croissant e cookie de chocolate são obrigatórios em qualquer", "§7padaria que se preze — mesmo uma no meio do mundo do Minecraft.", "", "§eAsse um Croissant e um Chocolate Cookie."]
-			icon: "bakery:croissant"
-			id: "EE37F4919FFC6AE6"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:sugar"
-					count: 8
-					id: "4372D62317EF7FC2"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "2FD03F410AE541CB"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "bakery:chocolate_glazed_cookie"
-					id: "9295B5C8C9C405E7"
-				}
-				{
-					type: "item"
-					item: "bakery:croissant"
-					id: "649E73DA52E66F1F"
-				}
-			]
-			title: "Café da Padaria"
-			x: 16.0d
-			y: 10.0d
-		}
 	]
-	title: "§6Extras"
+	title: "§bBlue Skies — Além das Nuvens"
 }

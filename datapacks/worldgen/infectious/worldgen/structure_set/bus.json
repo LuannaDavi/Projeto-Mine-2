@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "infectious:bus",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 70,
+    "separation": 30,
+    "salt": 1770549637,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

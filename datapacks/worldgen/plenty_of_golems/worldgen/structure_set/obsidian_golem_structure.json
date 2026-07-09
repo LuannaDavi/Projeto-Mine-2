@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "plenty_of_golems:obsidian_golem_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 51,
+    "separation": 23,
+    "salt": 1965410440,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

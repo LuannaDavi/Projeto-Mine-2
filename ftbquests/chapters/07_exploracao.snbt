@@ -1,731 +1,215 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "08_civilizacoes"
-	group: "AA00000000000003"
-	icon: ["minecraft:emerald", "minecolonies:build_goggles", "minecraft:bell", "minecraft:bread"]
-	id: "AA08000000000001"
-	order_index: 7
+	filename: "07_exploracao"
+	group: "7AE9512640318D11"
+	id: "23D93D55895F8A87"
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7Todo império começa com uma tenda e uma visão.", "§7§eMineColonies §7é o mod de civilização mais complexo", "§7deste modpack — você é o prefeito, o arquiteto", "§7e o comandante ao mesmo tempo.", "", "§eCrie um §eSupply Camp §7ou §eSupply Ship§7,", "§7posicione-o e funde sua primeira colônia.", "", "§6Dica: §7Você §lnão pode mover §r§7a colônia depois.", "§7Escolha uma área plana, perto de água e recursos.", "§7Espaço para crescer é mais importante do que a paisagem.", "", "§8§o(Parabéns, agora você é responsável pela vida de gente que não pediu pra nascer.)"]
-			icon: "minecolonies:supplychestdeployer"
-			id: "7B00000000000002"
+			description: [
+				"§7Você está no centro de um mundo que não conhece seus limites."
+				"§7Mais de §e80 biomas§7, centenas de estruturas e dungeons"
+				"§7esperam por quem tiver coragem de ir além do spawn."
+				""
+				"§eCrie uma §eExplorer's Compass §7— ela aponta para"
+				"§7estruturas específicas que você escolher."
+				""
+				"§6Dica: §7§eJourneyMap §7mapeia tudo enquanto você explora."
+				"§7Marque waypoints dos lugares que quiser revisitar."
+				"§7JourneyMap + Explorer's Compass = nenhuma estrutura fica pra trás."
+				""
+				"§8§o(A bússola não aponta pra casa. Isso é proposital.)"
+			]
+			icon: {
+				Count: 1
+				id: "explorerscompass:explorerscompass"
+				tag: { }
+			}
+			id: "2B00000000000002"
 			rewards: [
 				{
-					count: 32
-					id: "7B00000000000003"
-					item: "minecraft:oak_planks"
+					count: 4
+					id: "2B00000000000004"
+					item: "minecraft:ender_pearl"
 					type: "item"
 				}
 				{
-					count: 16
-					id: "7B00000000000004"
-					item: "minecraft:stone"
-					type: "item"
-				}
-				{
-					id: "7B00000000000005"
+					id: "2B00000000000005"
 					type: "xp"
-					xp: 200
+					xp: 150
 				}
 			]
 			shape: "gear"
-			tasks: [
-				{
-					id: "7B00000000000006"
-					item: "minecolonies:supplychestdeployer"
-					type: "item"
+			tasks: [{
+				id: "2B00000000000006"
+				item: {
+					Count: 1
+					id: "explorerscompass:explorerscompass"
+					tag: { }
 				}
-			]
-			title: "Fundação da Colônia"
+				type: "item"
+			}]
+			title: "O Mundo Chama"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7B00000000000002"]
-			description: ["§7O §eBuilder §7é o primeiro colonizador que você precisa.", "§7Ele constrói os edifícios da colônia com os materiais que você entrega.", "", "§eCrie um §eBuilder's Hut §7e contrate um Builder.", "§7Entregue os materiais pedidos para ele construir.", "", "§6Dica: §7O Builder precisa de muitos recursos simples!", "§7Tenha estoque de madeira, pedra e terra antes de contratar.", "", "§8§o(Ele constrói mais rápido que você. Não fique triste, é o trabalho dele.)"]
-			icon: "minecolonies:supplychestdeployer"
-			id: "7B00000000000007"
+			description: [
+				"§7Oh The Biomes We've Gone adiciona mais de 80 biomas novos."
+				"§7Cada um tem flora, fauna e recursos exclusivos."
+				""
+				"§eVisite as §e5 vilas exclusivas §7do mod: Pumpkin Patch,"
+				"§eRed Rock, Salem, Skyris §7e §eSwamp Village."
+				""
+				"§6Dica: §7A §eNature's Compass §7aponta para qualquer bioma!"
+				"§7Procure por florestas de bambu, desertos de sal, florestas de cereja..."
+			]
+			icon: "minecraft:sunflower"
+			id: "2B00000000000007"
 			rewards: [
 				{
-					count: 64
-					id: "7B00000000000008"
-					item: "minecraft:oak_planks"
+					count: 3
+					id: "2B00000000000008"
+					item: "minecraft:emerald"
 					type: "item"
 				}
 				{
-					count: 32
-					id: "7B00000000000009"
-					item: "minecraft:cobblestone"
+					id: "2B00000000000009"
+					item: "artifacts:lucky_scarf"
 					type: "item"
 				}
 				{
-					id: "7B0000000000000A"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					id: "7B0000000000000B"
-					item: "minecolonies:blockhutbuilder"
-					type: "item"
-				}
-				{
-					id: "37ACD5C7FF889DF8"
-					item: "minecolonies:scroll_tp"
-					type: "item"
-				}
-			]
-			title: "O Primeiro Construtor"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7B00000000000007"]
-			description: ["§7Uma colônia precisa de comida para sobreviver.", "§7O §eFarmer §7e o §eFisherman §7garantem o sustento.", "", "§eCrie e construa um §eFarmer's Hut §7na colônia.", "§eCrie e construa um §eFisherman's Hut §7também.", "", "§6Dica: §7O Farmer precisa de espaço para plantar ao redor!", "§7Coloque o Fisherman perto de um lago ou rio.", "", "§8§o(Ninguém trabalha de estômago vazio — nem NPC.)"]
-			icon: "minecolonies:blockhutfarmer"
-			id: "7B0000000000000C"
-			rewards: [
-				{
-					count: 32
-					id: "7B0000000000000D"
-					item: "minecraft:bread"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "7B0000000000000E"
-					item: "minecraft:cooked_salmon"
-					type: "item"
-				}
-				{
-					id: "7B0000000000000F"
+					id: "2B0000000000000A"
 					type: "xp"
 					xp: 300
 				}
 			]
-			tasks: [
-				{
-					id: "7B00000000000010"
-					item: "minecolonies:blockhutfarmer"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "8901E9125F006AEE"
-					item: "minecolonies:compost"
-					type: "item"
-				}
-			]
-			title: "Sustento da Colônia"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7B0000000000000C"]
-			description: ["§7Uma colônia próspera é um alvo.", "§7Sem guardas, seus cidadãos viram vítimas", "§7dos primeiros mobs que passar pela vizinhança.", "", "§eCrie uma §eGuard Tower §7e contrate seu primeiro Guarda.", "§eOs guardas devem defender pelo menos §e5 atacantes§7.", "", "§6Dica: §7Quanto maior o nível da torre, melhor o guarda.", "§7§eGuard Villagers §7complementa com aldeões armados", "§7— combine os dois sistemas para defesa em camadas.", "", "§8§o(Sua colônia. Sua responsabilidade. Sua culpa quando arder.)"]
-			icon: "minecolonies:blockhutguardtower"
-			id: "7B00000000000011"
-			rewards: [
-				{
-					count: 8
-					id: "7B00000000000012"
-					item: "minecraft:iron_ingot"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "7B00000000000013"
-					item: {
-						Count: 1
-						id: "minecraft:bow"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7B00000000000014"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "7B00000000000015"
-					item: "minecolonies:blockhutguardtower"
-					type: "item"
-				}
-				{
-					id: "3DEF40DEADD9A985"
-					item: "minecolonies:scroll_guard_help"
-					type: "item"
-				}
-			]
-			title: "Guarnição Defensiva"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7B00000000000007"]
-			description: ["§7§eWorkers §7expande o MineColonies com novos tipos de trabalhadores.", "§7Mineradores, lenhadores e artesões especializados!", "", "§eCrie e construa uma Mine pra seu Miner.", "", "§6Dica: §7O Miner pode minerar até Y=-50 com upgrades!", "§7Configure níveis de mineração pra maximizar recursos —", "§7ele trabalha sozinho depois de configurado.", "", "§8§o(Ele desce, ele sobe, ele nunca reclama. Você já reclamou hoje?)"]
-			icon: "minecolonies:blockhutminer"
-			id: "7B00000000000016"
-			rewards: [
-				{
-					count: 32
-					id: "7B00000000000017"
-					item: "minecraft:iron_ore"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "7B00000000000018"
-					item: "minecraft:coal"
-					type: "item"
-				}
-				{
-					id: "7B00000000000019"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "7B0000000000001A"
-					item: "minecolonies:blockhutminer"
-					type: "item"
-				}
-			]
-			title: "Mineradores da Colônia"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eSimple Dwarves §7adiciona anões trabalhadores.", "§7Eles mineram recursos e os trazem de volta para você!", "", "§eContrate um §eSimple Dwarf §7e o envie para minerar.", "§eColete pelo menos §e64 itens §7que ele trouxer.", "", "§6Dica: §7Dwarves preferem áreas com pedra densa!", "§7Encomende minérios específicos para missões focadas.", "", "§8§o(Trabalho terceirizado. Você só assina o contrato.)"]
-			icon: "simpledwarves:dwarf_blacksmith_spawn_egg"
-			id: "7B00000000000020"
-			rewards: [
-				{
-					count: 32
-					id: "7B00000000000021"
-					item: "minecraft:iron_ingot"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "7B00000000000022"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					id: "7B00000000000023"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					count: 64L
-					id: "7B00000000000024"
-					item: "minecraft:iron_ore"
-					type: "item"
-				}
-			]
-			title: "Os Anões Trabalham"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7B0000000000000C"]
-			description: ["§7§eThe Merchant's Guild §7adiciona um sistema de comércio", "§7e progressão de NPCs mercadores espalhados pelo mundo.", "", "§eEncontre um mercador da Guilda e complete uma negociação.", "§eConsiga pelo menos §e1 item exclusivo §7do mod.", "", "§6Dica: §7Mercadores da Guilda vendem itens que não existem", "§7em nenhuma outra loja — vale a pena explorar suas ofertas!", "", "§8§o(Capitalismo, mas com aldeão de touca.)"]
-			icon: "tmg:trade_icon"
-			id: "7B00000000000025"
-			rewards: [
-				{
-					count: 32
-					id: "7B00000000000026"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					id: "7B00000000000027"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "7B00000000000028"
-					item: "tmg:trade_icon"
-					type: "item"
-				}
-			]
-			title: "Guilda dos Mercadores"
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7B00000000000025"]
-			description: ["§7§eTrade Cycling §7adiciona um botão de ciclo na tela de", "§7negociação dos aldeões — clique para resetar as ofertas!", "", "§eUse §eTrade Cycling §7para resetar as ofertas de um aldeão.", "§eConsiga um item de §eNível Mestre §7de um aldeão.", "", "§6Dica: §7Librarians com Mending ou Fortune III valem ouro.", "§7Cicle repetidamente até aparecer o encantamento certo.", "§7Quanto mais esmeraldas, mais ciclos você pode fazer.", "", "§8§o(Comprar barato, vender caro — economia 101, versão Minecraft.)"]
-			icon: "minecraft:emerald"
-			id: "7B00000000000029"
-			rewards: [
-				{
-					count: 3
-					id: "7B0000000000002A"
-					item: "minecraft:enchanted_book"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "7B0000000000002B"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					id: "7B0000000000002C"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					count: 64L
-					id: "7B0000000000002D"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-			]
-			title: "Mestre do Comércio"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7B00000000000011"]
-			description: ["§7§eBetter Village §7e §eTowns and Towers §7transformam as aldeias", "§7em estruturas complexas e únicas por bioma.", "§7Com §eVillager Names§7, cada aldeão tem um nome próprio —", "§7eles deixam de ser anônimos!", "", "§eEncontre uma aldeia especial (não vanilla) gerada por mods", "§ee negocie até conseguir um §eLivro Encantado§7.", "", "§6Dica: §7Presenteie aldeões com esmeraldas para ganhar reputação!", "§7Bibliotecários costumam vender os melhores livros encantados.", "", "§8§o(Diplomacia aqui significa \"dar emerald até eles gostarem de você\".)"]
-			icon: "minecraft:bell"
-			id: "7B0000000000002E"
-			rewards: [
-				{
-					count: 24
-					id: "7B0000000000002F"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					id: "7B00000000000030"
-					type: "xp"
-					xp: 300
-				}
-			]
-			tasks: [
-				{
-					id: "7B00000000000031"
-					item: "minecraft:enchanted_book"
-					type: "item"
-				}
-			]
-			title: "Diplomacia com Aldeões"
+			tasks: [{
+				advancement: "biomeswevegone:adventure/true_traveler"
+				criterion: ""
+				id: "2B0000000000000B"
+				type: "advancement"
+			}]
+			title: "Colecionador de Paisagens"
 			x: 2.0d
-			y: 4.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7B0000000000002E"]
-			description: ["§7§eMore Villagers §7adiciona novas mesas de profissão", "§7que transformam aldeões em especialistas únicos —", "§7jardineiro, mineiro, carpinteiro e mais.", "", "§eConstrua uma §eGardening Table §7e dê essa", "§eprofissão a um aldeão.", "", "§6Dica: §7Cada mesa de profissão gera trades exclusivos!", "§7Experimente as outras: Mining Bench, Woodworking Table...", "", "§8§o(Curriculum da colônia só cresce.)"]
-			icon: "morevillagers:gardening_table"
-			id: "7B00000000000032"
+			description: [
+				"§7§eDungeons Arise §7não brinca. As masmorras são enormes,"
+				"§7cheias de armadilhas e habitadas por mobs modificados."
+				"§7Mas os baús dentro delas têm itens que você não"
+				"§7vai encontrar em mais lugar nenhum."
+				""
+				"§eEncontre e explore uma dungeon grande do Dungeons Arise."
+				"§eColete ao menos §e1 item raro §7de baú de dungeon."
+				""
+				"§6Dica: §7Não entre com pressa. Explore cada corredor."
+				"§7Armadilhas de pressão e spawners escondidos matam os impacientes."
+			]
+			icon: "minecraft:hopper_minecart"
+			id: "2B0000000000000C"
 			rewards: [
 				{
 					count: 3
-					id: "7B00000000000033"
-					item: "minecraft:potion"
-					type: "item"
-				}
-				{
-					count: 20
-					id: "7B00000000000034"
+					id: "2B0000000000000D"
 					item: "minecraft:emerald"
 					type: "item"
 				}
 				{
-					id: "7B00000000000035"
+					count: 2
+					id: "2B0000000000000E"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "2B0000000000000F"
 					type: "xp"
-					xp: 350
+					xp: 400
 				}
 			]
-			tasks: [
-				{
-					id: "7B00000000000036"
-					item: "morevillagers:gardening_table"
-					type: "item"
-				}
-				{
-					count: 1
-					id: "BD7F0C28CFA8EF85"
-					item: "minecolonies:resourcescroll"
-					type: "item"
-				}
-			]
-			title: "Novas Profissões"
+			tasks: [{
+				advancement: "dungeons_arise:find_mining_system"
+				criterion: "location0"
+				id: "2B00000000000010"
+				type: "advancement"
+			}]
+			title: "Saquear as Profundezas"
 			x: 4.0d
-			y: 4.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7B00000000000020"]
-			description: ["§7Uma colônia grande precisa de §eArtesãos §7para processar", "§7os materiais que os mineradores e farmers coletam.", "", "§eCrie uma §eBlacksmith's Hut §7e uma §eSawmill §7na colônia.", "§eAmbos devem ter um trabalhador e estar ativos.", "", "§6Dica: §7O Blacksmith faz ferramentas e armas para os guardas!", "§7O Sawmill transforma madeira em produtos para construção.", "", "§8§o(Mão de obra especializada — sem sindicato, sem reclamação.)"]
-			icon: "minecolonies:blockhutblacksmith"
-			id: "7B00000000000037"
+			description: [
+				"§7§eDungeons Arise §7gera dezenas de estruturas únicas —"
+				"§7do §eShinobi Thieves §7escondido em bambuzal até o"
+				"§7imponente §eShiraz Palace §7nas savanas e o"
+				"§eColiseum §7de pedra nos desertos."
+				""
+				"§eEncontre o §eShiraz Palace §7e saqueie o andar"
+				"§emais alto — os baús de topo são os mais valiosos."
+				""
+				"§6Dica: §7Explorer's Compass aponta para estruturas próximas."
+				"§7Leve escadas — muitas estruturas têm vários andares!"
+			]
+			icon: "minecraft:chiseled_stone_bricks"
+			id: "2B00000000000301"
 			rewards: [
 				{
-					count: 16
-					id: "7B00000000000038"
-					item: "minecraft:iron_ingot"
+					count: 3
+					id: "2B00000000000302"
+					item: "minecraft:diamond"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "7B00000000000039"
-					item: "minecraft:oak_planks"
+					count: 3
+					id: "2B00000000000303"
+					item: "minecraft:enchanted_book"
 					type: "item"
 				}
 				{
-					id: "7B0000000000003A"
-					type: "xp"
-					xp: 450
-				}
-			]
-			tasks: [
-				{
-					id: "7B0000000000003B"
-					item: "minecolonies:blockhutblacksmith"
-					type: "item"
-				}
-				{
-					id: "ACD6575D004CFD73"
-					item: "minecolonies:scroll_buff"
-					type: "item"
-				}
-			]
-			title: "Artesãos da Colônia"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7B00000000000037"]
-			description: ["§7Uma capital precisa de um §eCorehouse §7nível máximo.", "§7Quanto mais alto o nível do Town Hall, mais cidadãos!", "", "§eUpgrade o §eTown Hall §7para pelo menos §eNível 3§7.", "§eTenha pelo menos §e15 cidadãos §7vivendo na colônia.", "", "§6Dica: §7Cada nível de Town Hall aumenta o limite de cidadãos!", "§7Construa casas para acomodar mais habitantes.", "", "§8§o(De vilarejo a metrópole, um bloco de cada vez.)"]
-			icon: "minecolonies:blockhuttownhall"
-			id: "7B00000000000041"
-			rewards: [
-				{
-					count: 16
-					id: "7B00000000000042"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "7B00000000000043"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "7B00000000000044"
-					type: "xp"
-					xp: 800
-				}
-			]
-			tasks: [
-				{
-					id: "7B00000000000045"
-					item: "minecolonies:blockhuttownhall"
-					type: "item"
-				}
-			]
-			title: "Capital em Crescimento"
-			x: 10.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7B00000000000041"]
-			description: ["§7§eEffortless Building §7permite construir estruturas enormes", "§7rapidamente com ferramentas de construção avançadas.", "", "§eUse §eEffortless Building §7para construir uma §eMuralha §7ao redor", "§eda sua colônia com pelo menos §e50 blocos de comprimento§7.", "", "§6Dica: §7Radial Mirror duplica construções simétricas!", "§7Line Placer cria fileiras longas de uma vez.", "", "§8§o(Boas cercas fazem bons vizinhos. Muralhas fazem vizinhos melhores ainda.)"]
-			icon: "effortlessbuilding:elastic_hand"
-			id: "7B00000000000046"
-			rewards: [
-				{
-					count: 64
-					id: "7B00000000000047"
-					item: "minecraft:stone_bricks"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "7B00000000000048"
-					item: "minecraft:stone_brick_wall"
-					type: "item"
-				}
-				{
-					id: "7B00000000000049"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "7B0000000000004A"
-					item: "effortlessbuilding:elastic_hand"
-					type: "item"
-				}
-			]
-			title: "Muralha da Civilização"
-			x: 12.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7B00000000000046"]
-			description: ["§7§eMineColonies §7tem um sistema de pesquisa avançado.", "§7Pesquise tecnologias para melhorar sua colônia.", "", "§eComplete pelo menos §e5 pesquisas §7no Research Center.", "§eIncluindo pelo menos 1 pesquisa militar.", "", "§6Dica: §7Pesquisas desbloqueiam novos tipos de colonizadores!", "§7Priorize pesquisas de eficiência no início.", "", "§8§o(P&D — porque adivinhar receita no escuro é coisa do século passado.)"]
-			icon: "minecolonies:blockhutuniversity"
-			id: "7B0000000000004B"
-			rewards: [
-				{
-					count: 5
-					id: "7B0000000000004C"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "7B0000000000004D"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "7B0000000000004E"
+					id: "2B00000000000304"
 					type: "xp"
 					xp: 700
 				}
 			]
-			tasks: [
-				{
-					id: "7B0000000000004F"
-					item: "minecolonies:blockhutuniversity"
-					type: "item"
-				}
-				{
-					count: 1
-					id: "3390957EC8BF467B"
-					item: "minecolonies:scroll_buff"
-					type: "item"
-				}
-			]
-			title: "Pesquisa e Desenvolvimento"
-			x: 14.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7B0000000000004B"]
-			description: ["§7Conecte sua colônia com outras aldeias pela rede de §eWaystones§7.", "§7§eTraveler's Titles §7anuncia os nomes das regiões ao entrar.", "", "§eCrie pelo menos §e5 Waystones §7nomeados estrategicamente.", "§eConecte-os formando uma §eRede de Rotas §7pelo mundo.", "", "§6Dica: §7Coloque Waystones em: Base, Mina, Floresta, Aldeia, Dungeon!", "§7Use nomes descritivos para cada um.", "", "§8§o(Estradas conectam colônias. Buracos no caminho conectam você com a frustração.)"]
-			icon: "waystones:waystone"
-			id: "7B00000000000050"
-			rewards: [
-				{
-					count: 5
-					id: "7B00000000000051"
-					item: "waystones:waystone"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "7B00000000000052"
-					item: "waystones:warp_scroll"
-					type: "item"
-				}
-				{
-					id: "7B00000000000053"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					count: 5L
-					id: "7B00000000000054"
-					item: "waystones:waystone"
-					type: "item"
-				}
-			]
-			title: "Rede de Rotas"
-			x: 0.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["7B0000000000004B"]
-			description: ["§7§eDomum Ornamentum §7adiciona centenas de blocos decorativos", "§7pra embelezar sua civilização.", "", "§eCrie a ferramenta Architect's Cutter — ela permite combinar", "§equalquer material com qualquer formato de bloco decorativo.", "", "§6Dica: §7A paleta de blocos é enorme — combine materiais no", "§7crafting pra criar blocos únicos. Deixe sua criatividade fluir.", "§7Pra detalhes extras, use Macaw's Bridges e FramedBlocks!", "", "§8§o(Nem toda construção precisa parecer um galpão de fazenda.)"]
-			icon: "domum_ornamentum:architectscutter"
-			id: "7B00000000000055"
-			rewards: [
-				{
-					count: 32
-					id: "7B00000000000056"
-					item: "minecraft:bricks"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "7B00000000000057"
-					item: "minecraft:smooth_stone"
-					type: "item"
-				}
-				{
-					id: "7B00000000000058"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					id: "F948C83D73BB9E16"
-					item: "domum_ornamentum:architectscutter"
-					type: "item"
-				}
-			]
-			title: "Arquitetura da Civilização"
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["7B00000000000050"]
-			description: ["§7Demorou. Custou recursos. Exigiu planejamento.", "§7Mas aqui está — uma civilização funcionando.", "§7Agricultores colhem. Mineradores escavam.", "§7Ferreiros forjam. Guardas patrulham.", "§7E você construiu tudo isso do zero.", "", "§eTenha simultaneamente:", "§e- Town Hall Nível 5", "§e- Pelo menos 25 cidadãos ativos", "§e- Pelo menos 1 trabalhador de cada tipo", "§e- Defesas ativas com guardas de alto nível", "", "§6§lIsso é um Império.", "", "§8§o(De uma cabana solitária a um império — a jornada capitalista está completa.)"]
-			icon: "minecolonies:blockhuttownhall"
-			id: "7B0000000000005A"
-			rewards: [
-				{
-					count: 20
-					id: "7B0000000000005B"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "7B0000000000005C"
-					item: "minecolonies:blockhutuniversity"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "7B0000000000005D"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					id: "7B0000000000005E"
-					type: "xp"
-					xp: 3000
-				}
-			]
-			tasks: [
-				{
-					id: "7B000000000000B1"
-					item: "minecolonies:blockhuttownhall"
-					type: "item"
-				}
-			]
-			title: "§a§lImpério"
-			x: 4.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["7B00000000000055"]
-			description: ["§7§eHandcrafted §7e §eRefurbished Furniture §7trazem", "§7centenas de móveis para decorar sua colônia e base.", "", "§eMonte um conjunto de jantar: crie cadeiras e mesas", "§ede madeira do Handcrafted para sua sala.", "", "§6Dica: §7Refurbished Furniture tem estilos vintage diferentes!", "§7Combine madeiras variadas para um visual único.", "", "§8§o(Sua casa não precisa ser bonita. Mas devia.)"]
-			icon: "handcrafted:oak_chair"
-			id: "7B0000000000005F"
-			rewards: [
-				{
-					count: 2
-					id: "7B00000000000060"
-					item: "handcrafted:oak_shelf"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "7B00000000000061"
-					item: "handcrafted:oak_table"
-					type: "item"
-				}
-				{
-					id: "7B00000000000062"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					count: 4L
-					id: "7B00000000000063"
-					item: "handcrafted:oak_chair"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "7B00000000000064"
-					item: "handcrafted:oak_table"
-					type: "item"
-				}
-			]
-			title: "Lar com Estilo"
+			tasks: [{
+				advancement: "dungeons_arise:find_shiraz_palace"
+				criterion: "location0"
+				id: "2B00000000000305"
+				type: "advancement"
+			}]
+			title: "Palácios e Arenas"
 			x: 6.0d
-			y: 8.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7B0000000000002E"]
-			description: ["§7§eRibbits §7adiciona um povo inteiramente novo ao mundo: os Ribbits —", "§7humanoides-sapo que vivem em vilas próprias construídas sobre", "§7lagoas e folhas-de-lótus gigantes.", "", "§eEncontre uma Vila Ribbit, negocie com um mercador e traga uma", "§eGiant Lilypad de lá como prova.", "", "§6Dica: §7Vilas Ribbit aparecem perto de pântanos e lagoas grandes!", "§7Eles têm uma economia e cultura totalmente diferentes dos aldeões comuns."]
-			icon: "ribbits:giant_lilypad"
-			id: "7B00000000000070"
+			description: [
+				"§7Outposts de Pillagers são estruturas vanilla — torres de madeira"
+				"§7guardadas por Pillagers e um Capitão de Raid especial, que"
+				"§7carrega a Bandeira Ominosa e aumenta a dificuldade dos raids."
+				""
+				"§eEncontre um Outpost e derrote o Capitão de Raid que carrega"
+				"§ea Bandeira Ominosa."
+				""
+				"§6Dica: §7Pillagers atiram à distância — avance em zigue-zague"
+				"§7ou use escudo. A bandeira dele é um troféu decorativo!"
+			]
+			icon: "minecraft:stone_bricks"
+			id: "2B00000000000011"
 			rewards: [
 				{
 					count: 16
-					id: "7B00000000000071"
-					item: "minecraft:lily_pad"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "7B00000000000072"
+					id: "2B00000000000012"
 					item: "minecraft:emerald"
 					type: "item"
 				}
 				{
-					id: "7B00000000000073"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "FX000000000005A"
-					item: "ribbits:giant_lilypad"
-					type: "item"
-				}
-			]
-			title: "Os Povos da Lagoa"
-			x: 8.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["7B00000000000011"]
-			description: ["§7§eGuard Villagers §7permite transformar qualquer aldeão", "§7em um defensor armado da sua colônia!", "", "§eEquipe um aldeão com §earmadura e arma na mão§7, depois", "§einteraja com ele para transformá-lo em §eGuarda§7.", "§eTransforme pelo menos §e3 aldeões §7em Guardas.", "", "§6Dica: §7Guardas reagem a ataques e protegem a vila inteira!", "§7Combine com torres do MineColonies para defesa em camadas."]
-			icon: "guardvillagers:guard_spawn_egg"
-			id: "7B00000000000075"
-			rewards: [
-				{
-					count: 3
-					id: "7B00000000000076"
+					id: "2B00000000000013"
 					item: {
 						Count: 1
-						id: "minecraft:iron_sword"
+						id: "minecraft:crossbow"
 						tag: {
 							Damage: 0
 						}
@@ -733,8 +217,1078 @@
 					type: "item"
 				}
 				{
+					id: "2B00000000000014"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [{
+				id: "2B00000000000015"
+				item: "minecraft:ominous_banner"
+				type: "item"
+			}]
+			title: "Sentinela das Fronteiras"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Existem ruínas e estruturas escondidas nos oceanos."
+				"§7Ship wrecks, templos aquáticos e ilhas perdidas"
+				"§7guardam tesouros e itens impossíveis de obter em terra."
+				""
+				"§eExplore um Templo Aquático."
+				"§eDerrote o Elder Guardian e colete sua recompensa."
+				""
+				"§6Dica: §7Poções de Respiração Aquática e Visão Noturna são essenciais!"
+			]
+			icon: "minecraft:prismarine_crystals"
+			id: "2B0000000000001B"
+			rewards: [
+				{
+					count: 8
+					id: "2B0000000000001C"
+					item: "minecraft:sponge"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "2B0000000000001D"
+					item: "minecraft:prismarine_crystals"
+					type: "item"
+				}
+				{
+					id: "2B0000000000001E"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				id: "2B0000000000001F"
+				item: "minecraft:sponge"
+				type: "item"
+			}]
+			title: "Profundezas do Mar"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Repurposed Structures reimagina estruturas do vanilla e as"
+				"§7distribui por biomas onde normalmente não aparecem."
+				"§7Uma fortaleza do Nether pode aparecer na floresta!"
+				""
+				"§eEncontre uma estrutura incomum em um bioma inesperado e"
+				"§etraga um item valioso de dentro dela."
+				""
+				"§6Dica: §7Olhe ao redor enquanto explora — elas são grandes!"
+			]
+			icon: "minecraft:trapped_chest"
+			id: "2B00000000000020"
+			rewards: [
+				{
 					count: 3
-					id: "7B00000000000077"
+					id: "2B00000000000021"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "2B00000000000022"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "2B00000000000023"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			title: "Estruturas Redescobertas"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Waystones são pedras mágicas que permitem teletransporte instantâneo."
+				"§7Você pode ativar pedras encontradas no mundo ou criar as suas."
+				""
+				"§eCrie uma Waystone própria e coloque na sua base."
+				""
+				"§6Dica: §7Vá ativando toda Waystone que encontrar pelo caminho —"
+				"§7o jogo não confere quantas você já achou, mas seu futuro eu agradece."
+				"§7Waystones em aldeias costumam estar na praça central!"
+			]
+			icon: "waystones:waystone"
+			id: "2B00000000000024"
+			rewards: [
+				{
+					id: "2B00000000000025"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2B00000000000026"
+					item: "waystones:warp_scroll"
+					type: "item"
+				}
+				{
+					id: "2B00000000000027"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [{
+				id: "2B00000000000028"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "Rede de Teletransporte"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Naufrágios guardam os melhores mapas do jogo."
+				"§7Siga o mapa e cave até encontrar um baú enterrado —"
+				"§7pode ter o §eHeart of the Sea §7dentro."
+				""
+				"§eEncontre um naufrágio e colete seu §emapa do tesouro§7."
+				"§eSiga o mapa e encontre o baú enterrado."
+				""
+				"§6Dica: §7Golfinhos revelam tesouros próximos se você"
+				"§7alimentá-los com peixe cru. Leve sempre algo para pescar."
+				""
+				"§8§o(O X nunca marca o lugar exato. Sempre foi assim.)"
+			]
+			icon: "minecraft:map"
+			id: "2B00000000000029"
+			rewards: [
+				{
+					id: "2B0000000000002A"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2B0000000000002B"
+					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+				{
+					id: "2B0000000000002C"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [{
+				id: "2B0000000000002D"
+				item: "minecraft:heart_of_the_sea"
+				type: "item"
+			}]
+			title: "Caçador de Tesouros"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Mineshafts, ruínas subterrâneas e cavernas profundas"
+				"§7escondem minérios raros e baús preciosos."
+				""
+				"§eExplore uma Mineshaft Abandonada e colete um baú de minecart."
+				""
+				"§6Dica: §7Tochas ajudam a não se perder nas minas!"
+				"§7Leve comida extra — é fácil ficar preso."
+			]
+			icon: "minecraft:rail"
+			id: "2B00000000000038"
+			rewards: [
+				{
+					count: 16
+					id: "2B00000000000039"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2B0000000000003A"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "2B0000000000003B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "2B0000000000003C"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			title: "Minas Abandonadas"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7As antigas pirâmides do deserto escondem"
+				"§7armadilhas mortais e baús com loot valioso."
+				""
+				"§eExplore uma Pirâmide do Deserto ou Templo da Selva."
+				"§eDesarme as armadilhas e colete o loot dos baús."
+				""
+				"§6Dica: §7§cNUNCA §7pise nas placas de pressão!"
+				"§7Quebre o bloco embaixo delas para desarmá-las com segurança."
+			]
+			icon: "minecraft:sandstone"
+			id: "2B0000000000003D"
+			rewards: [
+				{
+					count: 2
+					id: "2B0000000000003E"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2B0000000000003F"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					id: "2B00000000000040"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [{
+				id: "2B00000000000041"
+				item: "minecraft:tnt"
+				type: "item"
+			}]
+			title: "Relíquias do Deserto"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eImmersive Aircraft §7coloca nas suas mãos biplanos e"
+				"§7girodinos construíveis — mais rápidos que Elytra, capazes"
+				"§7de carregar passageiros."
+				""
+				"§eConstrua um Biplano ou Gyrodyno."
+				""
+				"§6Dica: §7Aeronaves usam combustível — leve carvão."
+				"§7A vista lá de cima compensa cada recurso gasto."
+			]
+			icon: "immersive_aircraft:biplane"
+			id: "2B00000000000042"
+			rewards: [
+				{
+					count: 5
+					id: "2B00000000000043"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "2B00000000000044"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "2B00000000000045"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				id: "2B00000000000046"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			title: "Conquistador dos Céus"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Com sua aeronave, você pode explorar o mundo"
+				"§7em escala muito maior em pouco tempo."
+				""
+				"§eVisite pelo menos 10 biomas diferentes."
+				"§eMarque no JourneyMap pelo menos 5 estruturas encontradas."
+				""
+				"§6Dica: §7Biomas raros costumam estar longe da geração inicial."
+				"§7Voe para longe do spawn — pelo menos 3000 blocos!"
+			]
+			icon: "minecraft:filled_map"
+			id: "2B00000000000047"
+			rewards: [
+				{
+					count: 10
+					id: "2B00000000000048"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "2B00000000000049"
+					item: "artifacts:lucky_scarf"
+					type: "item"
+				}
+				{
+					id: "2B0000000000004A"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:adventure/adventuring_time"
+				criterion: ""
+				id: "2B0000000000004B"
+				type: "advancement"
+			}]
+			title: "Cartógrafo do Mundo"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7The Graveyard adiciona cemitérios góticos com mortos-vivos"
+				"§7especiais e estruturas únicas como criptas e mausoléus."
+				""
+				"§eEncontre um cemitério do The Graveyard."
+				"§eSaque a cripta ou mausoléu e escape vivo."
+				""
+				"§6Dica: §7Mobs do Graveyard são resistentes ao fogo!"
+				"§7Leve flechas envenenadas ou espada encantada."
+			]
+			icon: "graveyard:deepslate_gravestone"
+			id: "2B0000000000004C"
+			rewards: [
+				{
+					count: 3
+					id: "2B0000000000004D"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "2B0000000000004E"
+					item: "artifacts:night_vision_goggles"
+					type: "item"
+				}
+				{
+					id: "2B0000000000004F"
+					type: "xp"
+					xp: 450
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "2B00000000000050"
+				item: "graveyard:dark_iron_ingot"
+				type: "item"
+			}]
+			title: "Entre os Mortos"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eThe Graveyard §7não é só estrutura — tem bosses. O Ghoul"
+				"§7e o Nightmare guardam cemitérios maiores. O §eLich §7(\"Corrupted"
+				"§7Champion\", não o da Twilight Forest) é o chefe supremo do mod —"
+				"§7um feiticeiro morto-vivo de 3 fases que teleporta e invoca"
+				"§7esqueletos sem parar."
+				""
+				"§eDerrote o Lich (Corrupted Champion) do Graveyard."
+				""
+				"§6Dica: §7Ele muda de forma 2 vezes durante a luta — cada fase"
+				"§7é mais perigosa. Guarde poções de cura pra fase final."
+			]
+			icon: "graveyard:dark_iron_ingot"
+			id: "2B00000000000401"
+			rewards: [
+				{
+					count: 8
+					id: "2B00000000000402"
+					item: "graveyard:dark_iron_ingot"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2B00000000000403"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2B00000000000404"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [{
+				entity: "graveyard:lich"
+				id: "464DB78085637BCC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "O Lich do Cemitério"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eTide §7reinventa a pesca por completo — centenas de"
+				"§7peixes novos, varas especiais e uma bancada dedicada"
+				"§7só para o ofício de pescador."
+				""
+				"§eConstrua uma §eAngling Table §7e forje uma"
+				"§eCrystal Fishing Rod§7."
+				""
+				"§6Dica: §7Cada vara do Tide tem bônus diferentes!"
+				"§7A Midas Fishing Rod aumenta a chance de loot raro."
+			]
+			icon: {
+				Count: 1
+				id: "tide:crystal_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2B00000000000051"
+			rewards: [
+				{
+					count: 5
+					id: "2B00000000000052"
+					item: "minecraft:prismarine_shard"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2B00000000000053"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "2B00000000000054"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "2B00000000000055"
+					item: "tide:angling_table"
+					type: "item"
+				}
+				{
+					id: "2B00000000000100"
+					item: {
+						Count: 1
+						id: "tide:crystal_fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Os Sete Mares"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Você pode montar cavalos, lhamas e muito mais com §eSWEM§7."
+				"§7O mod adiciona mecânicas profundas de equitação e criação."
+				""
+				"§eSele uma montura e produza um Alfalfa Bale pra alimentá-la."
+				""
+				"§6Dica: §7Domestication Innovation facilita o processo de doma!"
+				"§7Cavalos de Blue Skies têm atributos diferentes — vale testar todos"
+				"§7antes de escolher seu parceiro de viagem definitivo."
+			]
+			icon: "swem:adventure_saddle_sultan"
+			id: "2B00000000000056"
+			rewards: [
+				{
+					id: "2B00000000000057"
+					item: "swem:adventure_saddle_sultan"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2B00000000000058"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "2B00000000000059"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "2B0000000000005A"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+				{
+					id: "7A0425C0EA59A06F"
+					item: "swem:alfalfa_bale"
+					type: "item"
+				}
+			]
+			title: "Cavaleiro Errante"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eGrappling Hook §7é um gancho de escalada que"
+				"§7transforma qualquer parede em superfície escalável —"
+				"§7basta lançar e voar."
+				""
+				"§eCrie um §eGrappling Hook §7e use-o para escalar"
+				"§eum penhasco ou montanha alta."
+				""
+				"§6Dica: §7Versões aprimoradas (Motor Hook, Rocket Hook)"
+				"§7lançam mais longe e retraem mais rápido!"
+				""
+				"§8§o(Elytras são elegantes. Gancho é prático. Você decide.)"
+			]
+			icon: {
+				Count: 1
+				id: "grapplemod:grapplinghook"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2B00000000000101"
+			rewards: [
+				{
+					id: "2B00000000000102"
+					item: "grapplemod:motorhook"
+					type: "item"
+				}
+				{
+					id: "2B00000000000103"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "2B00000000000104"
+				item: {
+					Count: 1
+					id: "grapplemod:grapplinghook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Escalador de Montanhas"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eScannable §7adiciona um scanner que revela minérios e"
+				"§7estruturas próximas sem precisar escavar no escuro."
+				""
+				"§7§eTraveler's Titles §7concede §lTítulos §r§7conforme você"
+				"§7explora e completa feitos — eles aparecem acima da sua cabeça!"
+				""
+				"§eCrie uma §eLuneta §7e use-a para observar o horizonte"
+				"§eà distância pelo menos uma vez."
+				""
+				"§6Dica: §7Combine com o Scanner para localizar minérios"
+				"§7escondidos em cavernas antes de descer até elas!"
+			]
+			icon: "minecraft:spyglass"
+			id: "2B00000000000070"
+			rewards: [
+				{
+					count: 16
+					id: "2B00000000000071"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2B00000000000075"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					id: "2B00000000000073"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "2B00000000000074"
+				item: "minecraft:spyglass"
+				type: "item"
+			}]
+			title: "Olhos no Horizonte"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eEcologics §7adiciona coqueiros e praias de verdade —"
+				"§7porque toda ilha decente merece uma palmeira."
+				""
+				"§eColete um Coconut e uma Seashell."
+			]
+			icon: "ecologics:coconut"
+			id: "20645A9C06C4DBFD"
+			rewards: [
+				{
+					count: 8
+					id: "1B8349E8AB534F7C"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "312ADB44ABE128B8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "608736A82F3DAD01"
+					item: "ecologics:coconut"
+					type: "item"
+				}
+				{
+					id: "165C1C0CD8CCA8BD"
+					item: "ecologics:seashell"
+					type: "item"
+				}
+			]
+			title: "Paraíso Tropical"
+			x: 14.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7Chega de atravessar rio pisando em blocos soltos igual quem"
+				"§7não tem amor próprio. §eMacaw's Bridges §7traz pontes de verdade,"
+				"§7com corrimão e tudo."
+				""
+				"§eConstrua uma Iron Bridge (ou de madeira, com Bridge Torch pra iluminar)."
+			]
+			icon: "mcwbridges:iron_bridge"
+			id: "2AD4EE8A9E868F3F"
+			rewards: [
+				{
+					count: 8
+					id: "4FFA441542A50124"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "61DCA6C89DA4288D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "22F276304D51AD58"
+					item: "mcwbridges:iron_bridge"
+					type: "item"
+				}
+				{
+					id: "2D63C6E7B6D5691B"
+					item: "mcwbridges:bridge_torch"
+					type: "item"
+				}
+			]
+			title: "Pontes Decentes"
+			x: 16.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7Dormir enfiado num buraco de terra é sobrevivência."
+				"§7Ter um saco de dormir e uma churrasqueira é §eestilo§7."
+				""
+				"§eCrie um Sleeping Bag (qualquer cor) e um Grill."
+			]
+			icon: "camping:sleeping_bag_blue"
+			id: "17B658ABFBDE5864"
+			rewards: [
+				{
+					id: "6826AAAE82378B40"
+					item: "camping:large_backpack"
+					type: "item"
+				}
+				{
+					id: "38490B924725F1F6"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "02FC9DF5CF59BB65"
+					item: "camping:sleeping_bag_blue"
+					type: "item"
+				}
+				{
+					id: "2ED2D91A38E61F5E"
+					item: "camping:grill"
+					type: "item"
+				}
+			]
+			title: "Acampamento de Verdade"
+			x: 18.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7§eOh The Biomes We've Gone §7é ridiculamente grande: mais de 90"
+				"§7biomas novos, cada um com árvores, flores e blocos próprios."
+				"§7Isso é mais biomas do que o vanilla tem no total."
+				""
+				"§eColete saplings de 3 árvores exclusivas: Araucária, Baobá e Cipreste."
+			]
+			icon: "biomeswevegone:araucaria_sapling"
+			id: "1DD8919D1C09A5F0"
+			rewards: [
+				{
+					count: 16
+					id: "6C61EB84907DFE70"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "6E41DC3757FA2AA8"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "6F30C79109D5CB3A"
+					item: "biomeswevegone:araucaria_sapling"
+					type: "item"
+				}
+				{
+					id: "20578D37E334E0A8"
+					item: "biomeswevegone:baobab_sapling"
+					type: "item"
+				}
+				{
+					id: "1AE0F061CB39323A"
+					item: "biomeswevegone:cypress_sapling"
+					type: "item"
+				}
+			]
+			title: "Um Mundo de Biomas"
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"§7Alguém catalogou aloé vera, amaranto e angélica só pra"
+				"§7deixar seu inventário parecendo uma farmácia medieval."
+				""
+				"§eColha Aloe Vera e Amaranth."
+			]
+			icon: "biomeswevegone:aloe_vera"
+			id: "4BB80F843B2C07AE"
+			rewards: [
+				{
+					count: 4
+					id: "4ADDD621F50B46B2"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "0E2EFFB1BC3C1AD4"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "322CC53DC59B8A5F"
+					item: "biomeswevegone:aloe_vera"
+					type: "item"
+				}
+				{
+					id: "67994515C7B45423"
+					item: "biomeswevegone:amaranth"
+					type: "item"
+				}
+			]
+			title: "Herbário Impossível"
+			x: 18.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"§7Uma boa fazenda de cavalos precisa de mais que um cercado."
+				"§7§eSWEM §7traz baias, celeiros de grão e tudo mais."
+				""
+				"§eConstrua uma Stall Door e um Grain Bin (qualquer madeira)."
+			]
+			icon: "swem:acacia_stall_horse"
+			id: "7DAEDB761BEA0365"
+			rewards: [
+				{
+					count: 4
+					id: "73B29A0DD5144694"
+					item: "swem:alfalfa_bale"
+					type: "item"
+				}
+				{
+					id: "069EFC5F95D1D6D7"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "45B425F942977AC4"
+					item: "swem:acacia_stall_horse"
+					type: "item"
+				}
+				{
+					id: "2F9A2881E1B03223"
+					item: "swem:bin_grain_acacia"
+					type: "item"
+				}
+			]
+			title: "Estábulo Completo"
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"§7Voar de Elytra é pra amador. §eImmersive Aircraft §7te dá"
+				"§7biplanos, zepelins e helicópteros de verdade pra pilotar."
+				""
+				"§eProduza Hull, Engine e Propeller — as 3 peças centrais de"
+				"§equalquer aeronave."
+			]
+			icon: "immersive_aircraft:hull"
+			id: "321A62663BAC3687"
+			rewards: [
+				{
+					count: 2
+					id: "4259DB78D8DFB5E8"
+					item: "immersive_aircraft:industrial_gears"
+					type: "item"
+				}
+				{
+					id: "57B01728891AC2A2"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "54194AA8A66A66F6"
+					item: "immersive_aircraft:hull"
+					type: "item"
+				}
+				{
+					id: "19DA2AD80516FAAA"
+					item: "immersive_aircraft:engine"
+					type: "item"
+				}
+				{
+					id: "6B9BE9DCF11283F7"
+					item: "immersive_aircraft:propeller"
+					type: "item"
+				}
+			]
+			title: "Peças de Aeronave"
+			x: 22.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"§7§eTide §7reformula a pesca inteira: mais de 100 peixes novos,"
+				"§7cada um pescável com equipamento específico."
+				""
+				"§eConstrua uma Angling Table e um Fish Display."
+			]
+			icon: "tide:fish_display"
+			id: "01B0F18C0BDA7B40"
+			rewards: [
+				{
+					id: "2AFDFE2BA0B361E7"
+					item: {
+						Count: 1
+						id: "tide:iron_fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B1F7A3A72E1D525"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "7E89365C59528CA7"
+					item: "tide:angling_table"
+					type: "item"
+				}
+				{
+					id: "12B09638637CC851"
+					item: "tide:fish_display"
+					type: "item"
+				}
+			]
+			title: "Aquário do Pescador"
+			x: 24.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"§7§eMan of Many Planes §7traz aviões montáveis de verdade —"
+				"§7desde biplanos vermelhos até modelos econômicos que"
+				"§7mal ficam no ar (mas ficam)."
+				""
+				"§eConstrua um Scarlet Biplane ou um Economy Plane."
+			]
+			icon: "man_of_many_planes:scarlet_biplane"
+			id: "0D0BF2F72822BF42"
+			rewards: [
+				{
+					count: 8
+					id: "372D52EB650A41BF"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "726B8554359757B3"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "3E5B3A7FEB823F38"
+				item: "man_of_many_planes:scarlet_biplane"
+				type: "item"
+			}]
+			title: "Aviador Amador"
+			x: 26.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7Uma barraca de verdade é bem melhor que dormir a céu"
+				"§7aberto torcendo pra não aparecer um Creeper."
+				""
+				"§eMonte uma Tent de qualquer cor."
+			]
+			icon: "camping:tent_black"
+			id: "799E9D909D6DF9E7"
+			rewards: [
+				{
+					id: "4A76DB262D8F187F"
+					item: "camping:large_backpack"
+					type: "item"
+				}
+				{
+					id: "118353F053BDCEA8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "50CF896C3985C147"
+				item: "camping:tent_black"
+				type: "item"
+			}]
+			title: "Base Avançada"
+			x: 28.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"§7§eWhen Dungeons Arise §7escondeu uma referência a Typhon,"
+				"§7o titã mais mortal da mitologia grega, numa estrutura"
+				"§7oceânica gigantesca."
+				""
+				"§eEncontre a estrutura de Typhon."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:trident"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7AF025316CA2450C"
+			rewards: [
+				{
+					id: "2F5AEE3DE8EBB45F"
+					item: {
+						Count: 1
+						id: "minecraft:trident"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F5AEE3DE8EBB461"
+					item: "minecraft:nautilus_shell"
+					type: "item"
+				}
+				{
+					id: "2769EB9CA4A52A8B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				advancement: "dungeons_arise:find_typhon"
+				criterion: "location0"
+				id: "4CED05A734C6B9E3"
+				type: "advancement"
+			}]
+			title: "A Fera de Typhon"
+			x: 30.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"§7Arenas de combate abandonadas, ecoando lutas que já"
+				"§7aconteceram há muito tempo. Perigosas, mas ricas em loot."
+				""
+				"§eEncontre o Coliseu do When Dungeons Arise."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "75F9E100505E3B5C"
+			rewards: [
+				{
+					id: "2D6A893FBEB7B42A"
 					item: {
 						Count: 1
 						id: "minecraft:shield"
@@ -745,91 +1299,63 @@
 					type: "item"
 				}
 				{
-					id: "7B00000000000078"
+					id: "290CFAA728AB21ED"
 					type: "xp"
-					xp: 300
+					xp: 450
 				}
 			]
-			tasks: [
-				{
-					count: 1
-					id: "4041C42C24DDDC78"
-					item: "minecolonies:scroll_guard_help"
-					type: "item"
-				}
-				{
-					advancement: "minecraft:adventure/recruit_guard"
-					criterion: "recruit_guard"
-					id: "B8A5E6E74B4A6AEC"
-					type: "advancement"
-				}
-			]
-			title: "Guardiões Improvisados"
-			x: 10.0d
-			y: 8.0d
+			tasks: [{
+				advancement: "dungeons_arise:find_coliseum"
+				criterion: "location0"
+				id: "1D2B2EC892196BCB"
+				type: "advancement"
+			}]
+			title: "O Coliseu Perdido"
+			x: 32.0d
+			y: 12.0d
 		}
 		{
-			dependencies: ["7B00000000000020"]
-			description: ["§7Depois de anos minerando pra você de graça, o mínimo que os", "§7anões merecem é ver seu próprio metal virar um bom machado.", "", "§eForje uma Dwarven Steel Pickaxe.", "", "§8§o(Depois de anos minerando de graça, o mínimo é ganhar um machado decente.)"]
-			icon: "simpledwarves:dwarven_steel_pickaxe"
-			id: "19A061C5AD23E95D"
+			description: [
+				"§7Explorar sem rede de transporte e sem espaço de carga"
+				"§7é sofrimento. Waystones resolvem o transporte —"
+				"§7Traveler's Backpack resolve a carga."
+				""
+				"§eTenha uma Waystone e uma Traveler's Backpack ao mesmo tempo."
+				""
+				"§6Dica: §7Combine com Sophisticated Backpacks pra ter mochilas"
+				"§7dedicadas: uma pra minério, outra pra comida, outra pra loot."
+			]
+			icon: "travelersbackpack:standard"
+			id: "6A1A5E331BE801E7"
 			rewards: [
 				{
+					count: 8
+					id: "2D27E7BA137DBFC3"
+					item: "minecraft:ender_pearl"
 					type: "item"
-					item: "simpledwarves:dwarven_steel_ingot"
-					count: 4
-					id: "27B682DE9BBFCEA2"
 				}
 				{
+					id: "661462A896B04E34"
 					type: "xp"
-					xp: 200
-					id: "97EA6309B3CF3733"
+					xp: 250
 				}
 			]
 			tasks: [
 				{
+					id: "2DB1412088D73605"
+					item: "waystones:waystone"
 					type: "item"
-					item: "simpledwarves:dwarven_steel_pickaxe"
-					id: "155ED6400D95AFDD"
+				}
+				{
+					id: "5508C30E999FCB6D"
+					item: "travelersbackpack:standard"
+					type: "item"
 				}
 			]
-			title: "Aço Anão"
-			x: 12.0d
-			y: 2.0d
-		}
-		{
-			description: ["§7§eStructurize §7é a espinha dorsal por trás do MineColonies —", "§7é com essas ferramentas que você escaneia, planeja e", "§7constrói (ou copia descaradamente) estruturas inteiras.", "", "§eCrie um Build Tool (Golden Scepter) e um Scan Tool.", "", "§8§o(Escanear e copiar construções: a forma mais honesta de plágio no Minecraft.)"]
-			icon: "structurize:sceptergold"
-			id: "7CD61DC3D552B572"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:gold_ingot"
-					count: 4
-					id: "19F0D5DA932DA1DE"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "5C3A63C2A42AF822"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "structurize:sceptergold"
-					id: "C1480B1801DF0957"
-				}
-				{
-					type: "item"
-					item: "structurize:sceptersteel"
-					id: "F197EE585D909A65"
-				}
-			]
-			title: "Ferramentas do Arquiteto"
-			x: 12.0d
-			y: -2.0d
+			title: "Explorador Preparado"
+			x: 34.0d
+			y: 10.0d
 		}
 	]
-	title: "§aCivilizações"
+	title: "§bO Mundo e seus Biomas"
 }

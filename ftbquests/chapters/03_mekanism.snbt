@@ -1,385 +1,831 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "15_blue_skies"
-	group: "AA00000000000005"
-	icon: ["blue_skies:falsite_ingot", "blue_skies:horizonite_ingot", "blue_skies:nature_arc"]
-	id: "AA15000000000001"
-	order_index: 14
+	filename: "03_mekanism"
+	group: "3322FB1D5A7FD527"
+	id: "3C920300B6A9D28B"
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7§eBlue Skies §7adiciona §eduas dimensões §7celestiais:", "§7- §eEverbright §7— mundo eterno de luz e neve", "§7- §eEverdawn §7— mundo de crepúsculo eterno e floresta", "", "§eConstrua o portal para §eEverbright §7ou §eEverdawn§7.", "§eEntre pela primeira vez em Blue Skies.", "", "§6Dica: §7Portal de Blue Skies usa blocos específicos de cada dimensão!", "§7Consulte a wiki do mod para os materiais corretos.", "", "§8§o(Subir uma escada até o céu. Sem elevador, sem desculpa.)"]
-			icon: "blue_skies:winter_leaf_seeds"
-			id: "45F1C9E1A3987BE2"
+			description: [
+				"§7§eMekanism §7começa com §eOsmio §7— um minério azulado abundante."
+				"§7Do Osmio vem o §eAço (Steel Ingot)§7 — base de toda a progressão."
+				"§7Você vai precisar de muito aço. Comece a acumular agora."
+				""
+				"§eCrafite §e8 Steel Ingots §7usando o §eMetallurgic Infuser§7."
+				""
+				"§6Dica: §7Osmium aparece do Y=0 ao Y=60 em grandes veios."
+				"§7O Metallurgic Infuser usa §eCarvão §7como catalisador para o aço."
+				""
+				"§8§o(Osmium: o metal que só o Mekanism liga a mínima pra ele.)"
+			]
+			icon: "mekanism:ingot_steel"
+			id: "3EC100DE4F69BF8D"
 			rewards: [
 				{
-					count: 8
-					id: "7A975AB48D4BE3FE"
-					item: "blue_skies:comet_berries"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "55198AEADBB151F9"
-					item: "minecraft:golden_apple"
-					type: "item"
-				}
-				{
-					id: "6E27120D7EB63BE6"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					advancement: "blue_skies:everbright/enter"
-					criterion: "enter_everbright"
-					id: "65A4D13000B5F03D"
-					type: "advancement"
-				}
-			]
-			title: "Além das Nuvens"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eBlue Skies §7tem criaturas, recursos e estruturas únicos", "§7em CADA dimensão — Everbright e Everdawn são mundos diferentes.", "", "§eColete Comet Berries (Everbright) e Winter Leaves (Everdawn).", "", "§6Dica: §7Everbright tem gelo azul, Everdawn tem madeiras únicas!", "§7Minerais de Blue Skies têm usos especiais no crafting.", "", "§8§o(Um lado claro, outro sombrio — Blue Skies também tem crise de identidade.)"]
-			icon: "blue_skies:pine_fruit_seeds"
-			id: "474BD769AB883020"
-			rewards: [
-				{
-					count: 8
-					id: "27843BC981088DF1"
-					item: "blue_skies:comet_berries"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "1840105CFA7F5202"
-					item: "blue_skies:pine_fruit"
-					type: "item"
-				}
-				{
-					id: "0F2062034F8F635F"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					count: 8L
-					id: "65992C4312EF3946"
-					item: "blue_skies:comet_berries"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "1B62D13B91A9474C"
-					item: "blue_skies:winter_leaves"
-					type: "item"
-				}
-			]
-			title: "Duas Faces do Céu"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eBlue Skies §7tem bosses dimensionais próprios. O §eSummoner§7,", "§7guardião do Everbright, invoca aliados e ataca à distância.", "", "§eDerrote o Summoner no Everbright.", "", "§6Dica: §7Ele invoca mobs constantemente — priorize atacá-lo", "§7direto em vez de limpar os adds."]
-			icon: "blue_skies:ethereal_arc"
-			id: "2328C3E2C521A915"
-			rewards: [
-				{
-					id: "595C0FD7580C03DA"
-					item: "blue_skies:ethereal_arc"
-					type: "item"
-				}
-				{
-					id: "84F510AE9F56D699"
-					type: "xp"
-					xp: 1500
-				}
-			]
-			tasks: [
-				{
-					advancement: "blue_skies:everbright/kill_summoner"
-					criterion: "kill_summoner"
-					id: "35246969712FE296"
-					type: "advancement"
-				}
-			]
-			title: "O Invocador do Everbright"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["474BD769AB883020"]
-			description: ["§7Cada dimensão do §eBlue Skies §7tem seu próprio mineral.", "§eFalsite §7é o material do Everbright — brilha no escuro.", "§eHorizonite §7é o do Everdawn — forja armaduras com", "§7regeneração natural. Ambos superam Netherite em atributos.", "", "§eColete §eFalsite Ingot §7e §eHorizonite Ingot§7.", "", "§6Dica: §7Horizonite só aparece nas camadas mais profundas", "§7do Everdawn — vale a pena minerar antes de enfrentar o boss.", "", "§8§o(Minerar nas nuvens. A NR-35 daria um troço.)"]
-			icon: "blue_skies:falsite_ingot"
-			id: "08D0000000000309"
-			rewards: [
-				{
-					count: 4
-					id: "08D000000000030A"
-					item: "blue_skies:horizonite_ingot"
+					count: 16
+					id: "30B27B2C5154E525"
+					item: "mekanism:ingot_osmium"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "08D000000000030B"
-					item: "blue_skies:falsite_ingot"
+					id: "2F296B01163656AD"
+					item: "mekanism:ingot_steel"
 					type: "item"
 				}
 				{
-					id: "08D000000000030C"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					advancement: "blue_skies:everbright/get_falsite"
-					criterion: "obtain_material"
-					id: "08D000000000030D"
-					type: "advancement"
-				}
-				{
-					advancement: "blue_skies:everdawn/get_horizonite"
-					criterion: "obtain_material"
-					id: "08D000000000030E"
-					type: "advancement"
-				}
-			]
-			title: "Minérios das Alturas"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2328C3E2C521A915"]
-			description: ["§7O §eStarlit Crusher §7é o boss do §eEverbright —", "§7uma construção de pedra viva que guarda a Nature Dungeon.", "§7Ele é invulnerável sem o §eNature Arc §7— arma", "§7craftada com recursos exclusivos desta dimensão.", "", "§eDerrote o §eStarlit Crusher §7no Everbright.", "", "§6Dica: §7Craft o Nature Arc antes de entrar —", "§7sem ele o boss é literalmente imortal.", "", "§8§o(Invulnerável. Uma escolha de design interessante.)"]
-			icon: "blue_skies:nature_arc"
-			id: "08D000000000030F"
-			rewards: [
-				{
-					id: "08D0000000000310"
-					item: "blue_skies:nature_arc"
-					type: "item"
-				}
-				{
-					id: "08D0000000000311"
-					type: "xp"
-					xp: 1200
-				}
-			]
-			tasks: [
-				{
-					advancement: "blue_skies:everbright/kill_starlit_crusher"
-					criterion: "kill_starlit_crusher"
-					id: "08D0000000000312"
-					type: "advancement"
-				}
-			]
-			title: "Destruidor de Estrelas"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2328C3E2C521A915"]
-			description: ["§7O §eAlchemist §7é o boss do §eEverdawn §7— um feiticeiro", "§7que usa transmutação para criar itens mágicos.", "§7A §ePoison Dungeon §7que o abriga está cheia de", "§7aranhas venenosas e armadilhas de veneno.", "", "§eDerrote o §eAlchemist §7no Everdawn.", "", "§6Dica: §7Leve leite — as armadilhas de veneno são constantes.", "§7O §eDusk Arc §7é a arma necessária para penetrar sua defesa."]
-			icon: "blue_skies:dusk_arc"
-			id: "08D0000000000313"
-			rewards: [
-				{
-					id: "08D0000000000314"
-					item: "blue_skies:dusk_arc"
-					type: "item"
-				}
-				{
-					id: "08D0000000000315"
-					type: "xp"
-					xp: 1200
-				}
-			]
-			tasks: [
-				{
-					advancement: "blue_skies:everdawn/kill_alchemist"
-					criterion: "kill_alchemist"
-					id: "08D0000000000316"
-					type: "advancement"
-				}
-			]
-			title: "O Alquimista do Crepúsculo"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7O §eEverbright §7é um mundo de luz eterna — nunca anoitece.", "§7Tem flora única: §eWinter Leaves§7, §ePine Trees§7, §eStar Flowers§7.", "§7A fauna inclui §eStarlit Deer §7e criaturas luminosas exclusivas.", "", "§eColete §e8 Winter Leaf Seeds §7e §e8 Pine Fruit Seeds§7.", "", "§6Dica: §7Winter Leaves produzem frutos que regeneram mais que maçã.", "§7Pine Fruit Seeds podem ser plantadas no Overworld também!", "", "§8§o(Frutas que crescem no céu. Ninguém questiona mais nada nesse ponto.)"]
-			icon: "blue_skies:winter_leaf_seeds"
-			id: "BS0000000001"
-			rewards: [
-				{
-					count: 4
-					id: "BS000001C"
-					item: "blue_skies:falsite_ingot"
-					type: "item"
-				}
-				{
-					id: "BS000001D"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					count: 8L
-					id: "BS000001A"
-					item: "blue_skies:winter_leaf_seeds"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "BS000001B"
-					item: "blue_skies:pine_fruit_seeds"
-					type: "item"
-				}
-			]
-			title: "Flora do Everbright"
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			description: ["§7O §eEverdawn §7é um eterno crepúsculo roxo — nunca amanhece.", "§7§eBrewberries §7crescem em arbustos — ingrediente de poções únicas.", "§7§eDusk Butterflies §7aparecem à noite e soltam §eDust §7brilhante.", "", "§eColete §e16 Brewberries §7no Everdawn.", "", "§6Dica: §7Brewberries crescem em arbustos baixos espalhados.", "§7São o ingrediente-chave das poções exclusivas do Blue Skies.", "", "§8§o(O lado sombrio de Blue Skies também cultiva sua horta.)"]
-			icon: "blue_skies:brewberry"
-			id: "BS0000000002"
-			rewards: [
-				{
-					count: 4
-					id: "BS000002B"
-					item: "blue_skies:horizonite_ingot"
-					type: "item"
-				}
-				{
-					id: "BS000002C"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					count: 16L
-					id: "BS000002A"
-					item: "blue_skies:brewberry"
-					type: "item"
-				}
-			]
-			title: "Flora do Everdawn"
-			x: 2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["BS0000000001"]
-			description: ["§7§eFalsite §7é o mineral do Everbright — brilha no escuro", "§7e é bonito, mas não serve pra ferramentas nem armadura,", "§7só pra construção e como material de crafting.", "", "§eMinere e traga §e8 Falsite Ingots§7.", "", "§6Dica: §7Falsite aparece em veios grandes nas profundezas do Everbright.", "§7Guarde alguns — vão ser úteis em receitas do Everdawn também."]
-			icon: "blue_skies:falsite_ingot"
-			id: "BS0000000003"
-			rewards: [
-				{
-					count: 4
-					id: "BS000003C"
-					item: "blue_skies:horizonite_ingot"
-					type: "item"
-				}
-				{
-					id: "BS000003D"
+					id: "59A6341893C2730C"
 					type: "xp"
 					xp: 300
 				}
 			]
 			tasks: [
 				{
-					count: 8
-					id: "BS000003A"
-					item: "blue_skies:falsite_ingot"
+					advancement: "mekanism:steel_ingot"
+					criterion: "ingot_steel"
+					id: "01880C4DE73DAB54"
+					type: "advancement"
+				}
+				{
+					id: "45CC40897609DAB4"
+					item: "mekanism:crusher"
 					type: "item"
 				}
 			]
-			title: "Minerando Falsite"
-			x: 4.0d
-			y: 2.0d
+			title: "Osmium e Aço"
+			x: 0.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["BS0000000002"]
-			description: ["§7§eHorizonite §7é o mineral do Everdawn — mais raro que Falsite.", "§7A §eArmadura de Horizonite §7tem §eRegeneração Passiva §7lenta.", "§7É o tier mais alto do Blue Skies — superior ao Netherite.", "", "§eCrafite pelo menos §e2 peças §7da §eArmadura de Horizonite§7.", "", "§6Dica: §7Horizonite só nas camadas profundas do Everdawn.", "§7A regeneração passiva é especialmente útil contra bosses longos."]
-			icon: "blue_skies:horizonite_chestplate"
-			id: "BS0000000004"
+			description: [
+				"§7O §eEnrichment Chamber §7é a primeira grande máquina do Mekanism:"
+				"§7ela §edobra §7o rendimento de minérios — ore vira 2 pós,"
+				"§7cada pó fundido rende 1 ingot. Dobro de tudo, sem esforço extra."
+				""
+				"§eCrafite e ative uma §eEnrichment Chamber§7."
+				""
+				"§6Dica: §7Processe o ore bruto, não o ingot já fundido!"
+			]
+			icon: "mekanism:enrichment_chamber"
+			id: "2ABAA6A5E69465A9"
 			rewards: [
 				{
-					count: 8
-					id: "BS000004C"
-					item: "blue_skies:horizonite_ingot"
+					id: "380134D4C2D5EEC4"
+					item: "mekanism:enrichment_chamber"
 					type: "item"
 				}
 				{
-					id: "BS000004D"
+					id: "625D0F5F04FA2C7D"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:enricher"
+					criterion: "enrichment_chamber"
+					id: "724FE7875FB4A615"
+					type: "advancement"
+				}
+				{
+					id: "75C5419E871760B3"
+					item: "mekanism:purification_chamber"
+					type: "item"
+				}
+			]
+			title: "A Câmara de Enriquecimento"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Máquinas Mekanism precisam de §eenergia elétrica (Forge Energy)§7."
+				"§7O §eBasic Energy Cube §7armazena e o §eUniversal Cable §7transporta."
+				"§7Geradores de outros mods — Create, Solar — também funcionam!"
+				""
+				"§eCrafite um §eBasic Energy Cube §7e §e4 Universal Cables§7."
+				""
+				"§6Dica: §7Conecte um §eSolar Generator §7para geração passiva."
+				"§7Mekanism aceita toda fonte de FE do modpack."
+				""
+				"§8§o(Energia infinita, fiação finita — bem-vindo ao inferno dos cabos.)"
+			]
+			icon: "mekanism:basic_energy_cube"
+			id: "52A7AED3B54979E9"
+			rewards: [
+				{
+					id: "547FC9B8B719CA5A"
+					item: "mekanism:basic_energy_cube"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4099F2C0E7961D3A"
+					item: "mekanism:basic_universal_cable"
+					type: "item"
+				}
+				{
+					id: "577DA8CDFB10DC06"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:energy_cube"
+					criterion: "basic_energy_cube"
+					id: "1FB7E101A34D0CC0"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:energy_transport"
+					criterion: "basic_universal_cable"
+					id: "2D4EE46E3570FAF3"
+					type: "advancement"
+				}
+			]
+			title: "Rede de Energia"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Os §eCircuitos de Controle §7são os componentes mais usados."
+				"§7Basic → Advanced → Elite → Ultimate — cada nível exige o anterior"
+				"§7mais materiais processados na §eEnrichment Chamber§7."
+				""
+				"§eCrafite um §eAdvanced Control Circuit§7."
+				""
+				"§6Dica: §7Você vai precisar de dezenas deles."
+				"§7Automatize a produção com a §eCombining Factory §7logo que puder."
+			]
+			icon: "mekanism:advanced_control_circuit"
+			id: "621356F87CDB182D"
+			rewards: [
+				{
+					count: 4
+					id: "0BA4C14BD7707860"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "55456CCE570BD817"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+				{
+					id: "276DF84F203D66AF"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:advanced_control_circuit"
+					criterion: "advanced_control_circuit"
+					id: "1A36783419A4F4B0"
+					type: "advancement"
+				}
+				{
+					count: 2L
+					id: "1F827C57CBFA9629"
+					item: "mekanism:advanced_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Circuitos de Controle"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eMetallurgic Infuser §7processa metais com catalisadores"
+				"§7para criar as §eLigas (Alloys)§7 — materiais compostos únicos:"
+				"§eInfused §7→ §eReinforced §7→ §eAtomic Alloy§7."
+				"§7Cada liga abre um tier novo de máquinas e armaduras."
+				""
+				"§eCrafite uma §eReinforced Alloy§7."
+				""
+				"§6Dica: §7Reinforced Alloy usa §eDiamond §7processado na Crusher."
+				""
+				"§8§o(Misturar metais e rezar pra dar liga — literalmente.)"
+			]
+			icon: "mekanism:metallurgic_infuser"
+			id: "1835B2A99A67F4C6"
+			rewards: [
+				{
+					count: 4
+					id: "52D89277D60A0D45"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "6DC27BBDED68D052"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+				{
+					id: "32750D770B0EAB84"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				advancement: "mekanism:reinforced_alloy"
+				criterion: "alloy_reinforced"
+				id: "4FBB9E3390ED840B"
+				type: "advancement"
+			}]
+			title: "Ligas e o Metallurgic Infuser"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eFábricas §7são versões paralelas das máquinas do Mekanism."
+				"§7Basic (3x), Advanced (5x), Elite (7x) e Ultimate (9x simultâneos."
+				"§7A §ePurification Chamber §7com Oxigênio triplica o rendimento!"
+				""
+				"§eCrafite e ative uma §eBasic Crushing Factory §7ou §eSmelting Factory§7."
+				""
+				"§6Dica: §7Acorrente: §eElectrolytic Separator §7(O₂)"
+				"§7→ §ePurification Chamber §7→ §eCrusher §7→ §eSmelter §7= §e3x ore§7!"
+			]
+			icon: "mekanism:basic_crushing_factory"
+			id: "20707D190427018D"
+			rewards: [
+				{
+					id: "7EB323FFAFEC5631"
+					item: "mekanism:basic_crushing_factory"
+					type: "item"
+				}
+				{
+					id: "675F4CCE710BCE50"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:factory"
+					criterion: "factory"
+					id: "097B372DBCEE9CDD"
+					type: "advancement"
+				}
+				{
+					count: 2L
+					id: "29127E663D849500"
+					item: "mekanism:logistical_sorter"
+					type: "item"
+				}
+			]
+			title: "Fábricas de Processamento"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eLogistical Transporter §7move itens automaticamente"
+				"§7entre máquinas por redes de cor configuráveis."
+				"§7O §eLogistical Sorter §7categoriza e direciona por filtro."
+				""
+				"§eMonte uma linha com §eTransportadores §7e §e1 Sorter§7."
+				""
+				"§6Dica: §7Cores no Sorter: vermelho = descarte,"
+				"§7verde = próxima máquina, laranja = armazenamento."
+				""
+				"§8§o(Itens andando sozinhos pela tubulação. A automação te olha e sorri.)"
+			]
+			icon: "mekanism:logistical_sorter"
+			id: "5D7F02A9102085FE"
+			rewards: [
+				{
+					count: 16
+					id: "4B71B9EF546E35D5"
+					item: "mekanism:basic_logistical_transporter"
+					type: "item"
+				}
+				{
+					id: "551B43883406D02A"
+					item: "mekanism:logistical_sorter"
+					type: "item"
+				}
+				{
+					id: "7B43417F13907C7D"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:item_transport"
+					criterion: "basic_logistical_transporter"
+					id: "081BB7C9F7BD4EE1"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:logistical_sorter"
+					criterion: "logistical_sorter"
+					id: "0203676CD0319F89"
+					type: "advancement"
+				}
+			]
+			title: "Transporte Logístico"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Mekanism tem sistema completo de §eGases e Produtos Químicos§7."
+				"§7Chemical Tank armazena, Pressurized Tube transporta."
+				"§7A §ePurification Chamber §7usa §eOxigênio §7para triplicar minérios."
+				"§7A §eElectrolytic Separator §7separa água em H₂ + O₂."
+				""
+				"§eCrafite §eChemical Tank §7e conecte §ePressurized Tubes§7."
+				""
+				"§6Dica: §7Com O₂ + Purification Chamber = §e3x ore output§7 garantido!"
+			]
+			icon: "mekanism:basic_chemical_tank"
+			id: "1CEF3BADEC42B942"
+			rewards: [
+				{
+					count: 2
+					id: "2D57126695868CA0"
+					item: "mekanism:basic_chemical_tank"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "78F4004ECE1A3828"
+					item: "mekanism:basic_pressurized_tube"
+					type: "item"
+				}
+				{
+					id: "123F2D0702127C40"
 					type: "xp"
 					xp: 700
 				}
 			]
 			tasks: [
 				{
-					id: "BS000004A"
-					item: "blue_skies:horizonite_chestplate"
-					type: "item"
+					advancement: "mekanism:chemical_tank"
+					criterion: "basic_chemical_tank"
+					id: "34D1AA0419B51EE5"
+					type: "advancement"
 				}
 				{
-					id: "BS000004B"
-					item: "blue_skies:horizonite_helmet"
-					type: "item"
+					advancement: "mekanism:chemical_transport"
+					criterion: "basic_pressurized_tube"
+					id: "769D2CC4406CA242"
+					type: "advancement"
 				}
 			]
-			title: "Armadura de Horizonite"
-			x: 6.0d
-			y: 2.0d
+			title: "Química Industrial"
+			x: 0.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["BS0000000003"]
-			description: ["§7§eBlue Skies §7tem dois arcos exclusivos de boss:", "§7§eNature Arc §7— necessário para o §eStarlit Crusher§7.", "§7§eDusk Arc §7— necessário para o §eAlchemist§7.", "§7§bSem eles os bosses são completamente invulneráveis§7.", "", "§eCrafite o §eNature Arc §7e o §eDusk Arc§7.", "", "§6Dica: §7Nature Arc usa recursos do Everbright.", "§7Dusk Arc usa recursos do Everdawn. Craft antes de entrar.", "", "§8§o(Arcos mágicos de dois mundos diferentes. Nenhum deles vem com manual.)"]
-			icon: "blue_skies:nature_arc"
-			id: "BS0000000005"
+			description: [
+				"§7O §eDigital Miner §7minera automaticamente uma área de"
+				"§7até §e63 blocos de raio §7com filtros precisos."
+				"§7Defina: apenas minérios, apenas um tipo, exceto certos blocos."
+				""
+				"§eCrafite e ative um §eDigital Miner§7."
+				""
+				"§6Dica: §7Fortune e Silk Touch funcionam com upgrades no Miner."
+				"§7Use §eSpeed Upgrades §7para acelerar a mineração automática."
+				"§8§o(Mineração manual é para os outros. Você tem tecnologia.)"
+			]
+			icon: "mekanism:digital_miner"
+			id: "3664DB49076CF0B3"
 			rewards: [
 				{
 					count: 4
-					id: "BS000005C"
-					item: "blue_skies:falsite_ingot"
+					id: "0A51E0A2BD8FDF1C"
+					item: "mekanism:upgrade_speed"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "BS000005D"
-					item: "blue_skies:horizonite_ingot"
+					id: "42A16159FAB3B1EA"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [{
+				advancement: "mekanism:digital_miner"
+				criterion: "digital_miner"
+				id: "2DAA2917BC0048C1"
+				type: "advancement"
+			}]
+			title: "O Minerador Digital"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eJetpack do Mekanism §7usa §eHidrogênio §7como combustível."
+				"§7O H₂ é produzido na §eElectrolytic Separator §7separando água."
+				"§7Combine com §eFree Runners §7para velocidade extra no chão."
+				""
+				"§eCrafite o §eJetpack §7e os §eFree Runners§7."
+				""
+				"§6Dica: §7Jetpack Armored tem defesa além do voo."
+				"§7Free Runners eliminam dano de queda e aumentam velocidade horizontal."
+				""
+				"§8§o(Voar com gás inflamável nas costas. O que pode dar errado?)"
+			]
+			icon: "mekanism:jetpack"
+			id: "3217A1518CC8B331"
+			rewards: [
+				{
+					id: "6DC763308DEF35FE"
+					item: "mekanism:jetpack"
 					type: "item"
 				}
 				{
-					id: "BS000005E"
+					id: "51676D63F7CD2523"
+					item: "mekanism:free_runners"
+					type: "item"
+				}
+				{
+					id: "263B9A4053CD9601"
 					type: "xp"
 					xp: 800
 				}
 			]
 			tasks: [
 				{
-					id: "BS000005A"
-					item: "blue_skies:nature_arc"
-					type: "item"
+					advancement: "mekanism:hydrogen_powered_flight"
+					criterion: "jetpack"
+					id: "398B3B4E11300514"
+					type: "advancement"
 				}
 				{
-					id: "BS000005B"
-					item: "blue_skies:dusk_arc"
-					type: "item"
+					advancement: "mekanism:running_free"
+					criterion: "free_runners"
+					id: "5F8169889DD1BFAD"
+					type: "advancement"
 				}
 			]
-			title: "Os Arcos dos Mundos"
+			title: "Voando com Hidrogênio"
 			x: 4.0d
 			y: 4.0d
 		}
+		{
+			description: [
+				"§7O §eQIO §7armazena §ebilhões §7de itens por Drive."
+				"§7O §ePortable QIO Dashboard §7acessa o inventário de qualquer lugar."
+				"§7Drives de tier maior (Hyper-Dense, Supermassive) escalam ainda mais."
+				""
+				"§eCrafite um §eQIO Drive Array §7e um §eBasic QIO Drive§7."
+				""
+				"§6Dica: §7Configure §eFrequências §7para redes separadas."
+				"§7Uma frequência para minérios, outra para comida, outra para equipamento."
+			]
+			icon: "mekanism:qio_drive_array"
+			id: "18B5879A45D4EB4C"
+			rewards: [
+				{
+					count: 2
+					id: "589D093E4E2CC192"
+					item: "mekanism:qio_drive_base"
+					type: "item"
+				}
+				{
+					id: "76845E9742A10814"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:qio_drive_array"
+					criterion: "qio_drive_array"
+					id: "1402EB9FF6BCF181"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:basic_qio_drive"
+					criterion: "qio_drive_base"
+					id: "1E12B81C5945C674"
+					type: "advancement"
+				}
+			]
+			title: "QIO — Armazenamento Quântico"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eTeleporter §7permite teletransporte entre pontos fixos"
+				"§7na mesma §eFrequência §7— sem Ender Pearls, só energia."
+				"§7O §ePortable Teleporter §7carrega a frequência consigo."
+				""
+				"§eCrafite um §eTeleporter §7fixo e um §ePortable Teleporter§7."
+				""
+				"§6Dica: §7Frequências diferentes = rotas independentes."
+				"§7Uma para a mina, outra para a base, outra para o farm."
+				"§8§o(Ender Pearls são tecnologia obsoleta.)"
+			]
+			icon: "mekanism:teleporter"
+			id: "43A6E597AA0BB399"
+			rewards: [
+				{
+					id: "748924C09EB9529C"
+					item: "mekanism:portable_teleporter"
+					type: "item"
+				}
+				{
+					id: "3FF96C9BBF6EE973"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:teleporter"
+					criterion: "teleport"
+					id: "1ABA8D6137345BCC"
+					type: "advancement"
+				}
+				{
+					advancement: "mekanism:portable_teleporter"
+					criterion: "portable_teleporter"
+					id: "0B16A7D839891F82"
+					type: "advancement"
+				}
+			]
+			title: "Teleportação"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7A §eAtomic Alloy §7é o material de tier máximo —"
+				"§7exige materiais processados em condições especiais"
+				"§7no §eMetallurgic Infuser §7com catalisadores avançados."
+				"§7É a liga que habilita os componentes do §eMekaSuit§7."
+				""
+				"§eProduzca uma §eAtomic Alloy§7."
+				""
+				"§6Dica: §7Atomic Alloy requer §eRefined Obsidian §7como catalisador."
+				"§7Produzida comprimindo Obsidiana na §eOsmium Compressor§7."
+			]
+			icon: "mekanism:alloy_atomic"
+			id: "5FA9B9859E4C5710"
+			rewards: [
+				{
+					count: 4
+					id: "777699F28617E6C1"
+					item: "mekanism:alloy_atomic"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6722DC7DA3BC369F"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+				{
+					id: "7C5985FF9AA6EA29"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [
+				{
+					advancement: "mekanism:atomic_alloy"
+					criterion: "alloy_atomic"
+					id: "67E080B74C60C62B"
+					type: "advancement"
+				}
+				{
+					count: 4L
+					id: "36C0526F83A984DA"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+			]
+			title: "Liga Atômica"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eMekaSuit §7é a armadura de tier máximo — totalmente modular,"
+				"§7usa energia para absorver dano, voar, respirar e mais."
+				"§7Cada peça tem slots de §eMódulos §7configuráveis."
+				""
+				"§eCrafite o conjunto completo de §eMekaSuit§7."
+				"§7(Capacete + Peitoral + Calças + Botas)"
+				""
+				"§6Dica: §7Instale §eEnergy Modules §7primeiro para autonomia."
+				"§7Module Gravitational = voo sem Jetpack!"
+				"§8§o(Você não precisa mais de nada. Mas o modpack continua mesmo assim.)"
+			]
+			icon: "mekanism:mekasuit_bodyarmor"
+			id: "51E1F442E16D1F54"
+			rewards: [
+				{
+					count: 2
+					id: "2C9E2A05AD332ACA"
+					item: "mekanism:module_base"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "14C03C0A3AAABE4C"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+				{
+					id: "444E27B454D57490"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [{
+				advancement: "mekanism:mekasuit"
+				criterion: "full_set"
+				id: "54CF9B09DDB3A74E"
+				type: "advancement"
+			}]
+			title: "MekaSuit — Armadura do Futuro"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7A §eInduction Matrix §7é o maior banco de energia do Mekanism —"
+				"§7um multi-bloco de 3x3x3 a 18x18x18 blocos."
+				"§eInduction Cells §7armazenam, §eInduction Providers §7fazem I/O."
+				"§7Uma matriz completa armazena quantidades absurdas de energia."
+				""
+				"§eConstrua uma §eInduction Matrix §7funcional"
+				"§ecom pelo menos §e1 Cell §7e §e1 Provider§7."
+				""
+				"§6Dica: §7A carcaça usa §eInduction Casing §7e §eInduction Port§7."
+			]
+			icon: "mekanism:basic_induction_cell"
+			id: "5C9212B1AA74FA78"
+			rewards: [
+				{
+					count: 8
+					id: "31D1E8A831C02A01"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5082E7A3E035A5F7"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "6913E19D049BE1AF"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					id: "3BC817ADAAA53B19"
+					item: "mekanism:basic_induction_cell"
+					type: "item"
+				}
+				{
+					id: "3D1AAEE6C0A0C934"
+					item: "mekanism:basic_induction_provider"
+					type: "item"
+				}
+			]
+			title: "Induction Matrix"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §ePellet of Antimatter §7é o pico da progressão química."
+				"§7O caminho: Urânio → Plutônio (Fission Reactor) →"
+				"§7Polônio (Solar Neutron Activator) → Antimatéria (SPS)."
+				"§7A §eSPS §7(Supercritical Phase Shifter) é um multi-bloco monumental."
+				""
+				"§eProduzca um §ePellet of Antimatter§7."
+				""
+				"§8§o(Você acabou de sintetizar antimatéria em Minecraft.)"
+			]
+			icon: "mekanism:sps_casing"
+			id: "66ACD8977D7D6F67"
+			rewards: [
+				{
+					id: "23E98460B553643B"
+					item: "mekanism:pellet_antimatter"
+					type: "item"
+				}
+				{
+					id: "4FDF7EE3951A3EFA"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			tasks: [{
+				advancement: "mekanism:antimatter"
+				criterion: "pellet_antimatter"
+				id: "59FE02FC3ED8BDBE"
+				type: "advancement"
+			}]
+			title: "Antimatéria"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Osmium, Steel e Lead são a base de praticamente toda receita"
+				"§7avançada do Mekanism — de Circuitos a Ligas, tudo passa por"
+				"§7pelo menos um desses três em algum ponto da cadeia."
+				""
+				"§eProcesse e traga 8 Osmium Ingots, 8 Steel Ingots e 8 Lead Ingots."
+				""
+				"§6Dica: §7Lead também blinda contra radiação de reatores nucleares"
+				"§7— comece a guardar um estoque antes de chegar no Fission Reactor."
+			]
+			icon: "mekanism:ingot_osmium"
+			id: "4E5039D05F2939D0"
+			rewards: [
+				{
+					count: 4
+					id: "0CD769034514872D"
+					item: "mekanism:ingot_refined_obsidian"
+					type: "item"
+				}
+				{
+					id: "63A8E69A6279A284"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4B4A36E79A61B442"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5D7F9C45114A796E"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "739DEB088EB9A3F4"
+					item: "mekanism:ingot_lead"
+					type: "item"
+				}
+			]
+			title: "A Tríade dos Metais"
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7O §eMekaSuit §7é modular — cada peça funciona sozinha antes"
+				"§7de você montar o conjunto completo. Comece pelo capacete:"
+				"§7ele já dá visão noturna, respiração e HUD de energia."
+				""
+				"§eForje o Mekasuit Helmet."
+				""
+				"§6Dica: §7Cada peça consome energia do MekaSuit Energy Unit"
+				"§7instalado — sem energia, os módulos não funcionam."
+			]
+			icon: "mekanism:mekasuit_helmet"
+			id: "01266555EE478B0B"
+			rewards: [
+				{
+					count: 16
+					id: "3C0B951DAC753411"
+					item: "mekanism:ingot_osmium"
+					type: "item"
+				}
+				{
+					id: "35DD1F7C78502C8F"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [{
+				id: "3FDBF155FE4C13CC"
+				item: "mekanism:mekasuit_helmet"
+				type: "item"
+			}]
+			title: "Mekasuit: O Traje Definitivo"
+			x: 12.0d
+			y: 6.0d
+		}
 	]
-	title: "§bBlue Skies — Além das Nuvens"
+	title: "§bMekanism — Física Quântica"
 }

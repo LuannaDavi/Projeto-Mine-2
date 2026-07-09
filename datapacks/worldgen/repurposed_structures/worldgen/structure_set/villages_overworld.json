@@ -51,8 +51,8 @@
     "spacing": 30,
     "separation": 15,
     "super_exclusion_zone": {
-      "chunk_count": 6,
-      "other_set": "#repurposed_structures:overworld_village_avoid"
+      "other_set": "#repurposed_structures:overworld_all_custom_structures_avoid",
+      "chunk_count": 6
     }
   }
 }

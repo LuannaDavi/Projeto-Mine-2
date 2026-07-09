@@ -124,7 +124,7 @@
   "placement": {
     "salt": 169480673,
     "spacing": 83,
-    "separation": 66,
+    "separation": 37,
     "type": "integrated_api:advanced_random_spread",
     "super_exclusion_zone": {
       "chunk_count": 2,

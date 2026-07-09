@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "block_factorys_bosses:sandworm_nest",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 79,
+    "separation": 36,
+    "salt": 1779810129,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

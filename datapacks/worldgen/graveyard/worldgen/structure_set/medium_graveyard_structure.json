@@ -9,6 +9,10 @@
     "type": "minecraft:random_spread",
     "salt": 1690192399,
     "spacing": 58,
-    "separation": 46
+    "separation": 26,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
   }
 }

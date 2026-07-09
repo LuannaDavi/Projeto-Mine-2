@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "goblins_tyranny:goblinscamp",
+    "goblins_tyranny:goblins_spot",
+    "goblins_tyranny:goblins_caravan",
+    "idas:idas_common",
+    "idas:idas_rare",
+    "idas:idas_small",
+    "dungeons_arise:major_structures",
+    "dungeons_arise:minor_structures",
+    "graveyard:large_graveyard_structure",
+    "graveyard:medium_graveyard_structure",
+    "graveyard:small_desert_graveyard_structure",
+    "graveyard:haunted_house_structure",
+    "graveyard:crypt_structure",
+    "graveyard:lich_prison_structure",
+    "graveyard:giant_mushroom_structure",
+    "graveyard:altar_structure",
+    "legendary_monsters:cloudy_temple",
+    "legendary_monsters:mossy_temple",
+    "legendary_monsters:frostbitten_temple",
+    "legendary_monsters:abandoned_crypt",
+    "legendary_monsters:ancient_stronghold",
+    "legendary_monsters:ruined_pyramid"
+  ]
+}

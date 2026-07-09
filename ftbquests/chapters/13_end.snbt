@@ -1,461 +1,653 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "04_outros_sistemas"
-	group: "AA00000000000001"
-	icon: ["mysticalagriculture:mystical_seeds", "toms_storage:ts.storage_terminal"]
-	id: "AA04000000000001"
-	order_index: 3
+	filename: "13_end"
+	group: "42DFD8A84753DCE2"
+	id: "38705423082D2A12"
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3C00000000000028"]
-			description: ["§7Tom's Simple Storage Network permite criar uma rede", "§7de armazenamento centralizada — todos os baús em um só lugar!", "§7Chega de procurar em 40 baús sem etiqueta qual deles", "§7tem os parafusos de latão.", "", "§eCrie um §eTom's Storage Controller §7e conecte", "§epelo menos 8 baús à rede.", "", "§6Dica: §7Cables transmitem a rede entre andares!", "§7Combine com Create para armazenar output automaticamente."]
-			icon: "toms_storage:ts.storage_terminal"
-			id: "3C00000000000041"
+			description: [
+				"§7Com Blaze Rods e Ender Pearls, você tem os ingredientes"
+				"§7para criar §eOlhos do End §7e encontrar a Fortaleza."
+				""
+				"§eCrie pelo menos §e12 Eyes of Ender §7e encontre a Fortaleza."
+				"§eConserte o §eEnd Portal §7e entre no End."
+				""
+				"§6Dica: §7Siga a direção que o olho voa antes de quebrar!"
+				"§7Costuma estar abaixo de uma stronghold subterrânea."
+			]
+			icon: "minecraft:ender_eye"
+			id: "6701564232D0A003"
 			rewards: [
 				{
-					count: 4
-					id: "3C00000000000042"
-					item: "ironchest:iron_chest"
+					count: 8
+					id: "325F7E21105ABB5A"
+					item: "minecraft:ender_pearl"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "3C00000000000043"
-					item: "toms_storage:ts.storage_terminal"
+					id: "3D60E66A4778273E"
+					item: "minecraft:end_stone"
 					type: "item"
 				}
 				{
-					id: "3C00000000000044"
+					id: "0F07057C1032D41E"
 					type: "xp"
 					xp: 400
 				}
 			]
-			tasks: [
-				{
-					id: "3C00000000000045"
-					item: "toms_storage:ts.storage_terminal"
-					type: "item"
-				}
-			]
-			title: "Rede de Armazenamento"
+			tasks: [{
+				advancement: "minecraft:end/root"
+				criterion: ""
+				id: "5096D9346055E5CF"
+				type: "advancement"
+			}]
+			title: "Porta para o Fim"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C0000000000001D"]
-			description: ["§7Mystical Agriculture + Create = farm de recursos automática.", "§7Essências do Mystical Agriculture podem ser processadas", "§7em massa pelo Create!", "", "§eCrie um sistema que plante e colha essências automáticamente.", "§eProduza pelo menos 64 essências em um ciclo automatizado.", "", "§6Dica: §7Mechanical Harvester + Mechanical Planter = ciclo perfeito!"]
-			icon: "mysticalagriculture:supremium_essence"
-			id: "3C0000000000004B"
+			description: [
+				"§7O End expandido pelo §eThe Outer End §7tem:"
+				"§7- Florestas Azure com madeira própria"
+				"§7- Cristais Cobalto, Menta e Rosa, cada um com armadura única"
+				"§7- O Stalker, uma criatura nova rondando as ilhas"
+				""
+				"§eForje uma peça de armadura de §eCobalt Crystal§7,"
+				"§eo material de tier mais alto do mod."
+				""
+				"§6Dica: §7Os cristais aparecem como veios (buds) nas ilhas —"
+				"§7explore com cuidado, o Stalker é hostil e persistente."
+			]
+			icon: {
+				Count: 1
+				id: "outer_end:cobalt_crystal_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3DCA41D3099C142D"
 			rewards: [
 				{
-					count: 8
-					id: "3C0000000000004C"
-					item: "mysticalagriculture:prudentium_essence"
+					count: 16
+					id: "2367760BF0588D98"
+					item: "minecraft:chorus_fruit"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "3C0000000000004D"
-					item: "mysticalagriculture:mystical_seeds"
+					count: 5
+					id: "3CD2D3AB8EAC422D"
+					item: "minecraft:shulker_shell"
 					type: "item"
 				}
 				{
-					id: "3C0000000000004E"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					count: 64L
-					id: "3C0000000000004F"
-					item: "mysticalagriculture:inferium_essence"
-					type: "item"
-				}
-			]
-			title: "Agricultura x Indústria"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C0000000000004B"]
-			description: ["§7O §eMystical Agriculture §7tem 5 tiers de essências:", "§eInferium → Prudentium → Tertium → Imperium → Supremium§7.", "§7Cada tier superior exige transformar vários do anterior.", "§7No topo, o §eAwakened Supremium §7é a base do end-game.", "", "§eProduza pelo menos §e16 Tertium Essence §7e §e8 Imperium Essence§7.", "", "§6Dica: §7Inferium x4 = Prudentium, Prudentium x4 = Tertium.", "§7A §eInfusion Crystal §7é consumível — produza mais antes de começar!"]
-			icon: "mysticalagriculture:imperium_essence"
-			id: "3C00000000000201"
-			rewards: [
-				{
-					count: 8
-					id: "3C00000000000202"
-					item: "mysticalagriculture:supremium_essence"
-					type: "item"
-				}
-				{
-					id: "3C00000000000203"
+					id: "24AC04319C64E85C"
 					type: "xp"
 					xp: 600
 				}
 			]
 			tasks: [
 				{
-					count: 16L
-					id: "3C00000000000204"
-					item: "mysticalagriculture:tertium_essence"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "3C00000000000205"
-					item: "mysticalagriculture:imperium_essence"
-					type: "item"
-				}
-			]
-			title: "A Escada das Essências"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C00000000000055"]
-			description: ["§7§eTime in a Bottle §7permite acelerar o tempo em uma área.", "§7Com ele, suas fazendas crescem em segundos.", "§7Horas de espera viram instantes.", "", "§eCrie um §eTime in a Bottle §7e use-o em uma fazenda.", "§eColha pelo menos §e128 itens §7em menos de 5 minutos.", "", "§6Dica: §7Combine com Mystical Agriculture para", "§7produção de essências em escala absurda.", "", "§8§o(Ironicamente, você vai gastar mais tempo", "§8§ocraftando isso do que a fazenda levaria pra crescer.)"]
-			icon: {
-				Count: 1
-				id: "tiab:time_in_a_bottle"
-				tag: { }
-			}
-			id: "3C0000000000005F"
-			rewards: [
-				{
-					count: 8
-					id: "3C00000000000061"
-					item: "mysticalagriculture:prudentium_essence"
-					type: "item"
-				}
-				{
-					id: "3C00000000000062"
-					type: "xp"
-					xp: 800
-				}
-			]
-			tasks: [
-				{
-					id: "3C00000000000063"
+					id: "5096D9346055E5DA"
 					item: {
 						Count: 1
-						id: "tiab:time_in_a_bottle"
-						tag: { }
+						id: "outer_end:cobalt_crystal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4552889C70954039"
+					item: {
+						Count: 1
+						id: "outer_end:cobalt_crystal_leggings"
+						tag: {
+							Damage: 0
+						}
 					}
 					type: "item"
 				}
 			]
-			title: "Dono do Tempo"
-			x: 6.0d
+			title: "O Fim Expandido"
+			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C00000000000064"]
-			description: ["§7Sua fábrica é incrível — mas para de funcionar quando", "§7você se afasta e os chunks descarregam.", "", "§7§eData Anchor §7resolve isso: ele mantém uma área de chunks", "§7sempre carregada, mesmo com você longe ou offline (em servidores).", "", "§eCrie e instale um §eData Anchor §7próximo à sua fábrica principal.", "§eConfirme que ela continua processando itens com você a", "§emais de 200 blocos de distância.", "", "§6Dica: §7Combine com §eCreate Jetpack Curios §7para voar com o", "§7jetpack sem ocupar o peitoral — armadura completa + propulsão!"]
-			icon: "minecraft:lodestone"
-			id: "3C00000000000075"
+			description: [
+				"§7§eThe Outer End §7tem três famílias de cristais:"
+				"§7§eCobalt §7(azul, o mais poderoso), §eMint §7(verde,"
+				"§7com propriedades de velocidade) e §eRose §7(rosa, resistência)."
+				"§7Cada cristal tem armadura, arcos e lanternas exclusivas."
+				""
+				"§eComplete o conjunto: colete pelo menos §e1 armadura"
+				"§ede §eMint Crystal §7(capacete ou peitoral)."
+				""
+				"§6Dica: §7Cristais aparecem como buds (flores) nas paredes"
+				"§7das ilhas flutuantes — procure brilho azulado ou rosado."
+			]
+			icon: {
+				Count: 1
+				id: "outer_end:mint_crystal_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "08D0000000000501"
 			rewards: [
 				{
-					id: "3C00000000000076"
-					item: "minecraft:lodestone"
+					count: 8
+					id: "08D0000000000502"
+					item: "outer_end:cobalt_crystal_shard"
 					type: "item"
 				}
 				{
-					count: 10
-					id: "3C00000000000077"
+					id: "08D0000000000503"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					id: "08D0000000000504"
+					item: {
+						Count: 1
+						id: "outer_end:mint_crystal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "703DE899F6E13E53"
+					item: {
+						Count: 1
+						id: "outer_end:mint_crystal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cristais do Fim"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eMoog's End Structures §7adiciona estruturas únicas ao End —"
+				"§7ruínas, torres e construções antigas do povo Enderman,"
+				"§7geradas naturalmente pelo mundo."
+				""
+				"§eTraga 4 blocos de Purpur recolhidos nessas ruínas."
+				""
+				"§6Dica: §7O mod não deixa rastro verificável de qual estrutura"
+				"§7você visitou — então essa parte é confiança mesmo. Mas procure"
+				"§7por silhuetas diferentes das ilhas vanilla, elas valem a pena."
+			]
+			icon: "minecraft:end_stone_bricks"
+			id: "40FD166EC60389ED"
+			rewards: [
+				{
+					count: 8
+					id: "08808DF0DA1CC09E"
+					item: "minecraft:purpur_block"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "597A758D1FC0B46B"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "3C00000000000078"
+					id: "7CE3E158EB4D7865"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "149B9DAA79624FEA"
+				item: "minecraft:purpur_block"
+				type: "item"
+			}]
+			title: "Ruínas do Fim"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eYung's Better End Island §7refaz a ilha principal do End"
+				"§7tornando-a muito mais imponente e detalhada."
+				""
+				"§eExplore a §eMain End Island §7renovada pelo YUNG's."
+				"§eEncontre o §eDragon's Nest §7(ninho do dragão) único."
+				""
+				"§6Dica: §7A ilha reformulada tem áreas secretas!"
+				"§7Explore cada canto antes de enfrentar o dragão."
+			]
+			icon: "minecraft:end_portal_frame"
+			id: "11DDBC23897B6A43"
+			rewards: [
+				{
+					count: 8
+					id: "247F85271A5FBB7E"
+					item: "minecraft:end_stone_bricks"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "47D35E3419950249"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "394AA1FE070464A1"
 					type: "xp"
 					xp: 600
 				}
 			]
-			tasks: [
-				{
-					id: "3C00000000000079"
-					item: "minecraft:lodestone"
-					type: "item"
-				}
-			]
-			title: "A Fábrica que Nunca Dorme"
+			tasks: [{
+				id: "5C35B989F63FEF2A"
+				item: "minecraft:dragon_breath"
+				type: "item"
+			}]
+			title: "A Ilha Renovada"
 			x: 8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C00000000000201"]
-			description: ["§7O §eSupremium §7é o tier máximo da progressão.", "§7§eAwakened Supremium §7é a versão encantada ainda mais forte.", "§7Armas e ferramentas de Supremium têm sockets para gemas.", "§7Gemas adicionam propriedades únicas: velocidade, alcance, vampirismo...", "", "§eProduzca um §eSupremium Ingot §7e uma §eSupremium Sword§7.", "", "§6Dica: §7Supremium tools têm §eAuto-Smelt §7e §eFortune §7built-in.", "§7Socket com §eElemental Gem §7para dano elemental bônus."]
-			icon: "mysticalagriculture:supremium_sword"
-			id: "OS0000000002"
+			description: [
+				"§7O §eEnder Dragon §7é o boss final do End vanilla."
+				"§7Destrua os §eEnd Crystals §7nas torres antes de atacar o dragão."
+				"§7Cada crystal revive sua vida — não destruí-los impossibilita a luta."
+				""
+				"§eDerrote o §eEnder Dragon §7pela primeira vez."
+				""
+				"§6Dica: §7Arco com Infinity é essencial para os crystals altos."
+				"§7A saída final (portal) aparece ao centro após a morte do Dragão."
+				"§8§o(Dezoito horas de jogo pra isso. Aproveite o momento.)"
+			]
+			icon: "minecraft:ender_eye"
+			id: "0E0976C3E5AC564D"
 			rewards: [
 				{
-					count: 2
-					id: "OS000000002C"
-					item: "mysticalagriculture:awakened_supremium_essence"
+					id: "02B72A0B973DFCBE"
+					item: "minecraft:dragon_egg"
 					type: "item"
 				}
 				{
-					id: "OS000000002D"
+					id: "6240E1935176DD95"
+					item: "minecraft:end_crystal"
+					type: "item"
+				}
+				{
+					id: "6CD23814869C25A1"
 					type: "xp"
-					xp: 800
+					xp: 2000
 				}
 			]
-			tasks: [
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: "killed_dragon"
+				id: "63EC28FA0367356F"
+				type: "advancement"
+			}]
+			title: "O Dragão do Fim"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"§7Após matar o Dragão, o End externo abre — ilhas flutuantes"
+				"§7com End Cities e End Ships. O End Ship de cada city tem um"
+				"§7Elytra na sala do tesouro. Elytra + Foguetes = voo verdadeiro."
+				""
+				"§eEncontre uma End City e colete uma Dragon Head como troféu"
+				"§eda sua conquista."
+				""
+				"§6Dica: §7Use um Chorus Fruit para teleportar em caso de queda."
+				"§7End Ships podem estar nos quatro lados da city — procure todos."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "77773DACD9414075"
+			rewards: [
 				{
-					id: "OS000000002A"
-					item: "mysticalagriculture:supremium_ingot"
+					id: "09976D6F9A7B6E50"
+					item: {
+						Count: 1
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "OS000000002B"
-					item: "mysticalagriculture:supremium_sword"
+					count: 32
+					id: "1BA63C34A297A04C"
+					item: "minecraft:firework_rocket"
 					type: "item"
 				}
+				{
+					id: "614A41F945A7BEE3"
+					type: "xp"
+					xp: 1500
+				}
 			]
-			title: "Supremium — O Topo da Agricultura"
+			tasks: [{
+				advancement: "minecraft:end/find_end_city"
+				criterion: "find_end_city"
+				id: "4AACC472936335D6"
+				type: "advancement"
+			}]
+			title: "End Cities e Elytra"
 			x: 2.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["OS0000000002"]
-			description: ["§7§eMystical Agriculture §7tem sementes para quase tudo —", "§7incluindo §emob drops§7: Blaze Rod, Ender Pearl, Bone, String...", "§7Com Inferium suficiente + Seed Reprocessor você cria qualquer semente.", "§ePlante e colha §e2 tipos diferentes §7de §eMob Seeds§7.", "§ePlante e colha §e3 tipos diferentes §7de §eMob Seeds§7.", "", "§6Dica: §7Blaze Seeds = §eBlaze Rods §7infinito. Sem visitar o Nether.", "§7Enderman Seeds = §eEnder Pearls §7infinitas, sem precisar caçar Enderman."]
-			icon: "mysticalagriculture:blaze_seeds"
-			id: "OS0000000003"
+			description: [
+				"§7§eShulkers §7são os habitantes das End Cities."
+				"§7Eles disparam projéteis que causam §eLevitation §7— efeito de levitação."
+				"§7A §eShulker Shell §7é obtida derrotando-os e é usada para"
+				"§7craftar §eShulker Boxes §7— o melhor inventário portátil do jogo."
+				""
+				"§eDerrote §e4 Shulkers §7e colete §e2 Shulker Shells§7."
+				""
+				"§6Dica: §7Shulkers se fecham na concha quando tomam dano —"
+				"§7espere abrirem para atacar novamente."
+			]
+			icon: "minecraft:shulker_shell"
+			id: "42E0D831F085D1CE"
 			rewards: [
 				{
-					count: 64
-					id: "OS000000003C"
-					item: "mysticalagriculture:inferium_essence"
+					count: 2
+					id: "2D5D0FA66CD45022"
+					item: "minecraft:shulker_box"
 					type: "item"
 				}
 				{
-					id: "OS000000003D"
+					count: 16
+					id: "47DCAC27A94A1A72"
+					item: "minecraft:purpur_block"
+					type: "item"
+				}
+				{
+					id: "65CFD9288D665DA3"
 					type: "xp"
-					xp: 600
+					xp: 700
 				}
 			]
 			tasks: [
 				{
-					id: "OS000000003A"
-					item: "mysticalagriculture:blaze_seeds"
+					count: 2L
+					id: "55A1E3283E81CCFA"
+					item: "minecraft:shulker_shell"
 					type: "item"
 				}
 				{
-					id: "OS000000003B"
-					item: "mysticalagriculture:enderman_seeds"
+					id: "3F1793547F72914B"
+					item: "minecraft:shulker_box"
 					type: "item"
 				}
 			]
-			title: "Sementes de Mob Drops"
+			title: "Shulkers e Caixas"
 			x: 4.0d
 			y: -2.0d
 		}
 		{
-			description: ["§7§eSophisticated Backpacks §7é o sistema de mochila mais completo.", "§7Mochilas com §eUpgrades §7de filtro, coleta automática,", "§7feeding automático, crafting direto, e muito mais.", "§7Tiers: Iron → Gold → Diamond → Netherite.", "", "§eCrafite uma §eGold Backpack §7e instale §e2 Upgrades §7nela.", "", "§6Dica: §7§ePickup Upgrade §7coleta itens automaticamente do chão.", "§7§eFeeding Upgrade §7alimenta você automaticamente — nunca mais fome."]
-			icon: "sophisticatedbackpacks:gold_backpack"
-			id: "OS0000000004"
+			dependencies: ["0E0976C3E5AC564D"]
+			description: [
+				"§7O §eEnder Dragon §7pode ser reinvocado colocando §e4 End Crystals"
+				"§7nos 4 lados do portal central do End."
+				"§7Cada reinvocação regenera as End Crystals nas torres."
+				"§7Derrote-o novamente para obter §eDragon Breath §7em quantidade."
+				""
+				"§eReinvoque e derrote o §eEnder Dragon §7pela segunda vez."
+				""
+				"§6Dica: §7Dragon Breath é usado para fazer §ePoções Persistentes§7."
+				"§7Cada derrota do Dragão também libera um §eEnd Gateway §7novo."
+			]
+			icon: "minecraft:dragon_breath"
+			id: "7038415B738C2035"
 			rewards: [
 				{
-					id: "OS000000004C"
-					item: "sophisticatedbackpacks:diamond_backpack"
+					count: 4
+					id: "3FF5388756D82875"
+					item: "minecraft:dragon_breath"
 					type: "item"
 				}
 				{
-					id: "OS000000004D"
+					id: "58E258A77E7F79D0"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:end/respawn_dragon"
+				criterion: "respawn_dragon"
+				id: "3DE560F632C744AC"
+				type: "advancement"
+			}]
+			title: "Respirar o Dragão de Novo"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7§eThe Outer End §7expande o End com ilhas de §eCristais§7:"
+				"§eCobalt §7(azul, mais forte), §eMint §7(verde, velocidade)"
+				"§7e §eRose §7(rosa, resistência). Cada um tem armadura completa."
+				""
+				"§eForje o conjunto completo de §eArmadura de Cobalt Crystal§7."
+				"§7(tier mais alto do mod)"
+				""
+				"§6Dica: §7Crystals aparecem como buds brilhantes nas ilhas."
+				"§7Stalkers habitam as ilhas de cristal — cuidado com emboscadas."
+			]
+			icon: {
+				Count: 1
+				id: "outer_end:cobalt_crystal_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "04F09315DDDAF217"
+			rewards: [
+				{
+					count: 8
+					id: "1FB5F218E5132AFA"
+					item: "outer_end:cobalt_crystal_shard"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "548870A280339FAB"
+					item: "outer_end:cobalt_crystal_arrow"
+					type: "item"
+				}
+				{
+					id: "355EE4E8A95AC86E"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					id: "0737B4D2075FBA4F"
+					item: {
+						Count: 1
+						id: "outer_end:cobalt_crystal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5934BD8BA38AD2B9"
+					item: {
+						Count: 1
+						id: "outer_end:cobalt_crystal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "O Cristal Cobalto — Outer End"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"§7Com §eElytra §7e a dimensão do End completamente explorada,"
+				"§7você domina o espaço entre mundos."
+				"§7§eEnd Gateways §7teleportam para ilhas externas mais distantes."
+				"§7As ilhas mais remotas têm biomas únicos do §eOuter End§7."
+				""
+				"§eUse um §eEnd Gateway §7para explorar as ilhas mais distantes."
+				"§eSobreviva por §e30 minutos §7no End externo sem voltar."
+				""
+				"§6Dica: §7End Gateways aparecem a cada morte do Dragão."
+				"§7Carregue Chorus Fruit como segurança em caso de queda."
+			]
+			icon: "minecraft:chorus_flower"
+			id: "40BC34A26B608549"
+			rewards: [
+				{
+					count: 16
+					id: "4C5EDD80BF0D433F"
+					item: "minecraft:chorus_fruit"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2C17417D9A52EC66"
+					item: "outer_end:cobalt_crystal_shard"
+					type: "item"
+				}
+				{
+					id: "17E01AA758BA1E4D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:end/explore_end_island"
+				criterion: "explored_end_island"
+				id: "5D751E4639264AF3"
+				type: "advancement"
+			}]
+			title: "Além das Estrelas"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eBossominium §7também tem um boss temático do End —"
+				"§7o Ender Protector guarda um tesouro próprio, diferente"
+				"§7de qualquer coisa vanilla."
+				""
+				"§eDerrote o Ender Protector do Bossominium."
+			]
+			icon: "bossominium:gem_of_ender"
+			id: "247D44091B56F0EB"
+			rewards: [
+				{
+					id: "61BB7EEC754F68CC"
+					item: "bossominium:gem_of_ender"
+					type: "item"
+				}
+				{
+					id: "5E554FB3B1E1A678"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [{
+				advancement: "bossominium:the_ender_protector"
+				criterion: "the_ender_protector"
+				id: "522619FDB8931676"
+				type: "advancement"
+			}]
+			title: "O Protetor do Fim"
+			x: 22.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Você já tem o peitoral. Complete o conjunto Rose Crystal"
+				"§7pra ativar o bônus completo do set do Outer End."
+				""
+				"§eForje o Rose Crystal Helmet e as Rose Crystal Boots."
+				""
+				"§6Dica: §7Sets completos do Outer End dão bônus especiais"
+				"§7de resistência quando as 4 peças estão equipadas juntas."
+			]
+			icon: {
+				Count: 1
+				id: "outer_end:rose_crystal_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C092C2801D0D459"
+			rewards: [
+				{
+					count: 4
+					id: "6F6149606648C8D3"
+					item: "outer_end:rose_crystal"
+					type: "item"
+				}
+				{
+					id: "64CB21998A68B1BC"
 					type: "xp"
 					xp: 500
 				}
 			]
 			tasks: [
 				{
-					id: "OS000000004A"
-					item: "sophisticatedbackpacks:gold_backpack"
+					id: "22E7922DF4290083"
+					item: {
+						Count: 1
+						id: "outer_end:rose_crystal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "OS000000004B"
-					item: "sophisticatedbackpacks:pickup_upgrade"
-					type: "item"
-				}
-			]
-			title: "Sophisticated Backpacks"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eTom's Simple Storage §7cria uma rede de armazenamento", "§7simples mas extremamente funcional.", "§7O §eStorage Terminal §7acessa todos os baús da rede de um ponto só.", "§7§eInventory Connector §7liga qualquer baú à rede.", "", "§eConstrua uma rede com §eStorage Terminal §7e §e3+ baús conectados§7.", "", "§6Dica: §7Combine com §eInventory Cable §7para redes longas.", "§7O §eCrafting Terminal §7permite craftar usando materiais da rede!"]
-			icon: "toms_storage:ts.storage_terminal"
-			id: "OS0000000005"
-			rewards: [
-				{
-					count: 4
-					id: "OS000000005B"
-					item: "toms_storage:ts.inventory_connector"
-					type: "item"
-				}
-				{
-					id: "OS000000005C"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					id: "OS000000005A"
-					item: "toms_storage:ts.storage_terminal"
+					id: "2E90AA51FCDE6E2F"
+					item: {
+						Count: 1
+						id: "outer_end:rose_crystal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
-			title: "Tom's Simple Storage"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eImmersive Melodies §7adiciona instrumentos musicais tocáveis:", "§7§eLute§7, §ePiano§7, §eBagpipe§7, §eFlute§7, §eHandpan§7,", "§7§eTiny Drum §7e vários outros — cada um com timbre único.", "§7Toque na base, durante exploração, ou só porque quer.", "", "§eCrafite e toque pelo menos §e2 instrumentos §7do mod.", "", "§8§o(O modpack tem 245 mods. Um deles é só pra tocar alaúde.)", "§8§o(Prioridades estão em ordem.)"]
-			icon: "immersive_melodies:lute"
-			id: "OS0000000006"
-			rewards: [
-				{
-					id: "OS000000006C"
-					item: "immersive_melodies:piano"
-					type: "item"
-				}
-				{
-					id: "OS000000006D"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "OS000000006A"
-					item: "immersive_melodies:lute"
-					type: "item"
-				}
-				{
-					id: "OS000000006B"
-					item: "immersive_melodies:flute"
-					type: "item"
-				}
-			]
-			title: "Imersão no Som — Melodies"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eScannable §7adiciona um §eScanner §7que detecta minérios", "§7e estruturas próximas sem precisar escavar.", "§7Aponta para os blocos através das paredes.", "", "§eCrafite um §eScanner §7e use-o para detectar §e3 minérios§7.", "", "§6Dica: §7Combine com §eJEI §7para saber quais ores priorizar.", "§7Scanner funciona por §eBateria §7— recarregue antes de usar em minas longas."]
-			icon: "scannable:scanner"
-			id: "OS0000000007"
-			rewards: [
-				{
-					id: "OS000000007B"
-					item: "scannable:scanner"
-					type: "item"
-				}
-				{
-					id: "OS000000007C"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					id: "OS000000007A"
-					item: "scannable:scanner"
-					type: "item"
-				}
-			]
-			title: "Scan do Mundo"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eQuark §7não inventa moda — só corrige o que o vanilla deveria", "§7ter feito desde sempre. Sim, estou falando da Trowel.", "", "§eCrie uma Trowel e colete 4 Glass Shards de cores diferentes."]
-			icon: "quark:trowel"
-			id: "7EEB8A1EC9332A30"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:glass"
-					count: 16
-					id: "CEAB11B9D49FC08F"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "BF54A2989D5E52E2"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "quark:trowel"
-					id: "A983694D1B428F3E"
-				}
-				{
-					type: "item"
-					item: "quark:blue_shard"
-					count: 1
-					id: "50E86C2C5F2CA963"
-				}
-				{
-					type: "item"
-					item: "quark:red_shard"
-					count: 1
-					id: "5310F88053FC3FCD"
-				}
-			]
-			title: "Quark: Ferramentas Sensatas"
-			x: 2.0d
+			title: "Conjunto Completo: Rosa"
+			x: 24.0d
 			y: 8.0d
 		}
-		{
-			description: ["§7Quark tem um sistema inteiro de vidro colorido feito de", "§7fragmentos — ótimo pra quem tem TOC de decoração.", "", "§eColete 4 Glass Shards de cores diferentes."]
-			icon: "quark:blue_shard"
-			id: "B70349C7E5713F1B"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:glass"
-					count: 16
-					id: "B64F9B64E594CA0C"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "5EF08AEEFE967D11"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "quark:blue_shard"
-					id: "FDA0441716D0EF44"
-				}
-				{
-					type: "item"
-					item: "quark:red_shard"
-					id: "286C577A692ADCB9"
-				}
-				{
-					type: "item"
-					item: "quark:green_shard"
-					id: "2897E24AEBC2AA27"
-				}
-				{
-					type: "item"
-					item: "quark:brown_shard"
-					id: "9F478EE826F8E21C"
-				}
-			]
-			title: "Quark: Vidro Colorido"
-			x: 4.0d
-			y: 10.0d
-		}
 	]
-	title: "§aSistemas Especializados"
+	title: "§5O Fim e Além"
 }

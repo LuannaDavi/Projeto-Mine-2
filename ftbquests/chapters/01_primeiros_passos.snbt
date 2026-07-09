@@ -1,511 +1,920 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "11_nether"
-	group: "AA00000000000005"
-	icon: ["minecraft:netherite_ingot", "minecraft:blaze_rod", "minecraft:ancient_debris"]
-	id: "AA11000000000001"
-	order_index: 10
+	filename: "01_primeiros_passos"
+	group: "65468EFE603FC446"
+	id: "27D6869413D8EC41"
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7O Overworld é só o começo.", "§7Este modpack tem §e5 dimensões §7para explorar,", "§7cada uma com suas próprias regras, criaturas e segredos.", "", "§5🔥 §cNether §7— Expandido por Bygone Nether e Incendium", "§5⭐ §fEnd §7— Expandido por The Outer End", "§5🌲 §dTwilight Forest §7— Floresta com bosses sequenciais", "§5☀ §eAether §7— Paraíso celestial com regras invertidas", "§5💧 §bBlue Skies §7— Dois reinos além das nuvens", "", "§7Construa o Portal do Nether. O resto começa por aí.", "", "§8§o(Portal construído, arrependimento chegando em 3, 2, 1...)"]
-			icon: "minecraft:obsidian"
-			id: "2B700D5045AE1FE4"
+			description: [
+				"§7Bem-vindo a este mundo vasto e perigoso."
+				""
+				"§7Você acordou sem nada. O primeiro passo é simples:"
+				"§eConstrua uma mesa de trabalho e forne de pedra."
+				""
+				"§6Dica: §7Colete madeira, faça tábuas, depois a mesa."
+				"§7Com a forne, você poderá fundir minerais."
+				"§7Graças ao §eFallingTree§7, basta cortar a base de uma árvore"
+				"§7e o resto cai automaticamente — corte rápido garantido!"
+			]
+			icon: "minecraft:crafting_table"
+			id: "1A00000000000002"
 			rewards: [
 				{
-					count: 3
-					id: "2323B7690E8E66F4"
-					item: "minecraft:fire_resistance"
+					count: 16
+					id: "1A00000000000003"
+					item: "minecraft:torch"
 					type: "item"
 				}
 				{
 					count: 8
-					id: "096D4C88F624A827"
-					item: "minecraft:golden_apple"
+					id: "1A00000000000004"
+					item: "minecraft:bread"
 					type: "item"
 				}
 				{
-					id: "4383AA6D69084392"
+					id: "1A00000000000005"
 					type: "xp"
-					xp: 200
+					xp: 50
 				}
 			]
 			shape: "gear"
 			tasks: [
 				{
-					advancement: "minecraft:nether/root"
-					criterion: ""
-					id: "181223AAB7AE5579"
-					type: "advancement"
+					id: "1A00000000000006"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+				{
+					id: "1A00000000000007"
+					item: "minecraft:furnace"
+					type: "item"
 				}
 			]
-			title: "Entre Mundos"
+			title: "Do Zero ao Fogo"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			description: ["§7§eBygone Nether §7adiciona ruínas e estruturas antigas ao Nether.", "§7§eIncendium §7adiciona biomas ardentes únicos como", "§7Magma Wastes, Quartz Flats e o Volcanic Deltas.", "", "§eExplore pelo menos §e3 biomas §7diferentes do Nether.", "§eVisite uma estrutura do §eBygone Nether§7.", "", "§6Dica: §7O Nether tem recursos únicos essenciais para magia e tecnologia!", "§7Cogumelos do Nether, Blocos de Alma e Quartz são valiosos.", "", "§8§o(O Nether não tem clima ameno. Só \"quente\" e \"mais quente ainda\".)"]
-			icon: "minecraft:nether_brick"
-			id: "71DAC18FECC1211E"
+			description: [
+				"§7Pedra quebra pedra, mas §6ferro §7quebra tudo."
+				"§7É o primeiro material que separa quem sobrevive"
+				"§7de quem simplesmente resiste."
+				""
+				"§eMine ao menos 16 ferros brutos e funda-os na fornalha."
+				"§eCrie uma picareta de ferro."
+				""
+				"§6Dica: §7Y=-16 a Y=-58 é a faixa mais rica para ferro."
+				"§7Leve tochas — minas escuras escondem surpresas desagradáveis."
+				""
+				"§8§o(245 mods instalados e você ainda vai cavar com pá de madeira.)"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A00000000000008"
 			rewards: [
 				{
-					count: 16
-					id: "6DE3BA40710E8DDB"
-					item: "minecraft:nether_quartz"
+					id: "1A00000000000009"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					count: 8
-					id: "747050C6A168F39C"
-					item: "minecraft:crying_obsidian"
+					id: "1A0000000000000A"
+					item: "minecraft:cooked_beef"
 					type: "item"
 				}
 				{
-					id: "280DC65524C47BCE"
+					id: "1A0000000000000B"
 					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					advancement: "minecraft:nether/explore_nether"
-					criterion: ""
-					id: "4A1301B3D741E424"
-					type: "advancement"
-				}
-			]
-			title: "As Profundezas Flamejantes"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7§eIncendium §7reconstrói o Nether inteiro com biomas próprios:", "§7Ash Barrens, Infernal Dunes, Quartz Flats e mais.", "§7No Ash Barrens existe um §eForbidden Castle §7— uma fortaleza", "§7Piglin guardada por Sentries armados até os dentes.", "", "§eInvada o §eForbidden Castle §7e elimine todos os Piglins", "§eque vivem lá dentro.", "", "§6Dica: §7Resistência ao Fogo é fortemente recomendada!", "§7Sentries atiram à distância — não fique parado no aberto.", "", "§8§o(Todo castelo tem dono. Agora não tem mais.)"]
-			icon: "minecraft:netherite_axe"
-			id: "6A3858589CC1A739"
-			rewards: [
-				{
-					count: 4
-					id: "0CED3BEDEE96929D"
-					item: "minecraft:blaze_powder"
-					type: "item"
-				}
-				{
-					id: "7A07E18449A7AB59"
-					item: "minecraft:netherite_scrap"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "30E8FFCC1D6CFA25"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "51A00DD854F1C2EB"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "incendium:ash_barrens/conquer_castle"
-					criterion: "requirement"
-					id: "11F1CF0ACA721E5C"
-					type: "advancement"
-				}
-			]
-			title: "O Conquistador do Castelo"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["71DAC18FECC1211E"]
-			description: ["§7As §eInfernal Dunes §7são um dos biomas mais hostis do", "§7Incendium — dunas de areia vermelha com estruturas", "§7únicas como o §ePipeline §7e o §eInferno§7.", "", "§7No Pipeline, sentinelas robóticos guardam", "§7baús com loot de alta qualidade.", "", "§eExplore as §eInfernal Dunes §7e encontre o Pipeline.", "", "§6Dica: §7O bioma aparece em latitudes medianas do Nether.", "§7Procure por dunas vermelhas sem vegetação.", "", "§8§o(Praia, só que tudo quer te matar.)"]
-			icon: "minecraft:red_sand"
-			id: "08D0000000000401"
-			rewards: [
-				{
-					count: 16
-					id: "08D0000000000402"
-					item: "minecraft:gold_ingot"
-					type: "item"
-				}
-				{
-					id: "08D0000000000403"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					advancement: "incendium:infernal_dunes/root"
-					criterion: "incendium:infernal_dunes"
-					id: "08D0000000000404"
-					type: "advancement"
-				}
-			]
-			title: "Dunas do Inferno"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["71DAC18FECC1211E"]
-			description: ["§7O §eIncendium §7reimagina o Nether com §e8 biomas únicos§7:", "§7Infernal Dunes, Quartz Flats, Toxic Heap,", "§7Withered Forest, Ash Barrens, Inverted Forest,", "§7Weeping Valley e Volcanic Deltas.", "", "§eVisite todos os §e8 biomas §7do Incendium.", "", "§6Dica: §7JourneyMap registra automaticamente biomas visitados.", "§7Volcanic Deltas são raros — procure por lagos de lava com basalto.", "", "§8§o(Sim, você vai morrer em alguns deles. Faz parte.)"]
-			icon: "minecraft:netherite_boots"
-			id: "08D0000000000405"
-			rewards: [
-				{
-					count: 2
-					id: "08D0000000000406"
-					item: "minecraft:ancient_debris"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "08D0000000000407"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "08D0000000000408"
-					type: "xp"
-					xp: 800
-				}
-			]
-			tasks: [
-				{
-					advancement: "incendium:misc/soul_searcher"
-					id: "08D0000000000409"
-					type: "advancement"
-				}
-			]
-			title: "Explorador do Nether"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			description: ["§7A §eNether Fortress §7é a estrutura mais importante do Nether vanilla.", "§7Blazes, Wither Skeletons, e o loot necessário para a progressão.", "§7Sem a Fortaleza, não há varetas de blaze. Sem vareta, sem poções.", "", "§eEncontre uma §eNether Fortress §7e colete §e5 Blaze Rods§7.", "", "§6Dica: §7Fortalezas sempre geram próximas a biomas de Netherwart.", "§7Leve escudo e armadura — Blazes atiram em grupo.", "", "§8§o(Corredores estreitos, blaze por toda parte — arquitetura clássica de pesadelo.)"]
-			icon: "minecraft:blaze_rod"
-			id: "NT0000000000001"
-			rewards: [
-				{
-					count: 16
-					id: "NT000000000000B"
-					item: "minecraft:blaze_powder"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "NT000000000000C"
-					item: "minecraft:fire_charge"
-					type: "item"
-				}
-				{
-					id: "NT000000000000D"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					count: 5L
-					id: "NT000000000000A"
-					item: "minecraft:blaze_rod"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "D34BB8FEE6D4C239"
-					item: "minecraft:nether_wart"
-					type: "item"
-				}
-			]
-			title: "A Fortaleza do Nether"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			description: ["§7Os §eBastion Remnants §7são as ruínas onde Piglins habitam.", "§7Têm alguns dos melhores baús do jogo — e os Piglins mais agressivos.", "§7Com §eArmadura de Ouro §7equipada, eles ficam neutros.", "", "§eExplore um §eBastion Remnant §7e saqueie seus baús.", "§eColete pelo menos §e16 Golden Ingots §7negociando com Piglins.", "", "§6Dica: §7Jogue Ouro no chão para os Piglins trocarem itens!", "§7Bastião de §eTesouro §7tem o melhor loot — procure o cofre central.", "", "§8§o(Ouro compra amizade. Falta de ouro compra uma perseguição.)"]
-			icon: "minecraft:gilded_blackstone"
-			id: "NT0000000000011"
-			rewards: [
-				{
-					id: "NT000000000001C"
-					item: "minecraft:piglin_banner_pattern"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "NT000000000001D"
-					item: "minecraft:crying_obsidian"
-					type: "item"
-				}
-				{
-					id: "NT000000000001E"
-					type: "xp"
-					xp: 500
+					xp: 150
 				}
 			]
 			tasks: [
 				{
 					count: 16L
-					id: "NT000000000001A"
-					item: "minecraft:gold_ingot"
+					id: "1A0000000000000C"
+					item: "minecraft:iron_ingot"
 					type: "item"
 				}
 				{
-					advancement: "minecraft:nether/loot_bastion"
-					criterion: "loot_bastion"
-					id: "NT000000000001B"
-					type: "advancement"
+					id: "1A0000000000000D"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 			]
-			title: "Bastião dos Piglins"
+			title: "A Era do Ferro"
 			x: 2.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
-			description: ["§7O §eWither §7é o boss invocável mais poderoso do Overworld/Nether.", "§7Invocado com §e3 Wither Skeleton Skulls §7e §eSouls Sand§7,", "§7ele explode ao ser invocado e atira §eWither Skulls §7explosivas.", "§7Derrotá-lo é a única forma de obter a §eNether Star§7.", "", "§eInvoque e derrote o §eWither§7.", "", "§6Dica: §7Invoque-o em um §eTúnel estreito §7para limitar movimento.", "§7§eBeacons §7usam a Nether Star — vale muito a pena derrotá-lo.", "§8§o(Três caveiras. Uma invocação. Muita dor.)"]
-			icon: "minecraft:nether_star"
-			id: "NT0000000000021"
+			description: [
+				"§7As noites aqui não perdoam os despreparados."
+				"§7Mobs de mods como §eBorn in Chaos §7e §eThe Graveyard"
+				"§7são muito mais perigosos do que os vanilla."
+				""
+				"§eCrie pelo menos uma peça de armadura de ferro"
+				"§ee uma espada ou machado de ferro."
+				""
+				"§6Dica: §7§eBetterCombat §7ativa combos únicos por arma!"
+				"§7Clique com ritmo — não só spam. Cada arma tem seu tempo."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A0000000000000E"
 			rewards: [
 				{
-					id: "NT000000000002B"
-					item: "minecraft:nether_star"
+					id: "1A0000000000000F"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "NT000000000002C"
-					item: "minecraft:wither_skeleton_skull"
+					count: 3
+					id: "1A00000000000010"
+					item: "minecraft:golden_apple"
 					type: "item"
 				}
 				{
-					id: "NT000000000002D"
+					id: "1A00000000000011"
 					type: "xp"
-					xp: 1200
+					xp: 200
 				}
 			]
 			tasks: [
 				{
-					advancement: "minecraft:nether/summon_wither"
-					criterion: "summon_wither"
-					id: "NT000000000002A"
-					type: "advancement"
+					id: "1A00000000000012"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A00000000000013"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 			]
-			title: "Wither — O Chefe do Nether"
+			title: "Forjado para Sobreviver"
 			x: 4.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
-			description: ["§7O §eNetherite §7é obtido fundindo §eAncient Debris §7no Nether.", "§7Ancient Debris aparece nas §ecamadas Y=8 a Y=22§7.", "§74 Ancient Debris → 4 Netherite Scraps → 1 Netherite Ingot.", "§74 ingots = capacete, 4 = peitoral, 3 = calças, 4 = botas.", "", "§eColete §e4 Ancient Debris §7e produza §e1 Netherite Ingot§7.", "", "§6Dica: §7Incendium adiciona estruturas próximas a §eveios de debris§7!", "§7Bed exploding é o método mais rápido de minerar (e o mais perigoso).", "", "§8§o(Netherite não enferruja, não queima, e ainda por cima é chique.)"]
-			icon: "minecraft:ancient_debris"
-			id: "NT0000000000031"
+			description: [
+				"§7Sobreviver é fácil. Prosperar é outra história."
+				""
+				"§eCrie uma cama e durma em um ponto seguro."
+				"§eConstrua um abrigo com pelo menos 4 paredes e teto."
+				"§eInstale uma porta e pelo menos 4 tochas."
+				""
+				"§7O abrigo será sua base de operações. Cuide bem dele!"
+				""
+				"§6Atenção: §7com §eSleep Tight§7, monstros podem espiar pela"
+				"§7janela e te dar pesadelos se virem você dormindo!"
+				"§7Tochas do lado de fora ajudam a mantê-los afastados."
+			]
+			icon: "minecraft:white_bed"
+			id: "1A00000000000014"
 			rewards: [
 				{
 					count: 2
-					id: "NT000000000003B"
-					item: "minecraft:netherite_ingot"
+					id: "1A00000000000016"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					id: "1A00000000000017"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6A0B873FED8CA10B"
+					item: "minecraft:smoker"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:adventure/sleep_in_bed"
+				criterion: ""
+				id: "1A00000000000018"
+				type: "advancement"
+			}]
+			title: "Lar Doce Lar"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Farmer's Delight transforma a culinária neste mundo."
+				"§7Com a §ePanela de Cozinheiro §7você prepara refeições"
+				"§7que concedem buffs poderosos e regeneram mais fome."
+				""
+				"§eCrie uma Panela de Cozinheiro (Cooking Pot)"
+				"§ee uma Tábua de Corte (Cutting Board)."
+				"§ePrepare pelo menos 3 pratos diferentes."
+				""
+				"§6Dica: §7A faca prepara ingredientes especiais na Tábua!"
+			]
+			icon: "farmersdelight:cooking_pot"
+			id: "1A00000000000019"
+			rewards: [
+				{
+					id: "1A0000000000001A"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1A0000000000001B"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "1A0000000000001C"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "54654192DFACF32C"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "3B65FA2C56742E56"
+					item: "farmersdelight:fish_stew"
+					type: "item"
+				}
+				{
+					id: "37AAFB1E1C2A4BEE"
+					item: "farmersdelight:vegetable_soup"
+					type: "item"
+				}
+				{
+					id: "666D8D78E8B1B3F0"
+					item: "farmersdelight:pasta_with_meatballs"
+					type: "item"
+				}
+			]
+			title: "Arte Culinária"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Para longas expedições, você precisará de comida"
+				"§7que reponha muita fome e dê resistência."
+				""
+				"§ePlante trigo, cenoura e batata."
+				"§eCrie uma fazenda com pelo menos 3 tipos de cultura."
+				""
+				"§6Dica: §7Serene Seasons faz as estações mudarem!"
+				"§7Plante na primavera para colheitas maiores no verão."
+				"§7Arroz precisa de Rich Soil molhado — vira Rice Bale quando empacotado."
+			]
+			icon: "minecraft:wheat_seeds"
+			id: "1A0000000000001F"
+			rewards: [
+				{
+					count: 16
+					id: "1A00000000000020"
+					item: "minecraft:bone_meal"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "NT000000000003C"
-					item: "minecraft:netherite_scrap"
+					id: "1A00000000000021"
+					item: "farmersdelight:rice_bale"
 					type: "item"
 				}
 				{
-					id: "NT000000000003D"
+					id: "1A00000000000022"
 					type: "xp"
-					xp: 800
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "1A00000000000023"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1A00000000000024"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1A00000000000025"
+					item: "minecraft:potato"
+					type: "item"
+				}
+			]
+			title: "Fazenda Sustentável"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Diamante é o próximo passo para se tornar mais poderoso."
+				""
+				"§eMine ao menos 8 diamantes."
+				"§eCrie uma picareta e uma espada de diamante."
+				""
+				"§6Dica: §7Y=-58 é o melhor nível para diamante!"
+				"§7Use Fortune III para triplicar seu rendimento."
+			]
+			icon: "minecraft:diamond"
+			id: "1A00000000000026"
+			rewards: [
+				{
+					count: 4
+					id: "1A00000000000027"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1A00000000000028"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "1A00000000000029"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1A0000000000002A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "1A0000000000002B"
+					item: {
+						Count: 1
+						id: "minecraft:diamond_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Olhos de Diamante"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O encantamento é o próximo salto de poder."
+				"§7Este modpack usa o §eImmersive Enchanting§7,"
+				"§7que torna a mesa interativa e mais satisfatória."
+				""
+				"§eCrie uma mesa de encantamentos."
+				"§eEncante sua espada ou picareta de diamante."
+				""
+				"§6Dica: §7Cerque a mesa com estantes de livros!"
+				"{image: width:100 height:100 align:center}"
+			]
+			icon: "minecraft:enchanting_table"
+			id: "1A0000000000002C"
+			rewards: [
+				{
+					count: 32
+					id: "1A0000000000002D"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1A0000000000002E"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					id: "1A0000000000002F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "1A00000000000030"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					advancement: "minecraft:story/enchant_item"
+					criterion: ""
+					id: "1A00000000000031"
+					type: "advancement"
+				}
+			]
+			title: "Palavras de Poder"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Para explorar o mundo enorme deste modpack,"
+				"§7você vai precisar carregar muito mais do que uma mochila normal."
+				""
+				"§eCrie uma Traveler's Backpack."
+				"§7Ela tem slots de fluido e ferramenta dedicados."
+				""
+				"§6Dica: §7Diferentes mochilas têm temas visuais únicos!"
+				"§7Explore os tipos — vulcânica, gelada, da floresta..."
+			]
+			icon: {
+				Count: 1
+				id: "travelersbackpack:standard"
+				tag: {
+					Tier: 1
+				}
+			}
+			id: "1A00000000000032"
+			rewards: [
+				{
+					count: 16
+					id: "1A00000000000033"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "1A00000000000034"
+					item: "sophisticatedbackpacks:copper_backpack"
+					type: "item"
+				}
+				{
+					id: "1A00000000000035"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "travelersbackpack:standard"
+					tag: { }
+				}
+				id: "1A00000000000036"
+				item: {
+					Count: 1
+					id: "travelersbackpack:standard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Bagagem do Aventureiro"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Obsidiana é a porta para outros mundos."
+				"§7Com 10 obsidianas e um isqueiro, você abre o caminho."
+				""
+				"§eConsiga pelo menos 12 obsidianas."
+				"§eCrie um isqueiro (Flint \\& Steel)."
+				""
+				"§6Dica: §7Obsidiana se forma onde água encontra lava!"
+			]
+			icon: "minecraft:obsidian"
+			id: "1A00000000000037"
+			rewards: [
+				{
+					id: "1A00000000000038"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1A00000000000039"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "1A0000000000003A"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "1A0000000000003B"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "1A0000000000003C"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Porta para o Desconhecido"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Nem tudo precisa ser minerado ou craftado por você."
+				"§7Os aldeões deste mundo têm nomes próprios graças ao"
+				"§7§eVillager Names §7— eles são pessoas, não NPCs genéricos."
+				""
+				"§eEncontre uma aldeia e faça sua primeira troca."
+				""
+				"§6Dica: §7Trocas repetidas melhoram o preço e a reputação com"
+				"§7o aldeão. §e§eGoblin Traders §7aparecem à noite na floresta"
+				"§7e vendem itens raros de mods por preços... interessantes."
+			]
+			icon: "minecraft:emerald"
+			id: "1A00000000000042"
+			rewards: [
+				{
+					count: 8
+					id: "1A00000000000043"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "1A00000000000044"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "1A00000000000045"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:adventure/trade"
+				criterion: "villager"
+				id: "1A00000000000046"
+				type: "advancement"
+			}]
+			title: "Redes de Comércio"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Netherite é o material mais avançado do Overworld."
+				"§7Para obtê-lo, você precisa explorar o Nether e encontrar"
+				"§7Minério Antigo nos níveis mais baixos."
+				""
+				"§eConsiga ao menos 4 fragmentos de netherite."
+				"§eCrie pelo menos 1 lingote de netherite."
+				""
+				"§6Dica: §7Use camas para explodir blocos no Nether!"
+			]
+			icon: "minecraft:netherite_ingot"
+			id: "1A00000000000047"
+			rewards: [
+				{
+					count: 2
+					id: "1A00000000000048"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1A00000000000049"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "1A0000000000004A"
+					type: "xp"
+					xp: 500
 				}
 			]
 			tasks: [
 				{
 					count: 4L
-					id: "NT000000000003A"
-					item: "minecraft:ancient_debris"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "CCB3945000D826F2"
+					id: "1A0000000000004B"
 					item: "minecraft:netherite_scrap"
 					type: "item"
 				}
-			]
-			title: "Netherrite — O Material Supremo"
-			x: 6.0d
-			y: -2.0d
-		}
-		{
-			description: ["§7O §eIncendium §7transforma o Nether em §e8 biomas únicos§7.", "§7O §eQuartz Flats §7é um deserto de quartzo com §eTemples §7escondidos", "§7cheios de loot e puzzles de Quartz.", "", "§eExplore o bioma §eQuartz Flats §7e encontre um §eQuartz Temple§7.", "", "§6Dica: §7Quartz Flats são planícies brancas e lisas.", "§7Os Temples têm Piglins guardando — leve armadura de ouro!", "", "§8§o(Quartzo branco brilhando — a única coisa bonita nessa dimensão inteira.)"]
-			icon: "minecraft:quartz_block"
-			id: "NT0000000000041"
-			rewards: [
 				{
-					count: 16
-					id: "NT000000000004B"
-					item: "minecraft:quartz_block"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "NT000000000004C"
-					item: "minecraft:quartz"
-					type: "item"
-				}
-				{
-					id: "NT000000000004D"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					advancement: "incendium:quartz_flats/root"
-					criterion: "requirement"
-					id: "NT000000000004A"
-					type: "advancement"
-				}
-			]
-			title: "Templos das Quartz Flats"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7O §eWithered Forest §7do Incendium é um bioma de árvores carbonizadas", "§7onde §eBlaze §7e §eWithered Husks §7vagam sem parar.", "§7Tem as §eSoul Blossom §7— flores que produzem fogo de alma.", "", "§eExplore o §eWithered Forest §7e colete recursos únicos do bioma.", "", "§6Dica: §7Fogo de Alma causa §eduplo dano §7em Piglins e mortos-vivos.", "§7Soul Campfire e Soul Torch usam Soul Sand + Coal.", "", "§8§o(Uma floresta murcha no meio do Nether. Ninguém regou.)"]
-			icon: "minecraft:soul_sand"
-			id: "NT0000000000051"
-			rewards: [
-				{
-					count: 2
-					id: "NT000000000005C"
-					item: "minecraft:soul_campfire"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "NT000000000005D"
-					item: "minecraft:soul_torch"
-					type: "item"
-				}
-				{
-					id: "NT000000000005E"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					count: 16L
-					id: "NT000000000005A"
-					item: "minecraft:soul_sand"
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "NT000000000005B"
-					item: "minecraft:soul_soil"
-					type: "item"
-				}
-			]
-			title: "A Floresta Murcha"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eIncendium §7expande o Nether com biomas próprios — as", "§7Infernal Dunes escondem o §eInferno§7, o desafio mais brutal", "§7da região: sobreviva ao feitiço final dele e reivindique", "§7sua recompensa.", "", "§eSobreviva ao Inferno nas Infernal Dunes do Incendium.", "", "§6Dica: §7Poções de Resistência ao Fogo são essenciais.", "§7Leve tônico de cura e comida pra recuperação entre ataques."]
-			icon: "minecraft:blaze_rod"
-			id: "NT0000000000061"
-			rewards: [
-				{
-					count: 2
-					id: "2135A64B1A0A237E"
+					id: "1A0000000000004C"
 					item: "minecraft:netherite_ingot"
 					type: "item"
 				}
-				{
-					count: 16
-					id: "DBFDD16E3144845A"
-					item: "minecraft:blaze_rod"
-					type: "item"
-				}
-				{
-					id: "252BC60FA85419A2"
-					type: "xp"
-					xp: 2000
-				}
 			]
-			tasks: [
-				{
-					advancement: "incendium:infernal_dunes/inferno/kill"
-					criterion: "requirement"
-					id: "0E50235705C7B972"
-					type: "advancement"
-				}
-			]
-			title: "O Inferno das Dunas Ardentes"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7Um §eBeacon §7alimentado por uma §eNether Star §7e coberto", "§7por um §epirâmide de mineral §7concede §ebuffs permanentes§7:", "§7Speed, Haste, Strength, Jump Boost, Regeneration...", "§7Uma pirâmide de §eNetherite §7dá alcance de §e50 blocos§7!", "", "§eConstrua e ative um §eBeacon §7com pelo menos §e1 pilar§7.", "", "§6Dica: §7Pirâmide mínima: §e9 blocos de mineral §7(3x3).", "§7Upgradesde tier (nível 2/3/4) aumentam alcance e tipos de buff.", "", "§8§o(Um farol gigante gritando \"aqui mora alguém importante\".)"]
-			icon: "minecraft:beacon"
-			id: "NT0000000000071"
-			rewards: [
-				{
-					id: "NT000000000007B"
-					item: "minecraft:beacon"
-					type: "item"
-				}
-				{
-					id: "NT000000000007C"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "minecraft:nether/create_beacon"
-					criterion: "create_beacon"
-					id: "NT000000000007A"
-					type: "advancement"
-				}
-			]
-			title: "Beacon — A Torre de Luz"
+			title: "Além do Ferro e Diamante"
 			x: 8.0d
 			y: 4.0d
 		}
 		{
-			description: ["§7§eBygone Nether §7prova que dava pra fazer o Nether mais bonito", "§7o tempo todo — só faltava alguém se importar.", "", "§eForje o Gilded Netherite Shield.", "", "§8§o(Ouro E netherite. Ele não escolheu um, ele quis os dois.)"]
-			icon: "bygonenether:gilded_netherite_shield"
-			id: "4BFC08B7435FE016"
+			description: [
+				"§7Um aventureiro experiente precisa de mobilidade."
+				"§7O Elytra te permite voar pelo mundo — mas é difícil de obter,"
+				"§7escondido nos baús de uma End City, guardada por Shulkers."
+				""
+				"§eEncontre uma End City no End."
+				""
+				"§6Dica: §7Leve Ender Pearls e cuidado com Shulkers — o dano deles"
+				"§7te faz levitar, o que é perigoso perto das bordas flutuantes."
+				"§7O slot de Elytra do mod §ecaelus §7permite usar Elytra E armadura"
+				"§7ao mesmo tempo depois que você conseguir a sua!"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A0000000000004D"
 			rewards: [
 				{
+					id: "1A0000000000004E"
+					item: "create_jetpack:jetpack"
 					type: "item"
-					item: "bygonenether:withered_debris"
-					count: 2
-					id: "6722FCC34450FF40"
 				}
 				{
+					count: 64
+					id: "1A0000000000004F"
+					item: "minecraft:firework_rocket"
+					type: "item"
+				}
+				{
+					id: "1A00000000000050"
 					type: "xp"
-					xp: 250
-					id: "8FE51329D2CDC1D9"
+					xp: 400
+				}
+			]
+			tasks: [{
+				id: "1A00000000000051"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Asas de Liberdade"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Mystical Agriculture permite cultivar quase qualquer recurso."
+				"§7Desde minérios até mob drops — tudo vira semente!"
+				""
+				"§eCrie pelo menos 3 tipos de sementes místicas."
+				"§eHarveste pelo menos 32 essências de inferium que é a mais básica."
+				""
+				"§6Dica: §7Comece pelas sementes mais simples: §eInferium!"
+				"§7Com Inferium você cria essências superiores."
+			]
+			icon: "mysticalagriculture:apatite_essence"
+			id: "1A00000000000052"
+			rewards: [
+				{
+					count: 8
+					id: "1A00000000000053"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A00000000000054"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "1A00000000000055"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				count: 32L
+				id: "1A00000000000057"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			title: "Agricultura Mística"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Um aventureiro de verdade não precisa de uma cama fixa."
+				"§7O §eSleeping Bag §7do Comforts permite dormir em qualquer lugar"
+				"§7sem redefinir seu ponto de respawn — perfeito para expedições."
+				""
+				"§eCrie um §eSleeping Bag §7e durma em campo aberto."
+				""
+				"§6Aviso: §7§eSleep Tight §7faz monstros espiarem pela janela"
+				"§7enquanto você dorme. Iluminação externa é vital."
+				"§7Sente-se — literalmente — antes de dormir com o §eSit §7mod."
+			]
+			icon: "comforts:sleeping_bag_white"
+			id: "1A00000000000058"
+			rewards: [
+				{
+					id: "1A00000000000059"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					id: "1A0000000000005A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "1A0000000000005B"
+				item: "comforts:sleeping_bag_white"
+				type: "item"
+			}]
+			title: "Nômade das Noites"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§lIron's Spellbooks §r§7adiciona magia baseada em livros."
+				"§7Mesmo que você prefira tecnologia, aprender feitiços básicos"
+				"§7pode salvar sua vida em momentos críticos."
+				""
+				"§eCrie um §eScroll §7ou §eSpell Book §7de Iron's Spellbooks."
+				"§eUse pelo menos 1 feitiço em combate."
+				""
+				"§6Dica: §7Feitiços de cura e escudo são os mais úteis no início!"
+			]
+			icon: "irons_spellbooks:scroll"
+			id: "1A0000000000005C"
+			rewards: [
+				{
+					count: 8
+					id: "1D8EB93246AF3324"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5BD3E4D1C8D9BFC1"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "1A0000000000005F"
+				item: "irons_spellbooks:scroll"
+				type: "item"
+			}]
+			title: "Primeiras Palavras Arcanas"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Você tem ferro, diamante e Netherite."
+				"§7Você aprendeu a comer, a lutar e a sobreviver às noites."
+				"§7Agora começa a parte boa."
+				""
+				"§7Os outros capítulos estão abertos — siga o que te chama:"
+				"§a⚙ Tecnologia §7— Automatize tudo com §eCreate"
+				"§d✦ Magia §7— Domine as artes com §eArs Nouveau"
+				"§b✈ Exploração §7— Descubra o mundo com aeronaves e mapas"
+				"§2⚒ Civilizações §7— Construa impérios com §eMineColonies"
+				""
+				"§6Não há caminho certo. Só o seu."
+			]
+			icon: "minecraft:filled_map"
+			id: "1A00000000000060"
+			rewards: [
+				{
+					count: 5
+					id: "1A00000000000061"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1A00000000000062"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "1A00000000000063"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "1A00000000000064"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			title: "§aO Mundo é Seu"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eSerene Seasons §7adiciona estações do ano de verdade —"
+				"§7primavera, verão, outono e inverno afetam colheitas,"
+				"§7temperatura e até a neve."
+				""
+				"§eCrie um Calendar e um Season Sensor."
+			]
+			icon: "sereneseasons:calendar"
+			id: "287B0932EA86A9C7"
+			rewards: [
+				{
+					count: 8
+					id: "305A7B51E0154DD9"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+				{
+					id: "343631CF59F68577"
+					type: "xp"
+					xp: 100
 				}
 			]
 			tasks: [
 				{
+					id: "5EF2828989F6AB07"
+					item: "sereneseasons:calendar"
 					type: "item"
-					item: "bygonenether:gilded_netherite_shield"
-					id: "C80738445C5B7A34"
+				}
+				{
+					id: "582A46E41E8534C5"
+					item: "sereneseasons:season_sensor"
+					type: "item"
 				}
 			]
-			title: "Netherite Dourada"
-			x: 10.0d
-			y: 6.0d
+			title: "As Quatro Estações"
+			x: 4.0d
+			y: 2.0d
 		}
 	]
-	title: "§cNether — As Profundezas"
+	title: "§6Primeiros Passos"
 }

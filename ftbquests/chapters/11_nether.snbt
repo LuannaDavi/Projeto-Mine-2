@@ -1,1100 +1,799 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "17_desafios"
-	group: ""
-	icon: ["minecraft:nether_star", "mysticalagriculture:awakened_supremium_staff", "aether:valkyrie_lance"]
-	id: "AA17000000000001"
-	order_index: 16
+	filename: "11_nether"
+	group: "42DFD8A84753DCE2"
+	id: "4D318280A5B02A56"
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§c§lVocê chegou até aqui.", "", "§7Isso por si só já diz muito.", "§7Mas chegar não é suficiente.", "", "§7Estes desafios não foram feitos para serem rápidos.", "§7Cada um exige horas de preparação, recursos raros", "§7e domínio real dos sistemas deste modpack.", "", "§7Não existe atalho. Não existe sorte.", "§7Só trabalho, paciência e vontade.", "", "§c§lProve que você merece o título."]
-			icon: "minecraft:nether_star"
-			id: "459BE27BE8C6B6F9"
+			description: [
+				"§7O Overworld é só o começo."
+				"§7Este modpack tem §e5 dimensões §7para explorar,"
+				"§7cada uma com suas próprias regras, criaturas e segredos."
+				""
+				"§5🔥 §cNether §7— Expandido por Bygone Nether e Incendium"
+				"§5⭐ §fEnd §7— Expandido por The Outer End"
+				"§5🌲 §dTwilight Forest §7— Floresta com bosses sequenciais"
+				"§5☀ §eAether §7— Paraíso celestial com regras invertidas"
+				"§5💧 §bBlue Skies §7— Dois reinos além das nuvens"
+				""
+				"§7Construa o Portal do Nether. O resto começa por aí."
+				""
+				"§8§o(Portal construído, arrependimento chegando em 3, 2, 1...)"
+			]
+			icon: "minecraft:obsidian"
+			id: "2B700D5045AE1FE4"
 			rewards: [
 				{
+					count: 3
+					id: "2323B7690E8E66F4"
+					item: "minecraft:fire_resistance"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "096D4C88F624A827"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "4383AA6D69084392"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "minecraft:nether/root"
+				criterion: ""
+				id: "181223AAB7AE5579"
+				type: "advancement"
+			}]
+			title: "Entre Mundos"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eBygone Nether §7adiciona ruínas e estruturas antigas ao Nether."
+				"§7§eIncendium §7adiciona biomas ardentes únicos como Magma Wastes,"
+				"§7Quartz Flats e Volcanic Deltas."
+				""
+				"§eExplore o Nether além do bioma inicial."
+				""
+				"§6Dica: §7Cada bioma do Incendium tem estruturas e loot próprios —"
+				"§7vale a pena explorar todos eventualmente."
+			]
+			icon: "minecraft:nether_brick"
+			id: "71DAC18FECC1211E"
+			rewards: [
+				{
+					count: 16
+					id: "6DE3BA40710E8DDB"
+					item: "minecraft:nether_quartz"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "747050C6A168F39C"
+					item: "minecraft:crying_obsidian"
+					type: "item"
+				}
+				{
+					id: "280DC65524C47BCE"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:nether/explore_nether"
+				criterion: ""
+				id: "4A1301B3D741E424"
+				type: "advancement"
+			}]
+			title: "As Profundezas Flamejantes"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eIncendium §7reconstrói o Nether inteiro com biomas próprios:"
+				"§7Ash Barrens, Infernal Dunes, Quartz Flats e mais."
+				"§7No Ash Barrens existe um §eForbidden Castle §7— uma fortaleza"
+				"§7Piglin guardada por Sentries armados até os dentes."
+				""
+				"§eInvada o §eForbidden Castle §7e elimine todos os Piglins"
+				"§eque vivem lá dentro."
+				""
+				"§6Dica: §7Resistência ao Fogo é fortemente recomendada!"
+				"§7Sentries atiram à distância — não fique parado no aberto."
+				""
+				"§8§o(Todo castelo tem dono. Agora não tem mais.)"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A3858589CC1A739"
+			rewards: [
+				{
+					count: 4
+					id: "0CED3BEDEE96929D"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "7A07E18449A7AB59"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
 					count: 10
-					id: "03E4BECD0D626570"
+					id: "30E8FFCC1D6CFA25"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "56BFECFD60B07DA1"
+					id: "51A00DD854F1C2EB"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [{
+				advancement: "incendium:ash_barrens/conquer_castle"
+				criterion: "requirement"
+				id: "11F1CF0ACA721E5C"
+				type: "advancement"
+			}]
+			title: "O Conquistador do Castelo"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7As §eInfernal Dunes §7são um dos biomas mais hostis do"
+				"§7Incendium — dunas de areia vermelha com estruturas"
+				"§7únicas como o §ePipeline §7e o §eInferno§7."
+				""
+				"§7No Pipeline, sentinelas robóticos guardam"
+				"§7baús com loot de alta qualidade."
+				""
+				"§eExplore as §eInfernal Dunes §7e encontre o Pipeline."
+				""
+				"§6Dica: §7O bioma aparece em latitudes medianas do Nether."
+				"§7Procure por dunas vermelhas sem vegetação."
+				""
+				"§8§o(Praia, só que tudo quer te matar.)"
+			]
+			icon: "minecraft:red_sand"
+			id: "08D0000000000401"
+			rewards: [
+				{
+					count: 16
+					id: "08D0000000000402"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "08D0000000000403"
 					type: "xp"
 					xp: 500
 				}
 			]
-			shape: "gear"
-			tasks: [
-				{
-					id: "727E75622EEB7326"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-			]
-			title: "§c§lO Caminho do Lendário"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			description: ["§c§lDesafio I: O Armeiro Supremo", "", "§7§eAwakened Supremium §7é o fim da linha do", "§7Mystical Agriculture. Para chegar até ele,", "§7você precisa cultivar, processar e despertar", "§7essências por uma cadeia inteira de materiais.", "", "§eConsiga um set completo de Awakened Supremium:", "§e- Awakened Supremium Helmet", "§e- Awakened Supremium Chestplate", "§e- Awakened Supremium Leggings", "§e- Awakened Supremium Boots", "", "§6Ordem: §7Inferium → Prudentium → Intermedium", "§7→ Superium → Supremium → §6Awakened Supremium§7.", "§7Cada estágio exige essências do anterior."]
-			icon: {
-				Count: 1
-				id: "mysticalagriculture:awakened_supremium_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "5010FC4E5854B6EF"
-			rewards: [
-				{
-					id: "47FA43371F4F604B"
-					item: "mysticalagriculture:awakened_supremium_sword"
-					type: "item"
-				}
-				{
-					id: "43C3AB54F0F9001F"
-					item: "mysticalagriculture:awakened_supremium_pickaxe"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "0E898B93810886C2"
-					item: "mysticalagriculture:supremium_essence"
-					type: "item"
-				}
-				{
-					count: 40
-					id: "24734BFB78C05B49"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "7F739F75B7E6ED12"
-					type: "xp"
-					xp: 15000
-				}
-			]
-			tasks: [
-				{
-					id: "3450D1DB8677007B"
-					item: {
-						Count: 1
-						id: "mysticalagriculture:awakened_supremium_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0F5B226E2F95763C"
-					item: {
-						Count: 1
-						id: "mysticalagriculture:awakened_supremium_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7C2F0B0CBCCDF092"
-					item: {
-						Count: 1
-						id: "mysticalagriculture:awakened_supremium_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0BDCEF326778326B"
-					item: {
-						Count: 1
-						id: "mysticalagriculture:awakened_supremium_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "§6O Armeiro Supremo"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			description: ["§c§lDesafio II: O Arquimago Completo", "", "§7Dominar um sistema de magia é difícil.", "§7Dominar §ldois §r§7ao ponto de combiná-los", "§7é outra categoria de desafio.", "", "§7§eArs Nouveau §7e §eIron's Spellbooks §7têm progressões", "§7completamente independentes. Para este desafio,", "§7você precisa ter chegado ao topo dos dois.", "", "§eConsiga simultaneamente:", "§e- Archmage Spell Book (Ars Nouveau)", "§e- Netherite Spell Book (Iron's Spellbooks)", "§e- Dragonskin §7— drop raro do Ender Dragon", "§e- Netherite Mage Chestplate (Iron's Spellbooks)"]
-			icon: "ars_nouveau:archmage_spell_book"
-			id: "4C930C37813660A7"
-			rewards: [
-				{
-					id: "473E0D2D0CEA06C7"
-					item: "irons_spellbooks:scroll_pouch"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "3CDE356BBEAA8D73"
-					item: "irons_spellbooks:scroll"
-					type: "item"
-				}
-				{
-					id: "3CCE0B8122600438"
-					item: "ars_nouveau:spell_prism"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "748D5BE27D86C8A2"
-					item: "ars_nouveau:sourcestone"
-					type: "item"
-				}
-				{
-					count: 50
-					id: "4E2796ED8A0E6E9D"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "4CE766523DC3EDC8"
-					type: "xp"
-					xp: 18000
-				}
-			]
-			tasks: [
-				{
-					id: "0175BC9FBD809552"
-					item: "ars_nouveau:archmage_spell_book"
-					type: "item"
-				}
-				{
-					id: "00494B951881DFAC"
-					item: "irons_spellbooks:netherite_spell_book"
-					type: "item"
-				}
-				{
-					id: "10019BF30BEAD4FC"
-					item: "irons_spellbooks:dragonskin"
-					type: "item"
-				}
-				{
-					id: "17EA113D5E1E1EB4"
-					item: {
-						Count: 1
-						id: "irons_spellbooks:netherite_mage_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "§dO Arquimago Completo"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			description: ["§c§lDesafio III: O Senhor das Varas", "", "§7§eMana and Artifice §7tem um sistema de progressão", "§7profundo baseado em varas, runas e rituais arcanos.", "§7Chegar ao topo exige muitas horas de crafting, exploração e falta de emprego.", "", "§eConsiga simultaneamente:", "§e- 1 Grimoire do MNA (qualquer faction)", "§e- 1 Wand de Vinteum Avançado (Manaweaver Wand Advanced)", "§e- 64 Vinteum Ingots", "§e- 1 Eldrin Altar construído e ativo", "", "§6Dica: §7O §eGrimoire §7é o livro de fações do MNA.", "§7O §eEldrin Altar §7processa recursos arcanos de alto nível."]
-			icon: {
-				Count: 1
-				id: "mna:wand_vinteum"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2482C9D37EECC67F"
-			rewards: [
-				{
-					id: "0B85989C0C81440B"
-					item: "mna:arcane_crown"
-					type: "item"
-				}
-				{
-					id: "28BB4CB7A06134E0"
-					item: "mna:mana_resevoir"
-					type: "item"
-				}
-				{
-					id: "06D602BE46E3C0BA"
-					item: "mna:eldritch_orb"
-					type: "item"
-				}
-				{
-					count: 45
-					id: "235C9C3B2D449EE8"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "7F0D3554698E8EA5"
-					type: "xp"
-					xp: 15000
-				}
-			]
-			tasks: [
-				{
-					id: "2B8CBA75120C75F2"
-					item: "mna:grimoire"
-					type: "item"
-				}
-				{
-					id: "6640E047D7CBE837"
-					item: "mna:manaweaver_wand_advanced"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "68975E3BA1959ECB"
-					item: "mna:vinteum_ingot"
-					type: "item"
-				}
-				{
-					id: "18073B427C6BB460"
-					item: "mna:eldrin_altar"
-					type: "item"
-				}
-			]
-			title: "§5O Senhor das Varas"
+			tasks: [{
+				advancement: "incendium:infernal_dunes/root"
+				criterion: "incendium:infernal_dunes"
+				id: "08D0000000000404"
+				type: "advancement"
+			}]
+			title: "Dunas do Inferno"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			description: ["§c§lDesafio IV: O Engenheiro de Ferro", "", "§7A automação máxima do §eCreate §7exige recursos raros.", "§7A Steam Engine em escala industrial consome enormes", "§7quantidades de cobre e latão processado.", "", "§eConsiga simultaneamente:", "§e- 512 Brass Ingots (Create)", "§e- 3 Steam Engines construídas e ativas", "§e- 1 Netherite Backtank (Create)", "§e- 1 Hyper Experience Bottle (Create Enchantment Industry)", "", "§6Dica: §7Netherite Backtank guarda ar comprimido para", "§7respirar no Nether e no End sem poções!"]
-			icon: "create:netherite_backtank"
-			id: "72B166828B115448"
+			description: [
+				"§7O §eIncendium §7reimagina o Nether com §e8 biomas únicos§7:"
+				"§7Infernal Dunes, Quartz Flats, Toxic Heap,"
+				"§7Withered Forest, Ash Barrens, Inverted Forest,"
+				"§7Weeping Valley e Volcanic Deltas."
+				""
+				"§eVisite todos os §e8 biomas §7do Incendium."
+				""
+				"§6Dica: §7JourneyMap registra automaticamente biomas visitados."
+				"§7Volcanic Deltas são raros — procure por lagos de lava com basalto."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "08D0000000000405"
 			rewards: [
 				{
-					id: "57627DBAC7BB18DF"
-					item: "create_jetpack:netherite_jetpack"
+					count: 2
+					id: "08D0000000000406"
+					item: "minecraft:ancient_debris"
 					type: "item"
 				}
 				{
-					id: "350D63CBD0E29106"
-					item: "create:linked_controller"
-					type: "item"
-				}
-				{
-					id: "05BFAF5112886333"
-					item: "create:schematicannon"
-					type: "item"
-				}
-				{
-					count: 50
-					id: "5C7DD8658465A675"
+					count: 16
+					id: "08D0000000000407"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "25D49F845AAD5F5D"
+					id: "08D0000000000408"
 					type: "xp"
-					xp: 15000
+					xp: 800
 				}
 			]
-			tasks: [
-				{
-					count: 512L
-					id: "0CC8B753BA931F4E"
-					item: "create:brass_ingot"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "19AC569D4C513548"
-					item: "create:steam_engine"
-					type: "item"
-				}
-				{
-					id: "422488282DEA6601"
-					item: "create:netherite_backtank"
-					type: "item"
-				}
-				{
-					id: "7CFD3A162F778A5C"
-					item: "create_enchantment_industry:hyper_experience_bottle"
-					type: "item"
-				}
-			]
-			title: "§6O Engenheiro de Ferro"
+			tasks: [{
+				advancement: "incendium:misc/soul_searcher"
+				criterion: ""
+				id: "08D0000000000409"
+				type: "advancement"
+			}]
+			title: "Explorador do Nether"
 			x: 8.0d
 			y: 0.0d
 		}
 		{
-			description: ["§c§lDesafio V: Conquistador dos Céus", "", "§7O §eAether §7guarda os itens mais poderosos das alturas.", "§7Chegar ao topo do Aether exige enfrentar suas três", "§7dungeons e a Valkyrie Queen — a governante do céu.", "", "§eConsiga simultaneamente:", "§e- 1 Valkyrie Lance (drop da Valkyrie Queen)", "§e- Armadura completa de §eGravitite §7(4 peças)", "§e- 1 Phoenix Bow (drop da dungeon dourada)", "§e- 32 Zanite Gemstones", "", "§6Dica: §7Gravitite levita quando exposto à luz do sol —", "§7minere-o à noite ou com Silk Touch!"]
-			icon: {
-				Count: 1
-				id: "aether:gravitite_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "05DE9367682739A8"
+			description: [
+				"§7A §eNether Fortress §7é a estrutura mais importante do Nether vanilla."
+				"§7Blazes, Wither Skeletons, e o loot necessário para a progressão."
+				"§7Sem a Fortaleza, não há varetas de blaze. Sem vareta, sem poções."
+				""
+				"§eEncontre uma §eNether Fortress §7e colete §e5 Blaze Rods§7."
+				""
+				"§6Dica: §7Fortalezas sempre geram próximas a biomas de Netherwart."
+				"§7Leve escudo e armadura — Blazes atiram em grupo."
+			]
+			icon: "minecraft:blaze_rod"
+			id: "5CACDAEC4BC31CFC"
 			rewards: [
 				{
-					id: "07D0377FC8B04EA3"
-					item: "aether:valkyrie_cape"
+					count: 16
+					id: "543DE84064E97C81"
+					item: "minecraft:blaze_powder"
 					type: "item"
 				}
 				{
-					id: "3F683AD95A01C83B"
-					item: {
-						Count: 1
-						id: "aether:zanite_pendant"
-						tag: {
-							Damage: 0
-						}
-					}
+					count: 8
+					id: "615DDC07F7F45947"
+					item: "minecraft:fire_charge"
 					type: "item"
 				}
 				{
-					id: "4141CA3363CA76D3"
-					item: {
-						Count: 1
-						id: "aether:phoenix_bow"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 50
-					id: "69092DFFF189858E"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "4F8C950559E4D20F"
+					id: "7C5157ADDEBDA898"
 					type: "xp"
-					xp: 20000
+					xp: 400
 				}
 			]
 			tasks: [
-				{
-					id: "598512B999286D26"
-					item: {
-						Count: 1
-						id: "aether:valkyrie_lance"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "63993CA218A23F36"
-					item: {
-						Count: 1
-						id: "aether:gravitite_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1AF4F6063A865698"
-					item: {
-						Count: 1
-						id: "aether:gravitite_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "324DB7EF99A61C44"
-					item: {
-						Count: 1
-						id: "aether:gravitite_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7266F06DA69E4B84"
-					item: {
-						Count: 1
-						id: "aether:gravitite_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "28BF9E3676BE0EFB"
-					item: {
-						Count: 1
-						id: "aether:phoenix_bow"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "4B5F316B2ABEF368"
-					item: "aether:zanite_gemstone"
-					type: "item"
-				}
-			]
-			title: "§eConquistador dos Céus"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			description: ["§c§lDesafio VII: Caçador de Chefes", "", "§7Os bosses de mods são os inimigos mais poderosos do modpack.", "§7Provar que você os dominou exige os drops mais raros de cada um.", "", "§eConsiga todos estes drops de bosses:", "§e- Sol Visage (drop do Barako, Mowzie's Mobs)", "§e- Ice Crystal (drop do Frostmaw, Mowzie's Mobs)", "§e- Seedof Chaos (drop de Born in Chaos)", "§e- The Bossdexium (drop de Bossominium)", "§e- Malkuth Trophy (drop de FD Bosses)", "§e- Frozen Fist (drop de Bosses Rise)", "", "§6Dica: §7Itens de boss têm baixíssima chance de drop.", "§7Prepare-se para múltiplas tentativas."]
-			icon: "mowziesmobs:sol_visage"
-			id: "57FB4D6C1F18453E"
-			rewards: [
-				{
-					id: "393F63B691D96183"
-					item: {
-						Count: 1
-						id: "mowziesmobs:earthrend_gauntlet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7E07AD8F796D265B"
-					item: {
-						Count: 1
-						id: "legendary_monsters:soul_great_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 5
-					id: "6CD80B47B8C600EE"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-				{
-					count: 64
-					id: "11D2EEEB9518119A"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "59BE8B7C1591E558"
-					type: "xp"
-					xp: 25000
-				}
-			]
-			tasks: [
-				{
-					advancement: "mowziesmobs:kill_umvuthi"
-					criterion: "barako"
-					id: "F9929E6801A56C5F"
-					type: "advancement"
-				}
-				{
-					advancement: "mowziesmobs:kill_frostmaw"
-					criterion: "frostmaw"
-					id: "CC719BACBBECCAC5"
-					type: "advancement"
-				}
-				{
-					advancement: "born_in_chaos_v1:chaos_knight"
-					criterion: "chaos_knight_0"
-					id: "96B59FADD60A4053"
-					type: "advancement"
-				}
-				{
-					id: "6C494FE538BCBB9F"
-					item: "bossominium:the_bossdexium"
-					type: "item"
-				}
-				{
-					id: "488109BD4D6067DB"
-					item: "fdbosses:malkuth_trophy"
-					type: "item"
-				}
-				{
-					id: "7734AEED73A36709"
-					item: {
-						Count: 1
-						id: "block_factorys_bosses:frozen_fist"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "§cCaçador de Chefes"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			description: ["§c§lDesafio VIII: Mochileiro do Infinito", "", "§7A mochila de Netherite do §eSophisticated Backpacks", "§7com Infinity Upgrade, Everlasting e Omega Stack.", "§7Porque aparentemente carregar 2304 itens não era suficiente", "§7e você precisava de §lmais§r§7.", "", "§eConsiga:", "§e- 1 Netherite Backpack", "§e- 1 Infinity Upgrade instalado", "§e- 1 Everlasting Upgrade instalado", "§e- 1 Stack Upgrade Omega Tier instalado", "", "§6Dica: §7O Infinity Upgrade é caro e difícil.", "§7Mas você chegou ao capítulo 10, então provavelmente", "§7já não mede esforço em termos de horas gastas.", "", "§8§o(É tudo sobre inventário. Sempre foi.)"]
-			icon: "sophisticatedbackpacks:netherite_backpack"
-			id: "06C9265A4A347B71"
-			rewards: [
-				{
-					id: "0D98F46D3B061688"
-					item: "sophisticatedbackpacks:inception_upgrade"
-					type: "item"
-				}
-				{
-					id: "0CC768FFA130EB6A"
-					item: "sophisticatedbackpacks:survival_infinity_upgrade"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "04D0161AEC99DD97"
-					item: "sophisticatedbackpacks:stack_upgrade_tier_4"
-					type: "item"
-				}
-				{
-					count: 50
-					id: "21F8F4F887A8167E"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "3DBE298D438A32BA"
-					type: "xp"
-					xp: 18000
-				}
-			]
-			tasks: [
-				{
-					id: "0F502992A28EEB57"
-					item: "sophisticatedbackpacks:netherite_backpack"
-					type: "item"
-				}
-				{
-					id: "3ACBE0BBC1E80A6C"
-					item: "sophisticatedbackpacks:infinity_upgrade"
-					type: "item"
-				}
-				{
-					id: "32E5C6B156FA6B89"
-					item: "sophisticatedbackpacks:everlasting_upgrade"
-					type: "item"
-				}
-				{
-					id: "46BCC3E5E7B2E90F"
-					item: "sophisticatedbackpacks:stack_upgrade_omega_tier"
-					type: "item"
-				}
-			]
-			title: "§bMochileiro do Infinito"
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			description: ["§c§lDesafio IX: Arsenal da Ordem", "", "§7§eKnight Quest §7tem dezenas de armaduras temáticas.", "§7As mais raras são drops de bosses e mini-bosses", "§7espalhados pelo mundo, cada um com habilidades únicas.", "", "§eConsiga 5 sets de armadura §ediferentes §7do Knight Quest:", "§e(qualquer combinação de peças distintas de sets)", "", "§eMais: 1 Chaotic Essence, 1 Great Essence e 1 Radiant Essence", "§7(as essências mais raras do mod)", "", "§6Dica: §7As Essências caem de bosses específicos do Knight Quest.", "§7Radiant Essence é a mais difícil — boss de luz."]
-			icon: {
-				Count: 1
-				id: "knightquest:warlord_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1314677B1371FE42"
-			rewards: [
-				{
-					id: "1100C4D2A109EE62"
-					item: {
-						Count: 1
-						id: "knightquest:uchigatana_katana"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "64934C3CA1A1244F"
-					item: "knightquest:great_chalice"
-					type: "item"
-				}
-				{
-					count: 50
-					id: "224B4C5457D32550"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "573627B1F0E2DDC6"
-					type: "xp"
-					xp: 20000
-				}
-			]
-			tasks: [
-				{
-					count: 20L
-					id: "08EBA92FF890F7FA"
-					item: {
-						Count: 1
-						id: "knightquest:warlord_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1FB34DC1D1250923"
-					item: "knightquest:chaotic_essence"
-					type: "item"
-				}
-				{
-					id: "1D6751953836309F"
-					item: "knightquest:great_essence"
-					type: "item"
-				}
-				{
-					id: "585A52EB75606925"
-					item: "knightquest:radiant_essence"
-					type: "item"
-				}
-			]
-			title: "§7Arsenal da Ordem"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			description: ["§c§l✦ DESAFIO FINAL I: A Grande Fábrica Arcana ✦", "", "§7A combinação entre §eCreate §7e §eArs Nouveau§7:", "§7uma fábrica que automatiza Mana §epor meio da indústria§7.", "", "§eConsiga simultâneos:", "§e- 100 Source Jars do Ars Nouveau ativos", "§e- 1000 Brass Ingots produzidos automaticamente", "§e- 64 Awakened Supremium Essence", "§e- 5 Hyper Experience Bottles", "§e- 1 Linked Controller do Create", "", "§7Provar esse domínio requer um §lmundo inteiro§r§7 funcionando.", "§6Recompensa §7proporcional ao esforço."]
-			icon: "create:linked_controller"
-			id: "69A1B87011C5899B"
-			rewards: [
-				{
-					id: "052F483B2656AAF2"
-					item: "mysticalagriculture:awakened_supremium_staff"
-					type: "item"
-				}
-				{
-					id: "478BBE012BF3FF84"
-					item: "ars_nouveau:spell_prism"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "4519D627ECC31762"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-				{
-					count: 100
-					id: "538C4EAE681AB596"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "13244D9298749114"
-					type: "xp"
-					xp: 40000
-				}
-			]
-			tasks: [
-				{
-					count: 100L
-					id: "06E88894B12AA8C5"
-					item: "ars_nouveau:source_jar"
-					type: "item"
-				}
-				{
-					count: 1000L
-					id: "327D05E747F509E9"
-					item: "create:brass_ingot"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "248B125580195200"
-					item: "mysticalagriculture:awakened_supremium_essence"
-					type: "item"
-				}
 				{
 					count: 5L
-					id: "70BF4E9C1BF091A1"
-					item: "create_enchantment_industry:hyper_experience_bottle"
+					id: "52F0BCDE37C52E86"
+					item: "minecraft:blaze_rod"
 					type: "item"
 				}
 				{
-					id: "519D9172180D1C6A"
-					item: "create:linked_controller"
+					count: 8L
+					id: "63FF249AE8E03905"
+					item: "minecraft:nether_wart"
 					type: "item"
 				}
 			]
-			title: "§6§lA Grande Fábrica Arcana"
-			x: 2.0d
-			y: 4.0d
+			title: "A Fortaleza do Nether"
+			x: 0.0d
+			y: -2.0d
 		}
 		{
-			description: ["§c§l✦ DESAFIO FINAL III: O Guerreiro Absoluto ✦", "", "§7O pico do equipamento de combate deste modpack:", "§7materiais de mods combinados com os melhores recursos", "§7de todas as dimensões exploradas.", "", "§eConsiga simultaneamente:", "§e- Set completo Awakened Supremium (4 peças)", "§e- Set completo Gravitite do Aether (4 peças)", "§e- Netherite Backpack com Infinity + Everlasting upgrades", "§e- Radiant Essence e Chaotic Essence (Knight Quest)", "§e- Valkyrie Cape (Aether)", "", "§7O guerreiro que possui isso sobrevive a qualquer coisa."]
-			icon: {
-				Count: 1
-				id: "mysticalagriculture:awakened_supremium_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "0EE3CF886DD39C10"
+			description: [
+				"§7Os §eBastion Remnants §7são as ruínas onde Piglins habitam."
+				"§7Têm alguns dos melhores baús do jogo — e os Piglins mais agressivos."
+				"§7Com §eArmadura de Ouro §7equipada, eles ficam neutros."
+				""
+				"§eExplore um §eBastion Remnant §7e saqueie seus baús."
+				"§eColete pelo menos §e16 Golden Ingots §7negociando com Piglins."
+				""
+				"§6Dica: §7Jogue Ouro no chão para os Piglins trocarem itens!"
+				"§7Bastião de §eTesouro §7tem o melhor loot — procure o cofre central."
+				""
+				""
+				"§6Dica extra: §7Artifacts e Relics injetam itens únicos nos baús"
+				"§7de Bastion Treasure e Nether Bridge — vale sempre saquear tudo!"
+				"§8§o(Ouro compra amizade. Falta de ouro compra uma perseguição.)"
+			]
+			icon: "minecraft:gilded_blackstone"
+			id: "72F4C5CF430075F4"
 			rewards: [
 				{
-					id: "2D52F717C8D0240D"
-					item: "mysticalagriculture:awakened_supremium_scythe"
+					id: "446FE1A40DFFF94F"
+					item: "minecraft:piglin_banner_pattern"
 					type: "item"
 				}
 				{
-					id: "2ED639563D345C11"
-					item: {
-						Count: 1
-						id: "aether:valkyrie_axe"
-						tag: {
-							Damage: 0
-						}
-					}
+					count: 4
+					id: "021F8ACFF148D3D4"
+					item: "minecraft:crying_obsidian"
 					type: "item"
 				}
 				{
-					id: "46DF8784957BCF8A"
-					item: {
-						Count: 1
-						id: "knightquest:uchigatana_katana"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "1118C18D2B0F084C"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1D838EDF3C4EE889"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					advancement: "minecraft:nether/loot_bastion"
+					criterion: "loot_bastion"
+					id: "6445FFA6D3FD37E1"
+					type: "advancement"
+				}
+			]
+			title: "Bastião dos Piglins"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"§7O §eWither §7é o boss invocável mais poderoso do Overworld/Nether."
+				"§7Invocado com §e3 Wither Skeleton Skulls §7e §eSouls Sand§7,"
+				"§7ele explode ao ser invocado e atira §eWither Skulls §7explosivas."
+				"§7Derrotá-lo é a única forma de obter a §eNether Star§7."
+				""
+				"§eInvoque e derrote o §eWither§7."
+				""
+				"§6Dica: §7Invoque-o em um §eTúnel estreito §7para limitar movimento."
+				"§7§eBeacons §7usam a Nether Star — vale muito a pena derrotá-lo."
+				"§8§o(Três caveiras. Uma invocação. Muita dor.)"
+			]
+			icon: "minecraft:nether_star"
+			id: "4A43C5C16149EEE8"
+			rewards: [
+				{
+					id: "5107DFADA42C5F0D"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "5743A92F885272D4"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					id: "7D337433A3C86251"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:nether/summon_wither"
+				criterion: "summon_wither"
+				id: "5179A5F6257D5094"
+				type: "advancement"
+			}]
+			title: "Wither — O Chefe do Nether"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"§7O §eNetherite §7é obtido fundindo §eAncient Debris §7no Nether."
+				"§7Ancient Debris aparece nas §ecamadas Y=8 a Y=22§7."
+				"§74 Ancient Debris → 4 Netherite Scraps → 1 Netherite Ingot."
+				"§74 ingots = capacete, 4 = peitoral, 3 = calças, 4 = botas."
+				""
+				"§eColete §e4 Ancient Debris §7e produza §e1 Netherite Ingot§7."
+				""
+				"§6Dica: §7Incendium adiciona estruturas próximas a §eveios de debris§7!"
+				"§7Bed exploding é o método mais rápido de minerar (e o mais perigoso)."
+				""
+				"§8§o(Netherite não enferruja, não queima, e ainda por cima é chique.)"
+			]
+			icon: "minecraft:ancient_debris"
+			id: "3D3BFF94C9E3669B"
+			rewards: [
+				{
+					count: 2
+					id: "0E713947BB8CBF3D"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "42AAFCB318EF66E5"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "7387D40D7D2DEAD2"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1F97AD34BEC24C73"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2FF33F98AE7EA3D2"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+			]
+			title: "Netherrite — O Material Supremo"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"§7O §eIncendium §7transforma o Nether em §e8 biomas únicos§7."
+				"§7O §eQuartz Flats §7é um deserto de quartzo com §eTemples §7escondidos"
+				"§7cheios de loot e puzzles de Quartz."
+				""
+				"§eExplore o bioma §eQuartz Flats §7e encontre um §eQuartz Temple§7."
+				""
+				"§6Dica: §7Quartz Flats são planícies brancas e lisas."
+				"§7Os Temples têm Piglins guardando — leve armadura de ouro!"
+			]
+			icon: "minecraft:quartz_block"
+			id: "7F3F647E3214E811"
+			rewards: [
+				{
+					count: 16
+					id: "0B719851454FF303"
+					item: "minecraft:quartz_block"
 					type: "item"
 				}
 				{
 					count: 32
-					id: "4A728F87BE8531F9"
-					item: "minecraft:netherite_ingot"
+					id: "0E25AB23B33E587D"
+					item: "minecraft:quartz"
 					type: "item"
 				}
 				{
-					count: 20
-					id: "55979CCF940F6E45"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-				{
-					count: 128
-					id: "18C3E1C1981B10EB"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "472985F41020B25C"
+					id: "33E39F8982363DB1"
 					type: "xp"
-					xp: 50000
+					xp: 500
+				}
+			]
+			tasks: [{
+				advancement: "incendium:quartz_flats/root"
+				criterion: "requirement"
+				id: "2B9BFC347A9D6CCD"
+				type: "advancement"
+			}]
+			title: "Templos das Quartz Flats"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eWithered Forest §7do Incendium é um bioma de árvores carbonizadas"
+				"§7onde §eBlaze §7e §eWithered Husks §7vagam sem parar."
+				"§7Tem as §eSoul Blossom §7— flores que produzem fogo de alma."
+				""
+				"§eExplore o §eWithered Forest §7e colete recursos únicos do bioma."
+				""
+				"§6Dica: §7Fogo de Alma causa §eduplo dano §7em Piglins e mortos-vivos."
+				"§7Soul Campfire e Soul Torch usam Soul Sand + Coal."
+			]
+			icon: "minecraft:soul_sand"
+			id: "3199159549C5704C"
+			rewards: [
+				{
+					count: 2
+					id: "4275E95D350AE605"
+					item: "minecraft:soul_campfire"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "523CB5F64C2226DE"
+					item: "minecraft:soul_torch"
+					type: "item"
+				}
+				{
+					id: "49DD574D246AB238"
+					type: "xp"
+					xp: 400
 				}
 			]
 			tasks: [
 				{
-					id: "6662CEAA245C6716"
-					item: {
-						Count: 1
-						id: "mysticalagriculture:awakened_supremium_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
+					count: 16L
+					id: "72569DD0BE5FCC3B"
+					item: "minecraft:soul_sand"
 					type: "item"
 				}
 				{
-					id: "3D5882F61C2F9F8A"
-					item: {
-						Count: 1
-						id: "mysticalagriculture:awakened_supremium_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1EA58E5EFAB6605C"
-					item: {
-						Count: 1
-						id: "mysticalagriculture:awakened_supremium_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5AABBDECAB575866"
-					item: {
-						Count: 1
-						id: "mysticalagriculture:awakened_supremium_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "074CC784D62C7464"
-					item: {
-						Count: 1
-						id: "aether:gravitite_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "38003ACDB3BDF7F1"
-					item: {
-						Count: 1
-						id: "aether:gravitite_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "46C1C275DB45B5A0"
-					item: {
-						Count: 1
-						id: "aether:gravitite_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "54BCB7BDC09642CD"
-					item: {
-						Count: 1
-						id: "aether:gravitite_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "471B0A146595EF36"
-					item: "sophisticatedbackpacks:netherite_backpack"
-					type: "item"
-				}
-				{
-					id: "6A6FD1789F324963"
-					item: "knightquest:radiant_essence"
-					type: "item"
-				}
-				{
-					id: "013A002CE7DC9156"
-					item: "knightquest:chaotic_essence"
-					type: "item"
-				}
-				{
-					id: "1C79C91877365494"
-					item: "aether:valkyrie_cape"
+					count: 8L
+					id: "56B0E02763FC79AB"
+					item: "minecraft:soul_soil"
 					type: "item"
 				}
 			]
-			title: "§6§lO Guerreiro Absoluto"
+			title: "A Floresta Murcha"
 			x: 4.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["2B00000000000060", "5E00000000000007", "5E00000000000016"]
-			description: ["§7Você foi ao Nether e sobreviveu.", "§7Você venceu o Dragão no End.", "§7Cruzou a Twilight Forest e derrotou o Ur-Ghast.", "§7Escalou o Aether e tomou a lança da Valkyrie Queen.", "§7Explorou os dois céus do Blue Skies.", "", "§7Nenhuma porta fechada resistiu a você.", "§7Nenhuma dimensão te expulsou permanentemente.", "", "§5§lVocê conquistou todos os mundos."]
-			icon: "minecraft:ender_eye"
-			id: "728DA301E0D54BC8"
+			description: [
+				"§7§eIncendium §7expande o Nether com biomas próprios — as"
+				"§7Infernal Dunes escondem o §eInferno§7, o desafio mais brutal"
+				"§7da região: sobreviva ao feitiço final dele e reivindique"
+				"§7sua recompensa."
+				""
+				"§eSobreviva ao Inferno nas Infernal Dunes do Incendium."
+				""
+				"§6Dica: §7Poções de Resistência ao Fogo são essenciais."
+				"§7Leve tônico de cura e comida pra recuperação entre ataques."
+			]
+			icon: "minecraft:blaze_rod"
+			id: "3D8769CDFD591453"
 			rewards: [
 				{
-					count: 30
-					id: "161CC24F9E0B1F7F"
-					item: "minecraft:experience_bottle"
+					count: 2
+					id: "2135A64B1A0A237E"
+					item: "minecraft:netherite_ingot"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "7F53CD5038702892"
-					item: "aether:ambrosium_shard"
+					count: 16
+					id: "0DAD378CF996DFC0"
+					item: "minecraft:blaze_rod"
 					type: "item"
 				}
 				{
-					id: "736D430F9A5BCF3F"
+					id: "252BC60FA85419A2"
 					type: "xp"
-					xp: 5000
+					xp: 2000
 				}
 			]
-			tasks: [
-				{
-					id: "45A9DEEF2FF547FB"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-			]
-			title: "§5§lConquistador de Dimensões"
+			tasks: [{
+				advancement: "incendium:infernal_dunes/inferno/kill"
+				criterion: "requirement"
+				id: "0E50235705C7B972"
+				type: "advancement"
+			}]
+			title: "O Inferno das Dunas Ardentes"
 			x: 6.0d
 			y: 4.0d
 		}
 		{
-			description: ["§7Com os recursos de todas as dimensões em mãos,", "§7você pode criar itens impossivelmente raros.", "", "§eCrie um item que use materiais de pelo menos", "§e§l3 dimensões diferentes §r§7(ex: Netherite + Aether Ore + End Crystal).", "", "§6Cada dimensão contribui com algo único.", "§7Combine para criar o maior poder possível!"]
-			icon: "minecraft:netherite_ingot"
-			id: "20D4D55C4FE40BCE"
+			description: [
+				"§7Um §eBeacon §7alimentado por uma §eNether Star §7e coberto"
+				"§7por um §epirâmide de mineral §7concede §ebuffs permanentes§7:"
+				"§7Speed, Haste, Strength, Jump Boost, Regeneration..."
+				"§7Uma pirâmide de §eNetherite §7dá alcance de §e50 blocos§7!"
+				""
+				"§eConstrua e ative um §eBeacon §7com pelo menos §e1 pilar§7."
+				""
+				"§6Dica: §7Pirâmide mínima: §e9 blocos de mineral §7(3x3)."
+				"§7Upgradesde tier (nível 2/3/4) aumentam alcance e tipos de buff."
+			]
+			icon: "minecraft:beacon"
+			id: "0D48161CC349CCA6"
 			rewards: [
 				{
-					count: 5
-					id: "55490419440EAE4C"
-					item: "minecraft:netherite_ingot"
+					id: "4B9659EDE04A92E5"
+					item: "minecraft:beacon"
 					type: "item"
 				}
 				{
-					id: "7927356E7DE2DC66"
-					item: {
-						Count: 1
-						id: "twilightforest:fiery_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 20
-					id: "5BB2FDE175536AC0"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "599446B5C3AF99F5"
+					id: "0DB662DD7B427623"
 					type: "xp"
-					xp: 3000
+					xp: 1000
 				}
 			]
-			tasks: [
-				{
-					id: "72C6E1EB2A0FB062"
-					item: "minecraft:netherite_ingot"
-					type: "item"
-				}
-				{
-					id: "2F106D9BD641E043"
-					item: "aether:zanite_gemstone"
-					type: "item"
-				}
-				{
-					id: "2BE20DCA8E08E736"
-					item: "minecraft:end_crystal"
-					type: "item"
-				}
-			]
-			title: "Poder das Dimensões"
+			tasks: [{
+				advancement: "minecraft:nether/create_beacon"
+				criterion: "create_beacon"
+				id: "12F2921AC1222EC0"
+				type: "advancement"
+			}]
+			title: "Beacon — A Torre de Luz"
 			x: 8.0d
 			y: 4.0d
 		}
 		{
-			description: ["§7Você já matou deuses e desmontou dimensões. Agora prove que", "§7também sabe cuidar de bichinho — o desafio final da paciência.", "", "§eTenha ao menos: um Alfalfa Bale (SWEM), um Moa domado (Aether)", "§ee um Raw Llama Cheese (DragN's Livestock Overhaul)."]
-			icon: "minecraft:nether_star"
-			id: "4928328A642FB290"
+			description: [
+				"§7§eBygone Nether §7prova que dava pra fazer o Nether mais bonito"
+				"§7o tempo todo — só faltava alguém se importar."
+				""
+				"§eForje o Gilded Netherite Shield."
+				""
+				"§8§o(Ouro E netherite. Ele não escolheu um, ele quis os dois.)"
+			]
+			icon: {
+				Count: 1
+				id: "bygonenether:gilded_netherite_shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BFC08B7435FE016"
 			rewards: [
 				{
+					count: 2
+					id: "6722FCC34450FF40"
+					item: "bygonenether:withered_debris"
 					type: "item"
-					item: "minecraft:golden_apple"
-					count: 8
-					id: "898E29F8584D4E0A"
 				}
 				{
-					type: "item"
-					item: "minecraft:diamond"
-					count: 16
-					id: "F53D3A00E6019360"
-				}
-				{
+					id: "7DBE80E174067AF1"
 					type: "xp"
-					xp: 12000
-					id: "E18EE61ED706C74E"
+					xp: 250
 				}
 			]
-			tasks: [
-				{
-					type: "item"
-					item: "swem:alfalfa_bale"
-					id: "4D45D2F5E0153BF5"
+			tasks: [{
+				id: "0C6E966CB06100C9"
+				item: {
+					Count: 1
+					id: "bygonenether:gilded_netherite_shield"
+					tag: {
+						Damage: 0
+					}
 				}
-				{
-					type: "advancement"
-					advancement: "aether:incubate_moa"
-					criterion: "incubate_moa"
-					id: "6FFFA1168B9EAEF0"
-				}
-				{
-					type: "item"
-					item: "dragnlivestock:raw_llama_cheese"
-					id: "9CD2C1D4C0994D36"
-				}
-			]
-			title: "§eO Domador Definitivo"
-			x: 16.0d
-			y: 8.0d
+				type: "item"
+			}]
+			title: "Netherite Dourada"
+			x: 10.0d
+			y: 6.0d
 		}
 		{
-			description: ["§7Não basta jogar o modpack — é preciso ter posse física de", "§7pelo menos um item lendário de cada grande sistema.", "", "§eTenha em mãos, ao mesmo tempo: Awakened Supremium Essence,", "§eum Relic equipado, e um Artifact equipado."]
-			icon: "minecraft:nether_star"
-			id: "9DA5B02197ED277F"
+			description: [
+				"§7No bioma Withered Forest do Incendium, espíritos vagam"
+				"§7entre árvores mortas — os \"Spirits\" são hostis fantasmagóricos"
+				"§7que atravessam paredes e drenam sua sanidade (figurativamente)."
+				""
+				"§eDerrote um Spirit na Withered Forest."
+			]
+			icon: "minecraft:experience_bottle"
+			id: "07764185FA405C10"
 			rewards: [
 				{
-					type: "item"
-					item: "minecraft:netherite_ingot"
-					count: 8
-					id: "B148E37573017C2C"
-				}
-				{
-					type: "item"
+					count: 16
+					id: "25B9470AF656F97D"
 					item: "minecraft:experience_bottle"
-					count: 64
-					id: "62BB10FA8D50A34D"
+					type: "item"
 				}
 				{
+					id: "3684953CD108DB01"
 					type: "xp"
-					xp: 14000
-					id: "CFC794B13453A5D2"
+					xp: 400
 				}
 			]
-			tasks: [
+			tasks: [{
+				advancement: "incendium:withered_forest/kill_spirit"
+				criterion: "requirement"
+				id: "398721385832224C"
+				type: "advancement"
+			}]
+			title: "Aparições da Floresta Murcha"
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7O Sanctum, escondido nas Quartz Flats, guarda cofres"
+				"§7trancados cheios de loot valioso — mas raramente sem"
+				"§7armadilhas no caminho."
+				""
+				"§eEncontre e saqueie o Sanctum das Quartz Flats."
+			]
+			icon: "minecraft:spectral_arrow"
+			id: "2274CAC82D4AFD1D"
+			rewards: [
 				{
+					count: 16
+					id: "37705D45889328A1"
+					item: "minecraft:spectral_arrow"
 					type: "item"
-					item: "mysticalagriculture:awakened_supremium_essence"
+				}
+				{
+					id: "294C16862727EDB0"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [{
+				advancement: "incendium:quartz_flats/sanctum/vault_hunter"
+				criterion: "requirement"
+				id: "2447F5084DCD7547"
+				type: "advancement"
+			}]
+			title: "Caçador de Cofres"
+			x: 24.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7Ghasts nas Quartz Flats aparecem em maior número —"
+				"§7e voam sobre um chão que literalmente chora (Floor is Tears,"
+				"§7outra curiosidade do bioma)."
+				""
+				"§eDerrote um Ghast nas Quartz Flats."
+			]
+			icon: "minecraft:ghast_tear"
+			id: "514AC446E1FEB418"
+			rewards: [
+				{
 					count: 4
-					id: "8485FE873BFEF194"
+					id: "73730C37D9C3080A"
+					item: "minecraft:ghast_tear"
+					type: "item"
 				}
 				{
-					type: "item"
-					item: "relics:bastion_ring"
-					id: "719D6BA6009188E0"
-				}
-				{
-					type: "item"
-					item: "artifacts:crystal_heart"
-					id: "6A8304186AADE932"
+					id: "4439470A4256C57D"
+					type: "xp"
+					xp: 300
 				}
 			]
-			title: "§bO Colecionador Absoluto"
-			x: 18.0d
-			y: 8.0d
+			tasks: [{
+				advancement: "incendium:quartz_flats/ghast_buster"
+				criterion: "kill_ghast"
+				id: "4A0D9612D9BE0343"
+				type: "advancement"
+			}]
+			title: "Estourador de Ghasts"
+			x: 26.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7A Sentry guarda o Pipeline nas Infernal Dunes — uma criatura"
+				"§7blindada que definitivamente não é \"só um blaze\", apesar"
+				"§7das aparências (e do nome irônico do advancement)."
+				""
+				"§eDerrote a Sentry no Pipeline das Infernal Dunes."
+				""
+				"§6Dica: §7O Pipeline também esconde um tesouro (Pipeline Treasure) —"
+				"§7explore ao redor depois de derrotá-la."
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "69E7AF591029DE56"
+			rewards: [
+				{
+					id: "4D83F88A01FF3C42"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "29F16795231110C7"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				advancement: "incendium:infernal_dunes/pipeline/kill_sentry"
+				criterion: "requirement"
+				id: "3734AD336B05E66A"
+				type: "advancement"
+			}]
+			title: "Não é Bem um Blaze"
+			x: 28.0d
+			y: 2.0d
 		}
 	]
-	title: "§c§lDesafios Finais"
+	title: "§cNether — As Profundezas"
 }

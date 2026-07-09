@@ -1,0 +1,531 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "19_construcao"
+	group: "7E445E30196C8ACF"
+	id: "017D17526152D145"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"§7§eDouble Doors §7faz portas duplas abrirem juntas, sincronizadas."
+				"§7§eDiagonal Fences §7deixa cercas virarem ângulos de 45°."
+				""
+				"§7Nenhum dos dois muda absolutamente nada na sua sobrevivência."
+				"§7Mas portas que abrem fora de sincronia incomodam"
+				"§7um certo tipo de pessoa. Você sabe quem é."
+				""
+				"§eColoque 2 portas lado a lado e veja a mágica acontecer."
+				""
+				"§8§o(Sim, essa é a missão inteira. Aproveite a simetria.)"
+			]
+			icon: "minecraft:oak_door"
+			id: "5F0E9807B505442B"
+			rewards: [
+				{
+					count: 4
+					id: "34D6F3662403356A"
+					item: "minecraft:iron_door"
+					type: "item"
+				}
+				{
+					id: "50BC17353D3140FC"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "39EF1870F6CCF888"
+				item: "minecraft:oak_door"
+				type: "item"
+			}]
+			title: "Sincronia Perfeita"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eHearth and Home §7adiciona decoração temática de lar aconchegante."
+				"§7Paper Lanterns em 16 cores, telhas, treliças de madeira"
+				"§7e muito mais para dar personalidade à sua base."
+				""
+				"§eCrie uma §eWhite Paper Lantern §7e pendure-a"
+				"§eem algum cômodo da sua casa."
+				""
+				"§6Dica: §7A Paper Lantern existe em todas as 16 cores —"
+				"§7escolha a que combinar com sua decoração."
+				"§7Combine com §eHandcrafted §7para ambientes ainda mais detalhados."
+			]
+			icon: "hearth_and_home:white_paper_lantern"
+			id: "26633316F23357DB"
+			rewards: [
+				{
+					count: 4
+					id: "675C95F3287780CB"
+					item: "hearth_and_home:blue_paper_lantern"
+					type: "item"
+				}
+				{
+					id: "62B08C2E646A0638"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "23966C064DD67CD3"
+				item: "hearth_and_home:white_paper_lantern"
+				type: "item"
+			}]
+			title: "Calor do Lar"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eDark Paintings §7e §eVisual Workbench §7melhoram"
+				"§7a experiência visual do jogo."
+				"§7Dark Paintings adiciona dezenas de texturas novas"
+				"§7que aparecem aleatoriamente nas pinturas vanilla."
+				""
+				"§eCrie e coloque pelo menos §e5 pinturas §7(Paintings)"
+				"§eem diferentes paredes da sua base."
+				""
+				"§6Dica: §7Sua galeria de arte merece atenção!"
+				"§7Combine tamanhos diferentes para um visual impressionante."
+				""
+				"§8§o(Pelo menos uma vai ser perturbadora. É sempre assim.)"
+			]
+			icon: "minecraft:painting"
+			id: "07FC9C400F829FAF"
+			rewards: [
+				{
+					count: 2
+					id: "22CA9459C4A0C5AC"
+					item: "minecraft:glow_item_frame"
+					type: "item"
+				}
+				{
+					id: "409B0BA817D8BC50"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "0CECB1EB0EC10E62"
+				item: "minecraft:painting"
+				type: "item"
+			}]
+			title: "Galeria de Arte"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Caixotes empilhados não são decoração, são um cry for help."
+				"§7§eMrCrayfish's Furniture: Refurbished §7resolve isso."
+				""
+				"§eMonte uma mesa e uma cadeira (de qualquer madeira)."
+			]
+			icon: "refurbished_furniture:oak_table"
+			id: "573219C1DF103036"
+			rewards: [
+				{
+					count: 2
+					id: "76307A8CDBBFF42E"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "54400DF255CE3A0B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "1F4AEFBB6E04F477"
+					item: "refurbished_furniture:oak_table"
+					type: "item"
+				}
+				{
+					id: "29FA283962C00EED"
+					item: "refurbished_furniture:oak_chair"
+					type: "item"
+				}
+			]
+			title: "Mobília de Verdade"
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7§eSupplementaries §7enche seu mundo de detalhes que o vanilla"
+				"§7esqueceu de inventar: foles, quadros-negros, pilhas de livro..."
+				""
+				"§eCrie um Bellows e um Blackboard."
+			]
+			icon: "supplementaries:bellows"
+			id: "20D11960C2D07DBD"
+			rewards: [
+				{
+					count: 2
+					id: "7DBE30B06B7DA642"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					id: "32D28191117AAD57"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "1DBC4042680E971B"
+					item: "supplementaries:bellows"
+					type: "item"
+				}
+				{
+					id: "79CA4EB8D7BE0450"
+					item: "supplementaries:blackboard"
+					type: "item"
+				}
+			]
+			title: "Suplementos do Cotidiano"
+			x: 18.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7§eFramedBlocks §7deixa qualquer bloco se disfarçar de outro formato."
+				"§7Rampas, painéis, cubos com textura emprestada — o pedreiro que"
+				"§7existe em você finalmente pode brilhar."
+				""
+				"§eCrie um Framed Bookshelf e um Framed Bars."
+			]
+			icon: "framedblocks:framed_bookshelf"
+			id: "3AF369A8998BB993"
+			rewards: [
+				{
+					count: 4
+					id: "2640B349E1D81584"
+					item: "minecraft:bookshelf"
+					type: "item"
+				}
+				{
+					id: "22141BD9094CC264"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "2530F72E221829FB"
+					item: "framedblocks:framed_bookshelf"
+					type: "item"
+				}
+				{
+					id: "5BB13A7EF151C2D5"
+					item: "framedblocks:framed_bars"
+					type: "item"
+				}
+			]
+			title: "Blocos Camuflados"
+			x: 26.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7§eBushier Flowers §7faz suas flores crescerem em touceiras densas"
+				"§7em vez daquele único caule solitário e triste do vanilla."
+				""
+				"§eColha um arbusto de Poppies e um de Wither Roses."
+			]
+			icon: "bushierflowers:grown_poppy"
+			id: "7B6DE0C2227CFC79"
+			rewards: [
+				{
+					count: 16
+					id: "4C6646AD0B6700BE"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "70DDFDA7F9F0093E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "6B3EB4D05F62FF69"
+					item: "bushierflowers:grown_poppy"
+					type: "item"
+				}
+				{
+					id: "48DF8A52E7E72848"
+					item: "bushierflowers:grown_wither_rose"
+					type: "item"
+				}
+			]
+			title: "Jardim Exagerado"
+			x: 30.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Ter cartas guardadas na mochila é desperdício. Exponha sua"
+				"§7coleção como manda o figurino."
+				""
+				"§eConstrua um Card Display (qualquer madeira)."
+			]
+			icon: "buddycards:oak_card_display"
+			id: "26138E27B9C0DBB1"
+			rewards: [
+				{
+					count: 2
+					id: "4F90E52AF1C4FB6F"
+					item: "buddycards:buddycard_pack_base"
+					type: "item"
+				}
+				{
+					id: "2390328AE474E9BE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "46EF966C6A6B975E"
+				item: "buddycards:oak_card_display"
+				type: "item"
+			}]
+			title: "Vitrine de Cartas"
+			x: 32.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Mesa e cadeira só fazem você comer decentemente."
+				"§7Uma cozinha de verdade precisa de pia."
+				""
+				"§eCrie uma Kitchen Sink e um Workbench (móveis, não o de crafting)."
+			]
+			icon: "refurbished_furniture:oak_kitchen_sink"
+			id: "355344E623394C03"
+			rewards: [
+				{
+					count: 2
+					id: "3FAB8899DED75069"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "376568BB2AE671B3"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "52DBC875E6C3993B"
+					item: "refurbished_furniture:oak_kitchen_sink"
+					type: "item"
+				}
+				{
+					id: "46162FF66E353B4C"
+					item: "refurbished_furniture:workbench"
+					type: "item"
+				}
+			]
+			title: "Cozinha Funcional"
+			x: 18.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Shoji, bambu tecido, colunas de pedra — construa algo que"
+				"§7pareça um dojo em vez de um galpão de sobrevivência."
+				""
+				"§eCrie um Shoji e um Bamboo Mat."
+			]
+			icon: "hearth_and_home:shoji"
+			id: "466084FA61CB5F76"
+			rewards: [
+				{
+					id: "54E69454B2764327"
+					item: "hearth_and_home:red_paper_lantern"
+					type: "item"
+				}
+				{
+					id: "37B08EFD2A8EE928"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "52B97862781EB8F6"
+					item: "hearth_and_home:shoji"
+					type: "item"
+				}
+				{
+					id: "738CEDA75DC6700C"
+					item: "hearth_and_home:bamboo_mat"
+					type: "item"
+				}
+			]
+			title: "Estilo Oriental"
+			x: 18.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7Nem toda defesa precisa ser high-tech. Espigões de bambu"
+				"§7fazem qualquer invasor repensar a vida."
+				""
+				"§eCrie Bamboo Spikes e um bloco de Ash Bricks."
+			]
+			icon: "supplementaries:bamboo_spikes"
+			id: "214E815314E717FE"
+			rewards: [
+				{
+					count: 8
+					id: "247848CF711D2E33"
+					item: "supplementaries:ash"
+					type: "item"
+				}
+				{
+					id: "2F3324C4587FFBDA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "75D5A74A4C59EC98"
+					item: "supplementaries:bamboo_spikes"
+					type: "item"
+				}
+				{
+					id: "7216F64033482163"
+					item: "supplementaries:ash_bricks"
+					type: "item"
+				}
+			]
+			title: "Defesas Baratas"
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Rampas ajustáveis, painéis duplos, blocos que fingem ser"
+				"§7outra coisa. Isso aqui é engenharia de disfarce de blocos."
+				""
+				"§eCrie um Framed Adjustable Double Slab."
+			]
+			icon: "framedblocks:framed_adj_double_slab"
+			id: "5758A4A9B1E216E6"
+			rewards: [
+				{
+					count: 2
+					id: "18B6880182679E43"
+					item: "framedblocks:framed_slab"
+					type: "item"
+				}
+				{
+					id: "2D28B4260CFBA11A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "5C35E97D7ACBC44F"
+				item: "framedblocks:framed_adj_double_slab"
+				type: "item"
+			}]
+			title: "Formas Impossíveis"
+			x: 26.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Uma boa ponte de corda também merece um pilar decente"
+				"§7pra sustentar. Macaw's Bridges cobre os dois."
+				""
+				"§eConstrua uma Acacia Bridge e um Acacia Bridge Support."
+			]
+			icon: "mcwbridges:acacia_log_bridge_middle"
+			id: "198FAF7750C6FD0A"
+			rewards: [
+				{
+					count: 16
+					id: "7A9D3212ADBA0806"
+					item: "minecraft:acacia_planks"
+					type: "item"
+				}
+				{
+					id: "4B56417D51CEBD65"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "3739A6883410F963"
+					item: "mcwbridges:acacia_log_bridge_middle"
+					type: "item"
+				}
+				{
+					id: "1F1D12C291BED47E"
+					item: "mcwbridges:acacia_bridge_pier"
+					type: "item"
+				}
+			]
+			title: "Travessias Elegantes"
+			x: 24.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7Azaleia também vira madeira de construção — não é só"
+				"§7flor decorativa, é matéria-prima de verdade."
+				""
+				"§eCrie uma Azalea Door e um Coconut Door."
+			]
+			icon: "ecologics:azalea_door"
+			id: "18C8DBFAADE60F7E"
+			rewards: [
+				{
+					count: 4
+					id: "24308CF1E6EB19AF"
+					item: "ecologics:coconut"
+					type: "item"
+				}
+				{
+					id: "590E7AE65B07F9BC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "3E78F3D44A9ED82C"
+					item: "ecologics:azalea_door"
+					type: "item"
+				}
+				{
+					id: "756845008CF764A3"
+					item: "ecologics:coconut_door"
+					type: "item"
+				}
+			]
+			title: "Madeira Tropical"
+			x: 28.0d
+			y: 10.0d
+		}
+	]
+	title: "§6Construção e Decoração"
+}
