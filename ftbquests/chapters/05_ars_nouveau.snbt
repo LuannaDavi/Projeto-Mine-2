@@ -1,884 +1,582 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "02_create"
-	group: "AA00000000000001"
-	icon: ["create:cogwheel", "create:brass_ingot", "create:mechanical_drill", "railways:conductor_whistle"]
-	id: "AA02000000000001"
-	order_index: 1
+	filename: "05_ars_nouveau"
+	group: "6A1D97ECF9A7FC71"
+	id: "205C4837B58D3D64"
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7§eCreate §7não é só automação — é engenharia visual.", "§7Cada máquina que você constrói funciona de verdade,", "§7com peças que giram, correias que transportam e", "§7fluidos que fluem.", "", "§eCrie sua primeira §eEngrenagem (Cogwheel) §7e §eEixo (Shaft)§7.", "", "§6Leia: §7O livro §e'Curiosidades \\& Testemunhos' §7do Create", "§7(solte no chão para abrir) tem guias completos.", "§7É o melhor ponto de partida antes de qualquer máquina."]
-			icon: "create:cogwheel"
-			id: "3C00000000000002"
+			description: [
+				"§7A magia não é encontrada em livros — ela está no mundo."
+				"§7§eArs Nouveau §7usa §eGlifos §7como blocos de construção:"
+				"§7combine-os para criar feitiços únicos que não existem"
+				"§7em nenhum outro sistema mágico."
+				""
+				"§eProcure §eSource Gems §7no mundo — emergem naturalmente"
+				"§7em cavernas e próximos de tocas de fadas."
+				"§eConsiga pelo menos §e16 unidades."
+				""
+				"§6Dica: §7Olhe para o chão em florestas densas à noite."
+				"§7Os cristais brilham levemente no escuro."
+			]
+			icon: "ars_nouveau:source_gem"
+			id: "4D00000000000002"
 			rewards: [
 				{
-					count: 8
-					id: "3C00000000000003"
-					item: "create:zinc_ingot"
+					count: 4
+					id: "328D3EA0884A6726"
+					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
 					count: 16
-					id: "3C00000000000004"
-					item: "create:andesite_alloy"
+					id: "4D00000000000003"
+					item: "ars_nouveau:source_gem"
 					type: "item"
 				}
 				{
-					id: "3C00000000000005"
+					id: "4D00000000000004"
 					type: "xp"
 					xp: 150
 				}
 			]
 			shape: "gear"
-			tasks: [
-				{
-					id: "3C00000000000006"
-					item: "create:cogwheel"
-					type: "item"
-				}
-				{
-					id: "3C00000000000007"
-					item: "create:shaft"
-					type: "item"
-				}
-			]
-			title: "Os Fundamentos do Create"
+			tasks: [{
+				count: 16L
+				id: "4D00000000000005"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "Despertar Arcano"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C00000000000002"]
-			description: ["§7Toda máquina do Create precisa de Força de Rotação (SU).", "§7A fonte mais básica é o §eWater Wheel§7.", "", "§eCrie e instale um Water Wheel próximo a um rio.", "§eConecte-o a uma máquina (Millstone ou Mechanical Press).", "", "§6Dica: §7Quanto mais água fluindo, maior o SU gerado!", "§7Use canais para direcionar água ao redor da roda."]
-			icon: "create:water_wheel"
-			id: "3C00000000000008"
+			description: [
+				"§7O §eNovice Spell Book §7é o primeiro passo para um mago."
+				"§7Com ele, você armazena e lança seus feitiços personalizados."
+				""
+				"§eCrie um §eNovice Spell Book §7do Ars Nouveau."
+				"§eCrie também uma §eScribing Table §7para criar feitiços."
+				""
+				"§6Como criar glifos: §7Use a Scribing Table com Mana Essence!"
+				"§7Combine glifos de §eLançamento + Efeito §7para criar magias."
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "4D00000000000006"
 			rewards: [
 				{
-					count: 8
-					id: "3C00000000000009"
-					item: "create:brass_ingot"
+					count: 2
+					id: "4D00000000000007"
+					item: "ars_nouveau:source_jar"
 					type: "item"
 				}
 				{
-					id: "3C0000000000000A"
+					count: 8
+					id: "4D00000000000008"
+					item: "ars_nouveau:magebloom_fiber"
+					type: "item"
+				}
+				{
+					id: "4D00000000000009"
 					type: "xp"
 					xp: 200
 				}
 			]
 			tasks: [
 				{
-					id: "3C0000000000000B"
-					item: "create:water_wheel"
+					id: "4D0000000000000A"
+					item: "ars_nouveau:novice_spell_book"
 					type: "item"
 				}
 				{
-					id: "3C0000000000000C"
-					item: "create:millstone"
+					id: "4D0000000000000B"
+					item: "ars_nouveau:scribes_table"
 					type: "item"
 				}
 			]
-			title: "A Roda da Fortuna"
+			title: "Novato nas Artes"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C00000000000008"]
-			description: ["§7O §eMixer §7e a §eBasin §7são o coração da produção do Create.", "§7Com eles você funde ligas, mistura materiais e cria Latão!", "", "§eConsiga Latão (Brass) fundindo Cobre + Zinco.", "§eProduza pelo menos 16 lingotes de Latão.", "", "§6Dica: §7Use o Mixing Basin com Blaze Burner embaixo!", "§7O Latão é necessário para quase toda automação avançada."]
-			icon: "create:brass_ingot"
-			id: "3C0000000000000D"
+			description: [
+				"§7Seus primeiros feitiços! Comece pelos básicos:"
+				"§7um Feitiço de Fogo e um Feitiço de Cura."
+				""
+				"§eMonte um Glyph (base pra qualquer feitiço) na Scribing Table."
+				""
+				"§6Exemplo de combo: §7Touch + Fire = queima o alvo ao tocar."
+				"§7Touch + Heal = cura ao tocar. Experimente combinações!"
+			]
+			icon: "ars_nouveau:blank_glyph"
+			id: "4D0000000000000C"
 			rewards: [
 				{
-					count: 16
-					id: "3C0000000000000E"
-					item: "create:brass_ingot"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "3C0000000000000F"
-					item: "create:mechanical_pump"
-					type: "item"
-				}
-				{
-					id: "3C00000000000010"
-					type: "xp"
-					xp: 300
-				}
-			]
-			tasks: [
-				{
-					count: 16L
-					id: "3C00000000000011"
-					item: "create:brass_ingot"
+					count: 3
+					id: "4D0000000000000D"
+					item: "ars_nouveau:spell_parchment"
 					type: "item"
 				}
 				{
 					count: 2
-					id: "29C3BB2BF5B7FF83"
-					item: "create:fluid_tank"
+					id: "4D0000000000000E"
+					item: "ars_nouveau:source_berry_roll"
+					type: "item"
+				}
+				{
+					id: "4D0000000000000F"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000010"
+					item: "ars_nouveau:blank_glyph"
+					type: "item"
+				}
+				{
+					id: "047B9FCA41587A06"
+					item: "ars_nouveau:scribes_table"
 					type: "item"
 				}
 			]
-			title: "Alquimia Industrial"
+			title: "Primeiros Feitiços"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C0000000000000D"]
-			description: ["§7Com Latão, você pode criar §eFunnels§7, §eDeployers§7 e §eSaws§7.", "§7É hora de construir sua primeira linha de produção automática.", "", "§eCrie uma linha de produção que processe automaticamente", "§epelo menos 1 tipo de item (ex: madeira → tábua → palito).", "", "§6Dica: §7Funnels extraem, esteiras transportam, Deployers processam!"]
-			icon: "create:belt_connector"
-			id: "3C00000000000012"
+			description: [
+				"§7Um mago sem Mana é um mortal com um livro bonito."
+				"§7§eSource Jars §7coletam Mana do ambiente —"
+				"§7luz solar, plantas e criaturas ao redor alimentam o sistema."
+				""
+				"§eCrie e posicione pelo menos §e2 Source Jars §7na sua torre."
+				""
+				"§6Dica: §7Cerque os Source Jars com flores e plantas."
+				"§7Quanto mais vida ao redor, mais rápida a coleta de Mana."
+			]
+			icon: "ars_nouveau:source_jar"
+			id: "4D00000000000011"
 			rewards: [
 				{
-					count: 8
-					id: "3C00000000000013"
-					item: "create:brass_funnel"
+					count: 16
+					id: "4D00000000000012"
+					item: "ars_nouveau:sourcestone"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "3C00000000000014"
-					item: "create:deployer"
+					count: 3
+					id: "4D00000000000013"
+					item: "ars_nouveau:source_berry_roll"
 					type: "item"
 				}
 				{
-					id: "3C00000000000015"
+					id: "4D00000000000014"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "4D00000000000015"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			title: "Reservatório de Mana"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O Apprentice Spell Book é uma evolução do Novice."
+				"§7Ele armazena mais glifos e tem mais poder de conjuração."
+				""
+				"§eCrie um Apprentice Spell Book."
+				""
+				"§6Dica: §7Conjure feitiços em mobs pra ganhar XP mágico —"
+				"§7quanto mais você usa, mais forte fica."
+			]
+			icon: "ars_nouveau:apprentice_spell_book"
+			id: "4D00000000000020"
+			rewards: [
+				{
+					id: "4D00000000000021"
+					item: "ars_nouveau:apprentice_spell_book"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4D00000000000022"
+					item: "ars_nouveau:source_berry_roll"
+					type: "item"
+				}
+				{
+					id: "4D00000000000023"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "4D00000000000024"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			title: "Aprendiz de Feiticeiro"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Magos de verdade não trabalham sozinhos."
+				"§7§eDrygmys §7coletam drops de mobs próximos sem matar ninguém."
+				"§7§eStarbuncles §7correm pelo mundo transportando itens para você."
+				"§7§eWhirlisprig §7protegem fazendas e se alimentam de flores."
+				""
+				"§eCrie um §eDrygmy Charm §7e invoque seu primeiro familiar."
+				""
+				"§6Dica: §7Drygmys precisam de um §eSummon Henge §7e de mobs"
+				"§7próximos (vivos!) para coletar drops — não mate os mobs."
+				""
+				"§8§o(Seu familiar trabalha mais que você. Não conte pra ele.)"
+			]
+			icon: "ars_nouveau:drygmy_charm"
+			id: "4D00000000000025"
+			rewards: [
+				{
+					count: 3
+					id: "4D00000000000026"
+					item: "ars_nouveau:whirlisprig_charm"
+					type: "item"
+				}
+				{
+					id: "4D00000000000027"
 					type: "xp"
 					xp: 400
 				}
 			]
 			tasks: [
 				{
-					id: "3C00000000000016"
-					item: "create:belt_connector"
+					id: "4D00000000000028"
+					item: "ars_nouveau:drygmy_charm"
 					type: "item"
 				}
 				{
-					id: "3C00000000000017"
-					item: "create:brass_funnel"
-					type: "item"
-				}
-			]
-			title: "Linha de Produção"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C00000000000002"]
-			description: ["§7A §eDrill §7(broca) é uma das ferramentas mais poderosas do Create.", "§7Com um Contraption, você pode criar mineradores automáticos.", "", "§eCrie uma §eMechanical Drill §7e use-a para minerar.", "§eCrie também um §ePiston §7e um §eMovement Anchor§7.", "", "§6Dica: §7Drills conectadas a Pistons + Gearshift criam", "§7minas automáticas inacreditáveis!"]
-			icon: "create:mechanical_drill"
-			id: "3C00000000000018"
-			rewards: [
-				{
-					count: 4
-					id: "3C00000000000019"
-					item: "create:mechanical_drill"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "3C0000000000001A"
-					item: "create:andesite_alloy"
-					type: "item"
-				}
-				{
-					id: "3C0000000000001B"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "3C0000000000001C"
-					item: "create:mechanical_drill"
-					type: "item"
-				}
-				{
-					count: 1
-					id: "DB25FAFF3C75AB31"
-					item: "create:depot"
+					id: "7B995DAA0EA62EF1"
+					item: "ars_nouveau:wilden_horn"
 					type: "item"
 				}
 			]
-			title: "Broca e Engrenagem"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C0000000000000D"]
-			description: ["§7Fluidos são parte central do Create.", "§7Tanks, Pipes e Pumps permitem transportar e armazenar líquidos.", "", "§eCrie um sistema de fluidos com pelo menos:", "§e- 1 Fluid Tank", "§e- 2 Fluid Pipes", "§e- 1 Mechanical Pump", "", "§6Dica: §7Use Fluid Valves para controlar o fluxo!"]
-			icon: "create:fluid_tank"
-			id: "3C0000000000001D"
-			rewards: [
-				{
-					count: 4
-					id: "3C0000000000001E"
-					item: "create:fluid_tank"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "3C0000000000001F"
-					item: "create:fluid_pipe"
-					type: "item"
-				}
-				{
-					id: "3C00000000000020"
-					type: "xp"
-					xp: 300
-				}
-			]
-			tasks: [
-				{
-					id: "3C00000000000021"
-					item: "create:fluid_tank"
-					type: "item"
-				}
-				{
-					id: "3C00000000000022"
-					item: "create:mechanical_pump"
-					type: "item"
-				}
-			]
-			title: "Engenharia de Fluidos"
+			title: "Familiar Mágico"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C0000000000001D"]
-			description: ["§7Água e fogo juntos criam algo que nenhuma engrenagem", "§7simples consegue — §evapor§7. E vapor gera poder em escala.", "", "§eCrie uma §eSteam Engine §7com caldeira e fornalha.", "§eGere pelo menos §e256 SU §7simultaneamente.", "", "§6Dica: §7Caldeiras maiores = mais SU.", "§7Automatize o abastecimento de carvão com um Belt + Funnel", "§7e sua engine nunca vai parar."]
-			icon: "create:steam_engine"
-			id: "3C00000000000023"
-			rewards: [
-				{
-					count: 8
-					id: "3C00000000000024"
-					item: "create:steam_engine"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "3C00000000000025"
-					item: "minecraft:coal"
-					type: "item"
-				}
-				{
-					id: "3C00000000000026"
-					type: "xp"
-					xp: 500
-				}
+			description: [
+				"§7Com Ars Nouveau, você pode encantar suas armaduras"
+				"§7com buffs mágicos permanentes!"
+				""
+				"§eCrie uma peça de Armadura Mágica do Ars Nouveau"
+				"§e(Helmet, Chestplate, Leggings ou Boots arcanos)."
+				""
+				"§6Dica: §7Glifos de proteção aumentados por Mana Enchanting"
+				"§7dão buffs permanentes na armadura — vale a pena investir."
 			]
-			tasks: [
-				{
-					id: "3C00000000000027"
-					item: "create:steam_engine"
-					type: "item"
-				}
-			]
-			title: "Era a Vapor"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C00000000000012"]
-			description: ["§7§eSteam Rails §7traz trens ao universo do Create.", "§7Estações, vagões, rotas automáticas — tudo funciona", "§7com a lógica de engrenagens do Create.", "", "§eConstrua uma estação e faça um trem percorrer", "§epelo menos §e50 blocos §7de trilho.", "", "§6Dica: §7Trens são ideais para mover recursos entre", "§7bases distantes automaticamente. Configure rotas de ida e volta."]
-			icon: "railways:conductor_whistle"
-			id: "3C00000000000028"
-			rewards: [
-				{
-					count: 2
-					id: "3C00000000000029"
-					item: "railways:conductor_whistle"
-					type: "item"
-				}
-				{
-					count: 32
-					id: "3C0000000000002A"
-					item: "railways:track_oak"
-					type: "item"
-				}
-				{
-					id: "3C0000000000002B"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					id: "3C0000000000002C"
-					item: "railways:conductor_whistle"
-					type: "item"
-				}
-			]
-			title: "Rede Ferroviária"
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3C00000000000028"]
-			description: ["§7Uma rota só com trilho é o começo. A §elocomativa a vapor §7é", "§7o coração do sistema — ela precisa de bogeys (rodeiros),", "§7combustível e um condutor atento para funcionar.", "", "§eConstrua os §erodeiros (bogeys) §7e o §etanque de combustível", "§epara montar sua primeira locomotiva completa.", "", "§6Dica: §7Semáforos controlam o tráfego automático —", "§7sem eles dois trens na mesma rota vão colidir.", "", "§8§o(Sinal vermelho significa para. No Rails, significa\\: desastre.)"]
-			icon: "railways:semaphore"
-			id: "3C00000000000101"
-			rewards: [
-				{
-					count: 4
-					id: "3C00000000000102"
-					item: "railways:semaphore"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "3C00000000000103"
-					item: "railways:fuel_tank"
-					type: "item"
-				}
-				{
-					id: "3C00000000000104"
-					type: "xp"
-					xp: 700
-				}
-			]
-			tasks: [
-				{
-					id: "3C00000000000105"
-					item: "railways:doubleaxle_bogey"
-					type: "item"
-				}
-				{
-					id: "3C00000000000106"
-					item: "railways:fuel_tank"
-					type: "item"
-				}
-			]
-			title: "A Locomotiva"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3C00000000000018"]
-			description: ["§7Com Create, você pode construir Contraptions — estruturas", "§7que se movem, giram e funcionam como máquinas reais.", "", "§eConstrua uma Contraption usando um §eMovement Anchor§7.", "§7Pode ser um elevador, uma plataforma giratória ou uma drill móvel.", "", "§6Dica: §7Glue (cola) mantém os blocos juntos!", "§7Experimente um elevador ou braço giratório."]
-			icon: "create:mechanical_piston"
-			id: "3C0000000000002D"
-			rewards: [
-				{
-					count: 8
-					id: "3C0000000000002E"
-					item: {
-						Count: 1
-						id: "create:super_glue"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 4
-					id: "3C0000000000002F"
-					item: "create:mechanical_piston"
-					type: "item"
-				}
-				{
-					id: "3C00000000000030"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "3C00000000000031"
-					item: "create:mechanical_piston"
-					type: "item"
-				}
-				{
-					count: 1
-					id: "19B7B769BD062E17"
-					item: "create:windmill_bearing"
-					type: "item"
-				}
-			]
-			title: "Máquinas que se Movem"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3C0000000000002D"]
-			description: ["§7Por que colher na mão quando máquinas existem?", "§7A §eMechanical Harvester §7colhe plantações inteiras", "§7montada em uma Contraption — e a §eMechanical Planter", "§7replanta tudo automaticamente.", "", "§eCrie uma §eMechanical Harvester §7e automatize", "§euma fazenda de pelo menos §e32 blocos§7.", "", "§6Dica: §7Adicione um Belt com Chute para coletar", "§7a colheita direto em baús — ciclo 100% automático."]
-			icon: "create:mechanical_harvester"
-			id: "3C00000000000032"
-			rewards: [
-				{
-					count: 4
-					id: "3C00000000000033"
-					item: "create:mechanical_harvester"
-					type: "item"
-				}
-				{
-					count: 64
-					id: "3C00000000000034"
-					item: "minecraft:wheat"
-					type: "item"
-				}
-				{
-					id: "3C00000000000035"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "3C00000000000036"
-					item: "create:mechanical_harvester"
-					type: "item"
-				}
-			]
-			title: "Fazenda Automatizada"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3C00000000000023"]
-			description: ["§7O §eEnchantment Industry §7(add-on do Create) permite", "§7encantar itens usando XP líquida e automatizar encantamentos!", "", "§eCrie a §eEnchanterment Industry Table§7.", "§eEncante pelo menos 3 itens usando o sistema automatizado.", "", "§6Dica: §7XP pode ser coletada de mobs em mob farms!", "§7Combine com a Drain para coletar XP do player também."]
-			icon: "create_enchantment_industry:hyper_experience_bottle"
-			id: "3C00000000000037"
-			rewards: [
-				{
-					count: 5
-					id: "3C00000000000038"
-					item: "minecraft:enchanted_book"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "3C00000000000039"
-					item: "create_enchantment_industry:experience_rotor"
-					type: "item"
-				}
-				{
-					id: "3C0000000000003A"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					id: "3C0000000000003B"
-					item: "create_enchantment_industry:hyper_experience_bottle"
-					type: "item"
-				}
-			]
-			title: "Fábrica de Encantamentos"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["3C00000000000037"]
-			description: ["§7§eCreate Confectionery §7usa o Create para fazer doces!", "§7Chocolates, balas e sobremesas com buffs únicos.", "", "§ePrepare pelo menos 3 tipos de doces do Create Confectionery.", "§7Cada doce dá um buff diferente.", "", "§6Dica: §7Chocolate dá velocidade, balas dão salto!", "§7Use o Mechanical Mixer para receitas especiais."]
 			icon: {
 				Count: 1
-				id: "create_confectionery:full_chocolate_bar"
+				id: "ars_nouveau:battlemage_robes"
 				tag: {
 					Damage: 0
 				}
 			}
-			id: "3C0000000000003C"
+			id: "4D00000000000029"
 			rewards: [
 				{
-					count: 4
-					id: "3C0000000000003D"
-					item: {
-						Count: 1
-						id: "create_confectionery:full_chocolate_bar"
-						tag: {
-							Damage: 0
-						}
-					}
+					count: 16
+					id: "4D0000000000002A"
+					item: "ars_nouveau:sourcestone"
 					type: "item"
 				}
 				{
-					id: "3C0000000000003E"
-					item: "create_confectionery:gingerbread_man"
+					count: 8
+					id: "4D0000000000002B"
+					item: "ars_nouveau:magebloom_fiber"
 					type: "item"
 				}
 				{
-					id: "3C0000000000003F"
+					id: "4D0000000000002C"
 					type: "xp"
-					xp: 300
+					xp: 600
 				}
 			]
-			tasks: [
-				{
-					id: "490D5FADB202F1DF"
-					item: "create_confectionery:full_chocolate_bar"
-					type: "item"
+			tasks: [{
+				id: "4D0000000000002D"
+				item: {
+					Count: 1
+					id: "ars_nouveau:battlemage_robes"
+					tag: {
+						Damage: 0
+					}
 				}
-				{
-					id: "4B73B027DD5F7BA3"
-					item: "create_confectionery:honey_candy"
-					type: "item"
-				}
-				{
-					id: "12FA4AA46235CA3E"
-					item: "create_confectionery:caramelized_marshmellow_on_a_stick"
-					type: "item"
-				}
-			]
-			title: "Confeitaria Industrial"
-			x: 8.0d
-			y: 4.0d
+				type: "item"
+			}]
+			title: "Mago Blindado"
+			x: 12.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["3C00000000000041"]
-			description: ["§7§eCreate Ultimate Factory §7expande o Create com novos", "§7blocos industriais para automação massiva.", "", "§eCrie o §eIndustrial Smeltery §7do Create Ultimate Factory.", "§eSmelt pelo menos 64 itens de uma vez nele.", "", "§6Dica: §7Mais combustível = mais slots e mais velocidade!", "§7Ideal para fundir montanhas de minério de uma vez."]
-			icon: "create:blaze_burner"
-			id: "3C00000000000046"
+			description: [
+				"§7O Archmage Spell Book é o ápice do Ars Nouveau."
+				"§7Com ele, feitiços ganham uma dimensão extra de poder."
+				""
+				"§eCrie o Archmage Spell Book."
+				""
+				"§6Dica: §7Projectile + Fire + Amplify + Extend Time é um combo"
+				"§7clássico de dano em área. Experimente combinar 5+ glifos!"
+			]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "4D00000000000032"
 			rewards: [
 				{
-					count: 5
-					id: "3C00000000000047"
+					count: 16
+					id: "4D00000000000033"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "4D00000000000034"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					count: 64
-					id: "3C00000000000048"
-					item: "create:brass_ingot"
-					type: "item"
-				}
-				{
-					id: "3C00000000000049"
+					id: "4D00000000000035"
 					type: "xp"
-					xp: 700
+					xp: 1000
 				}
 			]
-			tasks: [
-				{
-					id: "3C0000000000004A"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
-			title: "Fundição em Escala Industrial"
-			x: 10.0d
-			y: 4.0d
+			tasks: [{
+				id: "4D00000000000036"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			title: "Arquimago"
+			x: 14.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["3C00000000000046"]
-			description: ["§7Construa uma fábrica completa que processe automaticamente", "§7minério → lingote → componente → produto final.", "", "§eCrie uma cadeia de produção com pelo menos 4 etapas.", "§eO produto final deve ser um item crafteável com 3+ componentes.", "", "§6Dica: §7Brass Funnel + Belt + Deployer + Chute", "§7é a base de qualquer linha de produção."]
-			icon: "create:electron_tube"
-			id: "3C00000000000050"
+			description: [
+				"§7Com todo esse poder arcano, sua base merece uma Torre de Mago"
+				"§7de verdade — não é obrigatório, mas Source Jars espalhadas"
+				"§7pela torre carregam mana passivamente com luz solar por perto."
+				""
+				"§eTenha pelo menos 5 Source Jars instaladas."
+				""
+				"§6Dica: §7Sugestão de construção (não verificada, é só inspiração):"
+				"§7Scribing Table no 1º andar, Source Jars ao redor de cada andar,"
+				"§7Familiar circulando no topo. Sua torre deve irradiar magia!"
+			]
+			icon: "ars_nouveau:source_jar"
+			id: "4D00000000000044"
 			rewards: [
 				{
 					count: 32
-					id: "3C00000000000051"
-					item: "create:brass_ingot"
+					id: "4D00000000000045"
+					item: "ars_nouveau:sourcestone"
 					type: "item"
 				}
 				{
-					count: 16
-					id: "3C00000000000052"
-					item: "create:electron_tube"
+					id: "4D00000000000046"
+					item: "ars_nouveau:vitalic_sourcelink"
 					type: "item"
 				}
 				{
-					id: "3C00000000000053"
+					id: "4D00000000000047"
 					type: "xp"
 					xp: 800
 				}
 			]
 			tasks: [
 				{
-					id: "3C00000000000054"
-					item: "create:electron_tube"
+					count: 5L
+					id: "4D00000000000048"
+					item: "ars_nouveau:source_jar"
 					type: "item"
 				}
 				{
-					count: 1
-					id: "968723C71EDC5CF9"
-					item: "create:portable_storage_interface"
+					id: "62B97B0CF4F866FD"
+					item: "ars_nouveau:wixie_charm"
 					type: "item"
 				}
 			]
-			title: "Fábrica Completa"
-			x: 12.0d
+			title: "Torre do Arquimago"
+			x: 0.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["3C00000000000050"]
-			description: ["§7O Jetpack do Create é um dos itens de mobilidade mais", "§7úteis do modpack. Ele usa fluidos como combustível.", "", "§eCrie um §eCreate Jetpack§7.", "§7Configure-o com combustível líquido (lava ou óleo).", "", "§6Dica: §7O Jetpack tem modos diferentes de voo!", "§7Combine com Curios para usar junto com armadura."]
-			icon: "create_jetpack:jetpack"
-			id: "3C00000000000055"
+			description: [
+				"§7A magia pode automatizar coisas que a tecnologia não consegue."
+				"§7Combine Ars Nouveau + Create para criar sistemas híbridos!"
+				""
+				"§eCrie um feitiço de §eSummon §7para invocar um familiar"
+				"§eque trabalhe automaticamente para você."
+				"§eConfigure um §eWatcher §7do Ars Nouveau para detectar mobs."
+				""
+				"§6Dica: §7Starbuncle coletam itens automaticamente!"
+			]
+			icon: "ars_nouveau:starbuncle_charm"
+			id: "4D0000000000004D"
 			rewards: [
 				{
-					count: 32
-					id: "3C00000000000056"
-					item: "minecraft:coal"
+					id: "7B29825E48DF6AE4"
+					item: "ars_nouveau:whirlisprig_charm"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "3C00000000000057"
-					item: "create:brass_ingot"
+					count: 3
+					id: "4D0000000000004E"
+					item: "ars_nouveau:starbuncle_charm"
 					type: "item"
 				}
 				{
-					id: "3C00000000000058"
+					id: "4D0000000000004F"
 					type: "xp"
 					xp: 600
 				}
 			]
 			tasks: [
 				{
-					id: "3C00000000000059"
-					item: "create_jetpack:jetpack"
+					id: "4D00000000000050"
+					item: "ars_nouveau:starbuncle_charm"
+					type: "item"
+				}
+				{
+					id: "0A289DB3A5F57BB9"
+					item: "ars_nouveau:wilden_wing"
 					type: "item"
 				}
 			]
-			title: "Voar com Engrenagens"
-			x: 14.0d
+			title: "Automação Arcana"
+			x: 2.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["3C00000000000032"]
-			description: ["§7Com farms automatizadas, você pode criar um mob grinder.", "§7Combine com a mecânica de XP do Create Enchantment Industry.", "", "§eCrie um sistema de mob farm que mate mobs automaticamente", "§ee colete drops + XP.", "", "§6Dica: §7Mechanical Arm + Deployers com espadas de diamante!", "§7Lure de mobs com luz e plataformas elevadas."]
-			icon: "create:deployer"
-			id: "3C0000000000005A"
+			description: [
+				"§7§lO Arquimago Supremo §r§7usa magia para tudo:"
+				"§7combate, exploração, automação e defesa."
+				""
+				"§eTenha equipado simultaneamente:"
+				"§e- Archmage Spell Book"
+				"§e- Pelo menos 2 Artifacts do mod Artifacts"
+				"§e- Armadura mágica completa do Ars Nouveau"
+				"§e- Pelo menos 1 Relic do mod Relics"
+				""
+				"§6O verdadeiro Arquimago não precisa de nada mais!"
+			]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "4D0000000000005B"
 			rewards: [
 				{
 					count: 16
-					id: "3C0000000000005B"
+					id: "4D0000000000005C"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					count: 32
-					id: "3C0000000000005C"
-					item: "minecraft:rotten_flesh"
+					count: 5
+					id: "4D0000000000005D"
+					item: "ars_nouveau:sourcestone"
 					type: "item"
 				}
 				{
-					id: "3C0000000000005D"
-					type: "xp"
-					xp: 700
-				}
-			]
-			tasks: [
-				{
-					id: "3C0000000000005E"
-					item: "create:mechanical_arm"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "CCC8DCA50D89C9E3"
-					item: "create:crushing_wheel"
-					type: "item"
-				}
-			]
-			title: "Grinder Automático"
-			x: 0.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["3C0000000000005F"]
-			description: ["§7A visão final do engenheiro: uma fábrica que respira sozinha.", "§7Minério entra. Produto sai. Você não precisa tocar em nada.", "", "§eConstrua um Schematicannon, um Deployer e 2 Mechanical Crafters", "§epra formar o núcleo de uma linha de produção automatizada.", "", "§7Se você chegou até aqui, você não é mais um engenheiro.", "§7É um arquiteto de mundos.", "", "§8§o(O Create tem 400 blocos diferentes. Você usou uns 15. Está bem assim. Está bem.)"]
-			icon: "create:schematicannon"
-			id: "3C00000000000064"
-			rewards: [
-				{
-					count: 16
-					id: "3C00000000000065"
-					item: "create:brass_ingot"
-					type: "item"
-				}
-				{
-					count: 20
-					id: "3C00000000000066"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "3C00000000000067"
+					id: "4D0000000000005E"
 					type: "xp"
 					xp: 2000
 				}
 			]
 			tasks: [
 				{
-					id: "3C00000000000068"
-					item: "create:schematicannon"
+					id: "4D0000000000005F"
+					item: "ars_nouveau:archmage_spell_book"
 					type: "item"
 				}
 				{
-					id: "FX000000000001A"
-					item: "create:deployer"
+					id: "4D00000000000060"
+					item: {
+						Count: 1
+						id: "ars_nouveau:battlemage_robes"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 2
-					id: "FX000000000001B"
-					item: "create:mechanical_crafter"
-					type: "item"
-				}
-			]
-			title: "§6O Engenheiro Supremo"
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["3C00000000000012"]
-			description: ["§7§eCreate: Stuff \\& Additions §7expande o kit de ferramentas", "§7e armaduras do Create com versões de Latão, Cobre, Zinco", "§7e até Experiência — cada uma com efeitos únicos.", "", "§eForje e use pelo menos §e1 ferramenta de Latão (Brass)§7", "§edo Create: Stuff \\& Additions.", "", "§6Dica: §7A Brass Sword tem alcance maior que a vanilla!", "§7Ferramentas de Experiência dão XP extra ao minerar."]
-			icon: "create:cogwheel"
-			id: "3C00000000000070"
-			rewards: [
-				{
-					count: 16
-					id: "3C00000000000071"
-					item: "create:andesite_alloy"
+					id: "60F2D57564C2BCF0"
+					item: "artifacts:golden_hook"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "3C00000000000072"
-					item: "create:brass_ingot"
-					type: "item"
-				}
-				{
-					id: "3C00000000000073"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "3C00000000000074"
-					item: "create_sa:brass_pickaxe"
-					type: "item"
-				}
-				{
-					count: 1
-					id: "790DC59A66AB021F"
-					item: "create:encased_fan"
+					id: "040DCBD0F7C03151"
+					item: "artifacts:crystal_heart"
 					type: "item"
 				}
 			]
-			title: "Aditivos Cinéticos"
+			title: "§dO Arquimago Supremo"
 			x: 4.0d
-			y: 8.0d
+			y: 4.0d
 		}
 		{
-			description: ["§7Chega de gambiarra. Chegou a hora de construir de verdade:", "§7engrenagens, prensas e mecanismos que fariam Da Vinci chorar", "§7(de inveja, ou de tédio, ainda estamos decidindo).", "", "§eProduza os componentes centrais do Create: Andesite Alloy, Brass Ingot,", "§ePrecision Mechanism e monte um Mechanical Press."]
-			icon: "create:andesite_alloy"
-			id: "2FF4A364818C7C28"
+			description: [
+				"§7Rituais em Ars Nouveau usam um §eArcane Pedestal §7pra seguir"
+				"§7uma receita: coloque o item base no pedestal, ligue um"
+				"§7§eRitual Brazier §7por perto, e ele processa o ritual sozinho"
+				"§7ao longo do tempo — tipo um forno mágico, só que mais chique."
+				""
+				"§7O §eEnchanter's Eye §7é diferente: é um item lançável que"
+				"§7\"cataloga\" bosses e estruturas ao acertá-los, revelando fraquezas."
+				""
+				"§eConstrua um Arcane Pedestal, um Ritual Brazier e um Enchanter's Eye."
+			]
+			icon: "ars_nouveau:arcane_pedestal"
+			id: "5F7BF09CC2D06605"
 			rewards: [
 				{
-					type: "item"
-					item: "create:brass_ingot"
-					count: 16
-					id: "5E1939E14F87B1F0"
-				}
-				{
-					type: "xp"
-					xp: 500
-					id: "CDEB4B16E9B70BF1"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "create:andesite_alloy"
-					count: 16
-					id: "0665A52EB4FE0173"
-				}
-				{
-					type: "item"
-					item: "create:brass_ingot"
-					count: 8
-					id: "7C8B15E3D5673160"
-				}
-				{
-					type: "item"
-					item: "create:precision_mechanism"
 					count: 2
-					id: "947FAE31D2C318C9"
+					id: "58E498C6A52245CB"
+					item: "ars_nouveau:warp_scroll"
+					type: "item"
 				}
 				{
-					type: "item"
-					item: "create:mechanical_press"
-					id: "F1E11E33823FA4DC"
+					id: "27773AC01B80928B"
+					type: "xp"
+					xp: 400
 				}
 			]
-			title: "Engenharia de Precisão"
+			tasks: [
+				{
+					id: "0004A9D9DC09CD4F"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+				{
+					id: "1E1A0E7D48E07CAB"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+				{
+					id: "0ECE5759C66F4CB4"
+					item: "ars_nouveau:enchanters_eye"
+					type: "item"
+				}
+			]
+			title: "Ritual e Enfeitiçamento"
 			x: 10.0d
-			y: 2.0d
-		}
-		{
-			description: ["§7Sua base de 3 andares não precisa mais de escada.", "§7Bem-vindo à era dos elevadores mecânicos.", "", "§eConstrua um Elevator Pulley e um Sequenced Gearshift."]
-			icon: "create:elevator_pulley"
-			id: "B88C3AD1CC8CA517"
-			rewards: [
-				{
-					type: "item"
-					item: "create:andesite_alloy"
-					count: 8
-					id: "24C81631BE4C5347"
-				}
-				{
-					type: "xp"
-					xp: 300
-					id: "031D8BDF2778C9EF"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "create:elevator_pulley"
-					id: "0C9CA5A7385A0C64"
-				}
-				{
-					type: "item"
-					item: "create:sequenced_gearshift"
-					id: "8F5A8C41DD51C8D3"
-				}
-			]
-			title: "Elevadores e Engrenagens Sequenciadas"
-			x: 12.0d
-			y: 2.0d
-		}
-		{
-			description: ["§7Antes do Netherite chegar, uma Copper Pickaxe já resolve", "§7bem a vida — e ainda tem estilo.", "", "§eForje uma Copper Pickaxe e uma Zinc Sword."]
-			icon: "create_sa:copper_pickaxe"
-			id: "86C66EB91EA91D8C"
-			rewards: [
-				{
-					type: "item"
-					item: "create:brass_ingot"
-					count: 4
-					id: "80AFEAA37897F15C"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "0AE38532D4EE54B1"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "create_sa:copper_pickaxe"
-					id: "A82CCD7221D9F4B0"
-				}
-				{
-					type: "item"
-					item: "create_sa:zinc_sword"
-					id: "803DD0C6AD5C8BAB"
-				}
-			]
-			title: "Kit de Sobrevivência Create"
-			x: 14.0d
-			y: 2.0d
+			y: 4.0d
 		}
 	]
-	title: "§eCreate — Engenharia Mecânica"
+	title: "§dArs Nouveau — Magia Arcana"
 }

@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{ id: "65468EFE603FC446", title: "Fundamentos" }
+		{ id: "3322FB1D5A7FD527", title: "Tecnologia" }
+		{ id: "6A1D97ECF9A7FC71", title: "Magia" }
+		{ id: "7AE9512640318D11", title: "Exploração" }
+		{ id: "69F31F625754AE1E", title: "Combate" }
+		{ id: "42DFD8A84753DCE2", title: "Dimensões" }
+		{ id: "7E445E30196C8ACF", title: "Vida e Lazer" }
+		{ id: "5BB53CE50BE47A33", title: "Desafios" }
+	]
+}

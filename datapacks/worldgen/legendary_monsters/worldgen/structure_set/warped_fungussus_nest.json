@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "legendary_monsters:warped_fungussus_nest",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 20,
+    "separation": 9,
+    "salt": 5546645,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

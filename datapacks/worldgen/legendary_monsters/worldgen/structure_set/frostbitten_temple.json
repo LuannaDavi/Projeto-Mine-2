@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "legendary_monsters:frostbitten_temple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 66,
+    "separation": 30,
+    "salt": 6538645,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

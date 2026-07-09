@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "legendary_monsters:ancient_tower_remains",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 40,
+    "separation": 18,
+    "salt": 12466453,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

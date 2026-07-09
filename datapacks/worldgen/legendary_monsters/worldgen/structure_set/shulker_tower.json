@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "legendary_monsters:shulker_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 14,
+    "salt": 7539258,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

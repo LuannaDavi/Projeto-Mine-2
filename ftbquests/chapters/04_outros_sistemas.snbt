@@ -1,482 +1,605 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "06_magia_combate"
-	group: "AA00000000000002"
-	icon: ["irons_spellbooks:copper_spell_book", "mna:wand_vinteum", "enhancedcelestials:meteor"]
-	id: "AA06000000000001"
-	order_index: 5
+	filename: "04_outros_sistemas"
+	group: "3322FB1D5A7FD527"
+	id: "2E21F047DE9F3D6C"
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["4D00000000000006"]
-			description: ["§7§eIron's Spellbooks §7é o segundo sistema de magia do modpack.", "§7Focado em arquétipos como Mago, Curandeiro e Necromante.", "", "§eCrie ou encontre um §eSpell Book §7de Iron's Spellbooks.", "§eAtinga pelo menos o §eMagic Level 10§7.", "", "§6Dica: §7Derrotar mobs arcanos e usar feitiços dá XP mágico!", "§7Cada nível dá mais poder e slots de feitiço."]
-			icon: "irons_spellbooks:copper_spell_book"
-			id: "4D00000000000017"
+			description: [
+				"§7§eTom's Simple Storage §7cria uma rede de armazenamento"
+				"§7centralizada — todos os baús acessíveis de um terminal só!"
+				"§7Chega de procurar em 40 baús sem etiqueta."
+				""
+				"§eCrie um Storage Terminal e conecte pelo menos 1 baú a ele."
+				""
+				"§6Dica: §7Inventory Cables transmitem a rede entre andares!"
+				"§7Combine com Create para armazenar output automaticamente."
+			]
+			icon: "toms_storage:ts.storage_terminal"
+			id: "3C00000000000041"
 			rewards: [
 				{
-					count: 3
-					id: "4D00000000000018"
-					item: "irons_spellbooks:scroll"
+					count: 4
+					id: "3C00000000000042"
+					item: "ironchest:iron_chest"
 					type: "item"
 				}
 				{
-					id: "4D00000000000019"
+					count: 4
+					id: "3C00000000000043"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					id: "3C00000000000044"
 					type: "xp"
-					xp: 300
+					xp: 400
 				}
 			]
-			tasks: [
-				{
-					id: "4D0000000000001A"
-					item: "irons_spellbooks:copper_spell_book"
-					type: "item"
-				}
-			]
-			title: "Arquétipo Mágico"
+			tasks: [{
+				id: "3C00000000000045"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			title: "Rede de Armazenamento"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4D00000000000017"]
-			description: ["§7O §eIron Spell Book §7é o segundo degrau da progressão", "§7mágica — mais slots de feitiço e mais poder de conjuração", "§7que o Copper, mas ainda longe do topo.", "", "§eForje um §eIron Spell Book §7e equipe-o.", "§eVista uma peça de armadura temática de mago", "§e(Pyromancer, Cryomancer ou Electromancer).", "", "§6Dica: §7Cada armadura temática dá bônus à escola", "§7de magia correspondente — fogo, gelo ou raio!"]
-			icon: "irons_spellbooks:iron_spell_book"
-			id: "4D00000000000090"
+			description: [
+				"§7Mystical Agriculture + Create = farm de recursos automática."
+				"§7Depois do Inferium, o próximo tier é o Prudentium — mais"
+				"§7raro e mais forte pra criar recursos avançados."
+				""
+				"§eColete 32 Prudentium Essence de uma fazenda automatizada."
+				""
+				"§6Dica: §7Mechanical Harvester + Mechanical Planter = ciclo perfeito!"
+				"§7Prudentium exige Inferium reprocessado — monte a cadeia completa."
+			]
+			icon: "mysticalagriculture:supremium_essence"
+			id: "3C0000000000004B"
 			rewards: [
+				{
+					count: 8
+					id: "3C0000000000004C"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
 				{
 					count: 4
-					id: "4D00000000000091"
-					item: "irons_spellbooks:scroll"
+					id: "3C0000000000004D"
+					item: "mysticalagriculture:mystical_seeds"
 					type: "item"
 				}
 				{
-					id: "4D00000000000092"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "4D00000000000093"
-					item: "irons_spellbooks:iron_spell_book"
-					type: "item"
-				}
-				{
-					id: "4D00000000000094"
-					item: "irons_spellbooks:pyromancer_helmet"
-					type: "item"
-				}
-			]
-			title: "Segundo Grau"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000090"]
-			description: ["§7Iron's Spellbooks tem feitiços de diferentes escolas:", "§7Fogo, Gelo, Raio, Cura, Sangue, Sombra...", "", "§eConsiga um Enchanted Spell Book (tier diamante) e construa um Scroll Forge", "§epra criar seus próprios pergaminhos de feitiço.", "", "§6Dica: §7Tombe bosses e explore masmorras pra encontrar pergaminhos", "§7raros de escolas poderosas! O jogo não verifica quais feitiços você", "§7aprendeu, então essa parte fica por sua conta — mas vale a pena."]
-			icon: "irons_spellbooks:arcane_essence"
-			id: "4D0000000000001B"
-			rewards: [
-				{
-					count: 5
-					id: "4D0000000000001C"
-					item: "irons_spellbooks:scroll"
-					type: "item"
-				}
-				{
-					id: "4D0000000000001D"
-					item: "irons_spellbooks:arcane_essence"
-					type: "item"
-				}
-				{
-					id: "4D0000000000001E"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					id: "4D0000000000001F"
-					item: "irons_spellbooks:diamond_spell_book"
-					type: "item"
-				}
-				{
-					id: "FX000000000002A"
-					item: "irons_spellbooks:scroll_forge"
-					type: "item"
-				}
-			]
-			title: "Mestre de Múltiplas Escolas"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D0000000000001B"]
-			description: ["§7§eCelestiSynth §7potencializa magias usando energia cósmica.", "§7O §eStar Monolith §7é um bloco ritualístico que canaliza", "§7o poder de corpos celestes para criar equipamentos únicos.", "", "§eConstrua um §eStar Monolith §7e ative-o.", "§eForje uma peça de armadura §eLunar Stone §7ou §eSolar Crystal§7.", "", "§6Dica: §7Lunar Stone é defensivo, Solar Crystal é ofensivo!", "§7Acompanhe as fases com Enhanced Celestials para maximizar o efeito."]
-			icon: "celestisynth:celestial_core"
-			id: "4D0000000000002E"
-			rewards: [
-				{
-					count: 4
-					id: "4D0000000000002F"
-					item: "celestisynth:celestial_core"
-					type: "item"
-				}
-				{
-					id: "4D00000000000030"
-					item: "celestisynth:star_monolith"
-					type: "item"
-				}
-				{
-					id: "4D00000000000031"
+					id: "3C0000000000004E"
 					type: "xp"
 					xp: 500
 				}
 			]
-			tasks: [
-				{
-					id: "4D000000000000B1"
-					item: "celestisynth:celestial_core"
-					type: "item"
-				}
-			]
-			title: "Magia Celestial"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000002"]
-			description: ["§7§eMana and Artifice (MNA) §7é o terceiro grande sistema mágico", "§7deste modpack — focado em §eVaras (Wands) §7e um pool de", "§7Mana pessoal que regenera com o tempo.", "", "§7Tudo começa na §eInscription Table§7: combine um", "§e§lWand Core §r§7+ um §e§lWand Cap §r§7para montar sua primeira Vara.", "", "§eCrie uma §eInscription Table §7do MNA.", "§eMonte sua primeira §eVara (Wand)§7.", "", "§6Dica: §7O livro §eCodex of Artifice §7explica tudo passo a passo!", "§7Ele é dado automaticamente ao tocar na Inscription Table."]
-			icon: {
-				Count: 1
-				id: "mna:wand_vinteum"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "4D00000000000037"
-			rewards: [
-				{
-					count: 4
-					id: "4D00000000000038"
-					item: "mna:mana_resevoir"
-					type: "item"
-				}
-				{
-					id: "4D00000000000039"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "4D0000000000003A"
-					item: {
-						Count: 1
-						id: "mna:wand_vinteum"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4D00000000000070"
-					item: "mna:inscription_table"
-					type: "item"
-				}
-			]
-			title: "Artífice da Mana"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000037"]
-			description: ["§7Uma vara sem runas é só um pedaço de madeira caro.", "§7§eRunescribing §7é o sistema que grava poder elemental", "§7diretamente nos componentes da sua vara.", "", "§eConstrua uma §eRunescribing Table §7e inscreva pelo", "§emenos §e2 runas elementais §7diferentes (Fire, Water,", "§eAir, Earth, Arcane...) em peças da sua vara.", "", "§6Dica: §7Cada runa muda como seus feitiços se comportam!", "§7Combine runas opostas para efeitos interessantes."]
-			icon: "mna:runescribing_table"
-			id: "4D00000000000095"
-			rewards: [
-				{
-					count: 3
-					id: "4D00000000000096"
-					item: "mna:rune_fire"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "4D00000000000097"
-					item: "mna:rune_water"
-					type: "item"
-				}
-				{
-					id: "4D00000000000098"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					id: "4D00000000000099"
-					item: "mna:runescribing_table"
-					type: "item"
-				}
-				{
-					id: "4D0000000000009A"
-					item: "mna:rune_fire"
-					type: "item"
-				}
-				{
-					id: "4D0000000000009B"
-					item: "mna:rune_water"
-					type: "item"
-				}
-			]
-			title: "Gravando Poder"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000095"]
-			description: ["§7§eAurum §7é o metal mágico do MNA — extraído do Aurum Ore", "§7e refinado na Inscription Table usando Mana.", "§7Varas feitas de Aurum são muito mais poderosas que as iniciais.", "", "§eRefine pelo menos §e8 Aurum Ingots §7na Inscription Table.", "§eMonte uma §eVara de Aurum §7(troque o Core e/ou Cap por Aurum).", "§eInscreva pelo menos §e1 Runa §7na sua vara para criar um feitiço.", "", "§6Dica: §7O Mana Battery armazena excedente de mana para", "§7feitiços mais caros — sempre tenha um por perto!"]
-			icon: "mna:vinteum_ingot"
-			id: "4D00000000000071"
-			rewards: [
-				{
-					count: 16
-					id: "4D00000000000072"
-					item: "mna:vinteum_dust"
-					type: "item"
-				}
-				{
-					id: "4D00000000000073"
-					item: "mna:mana_resevoir"
-					type: "item"
-				}
-				{
-					id: "4D00000000000074"
-					type: "xp"
-					xp: 450
-				}
-			]
-			tasks: [
-				{
-					count: 8L
-					id: "4D00000000000075"
-					item: "mna:vinteum_ingot"
-					type: "item"
-				}
-			]
-			title: "Vara de Aurum"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000037"]
-			description: ["§7§eImprovable Skills §7adiciona um sistema de habilidades", "§7que crescem com uso — magia inclusa!", "", "§eAtinja pelo menos Nível 10 em qualquer habilidade mágica", "§edo Improvable Skills.", "", "§6Dica: §7Use feitiços repetidamente para ganhar XP de habilidade!", "§7Habilidades mágicas reduzem custo de mana."]
-			icon: "improvableskills:skills_book"
-			id: "4D0000000000003B"
-			rewards: [
-				{
-					count: 5
-					id: "4D0000000000003C"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "4D0000000000003D"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "4D0000000000003E"
-					item: "improvableskills:skills_book"
-					type: "item"
-				}
-			]
-			title: "Maestria nas Artes"
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D0000000000003B"]
-			description: ["§7§eRelics §7adiciona artefatos mágicos poderosos que são encontrados em baús de dungeons.", "§eEncontre 2 Relics diferentes: o Bastion Ring e o Arrow Quiver.", "§7Eles ocupam slots de Curios e dão poderes passivos.", "", "§6Dica: §7Relics mais raros têm efeitos combinados únicos!", "§7Cheque dungeons do Dungeons Arise para Relics raras."]
-			icon: "relics:bastion_ring"
-			id: "4D0000000000003F"
-			rewards: [
-				{
-					id: "4D00000000000040"
-					item: "relics:space_dissector"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "4D00000000000041"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "4D00000000000042"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "4D00000000000043"
-					item: "relics:bastion_ring"
-					type: "item"
-				}
-				{
-					id: "F1AA000000000301"
-					item: "relics:arrow_quiver"
-					type: "item"
-				}
-			]
-			title: "Caçador de Relíquias"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["4D0000000000002E"]
-			description: ["§7§eArtifacts §7adiciona dezenas de itens usáveis nos slots de Curios,", "§7cada um com um efeito passivo único.", "", "§eConsiga 3 Artifacts diferentes: Obsidian Skull, Golden Hook e Running Shoes.", "", "§6Dica: §7Equipe-os nos slots de Curios pra ativar os efeitos — só ter no", "§7inventário não faz nada!"]
-			icon: "artifacts:obsidian_skull"
-			id: "4D00000000000049"
-			rewards: [
-				{
-					id: "4D0000000000004A"
-					item: "artifacts:obsidian_skull"
-					type: "item"
-				}
-				{
-					id: "4D0000000000004B"
-					item: "artifacts:golden_hook"
-					type: "item"
-				}
-				{
-					id: "4D000000000000B2"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					id: "4D0000000000004C"
-					item: "artifacts:obsidian_skull"
-					type: "item"
-				}
-				{
-					id: "F1AA000000000401"
-					item: "artifacts:golden_hook"
-					type: "item"
-				}
-				{
-					id: "F1AA000000000402"
-					item: "artifacts:running_shoes"
-					type: "item"
-				}
-			]
-			title: "Colecionador de Artefatos"
+			tasks: [{
+				count: 32L
+				id: "3C0000000000004F"
+				item: "mysticalagriculture:prudentium_essence"
+				type: "item"
+			}]
+			title: "Agricultura x Indústria"
 			x: 2.0d
-			y: 4.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["4D00000000000049"]
-			description: ["§7§eEnhanced Celestials §7transforma as luas em eventos.", "§7Durante a §cLua de Sangue§7, os mobs ficam mais fortes,", "§7mais rápidos — mas os drops são melhores.", "§7É a noite mais perigosa e mais lucrativa do modpack.", "", "§eSobreviva a uma §cLua de Sangue §7e colete um", "§eMeteoro §7que cai durante o evento.", "", "§6Dica: §7Feitiços de área do §eArs Nouveau §7são ideais.", "§7Prepare §eSource Jars §7extras — você vai conjurar muito."]
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "sleep_tight:textures/gui/moon.png"
-				}
-			}
-			id: "4D00000000000051"
+			description: [
+				"§7O §eMystical Agriculture §7tem 5 tiers de essências:"
+				"§eInferium → Prudentium → Tertium → Imperium → Supremium§7."
+				"§7Cada tier superior exige transformar vários do anterior."
+				"§7No topo, o §eAwakened Supremium §7é a base do end-game."
+				""
+				"§eProduza pelo menos §e16 Tertium Essence §7e §e8 Imperium Essence§7."
+				""
+				"§6Dica: §7Inferium x4 = Prudentium, Prudentium x4 = Tertium."
+				"§7A §eInfusion Crystal §7é consumível — produza mais antes de começar!"
+			]
+			icon: "mysticalagriculture:imperium_essence"
+			id: "3C00000000000201"
 			rewards: [
 				{
 					count: 8
-					id: "4D00000000000053"
-					item: "minecraft:experience_bottle"
+					id: "3C00000000000202"
+					item: "mysticalagriculture:supremium_essence"
 					type: "item"
 				}
 				{
-					id: "4D00000000000054"
-					type: "xp"
-					xp: 700
-				}
-			]
-			tasks: [
-				{
-					id: "4D00000000000055"
-					item: "enhancedcelestials:meteor"
-					type: "item"
-				}
-			]
-			title: "Lua de Sangue"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["4D00000000000051"]
-			description: ["§7A fusão entre magia e tecnologia é rara, mas poderosa.", "§7Crie um §eMagic Automaton §7— um golem mágico", "§7que trabalha para você.", "", "§eCrie um §eGolem §7do §ePlenty of Golems §7e", "§econfigure-o para coletar recursos.", "", "§6Dica: §7Golems precisam de um coração de golem!", "§7Diferentes materiais criam golems com habilidades únicas."]
-			icon: "plenty_of_golems:golems_staff"
-			id: "4D00000000000056"
-			rewards: [
-				{
-					id: "4D00000000000057"
-					item: "plenty_of_golems:golems_staff"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "4D00000000000058"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "4D00000000000059"
+					id: "3C00000000000203"
 					type: "xp"
 					xp: 600
 				}
 			]
 			tasks: [
 				{
-					id: "4D0000000000005A"
-					item: "plenty_of_golems:golems_staff"
+					count: 16L
+					id: "3C00000000000204"
+					item: "mysticalagriculture:tertium_essence"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3C00000000000205"
+					item: "mysticalagriculture:imperium_essence"
 					type: "item"
 				}
 			]
-			title: "Criador de Golems"
-			x: 6.0d
-			y: 4.0d
+			title: "A Escada das Essências"
+			x: 4.0d
+			y: 0.0d
 		}
 		{
-			description: ["§7§eCelestisynth §7traz duas armaduras opostas: Solar Crystal", "§7(ofensiva, queima quem te acerta) e Lunar Stone (defensiva,", "§7reduz dano ao ser atingido). Escolha um lado.", "", "§eForje o elmo de Solar Crystal ou de Lunar Stone."]
-			icon: "celestisynth:solar_crystal_helmet"
-			id: "32B776698697A5FD"
+			description: [
+				"§7§eTime in a Bottle §7permite acelerar o tempo em uma área."
+				"§7Com ele, suas fazendas crescem muito mais rápido —"
+				"§7horas de espera viram minutos."
+				""
+				"§eCrie um Time in a Bottle."
+				""
+				"§6Dica: §7Combine com Mystical Agriculture pra produção de"
+				"§7essências em escala absurda."
+				""
+				"§8§o(Ironicamente, você vai gastar mais tempo craftando isso"
+				"§8§odo que a fazenda levaria pra crescer.)"
+			]
+			icon: {
+				Count: 1
+				id: "tiab:time_in_a_bottle"
+				tag: { }
+			}
+			id: "3C0000000000005F"
 			rewards: [
 				{
+					count: 8
+					id: "3C00000000000061"
+					item: "mysticalagriculture:prudentium_essence"
 					type: "item"
-					item: "celestisynth:lunar_stone_helmet"
-					id: "D95C472040061C8A"
 				}
 				{
+					id: "3C00000000000062"
 					type: "xp"
-					xp: 400
-					id: "FAC788E6AE596E05"
+					xp: 800
+				}
+			]
+			tasks: [{
+				id: "3C00000000000063"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Dono do Tempo"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Sua fábrica é incrível — mas para de funcionar quando"
+				"§7você se afasta e os chunks descarregam."
+				""
+				"§7§eData Anchor §7resolve isso: ele mantém uma área de chunks"
+				"§7sempre carregada, mesmo com você longe ou offline (em servidores)."
+				""
+				"§eCrie e instale um Lodestone perto da sua fábrica principal"
+				"§ee vincule um Data Anchor a ele."
+				""
+				"§6Dica: §7Combine com Create Jetpack Curios pra voar com o jetpack"
+				"§7sem ocupar o peitoral — armadura completa + propulsão!"
+			]
+			icon: "minecraft:lodestone"
+			id: "3C00000000000075"
+			rewards: [
+				{
+					id: "3C00000000000076"
+					item: "minecraft:lodestone"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "3C00000000000077"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "3C00000000000078"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				id: "3C00000000000079"
+				item: "minecraft:lodestone"
+				type: "item"
+			}]
+			title: "A Fábrica que Nunca Dorme"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eSupremium §7é o tier máximo da progressão."
+				"§7§eAwakened Supremium §7é a versão encantada ainda mais forte."
+				"§7Armas e ferramentas de Supremium têm sockets para gemas."
+				"§7Gemas adicionam propriedades únicas: velocidade, alcance, vampirismo..."
+				""
+				"§eProduzca um §eSupremium Ingot §7e uma §eSupremium Sword§7."
+				""
+				"§6Dica: §7Supremium tools têm §eAuto-Smelt §7e §eFortune §7built-in."
+				"§7Socket com §eElemental Gem §7para dano elemental bônus."
+			]
+			icon: "mysticalagriculture:supremium_sword"
+			id: "1DE9947939F4B163"
+			rewards: [
+				{
+					count: 2
+					id: "12F4DD99DF2F47A3"
+					item: "mysticalagriculture:awakened_supremium_essence"
+					type: "item"
+				}
+				{
+					id: "270FD4E3C059B209"
+					type: "xp"
+					xp: 800
 				}
 			]
 			tasks: [
 				{
+					id: "2155EB2738E49992"
+					item: "mysticalagriculture:supremium_ingot"
 					type: "item"
-					item: "celestisynth:solar_crystal_helmet"
-					id: "123201B464C0B393"
+				}
+				{
+					id: "67E2F3DC6C178DC4"
+					item: "mysticalagriculture:supremium_sword"
+					type: "item"
 				}
 			]
-			title: "Armadura Celestial"
-			x: 14.0d
-			y: 6.0d
+			title: "Supremium — O Topo da Agricultura"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"§7§eMystical Agriculture §7tem sementes pra quase tudo —"
+				"§7incluindo mob drops: Blaze Rod, Ender Pearl, e mais."
+				"§7Com Inferium suficiente + Seed Reprocessor você cria"
+				"§7praticamente qualquer semente."
+				""
+				"§ePlante e colha 2 tipos diferentes de Mob Seeds: Blaze e Enderman."
+				""
+				"§6Dica: §7Blaze Seeds = Blaze Rods infinitos, sem visitar o Nether."
+				"§7Enderman Seeds = Ender Pearls infinitas, sem caçar Enderman."
+			]
+			icon: "mysticalagriculture:blaze_seeds"
+			id: "2188AC91EAA46ED5"
+			rewards: [
+				{
+					count: 64
+					id: "7EC8E6E9BA293C9C"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					id: "291349B3B4FAD842"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "340A59CFC6DFD74E"
+					item: "mysticalagriculture:blaze_seeds"
+					type: "item"
+				}
+				{
+					id: "72EB388E23D7B142"
+					item: "mysticalagriculture:enderman_seeds"
+					type: "item"
+				}
+			]
+			title: "Sementes de Mob Drops"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"§7§eSophisticated Backpacks §7é o sistema de mochila mais completo."
+				"§7Mochilas com Upgrades de filtro, coleta automática, feeding"
+				"§7automático, crafting direto, e muito mais."
+				"§7Tiers: Iron → Gold → Diamond → Netherite."
+				""
+				"§eCrafite uma Gold Backpack e instale um Pickup Upgrade nela."
+				""
+				"§6Dica: §7Pickup Upgrade coleta itens automaticamente do chão."
+				"§7Feeding Upgrade alimenta você automaticamente — nunca mais fome."
+			]
+			icon: "sophisticatedbackpacks:gold_backpack"
+			id: "6D047D2965CA1993"
+			rewards: [
+				{
+					id: "1BBAFF6D2F052CD1"
+					item: "sophisticatedbackpacks:diamond_backpack"
+					type: "item"
+				}
+				{
+					id: "61E640AD4A3B3131"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "5174BD5EE6F88711"
+					item: "sophisticatedbackpacks:gold_backpack"
+					type: "item"
+				}
+				{
+					id: "6EB58E97120D622B"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+			]
+			title: "Sophisticated Backpacks"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Depois de ter sua rede básica, o próximo passo é o"
+				"§7§eCrafting Terminal §7— ele permite craftar usando materiais"
+				"§7de TODOS os baús da rede, sem precisar levar nada com você."
+				""
+				"§eConstrua um Crafting Terminal."
+				""
+				"§6Dica: §7Ele também mostra receitas de auto-crafting se você"
+				"§7tiver máquinas conectadas — praticamente um AE2 de bolso."
+			]
+			icon: "toms_storage:ts.crafting_terminal"
+			id: "3D8D03545F315F7E"
+			rewards: [
+				{
+					count: 4
+					id: "7E3350E0153395D4"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "5085D362181AC19B"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				id: "125804E82BD2D5E6"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			title: "Tom's Simple Storage"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eImmersive Melodies §7adiciona instrumentos musicais tocáveis:"
+				"§7§eLute§7, §ePiano§7, §eBagpipe§7, §eFlute§7, §eHandpan§7,"
+				"§7§eTiny Drum §7e vários outros — cada um com timbre único."
+				"§7Toque na base, durante exploração, ou só porque quer."
+				""
+				"§eCrafite e toque pelo menos §e2 instrumentos §7do mod."
+				""
+				"§8§o(O modpack tem 245 mods. Um deles é só pra tocar alaúde.)"
+				"§8§o(Prioridades estão em ordem.)"
+			]
+			icon: "immersive_melodies:lute"
+			id: "350A10509E0E92BD"
+			rewards: [
+				{
+					id: "7132B92211903B9B"
+					item: "immersive_melodies:piano"
+					type: "item"
+				}
+				{
+					id: "1EDCF92EFA7A3CE4"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "306F78C03F127760"
+					item: "immersive_melodies:lute"
+					type: "item"
+				}
+				{
+					id: "278F3AD50AA936DD"
+					item: "immersive_melodies:flute"
+					type: "item"
+				}
+			]
+			title: "Imersão no Som — Melodies"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eScannable §7adiciona um Scanner que detecta minérios e"
+				"§7estruturas próximas sem precisar escavar — aponta através"
+				"§7das paredes."
+				""
+				"§eCrafite um Scanner."
+				""
+				"§6Dica: §7Combine com JEI/EMI pra saber quais ores priorizar."
+				"§7Scanner funciona por Bateria — recarregue antes de usar"
+				"§7em minas longas."
+			]
+			icon: "scannable:scanner"
+			id: "51120A04316AA54A"
+			rewards: [
+				{
+					count: 16
+					id: "5D5142B75E50BC5A"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "0A9480695CE3C829"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [{
+				id: "0D019540CA70C095"
+				item: "scannable:scanner"
+				type: "item"
+			}]
+			title: "Scan do Mundo"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eQuark §7não inventa moda — só corrige o que o vanilla deveria"
+				"§7ter feito desde sempre. Sim, estou falando da Trowel."
+				""
+				"§eCrie uma Trowel e colete 4 Glass Shards de cores diferentes."
+			]
+			icon: "quark:trowel"
+			id: "7EEB8A1EC9332A30"
+			rewards: [
+				{
+					count: 16
+					id: "64D591AC6866BFB2"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "72C109FE146C16AF"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "561FB6FE8E637176"
+					item: "quark:trowel"
+					type: "item"
+				}
+				{
+					id: "50E86C2C5F2CA963"
+					item: "quark:blue_shard"
+					type: "item"
+				}
+				{
+					id: "5310F88053FC3FCD"
+					item: "quark:red_shard"
+					type: "item"
+				}
+			]
+			title: "Quark: Ferramentas Sensatas"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Quark tem um sistema inteiro de vidro colorido feito de"
+				"§7fragmentos — ótimo pra quem tem TOC de decoração."
+				""
+				"§eColete 4 Glass Shards de cores diferentes."
+			]
+			icon: "quark:blue_shard"
+			id: "43153B06AAF5D5CD"
+			rewards: [
+				{
+					count: 16
+					id: "50C73B7F152D8EBD"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "5EF08AEEFE967D11"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "7D468EEF37918ED9"
+					item: "quark:blue_shard"
+					type: "item"
+				}
+				{
+					id: "286C577A692ADCB9"
+					item: "quark:red_shard"
+					type: "item"
+				}
+				{
+					id: "2897E24AEBC2AA27"
+					item: "quark:green_shard"
+					type: "item"
+				}
+				{
+					id: "6043FF2F5BE86F8E"
+					item: "quark:brown_shard"
+					type: "item"
+				}
+			]
+			title: "Quark: Vidro Colorido"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7Quark não tenta competir com Create em escala — ele"
+				"§7só conserta os pequenos detalhes que o vanilla esqueceu."
+				"§7Os dois juntos deixam sua base redonda de verdade."
+				""
+				"§eTenha uma Trowel (Quark) e um Andesite Alloy (Create)"
+				"§eao mesmo tempo."
+				""
+				"§6Dica: §7Quark também adiciona Variant Chests que combinam"
+				"§7bem com a estética industrial do Create."
+			]
+			icon: "quark:trowel"
+			id: "4AF322216F9A6F25"
+			rewards: [
+				{
+					count: 8
+					id: "0D7C98704AF45231"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "76CBBEB220B796C6"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "5524BA373A9F7D22"
+					item: "quark:trowel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "604F74ABA2DF65BB"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			title: "Pequenos Ajustes, Grandes Resultados"
+			x: 22.0d
+			y: 10.0d
 		}
 	]
-	title: "§cMagia de Batalha"
+	title: "§aSistemas Especializados"
 }

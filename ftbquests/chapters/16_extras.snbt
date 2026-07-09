@@ -1,465 +1,760 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "05_ars_nouveau"
-	group: "AA00000000000002"
-	icon: ["ars_nouveau:novice_spell_book", "ars_nouveau:source_gem", "ars_nouveau:drygmy_charm"]
-	id: "AA05000000000001"
-	order_index: 4
+	filename: "16_extras"
+	group: "7E445E30196C8ACF"
+	id: "20ED11B102105931"
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7A magia não é encontrada em livros — ela está no mundo.", "§7§eArs Nouveau §7usa §eGlifos §7como blocos de construção:", "§7combine-os para criar feitiços únicos que não existem", "§7em nenhum outro sistema mágico.", "", "§eProcure §eSource Gems §7no mundo — emergem naturalmente", "§7em cavernas e próximos de tocas de fadas.", "§eConsiga pelo menos §e16 unidades.", "", "§6Dica: §7Olhe para o chão em florestas densas à noite.", "§7Os cristais brilham levemente no escuro."]
-			icon: "ars_nouveau:source_gem"
-			id: "4D00000000000002"
+			description: [
+				"§7Este modpack tem mais de 150 mods."
+				"§7Há automação industrial, magia arcana, batalhas épicas,"
+				"§7civilizações inteiras para construir, bosses para derrotar"
+				"§7e dimensões para conquistar."
+				""
+				"§7E a primeira missão deste capítulo é §lsentar numa cadeira§r§7."
+				""
+				"§eCrie uma cadeira do §eHandcrafted §7e use o §eSit Mod"
+				"§epara sentar nela."
+				""
+				"§8§o(Você merece. Sério. Você instalou 150 mods.)"
+			]
+			icon: "handcrafted:oak_chair"
+			id: "7EBCBF9DA1AEDAE1"
 			rewards: [
 				{
-					count: 16
-					id: "4D00000000000003"
-					item: "ars_nouveau:source_gem"
+					count: 8
+					id: "0DFA28855D5F0DE9"
+					item: "minecraft:cooked_beef"
 					type: "item"
 				}
 				{
-					id: "4D00000000000004"
+					id: "26F367530A47C09B"
 					type: "xp"
-					xp: 150
+					xp: 50
 				}
 			]
 			shape: "gear"
-			tasks: [
-				{
-					count: 16L
-					id: "4D00000000000005"
-					item: "ars_nouveau:source_gem"
-					type: "item"
-				}
-			]
-			title: "Despertar Arcano"
+			tasks: [{
+				id: "1E2EBCE2BDA1124C"
+				item: "handcrafted:oak_chair"
+				type: "item"
+			}]
+			title: "Hora do Descanso"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4D00000000000002"]
-			description: ["§7O §eNovice Spell Book §7é o primeiro passo para um mago.", "§7Com ele, você armazena e lança seus feitiços personalizados.", "", "§eCrie um §eNovice Spell Book §7do Ars Nouveau.", "§eCrie também uma §eScribing Table §7para criar feitiços.", "", "§6Como criar glifos: §7Use a Scribing Table com Mana Essence!", "§7Combine glifos de §eLançamento + Efeito §7para criar magias."]
-			icon: "ars_nouveau:novice_spell_book"
-			id: "4D00000000000006"
-			rewards: [
-				{
-					count: 2
-					id: "4D00000000000007"
-					item: "ars_nouveau:source_jar"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "4D00000000000008"
-					item: "ars_nouveau:magebloom_fiber"
-					type: "item"
-				}
-				{
-					id: "4D00000000000009"
-					type: "xp"
-					xp: 200
-				}
+			description: [
+				"§7§ePresence Footsteps §7faz cada passo ter um som diferente"
+				"§7dependendo do bloco. Pedra, grama, madeira, água..."
+				""
+				"§7§eCamera Overhaul §7adiciona efeitos de câmera cinematográficos"
+				"§7enquanto você corre e se move."
+				""
+				"§eCrie um par de §eRunning Shoes §7(Artifacts) e sinta"
+				"§ea diferença ao correr — combine com os efeitos visuais"
+				"§eda câmera para uma experiência completa."
 			]
-			tasks: [
-				{
-					id: "4D0000000000000A"
-					item: "ars_nouveau:novice_spell_book"
-					type: "item"
-				}
-				{
-					id: "4D0000000000000B"
-					item: "ars_nouveau:scribes_table"
-					type: "item"
-				}
-			]
-			title: "Novato nas Artes"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000006"]
-			description: ["§7Seus primeiros feitiços! Comece pelos básicos:", "§7um §eFeitiço de Fogo §7e um §eFeitiço de Cura§7.", "", "§eCrie um feitiço que cause dano.", "§eCrie um feitiço que te cure.", "§eUse cada um em combate pelo menos uma vez.", "", "§6Exemplo: §7Projectile + Ignite = Bola de Fogo", "§7Self + Heal = Cura Pessoal"]
-			icon: "ars_nouveau:blank_glyph"
-			id: "4D0000000000000C"
-			rewards: [
-				{
-					count: 3
-					id: "4D0000000000000D"
-					item: "ars_nouveau:spell_parchment"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "4D0000000000000E"
-					item: "ars_nouveau:source_berry_roll"
-					type: "item"
-				}
-				{
-					id: "4D0000000000000F"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					id: "4D00000000000010"
-					item: "ars_nouveau:blank_glyph"
-					type: "item"
-				}
-				{
-					count: 1
-					id: "BE0ED1E8732E05D5"
-					item: "ars_nouveau:scribes_table"
-					type: "item"
-				}
-			]
-			title: "Primeiros Feitiços"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D0000000000000C"]
-			description: ["§7Um mago sem Mana é um mortal com um livro bonito.", "§7§eSource Jars §7coletam Mana do ambiente —", "§7luz solar, plantas e criaturas ao redor alimentam o sistema.", "", "§eCrie e posicione pelo menos §e2 Source Jars §7na sua torre.", "", "§6Dica: §7Cerque os Source Jars com flores e plantas.", "§7Quanto mais vida ao redor, mais rápida a coleta de Mana."]
-			icon: "ars_nouveau:source_jar"
-			id: "4D00000000000011"
-			rewards: [
-				{
-					count: 16
-					id: "4D00000000000012"
-					item: "ars_nouveau:sourcestone"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "4D00000000000013"
-					item: "ars_nouveau:source_berry_roll"
-					type: "item"
-				}
-				{
-					id: "4D00000000000014"
-					type: "xp"
-					xp: 300
-				}
-			]
-			tasks: [
-				{
-					count: 2L
-					id: "4D00000000000015"
-					item: "ars_nouveau:source_jar"
-					type: "item"
-				}
-			]
-			title: "Reservatório de Mana"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000011"]
-			description: ["§7O §eApprentice Spell Book §7é uma evolução do Novice.", "§7Ele armazena mais glifos e tem mais poder de conjuração.", "", "§eCrie um §eApprentice Spell Book§7.", "§eConjure feitiços para ao menos §e50 mobs§7.", "", "§6Dica: §7Exp com magia vem do uso — conjure sempre!", "§7Combine glifos como §eProjectile + Burst + Ignite§7!"]
-			icon: "ars_nouveau:apprentice_spell_book"
-			id: "4D00000000000020"
-			rewards: [
-				{
-					id: "4D00000000000021"
-					item: "ars_nouveau:apprentice_spell_book"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "4D00000000000022"
-					item: "ars_nouveau:source_berry_roll"
-					type: "item"
-				}
-				{
-					id: "4D00000000000023"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "4D00000000000024"
-					item: "ars_nouveau:apprentice_spell_book"
-					type: "item"
-				}
-			]
-			title: "Aprendiz de Feiticeiro"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000020"]
-			description: ["§7Magos de verdade não trabalham sozinhos.", "§7§eDrygmys §7coletam drops de mobs próximos sem matar ninguém.", "§7§eStarbuncles §7correm pelo mundo transportando itens para você.", "§7§eWhirlisprig §7protegem fazendas e se alimentam de flores.", "", "§eCrie um §eDrygmy Charm §7e invoque seu primeiro familiar.", "", "§6Dica: §7Drygmys precisam de um §eSummon Henge §7e de mobs", "§7próximos (vivos!) para coletar drops — não mate os mobs.", "", "§8§o(Seu familiar trabalha mais que você. Não conte pra ele.)"]
-			icon: "ars_nouveau:drygmy_charm"
-			id: "4D00000000000025"
-			rewards: [
-				{
-					count: 3
-					id: "4D00000000000026"
-					item: "ars_nouveau:whirlisprig_charm"
-					type: "item"
-				}
-				{
-					id: "4D00000000000027"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					id: "4D00000000000028"
-					item: "ars_nouveau:drygmy_charm"
-					type: "item"
-				}
-				{
-					count: 1
-					id: "7B995DAA0EA62EF1"
-					item: "ars_nouveau:wilden_horn"
-					type: "item"
-				}
-			]
-			title: "Familiar Mágico"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4D00000000000025"]
-			description: ["§7Com Ars Nouveau, você pode encantar suas armaduras", "§7com buffs mágicos permanentes!", "", "§eCrie uma §eArmadura Mágica §7do Ars Nouveau", "§7(Helmet, Chestplate, Leggings ou Boots arcanos).", "§eEnchante ela com pelo menos 1 glifo de armadura.", "", "§6Dica: §7Blazing e Frost podem ser combinados!", "§7Armor glyphs dão resistências e habilidades passivas."]
 			icon: {
 				Count: 1
-				id: "ars_nouveau:battlemage_robes"
+				id: "minecraft:leather_boots"
 				tag: {
 					Damage: 0
 				}
 			}
-			id: "4D00000000000029"
+			id: "505059FCD9D184A2"
 			rewards: [
 				{
-					count: 16
-					id: "4D0000000000002A"
-					item: "ars_nouveau:sourcestone"
+					count: 4
+					id: "356699B12CA6F74B"
+					item: "minecraft:leather"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "4D0000000000002B"
-					item: "ars_nouveau:magebloom_fiber"
-					type: "item"
-				}
-				{
-					id: "4D0000000000002C"
+					id: "1812E6B2F8125405"
 					type: "xp"
-					xp: 600
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "4BFFA6CF6507F031"
+				item: "artifacts:running_shoes"
+				type: "item"
+			}]
+			title: "A Leveza dos Passos"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eEmotecraft §7adiciona emotes animados para o personagem!"
+				"§7Dance, cumprimente, comemore suas vitórias."
+				""
+				"§eToque um §eNote Block §7para comemorar — combine"
+				"§ecom seus emotes favoritos do Emotecraft."
+				""
+				"§6Dica: §7Configure atalhos de teclado para emotes favoritos!"
+				"§7Perfeito para celebrar ao derrotar um boss difícil."
+				""
+				"§8§o(Ninguém está vendo. Dance assim mesmo.)"
+			]
+			icon: "minecraft:note_block"
+			id: "284E3DAACB6D7712"
+			rewards: [{
+				id: "14CF8B9F376C9094"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "31ADB47CA6452C91"
+				item: "minecraft:note_block"
+				type: "item"
+			}]
+			title: "Dançarino do Mundo"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eImmersive Melodies §7transforma instrumentos"
+				"§7em ferramentas de composição real."
+				"§7Você pode tocar músicas em formato MIDI dentro do jogo."
+				""
+				"§eCrie um instrumento e toque pelo menos uma melodia."
+				"§eTocar para pelo menos §e1 ser vivo §7(aldeão, animal ou mob)."
+				""
+				"§6Dica: §7Construa um palco. Decore. Convide aldeões."
+				"§7§eEmotecraft §7tem emotes de comemoração — celebre"
+				"§7sua própria apresentação se quiser."
+			]
+			icon: "immersive_melodies:flute"
+			id: "79898617404E06A5"
+			rewards: [
+				{
+					count: 3
+					id: "59669D79807F1FAF"
+					item: "immersive_melodies:lute"
+					type: "item"
+				}
+				{
+					id: "0A601DF29AE461B0"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "4DAFE97249CA6FB0"
+				item: "immersive_melodies:flute"
+				type: "item"
+			}]
+			title: "Músico do Realm"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eBetter Jukebox §7expande a jukebox com controles de volume,"
+				"§7fila de músicas e visual aprimorado — tudo direto na jukebox vanilla."
+				""
+				"§eColete 3 discos diferentes e toque na sua Jukebox: Cat, Pigstep e Otherside."
+				""
+				"§6Dica: §7Combine com §eImmersive Melodies §7pra estações de rádio!"
+				"§7Coloque jukeboxes em pontos diferentes da base."
+			]
+			icon: "minecraft:jukebox"
+			id: "29E2D72F3BAE639C"
+			rewards: [
+				{
+					count: 3
+					id: "3A850F079560B55C"
+					item: "minecraft:music_disc_13"
+					type: "item"
+				}
+				{
+					id: "4AC631E31812A504"
+					type: "xp"
+					xp: 100
 				}
 			]
 			tasks: [
 				{
-					id: "4D0000000000002D"
+					id: "19710975E3CDFC5E"
+					item: "minecraft:music_disc_cat"
+					type: "item"
+				}
+				{
+					id: "7A1169C30AA847EC"
+					item: "minecraft:music_disc_pigstep"
+					type: "item"
+				}
+				{
+					id: "3A3B69F0A7DDA7E8"
+					item: "minecraft:music_disc_otherside"
+					type: "item"
+				}
+			]
+			title: "DJ da Base"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eFalling Leaves §7faz as árvores soltarem folhas que caem"
+				"§7suavemente, tornando as florestas cinematográficas."
+				"§7§eDynamic Lights §7faz tochas e outros itens iluminar ao segurar!"
+				""
+				"§eCaminhe por uma floresta densa à noite com uma tocha na mão."
+				"§7Aprecie as folhas caindo ao seu redor."
+				"§eColete 5 tipos diferentes de folha: Carvalho, Bétula, Abeto, Selva e Acácia."
+				""
+				"§6Este é um dos momentos mais bonitos do modpack."
+				"§8§o(Foram precisos uns 15 mods só pra você sentir isso.)"
+			]
+			icon: "minecraft:oak_leaves"
+			id: "2CDBC238ADA56C06"
+			rewards: [
+				{
+					count: 5
+					id: "60A419B1EB48E224"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "303E545227113326"
+					type: "xp"
+					xp: 80
+				}
+			]
+			tasks: [
+				{
+					id: "2C7E47A82716498A"
+					item: "minecraft:oak_leaves"
+					type: "item"
+				}
+				{
+					id: "6CD53149ACF41A42"
+					item: "minecraft:birch_leaves"
+					type: "item"
+				}
+				{
+					id: "5E5D073AD4E022E8"
+					item: "minecraft:spruce_leaves"
+					type: "item"
+				}
+				{
+					id: "2D997DA7D456FDB4"
+					item: "minecraft:jungle_leaves"
+					type: "item"
+				}
+				{
+					id: "75911411BF0AF906"
+					item: "minecraft:acacia_leaves"
+					type: "item"
+				}
+			]
+			title: "Floresta Viva"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eSwashbucklers! §7adiciona navios piratas construíveis,"
+				"§7batalhas navais e armas temáticas — o mod usa namespace §ehpm§7."
+				"§7Construa um Swashbuckler (navio) e navegue pelos mares!"
+				""
+				"§eConstrua ou encontre um navio do §eSwashbucklers§7."
+				"§eDerrote pelo menos §e1 inimigo §7com estilo pirata."
+				""
+				"§6Dica: §7O §eHand Cannon §7é a arma pirata do mod."
+				"§7Swashbucklers tem navios de vários tamanhos — do Raft ao Corvette."
+			]
+			icon: "hpm:swashbuckleritem"
+			id: "3A6D68B9DF6D4FC8"
+			rewards: [
+				{
+					count: 3
+					id: "0D52BD751DC70F95"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "3931468241EC4C5C"
 					item: {
 						Count: 1
-						id: "ars_nouveau:battlemage_robes"
+						id: "hpm:hand_cannon"
 						tag: {
 							Damage: 0
 						}
 					}
 					type: "item"
 				}
+				{
+					id: "5C4AADCDDAE23E43"
+					type: "xp"
+					xp: 300
+				}
 			]
-			title: "Mago Blindado"
+			tasks: [{
+				id: "3176E843A78533F9"
+				item: "hpm:swashbuckleritem"
+				type: "item"
+			}]
+			title: "Ahoy, Pirata!"
 			x: 12.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4D00000000000029"]
-			description: ["§7O §eArchmage Spell Book §7é o ápice do Ars Nouveau.", "§7Com ele, feitiços ganham uma dimensão extra de poder.", "", "§eCrie o §eArchmage Spell Book§7.", "§eCrie um feitiço com pelo menos 5 glifos combinados.", "", "§6Dica: §7Projectile + Burst + Ignite + Amplify + Extend", "§7cria uma chuva de fogo devastadora!"]
-			icon: "ars_nouveau:archmage_spell_book"
-			id: "4D00000000000032"
+			description: [
+				"§7§eBuddycards §7adiciona cartas colecionáveis de mobs, com raridades"
+				"§7e variações (holográfica, dourada...) igual card física de verdade."
+				""
+				"§eAbra 3 pacotes de cartas."
+				""
+				"§6Dica: §7Construa um Card Stand ou Display pra expor sua coleção!"
+			]
+			icon: "buddycards:buddycard_pack_base"
+			id: "144A5332E5639DAC"
 			rewards: [
 				{
-					count: 16
-					id: "4D00000000000033"
-					item: "ars_nouveau:source_gem"
+					count: 6
+					id: "40837965E61AEE03"
+					item: "minecraft:emerald"
 					type: "item"
 				}
 				{
-					count: 10
-					id: "4D00000000000034"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "4D00000000000035"
+					id: "46DB3E38629AE037"
 					type: "xp"
-					xp: 1000
+					xp: 100
 				}
 			]
-			tasks: [
-				{
-					id: "4D00000000000036"
-					item: "ars_nouveau:archmage_spell_book"
-					type: "item"
-				}
-			]
-			title: "Arquimago"
+			tasks: [{
+				count: 3L
+				id: "1693AF8CE9E20263"
+				item: "buddycards:buddycard_pack_base"
+				type: "item"
+			}]
+			title: "Colecionador de Cartas"
 			x: 14.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["4D00000000000032"]
-			description: ["§7Com todo esse poder arcano, construa uma §eTorre de Mago§7.", "§7Uma torre com pelo menos 3 andares com:", "§7- Scribing Table no 1° andar", "§7- Source Jars em volta", "§7- Familiar no topo", "", "§eConstrua a torre e ative pelo menos §e5 Source Jars§7.", "", "§6Sua torre deve irradiar magia!"]
-			icon: "ars_nouveau:source_jar"
-			id: "4D00000000000044"
-			rewards: [
-				{
-					count: 32
-					id: "4D00000000000045"
-					item: "ars_nouveau:sourcestone"
-					type: "item"
-				}
-				{
-					id: "4D00000000000046"
-					item: "ars_nouveau:vitalic_sourcelink"
-					type: "item"
-				}
-				{
-					id: "4D00000000000047"
-					type: "xp"
-					xp: 800
-				}
+			description: [
+				"§7§eAnimalistic §7adiciona criaturas que definitivamente"
+				"§7não pertencem a este bioma. Um Quetzal — pássaro"
+				"§7sul-americano colorido — vagando por uma floresta"
+				"§7de carvalho é uma escolha de design e tanto."
+				""
+				"§eColete um Aqua Talisman."
+				""
+				"§8§o(Ninguém sabe como ele chegou aqui. Ele também não sabe.)"
 			]
-			tasks: [
-				{
-					count: 5L
-					id: "4D00000000000048"
-					item: "ars_nouveau:source_jar"
-					type: "item"
-				}
-			]
-			title: "Torre do Arquimago"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["4D00000000000044"]
-			description: ["§7A magia pode automatizar coisas que a tecnologia não consegue.", "§7Combine Ars Nouveau + Create para criar sistemas híbridos!", "", "§eCrie um feitiço de §eSummon §7para invocar um familiar", "§eque trabalhe automaticamente para você.", "§eConfigure um §eWatcher §7do Ars Nouveau para detectar mobs.", "", "§6Dica: §7Starbuncle coletam itens automaticamente!"]
-			icon: "ars_nouveau:starbuncle_charm"
-			id: "4D0000000000004D"
+			icon: "animalistic_a:quetzal_spawn_egg"
+			id: "398B19298CE0792E"
 			rewards: [
 				{
 					count: 3
-					id: "4D0000000000004E"
-					item: "ars_nouveau:starbuncle_charm"
+					id: "10A5504993F4A0CC"
+					item: "minecraft:name_tag"
 					type: "item"
 				}
 				{
-					id: "4D0000000000004F"
+					id: "46F9CAC58E709149"
 					type: "xp"
-					xp: 600
+					xp: 250
 				}
 			]
-			tasks: [
-				{
-					id: "4D00000000000050"
-					item: "ars_nouveau:starbuncle_charm"
-					type: "item"
-				}
-				{
-					count: 1
-					id: "F9383D34C52A5247"
-					item: "ars_nouveau:wilden_wing"
-					type: "item"
-				}
-			]
-			title: "Automação Arcana"
+			tasks: [{
+				id: "5D61C6492CB4D5CD"
+				item: "animalistic_a:aqua_talisman"
+				type: "item"
+			}]
+			title: "Visitante Inesperado"
 			x: 2.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["4D00000000000032"]
-			description: ["§7§lO Arquimago Supremo §r§7usa magia para tudo:", "§7combate, exploração, automação e defesa.", "", "§eTenha equipado simultaneamente:", "§e- Archmage Spell Book", "§e- Pelo menos 2 Artifacts do mod Artifacts", "§e- Armadura mágica completa do Ars Nouveau", "§e- Pelo menos 1 Relic do mod Relics", "", "§6O verdadeiro Arquimago não precisa de nada mais!"]
-			icon: "ars_nouveau:archmage_spell_book"
-			id: "4D0000000000005B"
+			description: [
+				"§7§eCompanions §7adiciona companheiros personalizáveis"
+				"§7que te seguem, carregam itens e te ajudam em combate."
+				""
+				"§eCrie e nomeie um §eCompanion §7do mod Companions."
+				"§eViaje pelo menos §e500 blocos §7junto com ele."
+				""
+				"§6Dica: §7Companions podem ser equipados com armadura!"
+				"§7Configure o comportamento dele em combate."
+				""
+				"§8§o(Seu único amigo que nunca cancela os planos.)"
+			]
+			icon: "minecraft:name_tag"
+			id: "2357F3239C46113A"
 			rewards: [
 				{
-					count: 16
-					id: "4D0000000000005C"
+					count: 3
+					id: "5C050A4D3FC7254C"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					id: "705F96C8EBFEA327"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "2B7B763B5BAE3C7F"
+				item: "companions:empty_puppet_block"
+				type: "item"
+			}]
+			title: "Inseparáveis"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eCrop Critters §7adiciona criaturas minúsculas"
+				"§7que vivem nas suas plantações — cada uma baseada"
+				"§7em um vegetal diferente, com personalidade própria."
+				""
+				"§eConsiga um §eCarrot Critter §7(criatura-cenoura)"
+				"§ee dê um lar a ele na sua fazenda."
+				""
+				"§8§o(É uma cenoura com pernas. Você vai se acostumar.)"
+			]
+			icon: "cropcritters:carrot_critter_spawn_egg"
+			id: "6667A1D38C1B1876"
+			rewards: [
+				{
+					count: 5
+					id: "1C6278AC256F76CE"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "3B472C9CDBA02812"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				entity: "cropcritters:carrot_critter"
+				id: "4C7B271AC806670C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Jardineiro e seus Amigos"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eAlex's Mobs §7adiciona criaturas reais do mundo todo —"
+				"§7e algumas nem tão reais assim. O §eDrop Bear §7é"
+				"§7uma piada australiana que vira um urso assassino"
+				"§7que cai das árvores. Sim, é real. Pesquise depois."
+				""
+				"§eEncontre um §eDrop Bear §7e tenha muito cuidado"
+				"§ecom o que está em cima de você."
+				""
+				"§8§o(Australianos avisaram. Ninguém acreditou. Agora"
+				"§8§oo bicho existe no seu modpack.)"
+			]
+			icon: "minecraft:golden_apple"
+			id: "4D97FF141BBBB4A2"
+			rewards: [
+				{
+					count: 5
+					id: "2F3ADA8156057661"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "3499C90BB62F7EB0"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				entity: "alexsmobs:dropbear"
+				id: "4D20D0F48B2832E1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Cuidado Acima"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eLuggage §7adiciona uma §emala mágica §7que te segue!"
+				"§7Ela carrega itens automaticamente e nunca deixa você para trás —"
+				"§7ao contrário daquele baú que você esqueceu em algum lugar"
+				"§7há três sessões de jogo e nunca mais encontrou."
+				""
+				"§eCrie uma §eLuggage §7e viaje com ela por pelo menos 1000 blocos."
+				""
+				"§6Dica: §7Luggage pode ser equipada com upgrades de velocidade!"
+			]
+			icon: "luggage:luggage"
+			id: "54D7AF2942169103"
+			rewards: [
+				{
+					count: 3
+					id: "160BA1EA9CCD01D9"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					id: "236BB8EE78313AB7"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [{
+				id: "3D2D40F08DEC0686"
+				item: "luggage:luggage"
+				type: "item"
+			}]
+			title: "A Mala Fiel"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eSubtle Effects §7torna os efeitos de poção mais visuais —"
+				"§7partículas, brilhos e detalhes que tornam a alquimia viva."
+				"§7§eSpawn Animations §7dá animações únicas quando mobs surgem."
+				""
+				"§7Lua de Sangue, poções brilhando no cinto, sem espada"
+				"§7à vista. Um alquimista de verdade não precisa de lâminas."
+				""
+				"§eMonte um §eArsenal Alquímico§7: tenha em mãos ao mesmo tempo"
+				"§euma Poção de Arremesso de Dano, uma de Veneno e uma"
+				"§ede Fraqueza §7— pronto para qualquer Lua de Sangue."
+				""
+				"§8§o(Use-as ou não. A missão só liga pra você ter o kit.)"
+			]
+			icon: "minecraft:lingering_potion"
+			id: "2E24996404693A1E"
+			rewards: [
+				{
+					count: 8
+					id: "5D659C5CF55AC6B7"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
 					count: 5
-					id: "4D0000000000005D"
-					item: "ars_nouveau:sourcestone"
+					id: "2C087F9A70079D99"
+					item: "minecraft:potion"
 					type: "item"
 				}
 				{
-					id: "4D0000000000005E"
+					id: "2AB1A095D8D5C9C0"
 					type: "xp"
-					xp: 2000
+					xp: 400
 				}
 			]
 			tasks: [
 				{
-					id: "4D0000000000005F"
-					item: "ars_nouveau:archmage_spell_book"
+					id: "524AF46DB1FBA486"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:harming"
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "4D00000000000060"
+					id: "524AF46DB1FBA4A1"
 					item: {
 						Count: 1
-						id: "ars_nouveau:battlemage_robes"
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:poison"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "524AF46DB1FBA4A2"
+					item: {
+						Count: 1
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:weakness"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Alquimista de Batalha"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7O campo deste mundo é cheio de vida graças a vários mods:"
+				"§7§eBuzzier Bees §7adiciona novas espécies de abelhas e flores."
+				"§7§eEcologics §7adiciona capivaras, patos e sapos-boi."
+				""
+				"§eAdote um animal de estimação com Deed of Ownership"
+				"§e(Domestication Innovation) e dê um leito (Pet Bed) a ele."
+				""
+				"§8§o(Capivaras não fazem nada de especial. Elas só existem"
+				"§8§opara serem admiradas. É o suficiente.)"
+			]
+			icon: "minecraft:beehive"
+			id: "4564B3502C9D4DA7"
+			rewards: [
+				{
+					count: 6
+					id: "468C19DCC6C35F80"
+					item: "minecraft:honeycomb"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "0BF5C141B676E215"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "32E8167CEB0A199F"
+					item: "minecraft:lead"
+					type: "item"
+				}
+				{
+					id: "329DDD31339C45F0"
+					item: "domesticationinnovation:collar_tag"
+					type: "item"
+				}
+				{
+					id: "1DB1B51AA63BA589"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "395682257B638901"
+				item: "domesticationinnovation:deed_of_ownership"
+				type: "item"
+			}]
+			title: "Vida no Campo"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Em algum lugar do mundo existe um bloco dourado"
+				"§7com um ponto de interrogação."
+				"§7Pode ser um set completo de Netherite."
+				"§7Pode ser um creeper na sua cara."
+				"§7A diferença é que com o creeper você sabe o que esperar."
+				""
+				"§7O mod também esconde uma §eEspada da Sorte§7, um"
+				"§eArco da Sorte §7e uma §ePoção da Sorte §7— ninguém sabe"
+				"§7exatamente o que cada um faz até usar. É essa a graça."
+				""
+				"§eEncontre e quebre §e1 Lucky Block §7no mundo."
+				""
+				"§7Lucky Blocks são §lextremamente raros §r§7por design."
+				"§7Quando encontrar um, respire fundo."
+				"§7Pense nas suas escolhas de vida."
+				"§7Quebre."
+				""
+				"§8§o(Ou não. Também é uma opção válida.)"
+			]
+			icon: "lucky:lucky_block"
+			id: "473CEB784BA320A4"
+			rewards: [
+				{
+					id: "23295051F52C4F4B"
+					item: {
+						Count: 1
+						id: "lucky:lucky_sword"
 						tag: {
 							Damage: 0
 						}
 					}
 					type: "item"
 				}
+				{
+					count: 5
+					id: "536D80D5433B85A5"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "338A35923043D4C6"
+					type: "xp"
+					xp: 300
+				}
 			]
-			title: "§dO Arquimago Supremo"
-			x: 4.0d
-			y: 4.0d
+			tasks: [{
+				id: "49FED2685CF8E94C"
+				item: "lucky:lucky_block"
+				type: "item"
+			}]
+			title: "Sorte ou Azar?"
+			x: 8.0d
+			y: 8.0d
 		}
 		{
-			description: ["§7Magia de verdade não é só apontar e clicar — envolve altares,", "§7rituais e um Enchanter's Eye espiando tudo que você faz.", "", "§eConstrua um Arcane Pedestal, um Ritual Brazier e um Enchanter's Eye."]
-			icon: "ars_nouveau:arcane_pedestal"
-			id: "5F7BF09CC2D06605"
+			description: [
+				"§8§o..."
+				""
+				"§8§oAlgo antigo observa este mundo."
+				"§8§oMais antigo do que qualquer dimensão que você cruzou."
+				"§8§oMais antigo do que qualquer boss que você derrotou."
+				""
+				"§8§oEle não está no JourneyMap."
+				"§8§oNão está em nenhum livro de quests."
+				"§8§oMas se você explorar o suficiente..."
+				""
+				"§8§o...talvez encontre o que não deveria existir aqui."
+			]
+			hide_until_deps_visible: true
+			icon: "minecraft:suspicious_gravel"
+			id: "22841C4864C77BFD"
 			rewards: [
 				{
+					id: "147306AFDED89C72"
+					item: "mysti:sea_serpent_skull"
 					type: "item"
-					item: "ars_nouveau:warp_scroll"
-					count: 2
-					id: "58E498C6A52245CB"
 				}
 				{
+					id: "684DCEB73A8681D4"
+					item: "mysti:nectar"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "04DF05558996847B"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2F1B27BD361B2E0E"
 					type: "xp"
-					xp: 400
-					id: "CF2CF004E6131B14"
+					xp: 2000
 				}
 			]
-			tasks: [
-				{
-					type: "item"
-					item: "ars_nouveau:arcane_pedestal"
-					id: 1312653071469903
-				}
-				{
-					type: "item"
-					item: "ars_nouveau:ritual_brazier"
-					id: "C950F3F0F633EEAD"
-				}
-				{
-					type: "item"
-					item: "ars_nouveau:enchanters_eye"
-					id: "E83213B914C42C7A"
-				}
-			]
-			title: "Ritual e Enfeitiçamento"
+			tasks: [{
+				count: 3L
+				id: "6CE0054C56B6D280"
+				item: "mysti:coin"
+				type: "item"
+			}]
+			title: "§8§o???"
 			x: 10.0d
-			y: 4.0d
+			y: 8.0d
 		}
 	]
-	title: "§dArs Nouveau — Magia Arcana"
+	title: "§6Extras"
 }

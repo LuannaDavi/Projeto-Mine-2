@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "plenty_of_golems:ancient_prismarine_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 177,
+    "separation": 80,
+    "salt": 451693568,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

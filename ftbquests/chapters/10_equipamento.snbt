@@ -1,37 +1,48 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "09_criaturas"
-	group: "AA00000000000004"
-	icon: ["minecraft:diamond_sword", "minecraft:zombie_head", "minecraft:nether_star"]
-	id: "AA09000000000001"
-	order_index: 8
+	filename: "10_equipamento"
+	group: "69F31F625754AE1E"
+	id: "4FEDC1805FD7A4EC"
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7Este mundo não tem mobs genéricos.", "§7§eBorn in Chaos §7trouxe criaturas distorcidas.", "§7§eAlex's Mobs §7adicionou fauna que reage ao ambiente.", "§7§eLegendary Monsters §7faz qualquer mob comum", "§7virar uma ameaça de outra categoria.", "", "§eDerrote §e50 mobs hostis §7de qualquer tipo.", "", "§6Dica: §7§eBetterCombat §7tem combos — use-os.", "§7Spam de clique é o jeito mais lento de matar mobs aqui."]
+			description: [
+				"§7Este modpack tem dezenas de armas e armaduras de mods."
+				"§7§eBetterCombat §7transforma cada arma em estilo único de combate."
+				""
+				"§eConsiga um conjunto completo de armadura de ferro."
+				""
+				""
+				"§6Dica: §7Proteção, Durabildiade e Queda Suave são essenciais!"
+				"§7Use a mesa do Immersive Enchanting para melhores resultados."
+				""
+				"§8§o(Ferro serve. Netherite convence.)"
+			]
 			icon: {
 				Count: 1
-				id: "minecraft:iron_sword"
+				id: "minecraft:iron_chestplate"
 				tag: {
 					Damage: 0
 				}
 			}
-			id: "5E00000000000002"
+			id: "6A00000000000002"
 			rewards: [
 				{
-					id: "5E00000000000003"
+					count: 3
+					id: "6A00000000000003"
 					item: "minecraft:enchanted_book"
 					type: "item"
 				}
 				{
-					count: 3
-					id: "5E00000000000004"
-					item: "minecraft:golden_apple"
+					count: 5
+					id: "6A00000000000004"
+					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "5E00000000000005"
+					id: "6A00000000000005"
 					type: "xp"
 					xp: 200
 				}
@@ -39,1265 +50,1506 @@
 			shape: "gear"
 			tasks: [
 				{
-					entity: "minecraft:zombie"
-					id: "5E00000000000006"
-					type: "kill"
-					value: 15L
+					id: "6A00000000000006"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 				{
-					entity: "minecraft:skeleton"
-					id: "F1AA000000000101"
-					type: "kill"
-					value: 15L
+					id: "6A00000000000007"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 				{
-					entity: "minecraft:spider"
-					id: "F1AA000000000102"
-					type: "kill"
-					value: 10L
+					id: "6A00000000000008"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 				{
-					entity: "minecraft:creeper"
-					id: "F1AA000000000103"
-					type: "kill"
-					value: 10L
+					id: "6A00000000000009"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 			]
-			title: "Batismo de Fogo"
+			title: "Arsenal de Ferro"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["5E00000000000002"]
-			description: ["§7Três crânios de Wither Skeleton.", "§7Quatro blocos de Soul Sand.", "§7Uma explosão de invocação.", "§7E então — silêncio. Depois, um rugido.", "", "§eDerrote o §eWither §7— o boss do Nether.", "", "§6Dica: §7Arco com Power V derruba o Wither antes", "§7que ele chegue na fase de escudo.", "§7Armadura de Netherite é o mínimo aceitável aqui."]
-			icon: "minecraft:nether_star"
-			id: "5E00000000000007"
+			description: [
+				"§7§eSimple Weapons §7e §eFantasy Weapons §7adicionam"
+				"§7dezenas de armas únicas ao jogo."
+				"§7Martelos, lanças, machados duplos, alabardas e mais!"
+				""
+				"§eConsiga pelo menos §e2 armas §7de mods de armas (Simple Weapons,"
+				"§eFantasy Weapons ou equivalente) e use-as em combate."
+				""
+				"§6Dica: §7Cada arma tem alcance e combo únicos com BetterCombat!"
+			]
+			icon: {
+				Count: 1
+				id: "fantasy_weapons:weapon_savage_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A0000000000000A"
 			rewards: [
 				{
-					id: "5E00000000000008"
-					item: "minecraft:nether_star"
+					id: "6A0000000000000B"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_savage_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 5
-					id: "5E00000000000009"
-					item: "minecraft:experience_bottle"
+					count: 3
+					id: "6A0000000000000C"
+					item: "minecraft:enchanted_book"
 					type: "item"
 				}
 				{
-					id: "5E0000000000000A"
+					id: "6A0000000000000D"
 					type: "xp"
-					xp: 800
+					xp: 300
 				}
 			]
-			tasks: [
-				{
-					advancement: "minecraft:nether/summon_wither"
-					criterion: ""
-					id: "5E0000000000000B"
-					type: "advancement"
+			tasks: [{
+				count: 2L
+				id: "6A0000000000000E"
+				item: {
+					Count: 1
+					id: "fantasy_weapons:weapon_savage_hammer"
+					tag: {
+						Damage: 0
+					}
 				}
-			]
-			title: "A Tempestade do Nether"
+				type: "item"
+			}]
+			title: "Arsenal Expandido"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["5E00000000000002"]
-			description: ["§7§eBorn in Chaos §7adiciona bosses únicos ao jogo:", "§7a §eSmith do Caos§7, o §eMutant Zombie §7e outros.", "", "§eDerrote qualquer boss do mod Born in Chaos.", "", "§6Dica: §7Bosses do Born in Chaos têm fases de combate!", "§7Observe os padrões de ataque antes de atacar cegamente."]
-			icon: "born_in_chaos_v1:seedof_chaos"
-			id: "5E0000000000000C"
-			rewards: [
-				{
-					count: 3
-					id: "5E0000000000000D"
-					item: "born_in_chaos_v1:seedof_chaos"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "5E0000000000000E"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E0000000000000F"
-					type: "xp"
-					xp: 700
-				}
+			description: [
+				"§7200 mortes. Não importa como, importa que aconteçam."
+				""
+				"§eDerrote 200 mobs hostis (zumbis, esqueletos e aranhas)."
+				""
+				"§6Dica: §7O jogo não sabe (nem se importa) qual arma você usa —"
+				"§7mas Simple Weapons, Fantasy Weapons, l2archery e TACZ tornam isso"
+				"§7bem mais rápido (e mais divertido) do que soco."
 			]
-			tasks: [
-				{
-					advancement: "born_in_chaos_v1:chaos_knight"
-					criterion: "chaos_knight_0"
-					id: "C6A500AE47345EDA"
-					type: "advancement"
-				}
-			]
-			title: "Filho do Caos"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5E0000000000000C"]
-			description: ["§7§eBossominium §7e §eBosses Rise §7adicionam bosses épicos", "§7com mecânicas complexas e recompensas únicas.", "", "§eDerrote pelo menos 1 boss de §eBossominium §7ou §eBosses Rise§7.", "", "§6Dica: §7Use Boss Checklist para localizar esses bosses!", "§7Tenha poções de cura e velocidade em quantidade."]
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					Parent: {
-						Items: [ ]
-						Size: 0
-					}
-				}
-				id: "bossominium:the_bossdexium"
+				id: "fantasy_weapons:weapon_savage_hammer"
 				tag: {
-					Inventory: {
-						Items: [ ]
-						Size: 0
-					}
+					Damage: 0
 				}
 			}
-			id: "5E00000000000011"
+			id: "6A0000000000000F"
 			rewards: [
 				{
-					count: 8
-					id: "5E00000000000012"
-					item: "minecraft:emerald"
+					id: "6A00000000000010"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_savage_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 10
-					id: "5E00000000000013"
-					item: "minecraft:experience_bottle"
+					count: 3
+					id: "6A00000000000011"
+					item: "minecraft:enchanted_book"
 					type: "item"
 				}
 				{
-					id: "5E00000000000014"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					id: "5E00000000000015"
-					item: "bossominium:the_bossdexium"
-					type: "item"
-				}
-			]
-			title: "Caçador de Bosses"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5E00000000000007"]
-			description: ["§7O §eEnder Dragon §7é o boss final do End.", "§7Este modpack expande o End com §eThe Outer End §7e novos biomas.", "", "§eDerrote o Ender Dragon.", "", "§6Dica: §7Destrua todos os End Crystals primeiro!", "§7Tenha Pearls e Elytra pronto para a batalha."]
-			icon: "minecraft:dragon_egg"
-			id: "5E00000000000016"
-			rewards: [
-				{
-					id: "5E00000000000017"
-					item: "minecraft:dragon_egg"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "5E00000000000018"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E00000000000019"
-					type: "xp"
-					xp: 1500
-				}
-			]
-			tasks: [
-				{
-					advancement: "minecraft:end/kill_dragon"
-					criterion: ""
-					id: "5E0000000000001A"
-					type: "advancement"
-				}
-			]
-			title: "Morte do Dragão"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5E00000000000016"]
-			description: ["§7Ressuscite o Ender Dragon e derrote-o novamente.", "§7Cada ressurreição gera um novo Ovo de Dragão.", "", "§eDerrote o Ender Dragon pela §e2ª vez§7 (ressuscitado).", "", "§6Dica: §7Use 4 End Crystals nos pedestais ao redor do portal!", "§7A batalha ressuscitada é levemente diferente."]
-			icon: "minecraft:end_crystal"
-			id: "5E0000000000001B"
-			rewards: [
-				{
-					count: 4
-					id: "5E0000000000001C"
-					item: "minecraft:end_crystal"
-					type: "item"
-				}
-				{
-					count: 20
-					id: "5E0000000000001D"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E0000000000001E"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "minecraft:end/respawn_dragon"
-					criterion: ""
-					id: "5E0000000000001F"
-					type: "advancement"
-				}
-			]
-			title: "Ressurreição do Dragão"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5E00000000000002"]
-			description: ["§7§eAlex's Mobs §7adiciona mais de 80 criaturas únicas ao jogo.", "§7Cada uma tem comportamentos, drops e interações especiais.", "", "§eDerrote um de cada: Gorila, Crocodilo, Urso Pardo, Cascavel e Serpente Óssea.", "", "§6Dica: §7O Bone Serpent vive em cavernas profundas, já o Urso Pardo prefere biomas frios."]
-			icon: "alexsmobs:spawn_egg_fly"
-			id: "5E00000000000020"
-			rewards: [
-				{
-					count: 5
-					id: "5E00000000000021"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E00000000000022"
-					item: "alexsmobs:shark_tooth"
-					type: "item"
-				}
-				{
-					id: "5E00000000000023"
+					id: "6A00000000000012"
 					type: "xp"
 					xp: 400
 				}
 			]
 			tasks: [
 				{
-					entity: "alexsmobs:gorilla"
-					id: "5E00000000000024"
+					entity: "minecraft:zombie"
+					id: "6A00000000000013"
 					type: "kill"
-					value: 1L
+					value: 80L
 				}
 				{
-					entity: "alexsmobs:crocodile"
-					id: "F1AA000000000111"
+					entity: "minecraft:skeleton"
+					id: "77732E1A75E4AF98"
 					type: "kill"
-					value: 1L
+					value: 60L
 				}
 				{
-					entity: "alexsmobs:grizzly_bear"
-					id: "F1AA000000000112"
+					entity: "minecraft:spider"
+					id: "1C1582CBFBAFD142"
 					type: "kill"
-					value: 1L
-				}
-				{
-					entity: "alexsmobs:rattlesnake"
-					id: "F1AA000000000113"
-					type: "kill"
-					value: 1L
-				}
-				{
-					entity: "alexsmobs:bone_serpent"
-					id: "F1AA000000000114"
-					type: "kill"
-					value: 1L
+					value: 60L
 				}
 			]
-			title: "Caçador de Espécies"
-			x: 12.0d
+			title: "Mestre dos Combos"
+			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["5E00000000000020"]
-			description: ["§7Nas tundras cobertas de neve, existe uma coisa", "§7que não é urso, não é golem e não é wither.", "§7É o §eFrostmaw §7— e ele vai te jogar longe", "§7antes de você sequer ver o que aconteceu.", "", "§eDerrote o §eFrostmaw §7do Mowzie's Mobs.", "", "§6Dica: §7Fogo e poções de Fraqueza são eficazes.", "§7Mantenha distância — o corpo-a-corpo é suicida.", "§7Flechas envenenadas ajudam a drená-lo entre ataques."]
-			icon: {
-				Count: 1
-				id: "mowziesmobs:ice_crystal"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "5E00000000000025"
+			description: [
+				"§7Nem todo Artifact é básico. Alguns exigem mais esforço pra conseguir"
+				"§7— e entregam efeitos bem mais fortes em troca."
+				""
+				"§eConsiga 3 Artifacts avançados: Crystal Heart, Vampiric Glove e Umbrella."
+				""
+				"§6Dica: §7Crystal Heart dá corações extras de verdade — não é só decoração."
+			]
+			icon: "artifacts:cross_necklace"
+			id: "6A00000000000014"
 			rewards: [
 				{
-					id: "5E00000000000026"
-					item: {
-						Count: 1
-						id: "mowziesmobs:ice_crystal"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "6A00000000000015"
+					item: "artifacts:obsidian_skull"
 					type: "item"
 				}
+				{
+					id: "6A00000000000016"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "6A00000000000017"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000018"
+					item: "artifacts:crystal_heart"
+					type: "item"
+				}
+				{
+					id: "7BAE2CFB84CF0B5A"
+					item: "artifacts:vampiric_glove"
+					type: "item"
+				}
+				{
+					id: "451CAC1171039269"
+					item: "artifacts:umbrella"
+					type: "item"
+				}
+			]
+			title: "Curios e Relíquias"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eUniversal Enchants §7permite encantamentos em itens"
+				"§7onde normalmente não são possíveis."
+				"§7Coloque Fortune em picareta de netherite, Unbreaking em armas..."
+				""
+				"§eCrie pelo menos 1 combinação de encantamento incomum"
+				"§eusando Universal Enchants."
+				""
+				"§6Dica: §7Silk Touch em espada = drops especiais de mobs!"
+			]
+			icon: "minecraft:enchanted_book"
+			id: "6A00000000000019"
+			rewards: [
 				{
 					count: 8
-					id: "5E00000000000027"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E00000000000028"
-					type: "xp"
-					xp: 900
-				}
-			]
-			tasks: [
-				{
-					entity: "mowziesmobs:frostmaw"
-					id: "5E00000000000029"
-					type: "kill"
-					value: 1L
-				}
-			]
-			title: "A Fera do Gelo"
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5E00000000000025"]
-			description: ["§7§eBarako §7é o Xamã boss do Mowzie's Mobs.", "§7Ele conjura raios e mobs para se defender.", "", "§eDerrote o §eBarako the Sun Chief§7.", "", "§6Dica: §7Barako vive em savanas quentes!", "§7Ele chama reforços — mate os adeptos primeiro."]
-			icon: "mowziesmobs:sol_visage"
-			id: "5E0000000000002A"
-			rewards: [
-				{
-					id: "5E0000000000002B"
-					item: "mowziesmobs:sol_visage"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "5E0000000000002C"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E0000000000002D"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					entity: "mowziesmobs:umvuthi"
-					id: "5E0000000000002E"
-					type: "kill"
-					value: 1L
-				}
-			]
-			title: "O Chefe do Sol"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["5E00000000000011"]
-			description: ["§7Os Ilusionistas não atacam ao acaso.", "§7Eles planejam, coordenam e visam os mais fracos.", "§7§eIllager Invasion §7torna os ataques em eventos reais —", "§7esquadrões organizados, capitães liderando tropas.", "", "§eDerrote um §eCapitão de Raid §7para provocar", "§7e depois sobreviver ao ataque à aldeia.", "", "§6Dica: §7Ilusionistas cegam — leve §eleite de vaca§7.", "§7§eGuard Villagers §7pode te ajudar se você equipar os aldeões."]
-			icon: "minecraft:ominous_banner"
-			id: "5E0000000000002F"
-			rewards: [
-				{
-					count: 16
-					id: "5E00000000000030"
+					id: "2E01C72198428FA8"
 					item: "minecraft:emerald"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "5E00000000000031"
-					item: "minecraft:experience_bottle"
+					count: 5
+					id: "6A0000000000001A"
+					item: "minecraft:enchanted_book"
 					type: "item"
 				}
 				{
-					id: "5E00000000000032"
+					id: "6A0000000000001B"
 					type: "xp"
-					xp: 600
+					xp: 400
 				}
 			]
-			tasks: [
-				{
-					advancement: "minecraft:adventure/voluntary_exile"
-					criterion: ""
-					id: "5E00000000000033"
-					type: "advancement"
-				}
-			]
-			title: "Defensor da Aldeia"
-			x: 2.0d
-			y: 4.0d
+			tasks: [{
+				id: "6A0000000000001C"
+				item: "minecraft:enchanted_book"
+				type: "item"
+			}]
+			title: "Encantamentos Incomuns"
+			x: 8.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["5E0000000000002A"]
-			description: ["§7§eLegendary Monsters §7transforma mobs comuns em versões épicas", "§7com mais vida, dano e habilidades especiais.", "", "§eDerrote um §eLegendary Monster §7de qualquer tipo.", "§7Você saberá que é Legendary pelo nome dourado acima deles.", "", "§6Dica: §7Legendary Creepers explodem duas vezes!", "§7Legendary Spiders têm veneno mais longo. Cuidado!"]
-			icon: "legendary_monsters:enderitium_ingot"
-			id: "5E00000000000034"
-			rewards: [
-				{
-					count: 2
-					id: "5E00000000000035"
-					item: "legendary_monsters:enderitium_ingot"
-					type: "item"
-				}
-				{
-					id: "5E00000000000036"
-					item: {
-						Count: 1
-						id: "legendary_monsters:soul_great_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5E00000000000037"
-					type: "xp"
-					xp: 800
-				}
+			description: [
+				"§7§eEnchanting Infuser §7permite infundir encantamentos"
+				"§7diretamente em itens com mais controle do que a mesa normal."
+				""
+				"§eCrie o §eEnchanting Infuser §7e use-o para infundir"
+				"§epelo menos 2 encantamentos de alto nível."
+				""
+				"§6Dica: §7O Infuser permite escolher o encantamento exato!"
+				"§7Muito melhor do que depender da sorte da mesa padrão."
 			]
-			tasks: [
-				{
-					id: "5E00000000000038"
-					item: "legendary_monsters:enderitium_ingot"
-					type: "item"
-				}
-			]
-			title: "Lendário Caído"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["5E0000000000002F"]
-			description: ["§7O §eGoblin Tyrant §7é o chefe dos Goblins Tiranos.", "§7Ele lidera hordas de goblins que atacam a noite.", "", "§eDerrote o §eGoblin Tyrant §7do mod Goblin's Tyranny.", "", "§6Dica: §7Goblins Tiranos vêm em hordas grandes!", "§7Construa uma torre de defesa antes de enfrentá-los."]
-			icon: "goblins_tyranny:glitteron_armor"
-			id: "5E00000000000039"
+			icon: "enchantinginfuser:enchanting_infuser"
+			id: "6A0000000000001D"
 			rewards: [
 				{
 					count: 3
-					id: "5E0000000000003A"
-					item: "minecraft:gold_ingot"
+					id: "6A0000000000001E"
+					item: "minecraft:enchanted_book"
 					type: "item"
 				}
 				{
-					count: 10
-					id: "5E0000000000003B"
-					item: "minecraft:experience_bottle"
+					count: 64
+					id: "6A0000000000001F"
+					item: "minecraft:lapis_lazuli"
 					type: "item"
 				}
 				{
-					id: "5E0000000000003C"
-					type: "xp"
-					xp: 900
-				}
-			]
-			tasks: [
-				{
-					id: "5E0000000000003D"
-					item: "goblins_tyranny:glitteron_armor"
-					type: "item"
-				}
-			]
-			title: "Rei dos Goblins"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["5E00000000000016"]
-			description: ["§7§eIDAS §7(Idas' Dungeon Adventuring System) adiciona", "§7masmorras geradas proceduralmente com bosses únicos.", "§7Algumas guardam discos de música raros como tesouro.", "", "§eExplore uma dungeon do IDAS e encontre o", "§eMusic Disc Slither §7escondido nela.", "", "§6Dica: §7Masmorras IDAS escalam com seu equipamento!", "§7Leve comida extra, tochas e itens de cura."]
-			icon: "minecraft:tripwire_hook"
-			id: "5E0000000000003E"
-			rewards: [
-				{
-					count: 5
-					id: "5E0000000000003F"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					count: 12
-					id: "5E00000000000040"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E00000000000041"
-					type: "xp"
-					xp: 1200
-				}
-			]
-			tasks: [
-				{
-					id: "5E00000000000042"
-					item: "idas:music_disc_slither"
-					type: "item"
-				}
-			]
-			title: "Mestre de Masmorras"
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["5E0000000000003E"]
-			description: ["§7§eRelics §7adiciona relíquias que concedem habilidades", "§7passivas únicas — algumas sutis, outras absurdas.", "", "§7§eBastion Ring §7— escudo ativo on-demand.", "§7§eSpace Dissector §7— projéteis que fragmentam ao atingir.", "§7§eShadow Glaive §7— ricocheteante e letal.", "§7§eEnders Hand §7— teleporte instantâneo.", "", "§eCollecte a §eResearching Table §7e pesquise", "§epelo menos §e2 relíquias §7de combate diferentes.", "", "§6Dica: §7Relíquias são obtidas em baús de dungeon", "§7e derrotando bosses — explora mais, encontra mais."]
-			icon: "relics:shadow_glaive"
-			id: "5E00000000000301"
-			rewards: [
-				{
-					id: "5E00000000000302"
-					item: "relics:bastion_ring"
-					type: "item"
-				}
-				{
-					id: "5E00000000000303"
+					id: "6A00000000000020"
 					type: "xp"
 					xp: 500
 				}
 			]
-			tasks: [
-				{
-					id: "5E00000000000304"
-					item: "relics:researching_table"
-					type: "item"
-				}
-				{
-					id: "5E00000000000305"
-					item: "relics:shadow_glaive"
-					type: "item"
-				}
-			]
-			title: "Relíquias do Combate"
+			tasks: [{
+				id: "6A00000000000021"
+				item: "enchantinginfuser:enchanting_infuser"
+				type: "item"
+			}]
+			title: "Infusão de Poder"
 			x: 10.0d
-			y: 4.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["5E0000000000003E"]
-			description: ["§7§eFarmer's Delight Bosses §7adiciona bosses que guardam", "§7receitas e itens culinários especiais.", "", "§eDerrote um boss do §eFDB §7(Farmer's Delight Bosses).", "", "§6Dica: §7Eles ficam próximos a aldeias agrícolas!", "§7Drops únicos são usados em receitas especiais do FD."]
-			icon: "fdbosses:malkuth_trophy"
-			id: "5E00000000000043"
-			rewards: [
-				{
-					count: 4
-					id: "5E00000000000044"
-					item: "minecraft:golden_carrot"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "5E00000000000045"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E00000000000046"
-					type: "xp"
-					xp: 700
-				}
+			description: [
+				"§7Bloquear é instinto. §lAparar §r§7é arte."
+				"§7§eJust Parry §7adiciona uma janela de parry perfeito —"
+				"§7se você acertar o timing exato, o ataque é completamente"
+				"§7negado e o inimigo fica atordoado por um segundo."
+				""
+				"§eEquipe o item do Just Parry e pratique o §eparry perfeito."
+				"§eEncante seu escudo com pelo menos §e1 encantamento§7."
+				""
+				"§6Dica: §7Pratique em zumbis lentos antes de usar"
+				"§7em bosses. O timing é apertado mas vale a pena."
 			]
-			tasks: [
-				{
-					id: "5E00000000000047"
-					item: "fdbosses:malkuth_trophy"
-					type: "item"
-				}
-			]
-			title: "O Cozinheiro dos Bosses"
-			x: 12.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["5E0000000000003E"]
-			description: ["§7§eKnight Quest §7adiciona cavaleiros boss que guardam", "§7armaduras e armas únicas de sua cavalaria.", "", "§eDerrote um §eKnight Boss §7do Knight Quest.", "§eConsiga pelo menos 1 item de armadura de cavaleiro.", "", "§6Dica: §7Knights têm escudos poderosos — use armas pesadas!", "§7Hammer ou Battleaxe passam pela guarda.", "", "§8§o(Ele treinou a vida toda pra isso. Você passou 10 minutos.)"]
 			icon: {
 				Count: 1
-				id: "knightquest:steel_sword"
+				id: "minecraft:shield"
 				tag: {
 					Damage: 0
 				}
 			}
-			id: "5E00000000000048"
+			id: "6A00000000000022"
 			rewards: [
 				{
-					id: "5E00000000000049"
+					id: "6A00000000000023"
 					item: {
 						Count: 1
-						id: "knightquest:steel_sword"
+						id: "minecraft:shield"
 						tag: {
 							Damage: 0
 						}
 					}
 					type: "item"
 				}
-				{
-					count: 10
-					id: "5E0000000000004A"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E0000000000004B"
-					type: "xp"
-					xp: 900
-				}
-			]
-			tasks: [
-				{
-					id: "5E0000000000004C"
-					item: {
-						Count: 1
-						id: "knightquest:warlord_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Quebra-Cavaleiros"
-			x: 14.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["5E0000000000001B"]
-			description: ["§7§eThe Outer End §7expande o End com novos biomas e criaturas.", "§7Novas ilhas flutuantes escondem estruturas e recursos únicos.", "", "§eColete os 3 cristais das ilhas: Rose, Mint e Cobalt Crystal —", "§ecada um vem de um bioma diferente do mod.", "", "§6Dica: §7Leve muita comida e Ender Pearls pra cruzar as ilhas!", "§7Cada cristal também vira uma armadura própria, se você", "§7quiser continuar explorando depois dessa missão."]
-			icon: "outer_end:rose_crystal"
-			id: "5E0000000000004D"
-			rewards: [
-				{
-					count: 8
-					id: "5E0000000000004E"
-					item: "minecraft:shulker_shell"
-					type: "item"
-				}
-				{
-					count: 12
-					id: "5E0000000000004F"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E00000000000050"
-					type: "xp"
-					xp: 1200
-				}
-			]
-			tasks: [
-				{
-					id: "5E00000000000051"
-					item: "outer_end:rose_crystal"
-					type: "item"
-				}
-				{
-					id: "FX000000000006A"
-					item: "outer_end:mint_crystal"
-					type: "item"
-				}
-				{
-					id: "FX000000000006B"
-					item: "outer_end:cobalt_crystal"
-					type: "item"
-				}
-			]
-			title: "Além do Fim"
-			x: 0.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["5E00000000000048"]
-			description: ["§7§eRealmRPG Skeletons §7não são mobs — são estátuas decorativas", "§7de esqueletos em poses variadas, ótimas pra decorar suas construções", "§7ou dar um clima mais sombrio à sua base.", "", "§eColete 3 esqueletos decorativos diferentes: Comum, Cristal e Queimado."]
-			icon: "realmrpg_skeletons:crystal_skeleton"
-			id: "5E00000000000052"
-			rewards: [
 				{
 					count: 5
-					id: "5E00000000000053"
-					item: "minecraft:bone"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "5E00000000000054"
+					id: "6A00000000000024"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "5E00000000000055"
+					id: "6A00000000000025"
 					type: "xp"
-					xp: 600
+					xp: 300
 				}
 			]
-			tasks: [
-				{
-					id: "5E00000000000056"
-					item: "realmrpg_skeletons:common_skeleton"
-					type: "item"
-				}
-				{
-					id: "F1AA000000000121"
-					item: "realmrpg_skeletons:crystal_skeleton"
-					type: "item"
-				}
-				{
-					id: "F1AA000000000122"
-					item: "realmrpg_skeletons:burnt_skeleton"
-					type: "item"
-				}
-			]
-			title: "Caçador de Mortos"
-			x: 2.0d
-			y: 8.0d
+			tasks: [{
+				id: "6A00000000000026"
+				item: "just_parry:justparryiteminhand"
+				type: "item"
+			}]
+			title: "Arte da Defesa"
+			x: 12.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["5E00000000000052"]
-			description: ["§7Você provou seu valor em combate contra criaturas de mods.", "§7Agora prove que você é o §l§cCaçador Supremo§r§7.", "", "§eDerrote pelo menos §e1 boss de cada um§7 desses mods:", "§e- Born in Chaos", "§e- Mowzie's Mobs", "§e- Bossominium / Bosses Rise", "§e- Knight Quest", "", "§6A elite de caçadores não teme nenhum boss!", "", "§7§eDica de sobrevivência: §7com §ePlayerRevive §7e §eHardcore Revival§7,", "§7uma morte em grupo não precisa ser o fim — leve sempre um", "§eDesfibrilador §7na mochila para reanimar aliados em combate!"]
-			icon: "born_in_chaos_v1:seedof_chaos"
-			id: "5E00000000000057"
+			description: [
+				"§7§el2archery §7transforma o arco em uma arma complexa e poderosa."
+				"§7Cargas de flecha, tipos especiais e habilidades de arqueiro."
+				""
+				"§eCrie um arco de alto nível do §el2archery§7."
+				"§eDerrote 20 mobs usando §eapenas o arco§7."
+				""
+				"§6Dica: §7Flechas de fogo + Enchant de Flame = devastador!"
+				"§7l2archery tem flechas especiais com efeitos únicos."
+				""
+				"§8§o(E sim, você vai perder a maioria delas dentro de blocos.)"
+			]
+			icon: {
+				Count: 1
+				id: "l2archery:flame_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A00000000000027"
 			rewards: [
 				{
-					count: 20
-					id: "5E00000000000058"
-					item: "minecraft:experience_bottle"
+					count: 64
+					id: "6A00000000000029"
+					item: "minecraft:arrow"
 					type: "item"
 				}
 				{
-					id: "5E00000000000059"
-					item: "irons_spellbooks:diamond_spell_book"
-					type: "item"
-				}
-				{
-					id: "5E0000000000005A"
+					id: "6A0000000000002A"
 					type: "xp"
-					xp: 3000
+					xp: 400
 				}
 			]
-			tasks: [
-				{
-					advancement: "born_in_chaos_v1:chaos_knight"
-					criterion: "chaos_knight_0"
-					id: "D4953EA147E67507"
-					type: "advancement"
-				}
-				{
-					advancement: "mowziesmobs:kill_umvuthi"
-					criterion: "barako"
-					id: "E0FCCF2F4C044D90"
-					type: "advancement"
-				}
-				{
-					id: "5E0000000000005D"
-					item: {
-						Count: 1
-						id: "knightquest:warlord_helmet"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "6A0000000000002B"
+				item: {
+					Count: 1
+					id: "l2archery:flame_bow"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-			]
-			title: "§c§lO Caçador Supremo"
-			x: 4.0d
-			y: 8.0d
+				type: "item"
+			}]
+			title: "O Arqueiro"
+			x: 14.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["5E0000000000000C"]
-			description: ["§7§eBosses Rise §7é outro mod de bosses independente do Bossominium —", "§7adiciona criaturas titânicas próprias com mecânicas de fases", "§7e arenas exclusivas geradas pelo mundo.", "", "§eEncontre e derrote um boss do mod §eBosses Rise§7.", "", "§6Dica: §7Bosses Rise costuma avisar com efeitos visuais", "§7e sons antes de invocar ataques em área — fique atento!"]
-			icon: "minecraft:totem_of_undying"
-			id: "5E0000000000005E"
+			description: [
+				"§7§eTACZ §7traz armamento moderno para um mundo de espadas."
+				"§7Animações fluidas, sistemas de mira e munição limitada"
+				"§7— cada bala conta."
+				""
+				"§eConstrua uma Gun Smith Table e forje um AK47 nela."
+				""
+				"§6Dica: §7NPCs do TACZ vendem munição — negocie antes de"
+				"§7gastar tudo numa mira só."
+				""
+				"§8§o(De espada pra AK-47 em uma unica atualizacao de modpack.)"
+			]
+			icon: "tacz:gun_smith_table"
+			id: "6A0000000000002C"
 			rewards: [
 				{
-					id: "5E0000000000005F"
-					item: "minecraft:totem_of_undying"
+					count: 64
+					id: "6A0000000000002D"
+					item: "minecraft:gunpowder"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "5E00000000000060"
+					count: 5
+					id: "6A0000000000002E"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "5E00000000000061"
-					type: "xp"
-					xp: 900
-				}
-			]
-			tasks: [
-				{
-					id: "5E00000000000062"
-					item: "block_factorys_bosses:dragon_shank"
-					type: "item"
-				}
-			]
-			title: "A Ascensão"
-			x: 6.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7§eLegendary Monsters §7adiciona criaturas colossais totalmente novas,", "§7escondidas em estruturas próprias espalhadas pelo mundo —", "§7não são variantes de mobs comuns, são bichos de verdade.", "", "§eEncontre a Ancient Stronghold e derrote o Ambusher.", "", "§6Dica: §7Cada chefe do mod tem sua própria estrutura de origem.", "§7Procure por biomas de pedregulho e cavernas profundas."]
-			icon: "legendary_monsters:chiseled_ancient_dripstone_shard"
-			id: "LM0000000001"
-			rewards: [
-				{
-					id: "F4975CC859F3C060"
-					item: "legendary_monsters:chiseled_ancient_dripstone_shard"
-					type: "item"
-				}
-				{
-					id: "F81DB37B99B09D19"
+					id: "6A0000000000002F"
 					type: "xp"
 					xp: 400
 				}
 			]
 			tasks: [
 				{
-					advancement: "legendary_monsters:defeat_ambusher"
-					criterion: "ambusher"
-					id: "1982818B92E7EC77"
-					type: "advancement"
-				}
-			]
-			title: "Encontrando o Lendário"
-			x: 12.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["LM0000000001"]
-			description: ["§7O §eFrostbitten Golem §7guarda o Templo Congelado — um colosso", "§7de gelo que ataca em área e ignora resistência ao frio comum.", "", "§eEncontre o Templo Congelado e derrote o Frostbitten Golem.", "", "§6Dica: §7Armas de fogo (Fire Aspect) são muito mais eficientes", "§7contra ele do que armas normais."]
-			icon: "legendary_monsters:the_great_frost"
-			id: "LM0000000002"
-			rewards: [
-				{
-					id: "3DDD55F6465708F6"
-					item: "legendary_monsters:the_great_frost"
+					id: "6A00000000000030"
+					item: "tacz:gun_smith_table"
 					type: "item"
 				}
 				{
-					id: "B7414335FA7A7ECF"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "legendary_monsters:defeat_frostbitten_golem"
-					criterion: "frostbitten_golem"
-					id: "DE36F3024BAC7948"
-					type: "advancement"
-				}
-			]
-			title: "O Golem Glacial"
-			x: 16.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["LM0000000002"]
-			description: ["§7O §eAncient Guardian §7é um Guardião do Oceano evoluído: §7tamanho", "§7triplo, raio laser que atravessa armadura, e Fadiga de Mineração III", "§7permanente em área. Solta a Monstrous Anchor ao morrer — uma arma", "§7que causa dano em área ao atingir o chão.", "", "§eEncontre a Ancient Stronghold e derrote o Ancient Guardian.", "", "§6Dica: §7Poções de Respiração Aquática são essenciais.", "§7Respiration III no capacete e Depth Strider nas botas."]
-			icon: "legendary_monsters:monstrous_anchor"
-			id: "LM0000000003"
-			rewards: [
-				{
-					id: "F0D49C0BD832507D"
-					item: "legendary_monsters:monstrous_anchor"
+					id: "6EC43B8752E620D5"
+					item: "tacz:ak47"
 					type: "item"
 				}
-				{
-					id: "E494BD1CED2B9F70"
-					type: "xp"
-					xp: 1200
-				}
 			]
-			tasks: [
-				{
-					advancement: "legendary_monsters:defeat_the_ancient_guardian"
-					criterion: "guardian"
-					id: "76DD3807637D84C1"
-					type: "advancement"
-				}
-			]
-			title: "O Guardião Antigo"
-			x: 18.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["LM0000000003"]
-			description: ["§7O §eSkeletosaurus §7Lendário é um esqueleto-dinossauro colossal", "§7que usa o §eDinosaur Bone Club §7para causar dano em área.", "§7Drop: §eDino Shield §7— um escudo com HP bônus passivo.", "", "§eDerrote o §eLegendary Skeletosaurus§7.", "", "§6Dica: §7Mantenha distância — o clube tem alcance inesperado.", "§7Arcos com §ePower §7são mais eficientes que espadas corpo a corpo."]
-			icon: "legendary_monsters:dino_shield"
-			id: "LM0000000004"
-			rewards: [
-				{
-					id: "LM000000004B"
-					item: "legendary_monsters:dino_shield"
-					type: "item"
-				}
-				{
-					id: "LM000000004C"
-					item: "legendary_monsters:dinosaur_bone_club"
-					type: "item"
-				}
-				{
-					id: "LM000000004D"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "legendary_monsters:defeat_skeletosaurus"
-					criterion: "skeletosaurus"
-					id: "EA57982F12F326C3"
-					type: "advancement"
-				}
-			]
-			title: "O Dragão de Osso"
-			x: 12.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["LM0000000004"]
-			description: ["§7O §eCloud Golem §7vive no Templo das Nuvens e invoca relâmpagos", "§7constantemente. Solta a Axe of Lightning — cada golpe da machado", "§7invoca um relâmpago na posição do alvo.", "", "§eEncontre o Templo das Nuvens e derrote o Cloud Golem.", "", "§6Dica: §7Poções de Resistência ajudam com o dano de relâmpago.", "§7A Axe of Lightning é uma das armas mais divertidas do modpack.", "§8§o(Relâmpago a cada golpe. O equilíbrio saiu de férias.)"]
-			icon: "legendary_monsters:axe_of_lightning"
-			id: "LM0000000005"
-			rewards: [
-				{
-					id: "00BDD9C6D7DCDA99"
-					item: "legendary_monsters:axe_of_lightning"
-					type: "item"
-				}
-				{
-					id: "CDEA3F4BAC92B91F"
-					type: "xp"
-					xp: 1200
-				}
-			]
-			tasks: [
-				{
-					advancement: "legendary_monsters:defeat_cloud_golem"
-					criterion: "cloud_golem"
-					id: "980D760EC60685C7"
-					type: "advancement"
-				}
-			]
-			title: "O Relâmpago"
-			x: 16.0d
+			title: "Pólvora e Chumbo"
+			x: 0.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["LM0000000005"]
-			description: ["§7O §eWithered Abomination §7ronda as Ruínas da Fortaleza da Alma —", "§7um horror necrótico que solta a Withered Scythe, foice amaldiçoada", "§7com efeitos de vida roubada.", "", "§eEncontre as Ruínas da Soul Fortress e derrote o Withered Abomination.", "", "§6Dica: §7Leve Milk Buckets — os efeitos de status dele acumulam rápido.", "§8§o(Uma foice roubada de um horror do Nether. Ninguém questionou isso.)"]
-			icon: "legendary_monsters:withered_scythe"
-			id: "LM0000000006"
+			description: [
+				"§7§ePointBlank §7é outro mod de armas de fogo com foco"
+				"§7em rifles de precisão e snipers."
+				""
+				"§eCrie ou encontre uma arma do §ePointBlank§7."
+				"§eDerrote um mob à §edistância de 50+ blocos§7."
+				""
+				"§6Dica: §7Escopo + rifle + mob parado = shot perfeito!"
+				"§7PointBlank tem customização de armas detalhada."
+			]
+			icon: "pointblank:l96a1"
+			id: "6A00000000000031"
 			rewards: [
 				{
-					id: "F13816801EDE01F6"
-					item: "legendary_monsters:withered_scythe"
+					count: 64
+					id: "6A00000000000032"
+					item: "pointblank:ammo338lapua"
 					type: "item"
 				}
 				{
-					id: "AA68DDB971BE76BA"
-					type: "xp"
-					xp: 1200
-				}
-			]
-			tasks: [
-				{
-					advancement: "legendary_monsters:defeat_withered_abomination"
-					criterion: "abomination"
-					id: "22A33F4AB7D69764"
-					type: "advancement"
-				}
-			]
-			title: "A Foice Amaldiçoada"
-			x: 18.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7§eDragN's Livestock Overhaul §7substitui (quase) todo animal do", "§7jogo por uma versão \"O-\" com mais variedade genética — porque", "§7cinco cores de vaca simplesmente não eram suficientes.", "", "§eColete Raw Cheese (de vacas O-) e Raw Sheep Cheese (de ovelhas O-).", "", "§6Dica: §7Esses bichos já substituem os vanilla no mundo — você", "§7provavelmente já esbarrou com um sem perceber."]
-			icon: "dragnlivestock:o_cow_spawn_egg"
-			id: "A3C6439EDC106B45"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:hay_block"
 					count: 8
-					id: "8FC9D640075FCC2E"
+					id: "6A00000000000033"
+					item: "minecraft:experience_bottle"
+					type: "item"
 				}
 				{
+					id: "6A00000000000034"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "6A00000000000035"
+				item: "pointblank:l96a1"
+				type: "item"
+			}]
+			title: "Sniper do Mundo"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eMob Lassos §7permite capturar mobs vivos — guarde criaturas raras"
+				"§7pra criação ou pra assistir de longe enquanto elas sofrem, sua escolha."
+				""
+				"§eCrie um Diamond Lasso e um Hostile Lasso."
+				""
+				"§6Dica: §7Lassos não funcionam em bosses! Capture mobs únicos de mods"
+				"§7pra usar como pet ou pra criação."
+			]
+			icon: "moblassos:diamond_lasso"
+			id: "6A00000000000036"
+			rewards: [
+				{
+					count: 4
+					id: "60E1C72A8D44BEB4"
+					item: "minecraft:lead"
+					type: "item"
+				}
+				{
+					id: "69C5770EB36EFB34"
 					type: "xp"
 					xp: 150
-					id: "FB086DFEDE1589CA"
 				}
 			]
 			tasks: [
 				{
+					id: "6A00000000000039"
+					item: "moblassos:diamond_lasso"
 					type: "item"
-					item: "dragnlivestock:raw_cheese"
-					id: "DFB81DF82A180422"
 				}
 				{
+					id: "74C0413BDDFB84D9"
+					item: "moblassos:hostile_lasso"
 					type: "item"
-					item: "dragnlivestock:raw_sheep_cheese"
-					id: "5F969F1A6E7C618C"
 				}
 			]
-			title: "Gado Turbinado"
-			x: 16.0d
-			y: 2.0d
+			title: "Caçador de Criaturas"
+			x: 4.0d
+			y: 4.0d
 		}
 		{
-			description: ["§7§eIllager Invasion §7adiciona novos tipos de illager: Alquimistas,", "§7Necromantes, Invocadores... a vila nunca mais foi segura.", "", "§eCrie uma Imbuing Table e derrote um illager: Alchemist, Marauder ou Necromancer."]
-			icon: "illagerinvasion:imbuing_table"
-			id: "DF505189CF6077C9"
+			description: [
+				"§7§eGliders §7adiciona planadores construíveis."
+				"§7Mais leves que aeronaves e não precisam de combustível!"
+				""
+				"§eCrie um §eGlider §7e voe pelo menos 300 blocos com ele."
+				""
+				"§6Dica: §7Gliders aproveitam correntes de ar quente!"
+				"§7Lançar de montanhas aumenta muito a distância de voo."
+			]
+			icon: {
+				Count: 1
+				id: "vc_gliders:paraglider_diamond"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A0000000000003A"
 			rewards: [
 				{
+					id: "6A0000000000003B"
+					item: {
+						Count: 1
+						id: "vc_gliders:paraglider_diamond"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "illagerinvasion:hallowed_gem"
-					count: 2
-					id: "80C00B0E695A97FB"
 				}
 				{
+					count: 5
+					id: "6A0000000000003C"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A0000000000003D"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [{
+				id: "6A0000000000003E"
+				item: {
+					Count: 1
+					id: "vc_gliders:paraglider_diamond"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Asas de Pano"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eSophisticated Backpacks §7é o mod de mochila mais avançado."
+				"§7Com upgrades de sorting, auto-replanting, filtering e mais!"
+				""
+				"§eCrie uma §eSophisticated Backpack §7de ferro."
+				"§eInstale pelo menos §e2 upgrades §7nela."
+				""
+				"§6Dica: §7Pick-Up Upgrade coleta itens do chão automaticamente!"
+				"§7Item Filter Upgrade filtra o que entra e sai."
+				""
+				"§8§o(Sua mochila agora carrega mais que voce.)"
+			]
+			icon: "sophisticatedbackpacks:iron_backpack"
+			id: "6A00000000000043"
+			rewards: [
+				{
+					id: "6A00000000000044"
+					item: "sophisticatedbackpacks:gold_backpack"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6A00000000000045"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+				{
+					id: "6A00000000000046"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				id: "6A00000000000047"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			title: "Mochila Suprema"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eCarry On §7permite carregar blocos e entidades com as mãos!"
+				"§7Perfeito para mover caixas, animais e até entidades especiais."
+				""
+				"§eTenha §e3 baús §7em mãos, prontos para mudar de base"
+				"§ecarregando-os com o Carry On."
+				""
+				"§6Dica: §7Carry On não funciona em baús com Sophisticated Backpacks!"
+				"§7Use para mover seu setup de base de lugar."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecolonies:textures/gui/chest.png"
+				}
+			}
+			id: "6A00000000000048"
+			rewards: [
+				{
+					count: 2
+					id: "5EF6C17A841CFBCD"
+					item: "minecraft:ender_chest"
+					type: "item"
+				}
+				{
+					id: "566F4BFAB8B83B47"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "6A0000000000004B"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			title: "Carregador de Mundos"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eImprovable Skills §7cresce com o uso."
+				"§7Quanto mais você usa um estilo de jogo,"
+				"§7mais habilidades ele desbloqueia."
+				"§7No fim, você não joga mais como qualquer aventureiro —"
+				"§7você joga como §lseu §r§7personagem."
+				""
+				"§eAtinja §eNível 20 §7em qualquer habilidade."
+				"§eUse §e5 pontos §7na mesma árvore de especialização."
+				""
+				"§6Dica: §7Mago? Foque em Magia. Atirador? Archery."
+				"§7Especializar é sempre melhor do que diversificar aqui."
+			]
+			icon: {
+				Count: 1
+				id: "improvableskills:scroll_normal"
+				tag: {
+					Skill: "improvableskills:health"
+				}
+			}
+			id: "6A0000000000004C"
+			rewards: [
+				{
+					count: 10
+					id: "6A0000000000004D"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A0000000000004E"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				id: "6A0000000000004F"
+				item: {
+					Count: 1
+					id: "improvableskills:scroll_normal"
+					tag: {
+						Skill: "improvableskills:health"
+					}
+				}
+				type: "item"
+			}]
+			title: "Especialização Máxima"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eRPG Damage Overhaul §7transforma o sistema de dano do jogo."
+				"§7Crits, mitigação, penetração de armadura e mais —"
+				"§7tudo acontece nos bastidores, sem item próprio."
+				""
+				"§eForje uma espada com §eAfiação V §7(Sharpness 5)"
+				"§ee sinta a diferença no próximo combate."
+				""
+				"§6Dica: §7Machados ignoram parte da armadura do inimigo."
+				"§7Combine encantamentos para maximizar o dano por golpe."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "celestisynth:textures/abilityicon/skill/keres_skill_icon_1.png"
+				}
+			}
+			id: "6A00000000000050"
+			rewards: [
+				{
+					count: 3
+					id: "6A00000000000051"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "6A00000000000052"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6A00000000000053"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [{
+				id: "6A00000000000054"
+				item: {
+					Count: 1
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:sharpness"
+							lvl: 5
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "Um Golpe Decisivo"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7O guerreiro lendário possui o arsenal perfeito:"
+				"§7armadura máxima, arma dominante e skills desenvolvidas."
+				""
+				"§eTenha simultaneamente equipado:"
+				"§e- Armadura de Netherite completa encantada"
+				"§e- Arma de mod encantada com pelo menos 4 encantamentos"
+				"§e- Pelo menos 3 Artifacts nos slots Curios"
+				"§e- Mochila Sophisticated de diamante ou acima"
+				""
+				"§6Você é agora um §lGuerreiro Lendário§r§6!"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A00000000000055"
+			rewards: [
+				{
+					count: 20
+					id: "6A00000000000056"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6A00000000000057"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "6A00000000000058"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [
+				{
+					id: "6A00000000000059"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A0000000000005A"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A0000000000005B"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A0000000000005C"
+					item: {
+						Count: 1
+						id: "minecraft:netherite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§6§lGuerreiro Lendário"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eFantasy Weapons §7adiciona um arsenal enorme de armas"
+				"§7temáticas — rapieiras, lanças, espadões e mais,"
+				"§7cada uma com seu próprio visual e estilo de combate."
+				""
+				"§eForje uma §eRapieira (Generic Rapier) §7e um"
+				"§eMachado Selvagem (Savage Hammer) §7do Fantasy Weapons."
+				""
+				"§6Dica: §7Rapieiras são rápidas mas fracas — ideais contra"
+				"§7grupos de inimigos fracos. Martelos atordoam em área!"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A00000000000070"
+			rewards: [
+				{
+					count: 2
+					id: "6A00000000000071"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6A00000000000075"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "6A00000000000072"
 					type: "xp"
 					xp: 300
-					id: "333DB700394A428A"
 				}
 			]
 			tasks: [
 				{
+					id: "6A00000000000073"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_generic_rapier"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "illagerinvasion:imbuing_table"
-					id: "E43067EBA2D6A71A"
 				}
 				{
-					type: "kill"
-					entity: "illagerinvasion:necromancer"
-					value: 1
-					id: "14C8275C0CF112A4"
+					id: "6A00000000000077"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_savage_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
 				}
 			]
-			title: "A Segunda Invasão"
-			x: 14.0d
-			y: 2.0d
+			title: "Arsenal e Ferramentas Alternativas"
+			x: 4.0d
+			y: 8.0d
 		}
 		{
-			description: ["§7§eUseful Ribbits §7ensina os sapinhos do Ribbits a trabalhar de", "§7verdade — e ainda dá pra montar móveis temáticos pra eles.", "", "§eConstrua um Ribbit Chest e uma Ribbit Bed."]
-			icon: "useful_ribbits:farmer_ribbit_spawn_egg"
-			id: "95DF17FC35133443"
+			description: [
+				"§7§eFantasiacraft §7traz espadonas e martelos absurdamente grandes"
+				"§7pra quem acha que um Netherite Sword comum é modéstia demais."
+				""
+				"§eForje uma arma de Fantasiacraft: Master Sword ou Adventurer's Warhammer."
+			]
+			icon: {
+				Count: 1
+				id: "fc:master_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "51788C5C08849EF8"
 			rewards: [
 				{
+					count: 4
+					id: "5B12C47752839E97"
+					item: "minecraft:diamond"
 					type: "item"
-					item: "useful_ribbits:ribbit_chest"
-					id: "BE3D29D3A4C8F1C0"
 				}
 				{
+					id: "56301624B49B5342"
 					type: "xp"
-					xp: 100
-					id: "D0722BBF110073C8"
+					xp: 350
 				}
 			]
-			tasks: [
-				{
-					type: "item"
-					item: "useful_ribbits:ribbit_chest"
-					id: "FB30264AC8D9BE72"
+			tasks: [{
+				id: "7A24F2B0B5F864F8"
+				item: {
+					Count: 1
+					id: "fc:master_sword"
+					tag: {
+						Damage: 0
+					}
 				}
-				{
-					type: "item"
-					item: "useful_ribbits:ribbit_bed"
-					id: "A169CBF9855A01AA"
-				}
-			]
-			title: "Sapos Contratados"
-			x: 26.0d
-			y: 4.0d
-		}
-		{
-			description: ["§7Goblins organizados são pior que goblins soltos.", "§7§eGoblin's Tyranny §7traz tribos inteiras com totens e martelos.", "", "§eColete um Totem Block e forje um Goblin Hammer."]
-			icon: "goblins_tyranny:totem_block"
-			id: "F7160279AB45D96F"
-			rewards: [
-				{
-					type: "item"
-					item: "goblins_tyranny:bear_hide"
-					count: 2
-					id: "1DAB82B9F90D0D3D"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "6107BD9786DC8EF7"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "goblins_tyranny:totem_block"
-					id: "9A2907DFD6AB6917"
-				}
-				{
-					type: "item"
-					item: "goblins_tyranny:goblin_mace"
-					id: "26138D7D7B45ECE5"
-				}
-			]
-			title: "Bando Goblin"
-			x: 20.0d
+				type: "item"
+			}]
+			title: "Arsenal Fantástico"
+			x: 12.0d
 			y: 6.0d
 		}
 		{
-			description: ["§7Golem de vela, golem de mel, golem de sculk — se existe", "§7um bloco, alguém fez um golem dele. Construa o seu.", "", "§eCrie um Peter O'Lantern e uma TNT Air Golem Statue."]
-			icon: "plenty_of_golems:soulsand_golem_spawn_egg"
-			id: "7A7C0298A3C13BA7"
+			description: [
+				"§7§eSimple Weapons §7adiciona lanças, katanas e foices —"
+				"§7pra quem cansou de ficar batendo com espada reta feito plebeu."
+				""
+				"§eForje um Iron Greatsword e uma Stone Spear."
+			]
+			icon: {
+				Count: 1
+				id: "simple_weapons:iron_greatsword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "58246ABD66457288"
 			rewards: [
 				{
-					type: "item"
-					item: "minecraft:honeycomb"
 					count: 8
-					id: "7324AFDC40515C47"
+					id: "253520D3E061D874"
+					item: "minecraft:iron_ingot"
+					type: "item"
 				}
 				{
+					id: "4B9BEC9975F26AD5"
 					type: "xp"
 					xp: 150
-					id: "CF4CAD7A3AB6E070"
 				}
 			]
 			tasks: [
 				{
+					id: "688EED230A426A88"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "plenty_of_golems:peter_o_lantern"
-					id: "97439F96B468B231"
 				}
 				{
+					id: "1D782969D56514FE"
+					item: {
+						Count: 1
+						id: "simple_weapons:stone_spear"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "plenty_of_golems:tnt_air_golem_statue"
-					id: "E1405D2E5664AA57"
 				}
 			]
-			title: "Exército de Golems"
-			x: 22.0d
+			title: "Ferro e Katana"
+			x: 14.0d
 			y: 6.0d
 		}
 		{
-			description: ["§7§eAnimalistic §7finalmente ganha o destaque que merece:", "§7talismãs elementais e uma Mesa de Invocação pra chamar", "§7criaturas específicas do mod.", "", "§eColete um Black Talisman e construa uma Mesa de Invocação (Mesainvo)."]
-			icon: "animalistic_a:black_talisman"
-			id: "DA87F4E7BFE34749"
+			description: [
+				"§7O escudo de madeira vanilla quebra olhando torto."
+				"§7§eShield Expansion §7adiciona uma escada inteira de escudos —"
+				"§7até um Netherite, pra quem já cansou de perder parry por 1 de dano."
+				""
+				"§eForje um Iron Shield e um Diamond Shield."
+			]
+			icon: {
+				Count: 1
+				id: "shieldexp:iron_shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4E18DB1B01696FC9"
 			rewards: [
 				{
+					id: "18B00216D86B8265"
+					item: {
+						Count: 1
+						id: "shieldexp:netherite_shield"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "animalistic_a:soul_bottle"
-					id: "B8EB2D9174B168BA"
 				}
 				{
+					id: "25EF1196C4D2649B"
 					type: "xp"
-					xp: 150
-					id: "FE01E5D1603E5976"
+					xp: 200
 				}
 			]
 			tasks: [
 				{
+					id: "6CF87C65FDD549D7"
+					item: {
+						Count: 1
+						id: "shieldexp:iron_shield"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "animalistic_a:black_talisman"
-					id: "8D5C3CA23793685A"
 				}
 				{
+					id: "49308EFCEEEF2044"
+					item: {
+						Count: 1
+						id: "shieldexp:diamond_shield"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
-					item: "animalistic_a:mesainvo"
-					id: "4C7766F2E1235AC8"
 				}
 			]
-			title: "Talismãs Animais"
+			title: "Escudos de Verdade"
 			x: 24.0d
 			y: 8.0d
 		}
 		{
-			description: ["§7§eFD Bosses §7traz uma trindade de chefes cabalísticos:", "§7Chesed, Geburah e Malkuth. Cada um tem uma arena e", "§7mecânica própria — não é pra amador.", "", "§eDerrote os 3 bosses do Qliphoth Awakening: Chesed, Geburah e Malkuth."]
-			icon: "minecraft:nether_star"
-			id: "60A8660A370F9544"
+			description: [
+				"§7Minerar bloco por bloco é coisa de quem tem tempo sobrando."
+				"§7§eDiff's Tools §7resolve isso com escavação em área 3x3."
+				""
+				"§eForje um Excavator ou um Hammer."
+			]
+			icon: {
+				Count: 1
+				id: "diffs_tools:excavator"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "789229AADF1EDA66"
 			rewards: [
 				{
-					type: "item"
-					item: "minecraft:nether_star"
 					count: 2
-					id: "EB9CF70A2F969F68"
-				}
-				{
+					id: "7173806CC0643A32"
+					item: "diffs_tools:sturdy_handle"
 					type: "item"
-					item: "minecraft:experience_bottle"
-					count: 32
-					id: "0C45C4CA065A65C9"
 				}
 				{
+					id: "23E16CC6AA11DDE7"
 					type: "xp"
-					xp: 1500
-					id: "6CA2B379514A8F4C"
+					xp: 150
 				}
 			]
-			tasks: [
-				{
-					type: "advancement"
-					advancement: "fdbosses:qliphoth_awakening/chesed"
-					criterion: "killed_chesed"
-					id: "53042C31A178BD94"
+			tasks: [{
+				id: "680D0E08D01DD52E"
+				item: {
+					Count: 1
+					id: "diffs_tools:excavator"
+					tag: {
+						Damage: 0
+					}
 				}
-				{
-					type: "advancement"
-					advancement: "fdbosses:qliphoth_awakening/geburah"
-					criterion: "killed_geburah"
-					id: "19291F05B4AA98CE"
-				}
-				{
-					type: "advancement"
-					advancement: "fdbosses:qliphoth_awakening/malkuth"
-					criterion: "killed_malkuth"
-					id: "84656C84C2614C35"
-				}
-			]
-			title: "O Despertar de Qliphoth"
+				type: "item"
+			}]
+			title: "Escavação em Massa"
 			x: 26.0d
-			y: 8.0d
+			y: 10.0d
 		}
 		{
-			description: ["§7§eBossominium §7reimagina bosses clássicos com fases,", "§7arenas e um senso de humor peculiar pra quem gosta de sofrer.", "", "§eDerrote o boss principal do Bossominium."]
-			icon: "minecraft:nether_star"
-			id: "7F84405B3B6578D5"
+			description: [
+				"§7Nem só de espada gigante vive o guerreiro fantástico."
+				"§7Às vezes você só precisa de um bom escudo divino."
+				""
+				"§eForje o Shield of the Goddess."
+			]
+			icon: {
+				Count: 1
+				id: "fc:shield_of_the_goddess"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "282E02740D82A164"
 			rewards: [
 				{
+					count: 4
+					id: "7C7E50671DCC0410"
+					item: "minecraft:diamond"
 					type: "item"
-					item: "minecraft:nether_star"
-					id: "484FC989D9676B5F"
 				}
 				{
-					type: "item"
-					item: "minecraft:experience_bottle"
-					count: 16
-					id: "613D6B02F59EE7BD"
-				}
-				{
+					id: "77FF2E204D755D8F"
 					type: "xp"
-					xp: 800
-					id: "155AAB1316D267D8"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "70608AA1E960C0D8"
+				item: {
+					Count: 1
+					id: "fc:shield_of_the_goddess"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Escudo da Deusa"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7§ePoint Blank §7é outro mod de armas de fogo — dessa vez com"
+				"§7impressora 3D de armas incluída. O futuro chegou (violentamente)."
+				""
+				"§eConstrua uma Weapon Printer e imprima uma Glock-17."
+			]
+			icon: "pointblank:workstation"
+			id: "6117BA173FCD0344"
+			rewards: [
+				{
+					count: 4
+					id: "4DBE0D3C43CC453E"
+					item: "pointblank:gunmetal_ingot"
+					type: "item"
+				}
+				{
+					id: "781E3B5A80621E4E"
+					type: "xp"
+					xp: 200
 				}
 			]
 			tasks: [
 				{
-					type: "advancement"
-					advancement: "bossominium:down_with_the_king"
-					criterion: "down_with_the_king"
-					id: "001A81AE1DB97F3C"
+					id: "15822854711BC78B"
+					item: "pointblank:workstation"
+					type: "item"
+				}
+				{
+					id: "4B4EF5211BD5AA9B"
+					item: "pointblank:glock17"
+					type: "item"
 				}
 			]
-			title: "Abaixo o Rei"
-			x: 28.0d
-			y: 8.0d
+			title: "Fábrica de Armas"
+			x: 20.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eCompanions! §7deixa seu companheiro (ou você mesmo, se for"
+				"§7corajoso) trocar um braço de carne por um de metal."
+				""
+				"§eForje um Whip Arm e um Blade Arm."
+			]
+			icon: "companions:whip_arm"
+			id: "68AE25A214613641"
+			rewards: [
+				{
+					count: 2
+					id: "43BA0AE24A16AE81"
+					item: "companions:netherite_chains"
+					type: "item"
+				}
+				{
+					id: "6332385FA8DBA1C4"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "74F36DD594938AE6"
+					item: "companions:whip_arm"
+					type: "item"
+				}
+				{
+					id: "0F163D0027F1BBB0"
+					item: "companions:blade_arm"
+					type: "item"
+				}
+			]
+			title: "Braços Mecânicos"
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7Sua Traveler's Backpack já carrega tudo — que tal ela"
+				"§7carregar até sua cama?"
+				""
+				"§eColoque um Sleeping Bag em qualquer cor na sua backpack."
+			]
+			icon: "travelersbackpack:white_sleeping_bag"
+			id: "52F097C138970595"
+			rewards: [
+				{
+					count: 4
+					id: "6B2586AFE038AE50"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					id: "09FFF2AA7515F452"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "57C0AF4F457C41D6"
+				item: "travelersbackpack:white_sleeping_bag"
+				type: "item"
+			}]
+			title: "Acampamento Portátil"
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Vara de madeira vanilla é coisa de amador. §eTide §7tem"
+				"§7uma vara pra cada ocasião — até uma de Netherite."
+				""
+				"§eForje uma Diamond Fishing Rod e uma Netherite Fishing Rod."
+			]
+			icon: {
+				Count: 1
+				id: "tide:netherite_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "758BF90029BB41DC"
+			rewards: [
+				{
+					id: "780EB41EC72CF98D"
+					item: {
+						Count: 1
+						id: "tide:midas_fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7BCDBD631BB79395"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "5F988E049B050A6D"
+					item: {
+						Count: 1
+						id: "tide:diamond_fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45AF5555F2315B96"
+					item: {
+						Count: 1
+						id: "tide:netherite_fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Varas de Verdade"
+			x: 26.0d
+			y: 12.0d
+		}
+		{
+			description: [
+				"§7Halberd e Katana — pra quem já cansou de espada e lança"
+				"§7comuns e quer variar o estilo de combo."
+				""
+				"§eForje um Diamond Halberd e uma Netherite Katana."
+			]
+			icon: {
+				Count: 1
+				id: "simple_weapons:netherite_katana"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "540A06914AB6A060"
+			rewards: [
+				{
+					count: 2
+					id: "1053D4E6A238A38D"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "4B0DC0894AEDA373"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "5F1E5B6EB959DBA5"
+					item: {
+						Count: 1
+						id: "simple_weapons:diamond_halberd"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E9E8D0DFDB827CD"
+					item: {
+						Count: 1
+						id: "simple_weapons:netherite_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arsenal Alternativo II"
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Magia e pólvora não precisam ser inimigas. Um Relic"
+				"§7passivo combinado com uma arma de fogo cobre tanto"
+				"§7ataque à distância quanto sobrevivência."
+				""
+				"§eTenha um Relic equipado e uma arma do TACZ ao mesmo tempo."
+				""
+				"§6Dica: §7Elytra Booster (Relics) + rifle de longo alcance é"
+				"§7uma combinação de hit-and-run muito forte contra bosses."
+			]
+			icon: "pointblank:ak47"
+			id: "7A4DECD398087627"
+			rewards: [
+				{
+					count: 16
+					id: "6B875C9ACFB6B83D"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "56223E58FAC7C92D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "426D5564821EC2DB"
+					item: "relics:elytra_booster"
+					type: "item"
+				}
+				{
+					id: "264B45E83737AEA7"
+					item: "pointblank:ak47"
+					type: "item"
+				}
+			]
+			title: "Combatente Híbrido"
+			x: 24.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Enfrentar bosses de mods pede mais que uma espada boa —"
+				"§7pede proteção passiva também. Artifacts e Relics dão"
+				"§7vantagens que fazem toda diferença numa arena de boss."
+				""
+				"§eTenha um Elytra Chestplate (Elytraslot) e um Artifact"
+				"§eequipado ao mesmo tempo, prontos pra caçar bosses."
+				""
+				"§6Dica: §7Curios + Elytraslot deixam você equipar praticamente"
+				"§7tudo ao mesmo tempo sem abrir mão de nada essencial."
+			]
+			icon: "relics:enders_hand"
+			id: "5ABA3194FFCAE78C"
+			rewards: [
+				{
+					id: "7F55D75D8DB15D2F"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "2AE0EC3254180BC1"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "3BE70C52F34911FA"
+					item: "artifacts:everlasting_beef"
+					type: "item"
+				}
+				{
+					id: "5EFD143438A5668A"
+					item: "relics:enders_hand"
+					type: "item"
+				}
+			]
+			title: "Caçador Blindado"
+			x: 22.0d
+			y: 4.0d
 		}
 	]
-	title: "§cCriaturas e Bosses"
+	title: "§6Arsenal e Equipamento"
 }

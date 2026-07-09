@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "infectious:green_tank",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 50,
+    "separation": 22,
+    "salt": 1731441052,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

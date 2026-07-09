@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "infectious:abandoned_house_small_1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 48,
+    "separation": 23,
+    "salt": 891955166,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

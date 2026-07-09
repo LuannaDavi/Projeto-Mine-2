@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "plenty_of_golems:dungeon_golem_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 89,
+    "separation": 40,
+    "salt": 1955966095,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  }
+}

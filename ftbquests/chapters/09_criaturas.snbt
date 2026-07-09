@@ -1,676 +1,1658 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "03_mekanism"
-	group: "AA00000000000001"
-	icon: ["mekanism:enrichment_chamber", "mekanism:digital_miner", "mekanism:jetpack", "mekanism:mekasuit_bodyarmor"]
-	id: "AA03000000000001"
-	order_index: 2
+	filename: "09_criaturas"
+	group: "69F31F625754AE1E"
+	id: "22E867D162C7F5E3"
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7§eMekanism §7começa com §eOsmio §7— um minério azulado abundante.", "§7Do Osmio vem o §eAço (Steel Ingot)§7 — base de toda a progressão.", "§7Você vai precisar de muito aço. Comece a acumular agora.", "", "§eCrafite §e8 Steel Ingots §7usando o §eMetallurgic Infuser§7.", "", "§6Dica: §7Osmium aparece do Y=0 ao Y=60 em grandes veios.", "§7O Metallurgic Infuser usa §eCarvão §7como catalisador para o aço.", "", "§8§o(Osmium: o metal que só o Mekanism liga a mínima pra ele.)"]
-			icon: "mekanism:ingot_steel"
-			id: "ME0000000000001"
+			description: [
+				"§7Este mundo não tem mobs genéricos."
+				"§7§eBorn in Chaos §7trouxe criaturas distorcidas."
+				"§7§eAlex's Mobs §7adicionou fauna que reage ao ambiente."
+				"§7§eLegendary Monsters §7faz qualquer mob comum"
+				"§7virar uma ameaça de outra categoria."
+				""
+				"§eDerrote §e50 mobs hostis §7de qualquer tipo."
+				""
+				"§6Dica: §7§eBetterCombat §7tem combos — use-os."
+				"§7Spam de clique é o jeito mais lento de matar mobs aqui."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E00000000000002"
 			rewards: [
 				{
-					count: 16
-					id: "ME000000000000B"
-					item: "mekanism:ingot_osmium"
+					id: "5E00000000000003"
+					item: "minecraft:enchanted_book"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "ME000000000000C"
-					item: "mekanism:ingot_steel"
+					count: 3
+					id: "5E00000000000004"
+					item: "minecraft:golden_apple"
 					type: "item"
 				}
 				{
-					id: "ME000000000000D"
+					id: "5E00000000000005"
 					type: "xp"
-					xp: 300
+					xp: 200
 				}
 			]
+			shape: "gear"
 			tasks: [
 				{
-					advancement: "mekanism:steel_ingot"
-					criterion: "ingot_steel"
-					id: "ME000000000000A"
-					type: "advancement"
+					entity: "minecraft:zombie"
+					id: "5E00000000000006"
+					type: "kill"
+					value: 15L
 				}
 				{
-					count: 1
-					id: "45CC40897609DAB4"
-					item: "mekanism:crusher"
-					type: "item"
+					entity: "minecraft:skeleton"
+					id: "3B200C5D1ADBDE27"
+					type: "kill"
+					value: 15L
+				}
+				{
+					entity: "minecraft:spider"
+					id: "0122128E8C6049A2"
+					type: "kill"
+					value: 10L
+				}
+				{
+					entity: "minecraft:creeper"
+					id: "760294791C4F45E8"
+					type: "kill"
+					value: 10L
 				}
 			]
-			title: "Osmium e Aço"
+			title: "Batismo de Fogo"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["ME0000000000001"]
-			description: ["§7O §eEnrichment Chamber §7é a primeira grande máquina do Mekanism:", "§7ela §edobra §7o rendimento de minérios — ore vira 2 pós,", "§7cada pó fundido rende 1 ingot. Dobro de tudo, sem esforço extra.", "", "§eCrafite e ative uma §eEnrichment Chamber§7.", "", "§6Dica: §7Processe o ore bruto, não o ingot já fundido!", "§8§o(Dobrar minério. O verdadeiro objetivo de qualquer tech mod.)"]
-			icon: "mekanism:enrichment_chamber"
-			id: "ME0000000000011"
+			description: [
+				"§7§eBorn in Chaos §7adiciona bosses únicos ao jogo:"
+				"§7a §eSmith do Caos§7, o §eMutant Zombie §7e outros."
+				""
+				"§eDerrote qualquer boss do mod Born in Chaos."
+				""
+				"§6Dica: §7Bosses do Born in Chaos têm fases de combate!"
+				"§7Observe os padrões de ataque antes de atacar cegamente."
+			]
+			icon: "born_in_chaos_v1:seedof_chaos"
+			id: "5E0000000000000C"
 			rewards: [
 				{
-					id: "ME000000000001B"
-					item: "mekanism:enrichment_chamber"
-					type: "item"
-				}
-				{
-					id: "ME000000000001C"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:enricher"
-					criterion: "enrichment_chamber"
-					id: "ME000000000001A"
-					type: "advancement"
-				}
-				{
-					count: 1
-					id: "75C5419E871760B3"
-					item: "mekanism:purification_chamber"
-					type: "item"
-				}
-			]
-			title: "A Câmara de Enriquecimento"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["ME0000000000011"]
-			description: ["§7Máquinas Mekanism precisam de §eenergia elétrica (Forge Energy)§7.", "§7O §eBasic Energy Cube §7armazena e o §eUniversal Cable §7transporta.", "§7Geradores de outros mods — Create, Solar — também funcionam!", "", "§eCrafite um §eBasic Energy Cube §7e §e4 Universal Cables§7.", "", "§6Dica: §7Conecte um §eSolar Generator §7para geração passiva.", "§7Mekanism aceita toda fonte de FE do modpack.", "", "§8§o(Energia infinita, fiação finita — bem-vindo ao inferno dos cabos.)"]
-			icon: "mekanism:basic_energy_cube"
-			id: "ME0000000000021"
-			rewards: [
-				{
-					id: "ME000000000002C"
-					item: "mekanism:basic_energy_cube"
+					count: 3
+					id: "5E0000000000000D"
+					item: "born_in_chaos_v1:seedof_chaos"
 					type: "item"
 				}
 				{
 					count: 8
-					id: "ME000000000002D"
-					item: "mekanism:basic_universal_cable"
+					id: "5E0000000000000E"
+					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "ME000000000002E"
+					id: "5E0000000000000F"
 					type: "xp"
-					xp: 400
+					xp: 700
 				}
 			]
-			tasks: [
-				{
-					advancement: "mekanism:energy_cube"
-					criterion: "basic_energy_cube"
-					id: "ME000000000002A"
-					type: "advancement"
-				}
-				{
-					advancement: "mekanism:energy_transport"
-					criterion: "basic_universal_cable"
-					id: "ME000000000002B"
-					type: "advancement"
-				}
-			]
-			title: "Rede de Energia"
+			tasks: [{
+				advancement: "born_in_chaos_v1:chaos_knight"
+				criterion: "chaos_knight_0"
+				id: "7ABE383200DAA18B"
+				type: "advancement"
+			}]
+			title: "Filho do Caos"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["ME0000000000021"]
-			description: ["§7Os §eCircuitos de Controle §7são os componentes mais usados.", "§7Basic → Advanced → Elite → Ultimate — cada nível exige o anterior", "§7mais materiais processados na §eEnrichment Chamber§7.", "", "§eCrafite um §eAdvanced Control Circuit§7.", "", "§6Dica: §7Você vai precisar de dezenas deles.", "§7Automatize a produção com a §eCombining Factory §7logo que puder.", "", "§8§o(Quanto mais avançado o circuito, mais chance de você esquecer como fez.)"]
-			icon: "mekanism:advanced_control_circuit"
-			id: "ME0000000000031"
+			description: [
+				"§7§eBossominium §7adiciona bosses variados espalhados pelo mundo,"
+				"§7cada um com arena e mecânica própria — alguns são gigantes"
+				"§7de verdade, não só \"mob grande\"."
+				""
+				"§eDerrote um dos bosses grandes do Bossominium."
+				""
+				"§6Dica: §7Use Boss Checklist pra localizar esses bosses!"
+				"§7Tenha poções de cura e velocidade em quantidade."
+			]
+			icon: "bossominium:eye_of_the_badlands"
+			id: "5E00000000000011"
 			rewards: [
 				{
-					count: 4
-					id: "ME000000000003B"
-					item: "mekanism:advanced_control_circuit"
+					count: 8
+					id: "5E00000000000012"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5E00000000000013"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000014"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [{
+				advancement: "bossominium:the_bigger_they_are"
+				criterion: "the_bigger_they_are"
+				id: "7A81A64CBCE64F9D"
+				type: "advancement"
+			}]
+			title: "Caçador de Bosses"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eAlex's Mobs §7adiciona mais de 80 criaturas únicas ao jogo."
+				"§7Cada uma tem comportamentos, drops e interações especiais."
+				""
+				"§eDerrote um de cada: Gorila, Crocodilo, Urso Pardo, Cascavel e Serpente Óssea."
+				""
+				"§6Dica: §7O Bone Serpent vive em cavernas profundas, já o Urso Pardo prefere biomas frios."
+			]
+			icon: "alexsmobs:spawn_egg_fly"
+			id: "5E00000000000020"
+			rewards: [
+				{
+					count: 5
+					id: "5E00000000000021"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000022"
+					item: "alexsmobs:shark_tooth"
+					type: "item"
+				}
+				{
+					id: "5E00000000000023"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					entity: "alexsmobs:gorilla"
+					id: "5E00000000000024"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexsmobs:crocodile"
+					id: "328377637E4C097E"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexsmobs:grizzly_bear"
+					id: "40C9C9440363CDDC"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexsmobs:rattlesnake"
+					id: "46736DF4DF215A5E"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "alexsmobs:bone_serpent"
+					id: "54D9E3788FB19D44"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Caçador de Espécies"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Nas tundras cobertas de neve, existe uma coisa"
+				"§7que não é urso, não é golem e não é wither."
+				"§7É o §eFrostmaw §7— e ele vai te jogar longe"
+				"§7antes de você sequer ver o que aconteceu."
+				""
+				"§eDerrote o §eFrostmaw §7do Mowzie's Mobs."
+				""
+				"§6Dica: §7Fogo e poções de Fraqueza são eficazes."
+				"§7Mantenha distância — o corpo-a-corpo é suicida."
+				"§7Flechas envenenadas ajudam a drená-lo entre ataques."
+			]
+			icon: {
+				Count: 1
+				id: "mowziesmobs:ice_crystal"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E00000000000025"
+			rewards: [
+				{
+					id: "5E00000000000026"
+					item: {
+						Count: 1
+						id: "mowziesmobs:ice_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
 					count: 8
-					id: "ME000000000003C"
-					item: "mekanism:basic_control_circuit"
+					id: "5E00000000000027"
+					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "ME000000000003D"
+					id: "5E00000000000028"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				id: "5E00000000000029"
+				type: "kill"
+				value: 1L
+			}]
+			title: "A Fera do Gelo"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eBarako §7é o Xamã boss do Mowzie's Mobs."
+				"§7Ele conjura raios e mobs para se defender."
+				""
+				"§eDerrote o §eBarako the Sun Chief§7."
+				""
+				"§6Dica: §7Barako vive em savanas quentes!"
+				"§7Ele chama reforços — mate os adeptos primeiro."
+			]
+			icon: "mowziesmobs:sol_visage"
+			id: "5E0000000000002A"
+			rewards: [
+				{
+					id: "5E0000000000002B"
+					item: "mowziesmobs:sol_visage"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5E0000000000002C"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000002D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				id: "5E0000000000002E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "O Chefe do Sol"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Os Ilusionistas não atacam ao acaso."
+				"§7Eles planejam, coordenam e visam os mais fracos."
+				"§7§eIllager Invasion §7torna os ataques em eventos reais —"
+				"§7esquadrões organizados, capitães liderando tropas."
+				""
+				"§eDerrote um §eCapitão de Raid §7para provocar"
+				"§7e depois sobreviver ao ataque à aldeia."
+				""
+				"§6Dica: §7Ilusionistas cegam — leve §eleite de vaca§7."
+				"§7§eGuard Villagers §7pode te ajudar se você equipar os aldeões."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/entity_icon/illager/pillager.png"
+				}
+			}
+			id: "5E0000000000002F"
+			rewards: [
+				{
+					count: 16
+					id: "5E00000000000030"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E00000000000031"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000032"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:adventure/voluntary_exile"
+				criterion: ""
+				id: "5E00000000000033"
+				type: "advancement"
+			}]
+			title: "Defensor da Aldeia"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eHaunted Knight §7ronda a Abandoned Crypt — um cavaleiro"
+				"§7morto-vivo preso em armadura enferrujada, ainda lutando"
+				"§7uma guerra que já perdeu há séculos."
+				""
+				"§eEncontre a Abandoned Crypt e derrote o Haunted Knight."
+				""
+				"§6Dica: §7Ele ataca em combos de espada — não fique parado"
+				"§7bloqueando, ele quebra guarda com facilidade."
+			]
+			icon: {
+				Count: 1
+				id: "legendary_monsters:knights_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E00000000000034"
+			rewards: [
+				{
+					id: "5E00000000000035"
+					item: {
+						Count: 1
+						id: "legendary_monsters:knights_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E00000000000037"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [{
+				advancement: "legendary_monsters:defeat_haunted_knight"
+				criterion: "ambusher"
+				id: "5E00000000000038"
+				type: "advancement"
+			}]
+			title: "Lendário Caído"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eLeader Goblin §7comanda as tribos de Goblin's Tyranny —"
+				"§7mais forte e melhor equipado que os goblins de caverna comuns,"
+				"§7geralmente cercado de guarda-costas."
+				""
+				"§eDerrote um Leader Goblin."
+				""
+				"§6Dica: §7Eles aparecem liderando grupos — limpe os subordinados"
+				"§7primeiro ou você vai apanhar em grupo."
+			]
+			icon: "goblins_tyranny:totem_block"
+			id: "5E00000000000039"
+			rewards: [
+				{
+					count: 3
+					id: "5E0000000000003A"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5E0000000000003B"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000003C"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [{
+				entity: "goblins_tyranny:leader_goblin"
+				id: "5E0000000000003D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Rei dos Goblins"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eIDAS §7(Idas' Dungeon Adventuring System) adiciona"
+				"§7masmorras geradas proceduralmente com bosses únicos."
+				"§7Algumas guardam discos de música raros como tesouro."
+				""
+				"§eExplore uma dungeon do IDAS e encontre o"
+				"§eMusic Disc Slither §7escondido nela."
+				""
+				"§6Dica: §7Masmorras IDAS escalam com seu equipamento!"
+				"§7Leve comida extra, tochas e itens de cura."
+			]
+			icon: "minecraft:tripwire_hook"
+			id: "5E0000000000003E"
+			rewards: [
+				{
+					count: 5
+					id: "5E0000000000003F"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "5E00000000000040"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000041"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [{
+				id: "5E00000000000042"
+				item: "idas:music_disc_slither"
+				type: "item"
+			}]
+			title: "Mestre de Masmorras"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eRelics §7adiciona relíquias que concedem habilidades"
+				"§7passivas únicas — algumas sutis, outras absurdas."
+				""
+				"§7§eBastion Ring §7— escudo ativo on-demand."
+				"§7§eSpace Dissector §7— projéteis que fragmentam ao atingir."
+				"§7§eShadow Glaive §7— ricocheteante e letal."
+				"§7§eEnders Hand §7— teleporte instantâneo."
+				""
+				"§eCollecte a §eResearching Table §7e pesquise"
+				"§epelo menos §e2 relíquias §7de combate diferentes."
+				""
+				"§6Dica: §7Relíquias são obtidas em baús de dungeon"
+				"§7e derrotando bosses — explora mais, encontra mais."
+			]
+			icon: "relics:space_dissector"
+			id: "5E00000000000301"
+			rewards: [
+				{
+					count: 2
+					id: "79FD99E51FD92A4B"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "5E00000000000302"
+					item: "relics:bastion_ring"
+					type: "item"
+				}
+				{
+					id: "5E00000000000303"
 					type: "xp"
 					xp: 500
 				}
 			]
 			tasks: [
 				{
-					advancement: "mekanism:advanced_control_circuit"
-					criterion: "advanced_control_circuit"
-					id: "ME000000000003A"
-					type: "advancement"
+					id: "5D510253C44900B6"
+					item: "relics:bastion_ring"
+					type: "item"
 				}
 				{
-					count: 2
-					id: "1F827C57CBFA9629"
-					item: "mekanism:advanced_control_circuit"
+					id: "144E7D7687EBEAD5"
+					item: "relics:space_dissector"
 					type: "item"
 				}
 			]
-			title: "Circuitos de Controle"
-			x: 6.0d
-			y: 0.0d
+			title: "Relíquias do Combate"
+			x: 10.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["ME0000000000031"]
-			description: ["§7O §eMetallurgic Infuser §7processa metais com catalisadores", "§7para criar as §eLigas (Alloys)§7 — materiais compostos únicos:", "§eInfused §7→ §eReinforced §7→ §eAtomic Alloy§7.", "§7Cada liga abre um tier novo de máquinas e armaduras.", "", "§eCrafite uma §eReinforced Alloy§7.", "", "§6Dica: §7Reinforced Alloy usa §eDiamond §7processado na Crusher.", "", "§8§o(Misturar metais e rezar pra dar liga — literalmente.)"]
-			icon: "mekanism:metallurgic_infuser"
-			id: "ME0000000000041"
+			description: [
+				"§7Depois de derrotar Malkuth no Despertar de Qliphoth, o troféu"
+				"§7dele guarda um segredo: serve de ingrediente pra receitas"
+				"§7culinárias especiais do Farmer's Delight Bosses."
+				""
+				"§eUse o Malkuth Trophy numa receita do FDB."
+				""
+				"§6Dica: §7Drops únicos de boss geralmente têm receita própria —"
+				"§7confira o livro de receitas ou o JEI/EMI."
+			]
+			icon: "fdbosses:malkuth_trophy"
+			id: "5E00000000000043"
 			rewards: [
 				{
 					count: 4
-					id: "ME000000000004B"
-					item: "mekanism:alloy_reinforced"
-					type: "item"
-				}
-				{
-					id: "ME000000000004C"
-					item: "mekanism:metallurgic_infuser"
-					type: "item"
-				}
-				{
-					id: "ME000000000004D"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:reinforced_alloy"
-					criterion: "alloy_reinforced"
-					id: "ME000000000004A"
-					type: "advancement"
-				}
-			]
-			title: "Ligas e o Metallurgic Infuser"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["ME0000000000041"]
-			description: ["§7§eFábricas §7são versões paralelas das máquinas do Mekanism.", "§7Basic (3x), Advanced (5x), Elite (7x) e Ultimate (9x simultâneos.", "§7A §ePurification Chamber §7com Oxigênio triplica o rendimento!", "", "§eCrafite e ative uma §eBasic Crushing Factory §7ou §eSmelting Factory§7.", "", "§6Dica: §7Acorrente: §eElectrolytic Separator §7(O₂)", "§7→ §ePurification Chamber §7→ §eCrusher §7→ §eSmelter §7= §e3x ore§7!", "§8§o(Triplicar minério. Apenas Mekanism faz isso direito.)"]
-			icon: "mekanism:basic_crushing_factory"
-			id: "ME0000000000051"
-			rewards: [
-				{
-					id: "ME000000000005B"
-					item: "mekanism:basic_crushing_factory"
-					type: "item"
-				}
-				{
-					id: "ME000000000005C"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:factory"
-					criterion: "factory"
-					id: "ME000000000005A"
-					type: "advancement"
-				}
-				{
-					count: 2
-					id: "29127E663D849500"
-					item: "mekanism:logistical_sorter"
-					type: "item"
-				}
-			]
-			title: "Fábricas de Processamento"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["ME0000000000051"]
-			description: ["§7O §eLogistical Transporter §7move itens automaticamente", "§7entre máquinas por redes de cor configuráveis.", "§7O §eLogistical Sorter §7categoriza e direciona por filtro.", "", "§eMonte uma linha com §eTransportadores §7e §e1 Sorter§7.", "", "§6Dica: §7Cores no Sorter: vermelho = descarte,", "§7verde = próxima máquina, laranja = armazenamento.", "", "§8§o(Itens andando sozinhos pela tubulação. A automação te olha e sorri.)"]
-			icon: "mekanism:logistical_sorter"
-			id: "ME0000000000061"
-			rewards: [
-				{
-					count: 16
-					id: "ME000000000006C"
-					item: "mekanism:basic_logistical_transporter"
-					type: "item"
-				}
-				{
-					id: "ME000000000006D"
-					item: "mekanism:logistical_sorter"
-					type: "item"
-				}
-				{
-					id: "ME000000000006E"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:item_transport"
-					criterion: "basic_logistical_transporter"
-					id: "ME000000000006A"
-					type: "advancement"
-				}
-				{
-					advancement: "mekanism:logistical_sorter"
-					criterion: "logistical_sorter"
-					id: "ME000000000006B"
-					type: "advancement"
-				}
-			]
-			title: "Transporte Logístico"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["ME0000000000061"]
-			description: ["§7Mekanism tem sistema completo de §eGases e Produtos Químicos§7.", "§7Chemical Tank armazena, Pressurized Tube transporta.", "§7A §ePurification Chamber §7usa §eOxigênio §7para triplicar minérios.", "§7A §eElectrolytic Separator §7separa água em H₂ + O₂.", "", "§eCrafite §eChemical Tank §7e conecte §ePressurized Tubes§7.", "", "§6Dica: §7Com O₂ + Purification Chamber = §e3x ore output§7 garantido!", "", "§8§o(Química de verdade, com tanque, cano e risco de vazamento.)"]
-			icon: "mekanism:basic_chemical_tank"
-			id: "ME0000000000071"
-			rewards: [
-				{
-					count: 2
-					id: "ME000000000007C"
-					item: "mekanism:basic_chemical_tank"
+					id: "5E00000000000044"
+					item: "minecraft:golden_carrot"
 					type: "item"
 				}
 				{
 					count: 8
-					id: "ME000000000007D"
-					item: "mekanism:basic_pressurized_tube"
+					id: "5E00000000000045"
+					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "ME000000000007E"
+					id: "5E00000000000046"
 					type: "xp"
 					xp: 700
 				}
 			]
-			tasks: [
-				{
-					advancement: "mekanism:chemical_tank"
-					criterion: "basic_chemical_tank"
-					id: "ME000000000007A"
-					type: "advancement"
-				}
-				{
-					advancement: "mekanism:chemical_transport"
-					criterion: "basic_pressurized_tube"
-					id: "ME000000000007B"
-					type: "advancement"
-				}
-			]
-			title: "Química Industrial"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["ME0000000000071"]
-			description: ["§7O §eDigital Miner §7minera automaticamente uma área de", "§7até §e63 blocos de raio §7com filtros precisos.", "§7Defina: apenas minérios, apenas um tipo, exceto certos blocos.", "", "§eCrafite e ative um §eDigital Miner§7.", "", "§6Dica: §7Fortune e Silk Touch funcionam com upgrades no Miner.", "§7Use §eSpeed Upgrades §7para acelerar a mineração automática.", "§8§o(Mineração manual é para os outros. Você tem tecnologia.)"]
-			icon: "mekanism:digital_miner"
-			id: "ME0000000000081"
-			rewards: [
-				{
-					count: 4
-					id: "ME000000000008B"
-					item: "mekanism:upgrade_speed"
-					type: "item"
-				}
-				{
-					id: "ME000000000008C"
-					type: "xp"
-					xp: 800
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:digital_miner"
-					criterion: "digital_miner"
-					id: "ME000000000008A"
-					type: "advancement"
-				}
-			]
-			title: "O Minerador Digital"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["ME0000000000081"]
-			description: ["§7O §eJetpack do Mekanism §7usa §eHidrogênio §7como combustível.", "§7O H₂ é produzido na §eElectrolytic Separator §7separando água.", "§7Combine com §eFree Runners §7para velocidade extra no chão.", "", "§eCrafite o §eJetpack §7e os §eFree Runners§7.", "", "§6Dica: §7Jetpack Armored tem defesa além do voo.", "§7Free Runners eliminam dano de queda e aumentam velocidade horizontal.", "", "§8§o(Voar com gás inflamável nas costas. O que pode dar errado?)"]
-			icon: "mekanism:jetpack"
-			id: "ME0000000000091"
-			rewards: [
-				{
-					id: "ME000000000009C"
-					item: "mekanism:jetpack"
-					type: "item"
-				}
-				{
-					id: "ME000000000009D"
-					item: "mekanism:free_runners"
-					type: "item"
-				}
-				{
-					id: "ME000000000009E"
-					type: "xp"
-					xp: 800
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:hydrogen_powered_flight"
-					criterion: "jetpack"
-					id: "ME000000000009A"
-					type: "advancement"
-				}
-				{
-					advancement: "mekanism:running_free"
-					criterion: "free_runners"
-					id: "ME000000000009B"
-					type: "advancement"
-				}
-			]
-			title: "Voando com Hidrogênio"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["ME0000000000091"]
-			description: ["§7O §eQIO §7armazena §ebilhões §7de itens por Drive.", "§7O §ePortable QIO Dashboard §7acessa o inventário de qualquer lugar.", "§7Drives de tier maior (Hyper-Dense, Supermassive) escalam ainda mais.", "", "§eCrafite um §eQIO Drive Array §7e um §eBasic QIO Drive§7.", "", "§6Dica: §7Configure §eFrequências §7para redes separadas.", "§7Uma frequência para minérios, outra para comida, outra para equipamento.", "", "§8§o(Fim dos baús rotulados errado — agora é tudo culpa da física quântica.)"]
-			icon: "mekanism:qio_drive_array"
-			id: "ME00000000000A1"
-			rewards: [
-				{
-					count: 2
-					id: "ME00000000000AC"
-					item: "mekanism:qio_drive_base"
-					type: "item"
-				}
-				{
-					id: "ME00000000000AD"
-					type: "xp"
-					xp: 900
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:qio_drive_array"
-					criterion: "qio_drive_array"
-					id: "ME00000000000AA"
-					type: "advancement"
-				}
-				{
-					advancement: "mekanism:basic_qio_drive"
-					criterion: "qio_drive_base"
-					id: "ME00000000000AB"
-					type: "advancement"
-				}
-			]
-			title: "QIO — Armazenamento Quântico"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["ME00000000000A1"]
-			description: ["§7O §eTeleporter §7permite teletransporte entre pontos fixos", "§7na mesma §eFrequência §7— sem Ender Pearls, só energia.", "§7O §ePortable Teleporter §7carrega a frequência consigo.", "", "§eCrafite um §eTeleporter §7fixo e um §ePortable Teleporter§7.", "", "§6Dica: §7Frequências diferentes = rotas independentes.", "§7Uma para a mina, outra para a base, outra para o farm.", "§8§o(Ender Pearls são tecnologia obsoleta.)"]
-			icon: "mekanism:teleporter"
-			id: "ME00000000000B1"
-			rewards: [
-				{
-					id: "ME00000000000BC"
-					item: "mekanism:portable_teleporter"
-					type: "item"
-				}
-				{
-					id: "ME00000000000BD"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:teleporter"
-					criterion: "teleport"
-					id: "ME00000000000BA"
-					type: "advancement"
-				}
-				{
-					advancement: "mekanism:portable_teleporter"
-					criterion: "portable_teleporter"
-					id: "ME00000000000BB"
-					type: "advancement"
-				}
-			]
-			title: "Teleportação"
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["ME00000000000B1"]
-			description: ["§7A §eAtomic Alloy §7é o material de tier máximo —", "§7exige materiais processados em condições especiais", "§7no §eMetallurgic Infuser §7com catalisadores avançados.", "§7É a liga que habilita os componentes do §eMekaSuit§7.", "", "§eProduzca uma §eAtomic Alloy§7.", "", "§6Dica: §7Atomic Alloy requer §eRefined Obsidian §7como catalisador.", "§7Produzida comprimindo Obsidiana na §eOsmium Compressor§7."]
-			icon: "mekanism:alloy_atomic"
-			id: "ME00000000000C1"
-			rewards: [
-				{
-					count: 4
-					id: "ME00000000000CB"
-					item: "mekanism:alloy_atomic"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "ME00000000000CC"
-					item: "mekanism:elite_control_circuit"
-					type: "item"
-				}
-				{
-					id: "ME00000000000CD"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:atomic_alloy"
-					criterion: "alloy_atomic"
-					id: "ME00000000000CA"
-					type: "advancement"
-				}
-				{
-					count: 4
-					id: "9DB3ACADDDA196CC"
-					item: "mekanism:alloy_reinforced"
-					type: "item"
-				}
-			]
-			title: "Liga Atômica"
-			x: 10.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["ME00000000000C1"]
-			description: ["§7O §eMekaSuit §7é a armadura de tier máximo — totalmente modular,", "§7usa energia para absorver dano, voar, respirar e mais.", "§7Cada peça tem slots de §eMódulos §7configuráveis.", "", "§eCrafite o conjunto completo de §eMekaSuit§7.", "§7(Capacete + Peitoral + Calças + Botas)", "", "§6Dica: §7Instale §eEnergy Modules §7primeiro para autonomia.", "§7Module Gravitational = voo sem Jetpack!", "§8§o(Você não precisa mais de nada. Mas o modpack continua mesmo assim.)"]
-			icon: "mekanism:mekasuit_bodyarmor"
-			id: "ME00000000000D1"
-			rewards: [
-				{
-					count: 2
-					id: "ME00000000000DB"
-					item: "mekanism:module_base"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "ME00000000000DC"
-					item: "mekanism:upgrade_energy"
-					type: "item"
-				}
-				{
-					id: "ME00000000000DD"
-					type: "xp"
-					xp: 2000
-				}
-			]
-			tasks: [
-				{
-					advancement: "mekanism:mekasuit"
-					criterion: "full_set"
-					id: "ME00000000000DA"
-					type: "advancement"
-				}
-			]
-			title: "MekaSuit — Armadura do Futuro"
+			tasks: [{
+				id: "5E00000000000047"
+				item: "fdbosses:malkuth_trophy"
+				type: "item"
+			}]
+			title: "O Cozinheiro dos Bosses"
 			x: 12.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["ME00000000000D1"]
-			description: ["§7A §eInduction Matrix §7é o maior banco de energia do Mekanism —", "§7um multi-bloco de 3x3x3 a 18x18x18 blocos.", "§eInduction Cells §7armazenam, §eInduction Providers §7fazem I/O.", "§7Uma matriz completa armazena quantidades absurdas de energia.", "", "§eConstrua uma §eInduction Matrix §7funcional", "§ecom pelo menos §e1 Cell §7e §e1 Provider§7.", "", "§6Dica: §7A carcaça usa §eInduction Casing §7e §eInduction Port§7.", "", "§8§o(Bateria gigante o suficiente pra ter ansiedade de espaço.)"]
-			icon: "mekanism:basic_induction_cell"
-			id: "ME00000000000E1"
+			description: [
+				"§7§eKnight Quest §7não tem bosses — é uma forja de armaduras"
+				"§7temáticas gigantesca: dezenas de sets diferentes, do Warlord"
+				"§7ao Silverfish, cada um com visual e status únicos."
+				""
+				"§eForje o set de armadura Warlord."
+				""
+				"§6Dica: §7Explore as receitas do Knight Quest no JEI/EMI —"
+				"§7tem sets temáticos escondidos que valem a pena conferir."
+				""
+				"§8§o(Sem chefe pra derrotar aqui — só uma forja generosa demais.)"
+			]
+			icon: {
+				Count: 1
+				id: "knightquest:steel_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E00000000000048"
 			rewards: [
 				{
-					count: 2
-					id: "ME00000000000EC"
-					item: "mekanism:basic_induction_cell"
+					id: "5E00000000000049"
+					item: {
+						Count: 1
+						id: "knightquest:steel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "ME00000000000ED"
+					count: 10
+					id: "5E0000000000004A"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E0000000000004B"
 					type: "xp"
-					xp: 1500
+					xp: 900
 				}
 			]
-			tasks: [
-				{
-					id: "ME00000000000EA"
-					item: "mekanism:basic_induction_cell"
-					type: "item"
+			tasks: [{
+				id: "5E0000000000004C"
+				item: {
+					Count: 1
+					id: "knightquest:warlord_helmet"
+					tag: {
+						Damage: 0
+					}
 				}
-				{
-					id: "ME00000000000EB"
-					item: "mekanism:basic_induction_provider"
-					type: "item"
-				}
-			]
-			title: "Induction Matrix"
+				type: "item"
+			}]
+			title: "Quebra-Cavaleiros"
 			x: 14.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["ME00000000000E1"]
-			description: ["§7O §ePellet of Antimatter §7é o pico da progressão química.", "§7O caminho: Urânio → Plutônio (Fission Reactor) →", "§7Polônio (Solar Neutron Activator) → Antimatéria (SPS).", "§7A §eSPS §7(Supercritical Phase Shifter) é um multi-bloco monumental.", "", "§eProduzca um §ePellet of Antimatter§7.", "", "§8§o(Você acabou de sintetizar antimatéria em Minecraft.)", "§8§o(Einstein estaria orgulhoso. Heisenberg também.)"]
-			icon: "mekanism:sps_casing"
-			id: "ME00000000000F1"
+			description: [
+				"§7§eThe Outer End §7expande o End com novos biomas e criaturas."
+				"§7Novas ilhas flutuantes escondem estruturas e recursos únicos."
+				""
+				"§eColete os 3 cristais das ilhas: Rose, Mint e Cobalt Crystal —"
+				"§ecada um vem de um bioma diferente do mod."
+				""
+				"§6Dica: §7Leve muita comida e Ender Pearls pra cruzar as ilhas!"
+				"§7Cada cristal também vira uma armadura própria, se você"
+				"§7quiser continuar explorando depois dessa missão."
+			]
+			icon: "outer_end:rose_crystal"
+			id: "5E0000000000004D"
 			rewards: [
 				{
-					id: "ME00000000000FB"
-					item: "mekanism:pellet_antimatter"
+					count: 8
+					id: "5E0000000000004E"
+					item: "minecraft:shulker_shell"
 					type: "item"
 				}
 				{
-					id: "ME00000000000FC"
+					count: 12
+					id: "5E0000000000004F"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000050"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000051"
+					item: "outer_end:rose_crystal"
+					type: "item"
+				}
+				{
+					id: "4466D185CE17ACB6"
+					item: "outer_end:mint_crystal"
+					type: "item"
+				}
+				{
+					id: "02BC5854B2C454D0"
+					item: "outer_end:cobalt_crystal"
+					type: "item"
+				}
+			]
+			title: "Além do Fim"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eRealmRPG Skeletons §7não são mobs — são estátuas decorativas"
+				"§7de esqueletos em poses variadas, ótimas pra decorar suas construções"
+				"§7ou dar um clima mais sombrio à sua base."
+				""
+				"§eColete 3 esqueletos decorativos diferentes: Comum, Cristal e Queimado."
+			]
+			icon: "realmrpg_skeletons:crystal_skeleton"
+			id: "5E00000000000052"
+			rewards: [
+				{
+					count: 5
+					id: "5E00000000000053"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E00000000000054"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000055"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [
+				{
+					id: "5E00000000000056"
+					item: "realmrpg_skeletons:common_skeleton"
+					type: "item"
+				}
+				{
+					id: "511BAE7241B754EC"
+					item: "realmrpg_skeletons:crystal_skeleton"
+					type: "item"
+				}
+				{
+					id: "7871253A8EF242CB"
+					item: "realmrpg_skeletons:burnt_skeleton"
+					type: "item"
+				}
+			]
+			title: "Caçador de Mortos"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Você provou seu valor em combate contra criaturas de mods."
+				"§7Agora prove que você é o §l§cCaçador Supremo§r§7."
+				""
+				"§eDerrote pelo menos §e1 boss de cada um§7 desses mods:"
+				"§e- Born in Chaos"
+				"§e- Mowzie's Mobs"
+				"§e- Bossominium / Bosses Rise"
+				"§e- Knight Quest"
+				""
+				"§6A elite de caçadores não teme nenhum boss!"
+				""
+				"§7§eDica de sobrevivência: §7com §ePlayerRevive §7e §eHardcore Revival§7,"
+				"§7uma morte em grupo não precisa ser o fim — leve sempre um"
+				"§eDesfibrilador §7na mochila para reanimar aliados em combate!"
+			]
+			icon: "born_in_chaos_v1:seedof_chaos"
+			id: "5E00000000000057"
+			rewards: [
+				{
+					count: 20
+					id: "5E00000000000058"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000059"
+					item: "irons_spellbooks:diamond_spell_book"
+					type: "item"
+				}
+				{
+					id: "5E0000000000005A"
 					type: "xp"
 					xp: 3000
 				}
 			]
 			tasks: [
 				{
-					advancement: "mekanism:antimatter"
-					criterion: "pellet_antimatter"
-					id: "ME00000000000FA"
+					advancement: "born_in_chaos_v1:chaos_knight"
+					criterion: "chaos_knight_0"
+					id: "7031A11A57558554"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:kill_umvuthi"
+					criterion: "barako"
+					id: "56D6240AEDA40A53"
+					type: "advancement"
+				}
+				{
+					id: "5E0000000000005D"
+					item: {
+						Count: 1
+						id: "knightquest:warlord_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					advancement: "bossominium:down_with_the_king"
+					criterion: "down_with_the_king"
+					id: "6519EEB62EF68BE7"
 					type: "advancement"
 				}
 			]
-			title: "Antimatéria"
-			x: 0.0d
+			title: "§c§lO Caçador Supremo"
+			x: 4.0d
 			y: 8.0d
 		}
 		{
-			description: ["§7Osmium, Steel e Lead — os três pilares que separam quem só", "§7brinca de Mekanism de quem realmente processa matéria-prima", "§7em escala industrial.", "", "§eProcesse e traga 8 Osmium Ingots, 8 Steel Ingots e 8 Lead Ingots."]
-			icon: "mekanism:ingot_osmium"
-			id: "4E5039D05F2939D0"
+			description: [
+				"§7§eBosses Rise §7é outro mod de bosses independente do Bossominium —"
+				"§7adiciona criaturas titânicas próprias com mecânicas de fases"
+				"§7e arenas exclusivas geradas pelo mundo, incluindo um dragão próprio."
+				""
+				"§eDerrote o Dragão do mod Bosses Rise."
+				""
+				"§6Dica: §7Bosses Rise costuma avisar com efeitos visuais"
+				"§7e sons antes de invocar ataques em área — fique atento!"
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "5E0000000000005E"
 			rewards: [
 				{
+					id: "5E0000000000005F"
+					item: "minecraft:totem_of_undying"
 					type: "item"
-					item: "mekanism:ingot_refined_obsidian"
-					count: 4
-					id: "AC2BD4793E7239FF"
 				}
 				{
+					count: 8
+					id: "5E00000000000060"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5E00000000000061"
+					type: "xp"
+					xp: 900
+				}
+			]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_dragon"
+				criterion: "kill"
+				id: "0560ED3D4C5FE7C0"
+				type: "advancement"
+			}]
+			title: "A Ascensão"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eLegendary Monsters §7adiciona criaturas colossais totalmente novas,"
+				"§7escondidas em estruturas próprias espalhadas pelo mundo —"
+				"§7não são variantes de mobs comuns, são bichos de verdade."
+				""
+				"§eEncontre a Ancient Stronghold e derrote o Ambusher."
+				""
+				"§6Dica: §7Cada chefe do mod tem sua própria estrutura de origem."
+				"§7Procure por biomas de pedregulho e cavernas profundas."
+				""
+				"§8§o(O primeiro de muitos bosses que vao te humilhar.)"
+			]
+			icon: "legendary_monsters:chiseled_ancient_dripstone_shard"
+			id: "7A2EF12076CF8048"
+			rewards: [
+				{
+					id: "090A9649567C8848"
+					item: "legendary_monsters:chiseled_ancient_dripstone_shard"
+					type: "item"
+				}
+				{
+					id: "78241F99B693B509"
 					type: "xp"
 					xp: 400
-					id: "63A8E69A6279A284"
+				}
+			]
+			tasks: [{
+				advancement: "legendary_monsters:defeat_ambusher"
+				criterion: "ambusher"
+				id: "1982818B92E7EC77"
+				type: "advancement"
+			}]
+			title: "Encontrando o Lendário"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"§7O §eFrostbitten Golem §7guarda o Templo Congelado — um colosso"
+				"§7de gelo que ataca em área e ignora resistência ao frio comum."
+				""
+				"§eEncontre o Templo Congelado e derrote o Frostbitten Golem."
+				""
+				"§6Dica: §7Armas de fogo (Fire Aspect) são muito mais eficientes"
+				"§7contra ele do que armas normais."
+				""
+				"§8§o(Ele e feito de gelo e ainda assim te esquenta o sangue de raiva.)"
+			]
+			icon: {
+				Count: 1
+				id: "legendary_monsters:the_great_frost"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2AC2EA706AF65011"
+			rewards: [
+				{
+					id: "3DDD55F6465708F6"
+					item: {
+						Count: 1
+						id: "legendary_monsters:the_great_frost"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "225202F46A3177DC"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [{
+				advancement: "legendary_monsters:defeat_frostbitten_golem"
+				criterion: "frostbitten_golem"
+				id: "1B767EEDDD1E028B"
+				type: "advancement"
+			}]
+			title: "O Golem Glacial"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eAncient Guardian §7é um Guardião do Oceano evoluído: §7tamanho"
+				"§7triplo, raio laser que atravessa armadura, e Fadiga de Mineração III"
+				"§7permanente em área. Solta a Monstrous Anchor ao morrer — uma arma"
+				"§7que causa dano em área ao atingir o chão."
+				""
+				"§eEncontre a Ancient Stronghold e derrote o Ancient Guardian."
+				""
+				"§6Dica: §7Poções de Respiração Aquática são essenciais."
+				"§7Respiration III no capacete e Depth Strider nas botas."
+			]
+			icon: {
+				Count: 1
+				id: "legendary_monsters:monstrous_anchor"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3495DD0BEA1E6259"
+			rewards: [
+				{
+					id: "2EDB0F5BE2226F62"
+					item: {
+						Count: 1
+						id: "legendary_monsters:monstrous_anchor"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72A0A6E6AE899701"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [{
+				advancement: "legendary_monsters:defeat_the_ancient_guardian"
+				criterion: "guardian"
+				id: "76DD3807637D84C1"
+				type: "advancement"
+			}]
+			title: "O Guardião Antigo"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eSkeletosaurus §7Lendário é um esqueleto-dinossauro colossal"
+				"§7que usa o §eDinosaur Bone Club §7para causar dano em área."
+				"§7Drop: §eDino Shield §7— um escudo com HP bônus passivo."
+				""
+				"§eDerrote o §eLegendary Skeletosaurus§7."
+				""
+				"§6Dica: §7Mantenha distância — o clube tem alcance inesperado."
+				"§7Arcos com §ePower §7são mais eficientes que espadas corpo a corpo."
+			]
+			icon: {
+				Count: 1
+				id: "legendary_monsters:dinosaur_bone_club"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "15699CA3E2C6FFE4"
+			rewards: [
+				{
+					id: "4DB200BFCEB5C3BE"
+					item: {
+						Count: 1
+						id: "legendary_monsters:dinosaur_bone_club"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37AAE309F7FBE43A"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			tasks: [{
+				advancement: "legendary_monsters:defeat_skeletosaurus"
+				criterion: "skeletosaurus"
+				id: "29563D458E3406C3"
+				type: "advancement"
+			}]
+			title: "O Dragão de Osso"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7O §eCloud Golem §7vive no Templo das Nuvens e invoca relâmpagos"
+				"§7constantemente. Solta a Axe of Lightning — cada golpe da machado"
+				"§7invoca um relâmpago na posição do alvo."
+				""
+				"§eEncontre o Templo das Nuvens e derrote o Cloud Golem."
+				""
+				"§6Dica: §7Poções de Resistência ajudam com o dano de relâmpago."
+				"§7A Axe of Lightning é uma das armas mais divertidas do modpack."
+				"§8§o(Relâmpago a cada golpe. O equilíbrio saiu de férias.)"
+			]
+			icon: {
+				Count: 1
+				id: "legendary_monsters:axe_of_lightning"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "58889A50E7C37AC3"
+			rewards: [
+				{
+					id: "00BDD9C6D7DCDA99"
+					item: {
+						Count: 1
+						id: "legendary_monsters:axe_of_lightning"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D5FE32798E6A196"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [{
+				advancement: "legendary_monsters:defeat_cloud_golem"
+				criterion: "cloud_golem"
+				id: "6D5E4F7A2625EAE7"
+				type: "advancement"
+			}]
+			title: "O Relâmpago"
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eWithered Abomination §7ronda as Ruínas da Fortaleza da Alma —"
+				"§7um horror necrótico que solta a Withered Scythe, foice amaldiçoada"
+				"§7com efeitos de vida roubada."
+				""
+				"§eEncontre as Ruínas da Soul Fortress e derrote o Withered Abomination."
+				""
+				"§6Dica: §7Leve Milk Buckets — os efeitos de status dele acumulam rápido."
+				"§8§o(Uma foice roubada de um horror do Nether. Ninguém questionou isso.)"
+			]
+			icon: {
+				Count: 1
+				id: "legendary_monsters:withered_scythe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "075A296669E25C53"
+			rewards: [
+				{
+					id: "53C30FFD6D2A4D65"
+					item: {
+						Count: 1
+						id: "legendary_monsters:withered_scythe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46DB54D201A03BF0"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			tasks: [{
+				advancement: "legendary_monsters:defeat_withered_abomination"
+				criterion: "abomination"
+				id: "22A33F4AB7D69764"
+				type: "advancement"
+			}]
+			title: "A Foice Amaldiçoada"
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eIllager Invasion §7adiciona novos tipos de illager: Alquimistas,"
+				"§7Necromantes, Invocadores... a vila nunca mais foi segura."
+				""
+				"§eCrie uma Imbuing Table e derrote um illager: Alchemist, Marauder ou Necromancer."
+			]
+			icon: "illagerinvasion:imbuing_table"
+			id: "10421EF83D3D48CF"
+			rewards: [
+				{
+					count: 2
+					id: "5601412CC7330DC9"
+					item: "illagerinvasion:hallowed_gem"
+					type: "item"
+				}
+				{
+					id: "333DB700394A428A"
+					type: "xp"
+					xp: 300
 				}
 			]
 			tasks: [
 				{
+					id: "4EED154559AF0E78"
+					item: "illagerinvasion:imbuing_table"
 					type: "item"
-					item: "mekanism:ingot_osmium"
-					count: 8
-					id: "9A39A9F6E8247955"
 				}
 				{
-					type: "item"
-					item: "mekanism:ingot_steel"
-					count: 8
-					id: "A6F0E62C72170699"
-				}
-				{
-					type: "item"
-					item: "mekanism:ingot_lead"
-					count: 8
-					id: "739DEB088EB9A3F4"
+					entity: "illagerinvasion:necromancer"
+					id: "14C8275C0CF112A4"
+					type: "kill"
+					value: 1L
 				}
 			]
-			title: "A Tríade dos Metais"
-			x: 10.0d
+			title: "A Segunda Invasão"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7§eUseful Ribbits §7ensina os sapinhos do Ribbits a trabalhar de"
+				"§7verdade — e ainda dá pra montar móveis temáticos pra eles."
+				""
+				"§eConstrua um Ribbit Chest e uma Ribbit Bed."
+			]
+			icon: "useful_ribbits:farmer_ribbit_spawn_egg"
+			id: "5B6F8092A2096A49"
+			rewards: [
+				{
+					count: 8
+					id: "585C164477DD987D"
+					item: "minecraft:lily_pad"
+					type: "item"
+				}
+				{
+					id: "448CF1C951272EBB"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "19309DBCA5EBAAD8"
+					item: "useful_ribbits:ribbit_chest"
+					type: "item"
+				}
+				{
+					id: "33F8BA30B5241438"
+					item: "useful_ribbits:ribbit_bed"
+					type: "item"
+				}
+			]
+			title: "Sapos Contratados"
+			x: 26.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Goblins organizados são pior que goblins soltos."
+				"§7§eGoblin's Tyranny §7traz tribos inteiras com totens e martelos."
+				""
+				"§eColete um Totem Block e forje um Goblin Hammer."
+			]
+			icon: "goblins_tyranny:totem_block"
+			id: "0581D3E6B07B982E"
+			rewards: [
+				{
+					count: 2
+					id: "1DAB82B9F90D0D3D"
+					item: "goblins_tyranny:bear_hide"
+					type: "item"
+				}
+				{
+					id: "6107BD9786DC8EF7"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "1156E89A6BC420B6"
+					item: "goblins_tyranny:totem_block"
+					type: "item"
+				}
+				{
+					id: "26138D7D7B45ECE5"
+					item: {
+						Count: 1
+						id: "goblins_tyranny:goblin_mace"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bando Goblin"
+			x: 20.0d
 			y: 6.0d
 		}
 		{
-			description: ["§7Se você chegou até aqui, já processou minério suficiente pra", "§7abastecer uma cidade pequena. Hora de vestir o resultado.", "", "§eForje pelo menos a peça do capacete do Mekasuit."]
-			icon: "mekanism:mekasuit_helmet"
-			id: "01266555EE478B0B"
+			description: [
+				"§7Golem de vela, golem de mel, golem de sculk — se existe"
+				"§7um bloco, alguém fez um golem dele. Construa o seu."
+				""
+				"§eCrie um Peter O'Lantern e uma TNT Air Golem Statue."
+			]
+			icon: "plenty_of_golems:soulsand_golem_spawn_egg"
+			id: "7A7C0298A3C13BA7"
 			rewards: [
 				{
+					count: 8
+					id: "7324AFDC40515C47"
+					item: "minecraft:honeycomb"
 					type: "item"
-					item: "mekanism:ingot_osmium"
-					count: 16
-					id: "3C0B951DAC753411"
 				}
 				{
+					id: "47C107C9ACB71763"
 					type: "xp"
-					xp: 800
-					id: "8B22EF85F9A715A0"
+					xp: 150
 				}
 			]
 			tasks: [
 				{
+					id: "670F7259B0D456CD"
+					item: "plenty_of_golems:peter_o_lantern"
 					type: "item"
-					item: "mekanism:mekasuit_helmet"
-					id: "3FDBF155FE4C13CC"
+				}
+				{
+					id: "0BECF1830F67981A"
+					item: "plenty_of_golems:tnt_air_golem_statue"
+					type: "item"
 				}
 			]
-			title: "Mekasuit: O Traje Definitivo"
-			x: 12.0d
+			title: "Exército de Golems"
+			x: 22.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7§eAnimalistic §7finalmente ganha o destaque que merece:"
+				"§7talismãs elementais e uma Mesa de Invocação pra chamar"
+				"§7criaturas específicas do mod."
+				""
+				"§eColete um Black Talisman e construa uma Mesa de Invocação (Mesainvo)."
+			]
+			icon: "animalistic_a:black_talisman"
+			id: "270D3DBE09366A16"
+			rewards: [
+				{
+					id: "3744B7F14593C904"
+					item: "animalistic_a:soul_bottle"
+					type: "item"
+				}
+				{
+					id: "7166D5E13CD66C64"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "4C544E2CB607F8AB"
+					item: "animalistic_a:black_talisman"
+					type: "item"
+				}
+				{
+					id: "4C7766F2E1235AC8"
+					item: "animalistic_a:mesainvo"
+					type: "item"
+				}
+			]
+			title: "Talismãs Animais"
+			x: 24.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eFD Bosses §7traz uma trindade de chefes cabalísticos:"
+				"§7Chesed, Geburah e Malkuth. Cada um tem uma arena e"
+				"§7mecânica própria — não é pra amador."
+				""
+				"§eDerrote os 3 bosses do Qliphoth Awakening: Chesed, Geburah e Malkuth."
+			]
+			icon: "minecraft:nether_star"
+			id: "60A8660A370F9544"
+			rewards: [
+				{
+					count: 2
+					id: "476DD107FECE4894"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0C45C4CA065A65C9"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "6CA2B379514A8F4C"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			tasks: [
+				{
+					advancement: "fdbosses:qliphoth_awakening/chesed"
+					criterion: "killed_chesed"
+					id: "53042C31A178BD94"
+					type: "advancement"
+				}
+				{
+					advancement: "fdbosses:qliphoth_awakening/geburah"
+					criterion: "killed_geburah"
+					id: "19291F05B4AA98CE"
+					type: "advancement"
+				}
+				{
+					advancement: "fdbosses:qliphoth_awakening/malkuth"
+					criterion: "killed_malkuth"
+					id: "6823CC12F3D1217B"
+					type: "advancement"
+				}
+			]
+			title: "O Despertar de Qliphoth"
+			x: 26.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eBossominium §7reimagina bosses clássicos com fases,"
+				"§7arenas e um senso de humor peculiar pra quem gosta de sofrer."
+				""
+				"§eDerrote o boss principal do Bossominium."
+			]
+			icon: "minecraft:nether_star"
+			id: "7F84405B3B6578D5"
+			rewards: [
+				{
+					id: "484FC989D9676B5F"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "613D6B02F59EE7BD"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "155AAB1316D267D8"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [{
+				advancement: "bossominium:down_with_the_king"
+				criterion: "down_with_the_king"
+				id: "001A81AE1DB97F3C"
+				type: "advancement"
+			}]
+			title: "Abaixo o Rei"
+			x: 28.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Nem todo boss é orgânico. O Tank of Scrap é uma máquina"
+				"§7de guerra improvisada — pesada, lenta, mas absurdamente"
+				"§7resistente a dano corpo a corpo."
+				""
+				"§eDerrote o Tank of Scrap do Bossominium."
+				""
+				"§6Dica: §7Ele é lento — kite e use dano à distância."
+			]
+			icon: "bossominium:ancient_core"
+			id: "73D5D035578188CA"
+			rewards: [
+				{
+					id: "61D0E2D176B1A05A"
+					item: "bossominium:ancient_core"
+					type: "item"
+				}
+				{
+					id: "6E14D04ACAF58030"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [{
+				advancement: "bossominium:the_tank_of_scrap"
+				criterion: "the_tank_of_scrap"
+				id: "45EC314AA6F8D3BE"
+				type: "advancement"
+			}]
+			title: "O Tanque de Ferro-Velho"
+			x: 30.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7O Sandworm do Bosses Rise emerge da areia sem aviso —"
+				"§7um verme titânico que engole tudo no caminho."
+				""
+				"§eDerrote o Sandworm do Bosses Rise."
+				""
+				"§6Dica: §7Ele ataca em linha reta pelo subsolo — fique"
+				"§7se movendo em zigue-zague pra não ser pego de surpresa."
+			]
+			icon: "minecraft:sand"
+			id: "736870EF7577832E"
+			rewards: [
+				{
+					count: 4
+					id: "29FFAAB7F0541EA3"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "4A62C54D9D112D78"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_sandworm"
+				criterion: "kill"
+				id: "34F1ED4AFE9FA256"
+				type: "advancement"
+			}]
+			title: "A Serpente das Dunas"
+			x: 28.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7O Yeti do Bosses Rise domina o gelo — ataques em área"
+				"§7que congelam o chão ao redor dele."
+				""
+				"§eDerrote o Yeti do Bosses Rise."
+			]
+			icon: "minecraft:blue_ice"
+			id: "5FF82C6430B5B93A"
+			rewards: [
+				{
+					count: 8
+					id: "430DA3B64C387BB4"
+					item: "minecraft:packed_ice"
+					type: "item"
+				}
+				{
+					id: "595EE7B2451CA917"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_yeti"
+				criterion: "kill"
+				id: "1401B2F90A83D279"
+				type: "advancement"
+			}]
+			title: "O Gelo que Anda"
+			x: 30.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7O Underworld Knight é um dos bosses mais equipados do"
+				"§7Bosses Rise — luta como um jogador de verdade, com"
+				"§7combos e bloqueio de escudo."
+				""
+				"§eDerrote o Underworld Knight do Bosses Rise."
+				""
+				"§6Dica: §7Ele bloqueia ataques frontais — quebre a guarda"
+				"§7dele com machado ou ataque pelas costas."
+			]
+			icon: "minecraft:netherite_scrap"
+			id: "678DBBD94CF15A7F"
+			rewards: [
+				{
+					count: 2
+					id: "366A7F34DA301CC4"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "7A78B9C22C5F0696"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_underworld_knight"
+				criterion: "kill"
+				id: "0E35E25C6DE5259A"
+				type: "advancement"
+			}]
+			title: "O Cavaleiro do Submundo"
+			x: 32.0d
+			y: 10.0d
+		}
+		{
+			description: [
+				"§7A Cave Centipede tem pernas o suficiente pra andar em"
+				"§7qualquer superfície — e a Cave Centipede Leggings feita"
+				"§7com o material dela te dá a mesma habilidade: escalar"
+				"§7paredes como um inseto de verdade."
+				""
+				"§eForje a Cave Centipede Leggings."
+			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:centipede_leggings"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32EA6114B69490F2"
+			rewards: [
+				{
+					count: 16
+					id: "4034B9E5DC5A4CC9"
+					item: "minecraft:scaffolding"
+					type: "item"
+				}
+				{
+					id: "7F76CD71C132C68D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "7BBE8426DE70F647"
+				item: {
+					Count: 1
+					id: "alexsmobs:centipede_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Escalador de Paredes"
+			x: 24.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7O Professor Alex Khaan documentou dezenas de espécies"
+				"§7num só livro. Colecione o Animal Dictionary e um item"
+				"§7de origem marinha rara: o dente de Cachalote."
+				""
+				"§eObtenha o Animal Dictionary e um Cachalot Whale Tooth."
+			]
+			icon: "alexsmobs:animal_dictionary"
+			id: "314186A86F95AA95"
+			rewards: [
+				{
+					id: "5B0D0D34DA0C8972"
+					item: "minecraft:book"
+					type: "item"
+				}
+				{
+					id: "1E4333BD37CB70ED"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "56D1193BBEBEF533"
+					item: "alexsmobs:animal_dictionary"
+					type: "item"
+				}
+				{
+					id: "59B421140AC09DB6"
+					item: "alexsmobs:cachalot_whale_tooth"
+					type: "item"
+				}
+			]
+			title: "Catálogo do Professor Khaan"
+			x: 26.0d
 			y: 6.0d
 		}
 	]
-	title: "§bMekanism — Física Quântica"
+	title: "§cCriaturas e Bosses"
 }

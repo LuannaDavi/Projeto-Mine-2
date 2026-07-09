@@ -1,174 +1,235 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "07_exploracao"
-	group: "AA00000000000003"
-	icon: ["minecraft:filled_map", "minecraft:spyglass", "explorerscompass:explorerscompass"]
-	id: "AA07000000000001"
-	order_index: 6
+	filename: "06_magia_combate"
+	group: "6A1D97ECF9A7FC71"
+	id: "13D9802DC15EAA76"
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7Você está no centro de um mundo que não conhece seus limites.", "§7Mais de §e80 biomas§7, centenas de estruturas e dungeons", "§7esperam por quem tiver coragem de ir além do spawn.", "", "§eCrie uma §eExplorer's Compass §7— ela aponta para", "§7estruturas específicas que você escolher.", "", "§6Dica: §7§eJourneyMap §7mapeia tudo enquanto você explora.", "§7Marque waypoints dos lugares que quiser revisitar.", "§7JourneyMap + Explorer's Compass = nenhuma estrutura fica pra trás.", "", "§8§o(A bússola não aponta pra casa. Isso é proposital.)"]
-			icon: {
-				Count: 1
-				id: "explorerscompass:explorerscompass"
-				tag: { }
-			}
-			id: "2B00000000000002"
-			rewards: [
-				{
-					count: 4
-					id: "2B00000000000004"
-					item: "minecraft:ender_pearl"
-					type: "item"
-				}
-				{
-					id: "2B00000000000005"
-					type: "xp"
-					xp: 150
-				}
+			description: [
+				"§7§eIron's Spellbooks §7é o segundo sistema de magia do modpack."
+				"§7Focado em arquétipos como Mago, Curandeiro e Necromante."
+				""
+				"§eCrie ou encontre um Spell Book de Iron's Spellbooks."
+				""
+				"§6Dica: §7Derrotar mobs arcanos e usar feitiços dá XP mágico!"
+				"§7Cada nível dá mais poder e slots de feitiço — o jogo não"
+				"§7verifica seu nível exato, então continue evoluindo por conta própria."
 			]
-			shape: "gear"
-			tasks: [
-				{
-					id: "2B00000000000006"
-					item: {
-						Count: 1
-						id: "explorerscompass:explorerscompass"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			title: "O Mundo Chama"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B00000000000002"]
-			description: ["§7Oh The Biomes We've Gone adiciona mais de 80 biomas novos.", "§7Cada um tem flora, fauna e recursos exclusivos.", "", "§eVisite as §e5 vilas exclusivas §7do mod: Pumpkin Patch,", "§eRed Rock, Salem, Skyris §7e §eSwamp Village.", "", "§6Dica: §7A §eNature's Compass §7aponta para qualquer bioma!", "§7Procure por florestas de bambu, desertos de sal, florestas de cereja..."]
-			icon: "minecraft:sunflower"
-			id: "2B00000000000007"
+			icon: "irons_spellbooks:copper_spell_book"
+			id: "4D00000000000017"
 			rewards: [
 				{
 					count: 3
-					id: "2B00000000000008"
-					item: "minecraft:emerald"
+					id: "4D00000000000018"
+					item: "irons_spellbooks:scroll"
 					type: "item"
 				}
 				{
-					id: "2B00000000000009"
-					item: "artifacts:lucky_scarf"
-					type: "item"
-				}
-				{
-					id: "2B0000000000000A"
+					id: "4D00000000000019"
 					type: "xp"
 					xp: 300
 				}
 			]
-			tasks: [
+			tasks: [{
+				id: "4D0000000000001A"
+				item: "irons_spellbooks:copper_spell_book"
+				type: "item"
+			}]
+			title: "Arquétipo Mágico"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eIron Spell Book §7é o segundo degrau da progressão"
+				"§7mágica — mais slots de feitiço e mais poder de conjuração"
+				"§7que o Copper, mas ainda longe do topo."
+				""
+				"§eForje um §eIron Spell Book §7e equipe-o."
+				"§eVista uma peça de armadura temática de mago"
+				"§e(Pyromancer, Cryomancer ou Electromancer)."
+				""
+				"§6Dica: §7Cada armadura temática dá bônus à escola"
+				"§7de magia correspondente — fogo, gelo ou raio!"
+			]
+			icon: "irons_spellbooks:iron_spell_book"
+			id: "4D00000000000090"
+			rewards: [
 				{
-					advancement: "biomeswevegone:adventure/true_traveler"
-					criterion: ""
-					id: "2B0000000000000B"
-					type: "advancement"
+					count: 4
+					id: "4D00000000000091"
+					item: "irons_spellbooks:scroll"
+					type: "item"
+				}
+				{
+					id: "4D00000000000092"
+					type: "xp"
+					xp: 350
 				}
 			]
-			title: "Colecionador de Paisagens"
+			tasks: [
+				{
+					id: "4D00000000000093"
+					item: "irons_spellbooks:iron_spell_book"
+					type: "item"
+				}
+				{
+					id: "4D00000000000094"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:pyromancer_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Segundo Grau"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2B00000000000002"]
-			description: ["§7§eDungeons Arise §7não brinca. As masmorras são enormes,", "§7cheias de armadilhas e habitadas por mobs modificados.", "§7Mas os baús dentro delas têm itens que você não", "§7vai encontrar em mais lugar nenhum.", "", "§eEncontre e explore uma dungeon grande do Dungeons Arise.", "§eColete ao menos §e1 item raro §7de baú de dungeon.", "", "§6Dica: §7Não entre com pressa. Explore cada corredor.", "§7Armadilhas de pressão e spawners escondidos matam os impacientes."]
-			icon: "minecraft:hopper_minecart"
-			id: "2B0000000000000C"
+			description: [
+				"§7Iron's Spellbooks tem feitiços de diferentes escolas:"
+				"§7Fogo, Gelo, Raio, Cura, Sangue, Sombra..."
+				""
+				"§eConsiga um Enchanted Spell Book (tier diamante) e construa um Scroll Forge"
+				"§epra criar seus próprios pergaminhos de feitiço."
+				""
+				"§6Dica: §7Tombe bosses e explore masmorras pra encontrar pergaminhos"
+				"§7raros de escolas poderosas! O jogo não verifica quais feitiços você"
+				"§7aprendeu, então essa parte fica por sua conta — mas vale a pena."
+			]
+			icon: "irons_spellbooks:arcane_essence"
+			id: "4D0000000000001B"
 			rewards: [
 				{
-					count: 3
-					id: "2B0000000000000D"
-					item: "minecraft:emerald"
+					count: 5
+					id: "4D0000000000001C"
+					item: "irons_spellbooks:scroll"
 					type: "item"
 				}
 				{
-					count: 2
-					id: "2B0000000000000E"
-					item: "artifacts:golden_hook"
+					id: "4D0000000000001D"
+					item: "irons_spellbooks:arcane_essence"
 					type: "item"
 				}
 				{
-					id: "2B0000000000000F"
+					id: "4D0000000000001E"
 					type: "xp"
 					xp: 400
 				}
 			]
 			tasks: [
 				{
-					advancement: "dungeons_arise:find_mining_system"
-					criterion: "location0"
-					id: "2B00000000000010"
-					type: "advancement"
+					id: "4D0000000000001F"
+					item: "irons_spellbooks:diamond_spell_book"
+					type: "item"
+				}
+				{
+					id: "4CC7051ECFD6F006"
+					item: "irons_spellbooks:scroll_forge"
+					type: "item"
 				}
 			]
-			title: "Saquear as Profundezas"
+			title: "Mestre de Múltiplas Escolas"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2B0000000000000C"]
-			description: ["§7§eDungeons Arise §7gera dezenas de estruturas únicas —", "§7do §eShinobi Thieves §7escondido em bambuzal até o", "§7imponente §eShiraz Palace §7nas savanas e o", "§eColiseum §7de pedra nos desertos.", "", "§eEncontre o §eShiraz Palace §7e saqueie o andar", "§emais alto — os baús de topo são os mais valiosos.", "", "§6Dica: §7Explorer's Compass aponta para estruturas próximas.", "§7Leve escadas — muitas estruturas têm vários andares!"]
-			icon: "minecraft:chiseled_stone_bricks"
-			id: "2B00000000000301"
+			description: [
+				"§7§eCelestiSynth §7potencializa magias usando energia cósmica."
+				"§7O §eStar Monolith §7é um bloco ritualístico que canaliza"
+				"§7o poder de corpos celestes para criar equipamentos únicos."
+				""
+				"§eConstrua um §eStar Monolith §7e ative-o."
+				"§eForje uma peça de armadura §eLunar Stone §7ou §eSolar Crystal§7."
+				""
+				"§6Dica: §7Lunar Stone é defensivo, Solar Crystal é ofensivo!"
+				"§7Acompanhe as fases com Enhanced Celestials para maximizar o efeito."
+			]
+			icon: "celestisynth:celestial_core"
+			id: "4D0000000000002E"
 			rewards: [
 				{
-					count: 3
-					id: "2B00000000000302"
-					item: "minecraft:diamond"
+					count: 4
+					id: "4D0000000000002F"
+					item: "celestisynth:celestial_core"
 					type: "item"
 				}
 				{
-					count: 3
-					id: "2B00000000000303"
-					item: "minecraft:enchanted_book"
+					id: "4D00000000000030"
+					item: "celestisynth:star_monolith"
 					type: "item"
 				}
 				{
-					id: "2B00000000000304"
+					id: "4D00000000000031"
 					type: "xp"
-					xp: 700
+					xp: 500
 				}
 			]
 			tasks: [
 				{
-					advancement: "dungeons_arise:find_shiraz_palace"
-					criterion: "location0"
-					id: "2B00000000000305"
-					type: "advancement"
+					id: "6A00000000000503"
+					item: "celestisynth:star_monolith"
+					type: "item"
+				}
+				{
+					id: "6A00000000000504"
+					item: "celestisynth:celestial_core"
+					type: "item"
 				}
 			]
-			title: "Palácios e Arenas"
+			title: "Magia Celestial"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2B00000000000002"]
-			description: ["§7Towns and Towers adiciona aldeias, postos avançados", "§7e torres espalhadas pelo mundo — cada uma única.", "", "§eEncontre um Posto Avançado (Outpost) e derrote o", "§eCapitão de Raid §7que carrega a Bandeira Ominosa.", "", "§6Dica: §7Vigilantes (Pillagers) atiram à distância —", "§7avance em zigue-zague ou use escudo."]
-			icon: "minecraft:stone_bricks"
-			id: "2B00000000000011"
+			description: [
+				"§7§eMana and Artifice (MNA) §7é o terceiro grande sistema mágico"
+				"§7deste modpack — focado em §eVaras (Wands) §7e um pool de"
+				"§7Mana pessoal que regenera com o tempo."
+				""
+				"§7Tudo começa na §eInscription Table§7: combine um"
+				"§e§lWand Core §r§7+ um §e§lWand Cap §r§7para montar sua primeira Vara."
+				""
+				"§eCrie uma §eInscription Table §7do MNA."
+				"§eMonte sua primeira §eVara (Wand)§7."
+				""
+				"§6Dica: §7O livro §eCodex of Artifice §7explica tudo passo a passo!"
+				"§7Ele é dado automaticamente ao tocar na Inscription Table."
+			]
+			icon: {
+				Count: 1
+				id: "mna:wand_vinteum"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4D00000000000037"
 			rewards: [
 				{
-					count: 16
-					id: "2B00000000000012"
-					item: "minecraft:emerald"
+					count: 4
+					id: "4D00000000000038"
+					item: "mna:mana_resevoir"
 					type: "item"
 				}
 				{
-					id: "2B00000000000013"
+					id: "4D00000000000039"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000003A"
 					item: {
 						Count: 1
-						id: "minecraft:crossbow"
+						id: "mna:wand_vinteum"
 						tag: {
 							Damage: 0
 						}
@@ -176,838 +237,552 @@
 					type: "item"
 				}
 				{
-					id: "2B00000000000014"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					id: "2B00000000000015"
-					item: "minecraft:ominous_banner"
+					id: "4D00000000000070"
+					item: "mna:inscription_table"
 					type: "item"
 				}
 			]
-			title: "Sentinela das Fronteiras"
+			title: "Artífice da Mana"
 			x: 8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2B00000000000007"]
-			description: ["§7Existem ruínas e estruturas escondidas nos oceanos.", "§7Ship wrecks, templos aquáticos e ilhas perdidas", "§7guardam tesouros e itens impossíveis de obter em terra.", "", "§eExplore um Templo Aquático.", "§eDerrote o Elder Guardian e colete sua recompensa.", "", "§6Dica: §7Poções de Respiração Aquática e Visão Noturna são essenciais!"]
-			icon: "minecraft:prismarine_crystals"
-			id: "2B0000000000001B"
+			description: [
+				"§7Uma vara sem runas é só um pedaço de madeira caro."
+				"§7§eRunescribing §7é o sistema que grava poder elemental"
+				"§7diretamente nos componentes da sua vara."
+				""
+				"§eConstrua uma §eRunescribing Table §7e inscreva pelo"
+				"§emenos §e2 runas elementais §7diferentes (Fire, Water,"
+				"§eAir, Earth, Arcane...) em peças da sua vara."
+				""
+				"§6Dica: §7Cada runa muda como seus feitiços se comportam!"
+				"§7Combine runas opostas para efeitos interessantes."
+			]
+			icon: "mna:runescribing_table"
+			id: "4D00000000000095"
 			rewards: [
 				{
-					count: 8
-					id: "2B0000000000001C"
-					item: "minecraft:sponge"
+					count: 3
+					id: "4D00000000000096"
+					item: "mna:rune_fire"
 					type: "item"
 				}
 				{
-					count: 32
-					id: "2B0000000000001D"
-					item: "minecraft:prismarine_crystals"
+					count: 3
+					id: "4D00000000000097"
+					item: "mna:rune_water"
 					type: "item"
 				}
 				{
-					id: "2B0000000000001E"
+					id: "4D00000000000098"
 					type: "xp"
 					xp: 400
 				}
 			]
 			tasks: [
 				{
-					count: 1L
-					item: "minecraft:sponge"
-					id: "2B0000000000001F"
+					id: "4D00000000000099"
+					item: "mna:runescribing_table"
+					type: "item"
+				}
+				{
+					id: "4D0000000000009A"
+					item: "mna:rune_fire"
+					type: "item"
+				}
+				{
+					id: "4D0000000000009B"
+					item: "mna:rune_water"
 					type: "item"
 				}
 			]
-			title: "Profundezas do Mar"
+			title: "Gravando Poder"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2B00000000000002"]
-			description: ["§7Repurposed Structures reimagina estruturas do vanilla", "§7e as distribui por biomas onde normalmente não aparecem.", "§7Uma fortaleza do Nether pode aparecer na floresta!", "", "§eEncontre uma estrutura incomum em um bioma inesperado.", "§eColete pelo menos 3 itens de baús dessa estrutura.", "", "§6Dica: §7Olhe ao redor enquanto explora — elas são grandes!"]
-			icon: "minecraft:trapped_chest"
-			id: "2B00000000000020"
-			rewards: [
-				{
-					count: 3
-					id: "2B00000000000021"
-					item: "minecraft:enchanted_book"
-					type: "item"
-				}
-				{
-					id: "2B00000000000022"
-					type: "xp"
-					xp: 300
-				}
+			description: [
+				"§7§eVinteum §7é a base de tudo no MNA, mas o mineral bruto tem"
+				"§7impurezas que limitam seu potencial. Purificá-lo na Inscription"
+				"§7Table libera muito mais poder pra sua vara."
+				""
+				"§eRefine 8 Purified Vinteum Ingots e inscreva uma Runa Arcana."
+				""
+				"§6Dica: §7O próximo tier é o Superheated Purified Vinteum —"
+				"§7ainda mais raro e poderoso. Guarde Mana Battery por perto,"
+				"§7feitiços com Vinteum purificado custam mais mana."
+				""
+				"§8§o(Purificar cristal magico. Ninguem nunca explicou como funciona.)"
 			]
-			tasks: [
-				{
-					id: "2B00000000000023"
-					item: "minecraft:golden_apple"
-					type: "item"
-				}
-			]
-			title: "Estruturas Redescobertas"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B00000000000011"]
-			description: ["§7Waystones são pedras mágicas que permitem teletransporte instantâneo.", "§7Você pode ativar pedras encontradas no mundo ou criar as suas.", "", "§eCrie uma Waystone própria e coloque na sua base.", "", "§6Dica: §7Vá ativando toda Waystone que encontrar pelo caminho —", "§7o jogo não confere quantas você já achou, mas seu futuro eu agradece.", "§7Waystones em aldeias costumam estar na praça central!"]
-			icon: "waystones:waystone"
-			id: "2B00000000000024"
-			rewards: [
-				{
-					id: "2B00000000000025"
-					item: "waystones:waystone"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "2B00000000000026"
-					item: "waystones:warp_scroll"
-					type: "item"
-				}
-				{
-					id: "2B00000000000027"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					id: "2B00000000000028"
-					item: "waystones:waystone"
-					type: "item"
-				}
-			]
-			title: "Rede de Teletransporte"
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B0000000000001B"]
-			description: ["§7Naufrágios guardam os melhores mapas do jogo.", "§7Siga o mapa e cave até encontrar um baú enterrado —", "§7pode ter o §eHeart of the Sea §7dentro.", "", "§eEncontre um naufrágio e colete seu §emapa do tesouro§7.", "§eSiga o mapa e encontre o baú enterrado.", "", "§6Dica: §7Golfinhos revelam tesouros próximos se você", "§7alimentá-los com peixe cru. Leve sempre algo para pescar.", "", "§8§o(O X nunca marca o lugar exato. Sempre foi assim.)"]
-			icon: "minecraft:map"
-			id: "2B00000000000029"
-			rewards: [
-				{
-					id: "2B0000000000002A"
-					item: "artifacts:golden_hook"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "2B0000000000002B"
-					item: "minecraft:heart_of_the_sea"
-					type: "item"
-				}
-				{
-					id: "2B0000000000002C"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					count: 1L
-					item: "minecraft:heart_of_the_sea"
-					id: "2B0000000000002D"
-					type: "item"
-				}
-			]
-			title: "Caçador de Tesouros"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2B0000000000002E"]
-			description: ["§7Mineshafts, ruínas subterrâneas e cavernas profundas", "§7escondem minérios raros e baús preciosos.", "", "§eExplore uma Mineshaft Abandonada e colete", "§epelo menos 5 baús de minecart.", "", "§6Dica: §7Tochas ajudam a não se perder nas minas!", "§7Leve comida extra — é fácil ficar preso."]
-			icon: "minecraft:rail"
-			id: "2B00000000000038"
+			icon: "mna:purified_vinteum_ingot"
+			id: "4D00000000000071"
 			rewards: [
 				{
 					count: 16
-					id: "2B00000000000039"
-					item: "minecraft:iron_ingot"
+					id: "4D00000000000072"
+					item: "mna:vinteum_dust"
 					type: "item"
 				}
 				{
-					count: 3
-					id: "2B0000000000003A"
-					item: "minecraft:emerald"
+					id: "4D00000000000073"
+					item: "mna:mana_resevoir"
 					type: "item"
 				}
 				{
-					id: "2B0000000000003B"
-					type: "xp"
-					xp: 300
-				}
-			]
-			tasks: [
-				{
-					count: 1L
-					item: "minecraft:name_tag"
-					id: "2B0000000000003C"
-					type: "item"
-				}
-			]
-			title: "Minas Abandonadas"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2B00000000000002"]
-			description: ["§7As antigas pirâmides do deserto escondem", "§7armadilhas mortais e baús com loot valioso.", "", "§eExplore uma Pirâmide do Deserto ou Templo da Selva.", "§eDesarme as armadilhas e colete o loot dos baús.", "", "§6Dica: §7§cNUNCA §7pise nas placas de pressão!", "§7Quebre o bloco embaixo delas para desarmá-las com segurança."]
-			icon: "minecraft:sandstone"
-			id: "2B0000000000003D"
-			rewards: [
-				{
-					count: 2
-					id: "2B0000000000003E"
-					item: "minecraft:enchanted_book"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "2B0000000000003F"
-					item: "minecraft:tnt"
-					type: "item"
-				}
-				{
-					id: "2B00000000000040"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					count: 1L
-					item: "minecraft:tnt"
-					id: "2B00000000000041"
-					type: "item"
-				}
-			]
-			title: "Relíquias do Deserto"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2B00000000000024"]
-			description: ["§7§eImmersive Aircraft §7coloca nas suas mãos biplanos", "§7e girodinos construíveis — mais rápidos que Elytra,", "§7capazes de carregar passageiros.", "", "§eConstrua um §eBiplano §7ou §eGyrodyno §7e voe", "§epelo menos 1000 blocos usando a aeronave.", "", "§6Dica: §7Aeronaves usam combustível — leve carvão.", "§7A vista lá de cima compensa cada recurso gasto."]
-			icon: "immersive_aircraft:biplane"
-			id: "2B00000000000042"
-			rewards: [
-				{
-					count: 5
-					id: "2B00000000000043"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					count: 64
-					id: "2B00000000000044"
-					item: "minecraft:coal"
-					type: "item"
-				}
-				{
-					id: "2B00000000000045"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					id: "2B00000000000046"
-					item: "immersive_aircraft:biplane"
-					type: "item"
-				}
-			]
-			title: "Conquistador dos Céus"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2B00000000000042"]
-			description: ["§7Com sua aeronave, você pode explorar o mundo", "§7em escala muito maior em pouco tempo.", "", "§eVisite pelo menos 10 biomas diferentes.", "§eMarque no JourneyMap pelo menos 5 estruturas encontradas.", "", "§6Dica: §7Biomas raros costumam estar longe da geração inicial.", "§7Voe para longe do spawn — pelo menos 3000 blocos!"]
-			icon: "minecraft:filled_map"
-			id: "2B00000000000047"
-			rewards: [
-				{
-					count: 10
-					id: "2B00000000000048"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					id: "2B00000000000049"
-					item: "artifacts:lucky_scarf"
-					type: "item"
-				}
-				{
-					id: "2B0000000000004A"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					advancement: "minecraft:adventure/adventuring_time"
-					criterion: ""
-					id: "2B0000000000004B"
-					type: "advancement"
-				}
-			]
-			title: "Cartógrafo do Mundo"
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2B0000000000000C"]
-			description: ["§7The Graveyard adiciona cemitérios góticos com mortos-vivos", "§7especiais e estruturas únicas como criptas e mausoléus.", "", "§eEncontre um cemitério do The Graveyard.", "§eSaque a cripta ou mausoléu e escape vivo.", "", "§6Dica: §7Mobs do Graveyard são resistentes ao fogo!", "§7Leve flechas envenenadas ou espada encantada."]
-			icon: "graveyard:deepslate_gravestone"
-			id: "2B0000000000004C"
-			rewards: [
-				{
-					count: 3
-					id: "2B0000000000004D"
-					item: "minecraft:enchanted_book"
-					type: "item"
-				}
-				{
-					id: "2B0000000000004E"
-					item: "artifacts:night_vision_goggles"
-					type: "item"
-				}
-				{
-					id: "2B0000000000004F"
+					id: "4D00000000000074"
 					type: "xp"
 					xp: 450
 				}
 			]
 			tasks: [
 				{
-					count: 3L
-					id: "2B00000000000050"
-					item: "graveyard:dark_iron_ingot"
+					count: 8L
+					id: "6A00000000000501"
+					item: "mna:purified_vinteum_ingot"
+					type: "item"
+				}
+				{
+					id: "6A00000000000502"
+					item: "mna:rune_arcane"
 					type: "item"
 				}
 			]
-			title: "Entre os Mortos"
-			x: 10.0d
-			y: 4.0d
+			title: "Vinteum Purificado"
+			x: 12.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["2B0000000000004C"]
-			description: ["§7O §eThe Graveyard §7não é só estrutura — tem bosses. O Ghoul", "§7e o Nightmare guardam cemitérios maiores. O §eLich §7(\"Corrupted", "§7Champion\", não o da Twilight Forest) é o chefe supremo do mod —", "§7um feiticeiro morto-vivo de 3 fases que teleporta e invoca", "§7esqueletos sem parar.", "", "§eDerrote o Lich (Corrupted Champion) do Graveyard.", "", "§6Dica: §7Ele muda de forma 2 vezes durante a luta — cada fase", "§7é mais perigosa. Guarde poções de cura pra fase final."]
-			icon: "graveyard:dark_iron_ingot"
-			id: "2B00000000000401"
+			description: [
+				"§7§eImprovable Skills §7adiciona um sistema de habilidades"
+				"§7que crescem com uso — magia inclusa!"
+				""
+				"§eObtenha um Skills Book do Improvable Skills."
+				""
+				"§6Dica: §7Use feitiços repetidamente pra ganhar XP de habilidade!"
+				"§7Habilidades mágicas reduzem custo de mana com o tempo."
+			]
+			icon: "improvableskills:skills_book"
+			id: "4D0000000000003B"
 			rewards: [
 				{
-					count: 8
-					id: "2B00000000000402"
-					item: "graveyard:dark_iron_ingot"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "2B00000000000403"
+					count: 5
+					id: "4D0000000000003C"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "2B00000000000404"
-					type: "xp"
-					xp: 900
-				}
-			]
-			tasks: [
-				{
-					entity: "graveyard:lich"
-					id: "464DB78085637BCC"
-					type: "kill"
-					value: 1L
-				}
-			]
-			title: "O Lich do Cemitério"
-			x: 12.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2B00000000000029"]
-			description: ["§7§eTide §7reinventa a pesca por completo — centenas de", "§7peixes novos, varas especiais e uma bancada dedicada", "§7só para o ofício de pescador.", "", "§eConstrua uma §eAngling Table §7e forje uma", "§eCrystal Fishing Rod§7.", "", "§6Dica: §7Cada vara do Tide tem bônus diferentes!", "§7A Midas Fishing Rod aumenta a chance de loot raro."]
-			icon: "tide:crystal_fishing_rod"
-			id: "2B00000000000051"
-			rewards: [
-				{
-					count: 5
-					id: "2B00000000000052"
-					item: "minecraft:prismarine_shard"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "2B00000000000053"
-					item: "artifacts:golden_hook"
-					type: "item"
-				}
-				{
-					id: "2B00000000000054"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					id: "2B00000000000055"
-					item: "tide:angling_table"
-					type: "item"
-				}
-				{
-					id: "2B00000000000100"
-					item: "tide:crystal_fishing_rod"
-					type: "item"
-				}
-			]
-			title: "Os Sete Mares"
-			x: 14.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2B00000000000047"]
-			description: ["§7Você pode montar cavalos, lhamas e muito mais com §eSWEM§7.", "§7O mod adiciona mecânicas profundas de equitação e criação.", "", "§eSele uma montura e produza um Alfalfa Bale pra alimentá-la.", "", "§6Dica: §7Domestication Innovation facilita o processo de doma!", "§7Cavalos de Blue Skies têm atributos diferentes — vale testar todos", "§7antes de escolher seu parceiro de viagem definitivo."]
-			icon: "swem:adventure_saddle_sultan"
-			id: "2B00000000000056"
-			rewards: [
-				{
-					id: "2B00000000000057"
-					item: "swem:adventure_saddle_sultan"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "2B00000000000058"
-					item: "minecraft:golden_carrot"
-					type: "item"
-				}
-				{
-					id: "2B00000000000059"
+					id: "4D0000000000003D"
 					type: "xp"
 					xp: 350
 				}
 			]
-			tasks: [
-				{
-					id: "2B0000000000005A"
-					item: "minecraft:saddle"
-					type: "item"
-				}
-				{
-					id: "FX000000000004A"
-					item: "swem:alfalfa_bale"
-					type: "item"
-				}
-			]
-			title: "Cavaleiro Errante"
-			x: 0.0d
-			y: 8.0d
+			tasks: [{
+				id: "4D0000000000003E"
+				item: "improvableskills:skills_book"
+				type: "item"
+			}]
+			title: "Maestria nas Artes"
+			x: 14.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["2B00000000000002"]
-			description: ["§7§eGrappling Hook §7é um gancho de escalada que", "§7transforma qualquer parede em superfície escalável —", "§7basta lançar e voar.", "", "§eCrie um §eGrappling Hook §7e use-o para escalar", "§eum penhasco ou montanha alta.", "", "§6Dica: §7Versões aprimoradas (Motor Hook, Rocket Hook)", "§7lançam mais longe e retraem mais rápido!", "", "§8§o(Elytras são elegantes. Gancho é prático. Você decide.)"]
-			icon: "grapplemod:grapplinghook"
-			id: "2B00000000000101"
+			description: [
+				"§7§eRelics §7adiciona artefatos mágicos poderosos que são encontrados em baús de dungeons."
+				"§eEncontre 2 Relics diferentes: o Bastion Ring e o Arrow Quiver."
+				"§7Eles ocupam slots de Curios e dão poderes passivos."
+				""
+				"§6Dica: §7Relics mais raros têm efeitos combinados únicos!"
+				"§7Cheque dungeons do Dungeons Arise para Relics raras."
+			]
+			icon: "relics:bastion_ring"
+			id: "4D0000000000003F"
 			rewards: [
 				{
-					id: "2B00000000000102"
-					item: "grapplemod:motorhook"
-					type: "item"
-				}
-				{
-					id: "2B00000000000103"
-					type: "xp"
-					xp: 300
-				}
-			]
-			tasks: [
-				{
-					id: "2B00000000000104"
-					item: "grapplemod:grapplinghook"
-					type: "item"
-				}
-			]
-			title: "Escalador de Montanhas"
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["2B00000000000002"]
-			description: ["§7§eScannable §7adiciona um scanner que revela minérios e", "§7estruturas próximas sem precisar escavar no escuro.", "", "§7§eTraveler's Titles §7concede §lTítulos §r§7conforme você", "§7explora e completa feitos — eles aparecem acima da sua cabeça!", "", "§eCrie uma §eLuneta §7e use-a para observar o horizonte", "§eà distância pelo menos uma vez.", "", "§6Dica: §7Combine com o Scanner para localizar minérios", "§7escondidos em cavernas antes de descer até elas!"]
-			icon: "minecraft:spyglass"
-			id: "2B00000000000070"
-			rewards: [
-				{
-					count: 16
-					id: "2B00000000000071"
-					item: "minecraft:iron_ingot"
+					id: "4D00000000000040"
+					item: "relics:space_dissector"
 					type: "item"
 				}
 				{
 					count: 5
-					id: "2B00000000000075"
-					item: "minecraft:amethyst_shard"
+					id: "4D00000000000041"
+					item: "minecraft:experience_bottle"
 					type: "item"
 				}
 				{
-					id: "2B00000000000073"
+					id: "4D00000000000042"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "4D00000000000043"
+					item: "relics:bastion_ring"
+					type: "item"
+				}
+				{
+					id: "4856E07B543CE348"
+					item: "relics:arrow_quiver"
+					type: "item"
+				}
+			]
+			title: "Caçador de Relíquias"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eArtifacts §7adiciona dezenas de itens usáveis nos slots de Curios,"
+				"§7cada um com um efeito passivo único."
+				""
+				"§eConsiga 3 Artifacts diferentes: Obsidian Skull, Golden Hook e Running Shoes."
+				""
+				"§6Dica: §7Equipe-os nos slots de Curios pra ativar os efeitos — só ter no"
+				"§7inventário não faz nada!"
+			]
+			icon: "artifacts:obsidian_skull"
+			id: "4D00000000000049"
+			rewards: [
+				{
+					id: "4D0000000000004A"
+					item: "artifacts:obsidian_skull"
+					type: "item"
+				}
+				{
+					id: "4D0000000000004B"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "4D000000000000B2"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					id: "4D0000000000004C"
+					item: "artifacts:obsidian_skull"
+					type: "item"
+				}
+				{
+					id: "3E4250FC19D3EAF2"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					id: "24472716216C86DE"
+					item: "artifacts:running_shoes"
+					type: "item"
+				}
+			]
+			title: "Colecionador de Artefatos"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eEnhanced Celestials §7transforma as luas em eventos."
+				"§7Durante a §cLua de Sangue§7, os mobs ficam mais fortes,"
+				"§7mais rápidos — mas os drops são melhores."
+				"§7É a noite mais perigosa e mais lucrativa do modpack."
+				""
+				"§eSobreviva a uma §cLua de Sangue §7e colete um"
+				"§eMeteoro §7que cai durante o evento."
+				""
+				"§6Dica: §7Feitiços de área do §eArs Nouveau §7são ideais."
+				"§7Prepare §eSource Jars §7extras — você vai conjurar muito."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "sleep_tight:textures/gui/moon.png"
+				}
+			}
+			id: "4D00000000000051"
+			rewards: [
+				{
+					count: 8
+					id: "4D00000000000053"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4D00000000000054"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [{
+				id: "4D00000000000055"
+				item: "enhancedcelestials:meteor"
+				type: "item"
+			}]
+			title: "Lua de Sangue"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7A fusão entre magia e tecnologia é rara, mas poderosa."
+				"§7O §ePlenty of Golems §7deixa você criar golems temáticos"
+				"§7que ajudam em tarefas variadas pela sua base."
+				""
+				"§eCrie um Golems Wand."
+				""
+				"§6Dica: §7Diferentes materiais criam golems com habilidades"
+				"§7diferentes — teste combinações pra achar o ideal pra você."
+			]
+			icon: "plenty_of_golems:golems_staff"
+			id: "4D00000000000056"
+			rewards: [
+				{
+					id: "4D00000000000057"
+					item: "plenty_of_golems:golems_staff"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4D00000000000058"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4D00000000000059"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				id: "4D0000000000005A"
+				item: "plenty_of_golems:golems_staff"
+				type: "item"
+			}]
+			title: "Criador de Golems"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eCelestisynth §7traz duas armaduras opostas: Solar Crystal"
+				"§7(ofensiva, queima quem te acerta) e Lunar Stone (defensiva,"
+				"§7reduz dano ao ser atingido). Escolha um lado."
+				""
+				"§eForje o elmo de Solar Crystal ou de Lunar Stone."
+			]
+			icon: {
+				Count: 1
+				id: "celestisynth:solar_crystal_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32B776698697A5FD"
+			rewards: [
+				{
+					id: "74F942F684C8E4A8"
+					item: {
+						Count: 1
+						id: "celestisynth:lunar_stone_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "547493055B5A9A09"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				id: "123201B464C0B393"
+				item: {
+					Count: 1
+					id: "celestisynth:solar_crystal_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Armadura Celestial"
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Celestisynth não faz espada básica — cada arma tem nome,"
+				"§7personalidade e um conjunto de habilidades só dela."
+				"§7§eFrostbound §7congela quem você acerta repetidamente."
+				"§7§eSolaris §7cerca você de bombas solares que perseguem alvos."
+				""
+				"§eForje o Frostbound e o Solaris."
+				""
+				"§6Dica: §7Segure botão direito com cada arma pra descobrir"
+				"§7as habilidades ativas — a maioria tem 2 a 5 skills diferentes."
+				"§7Scroll com o mouse no tooltip pra ver a lista completa!"
+				""
+				"§8§o(Sua espada agora tem mais personalidade que voce.)"
+			]
+			icon: "celestisynth:lunar_scrap"
+			id: "7AF8D83397895DEA"
+			rewards: [
+				{
+					count: 4
+					id: "7551368EDB72F955"
+					item: "celestisynth:lunar_scrap"
+					type: "item"
+				}
+				{
+					id: "4595B75C45E3E09C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [
+				{
+					advancement: "celestisynth:obtain_frostbound"
+					criterion: ""
+					id: "7FC9647B147C22FA"
+					type: "advancement"
+				}
+				{
+					advancement: "celestisynth:obtain_solaris"
+					criterion: ""
+					id: "2B9A68EFE6A17770"
+					type: "advancement"
+				}
+			]
+			title: "Armas com Alma"
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Acima do Celestial existe o §eSupernal §7— fusão de Celestial"
+				"§7Netherite com os núcleos mais raros do mod. É o material"
+				"§7definitivo do Celestisynth, usado nas armas mais fortes."
+				""
+				"§eObtenha um Supernal Netherite Ingot."
+				""
+				"§6Dica: §7Você precisa de um Celestial Netherite Ingot pronto"
+				"§7e um Celestial Core Heated antes de tentar o smithing —"
+				"§7a cadeia completa é longa, mas vale o resultado."
+			]
+			icon: "celestisynth:starstruck_scrap"
+			id: "174B4D242FADA025"
+			rewards: [
+				{
+					count: 2
+					id: "1D53149BF7861A2F"
+					item: "celestisynth:starstruck_scrap"
+					type: "item"
+				}
+				{
+					id: "2D83CB1EA1442087"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [{
+				advancement: "celestisynth:obtain_supernal_netherite_ingot"
+				criterion: ""
+				id: "4EFDD8F2B14FE0B9"
+				type: "advancement"
+			}]
+			title: "O Poder Supernal"
+			x: 18.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Feitiço sem equipamento é só metade do combo."
+				"§7Artifacts e Relics dão vantagens passivas que combinam"
+				"§7muito bem com builds de mago — mais mana, mais mobilidade."
+				""
+				"§eTenha um Novice Spell Book (Ars Nouveau) e um Artifact"
+				"§eequipado ao mesmo tempo."
+				""
+				"§6Dica: §7Crystal Heart + Ars Nouveau é uma combinação clássica —"
+				"§7mais vida pra sobreviver enquanto conjura feitiços de perto."
+			]
+			icon: "artifacts:crystal_heart"
+			id: "0A0FD9F82BE91778"
+			rewards: [
+				{
+					id: "1519E8954616CA33"
+					item: "ars_nouveau:amulet_of_mana_boost"
+					type: "item"
+				}
+				{
+					id: "0B8E43AC7E175F27"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "54B30432A359B682"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+				{
+					id: "1B89DB8942AD50F1"
+					item: "artifacts:crystal_heart"
+					type: "item"
+				}
+			]
+			title: "Mago Equipado"
+			x: 20.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"§7Um mago também pode ser útil pra sociedade — feitiços de"
+				"§7colheita e proteção ajudam qualquer colônia a crescer"
+				"§7mais rápido e mais segura."
+				""
+				"§eTenha um Novice Spell Book (Ars Nouveau) e um Hut de"
+				"§eMineColonies na mesma base."
+				""
+				"§6Dica: §7O feitiço Break com Harvest é ótimo pra colher"
+				"§7fazendas da colônia mais rápido."
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "51914A33EF674D78"
+			rewards: [
+				{
+					count: 16
+					id: "3B2C8EB4848863C9"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "1FE006DF99DAA06F"
 					type: "xp"
 					xp: 200
 				}
 			]
 			tasks: [
 				{
-					id: "2B00000000000074"
-					item: "minecraft:spyglass"
+					id: "5BC945E4DB28FF37"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+				{
+					id: "4CD2D4FAFAC3DB4E"
+					item: "minecolonies:blockhutfarmer"
 					type: "item"
 				}
 			]
-			title: "Olhos no Horizonte"
-			x: 4.0d
+			title: "Feitiçaria a Serviço da Colônia"
+			x: 22.0d
 			y: 8.0d
 		}
-		{
-			description: ["§7§eEcologics §7adiciona coqueiros e praias de verdade —", "§7porque toda ilha decente merece uma palmeira.", "", "§eColete um Coconut e uma Seashell."]
-			icon: "ecologics:coconut"
-			id: "20645A9C06C4DBFD"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:kelp"
-					count: 8
-					id: "A5DB423C24B9B7C0"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "FC6420D4B4EA6F66"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "ecologics:coconut"
-					id: "608736A82F3DAD01"
-				}
-				{
-					type: "item"
-					item: "ecologics:seashell"
-					id: "D194E6F3391FA920"
-				}
-			]
-			title: "Paraíso Tropical"
-			x: 14.0d
-			y: 10.0d
-		}
-		{
-			description: ["§7Chega de atravessar rio pisando em blocos soltos igual quem", "§7não tem amor próprio. §eMacaw's Bridges §7traz pontes de verdade,", "§7com corrimão e tudo.", "", "§eConstrua uma Iron Bridge (ou de madeira, com Bridge Torch pra iluminar)."]
-			icon: "mcwbridges:iron_bridge"
-			id: "835DD33FC86B3584"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 8
-					id: "4FFA441542A50124"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "61DCA6C89DA4288D"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "mcwbridges:iron_bridge"
-					id: "AE22C619172A9E28"
-				}
-				{
-					type: "item"
-					item: "mcwbridges:bridge_torch"
-					id: "2D63C6E7B6D5691B"
-				}
-			]
-			title: "Pontes Decentes"
-			x: 16.0d
-			y: 10.0d
-		}
-		{
-			description: ["§7Dormir enfiado num buraco de terra é sobrevivência.", "§7Ter um saco de dormir e uma churrasqueira é §eestilo§7.", "", "§eCrie um Sleeping Bag (qualquer cor) e um Grill."]
-			icon: "camping:sleeping_bag_blue"
-			id: "C83C869C1BE7F5C9"
-			rewards: [
-				{
-					type: "item"
-					item: "camping:large_backpack"
-					id: "6826AAAE82378B40"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "C1164ABD298F7B20"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "camping:sleeping_bag_blue"
-					id: "02FC9DF5CF59BB65"
-				}
-				{
-					type: "item"
-					item: "camping:grill"
-					id: "EF0E30BF24AB99A9"
-				}
-			]
-			title: "Acampamento de Verdade"
-			x: 18.0d
-			y: 10.0d
-		}
-		{
-			description: ["§7§eOh The Biomes We've Gone §7é ridiculamente grande: mais de 90", "§7biomas novos, cada um com árvores, flores e blocos próprios.", "§7Isso é mais biomas do que o vanilla tem no total.", "", "§eColete saplings de 3 árvores exclusivas: Araucária, Baobá e Cipreste."]
-			icon: "biomeswevegone:araucaria_sapling"
-			id: "9E1D4BC5FFC163B0"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:bone_meal"
-					count: 16
-					id: "6C61EB84907DFE70"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "BDB276B986323B6A"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "biomeswevegone:araucaria_sapling"
-					id: "8E7D88C6AD982A68"
-				}
-				{
-					type: "item"
-					item: "biomeswevegone:baobab_sapling"
-					id: "20578D37E334E0A8"
-				}
-				{
-					type: "item"
-					item: "biomeswevegone:cypress_sapling"
-					id: "1AE0F061CB39323A"
-				}
-			]
-			title: "Um Mundo de Biomas"
-			x: 16.0d
-			y: 12.0d
-		}
-		{
-			description: ["§7Alguém catalogou aloé vera, amaranto e angélica só pra", "§7deixar seu inventário parecendo uma farmácia medieval.", "", "§eColha Aloe Vera e Amaranth."]
-			icon: "biomeswevegone:aloe_vera"
-			id: "4BB80F843B2C07AE"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:glass_bottle"
-					count: 4
-					id: "4ADDD621F50B46B2"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "0E2EFFB1BC3C1AD4"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "biomeswevegone:aloe_vera"
-					id: "322CC53DC59B8A5F"
-				}
-				{
-					type: "item"
-					item: "biomeswevegone:amaranth"
-					id: "FAA71867D10CC17D"
-				}
-			]
-			title: "Herbário Impossível"
-			x: 18.0d
-			y: 12.0d
-		}
-		{
-			description: ["§7Uma boa fazenda de cavalos precisa de mais que um cercado.", "§7§eSWEM §7traz baias, celeiros de grão e tudo mais.", "", "§eConstrua uma Stall Door e um Grain Bin (qualquer madeira)."]
-			icon: "swem:acacia_stall_horse"
-			id: "7DAEDB761BEA0365"
-			rewards: [
-				{
-					type: "item"
-					item: "swem:alfalfa_bale"
-					count: 4
-					id: "BD76CA7419DA132D"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "069EFC5F95D1D6D7"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "swem:acacia_stall_horse"
-					id: "45B425F942977AC4"
-				}
-				{
-					type: "item"
-					item: "swem:bin_grain_acacia"
-					id: "2F9A2881E1B03223"
-				}
-			]
-			title: "Estábulo Completo"
-			x: 20.0d
-			y: 12.0d
-		}
-		{
-			description: ["§7Voar de Elytra é pra amador. §eImmersive Aircraft §7te dá", "§7biplanos, zepelins e helicópteros de verdade pra pilotar.", "", "§eProduza Hull, Engine e Propeller — as 3 peças centrais de", "§equalquer aeronave."]
-			icon: "immersive_aircraft:hull"
-			id: "89AF59D4C1B48805"
-			rewards: [
-				{
-					type: "item"
-					item: "immersive_aircraft:industrial_gears"
-					count: 2
-					id: "4259DB78D8DFB5E8"
-				}
-				{
-					type: "xp"
-					xp: 200
-					id: "9BDFB3BD08DEC29C"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "immersive_aircraft:hull"
-					id: "54194AA8A66A66F6"
-				}
-				{
-					type: "item"
-					item: "immersive_aircraft:engine"
-					id: "A448B1914489C580"
-				}
-				{
-					type: "item"
-					item: "immersive_aircraft:propeller"
-					id: "8DA5B430DD28A7EC"
-				}
-			]
-			title: "Peças de Aeronave"
-			x: 22.0d
-			y: 12.0d
-		}
-		{
-			description: ["§7§eTide §7reformula a pesca inteira: mais de 100 peixes novos,", "§7cada um pescável com equipamento específico.", "", "§eConstrua uma Angling Table e um Fish Display."]
-			icon: "minecraft:book"
-			id: "9E2D9CE60B711D35"
-			rewards: [
-				{
-					type: "item"
-					item: "tide:iron_fishing_rod"
-					id: "C8A369BA29458BB1"
-				}
-				{
-					type: "xp"
-					xp: 150
-					id: "B4C067DA4866D466"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "tide:angling_table"
-					id: "7E89365C59528CA7"
-				}
-				{
-					type: "item"
-					item: "tide:fish_display"
-					id: "12B09638637CC851"
-				}
-			]
-			title: "Aquário do Pescador"
-			x: 24.0d
-			y: 12.0d
-		}
-		{
-			description: ["§7§eMan of Many Planes §7traz aviões montáveis de verdade —", "§7desde biplanos vermelhos até modelos econômicos que", "§7mal ficam no ar (mas ficam).", "", "§eConstrua um Scarlet Biplane ou um Economy Plane."]
-			icon: "minecraft:book"
-			id: "D2D17D895BFD400F"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:iron_ingot"
-					count: 8
-					id: "372D52EB650A41BF"
-				}
-				{
-					type: "xp"
-					xp: 200
-					id: "BE0106F4166EEA2C"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "man_of_many_planes:scarlet_biplane"
-					id: "3E5B3A7FEB823F38"
-				}
-			]
-			title: "Aviador Amador"
-			x: 26.0d
-			y: 10.0d
-		}
-		{
-			description: ["§7Uma barraca de verdade é bem melhor que dormir a céu", "§7aberto torcendo pra não aparecer um Creeper.", "", "§eMonte uma Tent de qualquer cor."]
-			icon: "minecraft:book"
-			id: "799E9D909D6DF9E7"
-			rewards: [
-				{
-					type: "item"
-					item: "camping:large_backpack"
-					id: "CEE49B3A66E5337A"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "8B3CC3DAB929358F"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "camping:tent_black"
-					id: "9C3EDEEC6E277DC6"
-				}
-			]
-			title: "Base Avançada"
-			x: 28.0d
-			y: 12.0d
-		}
 	]
-	title: "§bO Mundo e seus Biomas"
+	title: "§cMagia de Batalha"
 }

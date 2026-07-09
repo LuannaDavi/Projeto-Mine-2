@@ -1,125 +1,929 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "01_primeiros_passos"
-	group: ""
-	icon: ["minecraft:compass", "minecraft:iron_pickaxe", "minecraft:crafting_table", "minecraft:diamond"]
-	id: "AA01000000000001"
-	order_index: 0
+	filename: "08_civilizacoes"
+	group: "7AE9512640318D11"
+	id: "0313EFE76C02B451"
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["§7Bem-vindo a este mundo vasto e perigoso.", "", "§7Você acordou sem nada. O primeiro passo é simples:", "§eConstrua uma mesa de trabalho e forne de pedra.", "", "§6Dica: §7Colete madeira, faça tábuas, depois a mesa.", "§7Com a forne, você poderá fundir minerais.", "§7Graças ao §eFallingTree§7, basta cortar a base de uma árvore", "§7e o resto cai automaticamente — corte rápido garantido!"]
-			icon: "minecraft:crafting_table"
-			id: "1A00000000000002"
+			description: [
+				"§7Todo império começa com uma tenda e uma visão."
+				"§7§eMineColonies §7é o mod de civilização mais complexo"
+				"§7deste modpack — você é o prefeito, o arquiteto"
+				"§7e o comandante ao mesmo tempo."
+				""
+				"§eCrie um §eSupply Camp §7ou §eSupply Ship§7,"
+				"§7posicione-o e funde sua primeira colônia."
+				""
+				"§6Dica: §7Você §lnão pode mover §r§7a colônia depois."
+				"§7Escolha uma área plana, perto de água e recursos."
+				"§7Espaço para crescer é mais importante do que a paisagem."
+				""
+				"§8§o(Parabéns, agora você é responsável pela vida de gente que não pediu pra nascer.)"
+			]
+			icon: "minecolonies:supplychestdeployer"
+			id: "7B00000000000002"
 			rewards: [
 				{
+					count: 32
+					id: "7B00000000000003"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
 					count: 16
-					id: "1A00000000000003"
-					item: "minecraft:torch"
+					id: "7B00000000000004"
+					item: "minecraft:stone"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "1A00000000000004"
-					item: "minecraft:bread"
-					type: "item"
-				}
-				{
-					id: "1A00000000000005"
+					id: "7B00000000000005"
 					type: "xp"
-					xp: 50
+					xp: 200
 				}
 			]
 			shape: "gear"
-			tasks: [
-				{
-					id: "1A00000000000006"
-					item: "minecraft:crafting_table"
-					type: "item"
-				}
-				{
-					id: "1A00000000000007"
-					item: "minecraft:furnace"
-					type: "item"
-				}
-			]
-			title: "Do Zero ao Fogo"
+			tasks: [{
+				id: "7B00000000000006"
+				item: "minecolonies:supplychestdeployer"
+				type: "item"
+			}]
+			title: "Fundação da Colônia"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["1A00000000000002"]
-			description: ["§7Pedra quebra pedra, mas §6ferro §7quebra tudo.", "§7É o primeiro material que separa quem sobrevive", "§7de quem simplesmente resiste.", "", "§eMine ao menos 16 ferros brutos e funda-os na fornalha.", "§eCrie um conjunto completo de ferramentas de ferro.", "", "§6Dica: §7Y=-16 a Y=-58 é a faixa mais rica para ferro.", "§7Leve tochas — minas escuras escondem surpresas desagradáveis.", "", "§8§o(245 mods instalados e você ainda vai cavar com pá de madeira.)", "", "§8§o(Parabéns, você tecnicamente evoluiu da Idade da Pedra.)"]
-			icon: {
-				Count: 1
-				id: "minecraft:iron_pickaxe"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1A00000000000008"
+			description: [
+				"§7O §eBuilder §7é o primeiro colonizador que você precisa."
+				"§7Ele constrói os edifícios da colônia com os materiais que você entrega."
+				""
+				"§eCrie um §eBuilder's Hut §7e contrate um Builder."
+				"§7Entregue os materiais pedidos para ele construir."
+				""
+				"§6Dica: §7O Builder precisa de muitos recursos simples!"
+				"§7Tenha estoque de madeira, pedra e terra antes de contratar."
+				""
+				"§8§o(Ele constrói mais rápido que você. Não fique triste, é o trabalho dele.)"
+			]
+			icon: "minecolonies:supplychestdeployer"
+			id: "7B00000000000007"
 			rewards: [
 				{
-					id: "1A00000000000009"
-					item: {
-						Count: 1
-						id: "minecraft:iron_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
+					count: 64
+					id: "7B00000000000008"
+					item: "minecraft:oak_planks"
 					type: "item"
 				}
 				{
-					count: 8
-					id: "1A0000000000000A"
-					item: "minecraft:cooked_beef"
+					count: 32
+					id: "7B00000000000009"
+					item: "minecraft:cobblestone"
 					type: "item"
 				}
 				{
-					id: "1A0000000000000B"
+					id: "7B0000000000000A"
 					type: "xp"
-					xp: 150
+					xp: 250
 				}
 			]
 			tasks: [
 				{
-					count: 16L
-					id: "1A0000000000000C"
+					id: "7B0000000000000B"
+					item: "minecolonies:blockhutbuilder"
+					type: "item"
+				}
+				{
+					id: "37ACD5C7FF889DF8"
+					item: "minecolonies:scroll_tp"
+					type: "item"
+				}
+			]
+			title: "O Primeiro Construtor"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Uma colônia precisa de comida para sobreviver."
+				"§7O §eFarmer §7e o §eFisherman §7garantem o sustento."
+				""
+				"§eCrie e construa um §eFarmer's Hut §7na colônia."
+				"§eCrie e construa um §eFisherman's Hut §7também."
+				""
+				"§6Dica: §7O Farmer precisa de espaço para plantar ao redor!"
+				"§7Coloque o Fisherman perto de um lago ou rio."
+				""
+				"§8§o(Ninguém trabalha de estômago vazio — nem NPC.)"
+			]
+			icon: "minecolonies:blockhutfarmer"
+			id: "7B0000000000000C"
+			rewards: [
+				{
+					count: 32
+					id: "7B0000000000000D"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7B0000000000000E"
+					item: "minecraft:cooked_salmon"
+					type: "item"
+				}
+				{
+					id: "7B0000000000000F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "7B00000000000010"
+					item: "minecolonies:blockhutfarmer"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "69220E0FAE9A2BFF"
+					item: "minecolonies:compost"
+					type: "item"
+				}
+			]
+			title: "Sustento da Colônia"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Uma colônia próspera é um alvo. Sem guardas, seus cidadãos"
+				"§7viram vítimas dos primeiros mobs que passarem pela vizinhança."
+				""
+				"§eCrie uma Guard Tower e contrate seu primeiro Guarda."
+				""
+				"§6Dica: §7Quanto maior o nível da torre, mais forte o guarda."
+				"§7Guard Reinforcements Scroll chama ajuda extra em emergências."
+			]
+			icon: "minecolonies:blockhutguardtower"
+			id: "7B00000000000011"
+			rewards: [
+				{
+					count: 8
+					id: "7B00000000000012"
 					item: "minecraft:iron_ingot"
 					type: "item"
 				}
 				{
-					id: "1A0000000000000D"
+					count: 3
+					id: "7B00000000000013"
 					item: {
 						Count: 1
-						id: "minecraft:iron_pickaxe"
+						id: "minecraft:bow"
 						tag: {
 							Damage: 0
 						}
 					}
 					type: "item"
 				}
+				{
+					id: "7B00000000000014"
+					type: "xp"
+					xp: 350
+				}
 			]
-			title: "A Era do Ferro"
-			x: 2.0d
+			tasks: [
+				{
+					id: "7B00000000000015"
+					item: "minecolonies:blockhutguardtower"
+					type: "item"
+				}
+				{
+					id: "3DEF40DEADD9A985"
+					item: "minecolonies:scroll_guard_help"
+					type: "item"
+				}
+			]
+			title: "Guarnição Defensiva"
+			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["1A00000000000008"]
-			description: ["§7As noites aqui não perdoam os despreparados.", "§7Mobs de mods como §eBorn in Chaos §7e §eThe Graveyard", "§7são muito mais perigosos do que os vanilla.", "", "§eCrie pelo menos uma peça de armadura de ferro", "§ee uma espada ou machado de ferro.", "", "§6Dica: §7§eBetterCombat §7ativa combos únicos por arma!", "§7Clique com ritmo — não só spam. Cada arma tem seu tempo."]
-			icon: {
-				Count: 1
-				id: "minecraft:iron_chestplate"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "1A0000000000000E"
+			description: [
+				"§7§eWorkers §7expande o MineColonies com novos tipos de trabalhadores."
+				"§7Mineradores, lenhadores e artesões especializados!"
+				""
+				"§eCrie e construa uma Mine pra seu Miner."
+				""
+				"§6Dica: §7O Miner pode minerar até Y=-50 com upgrades!"
+				"§7Configure níveis de mineração pra maximizar recursos —"
+				"§7ele trabalha sozinho depois de configurado."
+				""
+				"§8§o(Ele desce, ele sobe, ele nunca reclama. Você já reclamou hoje?)"
+			]
+			icon: "minecolonies:blockhutminer"
+			id: "7B00000000000016"
 			rewards: [
 				{
-					id: "1A0000000000000F"
+					count: 32
+					id: "7B00000000000017"
+					item: "minecraft:iron_ore"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7B00000000000018"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "7B00000000000019"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [{
+				id: "7B0000000000001A"
+				item: "minecolonies:blockhutminer"
+				type: "item"
+			}]
+			title: "Mineradores da Colônia"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eSimple Dwarves §7adiciona anões trabalhadores."
+				"§7Eles mineram recursos e os trazem de volta para você!"
+				""
+				"§eContrate um §eSimple Dwarf §7e o envie para minerar."
+				"§eColete pelo menos §e64 itens §7que ele trouxer."
+				""
+				"§6Dica: §7Dwarves preferem áreas com pedra densa!"
+				"§7Encomende minérios específicos para missões focadas."
+				""
+				"§8§o(Trabalho terceirizado. Você só assina o contrato.)"
+			]
+			icon: "simpledwarves:dwarf_blacksmith_spawn_egg"
+			id: "7B00000000000020"
+			rewards: [
+				{
+					count: 32
+					id: "7B00000000000021"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7B00000000000022"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7B00000000000023"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "7B00000000000024"
+				item: "minecraft:iron_ore"
+				type: "item"
+			}]
+			title: "Os Anões Trabalham"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eThe Merchant's Guild §7adiciona um sistema de comércio"
+				"§7e progressão de NPCs mercadores espalhados pelo mundo."
+				""
+				"§eEncontre um mercador da Guilda e complete uma negociação."
+				"§eConsiga pelo menos §e1 item exclusivo §7do mod."
+				""
+				"§6Dica: §7Mercadores da Guilda vendem itens que não existem"
+				"§7em nenhuma outra loja — vale a pena explorar suas ofertas!"
+				""
+				"§8§o(Capitalismo, mas com aldeão de touca.)"
+			]
+			icon: "tmg:trade_icon"
+			id: "7B00000000000025"
+			rewards: [
+				{
+					count: 32
+					id: "7B00000000000026"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7B00000000000027"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "7B00000000000028"
+				item: "tmg:trade_icon"
+				type: "item"
+			}]
+			title: "Guilda dos Mercadores"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eTrade Cycling §7adiciona um botão de ciclo na tela de"
+				"§7negociação dos aldeões — clique para resetar as ofertas!"
+				""
+				"§eUse §eTrade Cycling §7para resetar as ofertas de um aldeão."
+				"§eConsiga um item de §eNível Mestre §7de um aldeão."
+				""
+				"§6Dica: §7Librarians com Mending ou Fortune III valem ouro."
+				"§7Cicle repetidamente até aparecer o encantamento certo."
+				"§7Quanto mais esmeraldas, mais ciclos você pode fazer."
+				""
+				"§8§o(Comprar barato, vender caro — economia 101, versão Minecraft.)"
+			]
+			icon: "minecraft:emerald"
+			id: "7B00000000000029"
+			rewards: [
+				{
+					count: 3
+					id: "7B0000000000002A"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7B0000000000002B"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7B0000000000002C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				count: 64L
+				id: "7B0000000000002D"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "Mestre do Comércio"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eBetter Village §7transforma as aldeias vanilla em estruturas"
+				"§7mais complexas e variadas por bioma. Com §eVillager Names§7,"
+				"§7cada aldeão tem um nome próprio — eles deixam de ser anônimos!"
+				""
+				"§eEncontre uma aldeia melhorada pelo Better Village e negocie"
+				"§eaté acumular 2 Emerald Blocks em trocas."
+				""
+				"§6Dica: §7Bibliotecários costumam ter os melhores livros —"
+				"§7Mending e Fortune III são os mais cobiçados."
+			]
+			icon: "minecraft:bell"
+			id: "7B0000000000002E"
+			rewards: [
+				{
+					count: 24
+					id: "7B0000000000002F"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7B00000000000030"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "7B00000000000031"
+				item: "minecraft:emerald_block"
+				type: "item"
+			}]
+			title: "Diplomacia com Aldeões"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eMore Villagers §7adiciona novas mesas de profissão"
+				"§7que transformam aldeões em especialistas únicos —"
+				"§7jardineiro, mineiro, carpinteiro e mais."
+				""
+				"§eConstrua uma §eGardening Table §7e dê essa"
+				"§eprofissão a um aldeão."
+				""
+				"§6Dica: §7Cada mesa de profissão gera trades exclusivos!"
+				"§7Experimente as outras: Mining Bench, Woodworking Table..."
+				""
+				"§8§o(Curriculum da colônia só cresce.)"
+			]
+			icon: "morevillagers:gardening_table"
+			id: "7B00000000000032"
+			rewards: [
+				{
+					count: 3
+					id: "7B00000000000033"
+					item: "minecraft:potion"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "7B00000000000034"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7B00000000000035"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "7B00000000000036"
+					item: "morevillagers:gardening_table"
+					type: "item"
+				}
+				{
+					id: "7C830BCA00DF39A5"
+					item: "minecolonies:resourcescroll"
+					type: "item"
+				}
+			]
+			title: "Novas Profissões"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Uma colônia grande precisa de §eArtesãos §7para processar"
+				"§7os materiais que os mineradores e farmers coletam."
+				""
+				"§eCrie uma §eBlacksmith's Hut §7e uma §eSawmill §7na colônia."
+				"§eAmbos devem ter um trabalhador e estar ativos."
+				""
+				"§6Dica: §7O Blacksmith faz ferramentas e armas para os guardas!"
+				"§7O Sawmill transforma madeira em produtos para construção."
+				""
+				"§8§o(Mão de obra especializada — sem sindicato, sem reclamação.)"
+			]
+			icon: "minecolonies:blockhutblacksmith"
+			id: "7B00000000000037"
+			rewards: [
+				{
+					count: 16
+					id: "7B00000000000038"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7B00000000000039"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					id: "7B0000000000003A"
+					type: "xp"
+					xp: 450
+				}
+			]
+			tasks: [
+				{
+					id: "7B0000000000003B"
+					item: "minecolonies:blockhutblacksmith"
+					type: "item"
+				}
+				{
+					id: "596025E8852937AD"
+					item: "minecolonies:scroll_buff"
+					type: "item"
+				}
+			]
+			title: "Artesãos da Colônia"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Uma capital precisa de um Town Hall de nível alto."
+				"§7Quanto mais alto o nível, mais cidadãos sua colônia suporta."
+				""
+				"§eTenha um Town Hall construído na sua colônia."
+				""
+				"§6Dica: §7Cada nível de Town Hall aumenta o limite de cidadãos —"
+				"§7upgrade sempre que tiver recursos sobrando."
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "7B00000000000041"
+			rewards: [
+				{
+					count: 16
+					id: "7B00000000000042"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7B00000000000043"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "7B00000000000044"
+					type: "xp"
+					xp: 800
+				}
+			]
+			tasks: [{
+				id: "7B00000000000045"
+				item: "minecolonies:blockhuttownhall"
+				type: "item"
+			}]
+			title: "Capital em Crescimento"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eEffortless Building §7permite construir estruturas enormes"
+				"§7rapidamente com ferramentas de construção avançadas."
+				""
+				"§eCrie um Elastic Hand e use-o pra construir uma muralha"
+				"§eao redor da sua colônia."
+				""
+				"§6Dica: §7Radial Mirror duplica sua construção espelhada —"
+				"§7ótimo pra simetria em muralhas e torres."
+			]
+			icon: "effortlessbuilding:elastic_hand"
+			id: "7B00000000000046"
+			rewards: [
+				{
+					count: 64
+					id: "7B00000000000047"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "7B00000000000048"
+					item: "minecraft:stone_brick_wall"
+					type: "item"
+				}
+				{
+					id: "7B00000000000049"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "7B0000000000004A"
+				item: "effortlessbuilding:elastic_hand"
+				type: "item"
+			}]
+			title: "Muralha da Civilização"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eMineColonies §7tem um sistema de pesquisa avançado."
+				"§7Pesquise tecnologias pra melhorar sua colônia."
+				""
+				"§eConstrua uma University e comece a pesquisar tecnologias."
+				""
+				"§6Dica: §7Pesquisas desbloqueiam novos tipos de colonizadores!"
+				"§7Priorize pesquisas militares se sua colônia leva muito raid."
+			]
+			icon: "minecolonies:blockhutuniversity"
+			id: "7B0000000000004B"
+			rewards: [
+				{
+					count: 5
+					id: "7B0000000000004C"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7B0000000000004D"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "7B0000000000004E"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					id: "7B0000000000004F"
+					item: "minecolonies:blockhutuniversity"
+					type: "item"
+				}
+				{
+					id: "3390957EC8BF467B"
+					item: "minecolonies:scroll_buff"
+					type: "item"
+				}
+			]
+			title: "Pesquisa e Desenvolvimento"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Conecte sua colônia com outras aldeias pela rede de Waystones."
+				"§7§eTraveler's Titles §7anuncia os nomes das regiões ao entrar."
+				""
+				"§eCrie uma Waystone nomeada estrategicamente pra conectar"
+				"§esua colônia ao resto do mundo."
+				""
+				"§6Dica: §7Coloque Waystones em pontos centrais — aldeias,"
+				"§7cruzamentos, bases satélite. Quanto mais espalhadas, melhor."
+			]
+			icon: "waystones:waystone"
+			id: "7B00000000000050"
+			rewards: [
+				{
+					count: 5
+					id: "7B00000000000051"
+					item: "waystones:waystone"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7B00000000000052"
+					item: "waystones:warp_scroll"
+					type: "item"
+				}
+				{
+					id: "7B00000000000053"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "7B00000000000054"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "Rede de Rotas"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eDomum Ornamentum §7adiciona centenas de blocos decorativos"
+				"§7pra embelezar sua civilização."
+				""
+				"§eCrie a ferramenta Architect's Cutter — ela permite combinar"
+				"§equalquer material com qualquer formato de bloco decorativo."
+				""
+				"§6Dica: §7A paleta de blocos é enorme — combine materiais no"
+				"§7crafting pra criar blocos únicos. Deixe sua criatividade fluir."
+				"§7Pra detalhes extras, use Macaw's Bridges e FramedBlocks!"
+				""
+				"§8§o(Nem toda construção precisa parecer um galpão de fazenda.)"
+			]
+			icon: "domum_ornamentum:architectscutter"
+			id: "7B00000000000055"
+			rewards: [
+				{
+					count: 32
+					id: "7B00000000000056"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "7B00000000000057"
+					item: "minecraft:smooth_stone"
+					type: "item"
+				}
+				{
+					id: "7B00000000000058"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				id: "07B6F0440B33EE56"
+				item: "domum_ornamentum:architectscutter"
+				type: "item"
+			}]
+			title: "Arquitetura da Civilização"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7Demorou. Custou recursos. Exigiu planejamento."
+				"§7Mas aqui está — uma civilização funcionando."
+				"§7Agricultores colhem. Mineradores escavam."
+				"§7Ferreiros forjam. Guardas patrulham."
+				"§7E você construiu tudo isso do zero."
+				""
+				"§eTenha um Town Hall e pelo menos 4 outros Huts diferentes"
+				"§eativos simultaneamente na sua colônia."
+				""
+				"§6§lIsso é um Império."
+				""
+				"§8§o(De uma cabana solitária a um império — a jornada"
+				"§8§ocapitalista está completa.)"
+			]
+			icon: "minecolonies:blockhuttownhall"
+			id: "7B0000000000005A"
+			rewards: [
+				{
+					count: 20
+					id: "7B0000000000005B"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "7B0000000000005C"
+					item: "minecolonies:blockhutuniversity"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "7B0000000000005D"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7B0000000000005E"
+					type: "xp"
+					xp: 3000
+				}
+			]
+			tasks: [
+				{
+					id: "7B000000000000B1"
+					item: "minecolonies:blockhuttownhall"
+					type: "item"
+				}
+				{
+					id: "7B000000000000B2"
+					item: "minecolonies:blockhutfarmer"
+					type: "item"
+				}
+				{
+					id: "7B000000000000B3"
+					item: "minecolonies:blockhutminer"
+					type: "item"
+				}
+				{
+					id: "7B000000000000B4"
+					item: "minecolonies:blockhutguardtower"
+					type: "item"
+				}
+				{
+					id: "7B000000000000B5"
+					item: "minecolonies:blockhutblacksmith"
+					type: "item"
+				}
+			]
+			title: "§a§lImpério"
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eHandcrafted §7e §eRefurbished Furniture §7trazem"
+				"§7centenas de móveis para decorar sua colônia e base."
+				""
+				"§eMonte um conjunto de jantar: crie cadeiras e mesas"
+				"§ede madeira do Handcrafted para sua sala."
+				""
+				"§6Dica: §7Refurbished Furniture tem estilos vintage diferentes!"
+				"§7Combine madeiras variadas para um visual único."
+				""
+				"§8§o(Sua casa não precisa ser bonita. Mas devia.)"
+			]
+			icon: "handcrafted:oak_chair"
+			id: "7B0000000000005F"
+			rewards: [
+				{
+					count: 2
+					id: "7B00000000000060"
+					item: "handcrafted:oak_shelf"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B00000000000061"
+					item: "handcrafted:oak_table"
+					type: "item"
+				}
+				{
+					id: "7B00000000000062"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7B00000000000063"
+					item: "handcrafted:oak_chair"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7B00000000000064"
+					item: "handcrafted:oak_table"
+					type: "item"
+				}
+			]
+			title: "Lar com Estilo"
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eRibbits §7adiciona um povo inteiramente novo ao mundo: os Ribbits —"
+				"§7humanoides-sapo que vivem em vilas próprias construídas sobre"
+				"§7lagoas e folhas-de-lótus gigantes."
+				""
+				"§eEncontre uma Vila Ribbit, negocie com um mercador e traga uma"
+				"§eGiant Lilypad de lá como prova."
+				""
+				"§6Dica: §7Vilas Ribbit aparecem perto de pântanos e lagoas grandes!"
+				"§7Eles têm uma economia e cultura totalmente diferentes dos aldeões comuns."
+			]
+			icon: "ribbits:giant_lilypad"
+			id: "7B00000000000070"
+			rewards: [
+				{
+					count: 16
+					id: "7B00000000000071"
+					item: "minecraft:lily_pad"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7B00000000000072"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7B00000000000073"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [{
+				id: "20E1B1F44FE17B28"
+				item: "ribbits:giant_lilypad"
+				type: "item"
+			}]
+			title: "Os Povos da Lagoa"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eGuard Villagers §7permite transformar qualquer aldeão em"
+				"§7um defensor armado da sua colônia!"
+				""
+				"§eEquipe um aldeão com armadura e arma na mão, depois"
+				"§einteraja com ele para transformá-lo em Guarda."
+				""
+				"§6Dica: §7Guardas resistem melhor a ataques e defendem a área"
+				"§7ao redor. Transforme vários pra cobrir toda a aldeia."
+			]
+			icon: "guardvillagers:guard_spawn_egg"
+			id: "7B00000000000075"
+			rewards: [
+				{
+					count: 3
+					id: "7B00000000000076"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7B00000000000077"
 					item: {
 						Count: 1
 						id: "minecraft:shield"
@@ -130,669 +934,157 @@
 					type: "item"
 				}
 				{
-					count: 3
-					id: "1A00000000000010"
-					item: "minecraft:golden_apple"
-					type: "item"
-				}
-				{
-					id: "1A00000000000011"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "1A00000000000012"
-					item: {
-						Count: 1
-						id: "minecraft:iron_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1A00000000000013"
-					item: {
-						Count: 1
-						id: "minecraft:iron_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Forjado para Sobreviver"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1A0000000000000E"]
-			description: ["§7Sobreviver é fácil. Prosperar é outra história.", "", "§eCrie uma cama e durma em um ponto seguro.", "§eConstrua um abrigo com pelo menos 4 paredes e teto.", "§eInstale uma porta e pelo menos 4 tochas.", "", "§7O abrigo será sua base de operações. Cuide bem dele!", "", "§6Atenção: §7com §eSleep Tight§7, monstros podem espiar pela", "§7janela e te dar pesadelos se virem você dormindo!", "§7Tochas do lado de fora ajudam a mantê-los afastados."]
-			icon: "minecraft:white_bed"
-			id: "1A00000000000014"
-			rewards: [
-				{
-					id: "1A00000000000015"
-					item: "comforts:sleeping_bag_blue"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "1A00000000000016"
-					item: "minecraft:chest"
-					type: "item"
-				}
-				{
-					id: "1A00000000000017"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					advancement: "minecraft:adventure/sleep_in_bed"
-					criterion: ""
-					id: "1A00000000000018"
-					type: "advancement"
-				}
-			]
-			title: "Lar Doce Lar"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1A00000000000002"]
-			description: ["§7Farmer's Delight transforma a culinária neste mundo.", "§7Com a §ePanela de Cozinheiro §7você prepara refeições", "§7que concedem buffs poderosos e regeneram mais fome.", "", "§eCrie uma Panela de Cozinheiro (Cooking Pot)", "§ee uma Tábua de Corte (Cutting Board).", "§ePrepare pelo menos 3 pratos diferentes.", "", "§6Dica: §7A faca prepara ingredientes especiais na Tábua!"]
-			icon: "farmersdelight:cooking_pot"
-			id: "1A00000000000019"
-			rewards: [
-				{
-					id: "1A0000000000001A"
-					item: "farmersdelight:cutting_board"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "1A0000000000001B"
-					item: "minecraft:cooked_beef"
-					type: "item"
-				}
-				{
-					id: "1A0000000000001C"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					id: "1A0000000000001D"
-					item: "farmersdelight:cooking_pot"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "1A0000000000001E"
-					item: "farmersdelight:fish_stew"
-					type: "item"
-				}
-			]
-			title: "Arte Culinária"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1A00000000000019"]
-			description: ["§7Para longas expedições, você precisará de comida", "§7que reponha muita fome e dê resistência.", "", "§ePlante trigo, cenoura e batata.", "§eCrie uma fazenda com pelo menos 3 tipos de cultura.", "", "§6Dica: §7Serene Seasons faz as estações mudarem!", "§7Plante na primavera para colheitas maiores no verão.", "§7Arroz precisa de Rich Soil molhado — vira Rice Bale quando empacotado."]
-			icon: "minecraft:wheat_seeds"
-			id: "1A0000000000001F"
-			rewards: [
-				{
-					count: 16
-					id: "1A00000000000020"
-					item: "minecraft:bone_meal"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "1A00000000000021"
-					item: "farmersdelight:rice_bale"
-					type: "item"
-				}
-				{
-					id: "1A00000000000022"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					count: 32L
-					id: "1A00000000000023"
-					item: "minecraft:wheat"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "1A00000000000024"
-					item: "minecraft:carrot"
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "1A00000000000025"
-					item: "minecraft:potato"
-					type: "item"
-				}
-			]
-			title: "Fazenda Sustentável"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1A0000000000000E"]
-			description: ["§7Diamante é o próximo passo para se tornar mais poderoso.", "", "§eMine ao menos 8 diamantes.", "§eCrie uma picareta e uma espada de diamante.", "", "§6Dica: §7Y=-58 é o melhor nível para diamante!", "§7Use Fortune III para triplicar seu rendimento."]
-			icon: "minecraft:diamond"
-			id: "1A00000000000026"
-			rewards: [
-				{
-					count: 4
-					id: "1A00000000000027"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "1A00000000000028"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "1A00000000000029"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [
-				{
-					count: 8L
-					id: "1A0000000000002A"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					id: "1A0000000000002B"
-					item: {
-						Count: 1
-						id: "minecraft:diamond_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Olhos de Diamante"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1A00000000000026"]
-			description: ["§7O encantamento é o próximo salto de poder.", "§7Este modpack usa o §eImmersive Enchanting§7,", "§7que torna a mesa interativa e mais satisfatória.", "", "§eCrie uma mesa de encantamentos.", "§eEncante sua espada ou picareta de diamante.", "", "§6Dica: §7Cerque a mesa com estantes de livros!", "{image: width:100 height:100 align:center}"]
-			icon: "minecraft:enchanting_table"
-			id: "1A0000000000002C"
-			rewards: [
-				{
-					count: 32
-					id: "1A0000000000002D"
-					item: "minecraft:lapis_lazuli"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "1A0000000000002E"
-					item: "minecraft:enchanted_book"
-					type: "item"
-				}
-				{
-					id: "1A0000000000002F"
+					id: "7B00000000000078"
 					type: "xp"
 					xp: 300
 				}
 			]
 			tasks: [
 				{
-					id: "1A00000000000030"
-					item: "minecraft:enchanting_table"
+					id: "4041C42C24DDDC78"
+					item: "minecolonies:scroll_guard_help"
 					type: "item"
 				}
 				{
-					advancement: "minecraft:story/enchant_item"
-					criterion: ""
-					id: "1A00000000000031"
+					advancement: "minecraft:adventure/recruit_guard"
+					criterion: "recruit_guard"
+					id: "2E587CE6E3E5AA2F"
 					type: "advancement"
 				}
 			]
-			title: "Palavras de Poder"
-			x: 14.0d
-			y: 0.0d
+			title: "Guardiões Improvisados"
+			x: 10.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["1A00000000000014"]
-			description: ["§7Para explorar o mundo enorme deste modpack,", "§7você vai precisar carregar muito mais do que uma mochila normal.", "", "§eCrie uma Traveler's Backpack.", "§7Ela tem slots de fluido e ferramenta dedicados.", "", "§6Dica: §7Diferentes mochilas têm temas visuais únicos!", "§7Explore os tipos — vulcânica, gelada, da floresta..."]
+			description: [
+				"§7Depois de anos minerando pra você de graça, o mínimo que os"
+				"§7anões merecem é ver seu próprio metal virar um bom machado."
+				""
+				"§eForje uma Dwarven Steel Pickaxe."
+				""
+				"§8§o(Depois de anos minerando de graça, o mínimo é ganhar um machado decente.)"
+			]
 			icon: {
 				Count: 1
-				id: "travelersbackpack:standard"
-				tag: {
-					Tier: 1
-				}
-			}
-			id: "1A00000000000032"
-			rewards: [
-				{
-					count: 16
-					id: "1A00000000000033"
-					item: "minecraft:leather"
-					type: "item"
-				}
-				{
-					id: "1A00000000000034"
-					item: "sophisticatedbackpacks:copper_backpack"
-					type: "item"
-				}
-				{
-					id: "1A00000000000035"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "travelersbackpack:standard"
-						tag: { }
-					}
-					id: "1A00000000000036"
-					item: {
-						Count: 1
-						id: "travelersbackpack:standard"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			title: "Bagagem do Aventureiro"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1A0000000000002C"]
-			description: ["§7Obsidiana é a porta para outros mundos.", "§7Com 10 obsidianas e um isqueiro, você abre o caminho.", "", "§eConsiga pelo menos 12 obsidianas.", "§eCrie um isqueiro (Flint \\& Steel).", "", "§6Dica: §7Obsidiana se forma onde água encontra lava!"]
-			icon: "minecraft:obsidian"
-			id: "1A00000000000037"
-			rewards: [
-				{
-					count: 3
-					id: "1A00000000000038"
-					item: "minecraft:fire_resistance"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "1A00000000000039"
-					item: "minecraft:obsidian"
-					type: "item"
-				}
-				{
-					id: "1A0000000000003A"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					count: 12L
-					id: "1A0000000000003B"
-					item: "minecraft:obsidian"
-					type: "item"
-				}
-				{
-					id: "1A0000000000003C"
-					item: {
-						Count: 1
-						id: "minecraft:flint_and_steel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "Porta para o Desconhecido"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1A00000000000002"]
-			description: ["§7JourneyMap registra automaticamente o mundo enquanto você explora.", "§7Configure o minimap para aparecer na tela.", "", "§eExplore o suficiente para registrar ao menos 500 blocos", "§ede distância da sua base em qualquer direção.", "", "§6Dica: §7Use §eM §7para abrir o mapa completo!", "§7Você pode adicionar waypoints marcando pontos importantes."]
-			icon: "irons_spellbooks:furled_map"
-			id: "1A0000000000003D"
-			rewards: [
-				{
-					id: "1A0000000000003F"
-					item: {
-						Count: 1
-						id: "explorerscompass:explorerscompass"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "1A00000000000040"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "1A00000000000041"
-					item: "minecraft:filled_map"
-					type: "item"
-				}
-			]
-			title: "Cartógrafo Iniciante"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1A00000000000008"]
-			description: ["§7Nem tudo precisa ser minerado ou craftado por você.", "§7Os aldeões deste mundo têm nomes próprios graças ao", "§7§eVillager Names §7— eles são pessoas, não NPCs genéricos.", "", "§eEncontre uma aldeia e faça pelo menos 3 trocas.", "§eAtinja reputação §eAmistoso §7com pelo menos uma aldeia.", "", "§6Dica: §7§eGoblin Traders §7aparecem à noite na floresta", "§7e vendem itens raros de mods por preços... interessantes."]
-			icon: "minecraft:emerald"
-			id: "1A00000000000042"
-			rewards: [
-				{
-					count: 8
-					id: "1A00000000000043"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					id: "1A00000000000044"
-					item: "minecraft:golden_apple"
-					type: "item"
-				}
-				{
-					id: "1A00000000000045"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					advancement: "minecraft:adventure/trade"
-					criterion: ""
-					id: "1A00000000000046"
-					type: "advancement"
-				}
-			]
-			title: "Redes de Comércio"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1A00000000000026"]
-			description: ["§7Netherite é o material mais avançado do Overworld.", "§7Para obtê-lo, você precisa explorar o Nether e encontrar", "§7Minério Antigo nos níveis mais baixos.", "", "§eConsiga ao menos 4 fragmentos de netherite.", "§eCrie pelo menos 1 peça de armadura de netherite.", "", "§6Dica: §7Use camas para explodir blocos no Nether!"]
-			icon: "minecraft:netherite_ingot"
-			id: "1A00000000000047"
-			rewards: [
-				{
-					count: 2
-					id: "1A00000000000048"
-					item: "minecraft:netherite_ingot"
-					type: "item"
-				}
-				{
-					count: 5
-					id: "1A00000000000049"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "1A0000000000004A"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					count: 4L
-					id: "1A0000000000004B"
-					item: "minecraft:netherite_scrap"
-					type: "item"
-				}
-				{
-					id: "1A0000000000004C"
-					item: "minecraft:netherite_ingot"
-					type: "item"
-				}
-			]
-			title: "Além do Ferro e Diamante"
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1A00000000000047"]
-			description: ["§7Um aventureiro experiente precisa de mobilidade.", "§7O Elytra te permite voar pelo mundo — mas é difícil de obter.", "", "§eConsiga um Elytra e combine com foguetes para voar.", "§eVoe pelo menos 500 blocos usando Elytra.", "", "§6Dica: §7O slot de Elytra do mod §ecaelus §7permite usar", "§7Elytra E armadura ao mesmo tempo!"]
-			icon: {
-				Count: 1
-				id: "minecraft:elytra"
+				id: "simpledwarves:dwarven_steel_pickaxe"
 				tag: {
 					Damage: 0
 				}
 			}
-			id: "1A0000000000004D"
+			id: "19A061C5AD23E95D"
 			rewards: [
 				{
-					count: 1
-					id: "1A0000000000004E"
-					item: "create_jetpack:jetpack"
+					count: 4
+					id: "27B682DE9BBFCEA2"
+					item: "simpledwarves:dwarven_steel_ingot"
 					type: "item"
 				}
 				{
-					count: 64
-					id: "1A0000000000004F"
-					item: "minecraft:firework_rocket"
-					type: "item"
-				}
-				{
-					id: "1A00000000000050"
+					id: "5A6404EA8C3B29B7"
 					type: "xp"
-					xp: 400
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "155ED6400D95AFDD"
+				item: {
+					Count: 1
+					id: "simpledwarves:dwarven_steel_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Aço Anão"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7§eStructurize §7é a espinha dorsal por trás do MineColonies —"
+				"§7é com essas ferramentas que você escaneia, planeja e"
+				"§7constrói (ou copia descaradamente) estruturas inteiras."
+				""
+				"§eCrie um Build Tool (Golden Scepter) e um Scan Tool."
+				""
+				"§8§o(Escanear e copiar construções: a forma mais honesta de plágio no Minecraft.)"
+			]
+			icon: "structurize:sceptergold"
+			id: "7CD61DC3D552B572"
+			rewards: [
+				{
+					count: 4
+					id: "19F0D5DA932DA1DE"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "5C3A63C2A42AF822"
+					type: "xp"
+					xp: 150
 				}
 			]
 			tasks: [
 				{
-					advancement: "minecraft:end/find_end_city"
-					criterion: ""
-					id: "1A00000000000051"
-					type: "advancement"
+					id: "75ABF4A5E7B053FA"
+					item: "structurize:sceptergold"
+					type: "item"
+				}
+				{
+					id: "0030E20B871B8EBD"
+					item: "structurize:sceptersteel"
+					type: "item"
 				}
 			]
-			title: "Asas de Liberdade"
-			x: 10.0d
-			y: 4.0d
+			title: "Ferramentas do Arquiteto"
+			x: 12.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["1A0000000000001F"]
-			description: ["§7Mystical Agriculture permite cultivar quase qualquer recurso.", "§7Desde minérios até mob drops — tudo vira semente!", "", "§eCrie pelo menos 3 tipos de sementes místicas.", "§eHarveste pelo menos 32 essências de qualquer tipo.", "", "§6Dica: §7Comece pelas sementes mais simples: §eInferium!", "§7Com Inferium você cria essências superiores."]
-			icon: "mysticalagriculture:apatite_essence"
-			id: "1A00000000000052"
+			description: [
+				"§7Por que ter um Miner de MineColonies E uma mina manual"
+				"§7de Create? Combine os dois: deixe os colonos cuidarem"
+				"§7da logística enquanto o Create processa tudo em massa."
+				""
+				"§eTenha um Hut de MineColonies e uma Mechanical Crafter"
+				"§ede Create funcionando na mesma base."
+				""
+				"§6Dica: §7Toms Storage conecta os dois sistemas de armazenamento"
+				"§7numa rede só — não deixe seus colonos e máquinas brigarem"
+				"§7por espaço de baú."
+			]
+			icon: "create:mechanical_crafter"
+			id: "770260BF83C45A27"
 			rewards: [
 				{
-					count: 8
-					id: "1A00000000000053"
-					item: "mysticalagriculture:inferium_essence"
+					id: "2D99219498BFF41F"
+					item: "toms_storage:ts.storage_terminal"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "1A00000000000054"
-					item: "mysticalagriculture:prudentium_essence"
-					type: "item"
-				}
-				{
-					id: "1A00000000000055"
+					id: "7F18D3394F5563FB"
 					type: "xp"
 					xp: 300
 				}
 			]
 			tasks: [
 				{
-					count: 3L
-					id: "1A00000000000056"
-					item: "mysticalagriculture:mystical_seeds"
+					id: "76BCED52C30120E9"
+					item: "minecolonies:blockhutwarehouse"
 					type: "item"
 				}
 				{
-					count: 32L
-					id: "1A00000000000057"
-					item: "mysticalagriculture:inferium_essence"
-					type: "item"
-				}
-			]
-			title: "Agricultura Mística"
-			x: 12.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1A00000000000002"]
-			description: ["§7Um aventureiro de verdade não precisa de uma cama fixa.", "§7O §eSleeping Bag §7do Comforts permite dormir em qualquer lugar", "§7sem redefinir seu ponto de respawn — perfeito para expedições.", "", "§eCrie um §eSleeping Bag §7e durma em campo aberto.", "", "§6Aviso: §7§eSleep Tight §7faz monstros espiarem pela janela", "§7enquanto você dorme. Iluminação externa é vital.", "§7Sente-se — literalmente — antes de dormir com o §eSit §7mod."]
-			icon: "comforts:sleeping_bag_white"
-			id: "1A00000000000058"
-			rewards: [
-				{
-					id: "1A00000000000059"
-					item: "minecraft:white_wool"
-					type: "item"
-				}
-				{
-					id: "1A0000000000005A"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "1A0000000000005B"
-					item: "comforts:sleeping_bag_white"
+					id: "52DC5B17DF18637E"
+					item: "create:mechanical_crafter"
 					type: "item"
 				}
 			]
-			title: "Nômade das Noites"
-			x: 14.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1A0000000000002C"]
-			description: ["§7§lIron's Spellbooks §r§7adiciona magia baseada em livros.", "§7Mesmo que você prefira tecnologia, aprender feitiços básicos", "§7pode salvar sua vida em momentos críticos.", "", "§eCrie um §eScroll §7ou §eSpell Book §7de Iron's Spellbooks.", "§eUse pelo menos 1 feitiço em combate.", "", "§6Dica: §7Feitiços de cura e escudo são os mais úteis no início!"]
-			icon: "irons_spellbooks:scroll"
-			id: "1A0000000000005C"
-			rewards: [
-				{
-					count: 3
-					id: "1A0000000000005D"
-					item: "irons_spellbooks:scroll"
-					type: "item"
-				}
-				{
-					id: "1A0000000000005E"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "1A0000000000005F"
-					item: "irons_spellbooks:scroll"
-					type: "item"
-				}
-			]
-			title: "Primeiras Palavras Arcanas"
-			x: 0.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["1A00000000000047"]
-			description: ["§7Você tem ferro, diamante e Netherite.", "§7Você aprendeu a comer, a lutar e a sobreviver às noites.", "§7Agora começa a parte boa.", "", "§7Os outros capítulos estão abertos — siga o que te chama:", "§a⚙ Tecnologia §7— Automatize tudo com §eCreate", "§d✦ Magia §7— Domine as artes com §eArs Nouveau", "§b✈ Exploração §7— Descubra o mundo com aeronaves e mapas", "§2⚒ Civilizações §7— Construa impérios com §eMineColonies", "", "§6Não há caminho certo. Só o seu."]
-			icon: "minecraft:filled_map"
-			id: "1A00000000000060"
-			rewards: [
-				{
-					count: 5
-					id: "1A00000000000061"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "1A00000000000062"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					id: "1A00000000000063"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "1A00000000000064"
-					item: "minecraft:netherite_ingot"
-					type: "item"
-				}
-			]
-			title: "§aO Mundo é Seu"
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			description: ["§7§eSerene Seasons §7adiciona estações do ano de verdade —", "§7primavera, verão, outono e inverno afetam colheitas,", "§7temperatura e até a neve.", "", "§eCrie um Calendar e um Season Sensor."]
-			icon: "minecraft:book"
-			id: "F47F5FC1BC27DB17"
-			rewards: [
-				{
-					type: "item"
-					item: "minecraft:wheat_seeds"
-					count: 8
-					id: "305A7B51E0154DD9"
-				}
-				{
-					type: "xp"
-					xp: 100
-					id: "E1064795AD35A97B"
-				}
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "sereneseasons:calendar"
-					id: "86D9AC1F526786F3"
-				}
-				{
-					type: "item"
-					item: "sereneseasons:season_sensor"
-					id: "582A46E41E8534C5"
-				}
-			]
-			title: "As Quatro Estações"
-			x: 4.0d
-			y: 2.0d
+			title: "Colônia Automatizada"
+			x: 18.0d
+			y: 12.0d
 		}
 	]
-	title: "§6Primeiros Passos"
+	title: "§aCivilizações"
 }

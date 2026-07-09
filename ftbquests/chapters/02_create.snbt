@@ -1,797 +1,1150 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: "circle"
-	filename: "12_twilight"
-	group: "AA00000000000005"
-	icon: ["twilightforest:naga_trophy", "twilightforest:hydra_trophy", "twilightforest:ur_ghast_trophy"]
-	id: "AA12000000000001"
-	order_index: 11
+	filename: "02_create"
+	group: "3322FB1D5A7FD527"
+	id: "0A88116A5831A8C4"
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2B0000000000000C"]
-			description: ["§7Existe uma floresta onde o sol nunca se põe.", "§7A §eTwilight Forest §7é uma dimensão inteira de exploração —", "§7bosses sequenciais, masmorras labirínticas e itens", "§7impossíveis de obter em qualquer outro lugar.", "", "§eConstrua o portal da Twilight Forest:", "§7Crie um lago 2x2, coloque flores ao redor", "§7e jogue um diamante na água.", "", "§6Atenção: §7Os bosses têm uma §eordem obrigatória§7.", "§7Ignorar a sequência deixa certas áreas inacessíveis."]
-			icon: "twilightforest:twilight_portal_miniature_structure"
-			id: "2B00000000000016"
+			description: [
+				"§7§eCreate §7não é só automação — é engenharia visual."
+				"§7Cada máquina que você constrói funciona de verdade,"
+				"§7com peças que giram, correias que transportam e"
+				"§7fluidos que fluem."
+				""
+				"§eCrie sua primeira §eEngrenagem (Cogwheel) §7e §eEixo (Shaft)§7."
+				""
+				"§6Leia: §7O livro §e'Curiosidades \\& Testemunhos' §7do Create"
+				"§7(solte no chão para abrir) tem guias completos."
+				"§7É o melhor ponto de partida antes de qualquer máquina."
+			]
+			icon: "create:cogwheel"
+			id: "3C00000000000002"
 			rewards: [
-				{
-					count: 5
-					id: "2B00000000000017"
-					item: "twilightforest:magic_map_focus"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "2B00000000000018"
-					item: "minecraft:golden_apple"
-					type: "item"
-				}
-				{
-					id: "2B00000000000019"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					advancement: "twilightforest:root"
-					criterion: "in_tf"
-					id: "2B0000000000001A"
-					type: "advancement"
-				}
-			]
-			title: "A Floresta Encantada"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B00000000000016"]
-			description: ["§7A Twilight Forest tem um sistema de progressão de bosses.", "§7Comece pelo §eNaga §7— a serpente que ronda a floresta.", "", "§eDerrote o Naga na Twilight Forest.", "§7Ele circula uma arena de pedra circular.", "", "§6Dica: §7Escudo ou armadura de diamante são essenciais!", "§7O Naga carrega carga e pode te jogar longe."]
-			icon: "twilightforest:naga_scale"
-			id: "2B0000000000002E"
-			rewards: [
-				{
-					id: "2B0000000000002F"
-					item: {
-						Count: 1
-						id: "twilightforest:naga_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 5
-					id: "2B00000000000030"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "2B00000000000031"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [
-				{
-					advancement: "twilightforest:progress_naga"
-					criterion: "trophy"
-					id: "2B00000000000032"
-					type: "advancement"
-				}
-			]
-			title: "A Serpente da Floresta"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B0000000000002E"]
-			description: ["§7O Lich é o segundo boss da Twilight Forest.", "§7Ele habita uma torre alta e lança feitiços mortais.", "", "§eDerrote o Twilight Lich em sua torre.", "", "§6Dica: §7Destrua os escudos dele primeiro!", "§7Tenha flechas em quantidade — ele teleporta muito."]
-			icon: "twilightforest:lich_trophy"
-			id: "2B00000000000033"
-			rewards: [
-				{
-					id: "2B00000000000034"
-					item: {
-						Count: 1
-						id: "twilightforest:twilight_scepter"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
 				{
 					count: 8
-					id: "2B00000000000035"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "2B00000000000036"
-					type: "xp"
-					xp: 800
-				}
-			]
-			tasks: [
-				{
-					advancement: "twilightforest:progress_lich"
-					criterion: "kill_lich"
-					id: "2B00000000000037"
-					type: "advancement"
-				}
-			]
-			title: "O Lich Eterno"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B00000000000033"]
-			description: ["§7O Snow Queen é o terceiro boss maior da Twilight Forest.", "§7Ela habita o Glacier Palace, um palácio de gelo.", "", "§eDerrote a Snow Queen na Twilight Forest.", "", "§6Dica: §7O Fiery Sword (do Naga) funciona bem contra ela!", "§7Evite o espaço aberto — use pilares de gelo como cobertura."]
-			icon: "twilightforest:snow_queen_trophy"
-			id: "2B0000000000005B"
-			rewards: [
-				{
-					count: 16
-					id: "2B0000000000005C"
-					item: "minecraft:packed_ice"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "2B0000000000005D"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "2B0000000000005E"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "twilightforest:progress_glacier"
-					criterion: "trophy"
-					id: "2B0000000000005F"
-					type: "advancement"
-				}
-			]
-			title: "A Rainha do Gelo"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B0000000000005B"]
-			description: ["§7O §eUrghast §7é o boss final da Twilight Forest.", "§7Uma criatura colossal de fogo que guarda as Dark Towers.", "", "§eDerrote o Ur-Ghast na Dark Tower da Twilight Forest.", "", "§6Dica: §7Coletores de Lágrimas (Carminite Ghastguard) ajudam!", "§7A torre é repleta de armadilhas carminite — tome cuidado."]
-			icon: "twilightforest:ur_ghast_trophy"
-			id: "2B00000000000060"
-			rewards: [
-				{
-					id: "2B00000000000061"
-					item: {
-						Count: 1
-						id: "twilightforest:fiery_sword"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "3C00000000000003"
+					item: "create:zinc_ingot"
 					type: "item"
 				}
 				{
 					count: 16
-					id: "2B00000000000062"
-					item: "minecraft:experience_bottle"
+					id: "3C00000000000004"
+					item: "create:andesite_alloy"
 					type: "item"
 				}
 				{
-					id: "2B00000000000063"
+					id: "3C00000000000005"
 					type: "xp"
-					xp: 1500
+					xp: 150
 				}
 			]
+			shape: "gear"
 			tasks: [
 				{
-					advancement: "twilightforest:progress_ur_ghast"
-					criterion: "trophy"
-					id: "2B00000000000064"
-					type: "advancement"
-				}
-			]
-			title: "O Urghast das Sombras"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B00000000000033"]
-			description: ["§7No coração do §eLabirinto da Floresta Crepuscular§7", "§7existe o §cMinoshroom §7— um minotauro-cogumelo que guarda", "§7o caminho para a §cHidra§7, a criatura de múltiplas cabeças", "§7que regenera a cada golpe mal dado.", "", "§eDerrote a §cHidra §7na Twilight Forest.", "§eConsiga o §eHydra Chop §7como prova da vitória.", "", "§6Dica: §7Foque em uma cabeça por vez — espadas §eFiery §7", "§7cauterizam e impedem a regeneração das cabeças cortadas!", "", "§8§o(Três cabeças. Depois cinco. Depois sete. Boa sorte.)"]
-			icon: "twilightforest:hydra_trophy"
-			id: "2B00000000000201"
-			rewards: [
-				{
-					id: "2B00000000000202"
-					item: "twilightforest:fiery_sword"
+					id: "3C00000000000006"
+					item: "create:cogwheel"
 					type: "item"
 				}
 				{
-					id: "2B00000000000203"
-					item: "twilightforest:fiery_ingot"
+					id: "3C00000000000007"
+					item: "create:shaft"
 					type: "item"
 				}
-				{
-					count: 8
-					id: "2B00000000000204"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "2B00000000000205"
-					type: "xp"
-					xp: 800
-				}
 			]
-			tasks: [
-				{
-					advancement: "twilightforest:progress_hydra"
-					criterion: "kill_hydra"
-					id: "2B00000000000206"
-					type: "advancement"
-				}
-			]
-			title: "A Hidra das Chamas"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B00000000000201"]
-			description: ["§7Os §eKnight Phantoms §7são os guardiões do §eCastelo do Caos§7.", "§7São cavaleiros fantasmas que só tomam dano de um tipo de arma", "§7de cada vez — você precisa descobrir qual na hora.", "", "§eDerrote os §eKnight Phantoms §7e colete o troféu.", "§eConsiga ao menos §e1 Knightmetal Ingot§7.", "", "§6Dica: §7A §eGhast Trap §7dentro do castelo é essencial", "§7para diminuir o número de inimigos antes do combate."]
-			icon: "twilightforest:knight_phantom_trophy"
-			id: "2B00000000000207"
-			rewards: [
-				{
-					count: 4
-					id: "2B00000000000208"
-					item: "twilightforest:knightmetal_ingot"
-					type: "item"
-				}
-				{
-					id: "2B00000000000209"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "twilightforest:progress_knights"
-					criterion: "all_knights"
-					id: "2B0000000000020A"
-					type: "advancement"
-				}
-			]
-			title: "Cavaleiros Fantasmas"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B00000000000207"]
-			description: ["§7O §eAlpha Yeti §7habita as geleiras mais altas da Twilight Forest.", "§7Ele lança blocos de gelo como projéteis e invoca Yetis menores.", "§7Derrotá-lo abre o caminho para a Snow Queen mais adiante.", "", "§eDerrote o §eAlpha Yeti §7e colete sua §ePele de Yeti.", "", "§6Dica: §7Yetis são lentos — use o terreno das geleiras a seu favor.", "§7A armadura §eArctic §7pode ser forjada com a pele do Alpha Yeti."]
-			icon: "twilightforest:alpha_yeti_trophy"
-			id: "2B0000000000020B"
-			rewards: [
-				{
-					count: 4
-					id: "2B0000000000020C"
-					item: "twilightforest:alpha_yeti_fur"
-					type: "item"
-				}
-				{
-					id: "2B0000000000020D"
-					type: "xp"
-					xp: 1000
-				}
-			]
-			tasks: [
-				{
-					advancement: "twilightforest:progress_yeti"
-					criterion: "yeti"
-					id: "2B0000000000020E"
-					type: "advancement"
-				}
-			]
-			title: "O Yeti das Geleiras"
-			x: 14.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2B00000000000060"]
-			description: ["§7O §eTroll §7é o boss mais alto da Twilight Forest —", "§7literalmente. Ele vive no §eTroll Cave §7nos penhascos glaciais.", "§7Para chegar até ele, você precisa passar pelos §eGigantes§7", "§7e plantar §eMagic Beans §7para alcançar as alturas.", "", "§eDerrote o §eTroll §7e conclua a jornada pela Twilight Forest.", "", "§6Dica: §7O §eLamp of Cinders §7é a chave — queima a saída do Troll.", "§7Consiga-a derrotando os Trolls menores primeiro."]
-			icon: "twilightforest:lamp_of_cinders"
-			id: "2B0000000000020F"
-			rewards: [
-				{
-					id: "2B00000000000210"
-					item: "twilightforest:crumble_horn"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "2B00000000000211"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "2B00000000000212"
-					type: "xp"
-					xp: 1500
-				}
-			]
-			tasks: [
-				{
-					advancement: "twilightforest:progress_troll"
-					criterion: "lamp"
-					id: "2B00000000000213"
-					type: "advancement"
-				}
-			]
-			title: "O Gigante das Cavernas"
+			title: "Os Fundamentos do Create"
 			x: 0.0d
-			y: 4.0d
+			y: 0.0d
 		}
 		{
-			description: ["§c§lDesafio VI: Senhor da Floresta Crepuscular", "", "§7A §eTwilight Forest §7tem uma progressão sequencial", "§7de bosses — cada um abre o caminho para o próximo.", "§7Completar todos exige equipamento de alto nível.", "", "§eConsiga os troféus dos 4 bosses principais:", "§e- Naga Trophy", "§e- Lich Trophy", "§e- Hydra Trophy", "§e- Ur-Ghast Trophy", "§eMais: 1 Fiery Sword e 1 Ice Bomb", "", "§6Dica: §7A ordem importa — cada boss desbloqueia o próximo!", "§7Naga → Lich → Hydra → Snow Queen → Ur-Ghast"]
-			icon: "twilightforest:ur_ghast_trophy"
-			id: "7DD743A027A9EB06"
+			description: [
+				"§7Toda máquina do Create precisa de Força de Rotação (SU)."
+				"§7A fonte mais básica é o §eWater Wheel§7."
+				""
+				"§eCrie e instale um Water Wheel próximo a um rio."
+				"§eConecte-o a uma máquina (Millstone ou Mechanical Press)."
+				""
+				"§6Dica: §7Quanto mais água fluindo, maior o SU gerado!"
+				"§7Use canais para direcionar água ao redor da roda."
+			]
+			icon: "create:water_wheel"
+			id: "3C00000000000008"
 			rewards: [
-				{
-					id: "79D193349742DB9A"
-					item: {
-						Count: 1
-						id: "twilightforest:twilight_scepter"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "577AA067C8A5AB30"
-					item: {
-						Count: 1
-						id: "twilightforest:naga_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 2
-					id: "5E5EAA822F7AD449"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-				{
-					count: 20
-					id: "5FDC3FA02E49A22B"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "10671A6D84DCDD81"
-					type: "xp"
-					xp: 2000
-				}
-			]
-			tasks: [
-				{
-					id: "35E6BFFBB77842D2"
-					item: "twilightforest:naga_trophy"
-					type: "item"
-				}
-				{
-					id: "6EBA8F3EBC42A5C6"
-					item: "twilightforest:lich_trophy"
-					type: "item"
-				}
-				{
-					id: "37E66A275AAE5B81"
-					item: "twilightforest:hydra_trophy"
-					type: "item"
-				}
-				{
-					id: "328FFF4006338B03"
-					item: "twilightforest:ur_ghast_trophy"
-					type: "item"
-				}
-				{
-					id: "2D797F1C30D30828"
-					item: {
-						Count: 1
-						id: "twilightforest:fiery_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "634EFC7545DE5FAF"
-					item: "twilightforest:ice_bomb"
-					type: "item"
-				}
-			]
-			title: "§2Senhor da Floresta Crepuscular"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			description: ["§c§l✦ DESAFIO FINAL II: O Caçador Supremo ✦", "", "§7Provar domínio sobre os bosses mais poderosos do modpack", "§7exige acumular os drops mais raros de cada dimensão.", "", "§eConsiga todos os drops abaixo:", "§e- Valkyrie Lance (Aether — Valkyrie Queen)", "§e- Ur-Ghast Trophy (Twilight Forest)", "§e- Sol Visage (Mowzie's Mobs — Barako)", "§e- Earthrend Gauntlet (Mowzie's Mobs — Wroughtnaut)", "§e- Dragonskin (Iron's Spellbooks — Ender Dragon)", "§e- Soul Great Sword (Legendary Monsters)", "", "§7Seis drops raros de seis bosses de mods diferentes."]
-			icon: {
-				Count: 1
-				id: "aether:valkyrie_lance"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "72F9FAFF45FF75AB"
-			rewards: [
-				{
-					id: "53AEC3DB0C85FEFD"
-					item: {
-						Count: 1
-						id: "aether:zanite_ring"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "705A3311225A0D71"
-					item: {
-						Count: 1
-						id: "twilightforest:naga_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6320E28CAFC0A550"
-					item: {
-						Count: 1
-						id: "mowziesmobs:ice_crystal"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 3
-					id: "1C10D801562EACC4"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-				{
-					count: 48
-					id: "1FDF129136ED11AD"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "16ADFD54597819DC"
-					type: "xp"
-					xp: 4000
-				}
-			]
-			tasks: [
-				{
-					id: "4B947090717BE516"
-					item: {
-						Count: 1
-						id: "aether:valkyrie_lance"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "27473CC8CCF14853"
-					item: "twilightforest:ur_ghast_trophy"
-					type: "item"
-				}
-				{
-					advancement: "mowziesmobs:kill_umvuthi"
-					criterion: "barako"
-					id: "432C9A6DB0EBAC5B"
-					type: "advancement"
-				}
-				{
-					advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
-					criterion: "ferrous_wroughtnaut"
-					id: "9DADF19D7DB11A7E"
-					type: "advancement"
-				}
-				{
-					id: "6A8E13ACAB199045"
-					item: "irons_spellbooks:dragonskin"
-					type: "item"
-				}
-				{
-					id: "1445AC1A67BECBFB"
-					item: {
-						Count: 1
-						id: "legendary_monsters:soul_great_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "§2§lO Fim da Floresta"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			description: ["§6§l✦ ✦ ✦ O LENDÁRIO ✦ ✦ ✦", "", "§7Você completou tudo.", "", "§7Cada boss derrotado. Cada dimensão conquistada.", "§7Cada essência obtida. Cada feitiço dominado.", "§7Cada fábrica erguida. Cada drop coletado.", "", "§7Este mundo foi construído para testar os limites", "§7de quem ousa habitá-lo.", "§7Você ultrapassou todos eles.", "", "§6§lVocê é o Lendário deste mundo.", "", "§8§o(Ou simplesmente não tem vida social. Quem sabe.", "§8§oDe qualquer forma — parabéns, de verdade.)", "", "§e§l✦ Parabéns, aventureiro. ✦"]
-			icon: "mysticalagriculture:awakened_supremium_staff"
-			id: "6A51798D57ADD838"
-			rewards: [
-				{
-					id: "5802D94340BDDE8F"
-					item: "mysticalagriculture:awakened_supremium_staff"
-					type: "item"
-				}
-				{
-					id: "3FA2080B512C92B9"
-					item: "ars_nouveau:spell_prism"
-					type: "item"
-				}
-				{
-					id: "4723134361096A7D"
-					item: "irons_spellbooks:scroll_pouch"
-					type: "item"
-				}
-				{
-					id: "22C6D9344E0763F5"
-					item: "create_jetpack:netherite_jetpack"
-					type: "item"
-				}
-				{
-					id: "7E6D715185BD3347"
-					item: "twilightforest:twilight_scepter"
-					type: "item"
-				}
 				{
 					count: 8
-					id: "6D59BD6D6A3F52E1"
-					item: "minecraft:netherite_ingot"
+					id: "3C00000000000009"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "3C0000000000000A"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "3C0000000000000B"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "3C0000000000000C"
+					item: "create:millstone"
+					type: "item"
+				}
+			]
+			title: "A Roda da Fortuna"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7O §eMixer §7e a §eBasin §7são o coração da produção do Create."
+				"§7Com eles você funde ligas, mistura materiais e cria Latão!"
+				""
+				"§eConsiga Latão (Brass) fundindo Cobre + Zinco."
+				"§eProduza pelo menos 16 lingotes de Latão."
+				""
+				"§6Dica: §7Use o Mixing Basin com Blaze Burner embaixo!"
+				"§7O Latão é necessário para quase toda automação avançada."
+			]
+			icon: "create:brass_ingot"
+			id: "3C0000000000000D"
+			rewards: [
+				{
+					count: 16
+					id: "3C0000000000000E"
+					item: "create:brass_ingot"
 					type: "item"
 				}
 				{
 					count: 4
-					id: "74ECA3207492BE02"
-					item: "minecraft:nether_star"
+					id: "3C0000000000000F"
+					item: "create:mechanical_pump"
 					type: "item"
 				}
 				{
-					count: 64
-					id: "7A5EBDB79361959C"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "5E190182B7D2489B"
+					id: "3C00000000000010"
 					type: "xp"
-					xp: 6000
+					xp: 300
 				}
 			]
 			tasks: [
 				{
-					count: 64L
-					id: "7E121FF9E4EAC96B"
-					item: "mysticalagriculture:awakened_supremium_essence"
+					count: 16L
+					id: "3C00000000000011"
+					item: "create:brass_ingot"
 					type: "item"
 				}
 				{
-					id: "6EFEA9B94B974477"
-					item: "mna:grimoire"
+					count: 2L
+					id: "29C3BB2BF5B7FF83"
+					item: "create:fluid_tank"
 					type: "item"
-				}
-				{
-					id: "500ACF83B98E6190"
-					item: "twilightforest:ur_ghast_trophy"
-					type: "item"
-				}
-				{
-					id: "3E97CD5B57A44789"
-					item: {
-						Count: 1
-						id: "aether:valkyrie_lance"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					advancement: "mowziesmobs:kill_umvuthi"
-					criterion: "barako"
-					id: "921941B670DF4C14"
-					type: "advancement"
 				}
 			]
-			title: "§6§l✦ O Lendário ✦"
-			x: 6.0d
-			y: 4.0d
+			title: "Alquimia Industrial"
+			x: 4.0d
+			y: 0.0d
 		}
 		{
-			description: ["§7A §eTwilight Forest §7tem biomas únicos: Mushroom Forest,", "§7Dark Forest, Snowy Forest, Fire Swamp, Glacier...", "§7O §eMagic Map §7revela estruturas próximas no mapa.", "§7Sem ele, navegar é lento — a floresta é §eenorme§7.", "", "§eCrafite um §eMagic Map §7e use-o para revelar o terreno.", "", "§6Dica: §7Combine com §eAtlas §7para mapas em escala maior.", "§7Procure o §eFire Swamp §7— tem §eRosebush §7e recursos únicos."]
-			icon: "twilightforest:magic_map"
-			id: "TF0000000101"
+			description: [
+				"§7Com Latão, você pode criar §eFunnels§7, §eDeployers§7 e §eSaws§7."
+				"§7É hora de construir sua primeira linha de produção automática."
+				""
+				"§eCrie uma linha de produção que processe automaticamente"
+				"§epelo menos 1 tipo de item (ex: madeira → tábua → palito)."
+				""
+				"§6Dica: §7Funnels extraem, esteiras transportam, Deployers processam!"
+			]
+			icon: "create:belt_connector"
+			id: "3C00000000000012"
 			rewards: [
 				{
-					count: 2
-					id: "TF000000010B"
-					item: "twilightforest:magic_map_focus"
+					count: 8
+					id: "3C00000000000013"
+					item: "create:brass_funnel"
 					type: "item"
 				}
 				{
-					id: "TF000000010C"
+					count: 4
+					id: "3C00000000000014"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "3C00000000000015"
 					type: "xp"
 					xp: 400
 				}
 			]
 			tasks: [
 				{
-					advancement: "twilightforest:magic_map"
-					criterion: "magic_map"
-					id: "TF000000010A"
-					type: "advancement"
-				}
-			]
-			title: "O Mapa Mágico"
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			description: ["§7O §eHedge Maze §7e o §eLarge Hollow Hill §7são estruturas", "§7de progressão intermediária da Twilight Forest.", "§7O §eMinoshroom §7guarda o interior — um minotauro-cogumelo.", "§7Derrotá-lo abre o caminho para a Hydra e além.", "", "§eDerrote o §eMinoshroom §7e colete seu troféu.", "", "§6Dica: §7Leve tochas — o labirinto é imenso e escuro.", "§8§o(Minotauro-cogumelo. A Twilight Forest não tem vergonha nenhuma.)"]
-			icon: "twilightforest:minoshroom_trophy"
-			id: "TF0000000111"
-			rewards: [
-				{
-					id: "TF000000011B"
-					item: "twilightforest:fiery_helmet"
+					id: "3C00000000000016"
+					item: "create:belt_connector"
 					type: "item"
 				}
 				{
-					id: "TF000000011C"
+					id: "3C00000000000017"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+			]
+			title: "Linha de Produção"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7A §eDrill §7(broca) é uma das ferramentas mais poderosas do Create."
+				"§7Com um Contraption, você pode criar mineradores automáticos."
+				""
+				"§eCrie uma §eMechanical Drill §7e use-a para minerar."
+				"§eCrie também um §ePiston §7e um §eMovement Anchor§7."
+				""
+				"§6Dica: §7Drills conectadas a Pistons + Gearshift criam"
+				"§7minas automáticas inacreditáveis!"
+			]
+			icon: "create:mechanical_drill"
+			id: "3C00000000000018"
+			rewards: [
+				{
+					count: 4
+					id: "3C00000000000019"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "3C0000000000001A"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "3C0000000000001B"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "3C0000000000001C"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					id: "611D615C1E3883BD"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "Broca e Engrenagem"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Fluidos são parte central do Create."
+				"§7Tanks, Pipes e Pumps permitem transportar e armazenar líquidos."
+				""
+				"§eCrie um sistema de fluidos com pelo menos:"
+				"§e- 1 Fluid Tank"
+				"§e- 2 Fluid Pipes"
+				"§e- 1 Mechanical Pump"
+				""
+				"§6Dica: §7Use Fluid Valves para controlar o fluxo!"
+			]
+			icon: "create:fluid_tank"
+			id: "3C0000000000001D"
+			rewards: [
+				{
+					count: 4
+					id: "3C0000000000001E"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3C0000000000001F"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "3C00000000000020"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "3C00000000000021"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "3C00000000000022"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "Engenharia de Fluidos"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Água e fogo juntos criam algo que nenhuma engrenagem"
+				"§7simples consegue — §evapor§7. E vapor gera poder em escala."
+				""
+				"§eCrie uma §eSteam Engine §7com caldeira e fornalha."
+				"§eGere pelo menos §e256 SU §7simultaneamente."
+				""
+				"§6Dica: §7Caldeiras maiores = mais SU."
+				"§7Automatize o abastecimento de carvão com um Belt + Funnel"
+				"§7e sua engine nunca vai parar."
+			]
+			icon: "create:steam_engine"
+			id: "3C00000000000023"
+			rewards: [
+				{
+					count: 8
+					id: "3C00000000000024"
+					item: "create:steam_engine"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "3C00000000000025"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "3C00000000000026"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "3C00000000000027"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			title: "Era a Vapor"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7§eSteam Rails §7traz trens ao universo do Create."
+				"§7Estações, vagões, rotas automáticas — tudo funciona"
+				"§7com a lógica de engrenagens do Create."
+				""
+				"§eConstrua uma estação e faça um trem percorrer"
+				"§epelo menos §e50 blocos §7de trilho."
+				""
+				"§6Dica: §7Trens são ideais para mover recursos entre"
+				"§7bases distantes automaticamente. Configure rotas de ida e volta."
+			]
+			icon: "railways:conductor_whistle"
+			id: "3C00000000000028"
+			rewards: [
+				{
+					count: 2
+					id: "3C00000000000029"
+					item: "railways:conductor_whistle"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "3C0000000000002A"
+					item: "railways:track_oak"
+					type: "item"
+				}
+				{
+					id: "3C0000000000002B"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				id: "3C0000000000002C"
+				item: "railways:conductor_whistle"
+				type: "item"
+			}]
+			title: "Rede Ferroviária"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"§7Uma rota só com trilho é o começo. A §elocomativa a vapor §7é"
+				"§7o coração do sistema — ela precisa de bogeys (rodeiros),"
+				"§7combustível e um condutor atento para funcionar."
+				""
+				"§eConstrua os §erodeiros (bogeys) §7e o §etanque de combustível"
+				"§epara montar sua primeira locomotiva completa."
+				""
+				"§6Dica: §7Semáforos controlam o tráfego automático —"
+				"§7sem eles dois trens na mesma rota vão colidir."
+				""
+				"§8§o(Sinal vermelho significa para. No Rails, significa\\: desastre.)"
+			]
+			icon: "railways:semaphore"
+			id: "3C00000000000101"
+			rewards: [
+				{
+					count: 4
+					id: "3C00000000000102"
+					item: "railways:semaphore"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3C00000000000103"
+					item: "railways:fuel_tank"
+					type: "item"
+				}
+				{
+					id: "3C00000000000104"
 					type: "xp"
 					xp: 700
 				}
 			]
 			tasks: [
 				{
-					id: "TF000000011A"
-					item: "twilightforest:minoshroom_trophy"
+					id: "3C00000000000105"
+					item: "railways:doubleaxle_bogey"
+					type: "item"
+				}
+				{
+					id: "3C00000000000106"
+					item: "railways:fuel_tank"
 					type: "item"
 				}
 			]
-			title: "O Labirinto e o Minoshroom"
-			x: 2.0d
-			y: 2.0d
+			title: "A Locomotiva"
+			x: 0.0d
+			y: 4.0d
 		}
 		{
-			description: ["§7A §eArmadura Fiery §7usa §eFiery Ingots §7obtidos da Hydra.", "§7O conjunto completo §eimuniza ao fogo §7— essencial para o Ur-Ghast.", "§7É o upgrade intermediário antes da §eKnightmetal§7.", "", "§eCrafite §e2 peças §7da §eArmadura Fiery§7.", "", "§6Dica: §7Fiery Blood (drop da Hydra) + Iron Ingot = Fiery Ingot.", "§7Imunidade ao fogo é crucial pro Nether e pra Ur-Ghast Tower."]
-			icon: "twilightforest:fiery_chestplate"
-			id: "TF0000000121"
+			description: [
+				"§7Com Create, você pode construir Contraptions — estruturas"
+				"§7que se movem, giram e funcionam como máquinas reais."
+				""
+				"§eConstrua uma Contraption usando um §eMovement Anchor§7."
+				"§7Pode ser um elevador, uma plataforma giratória ou uma drill móvel."
+				""
+				"§6Dica: §7Glue (cola) mantém os blocos juntos!"
+				"§7Experimente um elevador ou braço giratório."
+			]
+			icon: "create:mechanical_piston"
+			id: "3C0000000000002D"
 			rewards: [
 				{
 					count: 8
-					id: "TF000000012B2"
-					item: "twilightforest:fiery_ingot"
+					id: "3C0000000000002E"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "TF000000012C"
+					count: 4
+					id: "3C0000000000002F"
+					item: "create:mechanical_piston"
+					type: "item"
+				}
+				{
+					id: "3C00000000000030"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "3C00000000000031"
+					item: "create:mechanical_piston"
+					type: "item"
+				}
+				{
+					id: "19B7B769BD062E17"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+			]
+			title: "Máquinas que se Movem"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Por que colher na mão quando máquinas existem?"
+				"§7A §eMechanical Harvester §7colhe plantações inteiras"
+				"§7montada em uma Contraption — e a §eMechanical Planter"
+				"§7replanta tudo automaticamente atrás dela."
+				""
+				"§eCrie uma Mechanical Harvester."
+				""
+				"§6Dica: §7Monte ela num trilho de Contraption sobre sua plantação —"
+				"§7quanto maior a fazenda, mais vale a pena automatizar."
+				"§7Adicione um Belt com Chute pra coletar tudo direto em baús."
+			]
+			icon: "create:mechanical_harvester"
+			id: "3C00000000000032"
+			rewards: [
+				{
+					count: 4
+					id: "3C00000000000033"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "3C00000000000034"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "3C00000000000035"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "3C00000000000036"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			title: "Fazenda Automatizada"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O §eEnchantment Industry §7(add-on do Create) permite"
+				"§7encantar itens usando XP líquida e automatizar encantamentos!"
+				""
+				"§eColete um Hyper Experience Bottle (XP líquida concentrada)."
+				""
+				"§6Dica: §7XP pode ser coletada de mobs em mob farms!"
+				"§7Combine com a Drain pra coletar XP do player também,"
+				"§7depois use numa Enchanting Table automatizada."
+			]
+			icon: "create_enchantment_industry:hyper_experience_bottle"
+			id: "3C00000000000037"
+			rewards: [
+				{
+					count: 5
+					id: "3C00000000000038"
+					item: "minecraft:enchanted_book"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3C00000000000039"
+					item: "create_enchantment_industry:experience_rotor"
+					type: "item"
+				}
+				{
+					id: "3C0000000000003A"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				id: "3C0000000000003B"
+				item: "create_enchantment_industry:hyper_experience_bottle"
+				type: "item"
+			}]
+			title: "Fábrica de Encantamentos"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eCreate Confectionery §7usa o Create para fazer doces!"
+				"§7Chocolates, balas e sobremesas com buffs únicos."
+				""
+				"§ePrepare pelo menos 3 tipos de doces do Create Confectionery."
+				"§7Cada doce dá um buff diferente."
+				""
+				"§6Dica: §7Chocolate dá velocidade, balas dão salto!"
+				"§7Use o Mechanical Mixer para receitas especiais."
+			]
+			icon: {
+				Count: 1
+				id: "create_confectionery:full_chocolate_bar"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3C0000000000003C"
+			rewards: [
+				{
+					count: 4
+					id: "3C0000000000003D"
+					item: {
+						Count: 1
+						id: "create_confectionery:full_chocolate_bar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3C0000000000003E"
+					item: "create_confectionery:gingerbread_man"
+					type: "item"
+				}
+				{
+					id: "3C0000000000003F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "490D5FADB202F1DF"
+					item: {
+						Count: 1
+						id: "create_confectionery:full_chocolate_bar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B73B027DD5F7BA3"
+					item: "create_confectionery:honey_candy"
+					type: "item"
+				}
+				{
+					id: "12FA4AA46235CA3E"
+					item: "create_confectionery:caramelized_marshmellow_on_a_stick"
+					type: "item"
+				}
+			]
+			title: "Confeitaria Industrial"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7§eCreate: Ultimate Factory §7não adiciona máquina nova —"
+				"§7ele adiciona RECEITAS novas pras máquinas que você já tem."
+				"§7Uma delas: triturar Nether Bricks no Crushing Wheel tem"
+				"§7chance (bem pequena) de soltar Netherite Scrap de bônus."
+				""
+				"§eConsiga Netherite Scrap triturando Nether Bricks."
+				""
+				"§6Dica: §7A chance é de 0,5% por bloco — automatize em escala"
+				"§7industrial de verdade se quiser ver resultado hoje."
+				"§7Esse addon também adiciona Haunting: Apple vira Chorus"
+				"§7Fruit (30% de chance) — uma mecânica nova por trás das cortinas."
+			]
+			icon: "minecraft:netherite_scrap"
+			id: "3C00000000000046"
+			rewards: [
+				{
+					count: 5
+					id: "3C00000000000047"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "3C00000000000048"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "3C00000000000049"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [{
+				id: "09023118A79B3252"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			title: "Reciclagem Industrial"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Construa uma cadeia de produção que processe automaticamente"
+				"§7minério → lingote → componente → produto final."
+				""
+				"§eCrie um Electron Tube e um Portable Storage Interface —"
+				"§epeças centrais de qualquer linha automatizada complexa."
+				""
+				"§6Dica: §7Brass Funnel + Belt + Deployer + Chute é a base de"
+				"§7qualquer linha de produção que você for montar depois."
+				""
+				"§8§o(Voce nao construiu uma fabrica. Voce construiu um monstro que come minerio.)"
+			]
+			icon: "create:electron_tube"
+			id: "3C00000000000050"
+			rewards: [
+				{
+					count: 32
+					id: "3C00000000000051"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3C00000000000052"
+					item: "create:electron_tube"
+					type: "item"
+				}
+				{
+					id: "3C00000000000053"
 					type: "xp"
 					xp: 800
 				}
 			]
 			tasks: [
 				{
-					id: "TF000000012A"
-					item: "twilightforest:fiery_chestplate"
+					id: "3C00000000000054"
+					item: "create:electron_tube"
 					type: "item"
 				}
 				{
-					id: "TF000000012B"
-					item: "twilightforest:fiery_helmet"
+					id: "272D1EEF2BB772F9"
+					item: "create:portable_storage_interface"
 					type: "item"
 				}
 			]
-			title: "Armadura Fiery"
+			title: "Fábrica Completa"
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7O Jetpack do Create é um dos itens de mobilidade mais"
+				"§7úteis do modpack. Ele usa fluidos como combustível."
+				""
+				"§eCrie um §eCreate Jetpack§7."
+				"§7Configure-o com combustível líquido (lava ou óleo)."
+				""
+				"§6Dica: §7O Jetpack tem modos diferentes de voo!"
+				"§7Combine com Curios para usar junto com armadura."
+			]
+			icon: "create_jetpack:jetpack"
+			id: "3C00000000000055"
+			rewards: [
+				{
+					count: 32
+					id: "3C00000000000056"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3C00000000000057"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "3C00000000000058"
+					type: "xp"
+					xp: 600
+				}
+			]
+			tasks: [{
+				id: "3C00000000000059"
+				item: "create_jetpack:jetpack"
+				type: "item"
+			}]
+			title: "Voar com Engrenagens"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"§7Combine Mechanical Arm com espadas encantadas pra criar"
+				"§7um braço mecânico que ataca sozinho — e Crushing Wheels"
+				"§7pra processar os drops que sobrarem em dobro."
+				""
+				"§eCrie um Mechanical Arm e uma Crushing Wheel."
+				""
+				"§6Dica: §7Mechanical Arm com espadas de diamante em Deployers"
+				"§7é a base de qualquer mob grinder automatizado no Create."
+				"§7Lure de mobs com luz e plataformas elevadas."
+			]
+			icon: "create:deployer"
+			id: "3C0000000000005A"
+			rewards: [
+				{
+					count: 16
+					id: "3C0000000000005B"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "3C0000000000005C"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "3C0000000000005D"
+					type: "xp"
+					xp: 700
+				}
+			]
+			tasks: [
+				{
+					id: "3C0000000000005E"
+					item: "create:mechanical_arm"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "44CF7C63F4C5A45C"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+			]
+			title: "Grinder Automático"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7A visão final do engenheiro: uma fábrica que respira sozinha."
+				"§7Minério entra. Produto sai. Você não precisa tocar em nada."
+				""
+				"§eConstrua um Schematicannon, um Deployer e 2 Mechanical Crafters"
+				"§epra formar o núcleo de uma linha de produção automatizada."
+				""
+				"§7Se você chegou até aqui, você não é mais um engenheiro."
+				"§7É um arquiteto de mundos."
+				""
+				"§8§o(O Create tem 400 blocos diferentes. Você usou uns 15. Está bem assim. Está bem.)"
+			]
+			icon: "create:schematicannon"
+			id: "3C00000000000064"
+			rewards: [
+				{
+					count: 16
+					id: "3C00000000000065"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "3C00000000000066"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "3C00000000000067"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			tasks: [
+				{
+					id: "3C00000000000068"
+					item: "create:schematicannon"
+					type: "item"
+				}
+				{
+					id: "29FE0CB8395F738A"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "14F71BA48A2A2814"
+					item: "create:mechanical_crafter"
+					type: "item"
+				}
+			]
+			title: "§6O Engenheiro Supremo"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"§7§eCreate: Stuff \\& Additions §7expande o kit de ferramentas"
+				"§7e armaduras do Create com versões de Latão, Cobre, Zinco"
+				"§7e até Experiência — cada uma com efeitos únicos."
+				""
+				"§eForje e use pelo menos §e1 ferramenta de Latão (Brass)§7"
+				"§edo Create: Stuff \\& Additions."
+				""
+				"§6Dica: §7A Brass Sword tem alcance maior que a vanilla!"
+				"§7Ferramentas de Experiência dão XP extra ao minerar."
+				""
+				"§8§o(Ventilador gigante. Mecanica solida. Fisica questionavel.)"
+			]
+			icon: "create:cogwheel"
+			id: "3C00000000000070"
+			rewards: [
+				{
+					count: 16
+					id: "3C00000000000071"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3C00000000000072"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "3C00000000000073"
+					type: "xp"
+					xp: 350
+				}
+			]
+			tasks: [
+				{
+					id: "3C00000000000074"
+					item: {
+						Count: 1
+						id: "create_sa:brass_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "790DC59A66AB021F"
+					item: "create:encased_fan"
+					type: "item"
+				}
+			]
+			title: "Aditivos Cinéticos"
 			x: 4.0d
-			y: 2.0d
+			y: 8.0d
 		}
 		{
-			description: ["§7A Twilight Forest dropa armas únicas em cada boss:", "§7§eFiery Sword §7— cauteriza cabeças da Hydra e derrete gelo.", "§7§eKnightmetal Sword §7— forjada com restos dos Cavaleiros.", "§7§eCrumble Horn §7— destrói blocos sem mineração.", "", "§eConsiga a §eFiery Sword §7e crafite uma §eKnightmetal Sword§7.", "", "§6Dica: §7Fiery Sword é a arma mais importante do mid-game na TF.", "§7Knightmetal Ingots são drops dos §eKnight Phantoms§7."]
-			icon: "twilightforest:fiery_sword"
-			id: "TF0000000131"
+			description: [
+				"§7Chega de gambiarra. Chegou a hora de construir de verdade:"
+				"§7engrenagens, prensas e mecanismos que fariam Da Vinci chorar"
+				"§7(de inveja, ou de tédio, ainda estamos decidindo)."
+				""
+				"§eProduza os componentes centrais do Create: Andesite Alloy, Brass Ingot,"
+				"§ePrecision Mechanism e monte um Mechanical Press."
+			]
+			icon: "create:andesite_alloy"
+			id: "2FF4A364818C7C28"
 			rewards: [
 				{
-					count: 4
-					id: "TF000000013C"
-					item: "twilightforest:fiery_ingot"
+					count: 2
+					id: "138716E2A9290513"
+					item: "create:sturdy_sheet"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "TF000000013D"
-					item: "twilightforest:knightmetal_ingot"
+					count: 16
+					id: "5E1939E14F87B1F0"
+					item: "create:brass_ingot"
 					type: "item"
 				}
 				{
-					id: "TF000000013E"
+					id: "64236450448974F2"
 					type: "xp"
-					xp: 900
+					xp: 500
 				}
 			]
 			tasks: [
 				{
-					id: "TF000000013A"
-					item: "twilightforest:fiery_sword"
+					count: 16L
+					id: "0665A52EB4FE0173"
+					item: "create:andesite_alloy"
 					type: "item"
 				}
 				{
-					id: "TF000000013B"
-					item: "twilightforest:knightmetal_sword"
+					count: 8L
+					id: "7C8B15E3D5673160"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0D753C77AD570186"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "673A78D97805859E"
+					item: "create:mechanical_press"
 					type: "item"
 				}
 			]
-			title: "Armas da Floresta"
-			x: 6.0d
+			title: "Engenharia de Precisão"
+			x: 10.0d
 			y: 2.0d
 		}
 		{
-			description: ["§7A §eTwilight Forest §7usa um sistema de §eProgressão por Portais§7.", "§7Cada boss colocado no §eTrophy Pedestal §7abre regiões novas.", "§7Sem seguir a ordem, campos mágicos §eimpedem qualquer dano§7", "§7nos bosses posteriores — a sequência é obrigatória.", "", "§eComplete a progressão até o §eUr-Ghast §7(derrote §e6 bosses§7).", "", "§6Dica: §7Naga→Lich→Minoshroom→Hydra→Knights→Yeti→SnowQueen→Ur-Ghast.", "§7O Trophy Pedestal fica nos biomas centrais da floresta."]
-			icon: "twilightforest:ur_ghast_trophy"
-			id: "TF0000000141"
+			description: [
+				"§7O §eElevator Pulley §7move plataformas inteiras na vertical —"
+				"§7conecte um eixo vertical e ele sobe/desce parando em cada andar"
+				"§7automaticamente, sem precisar de redstone extra."
+				""
+				"§7Já o §eSequenced Gearshift §7executa uma lista de instruções"
+				"§7de movimento em sequência (girar, mover, esperar) — é o mais"
+				"§7próximo que o Create chega de \"programar\" uma máquina."
+				""
+				"§eConstrua um Elevator Pulley e um Sequenced Gearshift."
+				""
+				"§6Dica: §7Use Display Boards perto do elevador pra ver o andar atual!"
+			]
+			icon: "create:elevator_pulley"
+			id: "268DF08CF9FACB08"
 			rewards: [
 				{
-					id: "TF000000014B"
-					item: "twilightforest:ur_ghast_trophy"
+					count: 8
+					id: "24C81631BE4C5347"
+					item: "create:andesite_alloy"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "TF000000014C"
-					item: "twilightforest:fiery_tears"
-					type: "item"
-				}
-				{
-					id: "TF000000014D"
+					id: "031D8BDF2778C9EF"
 					type: "xp"
-					xp: 1500
+					xp: 300
 				}
 			]
 			tasks: [
 				{
-					advancement: "twilightforest:progress_ur_ghast"
-					criterion: "ghast"
-					id: "TF000000014A"
-					type: "advancement"
+					id: "0C9CA5A7385A0C64"
+					item: "create:elevator_pulley"
+					type: "item"
+				}
+				{
+					id: "46B724DD558FC78D"
+					item: "create:sequenced_gearshift"
+					type: "item"
 				}
 			]
-			title: "A Progressão da Floresta"
-			x: 8.0d
+			title: "Elevadores e Engrenagens Sequenciadas"
+			x: 12.0d
 			y: 2.0d
+		}
+		{
+			description: [
+				"§7Create adiciona uma escada de metais alternativa: Copper e Zinc"
+				"§7não são mais estéticos, viram ferramentas e armas de verdade,"
+				"§7intermediárias entre pedra e ferro/diamante."
+				""
+				"§eForje uma Copper Pickaxe e uma Zinc Sword."
+				""
+				"§6Dica: §7Zinc também é ingrediente do Latão (Brass) — não gaste"
+				"§7tudo em ferramenta se for automatizar produção de Latão em breve."
+			]
+			icon: {
+				Count: 1
+				id: "create_sa:copper_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "43FBE0C84D9681BC"
+			rewards: [
+				{
+					count: 4
+					id: "067517F14BCDC8D3"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "0AE38532D4EE54B1"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "707F3CBB0A0AB711"
+					item: {
+						Count: 1
+						id: "create_sa:copper_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21CF986CEFF4AE52"
+					item: {
+						Count: 1
+						id: "create_sa:zinc_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Kit de Sobrevivência Create"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"§7Create é mecânico, cheio de engrenagens visíveis."
+				"§7Mekanism é elétrico, cheio de tubos e energia invisível."
+				"§7Um bom engenheiro domina os dois — e sabe fazer eles"
+				"§7conversarem entre si."
+				""
+				"§eTenha em mãos Brass Ingot (Create) e Steel Ingot (Mekanism)"
+				"§eao mesmo tempo — prova que você processa recursos nos dois."
+				""
+				"§6Dica: §7Mekanism tem cabos de energia pra alimentar motores"
+				"§7do Create em algumas configurações — pesquise combos híbridos!"
+			]
+			icon: "create:brass_ingot"
+			id: "6A49E100E4F94D24"
+			rewards: [
+				{
+					count: 4
+					id: "4ECF9DC8575BF0B2"
+					item: "minecraft:redstone_block"
+					type: "item"
+				}
+				{
+					id: "5C1BA971BA2A4F3A"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "08DCE5B21449622B"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E16822B2B7452BB"
+					item: "mekanism:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "Duas Escolas de Engenharia"
+			x: 18.0d
+			y: 8.0d
 		}
 	]
-	title: "§2Floresta Crepuscular"
+	title: "§eCreate — Engenharia Mecânica"
 }
