@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft:villages",
+    "repurposed_structures:villages_overworld",
     "goblins_tyranny:goblinscamp",
     "goblins_tyranny:goblins_spot",
     "goblins_tyranny:goblins_caravan",
@@ -63,6 +65,9 @@
     "infectious:trader_house_undead_collector",
     "infectious:truck",
     "infectious:villager_outpost",
-    "infectious:yellow_tank"
+    "infectious:yellow_tank",
+    "ars_nouveau:wilden_den_set",
+    "idas:idas_common",
+    "idas:idas_rare"
   ]
 }

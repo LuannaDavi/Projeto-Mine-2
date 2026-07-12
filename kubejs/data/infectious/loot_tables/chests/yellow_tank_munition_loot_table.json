@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {"min": 2, "max": 4},
+      "entries": [
+        {"type": "minecraft:item", "name": "infectious:mk_556_ammunition", "weight": 8, "functions": [{"function": "set_count", "count": {"min": 4, "max": 12}}]},
+        {"type": "minecraft:item", "name": "infectious:grenade", "weight": 3, "functions": [{"function": "set_count", "count": {"min": 1, "max": 2}}]},
+        {"type": "minecraft:item", "name": "minecraft:gunpowder", "weight": 5, "functions": [{"function": "set_count", "count": {"min": 2, "max": 5}}]}
+      ]
+    }
+  ],
+  "random_sequence": "infectious:chests/yellow_tank_munition_loot_table"
+}

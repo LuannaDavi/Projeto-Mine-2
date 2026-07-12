@@ -1,0 +1,22 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 372893981,
+    "separation": 40,
+    "spacing": 88,
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 6
+    }
+  },
+  "structures": [
+    {
+      "structure": "biomeswevegone:aspen_manor_1",
+      "weight": 1
+    },
+    {
+      "structure": "biomeswevegone:aspen_manor_2",
+      "weight": 1
+    }
+  ]
+}

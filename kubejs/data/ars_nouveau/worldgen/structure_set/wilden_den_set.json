@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "ars_nouveau:hunter_wilden_den",
+      "weight": 1
+    },
+    {
+      "structure": "ars_nouveau:guardian_wilden_den",
+      "weight": 25
+    },
+    {
+      "structure": "ars_nouveau:stalker_wilden_den",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "repurposed_structures:advanced_random_spread",
+    "salt": 1224466880,
+    "spacing": 36,
+    "separation": 10,
+    "super_exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "#repurposed_structures:overworld_all_custom_structures_avoid"
+    }
+  }
+}
