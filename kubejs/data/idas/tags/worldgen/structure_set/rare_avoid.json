@@ -65,6 +65,8 @@
     "infectious:trader_house_undead_collector",
     "infectious:truck",
     "infectious:villager_outpost",
-    "infectious:yellow_tank"
+    "infectious:yellow_tank",
+    "ars_nouveau:wilden_den_set",
+    "idas:idas_common"
   ]
 }
