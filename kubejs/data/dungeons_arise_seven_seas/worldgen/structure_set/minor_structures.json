@@ -1,0 +1,34 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise_seven_seas:unicorn_galleon",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise_seven_seas:pirate_junk",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise_seven_seas:small_yacht",
+      "weight": 4
+    },
+    {
+      "structure": "dungeons_arise_seven_seas:victory_frigate",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise_seven_seas:corsair_corvette",
+      "weight": 3
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 98123789,
+    "spacing": 90,
+    "separation": 40,
+    "exclusion_zone": {
+      "other_set": "idas:idas_ocean",
+      "chunk_count": 6
+    }
+  }
+}
