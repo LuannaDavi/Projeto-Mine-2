@@ -6,12 +6,12 @@
     }
   ],
   "placement": {
-    "type": "minecraft:random_spread",
+    "type": "repurposed_structures:advanced_random_spread",
     "spacing": 30,
     "separation": 15,
     "salt": 1937604403,
-    "exclusion_zone": {
-      "other_set": "minecraft:villages",
+    "super_exclusion_zone": {
+      "other_set": "#repurposed_structures:villages_only_avoid",
       "chunk_count": 6
     }
   }
