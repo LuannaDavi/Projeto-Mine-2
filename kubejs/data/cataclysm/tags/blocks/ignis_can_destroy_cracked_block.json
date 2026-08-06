@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "twigs:cracked_polished_tuff_bricks",
+      "required": false
+    },
+    {
+      "id": "twigs:cracked_cobblestone_bricks",
+      "required": false
+    },
+    {
+      "id": "twigs:cracked_bricks",
+      "required": false
+    },
+    {
+      "id": "twigs:cracked_silt_bricks",
+      "required": false
+    },
+    {
+      "id": "twigs:cracked_polished_calcite_bricks",
+      "required": false
+    },
+    {
+      "id": "twigs:cracked_polished_schist_bricks",
+      "required": false
+    },
+    {
+      "id": "twigs:cracked_polished_rhyolite_bricks",
+      "required": false
+    },
+    {
+      "id": "twigs:cracked_polished_bloodstone_bricks",
+      "required": false
+    },
+    {
+      "id": "dungeonnowloading:cracked_stone_tiles",
+      "required": false
+    },
+    {
+      "id": "infernalexp:cracked_polished_basalt_bricks",
+      "required": false
+    },
+    {
+      "id": "endergetic:cracked_purpur_block",
+      "required": false
+    },
+    {
+      "id": "endergetic:cracked_end_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "endergetic:cracked_eumus_bricks",
+      "required": false
+    }
+  ]
+}

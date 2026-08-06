@@ -5,6 +5,6 @@
     "type": "mysti:sea_serpent",
     "maxCount": 1,
     "minCount": 1,
-    "weight": 1
+    "weight": 2
   }
 }
