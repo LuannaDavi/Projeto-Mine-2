@@ -1,0 +1,2630 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	filename: "26_arsenal_avancado"
+	group: "69F31F625754AE1E"
+	id: "3E044BD1CD24C664"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"§7Arcos, armas de fogo e artilharia pesada pra quem já cansou de espada e escudo."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Flint."
+			]
+			icon: "minecraft:flint"
+			id: "2EB2997884F4D8C4"
+			rewards: [{
+				id: "0C05A66C6E6666E1"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "4CC68879F5EB95EF"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Existem 5 novos patamares de equipamento além do diamante."
+				"§7Eternium é o primeiro degrau dessa escada."
+				""
+				"§eForje o conjunto completo de Eternium: O Metal Eterno: espada, picareta,"
+				"§eelmo, peitoral, perneira e botas."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "l2complements:eternium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0F2874D2A46A380B"
+			rewards: [
+				{
+					count: 6
+					id: "6C254EF8C95EAE3A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "007D254CEFB425BE"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7484F43E5D50EE4B"
+					item: {
+						Count: 1
+						id: "l2complements:eternium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "462EEDD8C290D924"
+					item: {
+						Count: 1
+						id: "l2complements:eternium_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B2A903B6BD54F4B"
+					item: {
+						Count: 1
+						id: "l2complements:eternium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7635C06DF72591DC"
+					item: {
+						Count: 1
+						id: "l2complements:eternium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40E73AF35B8CD43E"
+					item: {
+						Count: 1
+						id: "l2complements:eternium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2AF9F24248BC4147"
+					item: {
+						Count: 1
+						id: "l2complements:eternium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Eternium: O Metal Eterno"
+			x: 4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Forjado com material dos oceanos mais profundos, o Poseidite carrega um pouco do poder do próprio mar."
+				""
+				"§eForje o conjunto completo de Poseidite: Poder dos Mares: espada, picareta,"
+				"§eelmo, peitoral, perneira e botas."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "l2complements:poseidite_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1344C5BFF2B12537"
+			rewards: [
+				{
+					count: 8
+					id: "7BF4C006C6922580"
+					item: "minecraft:prismarine_crystals"
+					type: "item"
+				}
+				{
+					id: "0EC06C23247D3540"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5548BDC59C76476A"
+					item: {
+						Count: 1
+						id: "l2complements:poseidite_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59DC19C5C9A7D18C"
+					item: {
+						Count: 1
+						id: "l2complements:poseidite_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30A3B56A1B430455"
+					item: {
+						Count: 1
+						id: "l2complements:poseidite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "05FF88602BBC89C5"
+					item: {
+						Count: 1
+						id: "l2complements:poseidite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "699D6C7275F9B028"
+					item: {
+						Count: 1
+						id: "l2complements:poseidite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3963F078A16400F6"
+					item: {
+						Count: 1
+						id: "l2complements:poseidite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Poseidite: Poder dos Mares"
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7O bioma Deep Dark escondia mais que o Warden — o Sculkium é prova viva disso."
+				""
+				"§eForje o conjunto completo de Sculkium: Ecos do Sculk: espada, picareta,"
+				"§eelmo, peitoral, perneira e botas."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "l2complements:sculkium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0F3C9112A3EE692F"
+			rewards: [
+				{
+					count: 4
+					id: "1F88B7EBD1CCB258"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+				{
+					id: "6B7991AE18266F4A"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "77D2DD795D4563E7"
+					item: {
+						Count: 1
+						id: "l2complements:sculkium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0D6DDE1CDAC5F37B"
+					item: {
+						Count: 1
+						id: "l2complements:sculkium_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2CAE0F3DA728197C"
+					item: {
+						Count: 1
+						id: "l2complements:sculkium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A899F3264A257F8"
+					item: {
+						Count: 1
+						id: "l2complements:sculkium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63DC59DD4F19AD48"
+					item: {
+						Count: 1
+						id: "l2complements:sculkium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "738C0E2EDF2E8A90"
+					item: {
+						Count: 1
+						id: "l2complements:sculkium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Sculkium: Ecos do Sculk"
+			x: 11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Uma armadura que carrega um pouco da teimosia dos próprios Shulkers — não é fácil de derrubar."
+				""
+				"§eForje o conjunto completo de Shulkerate: Blindagem Shulker: espada, picareta,"
+				"§eelmo, peitoral, perneira e botas."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "l2complements:shulkerate_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "264402F5D5D2D8F7"
+			rewards: [
+				{
+					count: 4
+					id: "7E88433C4371C88A"
+					item: "minecraft:shulker_shell"
+					type: "item"
+				}
+				{
+					id: "2DB651A7744AA96E"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5104F26F52A4CD70"
+					item: {
+						Count: 1
+						id: "l2complements:shulkerate_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2FFBCD047686C995"
+					item: {
+						Count: 1
+						id: "l2complements:shulkerate_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6B9A7690EFDAEAAC"
+					item: {
+						Count: 1
+						id: "l2complements:shulkerate_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2DE4B6FDA994950D"
+					item: {
+						Count: 1
+						id: "l2complements:shulkerate_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C6F298A36E595E6"
+					item: {
+						Count: 1
+						id: "l2complements:shulkerate_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "206CE9DA8E37BB36"
+					item: {
+						Count: 1
+						id: "l2complements:shulkerate_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Shulkerate: Blindagem Shulker"
+			x: 12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7O ápice dos 5 patamares de equipamento. Ouro Totêmico"
+				"§7carrega a proteção de totens ancestrais dentro do próprio metal."
+				""
+				"§8§o(Cinco tiers de material depois do diamante. O jogo"
+				"§8§odesistiu de fingir que diamante é raro faz tempo.)"
+				""
+				"§eForje o conjunto completo de Ouro Totêmico: espada, picareta,"
+				"§eelmo, peitoral, perneira e botas."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "l2complements:totemic_gold_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5FEA3DAEE127384B"
+			rewards: [
+				{
+					id: "591873ACADB6353D"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "3CBDF7CC61003F8C"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "22597BF4DCEC1C3F"
+					item: {
+						Count: 1
+						id: "l2complements:totemic_gold_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AFF11A1137751AC"
+					item: {
+						Count: 1
+						id: "l2complements:totemic_gold_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B7BAA433AEA3591"
+					item: {
+						Count: 1
+						id: "l2complements:totemic_gold_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FC88CA407AE67C4"
+					item: {
+						Count: 1
+						id: "l2complements:totemic_gold_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "146414BD601925A7"
+					item: {
+						Count: 1
+						id: "l2complements:totemic_gold_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79D88FC54F27FB1B"
+					item: {
+						Count: 1
+						id: "l2complements:totemic_gold_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ouro Totêmico"
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Além dos tiers de equipamento, o mod tem itens únicos de"
+				"§7utilidade — totens que dão segunda chance, e runas que"
+				"§7encantam à sua maneira."
+				""
+				"§eConsiga: Totem Of Dream, Totem Of The Sea, Guardian Rune"
+				"§ee Piglin Rune."
+			]
+			hide_until_deps_complete: true
+			icon: "l2complements:totem_of_dream"
+			id: "07C03B4221BCB7BC"
+			rewards: [
+				{
+					id: "33BE28BD1016F541"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "4C524555C765DDA7"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4FF05DA617BB8353"
+					item: "l2complements:totem_of_dream"
+					type: "item"
+				}
+				{
+					id: "55C46C01E99685FD"
+					item: "l2complements:totem_of_the_sea"
+					type: "item"
+				}
+				{
+					id: "182B75B68B3DE782"
+					item: "l2complements:guardian_rune"
+					type: "item"
+				}
+				{
+					id: "45560B317F627DB1"
+					item: "l2complements:piglin_rune"
+					type: "item"
+				}
+			]
+			title: "Totens e Runas"
+			x: 12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Três varinhas, três elementos: difusão espacial, fogo"
+				"§7infernal e tempestade de inverno."
+				""
+				"§eConsiga: Diffusion Wand, Hellfire Wand e Winterstorm Wand."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "l2complements:hellfire_wand"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6FC9B324E51DB54B"
+			rewards: [
+				{
+					count: 8
+					id: "7489072263F8BB68"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "4CE6FDF869538E2A"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "44A67F0A137C8E00"
+					item: {
+						Count: 1
+						id: "l2complements:diffusion_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D04A9656183DC2D"
+					item: {
+						Count: 1
+						id: "l2complements:hellfire_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7497F3DB45A7FBF6"
+					item: {
+						Count: 1
+						id: "l2complements:winterstorm_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Varinhas Elementais"
+			x: 9.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7No topo dessa forja está a Eternal Anvil — a única"
+				"§7forja capaz de trabalhar os materiais mais raros do mod,"
+				"§7incluindo um fragmento de osso do próprio Warden."
+				""
+				"§eConsiga: Eternal Anvil, Eternal Totem Of Dream e"
+				"§eWarden Bone Shard."
+			]
+			hide_until_deps_complete: true
+			icon: "l2complements:eternal_anvil"
+			id: "061460A04E5405FE"
+			rewards: [
+				{
+					count: 2
+					id: "418865C649B83D1C"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "01F8D5F0840AD0B2"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7F9AE8AFEECCB59F"
+					item: "l2complements:eternal_anvil"
+					type: "item"
+				}
+				{
+					id: "71DB0D67DAA0E6DB"
+					item: "l2complements:eternal_totem_of_dream"
+					type: "item"
+				}
+				{
+					id: "47F997E28891477A"
+					item: "l2complements:warden_bone_shard"
+					type: "item"
+				}
+			]
+			title: "§6§lA Bigorna Eterna"
+			x: 6.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7O arco e flecha ganharam vida nova por aqui, com uma"
+				"§7progressão própria de flechas — do ferro até o obsidiana."
+				""
+				"§eConsiga: Iron Bow, Iron Arrow, Gold Arrow, Diamond Arrow"
+				"§ee Obsidian Arrow."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "l2archery:iron_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "46F28201BED3BB9A"
+			rewards: [
+				{
+					count: 16
+					id: "1E482BC07EF8FEA6"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "01A010CE805E6FDE"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "412B2B3B8F799712"
+					item: {
+						Count: 1
+						id: "l2archery:iron_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "74F5669CFE60F15A"
+					item: "l2archery:iron_arrow"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5F4243AB509A1EB0"
+					item: "l2archery:gold_arrow"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "52D9396EDA1275E7"
+					item: "l2archery:diamond_arrow"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "300E9B586883FFFD"
+					item: "l2archery:obsidian_arrow"
+					type: "item"
+				}
+			]
+			title: "Arco e Flecha: Progressão Básica"
+			x: 2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Fogo, gelo e tempestade — suas flechas podem"
+				"§7carregar elementos de verdade."
+				""
+				"§eConsiga: Fire Arrow Lv1, Fire Arrow Lv2, Frozen Arrow,"
+				"§eStorm Arrow e um Wind Bow."
+			]
+			hide_until_deps_complete: true
+			icon: "l2archery:storm_arrow"
+			id: "3225035F839A0E59"
+			rewards: [
+				{
+					count: 16
+					id: "18CB36CA216F37E7"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "6EF14A29002F39EB"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "01015994D2B5FD0A"
+					item: "l2archery:fire_arrow_lv1"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7D85BF249AFB9C0A"
+					item: "l2archery:fire_arrow_lv2"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "68D0EA607FD16B1C"
+					item: "l2archery:frozen_arrow"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7E6A0B758967BFB8"
+					item: "l2archery:storm_arrow"
+					type: "item"
+				}
+				{
+					id: "3A18385C186C72BA"
+					item: {
+						Count: 1
+						id: "l2archery:wind_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Flechas Elementais"
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Assim como as armaduras e armas, as flechas também têm sua"
+				"§7própria versão dos 5 materiais especiais — dessa vez, em"
+				"§7forma de flecha."
+				""
+				"§eConsiga: Eternium Arrow, Poseidite Arrow, Sculkium Arrow,"
+				"§eShulkerate Arrow e Totemic Gold Arrow."
+			]
+			hide_until_deps_complete: true
+			icon: "l2archery:eternium_arrow"
+			id: "0158005919085BBE"
+			rewards: [
+				{
+					count: 8
+					id: "76F83CBE8AF7B459"
+					item: "minecraft:spectral_arrow"
+					type: "item"
+				}
+				{
+					id: "783ACBF337BA35D3"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "077AEAC0E7BC9B85"
+					item: "l2archery:eternium_arrow"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1E71D50E1D6CD75E"
+					item: "l2archery:poseidite_arrow"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "67D52C4CAC1F2CA4"
+					item: "l2archery:sculkium_arrow"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "34C7AC4228E5CAC2"
+					item: "l2archery:shulkerate_arrow"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "64B4E5F922701240"
+					item: "l2archery:totemic_gold_arrow"
+					type: "item"
+				}
+			]
+			title: "Flechas dos Tiers Materiais"
+			x: -6.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7No topo dessa progressão estão os arcos nomeados — cada um"
+				"§7com uma habilidade própria que nenhum arco comum tem."
+				""
+				"§eConsiga: Master Bow, Gaia Bow, Void Bow, Sun Bow"
+				"§ee Ender Aim Bow."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "l2archery:master_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "437E7493B221A6D5"
+			rewards: [
+				{
+					count: 6
+					id: "09B506F0401AEE93"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					id: "55C8D9F7B7107FB0"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "55E60B46685BC922"
+					item: {
+						Count: 1
+						id: "l2archery:master_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "031C1004D75FB31E"
+					item: {
+						Count: 1
+						id: "l2archery:gaia_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FBBD210C30E049E"
+					item: {
+						Count: 1
+						id: "l2archery:void_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4A8EE2BAF52A4891"
+					item: {
+						Count: 1
+						id: "l2archery:sun_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59C3CEFCDE22CFD4"
+					item: {
+						Count: 1
+						id: "l2archery:ender_aim_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§b§lArcos Lendários"
+			x: -9.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Existem dezenas de armas de fogo reais recriadas em detalhe"
+				"§7por aqui."
+				"§7Antes de partir pros rifles, comece pelo básico: uma pistola"
+				"§7confiável e munição pra ela."
+				""
+				"§eConsiga: Glock 17, M1911A1, Desert Eagle, M9 e"
+				"§emunição 9mm."
+			]
+			hide_until_deps_complete: true
+			icon: "pointblank:glock17"
+			id: "00E49B90F4328497"
+			rewards: [
+				{
+					count: 8
+					id: "1AF101617B7F3CF5"
+					item: "pointblank:gunmetal_ingot"
+					type: "item"
+				}
+				{
+					id: "16768CD1594B5C8B"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "375EC8446DA7E8C8"
+					item: "pointblank:glock17"
+					type: "item"
+				}
+				{
+					id: "204C6B40C83843D2"
+					item: "pointblank:m1911a1"
+					type: "item"
+				}
+				{
+					id: "5CC58F28F50C6BC7"
+					item: "pointblank:deserteagle"
+					type: "item"
+				}
+				{
+					id: "0548D1A2422E94D5"
+					item: "pointblank:m9"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "57D46E2A96808D9C"
+					item: "pointblank:ammo9mm"
+					type: "item"
+				}
+			]
+			title: "Pistolas de Bolso"
+			x: -12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7O padrão de qualquer força de combate moderna: rifles"
+				"§7versáteis, confiáveis, e mortalmente eficientes a média"
+				"§7distância."
+				""
+				"§eConsiga: AK47, M4A1, SCAR-L, HK416, G36C e"
+				"§emunição 5.56."
+			]
+			hide_until_deps_complete: true
+			icon: "pointblank:ak47"
+			id: "1B1335A0ADD0725D"
+			rewards: [
+				{
+					count: 12
+					id: "02631DB04278B9C0"
+					item: "pointblank:gunmetal_ingot"
+					type: "item"
+				}
+				{
+					id: "742B271933CEEA9D"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "70A99B83E8690A84"
+					item: "pointblank:ak47"
+					type: "item"
+				}
+				{
+					id: "16032677DE35B148"
+					item: "pointblank:m4a1"
+					type: "item"
+				}
+				{
+					id: "12F8ED0EF2260A48"
+					item: "pointblank:scarl"
+					type: "item"
+				}
+				{
+					id: "75B01B18ABD8984C"
+					item: "pointblank:hk416"
+					type: "item"
+				}
+				{
+					id: "51F21E8F8B72BDE0"
+					item: "pointblank:g36c"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "57D2923ED482DD12"
+					item: "pointblank:ammo556"
+					type: "item"
+				}
+			]
+			title: "Rifles de Assalto"
+			x: -13.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Precisão acima de tudo. Um tiro certeiro de longe vale"
+				"§7mais que uma rajada inteira gasta de perto."
+				""
+				"§eConsiga: L96A1, WA2000, GM6 Lynx, Ballista e uma mira"
+				"§ede precisão (ACOG ou similar)."
+			]
+			hide_until_deps_complete: true
+			icon: "pointblank:l96a1"
+			id: "3E33D3D09D013646"
+			rewards: [
+				{
+					count: 8
+					id: "739EE461B4E980B1"
+					item: "pointblank:ammo50bmg"
+					type: "item"
+				}
+				{
+					id: "7C6F4DC69C02FADE"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "05CD959876ECF79F"
+					item: "pointblank:l96a1"
+					type: "item"
+				}
+				{
+					id: "6C804AE85B577A3F"
+					item: "pointblank:wa2000"
+					type: "item"
+				}
+				{
+					id: "5A8D79D5FFB711E6"
+					item: "pointblank:gm6lynx"
+					type: "item"
+				}
+				{
+					id: "7FBFDEF86022A64D"
+					item: "pointblank:ballista"
+					type: "item"
+				}
+				{
+					id: "6FB70CD3284E95A3"
+					item: "pointblank:acog"
+					type: "item"
+				}
+			]
+			title: "Atiradores de Elite"
+			x: -12.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Quando a situação pede mais que uma rajada curta, essas"
+				"§7armas resolvem — pesadas, difíceis de carregar, e"
+				"§7devastadoras em combate prolongado."
+				""
+				"§eConsiga: M249, MK48, LAMG, AA-12 e munição 7.62."
+			]
+			hide_until_deps_complete: true
+			icon: "pointblank:m249"
+			id: "030809CCAF59D293"
+			rewards: [
+				{
+					count: 16
+					id: "02FFA804C923E030"
+					item: "pointblank:gunmetal_ingot"
+					type: "item"
+				}
+				{
+					id: "0CCB45B9705874DB"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "795A236CD38F7B2A"
+					item: "pointblank:m249"
+					type: "item"
+				}
+				{
+					id: "6BA2797AE44A2361"
+					item: "pointblank:mk48"
+					type: "item"
+				}
+				{
+					id: "14AEA238AE7046A4"
+					item: "pointblank:lamg"
+					type: "item"
+				}
+				{
+					id: "65104853CEA7A3F9"
+					item: "pointblank:aa12"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6F9E65492F9309D6"
+					item: "pointblank:ammo762"
+					type: "item"
+				}
+			]
+			title: "Armas Pesadas"
+			x: -11.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7No topo desse arsenal estão as armas que nem"
+				"§7blindagem pesada resiste — feitas pra destruir veículos,"
+				"§7não jogadores."
+				""
+				"§eConsiga: Javelin, AT4, SMAW, M32 MGL e um foguete"
+				"§epra cada lançador."
+				""
+				"§6Dica: §7Nunca dispare esses em espaço fechado. Nunca mesmo."
+				""
+				"§8§o(Você tem um Javelin guardado no bolso de um jogo"
+				"§8§ode blocos. Reflita sobre isso por um segundo.)"
+			]
+			hide_until_deps_complete: true
+			icon: "pointblank:javelin"
+			id: "721C1C4E5131C8F5"
+			rewards: [
+				{
+					count: 8
+					id: "40F154749708EEAE"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					id: "772AD7A2B9922E37"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "20F5D77B52A1CFF6"
+					item: "pointblank:javelin"
+					type: "item"
+				}
+				{
+					id: "268AC4D6DA8651FE"
+					item: "pointblank:at4"
+					type: "item"
+				}
+				{
+					id: "5BB7B44EF3B5284D"
+					item: "pointblank:smaw"
+					type: "item"
+				}
+				{
+					id: "271951668BF8EF0B"
+					item: "pointblank:m32mgl"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6BDE79BA1EFB19A3"
+					item: "pointblank:javelin_rocket"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "70F5EA5AC9C5FC01"
+					item: "pointblank:at4_rocket"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "64306029A4C96E0E"
+					item: "pointblank:smaw_rocket"
+					type: "item"
+				}
+			]
+			title: "§c§lPoder Anti-Blindagem"
+			x: -8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Uma arma sem os acessórios certos é só metade do que"
+				"§7poderia ser. Mira, supressor e empunhadura mudam tudo."
+				""
+				"§eConsiga: ACOG, Holographic, AR Suppressor"
+				"§ee Foregrip."
+			]
+			hide_until_deps_complete: true
+			icon: "pointblank:holographic"
+			id: "46157D45E7B6AA0B"
+			rewards: [
+				{
+					count: 8
+					id: "27AEB7EECCE83D4E"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "6F936B9075491748"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0300BEC9887439B0"
+					item: "pointblank:acog"
+					type: "item"
+				}
+				{
+					id: "6DCFE415356465CA"
+					item: "pointblank:holographic"
+					type: "item"
+				}
+				{
+					id: "3710FD7C887943E5"
+					item: "pointblank:ar_suppressor"
+					type: "item"
+				}
+				{
+					id: "41A272540C597385"
+					item: "pointblank:foregrip"
+					type: "item"
+				}
+			]
+			title: "Acessórios Táticos"
+			x: -4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Existem 8 tipos de arma corpo a corpo além do básico —"
+				"§7adaga, katar, espadão, katana, cimitarra, foice, machado"
+				"§7de mão e lança — todos disponíveis desde o tier de ferro."
+				""
+				"§eForje um de cada tipo em Iron: Dagger, Katar, Greatsword,"
+				"§eKatana, Scimitar, Scythe, Crowbill e Spear."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "simple_weapons:iron_katana"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "569C98D8954BAFB5"
+			rewards: [
+				{
+					count: 8
+					id: "294B2185DCE3F640"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "6BA07217A9025F4D"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "30F8CB9F27D17D9A"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A578EF985C96B7B"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_fist"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D10865452643F93"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "461D89096305A0EA"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10BA3D182E8804E4"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_scimitar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "769823FC46BB8772"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_scythe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "309E306EE81442FF"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_sickle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F74F9A8811BBFD6"
+					item: {
+						Count: 1
+						id: "simple_weapons:iron_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arsenal Básico"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Electrum e Corinthium são ligas exclusivas do Simple"
+				"§7Weapons — mais fortes que ferro, mais acessíveis que"
+				"§7diamante."
+				""
+				"§eForje: Electrum Spear, Electrum Katana, Corinthium"
+				"§eKatana e Corinthium Greatsword."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "simple_weapons:corinthium_greatsword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A523A4016414B3D"
+			rewards: [
+				{
+					count: 8
+					id: "3D662B8E8D9F5693"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "09BA2A023D89F297"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6098B4207AC5B99C"
+					item: {
+						Count: 1
+						id: "simple_weapons:electrum_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5502337A85C3D264"
+					item: {
+						Count: 1
+						id: "simple_weapons:electrum_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10EDD72CD31269EF"
+					item: {
+						Count: 1
+						id: "simple_weapons:corinthium_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A7CBDA1BF0AEC8F"
+					item: {
+						Count: 1
+						id: "simple_weapons:corinthium_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ligas Estranhas"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Knightmetal e Steeleaf vêm da Twilight Forest, Pendorite"
+				"§7vem do Blue Skies — dá pra forjar armas"
+				"§7novas com materiais que você já tem de outras dimensões."
+				""
+				"§eForje: Knightmetal Spear, Knightmetal Katana, Steeleaf"
+				"§eGreatsword, Steeleaf Katana, Pendorite Katana e"
+				"§ePendorite Greatsword."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "simple_weapons:knightmetal_katana"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "06BF97F5FFC6602D"
+			rewards: [
+				{
+					count: 4
+					id: "2037B4C7421CC33B"
+					item: "twilightforest:knightmetal_ingot"
+					type: "item"
+				}
+				{
+					id: "6941AEA94F32188C"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "34D4A430F532CD10"
+					item: {
+						Count: 1
+						id: "simple_weapons:knightmetal_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D0C76A47ECCACCA"
+					item: {
+						Count: 1
+						id: "simple_weapons:knightmetal_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "16468B1F290BDC3E"
+					item: {
+						Count: 1
+						id: "simple_weapons:steeleaf_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F095E7ABD8F01B6"
+					item: {
+						Count: 1
+						id: "simple_weapons:steeleaf_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13827472B42B20F0"
+					item: {
+						Count: 1
+						id: "simple_weapons:pendorite_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "281C1F579D26A3E7"
+					item: {
+						Count: 1
+						id: "simple_weapons:pendorite_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Aço das Dimensões"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7O patamar mais alto dessas lâminas carrega o nome do"
+				"§7monstro mais temido do Deep Dark. Forjar essas armas"
+				"§7não é fácil — usar bem, muito menos."
+				""
+				"§eForje: Warden Dagger, Warden Katana, Warden Greatsword"
+				"§ee Warden Spear."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "simple_weapons:warden_greatsword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3215010C001EAAED"
+			rewards: [
+				{
+					count: 2
+					id: "35747D6BC6EEF64B"
+					item: "minecraft:sculk_catalyst"
+					type: "item"
+				}
+				{
+					id: "775B80D7FE531FC4"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2B960037EBE5A7C3"
+					item: {
+						Count: 1
+						id: "simple_weapons:warden_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "347AB74841F34092"
+					item: {
+						Count: 1
+						id: "simple_weapons:warden_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D7B4E7D46A871AE"
+					item: {
+						Count: 1
+						id: "simple_weapons:warden_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C3EB98AB98EC0DB"
+					item: {
+						Count: 1
+						id: "simple_weapons:warden_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§d§lA Lâmina do Warden"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Existem dezenas de armas estilizadas por aqui — boa"
+				"§7parte inspirada em katanas e espadas orientais lendárias."
+				""
+				"§eConsiga: Black Katana, Wakizashi, Nagakiba e"
+				"§eGreat Katana."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "fantasy_weapons:weapon_black_katana"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "35289871521806C5"
+			rewards: [
+				{
+					count: 4
+					id: "0F0A41565A2563E4"
+					item: "fantasy_weapons:blazing_stone"
+					type: "item"
+				}
+				{
+					id: "179AE138C5EDB575"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "358926CD54B7E169"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_black_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "02D4754C650BFDD5"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_wakizashi"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21F207265931AA8B"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_nagakiba"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38AF3A8B79C0D58A"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_great_katana"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Lâminas do Oriente"
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Espadões gigantescos, pesados demais pra maioria carregar"
+				"§7— mas devastadores nas mãos certas."
+				""
+				"§eConsiga: Hero Claymore, Zweihander, Royal Greatsword,"
+				"§eCrucible Greatsword e Dark Moon Greatsword."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "fantasy_weapons:weapon_royal_greatsword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "762B2F1BDA3BBD4C"
+			rewards: [
+				{
+					count: 6
+					id: "7C6B82A12756FBF7"
+					item: "fantasy_weapons:blazing_stone"
+					type: "item"
+				}
+				{
+					id: "0CD5C6D62974E126"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0FABCB3B636B899E"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_hero_claymore"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DA70BFEDD7434C5"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_zweihander"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "57C70E8832E5CE67"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_royal_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "472E28E87AC9E78A"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_crucible_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "636FD2431DB89D19"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_dark_moon_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Espadas Grandiosas"
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7No topo dessa coleção estão as armas com nome"
+				"§7próprio — cada uma carregando uma história (e um poder)"
+				"§7só dela."
+				""
+				"§eConsiga: Hand of Malenia, Rivers of Blood, Dragon's Doom,"
+				"§eKingslayer e Cursed Blade."
+				""
+				"§8§o(Você tem a Hand of Malenia numa fazenda de trigo."
+				"§8§oOs devs do Elden Ring nunca vão saber disso.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "fantasy_weapons:weapon_hand_of_malenia"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6BDEC7715A63A689"
+			rewards: [
+				{
+					count: 2
+					id: "1139506E72FDA011"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "36522C7620A28F78"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2358A2A5424E8BDB"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_hand_of_malenia"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63EDC9F51E421951"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_rivers_of_blood"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "41214CA64AE2A9E6"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_dragons_doom"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D7827A74A0C7EE3"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_kingslayer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03560CC8852BCA98"
+					item: {
+						Count: 1
+						id: "fantasy_weapons:weapon_cursed_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "§5§lArmas Lendárias"
+			x: 3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Nem todo bandido usa espada. Merc e Spy são mercenários"
+				"§7armados que aparecem em grupo e não hesitam em atirar."
+				"§7Sobreviva ao tiroteio e recolha o que sobrar."
+				""
+				"§eDerrote um Merc e um Spy."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 12
+					GunFireMode: "SEMI"
+					GunId: "tacz:hk_mk23"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "3CA2CE2842F77004"
+			rewards: [
+				{
+					id: "5B0848B28726BB9B"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 12
+							GunFireMode: "SEMI"
+							GunId: "tacz:hk_mk23"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "11F8FB4DD1E21AC5"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 25
+							GunFireMode: "AUTO"
+							GunId: "lradd:smg45"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2C47848BC7A10C3E"
+					item: {
+						Count: 1
+						id: "tacz:ammo"
+						tag: {
+							AmmoId: "lradd:545x39"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "18DDC0B5F2D3843A"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "hwg:merc"
+					id: "396F161AD75C6B93"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "hwg:spy"
+					id: "2BC385A11E6A5CB0"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Emboscada Armada"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3CA2CE2842F77004"
+				"2EB2997884F4D8C4"
+			]
+			description: [
+				"§7A Gun Table crafta muito mais que pistola — dos clássicos"
+				"§7de guerra ao exagero puro. Monte seu próprio arsenal."
+				""
+				"§eConstrua: AK-47, Tommy Gun, Shotgun, Sniper Rifle e Minigun."
+				""
+				"§6Dica: §7cada arma recarrega com uma munição diferente —"
+				"§7confira o tooltip do item antes de sair atirando."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "lrl:textures/gun/hud/ai_awp_asiimov.png"
+				}
+			}
+			id: "064E676C93B1C98E"
+			rewards: [
+				{
+					id: "0D6E465A3AF6B8D4"
+					item: "pointblank:m203launcher"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "21C5F5285E479EBC"
+					item: "pointblank:smaw_rocket"
+					type: "item"
+				}
+				{
+					id: "4E96ABDAD2991002"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "lradd:nailgun"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7174812F0C768C7D"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "21FB06420586D3CC"
+					item: "pointblank:ak47"
+					type: "item"
+				}
+				{
+					id: "2186AA5F95B9C148"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:ak47"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2E3BFF5805B9A117"
+					item: "pointblank:m870modshotgun"
+					type: "item"
+				}
+				{
+					id: "31498DE8D0AFA97E"
+					item: "pointblank:precision_scope"
+					type: "item"
+				}
+				{
+					id: "42CFC7DE103D8142"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:minigun"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arsenal Comprado a Ferro e Fogo"
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3CA2CE2842F77004"
+				"2EB2997884F4D8C4"
+			]
+			description: [
+				"§7No fundo de biomas específicos rondam os Technodemons —"
+				"§7demônios blindados vindos de algum lugar entre o inferno"
+				"§7e uma fábrica de armas. O Greater é o comandante; o Lesser"
+				"§7vem em bando."
+				""
+				"§8§o(De algum jeito, um demônio armado é menos assustador"
+				"§8§odo que a fatura de munição.)"
+				""
+				"§eDerrote um Greater Technodemon e um Lesser Technodemon."
+			]
+			hide_until_deps_complete: true
+			icon: "pointblank:m134minigun"
+			id: "7522E25A71FB7020"
+			rewards: [
+				{
+					id: "40D37FCFA8309BF7"
+					item: "pointblank:m134minigun"
+					type: "item"
+				}
+				{
+					id: "4DC03C7A2AA32CC7"
+					item: "pointblank:m870modshotgun"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5A8FAA02890385A2"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "0A860E3A39551618"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "hwg:technodemon_greater_1"
+					id: "2FE3F6C9F99B0971"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "hwg:technodemon_lesser_1"
+					id: "0F8B071445FCA864"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Caçada aos Tecnodemônios"
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Machadões pesados e cajados místicos existem numa progressão"
+				"§7própria — de madeira até netherite, cada tier bate mais forte"
+				"§7e concentra mais poder."
+				""
+				"§eCrie um Iron Greataxe e um Iron Staff. Depois suba pelo menos"
+				"§eum dos dois até a tier de Diamante."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "wom:diamond_greataxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "308E800C8BA2278A"
+			rewards: [
+				{
+					id: "3A1BDB1A317A68D6"
+					item: {
+						Count: 1
+						id: "wom:golden_greataxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "06AB80B309F8E2EC"
+					item: {
+						Count: 1
+						id: "wom:golden_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12E1FE6CEF850EA6"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "502500C7F6F643AB"
+					item: {
+						Count: 1
+						id: "wom:iron_greataxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "180D6DB6E679DA94"
+					item: {
+						Count: 1
+						id: "wom:iron_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C9DB358A6568B25"
+					item: {
+						Count: 1
+						id: "wom:diamond_greataxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Machados e Cajados"
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Nem tudo que dá poder vai na mão — anel, colar, coroa,"
+				"§7cinto, tornozeleira... Um conjunto completo de acessórios"
+				"§7encantados vale tanto quanto uma armadura inteira."
+				""
+				"§eColecione: Diamond Armlet, Diamond Crown, Emerald Ear Rings"
+				"§ee Netherite Belt."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "wom:diamond_crown"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "67EDDD0961DA18ED"
+			rewards: [
+				{
+					id: "522D6ABEC10D2D87"
+					item: {
+						Count: 1
+						id: "wom:netherite_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "75D21CA8D7C82253"
+					item: {
+						Count: 1
+						id: "wom:golden_monocle"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2E584620A5794C93"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "05DA3D6747CE782B"
+					item: {
+						Count: 1
+						id: "wom:diamond_armbracelet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28F31214C697BF86"
+					item: {
+						Count: 1
+						id: "wom:diamond_crown"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "291EB7AD3151DEE8"
+					item: {
+						Count: 1
+						id: "wom:emerald_earrings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0980237CEE8696EE"
+					item: {
+						Count: 1
+						id: "wom:netherite_belt"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Acessórios de Poder"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2EB2997884F4D8C4"]
+			description: [
+				"§7Além da linha de produção normal, existem 5 armas únicas —"
+				"§7cada uma com uma habilidade especial só sua, de veneno a"
+				"§7wither a sangramento."
+				""
+				"§eObtenha: Napoleon, Satsujin, Solar, Antitheus e o"
+				"§eClawed Gauntlet (Jabberwocky)."
+				""
+				"§8§o(\"A morte será um doce presente\" — recado de próprio punho,"
+				"§8§oliteralmente.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "wom:antitheus"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0C2C4D6424A21903"
+			rewards: [
+				{
+					count: 8
+					id: "7EF420CEBF4D244A"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "67825632D2555DBF"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "2638AB7B514E2DC4"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "308BF0C58DD56C11"
+					item: {
+						Count: 1
+						id: "wom:napoleon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55A53C1EB58D7E8E"
+					item: {
+						Count: 1
+						id: "wom:satsujin"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B26EC9B304BC893"
+					item: {
+						Count: 1
+						id: "wom:solar"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "40AE437554197604"
+					item: {
+						Count: 1
+						id: "wom:antitheus"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46A8545A4BE6E89A"
+					item: {
+						Count: 1
+						id: "wom:jabberwocky"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "As Cinco Armas Únicas"
+			x: -4.0d
+			y: 4.5d
+		}
+	]
+	title: "§cArsenal Avançado"
+}

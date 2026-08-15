@@ -1,0 +1,1659 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	filename: "20_bestiario_selvagem"
+	group: "69F31F625754AE1E"
+	id: "6A908B823E6BC4ED"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"§7Espécies estranhas espalhadas por todo canto — cada bioma esconde algo que ainda não foi catalogado."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Feather."
+			]
+			icon: "minecraft:feather"
+			id: "619E2FBAEF9EA9EF"
+			rewards: [{
+				id: "31F75698F506824F"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "06F3A9110A671507"
+				item: "minecraft:feather"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: -13.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7O surto começou devagar, mas já tomou tudo. Os mortos que"
+				"§7andam por aí não são só monstros sem rosto — muitos ainda"
+				"§7vestem o uniforme do trabalho que tinham. A doença não"
+				"§7escolheu ninguém."
+				""
+				"§eMate seu primeiro morto-vivo e comece a entender o tamanho"
+				"§edo surto."
+				""
+				"§6Dica: §7Zumbis normais ainda são o grosso do surto — mas fique"
+				"§7de olho, tem gente estranha misturada na multidão."
+				"§8§o(O apocalipse zumbi tem gente de terno andando por aí."
+				"§8§oCapitalismo sobrevive a tudo.)"
+			]
+			hide_until_deps_complete: true
+			icon: "infectious:zombie_spawn_egg"
+			id: "7E5F0FF6A5596608"
+			rewards: [
+				{
+					count: 8
+					id: "07913C97D98D326D"
+					item: "infectious:bandage"
+					type: "item"
+				}
+				{
+					id: "7751781247913325"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "infectious:zombie"
+				id: "264212121B71F799"
+				type: "kill"
+				value: 20L
+			}]
+			title: "Primeiro Contato"
+			x: -10.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Ficar arranhado é uma coisa. Ficar infectado é outra."
+				"§7Antibióticos revertem a infecção antes que seja tarde —"
+				"§7mas só funcionam se você tiver eles em mãos na hora certa."
+				""
+				"§eMonte seu kit de sobrevivência: Medikit, Bandage e Antibiotics."
+				""
+				"§6Dica: §7Não espere ficar infectado pra procurar antibiótico."
+				"§7Tenha sempre um de reserva."
+			]
+			hide_until_deps_complete: true
+			icon: "infectious:medikit"
+			id: "3AE306B0F463F13C"
+			rewards: [
+				{
+					count: 2
+					id: "6BAED5635BE25F84"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "3DC0B46C601C2612"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1537298C1B780A06"
+					item: "infectious:medikit"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "370C03E0D4829D24"
+					item: "infectious:bandage"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "14A96FA18AE685DF"
+					item: "infectious:antibiotics"
+					type: "item"
+				}
+			]
+			title: "Kit de Primeiros Socorros"
+			x: -7.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Nem todo sobrevivente começa com uma arma de fogo."
+				"§7Bastão de baseball, panela de fritar, ferragem — o que sobrar"
+				"§7de útil no fim do mundo vira arma."
+				""
+				"§eConsiga: Baseball Bat, Baseball Bat with Nails, Frying Pan,"
+				"§eIron Gauntlet e Robotic Arm."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "infectious:baseball_bat_with_nails"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "367A4D904A55C2A8"
+			rewards: [
+				{
+					count: 16
+					id: "2BB2B1C18B4A2EDE"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "59098DBCDE434D4B"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "009B9E38B528AF52"
+					item: {
+						Count: 1
+						id: "infectious:baseball_bat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0AF88E6ACFB4E662"
+					item: {
+						Count: 1
+						id: "infectious:baseball_bat_with_nails"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A6E7ED622A069A1"
+					item: {
+						Count: 1
+						id: "infectious:frying_pan"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "01CC335EF43D2AAE"
+					item: {
+						Count: 1
+						id: "infectious:iron_gauntlet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "796DEACE3A198788"
+					item: {
+						Count: 1
+						id: "infectious:robotic_saw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arsenal Improvisado"
+			x: -4.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Chega uma hora que porrada não resolve mais."
+				"§7Munição é rara, mas nada bate a segurança de uma boa arma."
+				""
+				"§eConsiga: MK556, MK556 Ammunition, Grenade e Flamethrower"
+				"§e(com pelo menos 1 Flamethrower Fuel)."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "infectious:mk_556"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "552AD45E55FE74B6"
+			rewards: [
+				{
+					count: 16
+					id: "2CCDAF942C2E802E"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "2172E84F04498A2E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3080DD95D542A9EE"
+					item: {
+						Count: 1
+						id: "infectious:mk_556"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "7E5300287E127399"
+					item: "infectious:mk_556_ammunition"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "332EB9DC623A70B2"
+					item: "infectious:grenade"
+					type: "item"
+				}
+				{
+					id: "50CD9FB635DA8671"
+					item: {
+						Count: 1
+						id: "infectious:flamethrower"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5FF546F5937B7F33"
+					item: "infectious:flamethrower_fuel"
+					type: "item"
+				}
+			]
+			title: "Poder de Fogo"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Fugir de uma horda a pé é roleta russa."
+				"§7Uma bike, um jetpack improvisado ou um bataring bem lançado"
+				"§7fazem toda diferença entre viver e virar estatística."
+				""
+				"§eConsiga: Bike, Jetpack e Bataring."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "infectious:jetpack_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "594DB97731EE379D"
+			rewards: [
+				{
+					count: 8
+					id: "4982654FC45DAB0B"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "6082DB2D6B41C4F4"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "14C91BF262831B7A"
+					item: "infectious:bike_item"
+					type: "item"
+				}
+				{
+					id: "6D2E9696C7DA711E"
+					item: {
+						Count: 1
+						id: "infectious:jetpack_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3893C852D07DEDFF"
+					item: {
+						Count: 1
+						id: "infectious:bataring"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Mobilidade Urbana"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Hazmat suits foram feitos pra conter exatamente esse tipo"
+				"§7de desastre biológico. Tarde demais pra eles — a tempo pra você."
+				""
+				"§eMonte o conjunto completo do Hazmat Suit: capacete, peitoral,"
+				"§eperneira e botas."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "infectious:hazmat_suit_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "73CBFF53C5C534ED"
+			rewards: [
+				{
+					count: 4
+					id: "091E94011FA1720A"
+					item: "infectious:antibiotics"
+					type: "item"
+				}
+				{
+					id: "33AC6078EC5B4380"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "66B79D07317783EF"
+					item: {
+						Count: 1
+						id: "infectious:hazmat_suit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E923F51C9A2F524"
+					item: {
+						Count: 1
+						id: "infectious:hazmat_suit_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "473328679533D21C"
+					item: {
+						Count: 1
+						id: "infectious:hazmat_suit_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E41E63F6543DF4F"
+					item: {
+						Count: 1
+						id: "infectious:hazmat_suit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Traje de Contenção"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Todo mundo que trabalhava na cidade virou ameaça — cada um"
+				"§7do seu jeito. O cozinheiro ainda segura a faca. O pintor"
+				"§7ainda segura o pincel. Só que agora é você quem vira tinta."
+				""
+				"§eSobreviva ao turno: mate Zombie Cook, Zombie Painter,"
+				"§eZombie Scientist, Construction Worker Zombie e Zombie Farmer."
+			]
+			hide_until_deps_complete: true
+			icon: "infectious:zombie_cook_spawn_egg"
+			id: "2F1933C50FDA485D"
+			rewards: [
+				{
+					count: 4
+					id: "191E6CB392F6975E"
+					item: "infectious:burger"
+					type: "item"
+				}
+				{
+					id: "613FDAA5D6D6E704"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "infectious:zombie_cook"
+					id: "7B948F84F6888E41"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:zombie_painter"
+					id: "27FB820196F10874"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:zombie_scientist"
+					id: "32AA30005E16DF22"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:construction_worker_zombie"
+					id: "4EB394A71113DC62"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:zombie_farmer"
+					id: "6F9ADF54717386B3"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "Perigos Ocupacionais"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Farda não significa segurança. Policiais, soldados e time"
+				"§7de choque também foram infectados — e ainda estão bem"
+				"§7equipados, o que os torna mais perigosos que o normal."
+				""
+				"§eMate: Zombie Police, S.W.A.T. Zombie, Zombie Soldier"
+				"§ee Zombie Astronaut."
+			]
+			hide_until_deps_complete: true
+			icon: "infectious:swat_zombie_spawn_egg"
+			id: "21A93F0031E5E885"
+			rewards: [
+				{
+					id: "5701666E32CD3F3C"
+					item: {
+						Count: 1
+						id: "infectious:swat_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72C062E45E2D1FF7"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "infectious:zombie_police"
+					id: "2FCFE49010899680"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:swat_zombie"
+					id: "59B1D4EECF26E362"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:zombie_soldier"
+					id: "48FCAAC8238475D3"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:zombie_astronaut"
+					id: "63189276DC7B686A"
+					type: "kill"
+					value: 2L
+				}
+			]
+			title: "Fardas Contaminadas"
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Alguns zumbis pegaram algo além da infecção comum — fogo,"
+				"§7gelo, ácido, radiação. O apocalipse não foi só biológico."
+				""
+				"§eMate: Burning Zombie, Frozen Zombie, Acid Zombie,"
+				"§eRadioactive Zombie e Withered Zombie."
+			]
+			hide_until_deps_complete: true
+			icon: "infectious:radioactive_zombie_spawn_egg"
+			id: "2CDA81DEA34D9411"
+			rewards: [
+				{
+					count: 8
+					id: "6457D6175407A5C5"
+					item: "infectious:mutated_rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "3B2EDB41F078C7DF"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "infectious:burning_zombie"
+					id: "54A9BC0989102D12"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:frozen_zombie"
+					id: "7FD10B287A77000B"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:acid_zombie"
+					id: "0B192267C351733F"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:radioactive_zombie"
+					id: "3A87FC9575FF57B6"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:withered_zombie"
+					id: "5B87B3E64615570E"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "Zumbis Elementais"
+			x: 13.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7A infecção não escolheu só gente. Ursos, javalis, lobos e"
+				"§7até galinhas viraram ameaça — a fazenda inteira virou perigo."
+				""
+				"§eMate: Zombified Bear, Zombified Boar, Zombified Wolf,"
+				"§eZombified Bird e Zombified Chicken."
+			]
+			hide_until_deps_complete: true
+			icon: "infectious:zombified_bear_spawn_egg"
+			id: "42DC5D00F1AFBC8A"
+			rewards: [
+				{
+					count: 16
+					id: "4D8E801F360507DE"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "5AF3A74311C99264"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "infectious:zombified_bear"
+					id: "5CB44708E8CA9CE8"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "infectious:zombified_boar"
+					id: "1F1984541811286B"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:zombified_wolf"
+					id: "7B05DFD126DD2FAE"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:zombified_bird"
+					id: "41341FFD04141507"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:zombified_chicken"
+					id: "0B43DB81EDFC066D"
+					type: "kill"
+					value: 5L
+				}
+			]
+			title: "Fauna Infectada"
+			x: -13.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Nem tudo que anda por aí é fruto da infecção moderna."
+				"§7Algumas coisas já estavam erradas muito antes disso —"
+				"§7só esperando a hora de acordar."
+				""
+				"§eMate: Mummy, Doom Zombie e o Ancient Zombie (chefe)."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "minecraft:textures/entity_icon/zombie/husk.png"
+				}
+			}
+			id: "466B01A7B5523EB7"
+			rewards: [
+				{
+					id: "63EB8A097A513119"
+					item: "infectious:ancient_staff"
+					type: "item"
+				}
+				{
+					id: "4EBDACA41BA30B61"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "infectious:mummy"
+					id: "30F2B5A9F2EDDEB0"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "infectious:doom_zombie"
+					id: "168817B4F918B3D1"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "infectious:ancient_zombie_boss"
+					id: "19D9E48CBA844F68"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Antiguidade Amaldiçoada"
+			x: -10.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7No fim, tem um zumbi que é diferente de todos os outros —"
+				"§7o paciente zero, aquele que começou tudo. Matá-lo não"
+				"§7desfaz o que já aconteceu, mas fecha o ciclo."
+				""
+				"§eMate o Paciente Zero §e(o zumbi original do surto)"
+				"§ee tenha uma §cNuke §eem mãos como prova de que você"
+				"§epoderia ter acabado com tudo, se precisasse."
+				""
+				"§6Dica: §7A Nuke é extremamente perigosa — nunca use ela"
+				"§7perto da sua base."
+				"§8§o(Você tem uma bomba nuclear no bolso. Isso deveria"
+				"§8§ote preocupar mais do que preocupa.)"
+			]
+			hide_until_deps_complete: true
+			icon: "infectious:nuke_item"
+			id: "695A364D9AD360B0"
+			rewards: [
+				{
+					id: "1D3D75E0BE91E85F"
+					item: "infectious:music_disc_zombified"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "189ED77A5EB48204"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "797F0AB8D5D5A5BF"
+					type: "xp"
+					xp: 2500
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "infectious:infectious_zombie"
+					id: "7BEE35DE5FD81AEE"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "7BECB4451CF19082"
+					item: "infectious:nuke_item"
+					type: "item"
+				}
+			]
+			title: "§c§lQuarentena Completa"
+			x: -7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Nem toda vida selvagem por aí quer ser sua amiga."
+				"§7Serpentes, jacarés e outros predadores vão te atacar"
+				"§7se você chegar perto demais."
+				""
+				"§eSobreviva aos primeiros encontros: mate Rattlesnakes e"
+				"§eCrocodiles."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_crocodile"
+			id: "1E6A249559B9F472"
+			rewards: [
+				{
+					count: 2
+					id: "364C7CE630A3D755"
+					item: "alexsmobs:serrated_shark_tooth"
+					type: "item"
+				}
+				{
+					id: "0B7C02A54FE5ED8E"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "alexsmobs:rattlesnake"
+					id: "24D2618B90DCCE9C"
+					type: "kill"
+					value: 5L
+				}
+				{
+					entity: "alexsmobs:crocodile"
+					id: "37BE9A91B28703B0"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "Fauna Perigosa"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Elefantes e gorilas estão entre as maiores e mais"
+				"§7inteligentes criaturas do mod — e podem ser domesticados"
+				"§7com paciência (e a comida certa)."
+				""
+				"§eDomestique um Elephant e um Gorilla."
+				""
+				"§6Dica: §7Cada espécie tem seu próprio jeito de ser"
+				"§7ser domesticado — pesquise antes de tentar."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_elephant"
+			id: "6F48561E1C02E9B3"
+			rewards: [
+				{
+					count: 16
+					id: "4B54F05B5B441656"
+					item: "minecraft:hay_block"
+					type: "item"
+				}
+				{
+					id: "3D76316622170344"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/tame_elephant"
+					criterion: ""
+					id: "1835A03145D82E2B"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tame_gorilla"
+					criterion: ""
+					id: "4DC75202986D04D7"
+					type: "advancement"
+				}
+			]
+			title: "Gigantes da Savana"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Grizzly Bears podem virar guarda-costas leais. Tigres e"
+				"§7Snow Leopards, por outro lado, preferem te ver como refeição."
+				""
+				"§eDomestique um Grizzly Bear e mate 2 Tigers e 2 Snow Leopards."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_grizzly_bear"
+			id: "652CC91F79131877"
+			rewards: [
+				{
+					count: 6
+					id: "68F7A1BE9C2C9E3C"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "597D809E66A00486"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/tame_grizzly_bear"
+					criterion: ""
+					id: "55ABAD156420A70C"
+					type: "advancement"
+				}
+				{
+					entity: "alexsmobs:tiger"
+					id: "5CAC13FA8BBE6794"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "alexsmobs:snow_leopard"
+					id: "170D8E5A0740F3D1"
+					type: "kill"
+					value: 2L
+				}
+			]
+			title: "Ursos e Grandes Felinos"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Uma Bald Eagle domesticada, equipada com luva e capuz,"
+				"§7vira o item finder mais eficiente do jogo — ela busca"
+				"§7itens dropados sozinha."
+				""
+				"§eConsiga a Falconry Glove e a Falconry Hood, e domestique"
+				"§euma Bald Eagle."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:falconry_hood"
+			id: "225F4B4F7D9989C8"
+			rewards: [
+				{
+					count: 16
+					id: "07346E68D483BD91"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "2C5EA7E6BB9F1683"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "62AA06423C323637"
+					item: "alexsmobs:falconry_glove"
+					type: "item"
+				}
+				{
+					id: "665AAA4101377041"
+					item: "alexsmobs:falconry_hood"
+					type: "item"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tame_bald_eagle"
+					criterion: ""
+					id: "75117A5DA2446576"
+					type: "advancement"
+				}
+			]
+			title: "A Arte da Falcoaria"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Nem tudo no oceano quer te matar. Uma Cachalot Whale presa"
+				"§7numa rede pode ser resgatada, uma Orca pode ser cavalgada,"
+				"§7e o Laviathan aceita até 4 passageiros de uma vez."
+				""
+				"§eResgate uma Cachalot Whale, cavalgue uma Orca e leve"
+				"§e4 passageiros num Laviathan."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_orca"
+			id: "0D194A810F60D89A"
+			rewards: [
+				{
+					count: 16
+					id: "326A0ED429D0C1FC"
+					item: "minecraft:prismarine_shard"
+					type: "item"
+				}
+				{
+					id: "7CB052773F41652E"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/save_cachalot_whale"
+					criterion: ""
+					id: "6F3DE3F317F13DA6"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/orcas_might"
+					criterion: ""
+					id: "3E91832F37220E65"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/laviathan_four_passengers"
+					criterion: ""
+					id: "09F61D0ECAE023C8"
+					type: "advancement"
+				}
+			]
+			title: "Vida Marinha Amigável"
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Nem toda vida marinha é amigável. Tubarões-martelo,"
+				"§7tubarões-de-babado e lulas gigantes patrulham as águas"
+				"§7mais fundas — de forma bem agressiva."
+				""
+				"§eMate: Hammerhead Sharks, Frilled Sharks e um Giant Squid."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_hammerhead_shark"
+			id: "7DA7E4BC176428CB"
+			rewards: [
+				{
+					count: 6
+					id: "1E1745C1385B09A9"
+					item: "alexsmobs:shark_tooth"
+					type: "item"
+				}
+				{
+					id: "345EE3E742FCFA9F"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "alexsmobs:hammerhead_shark"
+					id: "26AC14D78B4A2460"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "alexsmobs:frilled_shark"
+					id: "7AF731ABAA392E0C"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "alexsmobs:giant_squid"
+					id: "6722245D0C54A102"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Predadores das Profundezas"
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Criar essas espécies vai muito além de trigo e"
+				"§7cenoura — cada espécie tem sua própria receita de amor."
+				""
+				"§eCrie (reproduza) um Anteater, um Crocodile e um Hummingbird."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_hummingbird"
+			id: "1CCAEF6FDB469434"
+			rewards: [
+				{
+					count: 16
+					id: "60B5C563543F3E31"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "1BE0B8A58D654A2A"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/breed_anteater"
+					criterion: ""
+					id: "5DD6924505AF27D8"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/breed_crocodile"
+					criterion: ""
+					id: "4F82EBFEDFFDB793"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/breed_hummingbird"
+					criterion: ""
+					id: "0BBD9A011DF60FDB"
+					type: "advancement"
+				}
+			]
+			title: "Criação Exótica"
+			x: 13.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Nem todo bichinho de estimação precisa ser prático."
+				"§7Um Capuchin Monkey rouba suas coisas, um Mantis Shrimp"
+				"§7vira parceiro de pesca, e uma Tarantula Hawk é… bem, uma"
+				"§7vespa gigante domesticada. Escolha suas amizades com cuidado."
+				""
+				"§eDomestique: Capuchin Monkey, Mantis Shrimp e Tarantula Hawk."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_capuchin_monkey"
+			id: "544ACB211B22C300"
+			rewards: [
+				{
+					count: 8
+					id: "7090C371F79F4910"
+					item: "alexsmobs:banana"
+					type: "item"
+				}
+				{
+					id: "4F61BB0D2E2F3541"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/tame_capuchin"
+					criterion: ""
+					id: "39F2A67CF1ED1387"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tame_mantis_shrimp"
+					criterion: ""
+					id: "5C2CD0E2BAF74443"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tame_tarantula_hawk"
+					criterion: ""
+					id: "0230B884A6E839D6"
+					type: "advancement"
+				}
+			]
+			title: "Companheiros Peculiares"
+			x: -13.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Nem toda missão precisa ser sobre sobrevivência. Às vezes"
+				"§7é só sobre uma gaivota roubando seu sanduíche, um gambá"
+				"§7te deixando fedendo por uma semana, ou uma guerra particular"
+				"§7contra emus."
+				""
+				"§eViva essas experiências: deixe uma Seagull roubar algo seu,"
+				"§eleve um jato de fedor de Skunk, desvie de um Emu e alimente"
+				"§eum Maned Wolf com uma maçã."
+				"§8§o(Um gambá te deixou fedendo por uma semana. Isso"
+				"§8§onão estava no anúncio do mod.)"
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_skunk"
+			id: "141CD6AC162F5CF2"
+			rewards: [
+				{
+					count: 8
+					id: "57ED2AA1A2E90B34"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "4AE8568F4ED881BF"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/seagull_steal"
+					criterion: ""
+					id: "5A7B400951593511"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/skunk"
+					criterion: ""
+					id: "5D4B61677D46D004"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/emu_dodge"
+					criterion: ""
+					id: "74B94A166DCF2598"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/maned_wolf_apple"
+					criterion: ""
+					id: "19EB4D8EC5BD1C7F"
+					type: "advancement"
+				}
+			]
+			title: "Pragas e Estripulias"
+			x: -10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7A selva por aqui esconde alguns dos predadores mais"
+				"§7pacientes do mod. Anacondas espremem, jacarés-do-pântano"
+				"§7emboscam, e dragões de Komodo carregam veneno na mordida."
+				""
+				"§eMate: Anacondas, Caimans e um Komodo Dragon."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_komodo_dragon"
+			id: "5D7B6CD2FF495A7C"
+			rewards: [
+				{
+					count: 10
+					id: "639C6C62B6A175B8"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "1F1E52067ED62A7B"
+					type: "xp"
+					xp: 550
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "alexsmobs:anaconda"
+					id: "0D630FFB6E247E81"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "alexsmobs:caiman"
+					id: "577384AB99A5E0EB"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "alexsmobs:komodo_dragon"
+					id: "101F58AF0DAE59DA"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Selva Perigosa"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7O Nether também tem sua própria vida selvagem estranha:"
+				"§7mosquitos gigantes que sugam sangue, sapos deformados,"
+				"§7e criaturas que só o Farseer consegue ver chegando."
+				""
+				"§eSobreviva ao Crimson Mosquito, ao Skreecher e ao Farseer,"
+				"§ee domestique um Warped Toad."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_crimson_mosquito"
+			id: "31E1C6398CD242F3"
+			rewards: [
+				{
+					id: "4F864851744BDEE7"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "3A4C3F6EA2AB7541"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/crimson_mosquito"
+					criterion: ""
+					id: "4B3EB74A0A33E406"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/skreecher"
+					criterion: ""
+					id: "118D020DEA76DAD5"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/farseer"
+					criterion: ""
+					id: "56379EF795CFA4EB"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tame_warped_toad"
+					criterion: ""
+					id: "3B9B08ECEE50CC81"
+					type: "advancement"
+				}
+			]
+			title: "Fauna do Nether"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7O End é hostil de um jeito diferente por aqui:"
+				"§7vermes que se multiplicam quando cortados, moscos"
+				"§7territoriais, e um pássaro-inseto que nem os cientistas"
+				"§7do mod souberam classificar direito."
+				""
+				"§eMate um Void Worm, um Warped Mosco e 2 Cosmaws."
+				""
+				"§6Dica: §7Void Worms se dividem quando atacados sem cuidado —"
+				"§7prepare-se antes de provocar um."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_void_worm"
+			id: "0015497259A2242B"
+			rewards: [
+				{
+					count: 8
+					id: "060B37CE15E07E37"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "4984297F1DF4464A"
+					type: "xp"
+					xp: 1100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/void_worm_kill"
+					criterion: ""
+					id: "38B8AAA853A204F7"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/warped_mosco_kill"
+					criterion: ""
+					id: "191D00EC270100EC"
+					type: "advancement"
+				}
+				{
+					entity: "alexsmobs:cosmaw"
+					id: "3BD31797602BE944"
+					type: "kill"
+					value: 2L
+				}
+			]
+			title: "Ameaças do Fim"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Nas profundezas, minerar demais tem consequências."
+				"§7O Underminer aparece pra punir quem cava rápido demais,"
+				"§7e a Rocky Roller rola pelas cavernas destruindo tudo."
+				""
+				"§eSobreviva ao Underminer, à Rocky Roller e mate 3 Cave"
+				"§eCentipedes."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_rocky_roller"
+			id: "55330B86880D0E01"
+			rewards: [
+				{
+					count: 4
+					id: "4F4FBBDB3F7B6499"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "4F8E28A707FD2E8D"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/underminer"
+					criterion: ""
+					id: "601D336A807C90B3"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/rocky_roller"
+					criterion: ""
+					id: "65E875A06D3DCA90"
+					type: "advancement"
+				}
+				{
+					entity: "alexsmobs:centipede_head"
+					id: "721DDA6E9A512728"
+					type: "kill"
+					value: 3L
+				}
+			]
+			title: "O Chamado da Caverna"
+			x: 3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Straddlers começam como girinos chamados Stradpoles."
+				"§7Alimente um até crescer, depois monte nele com a sela certa"
+				"§7— ele anda tanto na água quanto em terra."
+				""
+				"§eAlimente um Stradpole até virar Straddler, consiga a"
+				"§eStraddlite Saddle e o Straddleboard, e monte nele."
+				"§8§o(De girino a montaria pessoal em poucos dias."
+				"§8§oA evolução nunca foi tão conveniente.)"
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:straddle_saddle"
+			id: "54098D652C6B7FD8"
+			rewards: [
+				{
+					count: 2
+					id: "45CF6C84B8390635"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+				{
+					id: "12E07C861F154974"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/stradpole_feed"
+					criterion: ""
+					id: "042481F0F85282EF"
+					type: "advancement"
+				}
+				{
+					id: "7836EDF611DABF26"
+					item: "alexsmobs:straddle_saddle"
+					type: "item"
+				}
+				{
+					id: "6663D818224099D9"
+					item: {
+						Count: 1
+						id: "alexsmobs:straddleboard"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/straddle_saddle"
+					criterion: ""
+					id: "438904F42834399C"
+					type: "advancement"
+				}
+			]
+			title: "Montaria Exótica"
+			x: 6.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7Algumas criaturas raras por aí concedem bênçãos"
+				"§7de verdade a quem consegue chegar perto delas sem ser morto"
+				"§7— um Sunbird e um Tiger lendário entre eles."
+				""
+				"§eReceba a bênção do Sunbird e a bênção do Tiger."
+				""
+				"§6Dica: §7Esses encontros são raros — pode levar um tempo"
+				"§7até você cruzar caminho com eles."
+				"§8§o(Um pássaro te abençoou. Sua vida agora é"
+				"§8§oobjetivamente mais estranha que antes.)"
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_sunbird"
+			id: "2168E71040E86771"
+			rewards: [
+				{
+					id: "7DB72616C797F8F7"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "0C1DEC2AD23D91BD"
+					type: "xp"
+					xp: 1500
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/sunbird_blessing"
+					criterion: ""
+					id: "7A9961A55E1A9FF4"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/tigers_blessing"
+					criterion: ""
+					id: "65503A05E49ACCA5"
+					type: "advancement"
+				}
+			]
+			title: "§6§lBênçãos Selvagens"
+			x: 10.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["619E2FBAEF9EA9EF"]
+			description: [
+				"§7No fundo do mar e nas profundezas mais sombrias existem"
+				"§7lendas locais: um navio fantasma tripulado por um esqueleto"
+				"§7que só quer seu chapéu de volta, e algo que os moradores"
+				"§7chamam apenas de 'Spectre'."
+				""
+				"§eSobreviva ao encontro com o Skelewag e com o Spectre."
+			]
+			hide_until_deps_complete: true
+			icon: "alexsmobs:spawn_egg_skelewag"
+			id: "7D115F5331D1E94D"
+			rewards: [
+				{
+					count: 3
+					id: "53601E6ECD9A93EA"
+					item: "minecraft:nautilus_shell"
+					type: "item"
+				}
+				{
+					id: "7A49DA8355460E48"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/skelewag"
+					criterion: ""
+					id: "246CE5AC64E2CD09"
+					type: "advancement"
+				}
+				{
+					advancement: "alexsmobs:alexsmobs/spectre"
+					criterion: ""
+					id: "1B8F350D4D48E67C"
+					type: "advancement"
+				}
+			]
+			title: "§c§lLendas Selvagens"
+			x: 13.0d
+			y: 18.0d
+		}
+	]
+	title: "§2Bestiário Selvagem"
+}

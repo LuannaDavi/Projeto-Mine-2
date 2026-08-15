@@ -1,0 +1,1093 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	filename: "23_grimorio_e_tempestade"
+	group: "6A1D97ECF9A7FC71"
+	id: "3F00000000000023"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"§7Um grimório em branco não é fraco — é uma pergunta esperando"
+				"§7resposta. Runas, afinidades e escolas inteiras de magia cabem"
+				"§7dentro de páginas que ainda não foram escritas."
+				""
+				"§eDo primeiro grimório de cobre ao Necronomicon, passando por"
+				"§emares, tempestades sônicas e uma espada de luz que ninguém"
+				"§esabe explicar como parou aqui."
+				""
+				"§6Dica: §7depois de aberto, escolha uma escola pra começar — não"
+				"§7precisa aprender todas na ordem. É o seu grimório."
+				""
+				"§7Esse capítulo começa trancado até você decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missões de uma vez."
+			]
+			icon: "irons_spellbooks:iron_spell_book"
+			id: "5FE5C4FA0EF0C15F"
+			rewards: [
+				{
+					count: 4
+					id: "325365716B6F888A"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					id: "566A85AB68223C86"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "14E6A5025C8375CF"
+				item: "irons_spellbooks:iron_spell_book"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Todo mago começa com páginas vazias. O grimório de ferro é"
+				"§7o mais simples — poucas runas cabem nele, mas é o suficiente"
+				"§7pra aprender a base."
+				""
+				"§6Dica: §7grimórios se fazem numa mesa de trabalho comum. A parte"
+				"§7difícil vem depois, na hora de escrever magia neles."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:iron_spell_book"
+			id: "0683FF1761FFC1E4"
+			rewards: [
+				{
+					count: 8
+					id: "60FC19191CB45728"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					id: "62CFF26D86169626"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "6F43FA5090859EB1"
+				item: "irons_spellbooks:iron_spell_book"
+				type: "item"
+			}]
+			title: "Grimório em Branco"
+			x: -5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7É aqui que runas são inscritas em grimórios. Sem ela, seu"
+				"§7livro fica bonito e completamente inútil."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:arcane_anvil"
+			id: "4665B9B6DDB338A7"
+			rewards: [
+				{
+					count: 4
+					id: "4D0B0D38B35E2FFC"
+					item: "irons_spellbooks:blank_rune"
+					type: "item"
+				}
+				{
+					id: "6192B2DE2B21F88F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "1DB5B979F2B9A702"
+				item: "irons_spellbooks:arcane_anvil"
+				type: "item"
+			}]
+			title: "Bigorna Arcana"
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Robes de mago não são só estética — cada peça amplifica seu"
+				"§7poder de conjuração de um jeito que armadura pesada nunca vai."
+				""
+				"§6Dica: §7a partir daqui as escolas de magia abrem em qualquer"
+				"§7ordem. Escolha pelo que mais combina com seu estilo de jogo."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:wizard_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "681787ECA643FF7F"
+			rewards: [
+				{
+					id: "52CC9238946040A5"
+					item: "irons_spellbooks:mana_ring"
+					type: "item"
+				}
+				{
+					id: "0FD186EA24FA1E3E"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "7D61634E014ADCCF"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:wizard_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2EAAD0195FF66490"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:wizard_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "12A40BE332CA6241"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:wizard_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A1DB6A266017AC5"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:wizard_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Vestes de Aprendiz"
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: ["§7A mais direta de todas as escolas: aponte, queime, repita."]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:fire_rune"
+			id: "7AF5AF37B501DC39"
+			rewards: [
+				{
+					id: "40E706CE38F8A5FF"
+					item: "irons_spellbooks:fire_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "5C37ECF973F6F54A"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "0E9E9EE7F2194BE1"
+				item: "irons_spellbooks:fire_rune"
+				type: "item"
+			}]
+			title: "Escola do Fogo"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Menos espetacular que o fogo, mas ninguém reclama de imunidade"
+				"§7a queimadura enquanto o resto do grupo pega fogo."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:ice_rune"
+			id: "19A9C0D3B1E34B26"
+			rewards: [
+				{
+					id: "0F655C71F487B9D3"
+					item: "irons_spellbooks:ice_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "4DD7B7D137BCCC92"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "588503B65E9A2D7E"
+				item: "irons_spellbooks:ice_rune"
+				type: "item"
+			}]
+			title: "Escola do Gelo"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Rápido, alto dano, e com uma taxa de erro de mira que"
+				"§7ninguém no clã do trovão gosta de admitir em voz alta."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:lightning_rune"
+			id: "7C28404150B03696"
+			rewards: [
+				{
+					id: "5BC6EE0745B80CA0"
+					item: "irons_spellbooks:lightning_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "472382326B970AF9"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "22FD8CBC33DA31B2"
+				item: "irons_spellbooks:lightning_rune"
+				type: "item"
+			}]
+			title: "Escola do Raio"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Cura, proteção, e dano extra contra tudo que já foi morto"
+				"§7uma vez e decidiu que gostou tanto que voltou."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:holy_rune"
+			id: "51C887BBD44C3004"
+			rewards: [
+				{
+					id: "49A782F1D8074B71"
+					item: "irons_spellbooks:holy_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "0E687690655522EC"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "6A036ED955072FC4"
+				item: "irons_spellbooks:holy_rune"
+				type: "item"
+			}]
+			title: "Escola Sagrada"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Raízes, espinhos e um lembrete gentil de que a floresta"
+				"§7também sabe se defender."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:nature_rune"
+			id: "6B452C0BE944D774"
+			rewards: [
+				{
+					id: "7C802CCFA884D7BA"
+					item: "irons_spellbooks:nature_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "17BBD8C2C6348232"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "47A97EBEB135D09B"
+				item: "irons_spellbooks:nature_rune"
+				type: "item"
+			}]
+			title: "Escola da Natureza"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Teleporte, confunda, desapareça. A escola favorita de quem"
+				"§7prefere resolver problemas fugindo deles com estilo."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:ender_rune"
+			id: "27A27D1698ECAC0D"
+			rewards: [
+				{
+					id: "425F777969E892B6"
+					item: "irons_spellbooks:ender_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "7AD440075F5D8B8D"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "3B60D5BB3D129B87"
+				item: "irons_spellbooks:ender_rune"
+				type: "item"
+			}]
+			title: "Escola Ender"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Invoque aliados espectrais pra lutar por você — ou pra"
+				"§7morrer no seu lugar, dependendo de como o dia estiver indo."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:evocation_rune"
+			id: "1A739087F54BC8E8"
+			rewards: [
+				{
+					id: "2514433922490E3A"
+					item: "irons_spellbooks:evocation_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "23880485F2A30585"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "284862C55048F7E8"
+				item: "irons_spellbooks:evocation_rune"
+				type: "item"
+			}]
+			title: "Escola da Evocação"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Poder que se paga com a própria vida. A escola menos discutida"
+				"§7em festas, e a mais eficaz em masmorras."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:blood_rune"
+			id: "6340C89B1933E44B"
+			rewards: [
+				{
+					id: "43093072AC286223"
+					item: "irons_spellbooks:blood_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "06B8E2EE315DE21C"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "7FDC9E8F0901FFCE"
+					item: "irons_spellbooks:blood_rune"
+					type: "item"
+				}
+				{
+					id: "6A78D82B2CFCA49C"
+					item: "irons_spellbooks:blood_staff"
+					type: "item"
+				}
+			]
+			title: "Escola do Sangue"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Conhecimento que resiste a ser entendido. Ler demais dele"
+				"§7de uma vez costuma dar em dor de cabeça — ou pior."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:eldritch_manuscript"
+			id: "5B9439B3923B716B"
+			rewards: [
+				{
+					count: 2
+					id: "1ECE5EAC8BED9506"
+					item: "irons_spellbooks:arcane_rune"
+					type: "item"
+				}
+				{
+					id: "2E9C5D81DC2C2227"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "13A364BCD3707F30"
+				item: "irons_spellbooks:eldritch_manuscript"
+				type: "item"
+			}]
+			title: "Manuscrito Eldritch"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Cada anel afina seu corpo pra uma escola específica — reduz"
+				"§7o custo de mana daquele tipo de magia, dobrando pra baixo"
+				"§7no que você já faz bem em vez de tentar fazer tudo."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:affinity_ring"
+			id: "15E21569DDCC6688"
+			rewards: [
+				{
+					id: "7346A9E9037F09BB"
+					item: "irons_spellbooks:cast_time_ring"
+					type: "item"
+				}
+				{
+					id: "2EA9D9F04BD3EAD6"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 3L
+				id: "335358242CB06EBA"
+				item: "irons_spellbooks:affinity_ring"
+				type: "item"
+			}]
+			title: "Anéis de Afinidade"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Grimórios ganham nível como qualquer outra coisa que vale"
+				"§7a pena. Cada orbe de upgrade abre mais um espaço de feitiço."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:upgrade_orb"
+			id: "40A11FE3C162A346"
+			rewards: [
+				{
+					id: "385FD1ECD7F6D72E"
+					item: "irons_spellbooks:diamond_spell_book"
+					type: "item"
+				}
+				{
+					id: "554912582DCB8FEC"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 5L
+				id: "71C19B23FEAA2145"
+				item: "irons_spellbooks:upgrade_orb"
+				type: "item"
+			}]
+			title: "Câmara de Ascensão"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7A primeira escola nova: controle de água, correntes e"
+				"§7afogamento à distância. Nadadores profissionais, cuidado."
+			]
+			hide_until_deps_complete: true
+			icon: "somakespells:aquamancer_spell_book"
+			id: "21B25459EB047CDE"
+			rewards: [
+				{
+					id: "1864944127C4D9E0"
+					item: "somakespells:aqua_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "391E2DA0CDD330BF"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1EFE7EEED63CEEBD"
+					item: "somakespells:aquamancer_spell_book"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7E81E3C67B9DE61F"
+					item: "somakespells:aqua_rune"
+					type: "item"
+				}
+			]
+			title: "Correntes de Aquamante"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Sim, existe uma escola de magia baseada em som. Não,"
+				"§7ninguém vai explicar por que o nome do livro parece"
+				"§7capa de disco de rock."
+			]
+			hide_until_deps_complete: true
+			icon: "somakespells:resonance_canticle_spell_book"
+			id: "1366424513C11382"
+			rewards: [{
+				id: "19127E5EC36D2604"
+				type: "xp"
+				xp: 350
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "47D84702396E24E7"
+				item: "somakespells:resonance_canticle_spell_book"
+				type: "item"
+			}]
+			title: "Batidas Sônicas"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Magia que se apoia em equilíbrio e padrões perfeitos —"
+				"§7quebrar a simetria do inimigo é metade do dano."
+			]
+			hide_until_deps_complete: true
+			icon: "somakespells:axiomatic_codex_spell_book"
+			id: "54687CB6F5903D05"
+			rewards: [{
+				id: "021E70129C93EA07"
+				type: "xp"
+				xp: 350
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "3B70AB96D488884A"
+				item: "somakespells:axiomatic_codex_spell_book"
+				type: "item"
+			}]
+			title: "Códice Axiomático"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Magia que vem de baixo pra cima — literalmente. Pilares,"
+				"§7terremotos localizados, e uma resistência a dano de queda"
+				"§7que qualquer um que já morreu numa torre vai invejar."
+			]
+			hide_until_deps_complete: true
+			icon: "somakespells:stoneheart_codex_spell_book"
+			id: "21F202CCB223776A"
+			rewards: [{
+				id: "5DE8A860C30835C0"
+				type: "xp"
+				xp: 350
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "51658890C15F2A65"
+				item: "somakespells:stoneheart_codex_spell_book"
+				type: "item"
+			}]
+			title: "Coração de Pedra"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7A escola mais silenciosa de todas. Poucos a estudam,"
+				"§7e os que estudam raramente falam sobre o que viram."
+			]
+			hide_until_deps_complete: true
+			icon: "somakespells:starless_grimoire_spell_book"
+			id: "47C3F9318C7B0699"
+			rewards: [{
+				id: "1C05657D33695253"
+				type: "xp"
+				xp: 350
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "5EFC14B348164E0C"
+				item: "somakespells:starless_grimoire_spell_book"
+				type: "item"
+			}]
+			title: "Grimório Sem Estrelas"
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Fogo comum queima o inimigo. Isso aqui queima você também —"
+				"§7e é exatamente por isso que funciona tão bem."
+			]
+			hide_until_deps_complete: true
+			icon: "somakespells:infernal_fire"
+			id: "0919EC4FA81A9ABD"
+			rewards: [
+				{
+					id: "1D49AB22788467E1"
+					item: "somakespells:infernal_fire_necklace"
+					type: "item"
+				}
+				{
+					id: "642B28C8DA705294"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "454043EE934C7B79"
+					item: "somakespells:infernal_fire"
+					type: "item"
+				}
+				{
+					id: "6490FE052F1BCBEE"
+					item: "somakespells:infernal_fire_rune"
+					type: "item"
+				}
+			]
+			title: "Chama Infernal"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Um metal que parece ter sido forjado no fundo de algum"
+				"§7lugar que preferia continuar sem nome."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "somakespells:abyssium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5FEFC2279B5606FD"
+			rewards: [
+				{
+					id: "1B22346A05EAE9E9"
+					item: "somakespells:abyssium_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "7EC0E79ACE996280"
+					type: "xp"
+					xp: 450
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "01D696CAC7968499"
+					item: "somakespells:abyssium_ingot"
+					type: "item"
+				}
+				{
+					id: "1561BC99F9EBE669"
+					item: {
+						Count: 1
+						id: "somakespells:abyssium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Liga de Abyssium"
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Mais leve que abyssium, igualmente teimoso em quebrar"
+				"§7ferramentas comuns que tentam trabalhar com ele."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "somakespells:ceranium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "11030C9062D8C1BE"
+			rewards: [
+				{
+					id: "79A6FF87EB7A5A51"
+					item: "somakespells:ceranium_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "47BD7EC7C290E0D2"
+					type: "xp"
+					xp: 450
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "6C456E3D672953A0"
+					item: "somakespells:ceranium_ingot"
+					type: "item"
+				}
+				{
+					id: "1A566EC016A3FD5D"
+					item: {
+						Count: 1
+						id: "somakespells:ceranium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Liga de Ceranium"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Ninguém no time de lore conseguiu explicar como uma espada"
+				"§7de luz acabou num mod de magia medieval. Ela simplesmente"
+				"§7apareceu um dia, e agora é tarde demais pra tirar."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "somakespells:exo_light_saber"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "718AF53A98393D1C"
+			rewards: [{
+				id: "619AF1A80DDDA4B5"
+				type: "xp"
+				xp: 400
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0698DB929765737B"
+				item: {
+					Count: 1
+					id: "somakespells:exo_light_saber"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "O Sabre que Não Deveria Existir"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Ninguém sabe por que ele é chamado de proibido. A julgar"
+				"§7pelo peso, provavelmente é só porque ninguém mais consegue"
+				"§7levantar essa coisa."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "somakespells:forbidden_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1861B341D4480D4D"
+			rewards: [{
+				id: "7876C06FBD5A1F06"
+				type: "xp"
+				xp: 500
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "6CDB1291DCEF3445"
+				item: {
+					Count: 1
+					id: "somakespells:forbidden_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "O Martelo Proibido"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7A escola mais recente a se juntar ao grimório coletivo:"
+				"§7vento que corta, empurra e transforma o campo de batalha"
+				"§7num tornado — literalmente, em pelo menos um dos feitiços."
+			]
+			hide_until_deps_complete: true
+			icon: "wind_spellbooks:wind_spell_book"
+			id: "360288BA9EF21267"
+			rewards: [
+				{
+					id: "77AB42B1DF709A4F"
+					item: "wind_spellbooks:wind_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "17E77D9DF74CE700"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "673CA29507E280D1"
+					item: "wind_spellbooks:wind_spell_book"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "66A179F5C0D50F00"
+					item: "wind_spellbooks:wind_rune"
+					type: "item"
+				}
+			]
+			title: "O Livro das Tempestades"
+			x: -5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Leves, resistentes ao vento que você mesmo vai conjurar,"
+				"§7e surpreendentemente boas pra sobreviver a uma queda de altura."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "wind_spellbooks:aeromancer_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "241E04D60C8298E1"
+			rewards: [
+				{
+					id: "6AFC5E6290BCF115"
+					item: "wind_spellbooks:wind_staff"
+					type: "item"
+				}
+				{
+					id: "7501DB8BC09FF831"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "26FA61434829B3AD"
+					item: {
+						Count: 1
+						id: "wind_spellbooks:aeromancer_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E9B43EBDF5BE646"
+					item: {
+						Count: 1
+						id: "wind_spellbooks:aeromancer_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28575211007425B0"
+					item: {
+						Count: 1
+						id: "wind_spellbooks:aeromancer_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D8270F5DBC0386A"
+					item: {
+						Count: 1
+						id: "wind_spellbooks:aeromancer_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Vestes do Aeromante"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Não é o maior grimório. Não é o mais bonito. É, sem dúvida,"
+				"§7o mais consciente de que talvez não devesse ter sido escrito."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:necronomicon_spell_book"
+			id: "49C8CC536AC43C4C"
+			rewards: [
+				{
+					count: 2
+					id: "62D2886394264CF0"
+					item: "irons_spellbooks:legendary_ink"
+					type: "item"
+				}
+				{
+					id: "65046BB72BFD8249"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "3F9BC2B9A6A80781"
+				item: "irons_spellbooks:necronomicon_spell_book"
+				type: "item"
+			}]
+			title: "O Necronomicon"
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5FE5C4FA0EF0C15F"]
+			description: [
+				"§7Ele morreu há muito tempo. Isso nunca foi um problema real"
+				"§7pra ele. A filacteria é o que mantém sua vontade presa a"
+				"§7esse mundo — e é exatamente o que você precisa quebrar."
+			]
+			hide_until_deps_complete: true
+			icon: "irons_spellbooks:dead_king_phylactery"
+			id: "18518829A57AA704"
+			rewards: [
+				{
+					id: "290E4D1D6D93D89D"
+					item: "irons_spellbooks:netherite_spell_book"
+					type: "item"
+				}
+				{
+					id: "679CA570F1E98A74"
+					type: "xp"
+					xp: 900
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "7BBFEF50EB40758C"
+				item: "irons_spellbooks:dead_king_phylactery"
+				type: "item"
+			}]
+			title: "O Rei Morto Ainda Governa"
+			x: 0.0d
+			y: 13.0d
+		}
+	]
+	title: "§dTintas e Tempestades"
+}

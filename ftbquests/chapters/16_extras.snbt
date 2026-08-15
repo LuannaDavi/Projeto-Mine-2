@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "16_extras"
 	group: "7E445E30196C8ACF"
@@ -8,6 +8,34 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"§7Mecânicas por puro prazer — sem pressa, sem progressão, só coisas divertidas de descobrir."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Firework Rocket."
+			]
+			icon: "minecraft:firework_rocket"
+			id: "2CD27B3D08B629F3"
+			rewards: [{
+				id: "72ADCC9A796B1D8A"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "721BC9497B49B417"
+				item: "minecraft:firework_rocket"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
 				"§7Este modpack tem mais de 150 mods."
 				"§7Há automação industrial, magia arcana, batalhas épicas,"
@@ -21,6 +49,7 @@
 				""
 				"§8§o(Você merece. Sério. Você instalou 150 mods.)"
 			]
+			hide_until_deps_complete: true
 			icon: "handcrafted:oak_chair"
 			id: "7EBCBF9DA1AEDAE1"
 			rewards: [
@@ -37,6 +66,7 @@
 				}
 			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "1E2EBCE2BDA1124C"
 				item: "handcrafted:oak_chair"
@@ -44,20 +74,22 @@
 			}]
 			title: "Hora do Descanso"
 			x: 0.0d
-			y: 0.0d
+			y: -14.0d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§ePresence Footsteps §7faz cada passo ter um som diferente"
-				"§7dependendo do bloco. Pedra, grama, madeira, água..."
+				"§7Cada passo agora tem um som diferente dependendo do chão."
+				"§7Pedra, grama, madeira, água..."
 				""
-				"§7§eCamera Overhaul §7adiciona efeitos de câmera cinematográficos"
+				"§7Existem efeitos de câmera cinematográficos"
 				"§7enquanto você corre e se move."
 				""
 				"§eCrie um par de §eRunning Shoes §7(Artifacts) e sinta"
 				"§ea diferença ao correr — combine com os efeitos visuais"
 				"§eda câmera para uma experiência completa."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:leather_boots"
@@ -79,18 +111,20 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4BFFA6CF6507F031"
 				item: "artifacts:running_shoes"
 				type: "item"
 			}]
 			title: "A Leveza dos Passos"
-			x: 2.0d
-			y: 0.0d
+			x: -2.5d
+			y: -8.5d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eEmotecraft §7adiciona emotes animados para o personagem!"
+				"§7Seu personagem ganhou emotes animados de verdade!"
 				"§7Dance, cumprimente, comemore suas vitórias."
 				""
 				"§eToque um §eNote Block §7para comemorar — combine"
@@ -101,6 +135,7 @@
 				""
 				"§8§o(Ninguém está vendo. Dance assim mesmo.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:note_block"
 			id: "284E3DAACB6D7712"
 			rewards: [{
@@ -108,18 +143,20 @@
 				type: "xp"
 				xp: 100
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "31ADB47CA6452C91"
 				item: "minecraft:note_block"
 				type: "item"
 			}]
 			title: "Dançarino do Mundo"
-			x: 4.0d
-			y: 0.0d
+			x: -7.0d
+			y: -12.0d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eImmersive Melodies §7transforma instrumentos"
+				"§7Os instrumentos musicais ganharam vida nova"
 				"§7em ferramentas de composição real."
 				"§7Você pode tocar músicas em formato MIDI dentro do jogo."
 				""
@@ -127,9 +164,10 @@
 				"§eTocar para pelo menos §e1 ser vivo §7(aldeão, animal ou mob)."
 				""
 				"§6Dica: §7Construa um palco. Decore. Convide aldeões."
-				"§7§eEmotecraft §7tem emotes de comemoração — celebre"
+				"§7Tem emotes de comemoração escondidos — celebre"
 				"§7sua própria apresentação se quiser."
 			]
+			hide_until_deps_complete: true
 			icon: "immersive_melodies:flute"
 			id: "79898617404E06A5"
 			rewards: [
@@ -145,18 +183,20 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4DAFE97249CA6FB0"
 				item: "immersive_melodies:flute"
 				type: "item"
 			}]
 			title: "Músico do Realm"
-			x: 6.0d
-			y: 0.0d
+			x: -6.5d
+			y: -6.5d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eBetter Jukebox §7expande a jukebox com controles de volume,"
+				"§7A jukebox ganhou controles de volume,"
 				"§7fila de músicas e visual aprimorado — tudo direto na jukebox vanilla."
 				""
 				"§eColete 3 discos diferentes e toque na sua Jukebox: Cat, Pigstep e Otherside."
@@ -164,6 +204,7 @@
 				"§6Dica: §7Combine com §eImmersive Melodies §7pra estações de rádio!"
 				"§7Coloque jukeboxes em pontos diferentes da base."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:jukebox"
 			id: "29E2D72F3BAE639C"
 			rewards: [
@@ -179,6 +220,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "19710975E3CDFC5E"
@@ -197,14 +239,15 @@
 				}
 			]
 			title: "DJ da Base"
-			x: 8.0d
-			y: 0.0d
+			x: -12.0d
+			y: -7.0d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eFalling Leaves §7faz as árvores soltarem folhas que caem"
-				"§7suavemente, tornando as florestas cinematográficas."
-				"§7§eDynamic Lights §7faz tochas e outros itens iluminar ao segurar!"
+				"§7As árvores agora soltam folhas que caem suavemente,"
+				"§7tornando as florestas bem mais vivas."
+				"§7Tochas e outros itens agora iluminam ao serem segurados!"
 				""
 				"§eCaminhe por uma floresta densa à noite com uma tocha na mão."
 				"§7Aprecie as folhas caindo ao seu redor."
@@ -213,6 +256,7 @@
 				"§6Este é um dos momentos mais bonitos do modpack."
 				"§8§o(Foram precisos uns 15 mods só pra você sentir isso.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:oak_leaves"
 			id: "2CDBC238ADA56C06"
 			rewards: [
@@ -228,6 +272,7 @@
 					xp: 80
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "2C7E47A82716498A"
@@ -256,12 +301,13 @@
 				}
 			]
 			title: "Floresta Viva"
-			x: 10.0d
-			y: 0.0d
+			x: -8.5d
+			y: -2.5d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eSwashbucklers! §7adiciona navios piratas construíveis,"
+				"§7Existem navios piratas construíveis por aí,"
 				"§7batalhas navais e armas temáticas — o mod usa namespace §ehpm§7."
 				"§7Construa um Swashbuckler (navio) e navegue pelos mares!"
 				""
@@ -271,6 +317,7 @@
 				"§6Dica: §7O §eHand Cannon §7é a arma pirata do mod."
 				"§7Swashbucklers tem navios de vários tamanhos — do Raft ao Corvette."
 			]
+			hide_until_deps_complete: true
 			icon: "hpm:swashbuckleritem"
 			id: "3A6D68B9DF6D4FC8"
 			rewards: [
@@ -297,24 +344,27 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3176E843A78533F9"
 				item: "hpm:swashbuckleritem"
 				type: "item"
 			}]
 			title: "Ahoy, Pirata!"
-			x: 12.0d
+			x: -14.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eBuddycards §7adiciona cartas colecionáveis de mobs, com raridades"
+				"§7Existem cartas colecionáveis de mobs por aí, com raridades"
 				"§7e variações (holográfica, dourada...) igual card física de verdade."
 				""
 				"§eAbra 3 pacotes de cartas."
 				""
 				"§6Dica: §7Construa um Card Stand ou Display pra expor sua coleção!"
 			]
+			hide_until_deps_complete: true
 			icon: "buddycards:buddycard_pack_base"
 			id: "144A5332E5639DAC"
 			rewards: [
@@ -330,6 +380,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 3L
 				id: "1693AF8CE9E20263"
@@ -337,12 +388,13 @@
 				type: "item"
 			}]
 			title: "Colecionador de Cartas"
-			x: 14.0d
-			y: 0.0d
+			x: -8.5d
+			y: 2.5d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eAnimalistic §7adiciona criaturas que definitivamente"
+				"§7Existem criaturas por aí que definitivamente"
 				"§7não pertencem a este bioma. Um Quetzal — pássaro"
 				"§7sul-americano colorido — vagando por uma floresta"
 				"§7de carvalho é uma escolha de design e tanto."
@@ -351,6 +403,7 @@
 				""
 				"§8§o(Ninguém sabe como ele chegou aqui. Ele também não sabe.)"
 			]
+			hide_until_deps_complete: true
 			icon: "animalistic_a:quetzal_spawn_egg"
 			id: "398B19298CE0792E"
 			rewards: [
@@ -366,18 +419,20 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "5D61C6492CB4D5CD"
 				item: "animalistic_a:aqua_talisman"
 				type: "item"
 			}]
 			title: "Visitante Inesperado"
-			x: 2.0d
-			y: 4.0d
+			x: -12.0d
+			y: 7.0d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eCompanions §7adiciona companheiros personalizáveis"
+				"§7Dá pra ter companheiros personalizáveis"
 				"§7que te seguem, carregam itens e te ajudam em combate."
 				""
 				"§eCrie e nomeie um §eCompanion §7do mod Companions."
@@ -388,6 +443,7 @@
 				""
 				"§8§o(Seu único amigo que nunca cancela os planos.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:name_tag"
 			id: "2357F3239C46113A"
 			rewards: [
@@ -403,18 +459,20 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B7B763B5BAE3C7F"
 				item: "companions:empty_puppet_block"
 				type: "item"
 			}]
 			title: "Inseparáveis"
-			x: 4.0d
-			y: 4.0d
+			x: -6.5d
+			y: 6.5d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eCrop Critters §7adiciona criaturas minúsculas"
+				"§7Existem criaturas minúsculas"
 				"§7que vivem nas suas plantações — cada uma baseada"
 				"§7em um vegetal diferente, com personalidade própria."
 				""
@@ -423,6 +481,7 @@
 				""
 				"§8§o(É uma cenoura com pernas. Você vai se acostumar.)"
 			]
+			hide_until_deps_complete: true
 			icon: "cropcritters:carrot_critter_spawn_egg"
 			id: "6667A1D38C1B1876"
 			rewards: [
@@ -438,6 +497,7 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				entity: "cropcritters:carrot_critter"
 				id: "4C7B271AC806670C"
@@ -445,12 +505,13 @@
 				value: 1L
 			}]
 			title: "Jardineiro e seus Amigos"
-			x: 12.0d
-			y: 4.0d
+			x: -7.0d
+			y: 12.0d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eAlex's Mobs §7adiciona criaturas reais do mundo todo —"
+				"§7Existem criaturas reais do mundo todo por aí —"
 				"§7e algumas nem tão reais assim. O §eDrop Bear §7é"
 				"§7uma piada australiana que vira um urso assassino"
 				"§7que cai das árvores. Sim, é real. Pesquise depois."
@@ -461,6 +522,7 @@
 				"§8§o(Australianos avisaram. Ninguém acreditou. Agora"
 				"§8§oo bicho existe no seu modpack.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:golden_apple"
 			id: "4D97FF141BBBB4A2"
 			rewards: [
@@ -476,6 +538,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				entity: "alexsmobs:dropbear"
 				id: "4D20D0F48B2832E1"
@@ -483,12 +546,13 @@
 				value: 1L
 			}]
 			title: "Cuidado Acima"
-			x: 14.0d
-			y: 4.0d
+			x: -2.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eLuggage §7adiciona uma §emala mágica §7que te segue!"
+				"§7Existe uma §emala mágica §7que te segue por aí!"
 				"§7Ela carrega itens automaticamente e nunca deixa você para trás —"
 				"§7ao contrário daquele baú que você esqueceu em algum lugar"
 				"§7há três sessões de jogo e nunca mais encontrou."
@@ -497,6 +561,7 @@
 				""
 				"§6Dica: §7Luggage pode ser equipada com upgrades de velocidade!"
 			]
+			hide_until_deps_complete: true
 			icon: "luggage:luggage"
 			id: "54D7AF2942169103"
 			rewards: [
@@ -512,6 +577,7 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3D2D40F08DEC0686"
 				item: "luggage:luggage"
@@ -519,13 +585,14 @@
 			}]
 			title: "A Mala Fiel"
 			x: 0.0d
-			y: 8.0d
+			y: 14.0d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
-				"§7§eSubtle Effects §7torna os efeitos de poção mais visuais —"
+				"§7Os efeitos de poção ficaram bem mais visuais —"
 				"§7partículas, brilhos e detalhes que tornam a alquimia viva."
-				"§7§eSpawn Animations §7dá animações únicas quando mobs surgem."
+				"§7Mobs agora têm animações únicas ao surgir no mundo."
 				""
 				"§7Lua de Sangue, poções brilhando no cinto, sem espada"
 				"§7à vista. Um alquimista de verdade não precisa de lâminas."
@@ -536,6 +603,7 @@
 				""
 				"§8§o(Use-as ou não. A missão só liga pra você ter o kit.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:lingering_potion"
 			id: "2E24996404693A1E"
 			rewards: [
@@ -557,6 +625,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "524AF46DB1FBA486"
@@ -593,14 +662,15 @@
 				}
 			]
 			title: "Alquimista de Batalha"
-			x: 2.0d
-			y: 8.0d
+			x: 2.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
 				"§7O campo deste mundo é cheio de vida graças a vários mods:"
-				"§7§eBuzzier Bees §7adiciona novas espécies de abelhas e flores."
-				"§7§eEcologics §7adiciona capivaras, patos e sapos-boi."
+				"§7Existem novas espécies de abelhas e flores por aí."
+				"§7Capivaras, patos e sapos-boi também vivem por aqui."
 				""
 				"§eAdote um animal de estimação com Deed of Ownership"
 				"§e(Domestication Innovation) e dê um leito (Pet Bed) a ele."
@@ -608,6 +678,7 @@
 				"§8§o(Capivaras não fazem nada de especial. Elas só existem"
 				"§8§opara serem admiradas. É o suficiente.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:beehive"
 			id: "4564B3502C9D4DA7"
 			rewards: [
@@ -640,16 +711,18 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "395682257B638901"
 				item: "domesticationinnovation:deed_of_ownership"
 				type: "item"
 			}]
 			title: "Vida no Campo"
-			x: 4.0d
-			y: 8.0d
+			x: 7.0d
+			y: 12.0d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
 				"§7Em algum lugar do mundo existe um bloco dourado"
 				"§7com um ponto de interrogação."
@@ -670,6 +743,7 @@
 				""
 				"§8§o(Ou não. Também é uma opção válida.)"
 			]
+			hide_until_deps_complete: true
 			icon: "lucky:lucky_block"
 			id: "473CEB784BA320A4"
 			rewards: [
@@ -696,16 +770,18 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "49FED2685CF8E94C"
 				item: "lucky:lucky_block"
 				type: "item"
 			}]
 			title: "Sorte ou Azar?"
-			x: 8.0d
-			y: 8.0d
+			x: 6.5d
+			y: 6.5d
 		}
 		{
+			dependencies: ["2CD27B3D08B629F3"]
 			description: [
 				"§8§o..."
 				""
@@ -719,7 +795,7 @@
 				""
 				"§8§o...talvez encontre o que não deveria existir aqui."
 			]
-			hide_until_deps_visible: true
+			hide_until_deps_complete: true
 			icon: "minecraft:suspicious_gravel"
 			id: "22841C4864C77BFD"
 			rewards: [
@@ -745,6 +821,7 @@
 					xp: 2000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 3L
 				id: "6CE0054C56B6D280"
@@ -752,8 +829,997 @@
 				type: "item"
 			}]
 			title: "§8§o???"
-			x: 10.0d
-			y: 8.0d
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Todo grande capitão começou pequeno. Do Raft improvisado"
+				"§7até o War Cutter, um navio de guerra de verdade, cada"
+				"§7embarcação marca um degrau de progresso."
+				""
+				"§eNavegue usando um Raft, depois um Cutter, e finalmente"
+				"§econstrua um War Cutter completo com canhões prontos."
+			]
+			hide_until_deps_complete: true
+			icon: "hpm:swashbuckleritem"
+			id: "343C1D58BA4D3C2D"
+			rewards: [
+				{
+					count: 16
+					id: "70B3D3C74CF6527F"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					id: "46FAE0873AC4303F"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "hpm:raft_achievement"
+					criterion: ""
+					id: "76B55A205A391451"
+					type: "advancement"
+				}
+				{
+					advancement: "hpm:cutter_achievement"
+					criterion: ""
+					id: "76BB61757039FA27"
+					type: "advancement"
+				}
+				{
+					advancement: "hpm:war_cutter_achievement"
+					criterion: ""
+					id: "7798C5B825F2C028"
+					type: "advancement"
+				}
+			]
+			title: "Frota em Expansão"
+			x: 8.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Comandar seu próprio navio é uma coisa. Virar pirata de"
+				"§7verdade, tomar um navio de guerra alheio, manter tudo"
+				"§7consertado em alto mar e usar canhão sem dó é outra."
+				""
+				"§eConstrua seu próprio navio pirata, tome um navio pirata"
+				"§ede outra pessoa (Pirate Cutter), consiga e use uma Spanner"
+				"§epra consertar um navio danificado, obtenha Cannonballs, e"
+				"§euse um canhão de qualquer tipo em combate."
+				""
+				"§8§o(Você roubou o navio de outro pirata. Isso é praticamente"
+				"§8§oa etiqueta padrão da profissão.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "hpm:hand_cannon"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1FB0473861647E35"
+			rewards: [
+				{
+					count: 12
+					id: "4377F0EBE34E0C1A"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "0B5AACEDF0DA2E42"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "hpm:piracy_achievement"
+					criterion: ""
+					id: "16176C0154BA5704"
+					type: "advancement"
+				}
+				{
+					advancement: "hpm:pirate_cutter_achievement"
+					criterion: ""
+					id: "3A350A4B72E3954F"
+					type: "advancement"
+				}
+				{
+					advancement: "hpm:spanner_achievement"
+					criterion: ""
+					id: "70D2FCA85502E275"
+					type: "advancement"
+				}
+				{
+					advancement: "hpm:spanner_use_achievement"
+					criterion: ""
+					id: "53C17AB17F21576A"
+					type: "advancement"
+				}
+				{
+					advancement: "hpm:cannonballcraft"
+					criterion: ""
+					id: "59B58AF040B06ACC"
+					type: "advancement"
+				}
+				{
+					advancement: "hpm:warfare_achievement"
+					criterion: ""
+					id: "0878B0C4DD50B610"
+					type: "advancement"
+				}
+			]
+			title: "Vida de Pirata"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Enxames de vaga-lumes voam à noite perto de pântanos e"
+				"§7florestas úmidas. Com uma garrafa de vidro na mão, dá pra"
+				"§7guardar um pouco dessa luz — e depois transformar num lampião."
+				""
+				"§eCapture um enxame de vaga-lumes com uma garrafa de vidro."
+			]
+			hide_until_deps_complete: true
+			icon: "goodending:firefly_bottle"
+			id: "5C7E0264DEE2D9F2"
+			rewards: [
+				{
+					count: 2
+					id: "14338D8D830CA104"
+					item: "goodending:firefly_lantern"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0744CA7E3B9A13C4"
+					item: "goodending:firefly_bottle"
+					type: "item"
+				}
+				{
+					id: "7C5FEA242C7243CA"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "goodending:husbandry/capture_firefly"
+				criterion: ""
+				id: "4297FFD2B76A0A7E"
+				type: "advancement"
+			}]
+			title: "Luz na Garrafa"
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Tem um mob estranho vivendo no lamaçal — parece um monte de"
+				"§7lodo e vegetação, mas reage se você der uma poção pra ele."
+				"§7Ninguém sabe explicar direito por quê. Só funciona."
+				""
+				"§8§o(Terapia? Suborno? A ciência ainda não decidiu.)"
+				""
+				"§eDê qualquer poção de presente pro Marsh."
+			]
+			hide_until_deps_complete: true
+			icon: "goodending:marsh_spawn_egg"
+			id: "79BD7C0D69F74793"
+			rewards: [
+				{
+					count: 4
+					id: "6A4F182A0781ED14"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "593FDFAD6CD8726C"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "25BF35F7AA5D011A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "goodending:husbandry/brew_potion"
+				criterion: ""
+				id: "186E3EBED81B1215"
+				type: "advancement"
+			}]
+			title: "Presente pro Pântano"
+			x: 12.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7A Poção de Imunidade não cura nada — ela impede que um efeito"
+				"§7ruim pegue em você enquanto estiver ativa. Beba antes de tomar"
+				"§7uma flechada envenenada ou entrar numa nuvem de veneno, e o"
+				"§7efeito simplesmente não gruda."
+				""
+				"§eTome um efeito prejudicial enquanto estiver com Imunidade ativa."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:potion"
+			id: "13C33B7E6B04043A"
+			rewards: [
+				{
+					count: 4
+					id: "16776C4991478538"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6A8C7BD8F824D3DE"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "1E91B667A2291C16"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "280D864FB945260E"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "goodending:nether/immunity"
+				criterion: ""
+				id: "20F999E6691874EB"
+				type: "advancement"
+			}]
+			title: "Um Gostinho de Aumento"
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Cipreste pro pântano, Carvalho Enlameado pra floresta baixa —"
+				"§7duas madeiras novas com todo o conjunto de móveis. E as"
+				"§7plantas locais (taboa, algas, ninféias, flores silvestres)"
+				"§7rendem corantes que a natureza simplesmente não te dava antes."
+				""
+				"§eConstrua um barco de Cypress e um de Muddy Oak, e descubra"
+				"§ea receita de corante marrom a partir da taboa (Cattail)."
+			]
+			hide_until_deps_complete: true
+			icon: "goodending:cypress_boat"
+			id: "5B0B2B995DC57BF6"
+			rewards: [
+				{
+					count: 4
+					id: "47B630E210B1E1AF"
+					item: "minecraft:pink_dye"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "085AA0E21FE7BFC0"
+					item: "minecraft:light_blue_dye"
+					type: "item"
+				}
+				{
+					id: "7F434EAA5308F795"
+					item: "goodending:muddy_oak_chest_boat"
+					type: "item"
+				}
+				{
+					id: "680C99C31EB7913E"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "49316BDF62FEA5E0"
+					item: "goodending:cypress_boat"
+					type: "item"
+				}
+				{
+					id: "191B59A832B01125"
+					item: "goodending:muddy_oak_boat"
+					type: "item"
+				}
+				{
+					advancement: "goodending:recipes/brown_dye_from_cattail"
+					criterion: ""
+					id: "030348D77DE7B8DB"
+					type: "advancement"
+				}
+			]
+			title: "Flora Nova do Pântano"
+			x: 7.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Cama é útil, mas rede é estilo. Pendure uma entre duas"
+				"§7árvores (ou dentro de casa mesmo) e tire uma soneca em"
+				"§7qualquer lugar — sem precisar de quarto."
+				""
+				"§eDurma numa Hammock. Depois construa uma Night Bag pra"
+				"§elevar sua cama portátil pra qualquer lugar."
+			]
+			hide_until_deps_complete: true
+			icon: "sleep_tight:hammock_red"
+			id: "08BE5A6574363E3A"
+			rewards: [
+				{
+					count: 8
+					id: "443AAAAADCE044A0"
+					item: "minecraft:red_dye"
+					type: "item"
+				}
+				{
+					id: "16D7FAFC7B55350F"
+					item: "sleep_tight:moon_banner_pattern"
+					type: "item"
+				}
+				{
+					id: "514A4FF1E379C838"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "sleep_tight:husbandry/hammock"
+					criterion: ""
+					id: "23CD0BC7D0DC6355"
+					type: "advancement"
+				}
+				{
+					id: "6B21ECA0F40983AA"
+					item: "sleep_tight:night_bag"
+					type: "item"
+				}
+			]
+			title: "Durma com Estilo"
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Cama suja demais vira ninho de percevejo — e aí é praga:"
+				"§7eles se multiplicam e picam enquanto você dorme. A solução"
+				"§7é simples: limpe, ou lucre com os ovos que eles deixam."
+				""
+				"§8§o(Moral da história: troque o lençol de vez em quando.)"
+				""
+				"§eObtenha Bedbug Eggs de uma Infested Bed."
+			]
+			hide_until_deps_complete: true
+			icon: "sleep_tight:bedbug_eggs"
+			id: "136FD511E7699429"
+			rewards: [
+				{
+					count: 2
+					id: "4A396B6919DD0DB7"
+					item: "minecraft:cobweb"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5DAD007916E30C12"
+					item: "minecraft:spider_eye"
+					type: "item"
+				}
+				{
+					id: "6E634C08ACEFDFCF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "5B6E44E96259388B"
+				item: "sleep_tight:bedbug_eggs"
+				type: "item"
+			}]
+			title: "Visitante Indesejado"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Em algum lugar do mundo, gerado como qualquer outro"
+				"§7vilarejo, existe uma vila de Natal inteira — decorada,"
+				"§7fora de época, sem explicação nenhuma. E ninguém sabe"
+				"§7por que ela está lá."
+				""
+				"§eEncontre a Christmas Village."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:red_bed"
+			id: "2C5646DE8169EAA7"
+			rewards: [
+				{
+					count: 8
+					id: "086C858A2A4C582D"
+					item: "minecraft:red_dye"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5B480BA37D85F2A0"
+					item: "minecraft:cookie"
+					type: "item"
+				}
+				{
+					id: "1D28468C7B4EA592"
+					item: "minecraft:red_bed"
+					type: "item"
+				}
+				{
+					id: "3C03F1CC2F1CB58F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "710B5BCD6044FC68"
+				structure: "#ctov:village_christmas"
+				type: "structure"
+			}]
+			title: "O Natal Perdido"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Dá pra acelerar o tempo dentro de uma área específica."
+				"§7Com ele, suas fazendas crescem muito mais rápido —"
+				"§7horas de espera viram minutos."
+				""
+				"§eCrie um Time in a Bottle."
+				""
+				"§6Dica: §7Combine com Mystical Agriculture pra produção de"
+				"§7essências em escala absurda."
+				""
+				"§8§o(Ironicamente, você vai gastar mais tempo craftando isso"
+				"§8§odo que a fazenda levaria pra crescer.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tiab:time_in_a_bottle"
+				tag: { }
+			}
+			id: "3C0000000000005F"
+			rewards: [
+				{
+					count: 8
+					id: "3C00000000000061"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "3C00000000000062"
+					type: "xp"
+					xp: 800
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "3C00000000000063"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Dono do Tempo"
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Sua fábrica é incrível — mas para de funcionar quando"
+				"§7você se afasta e os chunks descarregam."
+				""
+				"§7Existe um jeito de resolver isso: uma âncora que mantém"
+				"§7uma área de chunks"
+				"§7sempre carregada, mesmo com você longe ou offline (em servidores)."
+				""
+				"§eCrie e instale um Lodestone perto da sua fábrica principal"
+				"§ee vincule um Data Anchor a ele."
+				""
+				"§6Dica: §7Combine com Create Jetpack Curios pra voar com o jetpack"
+				"§7sem ocupar o peitoral — armadura completa + propulsão!"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:lodestone"
+			id: "3C00000000000075"
+			rewards: [
+				{
+					id: "3C00000000000076"
+					item: "minecraft:lodestone"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "3C00000000000077"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "3C00000000000078"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "3C00000000000079"
+				item: "minecraft:lodestone"
+				type: "item"
+			}]
+			title: "A Fábrica que Nunca Dorme"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Existem instrumentos musicais tocáveis de verdade:"
+				"§7§eLute§7, §ePiano§7, §eBagpipe§7, §eFlute§7, §eHandpan§7,"
+				"§7§eTiny Drum §7e vários outros — cada um com timbre único."
+				"§7Toque na base, durante exploração, ou só porque quer."
+				""
+				"§eCrafite e toque pelo menos §e2 instrumentos §7do mod."
+				""
+				"§8§o(O modpack tem 245 mods. Um deles é só pra tocar alaúde.)"
+				"§8§o(Prioridades estão em ordem.)"
+			]
+			hide_until_deps_complete: true
+			icon: "immersive_melodies:lute"
+			id: "350A10509E0E92BD"
+			rewards: [
+				{
+					id: "7132B92211903B9B"
+					item: "immersive_melodies:piano"
+					type: "item"
+				}
+				{
+					id: "1EDCF92EFA7A3CE4"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "306F78C03F127760"
+					item: "immersive_melodies:lute"
+					type: "item"
+				}
+				{
+					id: "278F3AD50AA936DD"
+					item: "immersive_melodies:flute"
+					type: "item"
+				}
+			]
+			title: "Imersão no Som — Melodies"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Existe um Scanner que detecta minérios e"
+				"§7estruturas próximas sem precisar escavar — aponta através"
+				"§7das paredes."
+				""
+				"§eCrafite um Scanner."
+				""
+				"§6Dica: §7Combine com JEI/EMI pra saber quais ores priorizar."
+				"§7Scanner funciona por Bateria — recarregue antes de usar"
+				"§7em minas longas."
+			]
+			hide_until_deps_complete: true
+			icon: "scannable:scanner"
+			id: "51120A04316AA54A"
+			rewards: [
+				{
+					count: 16
+					id: "5D5142B75E50BC5A"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "0A9480695CE3C829"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "0D019540CA70C095"
+				item: "scannable:scanner"
+				type: "item"
+			}]
+			title: "Scan do Mundo"
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Não é nada revolucionário — só corrige o que o vanilla deveria"
+				"§7ter feito desde sempre. Sim, estou falando da Trowel."
+				""
+				"§eCrie uma Trowel e colete 4 Glass Shards de cores diferentes."
+			]
+			hide_until_deps_complete: true
+			icon: "quark:trowel"
+			id: "7EEB8A1EC9332A30"
+			rewards: [
+				{
+					count: 16
+					id: "64D591AC6866BFB2"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "72C109FE146C16AF"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "561FB6FE8E637176"
+					item: "quark:trowel"
+					type: "item"
+				}
+				{
+					id: "50E86C2C5F2CA963"
+					item: "quark:blue_shard"
+					type: "item"
+				}
+				{
+					id: "5310F88053FC3FCD"
+					item: "quark:red_shard"
+					type: "item"
+				}
+			]
+			title: "Quark: Ferramentas Sensatas"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Quark tem um sistema inteiro de vidro colorido feito de"
+				"§7fragmentos — ótimo pra quem tem TOC de decoração."
+				""
+				"§eColete 4 Glass Shards de cores diferentes."
+			]
+			hide_until_deps_complete: true
+			icon: "quark:blue_shard"
+			id: "43153B06AAF5D5CD"
+			rewards: [
+				{
+					count: 16
+					id: "50C73B7F152D8EBD"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "5EF08AEEFE967D11"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "7D468EEF37918ED9"
+					item: "quark:blue_shard"
+					type: "item"
+				}
+				{
+					id: "286C577A692ADCB9"
+					item: "quark:red_shard"
+					type: "item"
+				}
+				{
+					id: "2897E24AEBC2AA27"
+					item: "quark:green_shard"
+					type: "item"
+				}
+				{
+					id: "6043FF2F5BE86F8E"
+					item: "quark:brown_shard"
+					type: "item"
+				}
+			]
+			title: "Quark: Vidro Colorido"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Quark não tenta competir com Create em escala — ele"
+				"§7só conserta os pequenos detalhes que o vanilla esqueceu."
+				"§7Os dois juntos deixam sua base redonda de verdade."
+				""
+				"§eTenha uma Trowel (Quark) e um Andesite Alloy (Create)"
+				"§eao mesmo tempo."
+				""
+				"§6Dica: §7Quark também adiciona Variant Chests que combinam"
+				"§7bem com a estética industrial do Create."
+			]
+			hide_until_deps_complete: true
+			icon: "quark:trowel"
+			id: "4AF322216F9A6F25"
+			rewards: [
+				{
+					count: 8
+					id: "0D7C98704AF45231"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "76CBBEB220B796C6"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5524BA373A9F7D22"
+					item: "quark:trowel"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "604F74ABA2DF65BB"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			title: "Pequenos Ajustes, Grandes Resultados"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Luminis brilha mesmo no escuro. Zylex é mais discreto, mas"
+				"§7igualmente essencial — os dois formam a base de tudo que"
+				"§7vem depois nessa linha de produção."
+			]
+			hide_until_deps_complete: true
+			icon: "buddycards:luminis_ore"
+			id: "0419B748A6783C7C"
+			rewards: [
+				{
+					count: 2
+					id: "7957C4FCBF5B50C3"
+					item: "buddycards:luminis_crystal"
+					type: "item"
+				}
+				{
+					id: "4D1B3BA50B05854C"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "5D9A7AB6AE5374FE"
+					item: "buddycards:luminis_ore"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1F39879F5D946FC3"
+					item: "buddycards:zylex"
+					type: "item"
+				}
+			]
+			title: "Minérios Brilhantes"
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7A liga básica de toda a linha de equipamento do mod."
+				"§7Nada extraordinário ainda, mas é o ponto de partida"
+				"§7pra tudo que carrega o nome 'buddysteel'."
+			]
+			hide_until_deps_complete: true
+			icon: "buddycards:buddysteel_ingot"
+			id: "4724897374203336"
+			rewards: [
+				{
+					id: "27E2C2FEE125542B"
+					item: "buddycards:buddysteel_ring"
+					type: "item"
+				}
+				{
+					id: "1A9EAE454DE7CA76"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "7DA40DC9E1E072DF"
+					item: "buddycards:buddysteel_ingot"
+					type: "item"
+				}
+				{
+					id: "529CD27D58D995D7"
+					item: {
+						Count: 1
+						id: "buddycards:buddysteel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Aço Buddysteel"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7O Power Meter transforma buddysteel comum em algo mais forte,"
+				"§7consumindo luminis e zylex no processo. É upgrade de verdade,"
+				"§7não só um nome mais chamativo."
+			]
+			hide_until_deps_complete: true
+			icon: "buddycards:charged_buddysteel_ingot"
+			id: "43D42E55E778DD31"
+			rewards: [
+				{
+					id: "0A971B3A5B058D83"
+					item: "buddycards:charged_buddysteel_power_meter"
+					type: "item"
+				}
+				{
+					id: "52BFAAF1215A27CC"
+					type: "xp"
+					xp: 450
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "54F8C10560640EE2"
+				item: "buddycards:charged_buddysteel_ingot"
+				type: "item"
+			}]
+			title: "Carregando o Poder"
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Crimson luminis e void zylex são versões raras dos minérios"
+				"§7comuns — e são o preço pra alcançar o topo absoluto da"
+				"§7linha de equipamento do mod. Poucos chegam até aqui."
+			]
+			hide_until_deps_complete: true
+			icon: "buddycards:true_perfect_buddysteel_ingot"
+			id: "25CBD6C494190551"
+			rewards: [
+				{
+					id: "39D2339927EE144F"
+					item: {
+						Count: 1
+						id: "buddycards:true_perfect_buddysteel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BDA2C052C791347"
+					type: "xp"
+					xp: 800
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "4D6E17809E984EDA"
+				item: "buddycards:true_perfect_buddysteel_ingot"
+				type: "item"
+			}]
+			title: "O Ápice: Perfeito de Verdade"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2CD27B3D08B629F3"]
+			description: [
+				"§7Carta sem proteção é carta arranhada. Um bom binder ou deckbox"
+				"§7guarda sua coleção em segurança — e ainda fica bonito na estante."
+			]
+			hide_until_deps_complete: true
+			icon: "buddycards:ender_buddycard_binder"
+			id: "322FC33D5296F48A"
+			rewards: [
+				{
+					count: 4
+					id: "31D2003152AB5079"
+					item: "buddycards:grading_sleeve"
+					type: "item"
+				}
+				{
+					id: "503188F1F1C48482"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "111696185F1632BB"
+					item: "buddycards:ender_buddycard_binder"
+					type: "item"
+				}
+				{
+					id: "5926D88C07AA077F"
+					item: "buddycards:playmat_base"
+					type: "item"
+				}
+			]
+			title: "Guardando a Coleção"
+			x: 1.0d
+			y: 3.5d
 		}
 	]
 	title: "§6Extras"

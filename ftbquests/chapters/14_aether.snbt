@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "14_aether"
 	group: "42DFD8A84753DCE2"
@@ -8,6 +8,34 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"§7Ilhas flutuantes, um paraíso logo acima das nuvens que ninguém no chão sabia que existia."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Skyroot Planks."
+			]
+			icon: "aether:skyroot_planks"
+			id: "0F937D7B23367E19"
+			rewards: [{
+				id: "4109B6161A3F2611"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "751709B19279D23A"
+				item: "aether:skyroot_planks"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7No Aether, o fogo não funciona."
 				"§7O que você sabe sobre combate, mineração e sobrevivência"
@@ -24,6 +52,7 @@
 				""
 				"§8§o(Um céu inteiro só pra você. Tente não estragar.)"
 			]
+			hide_until_deps_complete: true
 			icon: "aether:skyroot_planks"
 			id: "325567EB0E986326"
 			rewards: [
@@ -45,6 +74,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "aether:enter_aether"
 				criterion: "enter_aether"
@@ -56,6 +86,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7O §eSun Spirit §7é o primeiro boss do Aether."
 				"§7Ele guarda o §ePhoenix Bow §7— um dos itens mais raros do modpack."
@@ -67,6 +98,7 @@
 				""
 				"§8§o(Dourado, brilhante, e completamente hostil a você.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:phoenix_bow"
@@ -99,6 +131,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "aether:gold_dungeon"
 				criterion: "kill_sun_spirit"
@@ -110,6 +143,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7No topo das dungeons douradas do Aether"
 				"§7existe uma sala que poucos chegam a ver."
@@ -124,6 +158,7 @@
 				""
 				"§8§o(Ela voa, ela luta, ela provavelmente julga sua armadura.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:valkyrie_lance"
@@ -156,6 +191,7 @@
 					xp: 2000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "aether:silver_dungeon"
 				criterion: "kill_valkyrie_queen"
@@ -167,6 +203,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7O §eBronze Dungeon §7é a primeira masmorra do Aether —"
 				"§7uma torre cheia de Sliders, criaturas de pedra que"
@@ -182,6 +219,7 @@
 				""
 				"§8§o(Bronze é o tier \"eu ainda tô aprendendo\" do Aether.)"
 			]
+			hide_until_deps_complete: true
 			icon: "aether:bronze_dungeon_key"
 			id: "08D0000000000301"
 			rewards: [
@@ -202,6 +240,7 @@
 					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "aether:hammer_loot"
 				criterion: "hammer_loot"
@@ -213,6 +252,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7O §eGravitite §7é o minério mais valioso do Aether —"
 				"§7ele levita à luz do sol. Mine à noite ou com Silk Touch."
@@ -226,6 +266,7 @@
 				""
 				"§8§o(Um minério que foge de você. A ironia não passa despercebida.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:gravitite_chestplate"
@@ -247,6 +288,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "aether:gravitite_armor"
 				criterion: "gravitite_chestplate"
@@ -254,10 +296,11 @@
 				type: "advancement"
 			}]
 			title: "O Minério que Voa"
-			x: 10.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7O §eAether §7tem materiais próprios desde o início."
 				"§7§eSkyroot §7substitui madeira. §eHolystone §7substitui pedra."
@@ -270,6 +313,7 @@
 				""
 				"§8§o(Céu bonito, recursos generosos — o Aether não faz por merecer tanto carinho.)"
 			]
+			hide_until_deps_complete: true
 			icon: "aether:holystone"
 			id: "0AE0000000000001"
 			rewards: [
@@ -290,6 +334,7 @@
 					xp: 350
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 16L
@@ -305,10 +350,11 @@
 				}
 			]
 			title: "Recursos do Aether"
-			x: 0.0d
-			y: 2.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7O Aether tem fauna única: §eMoas §7(pássaros saltadores),"
 				"§7§eAerbunnies§7, §ePhygses §7(soltam ouro) e §eSwets §7(geléias)."
@@ -319,6 +365,7 @@
 				"§6Dica: §7Moas azuis saltam mais alto. Dourados são raros."
 				"§7Depois de chocado, alimente com Swet Gummy pra domesticar e montar."
 			]
+			hide_until_deps_complete: true
 			icon: "aether:moa_spawn_egg"
 			id: "0000AE0000000002"
 			rewards: [
@@ -333,6 +380,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "aether:incubate_moa"
 				criterion: "incubate_moa"
@@ -340,10 +388,11 @@
 				type: "advancement"
 			}]
 			title: "Criaturas do Paraíso"
-			x: 2.0d
-			y: 2.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7A §eArmadura de Zanite §7fica mais forte quanto menos vida você tiver."
 				"§7Com menos de 5 corações: dano e velocidade de mineração máximos."
@@ -354,6 +403,7 @@
 				"§6Dica: §7Com pouca vida + Zanite = máxima eficiência."
 				"§7Arriscado — combine com poções de Regeneração para sobreviver."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:zanite_chestplate"
@@ -375,6 +425,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "00000AE00000003A"
@@ -422,10 +473,11 @@
 				}
 			]
 			title: "Armadura de Zanite"
-			x: 4.0d
-			y: 2.0d
+			x: -8.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7O §eAether §7tem sistema próprio de encantamento via §eEnchanter§7,"
 				"§7um NPC que troca Ambrosium Shards por encantamentos exclusivos:"
@@ -436,6 +488,7 @@
 				"§6Dica: §7§eLevity §7faz inimigos flutuarem — útil contra qualquer boss."
 				"§7Ambrosium Shard também serve de combustível em fornalhas do Aether."
 			]
+			hide_until_deps_complete: true
 			icon: "aether:ambrosium_shard"
 			id: "0000AE0000000004"
 			rewards: [
@@ -451,6 +504,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 8L
 				id: "3870B9F717A52CE1"
@@ -458,10 +512,11 @@
 				type: "item"
 			}]
 			title: "O Encantador do Aether"
-			x: 6.0d
-			y: 2.0d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7O Aether tem armas únicas que não existem no Overworld:"
 				"§7§eFlaming Sword §7— incendeia com cada golpe."
@@ -475,6 +530,7 @@
 				""
 				"§8§o(Skyroot: a madeira que também é arma. Versatilidade nível botânico.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:holystone_sword"
@@ -501,6 +557,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "00000AE00000005A"
@@ -521,10 +578,11 @@
 				}
 			]
 			title: "Ferramentas e Armas Únicas"
-			x: 8.0d
-			y: 2.0d
+			x: 0.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7O §eCockatrice §7é uma das criaturas mais perigosas do Aether:"
 				"§7seu olhar te petrifica, imobilizando por segundos preciosos"
@@ -537,6 +595,7 @@
 				"§7direto sempre que possível. Golden Carrots ajudam a resistir"
 				"§7aos efeitos negativos dele."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:golden_carrot"
 			id: "0000AE0000000006"
 			rewards: [
@@ -552,6 +611,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				entity: "aether:cockatrice"
 				id: "00000AE00000006A"
@@ -559,10 +619,11 @@
 				value: 1L
 			}]
 			title: "Cuidado com o Olhar"
-			x: 10.0d
-			y: 2.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7A §eValkyrie Lance §7é a arma icônica do Aether —"
 				"§7obtida como drop da §eValkyrie Queen§7 no Silver Dungeon."
@@ -574,6 +635,7 @@
 				"§6Dica: §7Combine com §eSharpness §7e §eReach §7do Enchanter."
 				"§8§o(Valquírias foram derrubadas pela própria lança. Poético.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:valkyrie_lance"
@@ -601,6 +663,7 @@
 					xp: 1200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "00000AE00000007A"
 				item: {
@@ -613,10 +676,11 @@
 				type: "item"
 			}]
 			title: "A Lança da Valquíria"
-			x: 12.0d
-			y: 2.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7Antes de Silver e Gold, existe a Bronze Dungeon — a mais"
 				"§7simples das três, mas ainda guardada por um chefe próprio:"
@@ -624,6 +688,7 @@
 				""
 				"§eDerrote o Slider na Bronze Dungeon."
 			]
+			hide_until_deps_complete: true
 			icon: "aether:bronze_dungeon_key"
 			id: "527E5085D4D9ED18"
 			rewards: [
@@ -638,6 +703,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "aether:bronze_dungeon"
 				criterion: "kill_slider"
@@ -645,10 +711,11 @@
 				type: "advancement"
 			}]
 			title: "A Masmorra de Bronze: Slider"
-			x: 18.0d
-			y: 6.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
+			dependencies: ["0F937D7B23367E19"]
 			description: [
 				"§7Enquanto Gravitite é leve e Zanite é resistente, a armadura"
 				"§7Phoenix tem seu próprio nicho — visual e efeitos únicos"
@@ -657,6 +724,7 @@
 				"§eForje o conjunto completo de armadura Phoenix"
 				"§e(capacete, peitoral, calças, botas e luvas)."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:phoenix_chestplate"
@@ -678,6 +746,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "1D106F58D5D4E1CB"
@@ -736,9 +805,9 @@
 				}
 			]
 			title: "Armadura Fênix"
-			x: 20.0d
-			y: 6.0d
+			x: 0.0d
+			y: -8.0d
 		}
 	]
-	title: "§eAether — O Paraíso Celestial"
+	title: "§eO Paraíso Celestial"
 }

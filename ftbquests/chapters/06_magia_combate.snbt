@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "06_magia_combate"
 	group: "6A1D97ECF9A7FC71"
@@ -9,7 +9,36 @@
 	quests: [
 		{
 			description: [
-				"§7§eIron's Spellbooks §7é o segundo sistema de magia do modpack."
+				"§7Magia aplicada à guerra: livros de feitiço, colônias sob ataque, e batalhas que pedem mais que espada."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Blaze Powder."
+			]
+			icon: "minecraft:blaze_powder"
+			id: "0138F0FE80024B05"
+			rewards: [{
+				id: "17FFA8CD833472AA"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "64F9993ABBBB7244"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7Existe um segundo sistema de magia neste mundo, guardado"
+				"§7em grimórios."
 				"§7Focado em arquétipos como Mago, Curandeiro e Necromante."
 				""
 				"§eCrie ou encontre um Spell Book de Iron's Spellbooks."
@@ -18,6 +47,7 @@
 				"§7Cada nível dá mais poder e slots de feitiço — o jogo não"
 				"§7verifica seu nível exato, então continue evoluindo por conta própria."
 			]
+			hide_until_deps_complete: true
 			icon: "irons_spellbooks:copper_spell_book"
 			id: "4D00000000000017"
 			rewards: [
@@ -33,16 +63,18 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4D0000000000001A"
 				item: "irons_spellbooks:copper_spell_book"
 				type: "item"
 			}]
 			title: "Arquétipo Mágico"
-			x: 0.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
 				"§7O §eIron Spell Book §7é o segundo degrau da progressão"
 				"§7mágica — mais slots de feitiço e mais poder de conjuração"
@@ -55,6 +87,7 @@
 				"§6Dica: §7Cada armadura temática dá bônus à escola"
 				"§7de magia correspondente — fogo, gelo ou raio!"
 			]
+			hide_until_deps_complete: true
 			icon: "irons_spellbooks:iron_spell_book"
 			id: "4D00000000000090"
 			rewards: [
@@ -70,6 +103,7 @@
 					xp: 350
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D00000000000093"
@@ -89,10 +123,11 @@
 				}
 			]
 			title: "Segundo Grau"
-			x: 2.0d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
 				"§7Iron's Spellbooks tem feitiços de diferentes escolas:"
 				"§7Fogo, Gelo, Raio, Cura, Sangue, Sombra..."
@@ -104,6 +139,7 @@
 				"§7raros de escolas poderosas! O jogo não verifica quais feitiços você"
 				"§7aprendeu, então essa parte fica por sua conta — mas vale a pena."
 			]
+			hide_until_deps_complete: true
 			icon: "irons_spellbooks:arcane_essence"
 			id: "4D0000000000001B"
 			rewards: [
@@ -124,6 +160,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D0000000000001F"
@@ -137,12 +174,14 @@
 				}
 			]
 			title: "Mestre de Múltiplas Escolas"
-			x: 4.0d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
-				"§7§eCelestiSynth §7potencializa magias usando energia cósmica."
+				"§7Existe uma escola que potencializa armas usando energia"
+				"§7cósmica de verdade."
 				"§7O §eStar Monolith §7é um bloco ritualístico que canaliza"
 				"§7o poder de corpos celestes para criar equipamentos únicos."
 				""
@@ -152,18 +191,19 @@
 				"§6Dica: §7Lunar Stone é defensivo, Solar Crystal é ofensivo!"
 				"§7Acompanhe as fases com Enhanced Celestials para maximizar o efeito."
 			]
+			hide_until_deps_complete: true
 			icon: "celestisynth:celestial_core"
 			id: "4D0000000000002E"
 			rewards: [
 				{
-					count: 4
 					id: "4D0000000000002F"
-					item: "celestisynth:celestial_core"
+					item: "celestisynth:celestial_crafting_table"
 					type: "item"
 				}
 				{
+					count: 2
 					id: "4D00000000000030"
-					item: "celestisynth:star_monolith"
+					item: "celestisynth:celestial_netherite_ingot"
 					type: "item"
 				}
 				{
@@ -172,6 +212,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "6A00000000000503"
@@ -185,176 +226,13 @@
 				}
 			]
 			title: "Magia Celestial"
-			x: 6.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
-				"§7§eMana and Artifice (MNA) §7é o terceiro grande sistema mágico"
-				"§7deste modpack — focado em §eVaras (Wands) §7e um pool de"
-				"§7Mana pessoal que regenera com o tempo."
-				""
-				"§7Tudo começa na §eInscription Table§7: combine um"
-				"§e§lWand Core §r§7+ um §e§lWand Cap §r§7para montar sua primeira Vara."
-				""
-				"§eCrie uma §eInscription Table §7do MNA."
-				"§eMonte sua primeira §eVara (Wand)§7."
-				""
-				"§6Dica: §7O livro §eCodex of Artifice §7explica tudo passo a passo!"
-				"§7Ele é dado automaticamente ao tocar na Inscription Table."
-			]
-			icon: {
-				Count: 1
-				id: "mna:wand_vinteum"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "4D00000000000037"
-			rewards: [
-				{
-					count: 4
-					id: "4D00000000000038"
-					item: "mna:mana_resevoir"
-					type: "item"
-				}
-				{
-					id: "4D00000000000039"
-					type: "xp"
-					xp: 350
-				}
-			]
-			tasks: [
-				{
-					id: "4D0000000000003A"
-					item: {
-						Count: 1
-						id: "mna:wand_vinteum"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4D00000000000070"
-					item: "mna:inscription_table"
-					type: "item"
-				}
-			]
-			title: "Artífice da Mana"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"§7Uma vara sem runas é só um pedaço de madeira caro."
-				"§7§eRunescribing §7é o sistema que grava poder elemental"
-				"§7diretamente nos componentes da sua vara."
-				""
-				"§eConstrua uma §eRunescribing Table §7e inscreva pelo"
-				"§emenos §e2 runas elementais §7diferentes (Fire, Water,"
-				"§eAir, Earth, Arcane...) em peças da sua vara."
-				""
-				"§6Dica: §7Cada runa muda como seus feitiços se comportam!"
-				"§7Combine runas opostas para efeitos interessantes."
-			]
-			icon: "mna:runescribing_table"
-			id: "4D00000000000095"
-			rewards: [
-				{
-					count: 3
-					id: "4D00000000000096"
-					item: "mna:rune_fire"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "4D00000000000097"
-					item: "mna:rune_water"
-					type: "item"
-				}
-				{
-					id: "4D00000000000098"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [
-				{
-					id: "4D00000000000099"
-					item: "mna:runescribing_table"
-					type: "item"
-				}
-				{
-					id: "4D0000000000009A"
-					item: "mna:rune_fire"
-					type: "item"
-				}
-				{
-					id: "4D0000000000009B"
-					item: "mna:rune_water"
-					type: "item"
-				}
-			]
-			title: "Gravando Poder"
-			x: 10.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"§7§eVinteum §7é a base de tudo no MNA, mas o mineral bruto tem"
-				"§7impurezas que limitam seu potencial. Purificá-lo na Inscription"
-				"§7Table libera muito mais poder pra sua vara."
-				""
-				"§eRefine 8 Purified Vinteum Ingots e inscreva uma Runa Arcana."
-				""
-				"§6Dica: §7O próximo tier é o Superheated Purified Vinteum —"
-				"§7ainda mais raro e poderoso. Guarde Mana Battery por perto,"
-				"§7feitiços com Vinteum purificado custam mais mana."
-				""
-				"§8§o(Purificar cristal magico. Ninguem nunca explicou como funciona.)"
-			]
-			icon: "mna:purified_vinteum_ingot"
-			id: "4D00000000000071"
-			rewards: [
-				{
-					count: 16
-					id: "4D00000000000072"
-					item: "mna:vinteum_dust"
-					type: "item"
-				}
-				{
-					id: "4D00000000000073"
-					item: "mna:mana_resevoir"
-					type: "item"
-				}
-				{
-					id: "4D00000000000074"
-					type: "xp"
-					xp: 450
-				}
-			]
-			tasks: [
-				{
-					count: 8L
-					id: "6A00000000000501"
-					item: "mna:purified_vinteum_ingot"
-					type: "item"
-				}
-				{
-					id: "6A00000000000502"
-					item: "mna:rune_arcane"
-					type: "item"
-				}
-			]
-			title: "Vinteum Purificado"
-			x: 12.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"§7§eImprovable Skills §7adiciona um sistema de habilidades"
+				"§7Existe um sistema de habilidades"
 				"§7que crescem com uso — magia inclusa!"
 				""
 				"§eObtenha um Skills Book do Improvable Skills."
@@ -362,6 +240,7 @@
 				"§6Dica: §7Use feitiços repetidamente pra ganhar XP de habilidade!"
 				"§7Habilidades mágicas reduzem custo de mana com o tempo."
 			]
+			hide_until_deps_complete: true
 			icon: "improvableskills:skills_book"
 			id: "4D0000000000003B"
 			rewards: [
@@ -377,24 +256,27 @@
 					xp: 350
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4D0000000000003E"
 				item: "improvableskills:skills_book"
 				type: "item"
 			}]
 			title: "Maestria nas Artes"
-			x: 14.0d
+			x: 11.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
-				"§7§eRelics §7adiciona artefatos mágicos poderosos que são encontrados em baús de dungeons."
+				"§7Existem artefatos mágicos poderosos escondidos em baús de dungeons."
 				"§eEncontre 2 Relics diferentes: o Bastion Ring e o Arrow Quiver."
 				"§7Eles ocupam slots de Curios e dão poderes passivos."
 				""
 				"§6Dica: §7Relics mais raros têm efeitos combinados únicos!"
 				"§7Cheque dungeons do Dungeons Arise para Relics raras."
 			]
+			hide_until_deps_complete: true
 			icon: "relics:bastion_ring"
 			id: "4D0000000000003F"
 			rewards: [
@@ -415,6 +297,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D00000000000043"
@@ -428,12 +311,13 @@
 				}
 			]
 			title: "Caçador de Relíquias"
-			x: 0.0d
-			y: 4.0d
+			x: 13.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
-				"§7§eArtifacts §7adiciona dezenas de itens usáveis nos slots de Curios,"
+				"§7Existem dezenas de itens usáveis nos slots de Curios,"
 				"§7cada um com um efeito passivo único."
 				""
 				"§eConsiga 3 Artifacts diferentes: Obsidian Skull, Golden Hook e Running Shoes."
@@ -441,6 +325,7 @@
 				"§6Dica: §7Equipe-os nos slots de Curios pra ativar os efeitos — só ter no"
 				"§7inventário não faz nada!"
 			]
+			hide_until_deps_complete: true
 			icon: "artifacts:obsidian_skull"
 			id: "4D00000000000049"
 			rewards: [
@@ -460,6 +345,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D0000000000004C"
@@ -478,12 +364,13 @@
 				}
 			]
 			title: "Colecionador de Artefatos"
-			x: 2.0d
-			y: 4.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
-				"§7§eEnhanced Celestials §7transforma as luas em eventos."
+				"§7As luas viraram eventos de verdade no céu."
 				"§7Durante a §cLua de Sangue§7, os mobs ficam mais fortes,"
 				"§7mais rápidos — mas os drops são melhores."
 				"§7É a noite mais perigosa e mais lucrativa do modpack."
@@ -494,6 +381,7 @@
 				"§6Dica: §7Feitiços de área do §eArs Nouveau §7são ideais."
 				"§7Prepare §eSource Jars §7extras — você vai conjurar muito."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -515,16 +403,18 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4D00000000000055"
 				item: "enhancedcelestials:meteor"
 				type: "item"
 			}]
 			title: "Lua de Sangue"
-			x: 4.0d
-			y: 4.0d
+			x: -4.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
 				"§7A fusão entre magia e tecnologia é rara, mas poderosa."
 				"§7O §ePlenty of Golems §7deixa você criar golems temáticos"
@@ -535,6 +425,7 @@
 				"§6Dica: §7Diferentes materiais criam golems com habilidades"
 				"§7diferentes — teste combinações pra achar o ideal pra você."
 			]
+			hide_until_deps_complete: true
 			icon: "plenty_of_golems:golems_staff"
 			id: "4D00000000000056"
 			rewards: [
@@ -555,23 +446,26 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4D0000000000005A"
 				item: "plenty_of_golems:golems_staff"
 				type: "item"
 			}]
 			title: "Criador de Golems"
-			x: 6.0d
-			y: 4.0d
+			x: -6.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
-				"§7§eCelestisynth §7traz duas armaduras opostas: Solar Crystal"
+				"§7Existem duas armaduras opostas nessa escola: Solar Crystal"
 				"§7(ofensiva, queima quem te acerta) e Lunar Stone (defensiva,"
 				"§7reduz dano ao ser atingido). Escolha um lado."
 				""
 				"§eForje o elmo de Solar Crystal ou de Lunar Stone."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "celestisynth:solar_crystal_helmet"
@@ -598,6 +492,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "123201B464C0B393"
 				item: {
@@ -610,25 +505,37 @@
 				type: "item"
 			}]
 			title: "Armadura Celestial"
-			x: 14.0d
-			y: 6.0d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
-				"§7Celestisynth não faz espada básica — cada arma tem nome,"
+				"§7Nenhuma dessas lâminas é básica — cada uma tem nome,"
 				"§7personalidade e um conjunto de habilidades só dela."
-				"§7§eFrostbound §7congela quem você acerta repetidamente."
-				"§7§eSolaris §7cerca você de bombas solares que perseguem alvos."
 				""
-				"§eForje o Frostbound e o Solaris."
+				"§7§eFrostbound §7é uma espada de gelo com duas habilidades:"
+				"§7uma sequência rítmica de golpes que congela quem for"
+				"§7atingido, e uma chuva de estilhaços gelados lançados à"
+				"§7distância. Acertar inimigos com ela reduz força e"
+				"§7velocidade deles."
 				""
-				"§6Dica: §7Segure botão direito com cada arma pra descobrir"
-				"§7as habilidades ativas — a maioria tem 2 a 5 skills diferentes."
-				"§7Scroll com o mouse no tooltip pra ver a lista completa!"
+				"§eForje o Frostbound."
 				""
-				"§8§o(Sua espada agora tem mais personalidade que voce.)"
+				"§6Dica: §7Segure botão direito pra descobrir as habilidades"
+				"§7ativas — scroll com o mouse no tooltip pra ver a lista"
+				"§7completa!"
+				""
+				"§8§o(Sua espada agora tem mais personalidade que você.)"
 			]
-			icon: "celestisynth:lunar_scrap"
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "celestisynth:frostbound"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7AF8D83397895DEA"
 			rewards: [
 				{
@@ -643,25 +550,365 @@
 					xp: 400
 				}
 			]
-			tasks: [
-				{
-					advancement: "celestisynth:obtain_frostbound"
-					criterion: ""
-					id: "7FC9647B147C22FA"
-					type: "advancement"
-				}
-				{
-					advancement: "celestisynth:obtain_solaris"
-					criterion: ""
-					id: "2B9A68EFE6A17770"
-					type: "advancement"
-				}
-			]
-			title: "Armas com Alma"
-			x: 16.0d
-			y: 4.0d
+			size: 1.5d
+			tasks: [{
+				advancement: "celestisynth:obtain_frostbound"
+				criterion: ""
+				id: "7FC9647B147C22FA"
+				type: "advancement"
+			}]
+			title: "Frostbound"
+			x: -11.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7§eSolaris §7é uma lâmina de fogo puro. Um giro em chamas"
+				"§7queima tudo ao redor, e um avanço deixa um rastro de"
+				"§7inimigos pegando fogo pelo caminho."
+				""
+				"§7A habilidade passiva é única: até 5 bombas solares"
+				"§7circulam ao seu redor, e cada inimigo que você acerta"
+				"§7redireciona uma delas pra perseguir esse alvo."
+				""
+				"§eForje o Solaris."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "celestisynth:solaris"
+				tag: {
+					Damage: 0
+					csController: { }
+				}
+			}
+			id: "30AD12B86D097D1F"
+			rewards: [
+				{
+					count: 3
+					id: "62775EDBD6EB476E"
+					item: "celestisynth:crimson_piece"
+					type: "item"
+				}
+				{
+					id: "37DF819A8CEFCAB5"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "celestisynth:obtain_solaris"
+				criterion: ""
+				id: "17F8F4882E8EDB05"
+				type: "advancement"
+			}]
+			title: "Solaris"
+			x: -13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7§eAquaflora §7é uma arma floral que penetra fileiras"
+				"§7inteiras de inimigos com uma série de estocadas."
+				""
+				"§7Ativar sua segunda habilidade entra no 'Blooming State' —"
+				"§7um estado que muda completamente o conjunto de skills,"
+				"§7permitindo até 20 ataques consecutivos com imunidade a"
+				"§7dano (40+ se você empunhar duas ao mesmo tempo)."
+				""
+				"§eForje o Aquaflora."
+				""
+				"§6Dica: §7Sair do Blooming State com a habilidade certa deixa"
+				"§7um rastro floral que puxa inimigos próximos."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "celestisynth:aquaflora"
+				tag: {
+					Damage: 0
+					csController: { }
+				}
+			}
+			id: "0F661DE87FAB8E45"
+			rewards: [
+				{
+					count: 3
+					id: "59878E45C75D8C58"
+					item: "celestisynth:wintereis_shard"
+					type: "item"
+				}
+				{
+					id: "3333070A11ED8962"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "celestisynth:obtain_aquaflora"
+				criterion: ""
+				id: "4B63685EEA8C3D37"
+				type: "advancement"
+			}]
+			title: "Aquaflora"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7§eBreezebreaker §7é uma arma de vento de altíssimo risco:"
+				"§7enquanto equipada, você ganha um pulo enorme e imunidade"
+				"§7a dano de queda — mas recebe 2.3x mais dano de todas as"
+				"§7outras fontes."
+				""
+				"§7Sua habilidade mais forte invoca um tornado destrutivo que"
+				"§7corta qualquer coisa em seu caminho, e a passiva secundária"
+				"§7reduz o cooldown das skills pela metade a cada 15 usos."
+				""
+				"§eForje o Breezebreaker."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "celestisynth:breezebreaker"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5090DF98972CA3FF"
+			rewards: [
+				{
+					count: 3
+					id: "7E121643041E450F"
+					item: "celestisynth:starstruck_feather"
+					type: "item"
+				}
+				{
+					id: "130D4052A405278E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "celestisynth:obtain_breezebreaker"
+				criterion: ""
+				id: "4F076DBE9FD0CAE9"
+				type: "advancement"
+			}]
+			title: "Breezebreaker"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7§eCrescentia §7é uma arma lunar que dispara uma barragem"
+				"§7de golpes acompanhada de um show de fogos de artifício —"
+				"§7e sua segunda habilidade invoca projéteis em forma de"
+				"§7dragão que arrastam o inimigo enquanto cortam repetidamente."
+				""
+				"§7A passiva reduz a velocidade de quem você acerta com"
+				"§7ataques normais, e te dá resistência a dano enquanto"
+				"§7equipada."
+				""
+				"§eForje o Crescentia."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "celestisynth:crescentia"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1B7C2AAA102785A3"
+			rewards: [
+				{
+					count: 4
+					id: "744F6485EC89BC5C"
+					item: "celestisynth:lunar_scrap"
+					type: "item"
+				}
+				{
+					id: "0E20F8A2C2A051C8"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "celestisynth:obtain_crescentia"
+				criterion: ""
+				id: "6E7D5B0B07998F66"
+				type: "advancement"
+			}]
+			title: "Crescentia"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7§eKeres §7é a lâmina mais sombria dessa coleção — ela se"
+				"§7alimenta de sangue. Suas habilidades ignoram armadura"
+				"§7completamente, incluindo um corte gigante que apaga blocos"
+				"§7no caminho."
+				""
+				"§7Usar as skills custa vida aos poucos, mas cada acerto"
+				"§7regenera parte dela de volta. Acertar 5 vezes seguidas"
+				"§7ativa o estado 'Hellbane', aumentando o lifesteal e"
+				"§7disparando projéteis sombrios que perseguem inimigos"
+				"§7sozinhos."
+				""
+				"§eForje o Keres."
+				""
+				"§8§o(Uma espada que cobra sangue como taxa de manutenção."
+				"§8§oO RH desse modpack precisa de uma reunião urgente.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "celestisynth:keres"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "17961AFCB7BC8AD4"
+			rewards: [
+				{
+					count: 4
+					id: "398521919A74361E"
+					item: "celestisynth:crimson_piece"
+					type: "item"
+				}
+				{
+					id: "06E947BC6CFF55FB"
+					type: "xp"
+					xp: 550
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "celestisynth:obtain_keres"
+				criterion: ""
+				id: "6F30AB17AF37746B"
+				type: "advancement"
+			}]
+			title: "§4§lKeres"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7§ePoltergeist §7esmaga o chão causando dano em área — e"
+				"§7depois de 10 golpes consecutivos, entra na 'Aberrant Form':"
+				"§7o próximo golpe faz brotar um monstro sugador do próprio"
+				"§7chão. Matar algo durante esse estado (ou pular no meio do"
+				"§7golpe) reseta o cooldown na hora."
+				""
+				"§7A segunda habilidade cria uma barreira que destrói"
+				"§7projéteis inimigos enquanto te empurra pra trás."
+				""
+				"§eForje o Poltergeist."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "celestisynth:poltergeist"
+				tag: {
+					Damage: 0
+					csExtras: { }
+				}
+			}
+			id: "2C3C7221A3255805"
+			rewards: [
+				{
+					count: 3
+					id: "287730752E1F03AA"
+					item: "celestisynth:starstruck_scrap"
+					type: "item"
+				}
+				{
+					id: "2F9C6AF67317FD7E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "celestisynth:obtain_poltergeist"
+				criterion: ""
+				id: "7B7352D9AB9AE689"
+				type: "advancement"
+			}]
+			title: "Poltergeist"
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7§eRainfall Serenity §7não é uma espada — é um arco. Ao"
+				"§7soltar totalmente carregado, dispara um laser que atravessa"
+				"§7tudo e marca inimigos com uma 'Quasar Mark' por 5 segundos,"
+				"§7fazendo outros lasers convergirem neles automaticamente."
+				""
+				"§7Segurando SHIFT você fica em invisibilidade total por 5"
+				"§7segundos — e se largar o arco no chão, ele vira uma"
+				"§7torreta automática que atira em qualquer coisa próxima."
+				""
+				"§eConsiga o Rainfall Serenity."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "celestisynth:rainfall_serenity"
+				tag: {
+					Damage: 0
+					csExtras: { }
+				}
+			}
+			id: "226CE5FB0478D771"
+			rewards: [
+				{
+					count: 4
+					id: "44D245ED7013380F"
+					item: "celestisynth:wintereis_shard"
+					type: "item"
+				}
+				{
+					id: "7C1532BF803BC810"
+					type: "xp"
+					xp: 550
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				advancement: "celestisynth:obtain_rainfall_serenity"
+				criterion: ""
+				id: "6179C9CA48CB62FB"
+				type: "advancement"
+			}]
+			title: "§b§lRainfall Serenity"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
 				"§7Acima do Celestial existe o §eSupernal §7— fusão de Celestial"
 				"§7Netherite com os núcleos mais raros do mod. É o material"
@@ -673,6 +920,7 @@
 				"§7e um Celestial Core Heated antes de tentar o smithing —"
 				"§7a cadeia completa é longa, mas vale o resultado."
 			]
+			hide_until_deps_complete: true
 			icon: "celestisynth:starstruck_scrap"
 			id: "174B4D242FADA025"
 			rewards: [
@@ -688,6 +936,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "celestisynth:obtain_supernal_netherite_ingot"
 				criterion: ""
@@ -695,10 +944,11 @@
 				type: "advancement"
 			}]
 			title: "O Poder Supernal"
-			x: 18.0d
-			y: 4.0d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
 				"§7Feitiço sem equipamento é só metade do combo."
 				"§7Artifacts e Relics dão vantagens passivas que combinam"
@@ -710,6 +960,7 @@
 				"§6Dica: §7Crystal Heart + Ars Nouveau é uma combinação clássica —"
 				"§7mais vida pra sobreviver enquanto conjura feitiços de perto."
 			]
+			hide_until_deps_complete: true
 			icon: "artifacts:crystal_heart"
 			id: "0A0FD9F82BE91778"
 			rewards: [
@@ -724,6 +975,7 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "54B30432A359B682"
@@ -737,10 +989,11 @@
 				}
 			]
 			title: "Mago Equipado"
-			x: 20.0d
-			y: 6.0d
+			x: 0.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["0138F0FE80024B05"]
 			description: [
 				"§7Um mago também pode ser útil pra sociedade — feitiços de"
 				"§7colheita e proteção ajudam qualquer colônia a crescer"
@@ -752,6 +1005,7 @@
 				"§6Dica: §7O feitiço Break com Harvest é ótimo pra colher"
 				"§7fazendas da colônia mais rápido."
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:novice_spell_book"
 			id: "51914A33EF674D78"
 			rewards: [
@@ -767,6 +1021,7 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "5BC945E4DB28FF37"
@@ -780,8 +1035,98 @@
 				}
 			]
 			title: "Feitiçaria a Serviço da Colônia"
-			x: 22.0d
-			y: 8.0d
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0138F0FE80024B05"]
+			description: [
+				"§7A Creative Bookshelf potencializa sua mesa de encantamento"
+				"§7melhor que uma estante comum. E o Ancient Book guarda o"
+				"§7conhecimento de um encantamento específico — leia, replique,"
+				"§7e aplique em outro item sem gastar níveis do zero."
+				""
+				"§eConstrua uma Creative Bookshelf e obtenha um Ancient Book."
+			]
+			hide_until_deps_complete: true
+			icon: "immersiveenchanting:ancient_book"
+			id: "25044E0CCB54F0B9"
+			rewards: [
+				{
+					id: "6E97D34B4D580941"
+					item: "immersiveenchanting:music_disc_arcane_memories"
+					type: "item"
+				}
+				{
+					id: "00A6F8D6339C343E"
+					item: "immersiveenchanting:music_disc_biblioclasm"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1F3E2C7BAF77AD0D"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E4F81A3D207C95B"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:protection"
+								lvl: 4
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D93B6F708A1C4E5"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "741A0908C279A1B3"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "668406D4FF514CA6"
+					item: "immersiveenchanting:creative_bookshelf"
+					type: "item"
+				}
+				{
+					id: "6AC34BCC3AB008D5"
+					item: "immersiveenchanting:ancient_book"
+					type: "item"
+				}
+			]
+			title: "Biblioteca Viva"
+			x: 0.0d
+			y: -13.0d
 		}
 	]
 	title: "§cMagia de Batalha"

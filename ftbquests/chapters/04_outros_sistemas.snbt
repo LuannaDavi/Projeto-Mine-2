@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "04_outros_sistemas"
 	group: "3322FB1D5A7FD527"
@@ -9,46 +9,33 @@
 	quests: [
 		{
 			description: [
-				"§7§eTom's Simple Storage §7cria uma rede de armazenamento"
-				"§7centralizada — todos os baús acessíveis de um terminal só!"
-				"§7Chega de procurar em 40 baús sem etiqueta."
+				"§7Sementes que crescem em ouro, essências que capturam a alma dos"
+				"§7elementos, e uma progressão que termina no material mais"
+				"§7cobiçado da agricultura mágica: o Supremium."
 				""
-				"§eCrie um Storage Terminal e conecte pelo menos 1 baú a ele."
-				""
-				"§6Dica: §7Inventory Cables transmitem a rede entre andares!"
-				"§7Combine com Create para armazenar output automaticamente."
+				"§7Esse capítulo começa trancado até você decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missões de uma vez."
 			]
-			icon: "toms_storage:ts.storage_terminal"
-			id: "3C00000000000041"
-			rewards: [
-				{
-					count: 4
-					id: "3C00000000000042"
-					item: "ironchest:iron_chest"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "3C00000000000043"
-					item: "toms_storage:ts.storage_terminal"
-					type: "item"
-				}
-				{
-					id: "3C00000000000044"
-					type: "xp"
-					xp: 400
-				}
-			]
+			icon: "minecraft:hopper"
+			id: "49DA8823123BE733"
+			rewards: [{
+				id: "7D650E1FAF473275"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
 			tasks: [{
-				id: "3C00000000000045"
-				item: "toms_storage:ts.storage_terminal"
+				consume_items: true
+				id: "6BC831AB46B54150"
+				item: "minecraft:hopper"
 				type: "item"
 			}]
-			title: "Rede de Armazenamento"
+			title: "Abrir Capitulo"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7Mystical Agriculture + Create = farm de recursos automática."
 				"§7Depois do Inferium, o próximo tier é o Prudentium — mais"
@@ -59,6 +46,7 @@
 				"§6Dica: §7Mechanical Harvester + Mechanical Planter = ciclo perfeito!"
 				"§7Prudentium exige Inferium reprocessado — monte a cadeia completa."
 			]
+			hide_until_deps_complete: true
 			icon: "mysticalagriculture:supremium_essence"
 			id: "3C0000000000004B"
 			rewards: [
@@ -80,6 +68,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 32L
 				id: "3C0000000000004F"
@@ -87,10 +76,11 @@
 				type: "item"
 			}]
 			title: "Agricultura x Indústria"
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eMystical Agriculture §7tem 5 tiers de essências:"
 				"§eInferium → Prudentium → Tertium → Imperium → Supremium§7."
@@ -102,6 +92,7 @@
 				"§6Dica: §7Inferium x4 = Prudentium, Prudentium x4 = Tertium."
 				"§7A §eInfusion Crystal §7é consumível — produza mais antes de começar!"
 			]
+			hide_until_deps_complete: true
 			icon: "mysticalagriculture:imperium_essence"
 			id: "3C00000000000201"
 			rewards: [
@@ -117,6 +108,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 16L
@@ -132,99 +124,11 @@
 				}
 			]
 			title: "A Escada das Essências"
-			x: 4.0d
-			y: 0.0d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
-			description: [
-				"§7§eTime in a Bottle §7permite acelerar o tempo em uma área."
-				"§7Com ele, suas fazendas crescem muito mais rápido —"
-				"§7horas de espera viram minutos."
-				""
-				"§eCrie um Time in a Bottle."
-				""
-				"§6Dica: §7Combine com Mystical Agriculture pra produção de"
-				"§7essências em escala absurda."
-				""
-				"§8§o(Ironicamente, você vai gastar mais tempo craftando isso"
-				"§8§odo que a fazenda levaria pra crescer.)"
-			]
-			icon: {
-				Count: 1
-				id: "tiab:time_in_a_bottle"
-				tag: { }
-			}
-			id: "3C0000000000005F"
-			rewards: [
-				{
-					count: 8
-					id: "3C00000000000061"
-					item: "mysticalagriculture:prudentium_essence"
-					type: "item"
-				}
-				{
-					id: "3C00000000000062"
-					type: "xp"
-					xp: 800
-				}
-			]
-			tasks: [{
-				id: "3C00000000000063"
-				item: {
-					Count: 1
-					id: "tiab:time_in_a_bottle"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "Dono do Tempo"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"§7Sua fábrica é incrível — mas para de funcionar quando"
-				"§7você se afasta e os chunks descarregam."
-				""
-				"§7§eData Anchor §7resolve isso: ele mantém uma área de chunks"
-				"§7sempre carregada, mesmo com você longe ou offline (em servidores)."
-				""
-				"§eCrie e instale um Lodestone perto da sua fábrica principal"
-				"§ee vincule um Data Anchor a ele."
-				""
-				"§6Dica: §7Combine com Create Jetpack Curios pra voar com o jetpack"
-				"§7sem ocupar o peitoral — armadura completa + propulsão!"
-			]
-			icon: "minecraft:lodestone"
-			id: "3C00000000000075"
-			rewards: [
-				{
-					id: "3C00000000000076"
-					item: "minecraft:lodestone"
-					type: "item"
-				}
-				{
-					count: 10
-					id: "3C00000000000077"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "3C00000000000078"
-					type: "xp"
-					xp: 600
-				}
-			]
-			tasks: [{
-				id: "3C00000000000079"
-				item: "minecraft:lodestone"
-				type: "item"
-			}]
-			title: "A Fábrica que Nunca Dorme"
-			x: 8.0d
-			y: 0.0d
-		}
-		{
+			dependencies: ["49DA8823123BE733"]
 			description: [
 				"§7O §eSupremium §7é o tier máximo da progressão."
 				"§7§eAwakened Supremium §7é a versão encantada ainda mais forte."
@@ -236,6 +140,7 @@
 				"§6Dica: §7Supremium tools têm §eAuto-Smelt §7e §eFortune §7built-in."
 				"§7Socket com §eElemental Gem §7para dano elemental bônus."
 			]
+			hide_until_deps_complete: true
 			icon: "mysticalagriculture:supremium_sword"
 			id: "1DE9947939F4B163"
 			rewards: [
@@ -251,6 +156,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "2155EB2738E49992"
@@ -264,21 +170,23 @@
 				}
 			]
 			title: "Supremium — O Topo da Agricultura"
-			x: 2.0d
+			x: -5.5d
 			y: -2.0d
 		}
 		{
+			dependencies: ["49DA8823123BE733"]
 			description: [
-				"§7§eMystical Agriculture §7tem sementes pra quase tudo —"
+				"§7Existem sementes mágicas pra quase tudo —"
 				"§7incluindo mob drops: Blaze Rod, Ender Pearl, e mais."
 				"§7Com Inferium suficiente + Seed Reprocessor você cria"
 				"§7praticamente qualquer semente."
 				""
-				"§ePlante e colha 2 tipos diferentes de Mob Seeds: Blaze e Enderman."
+				"§eObtenha 2 tipos diferentes de Mob Seeds: Blaze e Enderman."
 				""
 				"§6Dica: §7Blaze Seeds = Blaze Rods infinitos, sem visitar o Nether."
 				"§7Enderman Seeds = Ender Pearls infinitas, sem caçar Enderman."
 			]
+			hide_until_deps_complete: true
 			icon: "mysticalagriculture:blaze_seeds"
 			id: "2188AC91EAA46ED5"
 			rewards: [
@@ -294,6 +202,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "340A59CFC6DFD74E"
@@ -307,299 +216,312 @@
 				}
 			]
 			title: "Sementes de Mob Drops"
-			x: 4.0d
-			y: -2.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["49DA8823123BE733"]
 			description: [
-				"§7§eSophisticated Backpacks §7é o sistema de mochila mais completo."
-				"§7Mochilas com Upgrades de filtro, coleta automática, feeding"
-				"§7automático, crafting direto, e muito mais."
-				"§7Tiers: Iron → Gold → Diamond → Netherite."
-				""
-				"§eCrafite uma Gold Backpack e instale um Pickup Upgrade nela."
-				""
-				"§6Dica: §7Pickup Upgrade coleta itens automaticamente do chão."
-				"§7Feeding Upgrade alimenta você automaticamente — nunca mais fome."
+				"§7Quase todo minério, gema ou material do seu mundo tem uma"
+				"§7semente equivalente. Plante, colha, repita — sem picareta,"
+				"§7sem escavar, só paciência e terra boa."
 			]
-			icon: "sophisticatedbackpacks:gold_backpack"
-			id: "6D047D2965CA1993"
-			rewards: [
-				{
-					id: "1BBAFF6D2F052CD1"
-					item: "sophisticatedbackpacks:diamond_backpack"
-					type: "item"
-				}
-				{
-					id: "61E640AD4A3B3131"
-					type: "xp"
-					xp: 500
-				}
-			]
-			tasks: [
-				{
-					id: "5174BD5EE6F88711"
-					item: "sophisticatedbackpacks:gold_backpack"
-					type: "item"
-				}
-				{
-					id: "6EB58E97120D622B"
-					item: "sophisticatedbackpacks:pickup_upgrade"
-					type: "item"
-				}
-			]
-			title: "Sophisticated Backpacks"
-			x: 0.0d
-			y: 4.0d
-		}
-		{
-			description: [
-				"§7Depois de ter sua rede básica, o próximo passo é o"
-				"§7§eCrafting Terminal §7— ele permite craftar usando materiais"
-				"§7de TODOS os baús da rede, sem precisar levar nada com você."
-				""
-				"§eConstrua um Crafting Terminal."
-				""
-				"§6Dica: §7Ele também mostra receitas de auto-crafting se você"
-				"§7tiver máquinas conectadas — praticamente um AE2 de bolso."
-			]
-			icon: "toms_storage:ts.crafting_terminal"
-			id: "3D8D03545F315F7E"
-			rewards: [
-				{
-					count: 4
-					id: "7E3350E0153395D4"
-					item: "toms_storage:ts.inventory_connector"
-					type: "item"
-				}
-				{
-					id: "5085D362181AC19B"
-					type: "xp"
-					xp: 400
-				}
-			]
-			tasks: [{
-				id: "125804E82BD2D5E6"
-				item: "toms_storage:ts.crafting_terminal"
-				type: "item"
-			}]
-			title: "Tom's Simple Storage"
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			description: [
-				"§7§eImmersive Melodies §7adiciona instrumentos musicais tocáveis:"
-				"§7§eLute§7, §ePiano§7, §eBagpipe§7, §eFlute§7, §eHandpan§7,"
-				"§7§eTiny Drum §7e vários outros — cada um com timbre único."
-				"§7Toque na base, durante exploração, ou só porque quer."
-				""
-				"§eCrafite e toque pelo menos §e2 instrumentos §7do mod."
-				""
-				"§8§o(O modpack tem 245 mods. Um deles é só pra tocar alaúde.)"
-				"§8§o(Prioridades estão em ordem.)"
-			]
-			icon: "immersive_melodies:lute"
-			id: "350A10509E0E92BD"
-			rewards: [
-				{
-					id: "7132B92211903B9B"
-					item: "immersive_melodies:piano"
-					type: "item"
-				}
-				{
-					id: "1EDCF92EFA7A3CE4"
-					type: "xp"
-					xp: 200
-				}
-			]
-			tasks: [
-				{
-					id: "306F78C03F127760"
-					item: "immersive_melodies:lute"
-					type: "item"
-				}
-				{
-					id: "278F3AD50AA936DD"
-					item: "immersive_melodies:flute"
-					type: "item"
-				}
-			]
-			title: "Imersão no Som — Melodies"
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			description: [
-				"§7§eScannable §7adiciona um Scanner que detecta minérios e"
-				"§7estruturas próximas sem precisar escavar — aponta através"
-				"§7das paredes."
-				""
-				"§eCrafite um Scanner."
-				""
-				"§6Dica: §7Combine com JEI/EMI pra saber quais ores priorizar."
-				"§7Scanner funciona por Bateria — recarregue antes de usar"
-				"§7em minas longas."
-			]
-			icon: "scannable:scanner"
-			id: "51120A04316AA54A"
-			rewards: [
-				{
-					count: 16
-					id: "5D5142B75E50BC5A"
-					item: "minecraft:iron_ingot"
-					type: "item"
-				}
-				{
-					id: "0A9480695CE3C829"
-					type: "xp"
-					xp: 250
-				}
-			]
-			tasks: [{
-				id: "0D019540CA70C095"
-				item: "scannable:scanner"
-				type: "item"
-			}]
-			title: "Scan do Mundo"
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			description: [
-				"§7§eQuark §7não inventa moda — só corrige o que o vanilla deveria"
-				"§7ter feito desde sempre. Sim, estou falando da Trowel."
-				""
-				"§eCrie uma Trowel e colete 4 Glass Shards de cores diferentes."
-			]
-			icon: "quark:trowel"
-			id: "7EEB8A1EC9332A30"
-			rewards: [
-				{
-					count: 16
-					id: "64D591AC6866BFB2"
-					item: "minecraft:glass"
-					type: "item"
-				}
-				{
-					id: "72C109FE146C16AF"
-					type: "xp"
-					xp: 150
-				}
-			]
-			tasks: [
-				{
-					id: "561FB6FE8E637176"
-					item: "quark:trowel"
-					type: "item"
-				}
-				{
-					id: "50E86C2C5F2CA963"
-					item: "quark:blue_shard"
-					type: "item"
-				}
-				{
-					id: "5310F88053FC3FCD"
-					item: "quark:red_shard"
-					type: "item"
-				}
-			]
-			title: "Quark: Ferramentas Sensatas"
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			description: [
-				"§7Quark tem um sistema inteiro de vidro colorido feito de"
-				"§7fragmentos — ótimo pra quem tem TOC de decoração."
-				""
-				"§eColete 4 Glass Shards de cores diferentes."
-			]
-			icon: "quark:blue_shard"
-			id: "43153B06AAF5D5CD"
-			rewards: [
-				{
-					count: 16
-					id: "50C73B7F152D8EBD"
-					item: "minecraft:glass"
-					type: "item"
-				}
-				{
-					id: "5EF08AEEFE967D11"
-					type: "xp"
-					xp: 100
-				}
-			]
-			tasks: [
-				{
-					id: "7D468EEF37918ED9"
-					item: "quark:blue_shard"
-					type: "item"
-				}
-				{
-					id: "286C577A692ADCB9"
-					item: "quark:red_shard"
-					type: "item"
-				}
-				{
-					id: "2897E24AEBC2AA27"
-					item: "quark:green_shard"
-					type: "item"
-				}
-				{
-					id: "6043FF2F5BE86F8E"
-					item: "quark:brown_shard"
-					type: "item"
-				}
-			]
-			title: "Quark: Vidro Colorido"
-			x: 4.0d
-			y: 10.0d
-		}
-		{
-			description: [
-				"§7Quark não tenta competir com Create em escala — ele"
-				"§7só conserta os pequenos detalhes que o vanilla esqueceu."
-				"§7Os dois juntos deixam sua base redonda de verdade."
-				""
-				"§eTenha uma Trowel (Quark) e um Andesite Alloy (Create)"
-				"§eao mesmo tempo."
-				""
-				"§6Dica: §7Quark também adiciona Variant Chests que combinam"
-				"§7bem com a estética industrial do Create."
-			]
-			icon: "quark:trowel"
-			id: "4AF322216F9A6F25"
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:diamond_seeds"
+			id: "6177227AA9105943"
 			rewards: [
 				{
 					count: 8
-					id: "0D7C98704AF45231"
-					item: "minecraft:copper_ingot"
+					id: "6EFE1FED40B5E133"
+					item: "mysticalagriculture:prudentium_essence"
 					type: "item"
 				}
 				{
-					id: "76CBBEB220B796C6"
+					id: "4A28EB71B8678FDD"
 					type: "xp"
-					xp: 200
+					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
-					id: "5524BA373A9F7D22"
-					item: "quark:trowel"
+					count: 4L
+					id: "7B343910E4B4D12F"
+					item: "mysticalagriculture:iron_seeds"
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "604F74ABA2DF65BB"
-					item: "create:andesite_alloy"
+					id: "42FA204686FF22E4"
+					item: "mysticalagriculture:gold_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "628483B9167C70A2"
+					item: "mysticalagriculture:diamond_seeds"
 					type: "item"
 				}
 			]
-			title: "Pequenos Ajustes, Grandes Resultados"
-			x: 22.0d
-			y: 10.0d
+			title: "Sementes pra Tudo"
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Soulium não vem de minério nenhum — vem de uma semente"
+				"§7que aparentemente aprendeu a crescer alma. Ferramentas feitas"
+				"§7dele têm efeitos que nenhuma liga comum consegue imitar."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:soulium_sword"
+			id: "4634C6B854B72A95"
+			rewards: [
+				{
+					id: "07562D4406A44220"
+					item: "mysticalagriculture:soulium_pickaxe"
+					type: "item"
+				}
+				{
+					id: "6369C11AE7EAF45B"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "554C1E36CB7F01F4"
+					item: "mysticalagriculture:soulium_seeds"
+					type: "item"
+				}
+				{
+					id: "2D6EEC02D9445020"
+					item: "mysticalagriculture:soulium_sword"
+					type: "item"
+				}
+			]
+			title: "Ferramentas e Armas Vivas"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Uma ferramenta só que faz o trabalho de cinco. Cada tier de"
+				"§7essência tem seu próprio paxel — e cada um mais absurdo que"
+				"§7o anterior."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagradditions:supremium_paxel"
+			id: "4A99207458D67631"
+			rewards: [{
+				id: "5EAC1793EE7FB069"
+				type: "xp"
+				xp: 450
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "4EF793907ECC09BF"
+					item: {
+						Count: 1
+						id: "mysticalagradditions:imperium_paxel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7456BE1A9C7779AE"
+					item: "mysticalagradditions:supremium_paxel"
+					type: "item"
+				}
+			]
+			title: "Paxels da Colheita"
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Alguém, em algum momento, decidiu que uma Nether Star deveria"
+				"§7ser plantável. Ninguém questionou. Agora ela cresce em fileiras"
+				"§7organizadas como se fosse trigo."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagradditions:nether_star_shard"
+			id: "6532529966972674"
+			rewards: [
+				{
+					id: "1881E52630F88659"
+					item: "mysticalagradditions:nether_star_shard"
+					type: "item"
+				}
+				{
+					id: "513E5CD8EAD374C0"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "2D8106EC123F248B"
+					item: "mysticalagradditions:nether_star_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "43FF30B31D95DBD8"
+					item: "mysticalagradditions:nether_star_essence"
+					type: "item"
+				}
+			]
+			title: "A Estrela que Cresce"
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7O Dragon Egg sempre foi único — um por mundo, impossível de"
+				"§7duplicar. Isso deixou de ser verdade no exato momento em que"
+				"§7alguém plantou a primeira semente dele."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagradditions:dragon_egg_chunk"
+			id: "5E797F18A14ABDC2"
+			rewards: [
+				{
+					id: "2F9D44244468DDE3"
+					item: "mysticalagradditions:dragon_egg_chunk"
+					type: "item"
+				}
+				{
+					id: "31B40DF2527A65BF"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "10807EE6E840D231"
+					item: "mysticalagradditions:dragon_egg_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "49125D85E79FD4F5"
+					item: "mysticalagradditions:dragon_egg_essence"
+					type: "item"
+				}
+			]
+			title: "O Ovo que Brota"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Nêutrons, cristais instáveis, draconium desperto e o espírito"
+				"§7de algo que provavelmente não deveria ter sido colhido — as"
+				"§7quatro colheitas mais estranhas do mod, todas na mesma fileira."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagradditions:neutronium_essence"
+			id: "51C323B8A6D548FA"
+			rewards: [
+				{
+					count: 2
+					id: "0D2348A18B3A3B68"
+					item: "mysticalagradditions:neutronium_essence"
+					type: "item"
+				}
+				{
+					id: "2E91D59EDA63177E"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "0FFE80B293E01B7A"
+					item: "mysticalagradditions:neutronium_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "14EE7728620CD827"
+					item: "mysticalagradditions:nitro_crystal_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "261281890732E93D"
+					item: "mysticalagradditions:awakened_draconium_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1A71C5E483083EBC"
+					item: "mysticalagradditions:gaia_spirit_seeds"
+					type: "item"
+				}
+			]
+			title: "Culturas Impossíveis"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Quando Supremium deixa de ser suficiente, alguém decide que"
+				"§7precisa existir um tier acima — e chama de Insanium sem"
+				"§7nenhuma ironia. Justo, considerando o que custa chegar até aqui."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagradditions:insanium_ingot"
+			id: "5F8789FB399E717F"
+			rewards: [
+				{
+					id: "04F5F33D69698F05"
+					item: "mysticalagradditions:insanium_gemstone"
+					type: "item"
+				}
+				{
+					id: "1F13E34B93193CBA"
+					type: "xp"
+					xp: 900
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "4B8301342C2E57B4"
+					item: "mysticalagradditions:insanium_essence"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "70009E1CDE788B8B"
+					item: "mysticalagradditions:insanium_ingot"
+					type: "item"
+				}
+			]
+			title: "Insanium: Além do Supremium"
+			x: 0.0d
+			y: -2.5d
 		}
 	]
-	title: "§aSistemas Especializados"
+	title: "§aA Colheita Impossível"
 }

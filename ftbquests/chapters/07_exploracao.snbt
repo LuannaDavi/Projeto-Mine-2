@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "07_exploracao"
 	group: "7AE9512640318D11"
@@ -9,6 +9,34 @@
 	quests: [
 		{
 			description: [
+				"§7Estruturas escondidas, pesca lendária, ruínas de todo tipo de bioma — o mundo é maior do que parece."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Map."
+			]
+			icon: "minecraft:map"
+			id: "07B3BCD271AE7863"
+			rewards: [{
+				id: "6B2DF8766C2BBEA7"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "054A347FD5118EAB"
+				item: "minecraft:map"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
 				"§7Você está no centro de um mundo que não conhece seus limites."
 				"§7Mais de §e80 biomas§7, centenas de estruturas e dungeons"
 				"§7esperam por quem tiver coragem de ir além do spawn."
@@ -16,12 +44,13 @@
 				"§eCrie uma §eExplorer's Compass §7— ela aponta para"
 				"§7estruturas específicas que você escolher."
 				""
-				"§6Dica: §7§eJourneyMap §7mapeia tudo enquanto você explora."
+				"§6Dica: §7Seu mapa registra tudo enquanto você explora."
 				"§7Marque waypoints dos lugares que quiser revisitar."
 				"§7JourneyMap + Explorer's Compass = nenhuma estrutura fica pra trás."
 				""
 				"§8§o(A bússola não aponta pra casa. Isso é proposital.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "explorerscompass:explorerscompass"
@@ -42,6 +71,7 @@
 				}
 			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "2B00000000000006"
 				item: {
@@ -53,9 +83,10 @@
 			}]
 			title: "O Mundo Chama"
 			x: 0.0d
-			y: 0.0d
+			y: -18.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Oh The Biomes We've Gone adiciona mais de 80 biomas novos."
 				"§7Cada um tem flora, fauna e recursos exclusivos."
@@ -66,6 +97,7 @@
 				"§6Dica: §7A §eNature's Compass §7aponta para qualquer bioma!"
 				"§7Procure por florestas de bambu, desertos de sal, florestas de cereja..."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:sunflower"
 			id: "2B00000000000007"
 			rewards: [
@@ -86,19 +118,21 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
-				advancement: "biomeswevegone:adventure/true_traveler"
+				advancement: "biomeswevegone:biomeswevegone/adventure/true_traveler"
 				criterion: ""
 				id: "2B0000000000000B"
 				type: "advancement"
 			}]
 			title: "Colecionador de Paisagens"
-			x: 2.0d
-			y: 0.0d
+			x: -3.5d
+			y: -8.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eDungeons Arise §7não brinca. As masmorras são enormes,"
+				"§7As masmorras por aqui não brincam. São enormes,"
 				"§7cheias de armadilhas e habitadas por mobs modificados."
 				"§7Mas os baús dentro delas têm itens que você não"
 				"§7vai encontrar em mais lugar nenhum."
@@ -109,6 +143,7 @@
 				"§6Dica: §7Não entre com pressa. Explore cada corredor."
 				"§7Armadilhas de pressão e spawners escondidos matam os impacientes."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:hopper_minecart"
 			id: "2B0000000000000C"
 			rewards: [
@@ -119,9 +154,17 @@
 					type: "item"
 				}
 				{
-					count: 2
 					id: "2B0000000000000E"
-					item: "artifacts:golden_hook"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -130,6 +173,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "dungeons_arise:find_mining_system"
 				criterion: "location0"
@@ -137,12 +181,13 @@
 				type: "advancement"
 			}]
 			title: "Saquear as Profundezas"
-			x: 4.0d
-			y: 0.0d
+			x: -12.5d
+			y: -12.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eDungeons Arise §7gera dezenas de estruturas únicas —"
+				"§7Existem dezenas de estruturas únicas geradas pelo mundo —"
 				"§7do §eShinobi Thieves §7escondido em bambuzal até o"
 				"§7imponente §eShiraz Palace §7nas savanas e o"
 				"§eColiseum §7de pedra nos desertos."
@@ -153,6 +198,7 @@
 				"§6Dica: §7Explorer's Compass aponta para estruturas próximas."
 				"§7Leve escadas — muitas estruturas têm vários andares!"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:chiseled_stone_bricks"
 			id: "2B00000000000301"
 			rewards: [
@@ -165,7 +211,44 @@
 				{
 					count: 3
 					id: "2B00000000000303"
-					item: "minecraft:enchanted_book"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27CE6BE2D646A3E8"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:protection"
+								lvl: 4
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03B3E7A7624880B9"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sweeping"
+								lvl: 3
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -174,6 +257,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "dungeons_arise:find_shiraz_palace"
 				criterion: "location0"
@@ -181,10 +265,11 @@
 				type: "advancement"
 			}]
 			title: "Palácios e Arenas"
-			x: 6.0d
-			y: 0.0d
+			x: -8.5d
+			y: -3.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Outposts de Pillagers são estruturas vanilla — torres de madeira"
 				"§7guardadas por Pillagers e um Capitão de Raid especial, que"
@@ -196,6 +281,7 @@
 				"§6Dica: §7Pillagers atiram à distância — avance em zigue-zague"
 				"§7ou use escudo. A bandeira dele é um troféu decorativo!"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:stone_bricks"
 			id: "2B00000000000011"
 			rewards: [
@@ -222,16 +308,64 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B00000000000015"
-				item: "minecraft:ominous_banner"
+				item: {
+					Count: 1
+					id: "minecraft:white_banner"
+					tag: {
+						BlockEntityTag: {
+							Patterns: [
+								{
+									Color: 9
+									Pattern: "mr"
+								}
+								{
+									Color: 8
+									Pattern: "bs"
+								}
+								{
+									Color: 7
+									Pattern: "cs"
+								}
+								{
+									Color: 8
+									Pattern: "bo"
+								}
+								{
+									Color: 15
+									Pattern: "ms"
+								}
+								{
+									Color: 8
+									Pattern: "hh"
+								}
+								{
+									Color: 8
+									Pattern: "mc"
+								}
+								{
+									Color: 15
+									Pattern: "bo"
+								}
+							]
+							id: "minecraft:banner"
+						}
+						HideFlags: 32
+						display: {
+							Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
+						}
+					}
+				}
 				type: "item"
 			}]
 			title: "Sentinela das Fronteiras"
-			x: 8.0d
+			x: -18.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Existem ruínas e estruturas escondidas nos oceanos."
 				"§7Ship wrecks, templos aquáticos e ilhas perdidas"
@@ -242,6 +376,7 @@
 				""
 				"§6Dica: §7Poções de Respiração Aquática e Visão Noturna são essenciais!"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:prismarine_crystals"
 			id: "2B0000000000001B"
 			rewards: [
@@ -263,33 +398,60 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B0000000000001F"
 				item: "minecraft:sponge"
 				type: "item"
 			}]
 			title: "Profundezas do Mar"
-			x: 10.0d
-			y: 0.0d
+			x: -8.5d
+			y: 3.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7Repurposed Structures reimagina estruturas do vanilla e as"
-				"§7distribui por biomas onde normalmente não aparecem."
-				"§7Uma fortaleza do Nether pode aparecer na floresta!"
+				"§7Estruturas comuns foram reimaginadas e espalhadas por"
+				"§7biomas onde normalmente não apareceriam."
+				"§7Uma Woodland Mansion pode aparecer bem longe da floresta!"
 				""
-				"§eEncontre uma estrutura incomum em um bioma inesperado e"
-				"§etraga um item valioso de dentro dela."
+				"§ePise dentro de uma Woodland Mansion reimaginada."
 				""
 				"§6Dica: §7Olhe ao redor enquanto explora — elas são grandes!"
+				"§7Se a task não completar ao entrar, o mod pode ter mudado"
+				"§7a tag de estrutura entre versões."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:trapped_chest"
 			id: "2B00000000000020"
 			rewards: [
 				{
 					count: 3
 					id: "2B00000000000021"
-					item: "minecraft:enchanted_book"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:looting"
+								lvl: 3
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AE60D9C7B415F82"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 4
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -298,16 +460,18 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B00000000000023"
-				item: "minecraft:golden_apple"
-				type: "item"
+				structure: "#repurposed_structures:collections/mansions"
+				type: "structure"
 			}]
 			title: "Estruturas Redescobertas"
-			x: 12.0d
-			y: 0.0d
+			x: -12.5d
+			y: 12.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Waystones são pedras mágicas que permitem teletransporte instantâneo."
 				"§7Você pode ativar pedras encontradas no mundo ou criar as suas."
@@ -318,6 +482,7 @@
 				"§7o jogo não confere quantas você já achou, mas seu futuro eu agradece."
 				"§7Waystones em aldeias costumam estar na praça central!"
 			]
+			hide_until_deps_complete: true
 			icon: "waystones:waystone"
 			id: "2B00000000000024"
 			rewards: [
@@ -338,16 +503,18 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B00000000000028"
 				item: "waystones:waystone"
 				type: "item"
 			}]
 			title: "Rede de Teletransporte"
-			x: 14.0d
-			y: 0.0d
+			x: -3.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Naufrágios guardam os melhores mapas do jogo."
 				"§7Siga o mapa e cave até encontrar um baú enterrado —"
@@ -361,6 +528,7 @@
 				""
 				"§8§o(O X nunca marca o lugar exato. Sempre foi assim.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:map"
 			id: "2B00000000000029"
 			rewards: [
@@ -381,6 +549,7 @@
 					xp: 350
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B0000000000002D"
 				item: "minecraft:heart_of_the_sea"
@@ -388,9 +557,10 @@
 			}]
 			title: "Caçador de Tesouros"
 			x: 0.0d
-			y: 4.0d
+			y: 18.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Mineshafts, ruínas subterrâneas e cavernas profundas"
 				"§7escondem minérios raros e baús preciosos."
@@ -400,6 +570,7 @@
 				"§6Dica: §7Tochas ajudam a não se perder nas minas!"
 				"§7Leve comida extra — é fácil ficar preso."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:rail"
 			id: "2B00000000000038"
 			rewards: [
@@ -421,16 +592,18 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B0000000000003C"
 				item: "minecraft:name_tag"
 				type: "item"
 			}]
 			title: "Minas Abandonadas"
-			x: 2.0d
-			y: 4.0d
+			x: 3.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7As antigas pirâmides do deserto escondem"
 				"§7armadilhas mortais e baús com loot valioso."
@@ -441,13 +614,36 @@
 				"§6Dica: §7§cNUNCA §7pise nas placas de pressão!"
 				"§7Quebre o bloco embaixo delas para desarmá-las com segurança."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:sandstone"
 			id: "2B0000000000003D"
 			rewards: [
 				{
-					count: 2
 					id: "2B0000000000003E"
-					item: "minecraft:enchanted_book"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 4
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CE81B4A9036D2F7"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 4
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -462,18 +658,21 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [{
+				advancement: "repurposed_structures:pyramids"
+				criterion: ""
 				id: "2B00000000000041"
-				item: "minecraft:tnt"
-				type: "item"
+				type: "advancement"
 			}]
 			title: "Relíquias do Deserto"
-			x: 4.0d
-			y: 4.0d
+			x: 12.5d
+			y: 12.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eImmersive Aircraft §7coloca nas suas mãos biplanos e"
+				"§7Dá pra pilotar biplanos e"
 				"§7girodinos construíveis — mais rápidos que Elytra, capazes"
 				"§7de carregar passageiros."
 				""
@@ -482,6 +681,7 @@
 				"§6Dica: §7Aeronaves usam combustível — leve carvão."
 				"§7A vista lá de cima compensa cada recurso gasto."
 			]
+			hide_until_deps_complete: true
 			icon: "immersive_aircraft:biplane"
 			id: "2B00000000000042"
 			rewards: [
@@ -498,21 +698,33 @@
 					type: "item"
 				}
 				{
+					id: "3E8A72D0C6B9F154"
+					item: "immersive_aircraft:enhanced_propeller"
+					type: "item"
+				}
+				{
+					id: "1EB828A2D15FEBCB"
+					item: "immersive_aircraft:improved_landing_gear"
+					type: "item"
+				}
+				{
 					id: "2B00000000000045"
 					type: "xp"
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B00000000000046"
 				item: "immersive_aircraft:biplane"
 				type: "item"
 			}]
 			title: "Conquistador dos Céus"
-			x: 6.0d
-			y: 4.0d
+			x: 8.5d
+			y: 3.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Com sua aeronave, você pode explorar o mundo"
 				"§7em escala muito maior em pouco tempo."
@@ -523,6 +735,7 @@
 				"§6Dica: §7Biomas raros costumam estar longe da geração inicial."
 				"§7Voe para longe do spawn — pelo menos 3000 blocos!"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:filled_map"
 			id: "2B00000000000047"
 			rewards: [
@@ -543,6 +756,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:adventure/adventuring_time"
 				criterion: ""
@@ -550,10 +764,11 @@
 				type: "advancement"
 			}]
 			title: "Cartógrafo do Mundo"
-			x: 8.0d
-			y: 4.0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7The Graveyard adiciona cemitérios góticos com mortos-vivos"
 				"§7especiais e estruturas únicas como criptas e mausoléus."
@@ -564,13 +779,23 @@
 				"§6Dica: §7Mobs do Graveyard são resistentes ao fogo!"
 				"§7Leve flechas envenenadas ou espada encantada."
 			]
+			hide_until_deps_complete: true
 			icon: "graveyard:deepslate_gravestone"
 			id: "2B0000000000004C"
 			rewards: [
 				{
 					count: 3
 					id: "2B0000000000004D"
-					item: "minecraft:enchanted_book"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:smite"
+								lvl: 5
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -584,6 +809,7 @@
 					xp: 450
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 3L
 				id: "2B00000000000050"
@@ -591,10 +817,11 @@
 				type: "item"
 			}]
 			title: "Entre os Mortos"
-			x: 10.0d
-			y: 4.0d
+			x: 8.5d
+			y: -3.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7O §eThe Graveyard §7não é só estrutura — tem bosses. O Ghoul"
 				"§7e o Nightmare guardam cemitérios maiores. O §eLich §7(\"Corrupted"
@@ -607,6 +834,7 @@
 				"§6Dica: §7Ele muda de forma 2 vezes durante a luta — cada fase"
 				"§7é mais perigosa. Guarde poções de cura pra fase final."
 			]
+			hide_until_deps_complete: true
 			icon: "graveyard:dark_iron_ingot"
 			id: "2B00000000000401"
 			rewards: [
@@ -628,6 +856,7 @@
 					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				entity: "graveyard:lich"
 				id: "464DB78085637BCC"
@@ -635,12 +864,282 @@
 				value: 1L
 			}]
 			title: "O Lich do Cemitério"
-			x: 12.0d
-			y: 4.0d
+			x: 12.5d
+			y: -12.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eTide §7reinventa a pesca por completo — centenas de"
+				"§7Cinco cajados de osso, cada um com nome e maldição"
+				"§7próprios: Zatraq'gul, Nortoq'gul, Mynakta'gul, Xaphnok'gul"
+				"§7e Azrata'gul. Nenhum deles é fácil de conseguir."
+				""
+				"§eColete os 5 cajados nomeados: Staff of Zatraq'gul, Staff"
+				"§eof Nortoq'gul, Staff of Mynakta'gul, Staff of Xaphnok'gul"
+				"§ee Staff of Azrata'gul."
+				""
+				"§8§o(Cinco cajados amaldiçoados com nomes que ninguém"
+				"§8§oconsegue pronunciar de primeira. Nem o segundo.)"
+			]
+			hide_until_deps_complete: true
+			icon: "graveyard:black_bone_staff"
+			id: "12CD37B9A92019AB"
+			rewards: [
+				{
+					count: 8
+					id: "31DF21F547DFD4A0"
+					item: "graveyard:dark_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "7FE03FF522565A16"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3E16530085FEE35C"
+					item: "graveyard:white_bone_staff"
+					type: "item"
+				}
+				{
+					id: "065866EF3AFFDAB0"
+					item: "graveyard:black_bone_staff"
+					type: "item"
+				}
+				{
+					id: "57868DF323E305DE"
+					item: "graveyard:cyan_bone_staff"
+					type: "item"
+				}
+				{
+					id: "56A8BC7885342090"
+					item: "graveyard:purple_bone_staff"
+					type: "item"
+				}
+				{
+					id: "1518BD81D6420DE7"
+					item: "graveyard:red_bone_staff"
+					type: "item"
+				}
+			]
+			title: "§5§lOs Cajados Amaldiçoados"
+			x: 3.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Nem todo cemitério por aqui é igual. Existem versões"
+				"§7médias, grandes, adaptadas pro deserto, e até uma casa"
+				"§7mal-assombrada inteira escondida por aí."
+				""
+				"§eEncontre um Medium Graveyard, um Large Graveyard, um"
+				"§eDesert Graveyard, uma Haunted House, uma Dead Tree e"
+				"§eum Giant Mushroom corrompido."
+			]
+			hide_until_deps_complete: true
+			icon: "graveyard:dark_iron_ingot"
+			id: "1A539D38A9617D7C"
+			rewards: [
+				{
+					count: 8
+					id: "3507384104E92077"
+					item: "minecraft:soul_torch"
+					type: "item"
+				}
+				{
+					id: "3320BDA6BC737BAD"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "graveyard:graveyard/medium_graveyard"
+					criterion: ""
+					id: "27AF45AF026828AA"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/large_graveyard"
+					criterion: ""
+					id: "52DF0FA5F122CC8A"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/desert_graveyard"
+					criterion: ""
+					id: "4882B999038BE5A4"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/haunted_house"
+					criterion: ""
+					id: "0872D8623649E28A"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/dead_tree"
+					criterion: ""
+					id: "6F0D844E49B69E14"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/giant_mushroom"
+					criterion: ""
+					id: "7B49C1BAFCB1D6FE"
+					type: "advancement"
+				}
+			]
+			title: "Cemitérios Crescentes"
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Sobreviver nesses arredores exige mais que força bruta —"
+				"§7esqueletos escondidos, caixões amaldiçoados e frascos de"
+				"§7sangue fazem parte do trabalho."
+				""
+				"§eEncontre um esqueleto escondido, crie um caixão, equipe"
+				"§eum Ghouling Coffin, obtenha um Vial of Blood, e encontre"
+				"§ea fonte da corrupção do cemitério."
+			]
+			hide_until_deps_complete: true
+			icon: "graveyard:vial_of_blood"
+			id: "02BF69709BCFF210"
+			rewards: [
+				{
+					count: 16
+					id: "2B97E15C7EC0B4D7"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "0E9F8ECBB561DE69"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "graveyard:graveyard/find_skeleton"
+					criterion: ""
+					id: "6E559EC79A475095"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/craft_coffin"
+					criterion: ""
+					id: "2571348913EED549"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/equip_ghouling_coffin"
+					criterion: ""
+					id: "02816C444085ECF6"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/vial_of_blood"
+					criterion: ""
+					id: "2EDA232B82A76796"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/corruption"
+					criterion: ""
+					id: "68242B7249292F45"
+					type: "advancement"
+				}
+			]
+			title: "Artefatos e Rituais Sombrios"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Wraiths cegam você antes de atacar, acólitos lutam com"
+				"§7adagas de osso, e uma horda inteira pode aparecer se você"
+				"§7não tomar cuidado."
+				""
+				"§eDerrote um Wraith, mate um inimigo enquanto estiver cego,"
+				"§ederrote um Acolyte com adaga de osso, e sobreviva a uma"
+				"§ehorda inteira."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "graveyard:bone_dagger"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "640FEE41A2BF0F52"
+			rewards: [
+				{
+					id: "6CE5BA71D4E0452C"
+					item: {
+						Count: 1
+						id: "graveyard:bone_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1AB227DCED900262"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "graveyard:graveyard/kill_wraith"
+					criterion: ""
+					id: "060D03A9A576CC21"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/kill_while_blinded"
+					criterion: ""
+					id: "2482874AB085594B"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/kill_acolyte_bone_dagger"
+					criterion: ""
+					id: "51364211AE064AB9"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/kill_horde"
+					criterion: ""
+					id: "07AAFE0BAF344184"
+					type: "advancement"
+				}
+			]
+			title: "Ameaças do Cemitério"
+			x: -4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7A pesca por aqui foi reinventada por completo — centenas de"
 				"§7peixes novos, varas especiais e uma bancada dedicada"
 				"§7só para o ofício de pescador."
 				""
@@ -650,6 +1149,7 @@
 				"§6Dica: §7Cada vara do Tide tem bônus diferentes!"
 				"§7A Midas Fishing Rod aumenta a chance de loot raro."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "tide:crystal_fishing_rod"
@@ -666,9 +1166,9 @@
 					type: "item"
 				}
 				{
-					count: 2
+					count: 4
 					id: "2B00000000000053"
-					item: "artifacts:golden_hook"
+					item: "minecraft:nautilus_shell"
 					type: "item"
 				}
 				{
@@ -677,6 +1177,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "2B00000000000055"
@@ -696,10 +1197,11 @@
 				}
 			]
 			title: "Os Sete Mares"
-			x: 14.0d
-			y: 4.0d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Você pode montar cavalos, lhamas e muito mais com §eSWEM§7."
 				"§7O mod adiciona mecânicas profundas de equitação e criação."
@@ -710,6 +1212,7 @@
 				"§7Cavalos de Blue Skies têm atributos diferentes — vale testar todos"
 				"§7antes de escolher seu parceiro de viagem definitivo."
 			]
+			hide_until_deps_complete: true
 			icon: "swem:adventure_saddle_sultan"
 			id: "2B00000000000056"
 			rewards: [
@@ -730,6 +1233,7 @@
 					xp: 350
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "2B0000000000005A"
@@ -743,12 +1247,13 @@
 				}
 			]
 			title: "Cavaleiro Errante"
-			x: 0.0d
-			y: 8.0d
+			x: -7.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eGrappling Hook §7é um gancho de escalada que"
+				"§7Existe um gancho de escalada que"
 				"§7transforma qualquer parede em superfície escalável —"
 				"§7basta lançar e voar."
 				""
@@ -760,6 +1265,7 @@
 				""
 				"§8§o(Elytras são elegantes. Gancho é prático. Você decide.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "grapplemod:grapplinghook"
@@ -771,7 +1277,7 @@
 			rewards: [
 				{
 					id: "2B00000000000102"
-					item: "grapplemod:motorhook"
+					item: "grapplemod:motorupgradeitem"
 					type: "item"
 				}
 				{
@@ -780,6 +1286,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B00000000000104"
 				item: {
@@ -792,15 +1299,16 @@
 				type: "item"
 			}]
 			title: "Escalador de Montanhas"
-			x: 2.0d
-			y: 8.0d
+			x: -3.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eScannable §7adiciona um scanner que revela minérios e"
+				"§7Existe um scanner que revela minérios e"
 				"§7estruturas próximas sem precisar escavar no escuro."
 				""
-				"§7§eTraveler's Titles §7concede §lTítulos §r§7conforme você"
+				"§7Você ganha §lTítulos §r§7conforme"
 				"§7explora e completa feitos — eles aparecem acima da sua cabeça!"
 				""
 				"§eCrie uma §eLuneta §7e use-a para observar o horizonte"
@@ -809,6 +1317,7 @@
 				"§6Dica: §7Combine com o Scanner para localizar minérios"
 				"§7escondidos em cavernas antes de descer até elas!"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:spyglass"
 			id: "2B00000000000070"
 			rewards: [
@@ -830,29 +1339,37 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "2B00000000000074"
 				item: "minecraft:spyglass"
 				type: "item"
 			}]
 			title: "Olhos no Horizonte"
-			x: 4.0d
-			y: 8.0d
+			x: -5.0d
+			y: 5.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eEcologics §7adiciona coqueiros e praias de verdade —"
+				"§7Existem coqueiros e praias de verdade por aí —"
 				"§7porque toda ilha decente merece uma palmeira."
 				""
 				"§eColete um Coconut e uma Seashell."
 			]
+			hide_until_deps_complete: true
 			icon: "ecologics:coconut"
 			id: "20645A9C06C4DBFD"
 			rewards: [
 				{
-					count: 8
 					id: "1B8349E8AB534F7C"
-					item: "minecraft:kelp"
+					item: "ecologics:music_disc_coconut"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6D0A8C4F13E7B295"
+					item: "ecologics:tropical_stew"
 					type: "item"
 				}
 				{
@@ -861,6 +1378,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "608736A82F3DAD01"
@@ -874,10 +1392,11 @@
 				}
 			]
 			title: "Paraíso Tropical"
-			x: 14.0d
-			y: 10.0d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Chega de atravessar rio pisando em blocos soltos igual quem"
 				"§7não tem amor próprio. §eMacaw's Bridges §7traz pontes de verdade,"
@@ -885,6 +1404,7 @@
 				""
 				"§eConstrua uma Iron Bridge (ou de madeira, com Bridge Torch pra iluminar)."
 			]
+			hide_until_deps_complete: true
 			icon: "mcwbridges:iron_bridge"
 			id: "2AD4EE8A9E868F3F"
 			rewards: [
@@ -900,6 +1420,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "22F276304D51AD58"
@@ -913,16 +1434,18 @@
 				}
 			]
 			title: "Pontes Decentes"
-			x: 16.0d
-			y: 10.0d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Dormir enfiado num buraco de terra é sobrevivência."
 				"§7Ter um saco de dormir e uma churrasqueira é §eestilo§7."
 				""
 				"§eCrie um Sleeping Bag (qualquer cor) e um Grill."
 			]
+			hide_until_deps_complete: true
 			icon: "camping:sleeping_bag_blue"
 			id: "17B658ABFBDE5864"
 			rewards: [
@@ -937,6 +1460,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "02FC9DF5CF59BB65"
@@ -950,17 +1474,19 @@
 				}
 			]
 			title: "Acampamento de Verdade"
-			x: 18.0d
-			y: 10.0d
+			x: 1.5d
+			y: 3.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eOh The Biomes We've Gone §7é ridiculamente grande: mais de 90"
+				"§7Existem biomas demais pra contar: mais de 90"
 				"§7biomas novos, cada um com árvores, flores e blocos próprios."
 				"§7Isso é mais biomas do que o vanilla tem no total."
 				""
 				"§eColete saplings de 3 árvores exclusivas: Araucária, Baobá e Cipreste."
 			]
+			hide_until_deps_complete: true
 			icon: "biomeswevegone:araucaria_sapling"
 			id: "1DD8919D1C09A5F0"
 			rewards: [
@@ -976,6 +1502,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "6F30C79109D5CB3A"
@@ -994,16 +1521,18 @@
 				}
 			]
 			title: "Um Mundo de Biomas"
-			x: 16.0d
-			y: 12.0d
+			x: 5.0d
+			y: 5.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Alguém catalogou aloé vera, amaranto e angélica só pra"
 				"§7deixar seu inventário parecendo uma farmácia medieval."
 				""
 				"§eColha Aloe Vera e Amaranth."
 			]
+			hide_until_deps_complete: true
 			icon: "biomeswevegone:aloe_vera"
 			id: "4BB80F843B2C07AE"
 			rewards: [
@@ -1019,6 +1548,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "322CC53DC59B8A5F"
@@ -1032,16 +1562,18 @@
 				}
 			]
 			title: "Herbário Impossível"
-			x: 18.0d
-			y: 12.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Uma boa fazenda de cavalos precisa de mais que um cercado."
-				"§7§eSWEM §7traz baias, celeiros de grão e tudo mais."
+				"§7Existem baias, celeiros de grão e tudo mais por aí."
 				""
 				"§eConstrua uma Stall Door e um Grain Bin (qualquer madeira)."
 			]
+			hide_until_deps_complete: true
 			icon: "swem:acacia_stall_horse"
 			id: "7DAEDB761BEA0365"
 			rewards: [
@@ -1057,6 +1589,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "45B425F942977AC4"
@@ -1070,10 +1603,11 @@
 				}
 			]
 			title: "Estábulo Completo"
-			x: 20.0d
-			y: 12.0d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Voar de Elytra é pra amador. §eImmersive Aircraft §7te dá"
 				"§7biplanos, zepelins e helicópteros de verdade pra pilotar."
@@ -1081,6 +1615,7 @@
 				"§eProduza Hull, Engine e Propeller — as 3 peças centrais de"
 				"§equalquer aeronave."
 			]
+			hide_until_deps_complete: true
 			icon: "immersive_aircraft:hull"
 			id: "321A62663BAC3687"
 			rewards: [
@@ -1096,6 +1631,7 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "54194AA8A66A66F6"
@@ -1114,16 +1650,18 @@
 				}
 			]
 			title: "Peças de Aeronave"
-			x: 22.0d
-			y: 12.0d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eTide §7reformula a pesca inteira: mais de 100 peixes novos,"
+				"§7A pesca foi reformulada por inteiro: mais de 100 peixes novos,"
 				"§7cada um pescável com equipamento específico."
 				""
 				"§eConstrua uma Angling Table e um Fish Display."
 			]
+			hide_until_deps_complete: true
 			icon: "tide:fish_display"
 			id: "01B0F18C0BDA7B40"
 			rewards: [
@@ -1144,6 +1682,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "7E89365C59528CA7"
@@ -1157,17 +1696,19 @@
 				}
 			]
 			title: "Aquário do Pescador"
-			x: 24.0d
-			y: 12.0d
+			x: 5.0d
+			y: -5.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eMan of Many Planes §7traz aviões montáveis de verdade —"
+				"§7Existem aviões montáveis de verdade por aí —"
 				"§7desde biplanos vermelhos até modelos econômicos que"
 				"§7mal ficam no ar (mas ficam)."
 				""
 				"§eConstrua um Scarlet Biplane ou um Economy Plane."
 			]
+			hide_until_deps_complete: true
 			icon: "man_of_many_planes:scarlet_biplane"
 			id: "0D0BF2F72822BF42"
 			rewards: [
@@ -1183,28 +1724,37 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3E5B3A7FEB823F38"
 				item: "man_of_many_planes:scarlet_biplane"
 				type: "item"
 			}]
 			title: "Aviador Amador"
-			x: 26.0d
-			y: 10.0d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Uma barraca de verdade é bem melhor que dormir a céu"
 				"§7aberto torcendo pra não aparecer um Creeper."
 				""
 				"§eMonte uma Tent de qualquer cor."
 			]
+			hide_until_deps_complete: true
 			icon: "camping:tent_black"
 			id: "799E9D909D6DF9E7"
 			rewards: [
 				{
 					id: "4A76DB262D8F187F"
-					item: "camping:large_backpack"
+					item: "camping:sleeping_bag_green"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3F518A571061EE82"
+					item: "camping:marshmallow_on_a_stick"
 					type: "item"
 				}
 				{
@@ -1213,23 +1763,176 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "50CF896C3985C147"
 				item: "camping:tent_black"
 				type: "item"
 			}]
 			title: "Base Avançada"
-			x: 28.0d
-			y: 12.0d
+			x: 0.0d
+			y: -16.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
-				"§7§eWhen Dungeons Arise §7escondeu uma referência a Typhon,"
+				"§7Um saco de dormir e uma barraca resolvem o acampamento —"
+				"§7mas carregar tralha de um jeito prático é outra história."
+				"§7Cada mochila tem seu próprio truque: uma nunca perde"
+				"§7durabilidade, outra guarda um pedaço do End dentro dela."
+				""
+				"§eConsiga: Bundle, Enderbag, Enderpack, Small Backpack,"
+				"§eWanderer Backpack, e tenha todas as mochilas ao mesmo tempo."
+			]
+			hide_until_deps_complete: true
+			icon: "camping:small_backpack"
+			id: "6A2387FB4F112C08"
+			rewards: [
+				{
+					id: "2C4C320D4A8F9D5E"
+					item: "camping:large_backpack"
+					type: "item"
+				}
+				{
+					id: "4D8B72E1C935A06F"
+					item: "camping:goodybag"
+					type: "item"
+				}
+				{
+					id: "157D41EE7D4BD76A"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "camping:main/get_a_bundle"
+					criterion: ""
+					id: "64BC4C0EE5D4238F"
+					type: "advancement"
+				}
+				{
+					advancement: "camping:main/get_a_enderbag"
+					criterion: ""
+					id: "293E732A9D62BE44"
+					type: "advancement"
+				}
+				{
+					advancement: "camping:main/get_a_enderpack"
+					criterion: ""
+					id: "68967A3214485874"
+					type: "advancement"
+				}
+				{
+					advancement: "camping:main/get_a_small_backpack"
+					criterion: ""
+					id: "7E51DB90106A62CF"
+					type: "advancement"
+				}
+				{
+					advancement: "camping:main/get_a_wanderer_backpack"
+					criterion: ""
+					id: "063BC08025BEAE6C"
+					type: "advancement"
+				}
+				{
+					advancement: "camping:main/get_all_backpacks"
+					criterion: ""
+					id: "6201E49BB2476E12"
+					type: "advancement"
+				}
+			]
+			title: "Mochilas pra Todo Gosto"
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Um bom multitool substitui meia caixa de ferramentas —"
+				"§7e até serve pra tosquiar ovelha na emergência. A Sheepbag,"
+				"§7feita de lã de verdade, é prova disso."
+				""
+				"§eConsiga um Multitool, use ele numa ovelha, consiga uma"
+				"§eSheepbag, e asse um bife na grelha."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "camping:multitool"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "662AF4CFC39AD769"
+			rewards: [
+				{
+					count: 8
+					id: "2CD8854D01BADC96"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "2F6C8A1D93E5B074"
+					item: {
+						Count: 1
+						id: "camping:walking_stick"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E91D9CA637DECB3"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "camping:main/get_a_multitool"
+					criterion: ""
+					id: "2502D88B67994057"
+					type: "advancement"
+				}
+				{
+					advancement: "camping:main/use_multitool_on_sheep"
+					criterion: ""
+					id: "326A3592F3BB62AA"
+					type: "advancement"
+				}
+				{
+					advancement: "camping:main/get_a_sheepbag"
+					criterion: ""
+					id: "43378CD5EC3A4D39"
+					type: "advancement"
+				}
+				{
+					advancement: "camping:main/use_beef_on_grill"
+					criterion: ""
+					id: "72328857D32DF3BE"
+					type: "advancement"
+				}
+			]
+			title: "Ferramentas de Trilha"
+			x: -11.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Alguém escondeu uma referência a Typhon por aí,"
 				"§7o titã mais mortal da mitologia grega, numa estrutura"
 				"§7oceânica gigantesca."
 				""
 				"§eEncontre a estrutura de Typhon."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:trident"
@@ -1261,6 +1964,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "dungeons_arise:find_typhon"
 				criterion: "location0"
@@ -1268,16 +1972,18 @@
 				type: "advancement"
 			}]
 			title: "A Fera de Typhon"
-			x: 30.0d
-			y: 12.0d
+			x: -7.0d
+			y: -3.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Arenas de combate abandonadas, ecoando lutas que já"
 				"§7aconteceram há muito tempo. Perigosas, mas ricas em loot."
 				""
 				"§eEncontre o Coliseu do When Dungeons Arise."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:shield"
@@ -1304,6 +2010,7 @@
 					xp: 450
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "dungeons_arise:find_coliseum"
 				criterion: "location0"
@@ -1311,10 +2018,11 @@
 				type: "advancement"
 			}]
 			title: "O Coliseu Perdido"
-			x: 32.0d
-			y: 12.0d
+			x: -16.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["07B3BCD271AE7863"]
 			description: [
 				"§7Explorar sem rede de transporte e sem espaço de carga"
 				"§7é sofrimento. Waystones resolvem o transporte —"
@@ -1325,6 +2033,7 @@
 				"§6Dica: §7Combine com Sophisticated Backpacks pra ter mochilas"
 				"§7dedicadas: uma pra minério, outra pra comida, outra pra loot."
 			]
+			hide_until_deps_complete: true
 			icon: "travelersbackpack:standard"
 			id: "6A1A5E331BE801E7"
 			rewards: [
@@ -1340,6 +2049,7 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "2DB1412088D73605"
@@ -1353,8 +2063,789 @@
 				}
 			]
 			title: "Explorador Preparado"
-			x: 34.0d
-			y: 10.0d
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Dezenas de biomas novos surgiram no Overworld — cada um"
+				"§7com sua própria vida, estruturas"
+				"§7e vilarejos."
+				""
+				"§eExplore todos esses biomas novos, encontre todas as Prairie"
+				"§eHouses, e encontre todas as vilas habitadas do mod."
+			]
+			hide_until_deps_complete: true
+			icon: "biomeswevegone:blueberry_bush"
+			id: "05EF234DE68429D6"
+			rewards: [
+				{
+					count: 4
+					id: "6AD369D5DF7F2C33"
+					item: "minecraft:map"
+					type: "item"
+				}
+				{
+					id: "798F5345B57C8EA3"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "biomeswevegone:biomeswevegone/adventure/oh_the_biomes_weve_gone"
+					criterion: ""
+					id: "030DF47590181CAE"
+					type: "advancement"
+				}
+				{
+					advancement: "biomeswevegone:biomeswevegone/adventure/little_house_on_the_prairie"
+					criterion: ""
+					id: "24D867427F11EF97"
+					type: "advancement"
+				}
+				{
+					advancement: "biomeswevegone:biomeswevegone/adventure/true_traveler"
+					criterion: ""
+					id: "7C005A4B33F86232"
+					type: "advancement"
+				}
+			]
+			title: "Explore os Biomas Perdidos"
+			x: -11.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Cada bioma novo trouxe sua própria comida — mirtilos,"
+				"§7chapéus de cogumelo puffball, e até uma maçã verde"
+				"§7cultivada só no Skyris Vale."
+				""
+				"§eColete Blueberries, White Puffball Caps, uma Green Apple"
+				"§edo Skyris Vale, encontre as 3 maçãs do mod, e asse as"
+				"§eduas tortas do BWG."
+			]
+			hide_until_deps_complete: true
+			icon: "biomeswevegone:blueberry_pie"
+			id: "5D6D7D50D7AC0228"
+			rewards: [
+				{
+					count: 8
+					id: "403BC81D2500BAC2"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "097BA867A5209305"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "biomeswevegone:biomeswevegone/husbandry/berrily_alive"
+					criterion: ""
+					id: "72FA40D1A91D3396"
+					type: "advancement"
+				}
+				{
+					advancement: "biomeswevegone:biomeswevegone/husbandry/forager"
+					criterion: ""
+					id: "5FFEA47C5551AC5D"
+					type: "advancement"
+				}
+				{
+					advancement: "biomeswevegone:biomeswevegone/husbandry/granny_smith"
+					criterion: ""
+					id: "76A949E79571A45E"
+					type: "advancement"
+				}
+				{
+					advancement: "biomeswevegone:biomeswevegone/husbandry/johnny_appleseed"
+					criterion: ""
+					id: "53C204980C539DF5"
+					type: "advancement"
+				}
+				{
+					advancement: "biomeswevegone:biomeswevegone/husbandry/just_like_grandmas"
+					criterion: ""
+					id: "304D749C8D45B291"
+					type: "advancement"
+				}
+			]
+			title: "Sabores Esquecidos"
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Nem tudo em biomas novos é bonito — areia movediça de"
+				"§7verdade te puxa pra baixo, e cozinhar uma Cattail no"
+				"§7fogo não é tão inofensivo quanto parece."
+				""
+				"§eCaia numa quicksand, cozinhe uma Cattail numa fogueira"
+				"§e(com cuidado), e encontre o disco de música Pixie Club."
+				""
+				"§6Dica: §7O próprio mod avisa: se afaste depois de botar"
+				"§7a Cattail no fogo."
+				""
+				"§8§o(Uma planta aquática que explode quando assada."
+				"§8§oA botânica desse mod tem prioridades estranhas.)"
+			]
+			hide_until_deps_complete: true
+			icon: "biomeswevegone:cattail"
+			id: "1A4E55FDC356297A"
+			rewards: [
+				{
+					id: "142162CC90DB37A8"
+					item: "minecraft:music_disc_pigstep"
+					type: "item"
+				}
+				{
+					id: "635E9E9958A53574"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "biomeswevegone:biomeswevegone/adventure/inside_quicksand"
+					criterion: ""
+					id: "78F5EEA6FC8682FD"
+					type: "advancement"
+				}
+				{
+					advancement: "biomeswevegone:biomeswevegone/husbandry/hot_diggity_not_dog"
+					criterion: ""
+					id: "4437B38D244BC0D4"
+					type: "advancement"
+				}
+				{
+					advancement: "biomeswevegone:biomeswevegone/adventure/forgotten_fae"
+					criterion: ""
+					id: "7BA4E9BB1ABC36A6"
+					type: "advancement"
+				}
+			]
+			title: "Perigos e Curiosidades"
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7A pesca por aqui foi reconstruída do zero — mais de 100"
+				"§7espécies de"
+				"§7peixe espalhadas por todos os biomas e dimensões, cada uma"
+				"§7registrada num diário de pesca próprio."
+				""
+				"§eConsiga isca de pesca (fish bait) e comece seu diário."
+			]
+			hide_until_deps_complete: true
+			icon: "tide:bait"
+			id: "4240DC2132303E9A"
+			rewards: [
+				{
+					id: "13F4DA79DD17C619"
+					item: {
+						Count: 1
+						id: "tide:iron_fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7613044C6D04D6FD"
+					item: "tide:bait"
+					type: "item"
+				}
+				{
+					id: "113CB14BCC33EDD5"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "tide:get_bait"
+				criterion: ""
+				id: "12C5E038556566AB"
+				type: "advancement"
+			}]
+			title: "Primeira Pescaria"
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Nem toda pescaria acontece num lago tranquilo. Dá pra"
+				"§7pescar em lugares que nenhum peixe deveria existir"
+				"§7— lava e até o vazio do mundo."
+				""
+				"§ePesque na lava, pesque no vazio, e puxe um caixote"
+				"§epescando (em vez de um peixe)."
+			]
+			hide_until_deps_complete: true
+			icon: "tide:fishing_journal"
+			id: "584579355921B905"
+			rewards: [
+				{
+					id: "09D2E79E4539BCAA"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "6B4F82E0D9C3157A"
+					item: "tide:lavaproof_hook"
+					type: "item"
+				}
+				{
+					id: "0815B1A07DF5CC85"
+					item: "tide:void_hook"
+					type: "item"
+				}
+				{
+					id: "6169E6748D9B923D"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tide:fish_in_lava"
+					criterion: ""
+					id: "18DAA0B161C87364"
+					type: "advancement"
+				}
+				{
+					advancement: "tide:fish_in_void"
+					criterion: ""
+					id: "7212909C6CD79F55"
+					type: "advancement"
+				}
+				{
+					advancement: "tide:pull_crate"
+					criterion: ""
+					id: "321DFB78983D543D"
+					type: "advancement"
+				}
+			]
+			title: "Pesca Fora do Comum"
+			x: 11.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Cada vara de pesca tem sua própria vantagem —"
+				"§7velocidade, sorte, alcance. Um pescador completo tem"
+				"§7todas guardadas."
+				""
+				"§eConsiga todos os tipos de vara de pesca do mod."
+			]
+			hide_until_deps_complete: true
+			icon: "tide:bait"
+			id: "158A53446D2A142A"
+			rewards: [
+				{
+					id: "393470B66F52B8B7"
+					item: "tide:diamond_line"
+					type: "item"
+				}
+				{
+					id: "7A5C0E4913F86D2B"
+					item: "tide:golden_line"
+					type: "item"
+				}
+				{
+					id: "108391E00243382A"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "tide:all_fishing_rods"
+				criterion: ""
+				id: "2D42896F6F0E38F0"
+				type: "advancement"
+			}]
+			title: "Arsenal de Varas"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Nem todo peixe raro precisa ser mantido no aquário. O"
+				"§7Devils Hole Pupfish é uma espécie real, criticamente"
+				"§7ameaçada — dá pra devolvê-lo à natureza depois de pescar."
+				""
+				"§eDevolva um Devils Hole Pupfish à natureza depois de"
+				"§epescá-lo, e congele um Coelacanth com um Enchanted"
+				"§ePocket Watch."
+				""
+				"§8§o(Você congelou um peixe com um relógio. A física"
+				"§8§odesse modpack desistiu de fazer sentido páginas atrás.)"
+			]
+			hide_until_deps_complete: true
+			icon: "tide:devils_hole_pupfish_spawn_egg"
+			id: "2148B207112156E1"
+			rewards: [
+				{
+					id: "137B16EA0037A818"
+					item: "tide:fish_finder"
+					type: "item"
+				}
+				{
+					id: "3D82C9F6B4715A0E"
+					item: "tide:fishing_journal"
+					type: "item"
+				}
+				{
+					id: "091CD71D4D8C2FB4"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tide:release_pupfish"
+					criterion: ""
+					id: "777ED3FCC70C2691"
+					type: "advancement"
+				}
+				{
+					advancement: "tide:freeze_coelacanth"
+					criterion: ""
+					id: "2CB4A92F50807921"
+					type: "advancement"
+				}
+			]
+			title: "Preservação e Ciência"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7O diário de pesca tem mais de 100 espécies pra"
+				"§7catalogar. Chegar na metade já é uma prova de dedicação."
+				""
+				"§eComplete metade do diário de pesca."
+			]
+			hide_until_deps_complete: true
+			icon: "tide:midas_fish_spawn_egg"
+			id: "708DE2EFFCEDCDE7"
+			rewards: [
+				{
+					id: "6B2024EE63BBEFB7"
+					item: "tide:depth_meter"
+					type: "item"
+				}
+				{
+					id: "7D735E4150DEB24D"
+					item: "tide:climate_gauge"
+					type: "item"
+				}
+				{
+					id: "6578E4D381E32206"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				advancement: "tide:journal_halfway_completed"
+				criterion: ""
+				id: "14282087FAECD87A"
+				type: "advancement"
+			}]
+			title: "Diário Aquático pela Metade"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Peixes lendários não aparecem por acaso — são raros de"
+				"§7verdade, e pescar um é sorte pura (ou muita persistência)."
+				""
+				"§ePesque um peixe lendário."
+			]
+			hide_until_deps_complete: true
+			icon: "tide:midas_fish_spawn_egg"
+			id: "6B7A846642977590"
+			rewards: [
+				{
+					id: "1B0CA5143F6C03ED"
+					item: {
+						Count: 1
+						id: "tide:starlight_bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "20556501997B3C46"
+					item: "minecraft:nautilus_shell"
+					type: "item"
+				}
+				{
+					id: "600565EA9A436B6C"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				advancement: "tide:catch_legendary"
+				criterion: ""
+				id: "7F61EA8858874675"
+				type: "advancement"
+			}]
+			title: "§6Um em um Milhão"
+			x: 11.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7A prova final de qualquer pescador de verdade: catalogar"
+				"§7absolutamente todas as espécies do mod, e fechar o ciclo"
+				"§7pescando o lendário Midas Fish com a vara feita"
+				"§7especialmente pra ele."
+				""
+				"§eComplete o diário de pesca inteiro (todas as espécies),"
+				"§ee pesque um Midas Fish usando a Midas Fishing Rod."
+			]
+			hide_until_deps_complete: true
+			icon: "tide:midas_fish_spawn_egg"
+			id: "680122A59A2E6585"
+			rewards: [
+				{
+					count: 4
+					id: "186BB33E3E64E07B"
+					item: "minecraft:gold_block"
+					type: "item"
+				}
+				{
+					id: "18A50FDA0BC3B367"
+					item: {
+						Count: 1
+						id: "minecraft:trident"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B0E4D8A1F6C297D"
+					item: {
+						Count: 1
+						id: "tide:dragonfin_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DC6A0F31E194301"
+					type: "xp"
+					xp: 2000
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "tide:journal_completed"
+					criterion: ""
+					id: "2EC616A2767094F7"
+					type: "advancement"
+				}
+				{
+					advancement: "tide:catch_midas_with_midas_rod"
+					criterion: ""
+					id: "4C61C8674290A89B"
+					type: "advancement"
+				}
+			]
+			title: "§b§lO Círculo Completo"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7Um paraglider abre no ar e transforma qualquer queda numa"
+				"§7planagem controlada — equipa no slot de Curios e usa a"
+				"§7qualquer momento. Comece pela versão básica, de madeira"
+				"§7e Re-Enforced Paper."
+				""
+				"§eCrie um Basic Paraglider."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "vc_gliders:paraglider_wood"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "698DC679F0106A74"
+			rewards: [
+				{
+					count: 2
+					id: "7A17C2F88E65F499"
+					item: "vc_gliders:reinforced_paper_iron"
+					type: "item"
+				}
+				{
+					id: "2473E90DEE84D7EA"
+					item: {
+						Count: 1
+						id: "vc_gliders:paraglider_iron"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "41861163062489A0"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "vc_gliders:recipes/transportation/paraglider_wood"
+				criterion: ""
+				id: "3189639A092660BA"
+				type: "advancement"
+			}]
+			title: "Primeiro Voo"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7No topo da linha, o paraglider de Netherite aguenta o que"
+				"§7pouca coisa aguenta — reforçado com Copper e Nether Upgrade,"
+				"§7voa através de fogo e lava sem derreter."
+				""
+				"§eCrie um Netherite Paraglider e instale o Copper Upgrade"
+				"§ee o Nether Upgrade."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "vc_gliders:paraglider_netherite"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5982239922FEC3C8"
+			rewards: [
+				{
+					id: "1CAB7726ADEDF3EF"
+					item: {
+						Count: 1
+						id: "vc_gliders:paraglider_netherite"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "09287780290AD004"
+					item: "vc_gliders:reinforced_paper_netherite"
+					type: "item"
+				}
+				{
+					id: "1EB9496365FCCEE0"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "vc_gliders:recipes/transportation/paraglider_netherite"
+					criterion: ""
+					id: "41B40E0EC8B78394"
+					type: "advancement"
+				}
+				{
+					advancement: "vc_gliders:recipes/misc/copper_upgrade"
+					criterion: ""
+					id: "6A9EEDECA5A9072C"
+					type: "advancement"
+				}
+				{
+					advancement: "vc_gliders:recipes/misc/nether_upgrade"
+					criterion: ""
+					id: "68464E567BDE59E7"
+					type: "advancement"
+				}
+			]
+			title: "Vento e Fogo"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7A bússola comum aponta pro spawn. Essas duas apontam pro"
+				"§7que você realmente procura: a Explorer's Compass mira numa"
+				"§7estrutura específica, a Nature's Compass mira num bioma."
+				""
+				"§eObtenha uma Explorer's Compass e uma Nature's Compass."
+			]
+			hide_until_deps_complete: true
+			icon: "explorerscompass:explorerscompass"
+			id: "44EEC8D851BD411B"
+			rewards: [
+				{
+					id: "43970ABE673A2FAA"
+					item: "minecraft:compass"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A624E8FD49FED11"
+					item: "minecraft:map"
+					type: "item"
+				}
+				{
+					id: "14C28D219DEE60C5"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2884CD2BF3023EE0"
+					item: "explorerscompass:explorerscompass"
+					type: "item"
+				}
+				{
+					id: "4D3CDB76C44A9699"
+					item: "naturescompass:naturescompass"
+					type: "item"
+				}
+			]
+			title: "Bússolas do Sábio"
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["07B3BCD271AE7863"]
+			description: [
+				"§7O mundo esconde relíquias em ruínas, masmorras e no fundo"
+				"§7do oceano — cada uma com um truque só seu: o Magic Mirror"
+				"§7te teleporta pra casa, o Horse Flute chama seu cavalo de"
+				"§7qualquer distância, o Infinity Ham nunca acaba de alimentar."
+				""
+				"§eColecione: Magic Mirror, Horse Flute, Shadow Glaive,"
+				"§eRage Glove, Infinity Ham e Holy Locket."
+				""
+				"§6Dica: §7são achados de loot, não craft — vasculhe estruturas"
+				"§7e baús de masmorra por todo o mundo."
+			]
+			hide_until_deps_complete: true
+			icon: "relics:magic_mirror"
+			id: "4B0EBA82C839AD6F"
+			rewards: [
+				{
+					id: "27A5FD78E58276AC"
+					item: "relics:relic_experience_bottle"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "10ABE53306276CE3"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "26BABB5274A3504D"
+					item: "relics:spatial_sign"
+					type: "item"
+				}
+				{
+					id: "7C3F5D91B5D091C6"
+					type: "xp"
+					xp: 450
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "7F682A3252476DD8"
+					item: "relics:magic_mirror"
+					type: "item"
+				}
+				{
+					id: "13F98E6C1E3396C8"
+					item: "relics:horse_flute"
+					type: "item"
+				}
+				{
+					id: "28894839913F7E8C"
+					item: "relics:shadow_glaive"
+					type: "item"
+				}
+				{
+					id: "275AD5EC56771AE6"
+					item: "relics:rage_glove"
+					type: "item"
+				}
+				{
+					id: "47A68ACE3FC04FF6"
+					item: "relics:infinity_ham"
+					type: "item"
+				}
+				{
+					id: "5FDDFE69C108B154"
+					item: "relics:holy_locket"
+					type: "item"
+				}
+			]
+			title: "O Relicário"
+			x: -4.0d
+			y: -1.5d
 		}
 	]
 	title: "§bO Mundo e seus Biomas"

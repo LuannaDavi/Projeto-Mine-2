@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "18_culinaria"
 	group: "7E445E30196C8ACF"
@@ -9,7 +9,35 @@
 	quests: [
 		{
 			description: [
-				"§7§eAquaculture Delight §7tem receitas... peculiares."
+				"§7Pratos do mundo inteiro — porque sobreviver bem também é comer bem."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Bread."
+			]
+			icon: "minecraft:bread"
+			id: "6FF849C911BA222A"
+			rewards: [{
+				id: "785351A06375D195"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "67B70FF5CF9D7D8A"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Existem receitas de peixe... peculiares."
 				"§7Alguém, em algum lugar, decidiu que §eJellyfish Jelly"
 				"§7precisava existir como prato. Não perguntamos por quê."
 				""
@@ -19,6 +47,7 @@
 				"§8§o(Ninguém testou o sabor. Os criadores se recusam"
 				"§8§oa confirmar se é seguro para consumo.)"
 			]
+			hide_until_deps_complete: true
 			icon: "aquaculturedelight:jellyfish_jelly"
 			id: "1F733349850C37AD"
 			rewards: [
@@ -40,21 +69,23 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "0F8E6F5589E6FBAF"
 				item: "aquaculturedelight:jellyfish_jelly"
 				type: "item"
 			}]
 			title: "O Prato Duvidoso"
-			x: 0.0d
-			y: 4.0d
+			x: 2.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
 				"§7Cinco mods de comida coexistem neste modpack."
 				"§7Isso é, objetivamente, demais. E está ótimo assim."
 				""
-				"§7§eFarmer's Delight §7tem receitas que vão muito além"
+				"§7Existem receitas que vão muito além"
 				"§7de pão e ensopado básico — torta de pastor incluída."
 				""
 				"§ePrepare uma §eShepherd's Pie §7(Torta de Pastor)"
@@ -63,6 +94,7 @@
 				"§8§o(Ninguém pediu uma torta de pastor no Minecraft."
 				"§8§oAlguém fez mesmo assim. Aproveite.)"
 			]
+			hide_until_deps_complete: true
 			icon: "farmersdelight:cooking_pot"
 			id: "2809A347D1CBA403"
 			rewards: [
@@ -90,22 +122,25 @@
 					xp: 350
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "65481B863FF88EF4"
 				item: "farmersdelight:shepherds_pie"
 				type: "item"
 			}]
 			title: "Receita Duvidosa"
-			x: 6.0d
-			y: 8.0d
+			x: 5.0d
+			y: 7.5d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
-				"§7§eBrazilian Delight §7traz açaí, feijão e bolo de cenoura —"
+				"§7Existem açaí, feijão e bolo de cenoura por aí —"
 				"§7a trindade sagrada de qualquer domingo em família."
 				""
 				"§eColha Açaí Berries e asse um Carrot Cake."
 			]
+			hide_until_deps_complete: true
 			icon: "braziliandelight:acai_berries_crate"
 			id: "236FEC6BEAF7367A"
 			rewards: [
@@ -121,6 +156,7 @@
 					xp: 120
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3176F348A6838C82"
@@ -134,16 +170,18 @@
 				}
 			]
 			title: "Sabor Brasileiro"
-			x: 20.0d
-			y: 8.0d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
-				"§7§eFarm & Charm §7adiciona utensílios de cozinha rústica —"
+				"§7Existem utensílios de cozinha rústica por aí —"
 				"§7panelas, sacos de farinha e muito charme pra sua fazenda."
 				""
 				"§eCrie uma Cooking Pot e um Bag of Flour."
 			]
+			hide_until_deps_complete: true
 			icon: "farm_and_charm:cooking_pot"
 			id: "0BACF517075F9092"
 			rewards: [
@@ -159,6 +197,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "6E85D68272726B12"
@@ -172,16 +211,18 @@
 				}
 			]
 			title: "Charme da Fazenda"
-			x: 22.0d
-			y: 8.0d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
-				"§7§eBakery §7transforma sua cozinha numa confeitaria de verdade."
+				"§7Sua cozinha pode virar uma confeitaria de verdade."
 				"§7Chega de comer pão cru feito animal."
 				""
 				"§eAsse um Apple Pie e monte uma Cake Display."
 			]
+			hide_until_deps_complete: true
 			icon: "bakery:apple_pie"
 			id: "3CDB0B6FE7191DB9"
 			rewards: [
@@ -197,6 +238,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "497DB840CA3A1468"
@@ -210,17 +252,19 @@
 				}
 			]
 			title: "Padaria Completa"
-			x: 16.0d
-			y: 8.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
-				"§7§eBuzzier Bees §7expande o tema das abelhas com blocos de mel"
+				"§7O tema das abelhas ganhou vida nova, com blocos de mel"
 				"§7cristalizado e tijolos de favo — pra quem quer uma base"
 				"§7que pareça um comercial de xarope."
 				""
 				"§eCrie um bloco de Honeycomb Bricks e um Honey Lamp."
 			]
+			hide_until_deps_complete: true
 			icon: "buzzier_bees:honeycomb_bricks"
 			id: "60D786E34FFFA8C5"
 			rewards: [
@@ -236,6 +280,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3B3C2E0E40660B2D"
@@ -249,16 +294,18 @@
 				}
 			]
 			title: "Colmeia de Luxo"
-			x: 24.0d
-			y: 6.0d
+			x: 9.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
 				"§7Chorus Fruit sempre foi estranha de comer crua. Alguém finalmente"
 				"§7teve a decência de transformar isso numa torta decente."
 				""
 				"§eAsse um Chorus Pie e prepare um Chorus Stew."
 			]
+			hide_until_deps_complete: true
 			icon: "endersdelight:chorus_pie"
 			id: "5BDFFFEB3C43FF34"
 			rewards: [
@@ -274,6 +321,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "31D8AB1BE2611F41"
@@ -287,16 +335,18 @@
 				}
 			]
 			title: "Culinária do Fim"
-			x: 28.0d
-			y: 6.0d
+			x: 8.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
 				"§7Chocolate e pão de mel automatizados usando engrenagens —"
 				"§7porque nem doce escapa da era industrial."
 				""
 				"§eProduza uma barra de chocolate e um bloco de gingerbread."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "create_confectionery:full_chocolate_bar"
@@ -318,6 +368,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "693465075E1EDF3B"
@@ -337,16 +388,18 @@
 				}
 			]
 			title: "Doceria Create"
-			x: 34.0d
-			y: 6.0d
+			x: 7.0d
+			y: -6.0d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
 				"§7Pão de queijo é bloco, coxinha é comida — e ambos são"
 				"§7inegociáveis num boteco brasileiro decente."
 				""
 				"§eAsse um Cheese Bread e frite uma Coxinha."
 			]
+			hide_until_deps_complete: true
 			icon: "braziliandelight:coxinha"
 			id: "4FD422DC83B80014"
 			rewards: [
@@ -362,6 +415,7 @@
 					xp: 120
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "55940DA1D10CA430"
@@ -375,16 +429,18 @@
 				}
 			]
 			title: "Boteco Mineiro"
-			x: 22.0d
-			y: 10.0d
+			x: 5.0d
+			y: -7.5d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
 				"§7Galinha solta pelo mundo é ineficiente. Um Chicken Coop"
 				"§7de verdade resolve isso com estilo rústico."
 				""
 				"§eConstrua um Chicken Coop e uma Feeding Trough."
 			]
+			hide_until_deps_complete: true
 			icon: "farm_and_charm:chicken_coop"
 			id: "5E20D2D8C4E1A5BF"
 			rewards: [
@@ -400,6 +456,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "2322B1404EC339C7"
@@ -413,16 +470,18 @@
 				}
 			]
 			title: "Galinheiro de Respeito"
-			x: 24.0d
-			y: 8.0d
+			x: 2.5d
+			y: -8.5d
 		}
 		{
+			dependencies: ["6FF849C911BA222A"]
 			description: [
 				"§7Croissant e cookie de chocolate são obrigatórios em qualquer"
 				"§7padaria que se preze — mesmo uma no meio do mundo do Minecraft."
 				""
 				"§eAsse um Croissant e um Chocolate Cookie."
 			]
+			hide_until_deps_complete: true
 			icon: "bakery:croissant"
 			id: "3D042849742B1820"
 			rewards: [
@@ -438,6 +497,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "20C425E4A426F526"
@@ -451,8 +511,611 @@
 				}
 			]
 			title: "Café da Padaria"
-			x: 16.0d
-			y: 10.0d
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Tem prato pra cada gosto por aqui — desde"
+				"§7ratatouille sofisticada até um hambúrguer sem frescura."
+				""
+				"§eSirva-se de: Ratatouille, Stuffed Potato, Roasted Mutton"
+				"§eChops, Hamburger e Chicken Soup."
+			]
+			hide_until_deps_complete: true
+			icon: "farmersdelight:ratatouille"
+			id: "6A82DE06CDCCFA5F"
+			rewards: [
+				{
+					count: 4
+					id: "0BC48C220DB63BB1"
+					item: "minecraft:golden_carrot"
+					type: "item"
+				}
+				{
+					id: "4952355C85D0A3BC"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1EBC1259E18921CB"
+					item: "farmersdelight:ratatouille"
+					type: "item"
+				}
+				{
+					id: "02A73444B3A5EEBD"
+					item: "farmersdelight:stuffed_potato"
+					type: "item"
+				}
+				{
+					id: "7B86FB1BB6DA0EEB"
+					item: "farmersdelight:roasted_mutton_chops"
+					type: "item"
+				}
+				{
+					id: "37D63BD8A74C650C"
+					item: "farmersdelight:hamburger"
+					type: "item"
+				}
+				{
+					id: "45121468DF0457B1"
+					item: "farmersdelight:chicken_soup"
+					type: "item"
+				}
+			]
+			title: "Banquete do Fazendeiro"
+			x: -2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Quando o clima esfria (ou quando você só quer algo"
+				"§7reconfortante), nada como uma boa sopa."
+				""
+				"§ePrepare: Fish Stew, Beef Stew, Nether Salad, Mixed Salad"
+				"§ee Noodle Soup."
+			]
+			hide_until_deps_complete: true
+			icon: "farmersdelight:beef_stew"
+			id: "356A13D3F1DA0F8F"
+			rewards: [
+				{
+					count: 8
+					id: "7D9C9C939F78C225"
+					item: "minecraft:bowl"
+					type: "item"
+				}
+				{
+					id: "4D298AD3EF6721E8"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "23C076B6D93DE47B"
+					item: "farmersdelight:fish_stew"
+					type: "item"
+				}
+				{
+					id: "7CAF257EACC1822F"
+					item: "farmersdelight:beef_stew"
+					type: "item"
+				}
+				{
+					id: "40EF0A8CB127FBAB"
+					item: "farmersdelight:nether_salad"
+					type: "item"
+				}
+				{
+					id: "632C28AF6C127BF5"
+					item: "farmersdelight:mixed_salad"
+					type: "item"
+				}
+				{
+					id: "45640AE9A89310A6"
+					item: "farmersdelight:noodle_soup"
+					type: "item"
+				}
+			]
+			title: "Sopas e Guisados"
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Sobremesa não é opcional. Tem torta,"
+				"§7cheesecake e até picolé de melancia caseiro."
+				""
+				"§eAsse: Apple Pie, Chocolate Pie, Sweet Berry Cheesecake,"
+				"§eHoney Cookie e Melon Popsicle."
+			]
+			hide_until_deps_complete: true
+			icon: "farmersdelight:chocolate_pie"
+			id: "55641B61E803EA04"
+			rewards: [
+				{
+					count: 12
+					id: "1B3034EC3E0050FC"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "1559EECCC10A76DF"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "77B6880B679BAC6D"
+					item: "farmersdelight:apple_pie"
+					type: "item"
+				}
+				{
+					id: "05F391941FDB60EA"
+					item: "farmersdelight:chocolate_pie"
+					type: "item"
+				}
+				{
+					id: "25AFB0091F52A86D"
+					item: "farmersdelight:sweet_berry_cheesecake"
+					type: "item"
+				}
+				{
+					id: "24E988626575BEAC"
+					item: "farmersdelight:honey_cookie"
+					type: "item"
+				}
+				{
+					id: "5473219D6947A0F4"
+					item: "farmersdelight:melon_popsicle"
+					type: "item"
+				}
+			]
+			title: "Doces da Fazenda"
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Antes de cozinhar de verdade, você precisa montar sua"
+				"§7cozinha: uma tábua de corte, uma panela, uma frigideira,"
+				"§7uma cesta e uma corda pra pendurar tudo."
+				""
+				"§eConsiga: Cutting Board, Cooking Pot, Skillet, Basket"
+				"§ee Rope."
+				"§8§o(Tábua, panela, frigideira, cesta e corda."
+				"§8§oVocê não é chef, é dono de um açougue suspeito.)"
+			]
+			hide_until_deps_complete: true
+			icon: "farmersdelight:cooking_pot"
+			id: "711A6D8EA4F25686"
+			rewards: [
+				{
+					count: 6
+					id: "10C982354D4D771D"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "1C0605A62E1072B3"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0F233993A40EB33D"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "6425FCD0F6BEE764"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "6A68B55F2DA91D6F"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "623B6FFFD4836BDA"
+					item: "farmersdelight:wooden_basket"
+					type: "item"
+				}
+				{
+					id: "55E388B2CA5DF1B9"
+					item: "farmersdelight:rope"
+					type: "item"
+				}
+			]
+			title: "Utensílios do Chef"
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Feijoada, moqueca, coxinha e pão de queijo — os pratos"
+				"§7mais icônicos da culinária brasileira, todos num prato só."
+				""
+				"§ePrepare: Plate of Feijoada, Plate of Fish Moqueca, Coxinha,"
+				"§eCheese Bread e Brigadeiro Cream."
+				""
+				"§6Dica: §7Feijoada e moqueca pedem panelas de barro específicas"
+				"§7— confira a receita antes de se perder."
+			]
+			hide_until_deps_complete: true
+			icon: "braziliandelight:plate_of_feijoada"
+			id: "353A21BCB11C1247"
+			rewards: [
+				{
+					count: 4
+					id: "372265FB917CAFEE"
+					item: "braziliandelight:guarana_soda"
+					type: "item"
+				}
+				{
+					id: "2019D0C8C0794046"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "49A828DBCA40C9D5"
+					item: "braziliandelight:plate_of_feijoada"
+					type: "item"
+				}
+				{
+					id: "41B5FEE10C1C07CB"
+					item: "braziliandelight:plate_of_fish_moqueca"
+					type: "item"
+				}
+				{
+					id: "5273311FB562C3E9"
+					item: "braziliandelight:coxinha"
+					type: "item"
+				}
+				{
+					id: "0A66CB54E8017D49"
+					item: "braziliandelight:cheese_bread"
+					type: "item"
+				}
+				{
+					id: "6E4634084FFBE066"
+					item: "braziliandelight:brigadeiro_cream"
+					type: "item"
+				}
+			]
+			title: "§2§lComida di Boteco"
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Nem só de prato principal vive o Brasil — tem angu,"
+				"§7couscous, salpicão e broa completando a mesa."
+				""
+				"§ePrepare: Angu, Couscous, Salpicão, Broa e Tropeiro Beans."
+			]
+			hide_until_deps_complete: true
+			icon: "braziliandelight:couscous"
+			id: "2EF66BEB08EF53D8"
+			rewards: [
+				{
+					count: 2
+					id: "11A704AD87DB04DD"
+					item: "braziliandelight:acai_cream"
+					type: "item"
+				}
+				{
+					id: "14D5FA29717C96DE"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "20FFDC79BC9E8F3F"
+					item: "braziliandelight:angu"
+					type: "item"
+				}
+				{
+					id: "58FEBD0FC98C3121"
+					item: "braziliandelight:couscous"
+					type: "item"
+				}
+				{
+					id: "01E6108C1EBAD2E0"
+					item: "braziliandelight:salpicao"
+					type: "item"
+				}
+				{
+					id: "357873ED7413AC99"
+					item: "braziliandelight:broa"
+					type: "item"
+				}
+				{
+					id: "2DB68A74CD7EE210"
+					item: "braziliandelight:tropeiro_beans"
+					type: "item"
+				}
+			]
+			title: "Sabores do Interior"
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Existe um clima de fazenda europeia por aqui: pão caseiro,"
+				"§7milho assado, frango recheado e o bolo de morango da vovó."
+				""
+				"§ePrepare: Farmer's Bread, Roasted Corn, Stuffed Chicken,"
+				"§ePotato with Roast Meat e o Bolo de Morango da Vovó."
+			]
+			hide_until_deps_complete: true
+			icon: "farm_and_charm:farmers_bread"
+			id: "7D3F2E8E9513B45C"
+			rewards: [
+				{
+					count: 8
+					id: "5381F4FABB480D13"
+					item: "farm_and_charm:strawberry_bag"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "29A9C7B1DF00E441"
+					item: "farm_and_charm:corn_bag"
+					type: "item"
+				}
+				{
+					id: "5810C017A9DEE440"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1D5B4DE424F42C68"
+					item: "farm_and_charm:farmers_bread"
+					type: "item"
+				}
+				{
+					id: "6DBC2EC6C2C141A4"
+					item: "farm_and_charm:roasted_corn"
+					type: "item"
+				}
+				{
+					id: "5A37C6B0CF5E10C3"
+					item: "farm_and_charm:stuffed_chicken"
+					type: "item"
+				}
+				{
+					id: "1F66464B77CD7851"
+					item: "farm_and_charm:potato_with_roast_meat"
+					type: "item"
+				}
+				{
+					id: "7625211AAA26BA8B"
+					item: "farm_and_charm:grandmothers_strawberry_cake"
+					type: "item"
+				}
+			]
+			title: "Fazenda com Charme"
+			x: -8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7A padaria tem muito mais que pão — pudim, quiche, torta"
+				"§7linzer e um bolo de chocolate à altura de qualquer confeiteiro."
+				""
+				"§ePrepare: Pudding, Quiche, Linzer Tart, Chocolate Gateau"
+				"§ee Bundt Cake."
+			]
+			hide_until_deps_complete: true
+			icon: "bakery:chocolate_gateau"
+			id: "471616A805B26BD0"
+			rewards: [
+				{
+					count: 8
+					id: "7BB04D8463BD112B"
+					item: "minecraft:egg"
+					type: "item"
+				}
+				{
+					id: "383C7FCE11A8F78E"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "78B9BEB0319D8BA0"
+					item: "bakery:pudding"
+					type: "item"
+				}
+				{
+					id: "7DAFDC945AC2B72B"
+					item: "bakery:quiche"
+					type: "item"
+				}
+				{
+					id: "18A3BE7D285DF06B"
+					item: "bakery:linzer_tart"
+					type: "item"
+				}
+				{
+					id: "2F541BC07778EB37"
+					item: "bakery:chocolate_gateau"
+					type: "item"
+				}
+				{
+					id: "146B6F17900BBDE1"
+					item: "bakery:bundt_cake"
+					type: "item"
+				}
+			]
+			title: "Confeitaria Fina"
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Isso prova que peixe pode ser alta"
+				"§7gastronomia: da chorba húngara ao clássico fish and chips."
+				""
+				"§ePrepare: Fish Chorba, Fish and Chips, Tuna Spaghetti,"
+				"§eCatfish Barbecue e Halibut with Tartar Sauce."
+			]
+			hide_until_deps_complete: true
+			icon: "aquaculturedelight:fish_and_chips"
+			id: "4419923745AFC6E3"
+			rewards: [
+				{
+					count: 4
+					id: "17522940947ED55F"
+					item: "minecraft:tropical_fish"
+					type: "item"
+				}
+				{
+					id: "3F6D993B0A5FB329"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "17A2AEC04439DD12"
+					item: "aquaculturedelight:fish_chorba"
+					type: "item"
+				}
+				{
+					id: "1FB9BEF99AACC7B3"
+					item: "aquaculturedelight:fish_and_chips"
+					type: "item"
+				}
+				{
+					id: "2720D2A2A3EA6461"
+					item: "aquaculturedelight:tuna_spaghetti"
+					type: "item"
+				}
+				{
+					id: "6DA0A9F6A58ED522"
+					item: "aquaculturedelight:catfish_barbecue"
+					type: "item"
+				}
+				{
+					id: "43A268597F0C0B19"
+					item: "aquaculturedelight:halibut_with_tartar_sauce"
+					type: "item"
+				}
+			]
+			title: "Banquete do Mar"
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7O End também tem sua própria culinária estranhamente"
+				"§7sofisticada — paella de ender, filé de shulker e um curry"
+				"§7de cogumelo amberveil que só cresce lá."
+				""
+				"§ePrepare: Chorus Pie, Ender Paella, Shulker Filet,"
+				"§eEndermite Stew e Amberveiled Curry."
+				""
+				"§6Dica: §7Alguns ingredientes desse capítulo só existem"
+				"§7no End — leve uma Ender Chest antes de ir."
+				"§8§o(Curry de cogumelo que só existe fora da realidade"
+				"§8§oconhecida. Bom apetite, se sobreviver ao tempero.)"
+			]
+			hide_until_deps_complete: true
+			icon: "endersdelight:ender_paella"
+			id: "6318AA10A88A306E"
+			rewards: [
+				{
+					count: 8
+					id: "76114C7CEA99BB2D"
+					item: "minecraft:chorus_fruit"
+					type: "item"
+				}
+				{
+					id: "26F85A96CDEF8973"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "34FE7FDD7CA52984"
+					item: "endersdelight:chorus_pie"
+					type: "item"
+				}
+				{
+					id: "72429F6676CBDD21"
+					item: "endersdelight:ender_paella"
+					type: "item"
+				}
+				{
+					id: "4C22C7193C190C50"
+					item: "endersdelight:shulker_filet"
+					type: "item"
+				}
+				{
+					id: "7BF6774ABED08C69"
+					item: "endersdelight:endermite_stew"
+					type: "item"
+				}
+				{
+					id: "2CF7F11F6FC35F81"
+					item: "endersdelight:amberveiled_curry"
+					type: "item"
+				}
+			]
+			title: "§5Alta Gastronomia do Fim"
+			x: -2.5d
+			y: 8.5d
 		}
 	]
 	title: "§eCulinária do Mundo"

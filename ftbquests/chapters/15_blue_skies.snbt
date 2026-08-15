@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "15_blue_skies"
 	group: "42DFD8A84753DCE2"
@@ -9,7 +9,35 @@
 	quests: [
 		{
 			description: [
-				"§7§eBlue Skies §7adiciona §eduas dimensões §7celestiais:"
+				"§7Um mundo doce e lunar que desafia toda lógica de bioma que você já conhecia."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Horizonite Ingot."
+			]
+			icon: "blue_skies:horizonite_ingot"
+			id: "0DFA071C8513FD4D"
+			rewards: [{
+				id: "1FB43128E1BAA10F"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "3BB445E2F11B4691"
+				item: "blue_skies:horizonite_ingot"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DFA071C8513FD4D"]
+			description: [
+				"§7Existem §eduas dimensões §7celestiais além do que você já conhece:"
 				"§7- §eEverbright §7— mundo eterno de luz e neve"
 				"§7- §eEverdawn §7— mundo de crepúsculo eterno e floresta"
 				""
@@ -21,6 +49,7 @@
 				""
 				"§8§o(Subir uma escada até o céu. Sem elevador, sem desculpa.)"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:winter_leaf_seeds"
 			id: "45F1C9E1A3987BE2"
 			rewards: [
@@ -42,6 +71,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "blue_skies:everbright/enter"
 				criterion: "enter_everbright"
@@ -49,12 +79,13 @@
 				type: "advancement"
 			}]
 			title: "Além das Nuvens"
-			x: 0.0d
-			y: 0.0d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
-				"§7§eBlue Skies §7tem criaturas, recursos e estruturas únicos"
+				"§7Existem criaturas, recursos e estruturas únicos"
 				"§7em CADA dimensão — Everbright e Everdawn são mundos diferentes."
 				""
 				"§eColete Comet Berries (Everbright) e Winter Leaves (Everdawn)."
@@ -64,6 +95,7 @@
 				""
 				"§8§o(Um lado claro, outro sombrio — Blue Skies também tem crise de identidade.)"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:pine_fruit_seeds"
 			id: "474BD769AB883020"
 			rewards: [
@@ -85,6 +117,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 8L
@@ -100,12 +133,13 @@
 				}
 			]
 			title: "Duas Faces do Céu"
-			x: 2.0d
-			y: 0.0d
+			x: -4.5d
+			y: 5.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
-				"§7§eBlue Skies §7tem bosses dimensionais próprios. O §eSummoner§7,"
+				"§7Existem bosses dimensionais próprios por aqui. O §eSummoner§7,"
 				"§7guardião do Everbright, invoca aliados e ataca à distância."
 				""
 				"§eDerrote o Summoner no Everbright."
@@ -113,6 +147,7 @@
 				"§6Dica: §7Ele invoca mobs constantemente — priorize atacá-lo"
 				"§7direto em vez de limpar os adds."
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:ethereal_arc"
 			id: "2328C3E2C521A915"
 			rewards: [
@@ -127,6 +162,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "blue_skies:everbright/kill_summoner"
 				criterion: "kill_summoner"
@@ -134,10 +170,11 @@
 				type: "advancement"
 			}]
 			title: "O Invocador do Everbright"
-			x: 4.0d
-			y: 0.0d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7Cada dimensão do §eBlue Skies §7tem seu próprio mineral."
 				"§eFalsite §7é o material do Everbright — brilha no escuro."
@@ -151,6 +188,7 @@
 				""
 				"§8§o(Minerar nas nuvens. A NR-35 daria um troço.)"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:falsite_ingot"
 			id: "08D0000000000309"
 			rewards: [
@@ -172,6 +210,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "blue_skies:everbright/get_falsite"
@@ -187,10 +226,11 @@
 				}
 			]
 			title: "Minérios das Alturas"
-			x: 6.0d
-			y: 0.0d
+			x: 0.5d
+			y: 7.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7O §eStarlit Crusher §7é o boss do §eEverbright —"
 				"§7uma construção de pedra viva que guarda a Nature Dungeon."
@@ -204,6 +244,7 @@
 				""
 				"§8§o(Invulnerável. Uma escolha de design interessante.)"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:nature_arc"
 			id: "08D000000000030F"
 			rewards: [
@@ -218,6 +259,7 @@
 					xp: 1200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "blue_skies:everbright/kill_starlit_crusher"
 				criterion: "kill_starlit_crusher"
@@ -225,10 +267,11 @@
 				type: "advancement"
 			}]
 			title: "Destruidor de Estrelas"
-			x: 8.0d
-			y: 0.0d
+			x: 3.5d
+			y: 6.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7O §eAlchemist §7é o boss do §eEverdawn §7— um feiticeiro"
 				"§7que usa transmutação para criar itens mágicos."
@@ -240,6 +283,7 @@
 				"§6Dica: §7Leve leite — as armadilhas de veneno são constantes."
 				"§7O §eDusk Arc §7é a arma necessária para penetrar sua defesa."
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:dusk_arc"
 			id: "08D0000000000313"
 			rewards: [
@@ -254,6 +298,7 @@
 					xp: 1200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "blue_skies:everdawn/kill_alchemist"
 				criterion: "kill_alchemist"
@@ -261,10 +306,11 @@
 				type: "advancement"
 			}]
 			title: "O Alquimista do Crepúsculo"
-			x: 10.0d
-			y: 0.0d
+			x: 5.5d
+			y: 4.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7O §eEverbright §7é um mundo de luz eterna — nunca anoitece."
 				"§7Tem flora única: §eWinter Leaves§7, §ePine Trees§7, §eStar Flowers§7."
@@ -277,6 +323,7 @@
 				""
 				"§8§o(Frutas que crescem no céu. Ninguém questiona mais nada nesse ponto.)"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:winter_leaf_seeds"
 			id: "19773EED111748D3"
 			rewards: [
@@ -292,6 +339,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 8L
@@ -307,10 +355,11 @@
 				}
 			]
 			title: "Flora do Everbright"
-			x: 0.0d
-			y: 2.0d
+			x: 7.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7O §eEverdawn §7é um eterno crepúsculo roxo — nunca amanhece."
 				"§7§eBrewberries §7crescem em arbustos — ingrediente de poções únicas."
@@ -323,6 +372,7 @@
 				""
 				"§8§o(O lado sombrio de Blue Skies também cultiva sua horta.)"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:brewberry"
 			id: "41666A7E3BA62ED2"
 			rewards: [
@@ -338,6 +388,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "758CCAD57CB69ED7"
@@ -345,10 +396,11 @@
 				type: "item"
 			}]
 			title: "Flora do Everdawn"
-			x: 2.0d
-			y: 2.0d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7§eFalsite §7é o mineral do Everbright — brilha no escuro"
 				"§7e é bonito, mas não serve pra ferramentas nem armadura,"
@@ -359,6 +411,7 @@
 				"§6Dica: §7Falsite aparece em veios grandes nas profundezas do Everbright."
 				"§7Guarde alguns — vão ser úteis em receitas do Everdawn também."
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:falsite_ingot"
 			id: "579018B31576D2D2"
 			rewards: [
@@ -374,6 +427,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 8L
 				id: "155135885154D6CE"
@@ -381,10 +435,11 @@
 				type: "item"
 			}]
 			title: "Minerando Falsite"
-			x: 4.0d
-			y: 2.0d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7§eHorizonite §7é o mineral do Everdawn — mais raro que Falsite."
 				"§7A §eArmadura de Horizonite §7tem §eRegeneração Passiva §7lenta."
@@ -395,6 +450,7 @@
 				"§6Dica: §7Horizonite só nas camadas profundas do Everdawn."
 				"§7A regeneração passiva é especialmente útil contra bosses longos."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:horizonite_chestplate"
@@ -416,6 +472,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "7EDC165F0C6D8B7E"
@@ -441,12 +498,13 @@
 				}
 			]
 			title: "Armadura de Horizonite"
-			x: 6.0d
-			y: 2.0d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
-				"§7§eBlue Skies §7tem dois arcos exclusivos de boss:"
+				"§7Existem dois arcos exclusivos de boss por aqui:"
 				"§7§eNature Arc §7— necessário para o §eStarlit Crusher§7."
 				"§7§eDusk Arc §7— necessário para o §eAlchemist§7."
 				"§7§bSem eles os bosses são completamente invulneráveis§7."
@@ -458,6 +516,7 @@
 				""
 				"§8§o(Arcos mágicos de dois mundos diferentes. Nenhum deles vem com manual.)"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:nature_arc"
 			id: "6DBF598CAEC1FC22"
 			rewards: [
@@ -479,6 +538,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "1C44E1AE656100E2"
@@ -492,10 +552,11 @@
 				}
 			]
 			title: "Os Arcos dos Mundos"
-			x: 4.0d
-			y: 4.0d
+			x: 0.5d
+			y: -7.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7Blue Skies tem 5 gemas próprias espalhadas pelas duas"
 				"§7dimensões: Aquite, Charoite, Diopside, Moonstone e Pyrope."
@@ -507,6 +568,7 @@
 				"§6Dica: §7Cada gema tem sua própria linha de ferramentas"
 				"§7e armadura completa — vale a pena explorar depois."
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:moonstone_shard"
 			id: "0A47C17861C87C05"
 			rewards: [
@@ -522,6 +584,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3661607BFD5D37E0"
@@ -550,10 +613,11 @@
 				}
 			]
 			title: "Gemas dos Dois Céus"
-			x: 30.0d
-			y: 6.0d
+			x: -2.0d
+			y: -6.5d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7Com o Summoning Tome certo, é possível convocar um golem"
 				"§7artificial no Everbright — proteção extra pra sua base"
@@ -561,6 +625,7 @@
 				""
 				"§eUse um Summoning Tome pra convocar um Artificial Golem."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:summoning_tome"
@@ -587,6 +652,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "blue_skies:everbright/summon_artificial_golem"
 				criterion: "summon_golem"
@@ -594,10 +660,11 @@
 				type: "advancement"
 			}]
 			title: "Golem Artificial"
-			x: 32.0d
-			y: 6.0d
+			x: -4.5d
+			y: -5.0d
 		}
 		{
+			dependencies: ["0DFA071C8513FD4D"]
 			description: [
 				"§7O Everdawn tem uma variedade generosa (e nojenta) de"
 				"§7insetos hostis: Arachnarch, Emberback, Infested Swarmer,"
@@ -609,6 +676,7 @@
 				"§6Dica: §7Venom Spider envenena — leve leite ou Milk Bucket"
 				"§7pra limpar o status rapidamente."
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:bug_guts"
 			id: "5E01C350E7050FE2"
 			rewards: [
@@ -624,6 +692,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "blue_skies:everdawn/kill_bug"
 				criterion: ""
@@ -631,9 +700,9 @@
 				type: "advancement"
 			}]
 			title: "Extermínio de Insetos"
-			x: 34.0d
-			y: 6.0d
+			x: -6.5d
+			y: -3.0d
 		}
 	]
-	title: "§bBlue Skies — Além das Nuvens"
+	title: "§bAlém das Nuvens"
 }

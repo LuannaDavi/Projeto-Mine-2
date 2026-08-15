@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "12_twilight"
 	group: "42DFD8A84753DCE2"
@@ -8,6 +8,34 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"§7Uma floresta com luz própria e sequência obrigatória de guardiões — nada aqui é opcional."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Diamond."
+			]
+			icon: "minecraft:diamond"
+			id: "48BF449A5DA017A7"
+			rewards: [{
+				id: "00DF89F2C4FA6C1A"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "308E6A8186BEBDB4"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7Existe uma floresta onde o sol nunca se põe."
 				"§7A §eTwilight Forest §7é uma dimensão inteira de exploração —"
@@ -21,6 +49,7 @@
 				"§6Atenção: §7Os bosses têm uma §eordem obrigatória§7."
 				"§7Ignorar a sequência deixa certas áreas inacessíveis."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			id: "2B00000000000016"
 			rewards: [
@@ -42,6 +71,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:root"
 				criterion: "in_tf"
@@ -50,9 +80,10 @@
 			}]
 			title: "A Floresta Encantada"
 			x: 0.0d
-			y: 0.0d
+			y: 5.0d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7A Twilight Forest tem um sistema de progressão de bosses."
 				"§7Comece pelo §eNaga §7— a serpente que ronda a floresta."
@@ -63,6 +94,7 @@
 				"§6Dica: §7Escudo ou armadura de diamante são essenciais!"
 				"§7O Naga carrega carga e pode te jogar longe."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:naga_scale"
 			id: "2B0000000000002E"
 			rewards: [
@@ -89,6 +121,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_naga"
 				criterion: "trophy"
@@ -96,10 +129,11 @@
 				type: "advancement"
 			}]
 			title: "A Serpente da Floresta"
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7O Lich é o segundo boss da Twilight Forest."
 				"§7Ele habita uma torre alta e lança feitiços mortais."
@@ -109,6 +143,7 @@
 				"§6Dica: §7Destrua os escudos dele primeiro!"
 				"§7Tenha flechas em quantidade — ele teleporta muito."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:lich_trophy"
 			id: "2B00000000000033"
 			rewards: [
@@ -135,6 +170,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_lich"
 				criterion: "kill_lich"
@@ -142,10 +178,11 @@
 				type: "advancement"
 			}]
 			title: "O Lich Eterno"
-			x: 4.0d
-			y: 0.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7O Snow Queen é o terceiro boss maior da Twilight Forest."
 				"§7Ela habita o Glacier Palace, um palácio de gelo."
@@ -155,6 +192,7 @@
 				"§6Dica: §7O Fiery Sword (do Naga) funciona bem contra ela!"
 				"§7Evite o espaço aberto — use pilares de gelo como cobertura."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:snow_queen_trophy"
 			id: "2B0000000000005B"
 			rewards: [
@@ -176,6 +214,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_glacier"
 				criterion: "trophy"
@@ -183,10 +222,11 @@
 				type: "advancement"
 			}]
 			title: "A Rainha do Gelo"
-			x: 6.0d
-			y: 0.0d
+			x: 0.0d
+			y: -11.0d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7O §eUrghast §7é o boss final da Twilight Forest."
 				"§7Uma criatura colossal de fogo que guarda as Dark Towers."
@@ -196,6 +236,7 @@
 				"§6Dica: §7Coletores de Lágrimas (Carminite Ghastguard) ajudam!"
 				"§7A torre é repleta de armadilhas carminite — tome cuidado."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:ur_ghast_trophy"
 			id: "2B00000000000060"
 			rewards: [
@@ -222,6 +263,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_ur_ghast"
 				criterion: "trophy"
@@ -229,10 +271,11 @@
 				type: "advancement"
 			}]
 			title: "O Urghast das Sombras"
-			x: 8.0d
-			y: 0.0d
+			x: -3.0d
+			y: -9.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7No coração do §eLabirinto da Floresta Crepuscular§7"
 				"§7existe o §cMinoshroom §7— um minotauro-cogumelo que guarda"
@@ -247,6 +290,7 @@
 				""
 				"§8§o(Três cabeças. Depois cinco. Depois sete. Boa sorte.)"
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:hydra_trophy"
 			id: "2B00000000000201"
 			rewards: [
@@ -278,6 +322,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_hydra"
 				criterion: "kill_hydra"
@@ -285,10 +330,11 @@
 				type: "advancement"
 			}]
 			title: "A Hidra das Chamas"
-			x: 10.0d
-			y: 0.0d
+			x: -3.0d
+			y: -6.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7Os §eKnight Phantoms §7são os guardiões do §eCastelo do Caos§7."
 				"§7São cavaleiros fantasmas que só tomam dano de um tipo de arma"
@@ -300,6 +346,7 @@
 				"§6Dica: §7A §eGhast Trap §7dentro do castelo é essencial"
 				"§7para diminuir o número de inimigos antes do combate."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:knight_phantom_trophy"
 			id: "2B00000000000207"
 			rewards: [
@@ -315,6 +362,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_knights"
 				criterion: "all_knights"
@@ -322,10 +370,11 @@
 				type: "advancement"
 			}]
 			title: "Cavaleiros Fantasmas"
-			x: 12.0d
-			y: 0.0d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7O §eAlpha Yeti §7habita as geleiras mais altas da Twilight Forest."
 				"§7Ele lança blocos de gelo como projéteis e invoca Yetis menores."
@@ -336,6 +385,7 @@
 				"§6Dica: §7Yetis são lentos — use o terreno das geleiras a seu favor."
 				"§7A armadura §eArctic §7pode ser forjada com a pele do Alpha Yeti."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:alpha_yeti_trophy"
 			id: "2B0000000000020B"
 			rewards: [
@@ -351,6 +401,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_yeti"
 				criterion: "yeti"
@@ -358,10 +409,11 @@
 				type: "advancement"
 			}]
 			title: "O Yeti das Geleiras"
-			x: 14.0d
-			y: 0.0d
+			x: 3.0d
+			y: -6.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7O §eTroll §7é o boss mais alto da Twilight Forest —"
 				"§7literalmente. Ele vive no §eTroll Cave §7nos penhascos glaciais."
@@ -373,6 +425,7 @@
 				"§6Dica: §7O §eLamp of Cinders §7é a chave — queima a saída do Troll."
 				"§7Consiga-a derrotando os Trolls menores primeiro."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "twilightforest:lamp_of_cinders"
@@ -405,6 +458,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_troll"
 				criterion: "lamp"
@@ -412,10 +466,11 @@
 				type: "advancement"
 			}]
 			title: "O Gigante das Cavernas"
-			x: 0.0d
-			y: 4.0d
+			x: 3.0d
+			y: -9.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§c§lDesafio VI: Senhor da Floresta Crepuscular"
 				""
@@ -433,6 +488,7 @@
 				"§6Dica: §7A ordem importa — cada boss desbloqueia o próximo!"
 				"§7Naga → Lich → Hydra → Snow Queen → Ur-Ghast"
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:ur_ghast_trophy"
 			id: "7DD743A027A9EB06"
 			rewards: [
@@ -476,6 +532,7 @@
 					xp: 2000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "35E6BFFBB77842D2"
@@ -515,10 +572,11 @@
 				}
 			]
 			title: "§2Senhor da Floresta Crepuscular"
-			x: 2.0d
-			y: 4.0d
+			x: -4.0d
+			y: -13.0d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§c§l✦ DESAFIO FINAL II: O Caçador Supremo ✦"
 				""
@@ -535,6 +593,7 @@
 				""
 				"§7Seis drops raros de seis bosses de mods diferentes."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:valkyrie_lance"
@@ -595,6 +654,7 @@
 					xp: 4000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4B947090717BE516"
@@ -642,10 +702,11 @@
 				}
 			]
 			title: "§2§lO Fim da Floresta"
-			x: 4.0d
-			y: 4.0d
+			x: -6.5d
+			y: -6.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§6§l✦ ✦ ✦ O LENDÁRIO ✦ ✦ ✦"
 				""
@@ -666,6 +727,7 @@
 				""
 				"§e§l✦ Parabéns, aventureiro. ✦"
 			]
+			hide_until_deps_complete: true
 			icon: "mysticalagriculture:awakened_supremium_staff"
 			id: "6A51798D57ADD838"
 			rewards: [
@@ -724,16 +786,12 @@
 					xp: 6000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 64L
 					id: "7E121FF9E4EAC96B"
 					item: "mysticalagriculture:awakened_supremium_essence"
-					type: "item"
-				}
-				{
-					id: "6EFEA9B94B974477"
-					item: "mna:grimoire"
 					type: "item"
 				}
 				{
@@ -760,10 +818,11 @@
 				}
 			]
 			title: "§6§l✦ O Lendário ✦"
-			x: 6.0d
-			y: 4.0d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7A §eTwilight Forest §7tem biomas únicos: Mushroom Forest,"
 				"§7Dark Forest, Snowy Forest, Fire Swamp, Glacier..."
@@ -775,6 +834,7 @@
 				"§6Dica: §7Combine com §eAtlas §7para mapas em escala maior."
 				"§7Procure o §eFire Swamp §7— tem §eRosebush §7e recursos únicos."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:magic_map"
 			id: "2854B9D592960348"
 			rewards: [
@@ -790,6 +850,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:magic_map"
 				criterion: "magic_map"
@@ -797,10 +858,11 @@
 				type: "advancement"
 			}]
 			title: "O Mapa Mágico"
-			x: 0.0d
-			y: 2.0d
+			x: 6.5d
+			y: -6.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7O §eHedge Maze §7e o §eLarge Hollow Hill §7são estruturas"
 				"§7de progressão intermediária da Twilight Forest."
@@ -812,6 +874,7 @@
 				"§6Dica: §7Leve tochas — o labirinto é imenso e escuro."
 				"§8§o(Minotauro-cogumelo. A Twilight Forest não tem vergonha nenhuma.)"
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:minoshroom_trophy"
 			id: "0667C531AA2E39A5"
 			rewards: [
@@ -832,16 +895,18 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "424E0F7A715E1344"
 				item: "twilightforest:minoshroom_trophy"
 				type: "item"
 			}]
 			title: "O Labirinto e o Minoshroom"
-			x: 2.0d
-			y: 2.0d
+			x: 4.0d
+			y: -13.0d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7A §eArmadura Fiery §7usa §eFiery Ingots §7obtidos da Hydra."
 				"§7O conjunto completo §eimuniza ao fogo §7— essencial para o Ur-Ghast."
@@ -852,6 +917,7 @@
 				"§6Dica: §7Fiery Blood (drop da Hydra) + Iron Ingot = Fiery Ingot."
 				"§7Imunidade ao fogo é crucial pro Nether e pra Ur-Ghast Tower."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "twilightforest:fiery_chestplate"
@@ -873,6 +939,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "7FA24C8A0560A09D"
@@ -898,10 +965,11 @@
 				}
 			]
 			title: "Armadura Fiery"
-			x: 4.0d
-			y: 2.0d
+			x: 0.0d
+			y: -16.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7A Twilight Forest dropa armas únicas em cada boss:"
 				"§7§eFiery Sword §7— cauteriza cabeças da Hydra e derrete gelo."
@@ -913,6 +981,7 @@
 				"§6Dica: §7Fiery Sword é a arma mais importante do mid-game na TF."
 				"§7Knightmetal Ingots são drops dos §eKnight Phantoms§7."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "twilightforest:fiery_sword"
@@ -940,6 +1009,7 @@
 					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "20D1DBE36B699190"
@@ -965,10 +1035,11 @@
 				}
 			]
 			title: "Armas da Floresta"
-			x: 6.0d
-			y: 2.0d
+			x: -9.5d
+			y: -11.0d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7A §eTwilight Forest §7usa um sistema de §eProgressão por Portais§7."
 				"§7Cada boss colocado no §eTrophy Pedestal §7abre regiões novas."
@@ -980,6 +1051,7 @@
 				"§6Dica: §7Naga→Lich→Minoshroom→Hydra→Knights→Yeti→SnowQueen→Ur-Ghast."
 				"§7O Trophy Pedestal fica nos biomas centrais da floresta."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:ur_ghast_trophy"
 			id: "7777A143B75F6F50"
 			rewards: [
@@ -1000,6 +1072,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:progress_ur_ghast"
 				criterion: "ghast"
@@ -1007,10 +1080,11 @@
 				type: "advancement"
 			}]
 			title: "A Progressão da Floresta"
-			x: 8.0d
-			y: 2.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7Plante um feijão mágico e veja o que cresce. No Twilight"
 				"§7Forest, isso significa um caule gigante levando direto"
@@ -1018,6 +1092,7 @@
 				""
 				"§eSuba um Giant Beanstalk até o topo."
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:huge_stalk"
 			id: "1F4A28A2CA11A8AE"
 			rewards: [
@@ -1033,6 +1108,7 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:beanstalk"
 				criterion: "use_beans"
@@ -1040,16 +1116,18 @@
 				type: "advancement"
 			}]
 			title: "Pé de Feijão Gigante"
-			x: 32.0d
-			y: 4.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["48BF449A5DA017A7"]
 			description: [
 				"§7Giants habitam as Hollow Hills — versões enormes de"
 				"§7jogadores comuns, com picaretas do tamanho de uma árvore."
 				""
 				"§eDerrote um Giant e consiga a Giant Pickaxe dele."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "twilightforest:giant_pickaxe"
@@ -1071,6 +1149,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:giants"
 				criterion: "pickaxe"
@@ -1078,8 +1157,8 @@
 				type: "advancement"
 			}]
 			title: "Terra dos Gigantes"
-			x: 34.0d
-			y: 4.0d
+			x: 9.5d
+			y: -11.0d
 		}
 	]
 	title: "§2Floresta Crepuscular"

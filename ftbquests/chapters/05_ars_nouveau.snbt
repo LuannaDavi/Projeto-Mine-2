@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "05_ars_nouveau"
 	group: "6A1D97ECF9A7FC71"
@@ -9,8 +9,36 @@
 	quests: [
 		{
 			description: [
+				"§7Grimórios, glifos e feitiços moldáveis à sua escolha — seu primeiro contato com a magia arcana."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Source Gem."
+			]
+			icon: "ars_nouveau:source_gem"
+			id: "06E050829D76E12B"
+			rewards: [{
+				id: "520E8019682A53CE"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "4A4F2C0B9A5211B6"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06E050829D76E12B"]
+			description: [
 				"§7A magia não é encontrada em livros — ela está no mundo."
-				"§7§eArs Nouveau §7usa §eGlifos §7como blocos de construção:"
+				"§7Essa escola usa §eGlifos §7como blocos de construção:"
 				"§7combine-os para criar feitiços únicos que não existem"
 				"§7em nenhum outro sistema mágico."
 				""
@@ -21,6 +49,7 @@
 				"§6Dica: §7Olhe para o chão em florestas densas à noite."
 				"§7Os cristais brilham levemente no escuro."
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:source_gem"
 			id: "4D00000000000002"
 			rewards: [
@@ -43,6 +72,7 @@
 				}
 			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "4D00000000000005"
@@ -51,9 +81,10 @@
 			}]
 			title: "Despertar Arcano"
 			x: 0.0d
-			y: 0.0d
+			y: -10.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7O §eNovice Spell Book §7é o primeiro passo para um mago."
 				"§7Com ele, você armazena e lança seus feitiços personalizados."
@@ -64,6 +95,7 @@
 				"§6Como criar glifos: §7Use a Scribing Table com Mana Essence!"
 				"§7Combine glifos de §eLançamento + Efeito §7para criar magias."
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:novice_spell_book"
 			id: "4D00000000000006"
 			rewards: [
@@ -85,6 +117,7 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D0000000000000A"
@@ -98,10 +131,11 @@
 				}
 			]
 			title: "Novato nas Artes"
-			x: 2.0d
-			y: 0.0d
+			x: -2.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7Seus primeiros feitiços! Comece pelos básicos:"
 				"§7um Feitiço de Fogo e um Feitiço de Cura."
@@ -111,6 +145,7 @@
 				"§6Exemplo de combo: §7Touch + Fire = queima o alvo ao tocar."
 				"§7Touch + Heal = cura ao tocar. Experimente combinações!"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:blank_glyph"
 			id: "4D0000000000000C"
 			rewards: [
@@ -132,6 +167,7 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D00000000000010"
@@ -145,10 +181,11 @@
 				}
 			]
 			title: "Primeiros Feitiços"
-			x: 4.0d
-			y: 0.0d
+			x: -9.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7Um mago sem Mana é um mortal com um livro bonito."
 				"§7§eSource Jars §7coletam Mana do ambiente —"
@@ -159,6 +196,7 @@
 				"§6Dica: §7Cerque os Source Jars com flores e plantas."
 				"§7Quanto mais vida ao redor, mais rápida a coleta de Mana."
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:source_jar"
 			id: "4D00000000000011"
 			rewards: [
@@ -180,6 +218,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 2L
 				id: "4D00000000000015"
@@ -187,10 +226,11 @@
 				type: "item"
 			}]
 			title: "Reservatório de Mana"
-			x: 6.0d
-			y: 0.0d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7O Apprentice Spell Book é uma evolução do Novice."
 				"§7Ele armazena mais glifos e tem mais poder de conjuração."
@@ -200,6 +240,7 @@
 				"§6Dica: §7Conjure feitiços em mobs pra ganhar XP mágico —"
 				"§7quanto mais você usa, mais forte fica."
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:apprentice_spell_book"
 			id: "4D00000000000020"
 			rewards: [
@@ -220,16 +261,18 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4D00000000000024"
 				item: "ars_nouveau:apprentice_spell_book"
 				type: "item"
 			}]
 			title: "Aprendiz de Feiticeiro"
-			x: 8.0d
-			y: 0.0d
+			x: -6.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7Magos de verdade não trabalham sozinhos."
 				"§7§eDrygmys §7coletam drops de mobs próximos sem matar ninguém."
@@ -243,11 +286,12 @@
 				""
 				"§8§o(Seu familiar trabalha mais que você. Não conte pra ele.)"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:drygmy_charm"
 			id: "4D00000000000025"
 			rewards: [
 				{
-					count: 3
+					count: 2
 					id: "4D00000000000026"
 					item: "ars_nouveau:whirlisprig_charm"
 					type: "item"
@@ -258,6 +302,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D00000000000028"
@@ -271,10 +316,11 @@
 				}
 			]
 			title: "Familiar Mágico"
-			x: 10.0d
-			y: 0.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7Com Ars Nouveau, você pode encantar suas armaduras"
 				"§7com buffs mágicos permanentes!"
@@ -285,6 +331,7 @@
 				"§6Dica: §7Glifos de proteção aumentados por Mana Enchanting"
 				"§7dão buffs permanentes na armadura — vale a pena investir."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "ars_nouveau:battlemage_robes"
@@ -312,6 +359,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4D0000000000002D"
 				item: {
@@ -324,10 +372,11 @@
 				type: "item"
 			}]
 			title: "Mago Blindado"
-			x: 12.0d
-			y: 0.0d
+			x: 6.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7O Archmage Spell Book é o ápice do Ars Nouveau."
 				"§7Com ele, feitiços ganham uma dimensão extra de poder."
@@ -337,6 +386,7 @@
 				"§6Dica: §7Projectile + Fire + Amplify + Extend Time é um combo"
 				"§7clássico de dano em área. Experimente combinar 5+ glifos!"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:archmage_spell_book"
 			id: "4D00000000000032"
 			rewards: [
@@ -358,16 +408,18 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "4D00000000000036"
 				item: "ars_nouveau:archmage_spell_book"
 				type: "item"
 			}]
 			title: "Arquimago"
-			x: 14.0d
-			y: 0.0d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7Com todo esse poder arcano, sua base merece uma Torre de Mago"
 				"§7de verdade — não é obrigatório, mas Source Jars espalhadas"
@@ -379,6 +431,7 @@
 				"§7Scribing Table no 1º andar, Source Jars ao redor de cada andar,"
 				"§7Familiar circulando no topo. Sua torre deve irradiar magia!"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:source_jar"
 			id: "4D00000000000044"
 			rewards: [
@@ -399,6 +452,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 5L
@@ -413,10 +467,11 @@
 				}
 			]
 			title: "Torre do Arquimago"
-			x: 0.0d
-			y: 4.0d
+			x: 9.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7A magia pode automatizar coisas que a tecnologia não consegue."
 				"§7Combine Ars Nouveau + Create para criar sistemas híbridos!"
@@ -427,12 +482,14 @@
 				""
 				"§6Dica: §7Starbuncle coletam itens automaticamente!"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:starbuncle_charm"
 			id: "4D0000000000004D"
 			rewards: [
 				{
+					count: 2
 					id: "7B29825E48DF6AE4"
-					item: "ars_nouveau:whirlisprig_charm"
+					item: "ars_nouveau:starbuncle_charm"
 					type: "item"
 				}
 				{
@@ -447,6 +504,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D00000000000050"
@@ -460,10 +518,11 @@
 				}
 			]
 			title: "Automação Arcana"
-			x: 2.0d
-			y: 4.0d
+			x: 2.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7§lO Arquimago Supremo §r§7usa magia para tudo:"
 				"§7combate, exploração, automação e defesa."
@@ -476,6 +535,7 @@
 				""
 				"§6O verdadeiro Arquimago não precisa de nada mais!"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:archmage_spell_book"
 			id: "4D0000000000005B"
 			rewards: [
@@ -497,6 +557,7 @@
 					xp: 2000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D0000000000005F"
@@ -526,10 +587,11 @@
 				}
 			]
 			title: "§dO Arquimago Supremo"
-			x: 4.0d
-			y: 4.0d
+			x: 0.0d
+			y: -4.0d
 		}
 		{
+			dependencies: ["06E050829D76E12B"]
 			description: [
 				"§7Rituais em Ars Nouveau usam um §eArcane Pedestal §7pra seguir"
 				"§7uma receita: coloque o item base no pedestal, ligue um"
@@ -541,6 +603,7 @@
 				""
 				"§eConstrua um Arcane Pedestal, um Ritual Brazier e um Enchanter's Eye."
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:arcane_pedestal"
 			id: "5F7BF09CC2D06605"
 			rewards: [
@@ -556,6 +619,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "0004A9D9DC09CD4F"
@@ -574,9 +638,323 @@
 				}
 			]
 			title: "Ritual e Enfeitiçamento"
-			x: 10.0d
-			y: 4.0d
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06E050829D76E12B"]
+			description: [
+				"§7A primeira das quatro escolas elementais. Robes, chapéu e"
+				"§7um tomo que canaliza chamas com uma precisão que a magia"
+				"§7comum do fogo nunca teve."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ars_elemental:fire_robes"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A49AADF0B80B170"
+			rewards: [
+				{
+					id: "4CEB84BA4A00D082"
+					item: "ars_elemental:fire_focus"
+					type: "item"
+				}
+				{
+					id: "68A243DADBF73994"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "26BF5439C2F042BB"
+					item: {
+						Count: 1
+						id: "ars_elemental:fire_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "288A6A293285CB29"
+					item: {
+						Count: 1
+						id: "ars_elemental:fire_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C165655D480690E"
+					item: "ars_elemental:fire_caster_tome"
+					type: "item"
+				}
+			]
+			title: "Vestes do Fogo"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["06E050829D76E12B"]
+			description: [
+				"§7Correntes, ondas e uma resistência a afogamento que quem"
+				"§7já perdeu item numa caverna alagada vai apreciar bastante."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ars_elemental:aqua_robes"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1F7401B7FB085890"
+			rewards: [
+				{
+					id: "5E92685B3D66F10C"
+					item: "ars_elemental:water_focus"
+					type: "item"
+				}
+				{
+					id: "35233CF94E425FE8"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "19B4F2BD92D0C673"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3FF91B7A2AB45FE5"
+					item: {
+						Count: 1
+						id: "ars_elemental:aqua_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "141DD4185FE12CC0"
+					item: "ars_elemental:water_caster_tome"
+					type: "item"
+				}
+			]
+			title: "Vestes da Água"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["06E050829D76E12B"]
+			description: [
+				"§7Pesada, literalmente. Magia de terra prioriza durabilidade"
+				"§7e controle de área sobre velocidade — combina bem com quem"
+				"§7prefere não sair correndo do problema."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ars_elemental:earth_robes"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2C5D3B67C1EFF1FB"
+			rewards: [
+				{
+					id: "6911F959A6BFBEB2"
+					item: "ars_elemental:earth_focus"
+					type: "item"
+				}
+				{
+					id: "5FF58EC9EBB6430A"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3312FC6DF6070000"
+					item: {
+						Count: 1
+						id: "ars_elemental:earth_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "48DBE67DA19FFD56"
+					item: {
+						Count: 1
+						id: "ars_elemental:earth_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F9B3194E17CE351"
+					item: "ars_elemental:earth_caster_tome"
+					type: "item"
+				}
+			]
+			title: "Vestes da Terra"
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06E050829D76E12B"]
+			description: [
+				"§7A mais leve das quatro. Feitiços de ar priorizam mobilidade —"
+				"§7empurrões, quedas amortecidas, e uma facilidade suspeita"
+				"§7pra fugir de briga que você mesmo começou."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ars_elemental:air_robes"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "75F689C8DA2B3D8F"
+			rewards: [
+				{
+					id: "7CD05817954A1A6A"
+					item: "ars_elemental:air_focus"
+					type: "item"
+				}
+				{
+					id: "6D0BAF03A985E157"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "6A172462D6931F22"
+					item: {
+						Count: 1
+						id: "ars_elemental:air_robes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FF17CD65312D4C2"
+					item: {
+						Count: 1
+						id: "ars_elemental:air_hat"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E991118A47366D4"
+					item: "ars_elemental:air_caster_tome"
+					type: "item"
+				}
+			]
+			title: "Vestes do Ar"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06E050829D76E12B"]
+			description: [
+				"§7Torretas automáticas, uma pra cada elemento. Plante, ligue,"
+				"§7e deixe que atirem feitiços em qualquer coisa hostil que"
+				"§7passar perto — sem precisar da sua atenção constante."
+			]
+			hide_until_deps_complete: true
+			icon: "ars_elemental:fire_turret"
+			id: "630407020DA1BA41"
+			rewards: [{
+				id: "3D99120C5EB3D31C"
+				type: "xp"
+				xp: 400
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0FABE3E4467FD8D4"
+					item: "ars_elemental:fire_turret"
+					type: "item"
+				}
+				{
+					id: "4E0189A8B205B663"
+					item: "ars_elemental:water_turret"
+					type: "item"
+				}
+				{
+					id: "05CA313F9203341D"
+					item: "ars_elemental:earth_turret"
+					type: "item"
+				}
+				{
+					id: "6109946E307BA064"
+					item: "ars_elemental:air_turret"
+					type: "item"
+				}
+			]
+			title: "Torres Elementais"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["06E050829D76E12B"]
+			description: [
+				"§7Alguém teve a ideia de colocar um starbuncle numa roda de"
+				"§7hamster conectada ao Create. Funciona. Ninguém questiona"
+				"§7mais o porquê."
+			]
+			hide_until_deps_complete: true
+			icon: "ars_creo:starbuncle_wheel"
+			id: "06E92F7AB5A9DA98"
+			rewards: [{
+				id: "735BA303B57D0462"
+				type: "xp"
+				xp: 350
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "693D9410ED00F5F7"
+				item: "ars_creo:starbuncle_wheel"
+				type: "item"
+			}]
+			title: "A Roda do Starbuncle"
+			x: 1.5d
+			y: 0.5d
 		}
 	]
-	title: "§dArs Nouveau — Magia Arcana"
+	title: "§dOs Fundamentos da Magia Arcana"
 }

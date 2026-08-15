@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "03_mekanism"
 	group: "3322FB1D5A7FD527"
@@ -9,7 +9,35 @@
 	quests: [
 		{
 			description: [
-				"§7§eMekanism §7começa com §eOsmio §7— um minério azulado abundante."
+				"§7Reatores, tubos de energia e máquinas que dobram as leis da física a seu favor."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Osmium Ingot."
+			]
+			icon: "mekanism:ingot_osmium"
+			id: "1434A31CE9FEC99D"
+			rewards: [{
+				id: "721395CBC9DEB7FB"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "5C5A1D12ED656C9E"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1434A31CE9FEC99D"]
+			description: [
+				"§7Tudo começa com §eOsmio §7— um minério azulado abundante."
 				"§7Do Osmio vem o §eAço (Steel Ingot)§7 — base de toda a progressão."
 				"§7Você vai precisar de muito aço. Comece a acumular agora."
 				""
@@ -20,6 +48,7 @@
 				""
 				"§8§o(Osmium: o metal que só o Mekanism liga a mínima pra ele.)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:ingot_steel"
 			id: "3EC100DE4F69BF8D"
 			rewards: [
@@ -41,6 +70,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:steel_ingot"
@@ -55,10 +85,11 @@
 				}
 			]
 			title: "Osmium e Aço"
-			x: 0.0d
-			y: 0.0d
+			x: 5.0d
+			y: 11.0d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eEnrichment Chamber §7é a primeira grande máquina do Mekanism:"
 				"§7ela §edobra §7o rendimento de minérios — ore vira 2 pós,"
@@ -68,6 +99,7 @@
 				""
 				"§6Dica: §7Processe o ore bruto, não o ingot já fundido!"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:enrichment_chamber"
 			id: "2ABAA6A5E69465A9"
 			rewards: [
@@ -82,6 +114,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:enricher"
@@ -96,10 +129,11 @@
 				}
 			]
 			title: "A Câmara de Enriquecimento"
-			x: 2.0d
-			y: 0.0d
+			x: 9.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7Máquinas Mekanism precisam de §eenergia elétrica (Forge Energy)§7."
 				"§7O §eBasic Energy Cube §7armazena e o §eUniversal Cable §7transporta."
@@ -112,6 +146,7 @@
 				""
 				"§8§o(Energia infinita, fiação finita — bem-vindo ao inferno dos cabos.)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:basic_energy_cube"
 			id: "52A7AED3B54979E9"
 			rewards: [
@@ -132,6 +167,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:energy_cube"
@@ -147,10 +183,11 @@
 				}
 			]
 			title: "Rede de Energia"
-			x: 4.0d
-			y: 0.0d
+			x: 11.5d
+			y: 3.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7Os §eCircuitos de Controle §7são os componentes mais usados."
 				"§7Basic → Advanced → Elite → Ultimate — cada nível exige o anterior"
@@ -161,6 +198,7 @@
 				"§6Dica: §7Você vai precisar de dezenas deles."
 				"§7Automatize a produção com a §eCombining Factory §7logo que puder."
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:advanced_control_circuit"
 			id: "621356F87CDB182D"
 			rewards: [
@@ -182,6 +220,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:advanced_control_circuit"
@@ -197,10 +236,11 @@
 				}
 			]
 			title: "Circuitos de Controle"
-			x: 6.0d
-			y: 0.0d
+			x: 12.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eMetallurgic Infuser §7processa metais com catalisadores"
 				"§7para criar as §eLigas (Alloys)§7 — materiais compostos únicos:"
@@ -213,6 +253,7 @@
 				""
 				"§8§o(Misturar metais e rezar pra dar liga — literalmente.)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:metallurgic_infuser"
 			id: "1835B2A99A67F4C6"
 			rewards: [
@@ -233,6 +274,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "mekanism:reinforced_alloy"
 				criterion: "alloy_reinforced"
@@ -240,12 +282,13 @@
 				type: "advancement"
 			}]
 			title: "Ligas e o Metallurgic Infuser"
-			x: 8.0d
-			y: 0.0d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
-				"§7§eFábricas §7são versões paralelas das máquinas do Mekanism."
+				"§7§eFábricas §7são versões paralelas das máquinas de processamento."
 				"§7Basic (3x), Advanced (5x), Elite (7x) e Ultimate (9x simultâneos."
 				"§7A §ePurification Chamber §7com Oxigênio triplica o rendimento!"
 				""
@@ -254,6 +297,7 @@
 				"§6Dica: §7Acorrente: §eElectrolytic Separator §7(O₂)"
 				"§7→ §ePurification Chamber §7→ §eCrusher §7→ §eSmelter §7= §e3x ore§7!"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:basic_crushing_factory"
 			id: "20707D190427018D"
 			rewards: [
@@ -268,6 +312,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:factory"
@@ -283,10 +328,11 @@
 				}
 			]
 			title: "Fábricas de Processamento"
-			x: 10.0d
-			y: 0.0d
+			x: 7.0d
+			y: -9.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eLogistical Transporter §7move itens automaticamente"
 				"§7entre máquinas por redes de cor configuráveis."
@@ -299,6 +345,7 @@
 				""
 				"§8§o(Itens andando sozinhos pela tubulação. A automação te olha e sorri.)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:logistical_sorter"
 			id: "5D7F02A9102085FE"
 			rewards: [
@@ -319,6 +366,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:item_transport"
@@ -334,10 +382,11 @@
 				}
 			]
 			title: "Transporte Logístico"
-			x: 12.0d
-			y: 0.0d
+			x: 2.5d
+			y: -11.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7Mekanism tem sistema completo de §eGases e Produtos Químicos§7."
 				"§7Chemical Tank armazena, Pressurized Tube transporta."
@@ -348,6 +397,7 @@
 				""
 				"§6Dica: §7Com O₂ + Purification Chamber = §e3x ore output§7 garantido!"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:basic_chemical_tank"
 			id: "1CEF3BADEC42B942"
 			rewards: [
@@ -369,6 +419,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:chemical_tank"
@@ -384,10 +435,11 @@
 				}
 			]
 			title: "Química Industrial"
-			x: 0.0d
-			y: 4.0d
+			x: -2.5d
+			y: -11.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eDigital Miner §7minera automaticamente uma área de"
 				"§7até §e63 blocos de raio §7com filtros precisos."
@@ -399,6 +451,7 @@
 				"§7Use §eSpeed Upgrades §7para acelerar a mineração automática."
 				"§8§o(Mineração manual é para os outros. Você tem tecnologia.)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:digital_miner"
 			id: "3664DB49076CF0B3"
 			rewards: [
@@ -414,6 +467,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "mekanism:digital_miner"
 				criterion: "digital_miner"
@@ -421,10 +475,11 @@
 				type: "advancement"
 			}]
 			title: "O Minerador Digital"
-			x: 2.0d
-			y: 4.0d
+			x: -7.0d
+			y: -9.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eJetpack do Mekanism §7usa §eHidrogênio §7como combustível."
 				"§7O H₂ é produzido na §eElectrolytic Separator §7separando água."
@@ -437,6 +492,7 @@
 				""
 				"§8§o(Voar com gás inflamável nas costas. O que pode dar errado?)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:jetpack"
 			id: "3217A1518CC8B331"
 			rewards: [
@@ -456,6 +512,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:hydrogen_powered_flight"
@@ -471,10 +528,11 @@
 				}
 			]
 			title: "Voando com Hidrogênio"
-			x: 4.0d
-			y: 4.0d
+			x: -10.5d
+			y: -6.0d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eQIO §7armazena §ebilhões §7de itens por Drive."
 				"§7O §ePortable QIO Dashboard §7acessa o inventário de qualquer lugar."
@@ -485,6 +543,7 @@
 				"§6Dica: §7Configure §eFrequências §7para redes separadas."
 				"§7Uma frequência para minérios, outra para comida, outra para equipamento."
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:qio_drive_array"
 			id: "18B5879A45D4EB4C"
 			rewards: [
@@ -500,6 +559,7 @@
 					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:qio_drive_array"
@@ -515,10 +575,11 @@
 				}
 			]
 			title: "QIO — Armazenamento Quântico"
-			x: 6.0d
-			y: 4.0d
+			x: -12.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eTeleporter §7permite teletransporte entre pontos fixos"
 				"§7na mesma §eFrequência §7— sem Ender Pearls, só energia."
@@ -530,6 +591,7 @@
 				"§7Uma para a mina, outra para a base, outra para o farm."
 				"§8§o(Ender Pearls são tecnologia obsoleta.)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:teleporter"
 			id: "43A6E597AA0BB399"
 			rewards: [
@@ -544,6 +606,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:teleporter"
@@ -559,10 +622,11 @@
 				}
 			]
 			title: "Teleportação"
-			x: 8.0d
-			y: 4.0d
+			x: -11.5d
+			y: 3.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7A §eAtomic Alloy §7é o material de tier máximo —"
 				"§7exige materiais processados em condições especiais"
@@ -574,6 +638,7 @@
 				"§6Dica: §7Atomic Alloy requer §eRefined Obsidian §7como catalisador."
 				"§7Produzida comprimindo Obsidiana na §eOsmium Compressor§7."
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:alloy_atomic"
 			id: "5FA9B9859E4C5710"
 			rewards: [
@@ -595,6 +660,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mekanism:atomic_alloy"
@@ -610,10 +676,11 @@
 				}
 			]
 			title: "Liga Atômica"
-			x: 10.0d
-			y: 4.0d
+			x: -9.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eMekaSuit §7é a armadura de tier máximo — totalmente modular,"
 				"§7usa energia para absorver dano, voar, respirar e mais."
@@ -626,6 +693,7 @@
 				"§7Module Gravitational = voo sem Jetpack!"
 				"§8§o(Você não precisa mais de nada. Mas o modpack continua mesmo assim.)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:mekasuit_bodyarmor"
 			id: "51E1F442E16D1F54"
 			rewards: [
@@ -647,6 +715,7 @@
 					xp: 2000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "mekanism:mekasuit"
 				criterion: "full_set"
@@ -654,10 +723,11 @@
 				type: "advancement"
 			}]
 			title: "MekaSuit — Armadura do Futuro"
-			x: 12.0d
-			y: 4.0d
+			x: -5.0d
+			y: 11.0d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7A §eInduction Matrix §7é o maior banco de energia do Mekanism —"
 				"§7um multi-bloco de 3x3x3 a 18x18x18 blocos."
@@ -669,6 +739,7 @@
 				""
 				"§6Dica: §7A carcaça usa §eInduction Casing §7e §eInduction Port§7."
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:basic_induction_cell"
 			id: "5C9212B1AA74FA78"
 			rewards: [
@@ -690,6 +761,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3BC817ADAAA53B19"
@@ -703,10 +775,11 @@
 				}
 			]
 			title: "Induction Matrix"
-			x: 14.0d
-			y: 4.0d
+			x: -2.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §ePellet of Antimatter §7é o pico da progressão química."
 				"§7O caminho: Urânio → Plutônio (Fission Reactor) →"
@@ -717,6 +790,7 @@
 				""
 				"§8§o(Você acabou de sintetizar antimatéria em Minecraft.)"
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:sps_casing"
 			id: "66ACD8977D7D6F67"
 			rewards: [
@@ -731,6 +805,7 @@
 					xp: 3000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "mekanism:antimatter"
 				criterion: "pellet_antimatter"
@@ -738,10 +813,11 @@
 				type: "advancement"
 			}]
 			title: "Antimatéria"
-			x: 0.0d
-			y: 8.0d
+			x: 2.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7Osmium, Steel e Lead são a base de praticamente toda receita"
 				"§7avançada do Mekanism — de Circuitos a Ligas, tudo passa por"
@@ -752,6 +828,7 @@
 				"§6Dica: §7Lead também blinda contra radiação de reatores nucleares"
 				"§7— comece a guardar um estoque antes de chegar no Fission Reactor."
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:ingot_osmium"
 			id: "4E5039D05F2939D0"
 			rewards: [
@@ -767,6 +844,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 8L
@@ -788,10 +866,11 @@
 				}
 			]
 			title: "A Tríade dos Metais"
-			x: 10.0d
-			y: 6.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
+			dependencies: ["1434A31CE9FEC99D"]
 			description: [
 				"§7O §eMekaSuit §7é modular — cada peça funciona sozinha antes"
 				"§7de você montar o conjunto completo. Comece pelo capacete:"
@@ -802,6 +881,7 @@
 				"§6Dica: §7Cada peça consome energia do MekaSuit Energy Unit"
 				"§7instalado — sem energia, os módulos não funcionam."
 			]
+			hide_until_deps_complete: true
 			icon: "mekanism:mekasuit_helmet"
 			id: "01266555EE478B0B"
 			rewards: [
@@ -817,15 +897,285 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3FDBF155FE4C13CC"
 				item: "mekanism:mekasuit_helmet"
 				type: "item"
 			}]
 			title: "Mekasuit: O Traje Definitivo"
-			x: 12.0d
-			y: 6.0d
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1434A31CE9FEC99D"]
+			description: [
+				"§7A energia mais simples de todas: vento que gira uma turbina,"
+				"§7sol que carrega uma célula. Nada explode, o que já é um"
+				"§7ótimo começo pra quem trabalha com Mekanism."
+			]
+			hide_until_deps_complete: true
+			icon: "mekanismgenerators:wind_generator"
+			id: "074B8C058FB1AB54"
+			rewards: [
+				{
+					id: "64BA2B946251F4FD"
+					item: "mekanismgenerators:advanced_solar_generator"
+					type: "item"
+				}
+				{
+					id: "1808C0FFD4E0F16B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5BAB1C38C1EFBCE9"
+					item: "mekanismgenerators:wind_generator"
+					type: "item"
+				}
+				{
+					id: "1AD85F84DE6DE8D8"
+					item: "mekanismgenerators:solar_generator"
+					type: "item"
+				}
+			]
+			title: "Ventos e Sol"
+			x: 5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1434A31CE9FEC99D"]
+			description: [
+				"§7Calor sobrando de outra máquina, ou etanol feito de plantas —"
+				"§7duas formas de gerar energia que praticamente se pagam sozinhas."
+			]
+			hide_until_deps_complete: true
+			icon: "mekanismgenerators:heat_generator"
+			id: "0800FEA0AA8F39F6"
+			rewards: [
+				{
+					count: 4
+					id: "612695F2DD18C3B2"
+					item: "mekanismgenerators:bioethanol_bucket"
+					type: "item"
+				}
+				{
+					id: "2E9686C685FC3457"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1FF67AB715418016"
+					item: "mekanismgenerators:heat_generator"
+					type: "item"
+				}
+				{
+					id: "71B0BFE5690D5DF3"
+					item: "mekanismgenerators:bio_generator"
+					type: "item"
+				}
+			]
+			title: "Calor e Biomassa"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1434A31CE9FEC99D"]
+			description: [
+				"§7Queime gases combustíveis direto na fonte. Menos elegante"
+				"§7que energia solar, bem mais parruda em números."
+			]
+			hide_until_deps_complete: true
+			icon: "mekanismgenerators:gas_burning_generator"
+			id: "1D7681406D885F08"
+			rewards: [{
+				id: "14ED72954E146846"
+				type: "xp"
+				xp: 300
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "48DB7EFE001B3ECB"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			title: "Turbina a Gás"
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1434A31CE9FEC99D"]
+			description: [
+				"§7Um reator de verdade, com casco reforçado, hastes de controle"
+				"§7e uma turbina industrial pronta pra converter o vapor gerado"
+				"§7em energia bruta. Leia o manual duas vezes antes de ligar."
+				""
+				"§6Dica: §7fissão precisa de espaço — é uma estrutura multibloco."
+				"§7Planeje o formato antes de gastar os materiais."
+			]
+			hide_until_deps_complete: true
+			icon: "mekanismgenerators:fission_reactor_casing"
+			id: "1C4AEA1E13DC5687"
+			rewards: [
+				{
+					count: 2
+					id: "5D0CBC25C5145231"
+					item: "mekanismgenerators:turbine_rotor"
+					type: "item"
+				}
+				{
+					id: "15D2D5D28E15C79D"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 6L
+					id: "2D9AE92A30A1B5A3"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "113318D2D4E4E266"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					id: "0EE84998B5454F51"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5E5F014AE3355BDA"
+					item: "mekanismgenerators:turbine_casing"
+					type: "item"
+				}
+			]
+			title: "O Núcleo de Fissão"
+			x: -5.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1434A31CE9FEC99D"]
+			description: [
+				"§7O topo absoluto da geração de energia. Hohlraum comprimido,"
+				"§7deutério e trítio combinados numa reação que, tecnicamente,"
+				"§7é a mesma coisa que acontece dentro do sol."
+				""
+				"§7(Isso aqui não é pouca coisa — é o motor que sustenta o"
+				"§7resto do seu império industrial.)"
+			]
+			hide_until_deps_complete: true
+			icon: "mekanismgenerators:fusion_reactor_controller"
+			id: "119F6B1429FA8EDF"
+			rewards: [
+				{
+					id: "4764F7AB0B17135E"
+					item: "mekanismgenerators:laser_focus_matrix"
+					type: "item"
+				}
+				{
+					id: "5F28A00B5EEEE0F7"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "3FA2A1B83F134E79"
+					item: "mekanismgenerators:hohlraum"
+					type: "item"
+				}
+				{
+					id: "5C8C918E0FDFFC65"
+					item: "mekanismgenerators:fusion_reactor_controller"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "29A86890F21A8962"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					type: "item"
+				}
+			]
+			title: "Fusão e Hohlraum"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1434A31CE9FEC99D"]
+			description: [
+				"§7Osmium não é só pra revestir cabos. Um conjunto completo"
+				"§7de ferramentas e armadura feito dele aguenta muito mais"
+				"§7castigo do que aço comum."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "mekanismtools:osmium_paxel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "06D8F88ADEB476A5"
+			rewards: [
+				{
+					id: "44722542176EBC11"
+					item: {
+						Count: 1
+						id: "mekanismtools:osmium_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61514FDE436154C1"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2B2D7574DF74AAC3"
+					item: {
+						Count: 1
+						id: "mekanismtools:osmium_paxel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3ACC59A4D235A703"
+					item: {
+						Count: 1
+						id: "mekanismtools:osmium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ferramentas de Osmium"
+			x: -5.0d
+			y: 3.5d
 		}
 	]
-	title: "§bMekanism — Física Quântica"
+	title: "§bAs Leis da Física Quântica"
 }

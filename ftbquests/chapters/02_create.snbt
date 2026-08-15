@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "02_create"
 	group: "3322FB1D5A7FD527"
@@ -9,7 +9,35 @@
 	quests: [
 		{
 			description: [
-				"§7§eCreate §7não é só automação — é engenharia visual."
+				"§7Engrenagens, esteiras e contraptions que fazem o trabalho pesado por você — a era da automação mecânica começa aqui."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Andesite Alloy."
+			]
+			icon: "create:andesite_alloy"
+			id: "62A4BC97F8BFD8FA"
+			rewards: [{
+				id: "634A26AEC748459A"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "7136D3EE8C44D5B3"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["62A4BC97F8BFD8FA"]
+			description: [
+				"§7Não é só automação — é engenharia visual de verdade."
 				"§7Cada máquina que você constrói funciona de verdade,"
 				"§7com peças que giram, correias que transportam e"
 				"§7fluidos que fluem."
@@ -20,6 +48,7 @@
 				"§7(solte no chão para abrir) tem guias completos."
 				"§7É o melhor ponto de partida antes de qualquer máquina."
 			]
+			hide_until_deps_complete: true
 			icon: "create:cogwheel"
 			id: "3C00000000000002"
 			rewards: [
@@ -42,6 +71,7 @@
 				}
 			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C00000000000006"
@@ -56,11 +86,12 @@
 			]
 			title: "Os Fundamentos do Create"
 			x: 0.0d
-			y: 0.0d
+			y: -11.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
-				"§7Toda máquina do Create precisa de Força de Rotação (SU)."
+				"§7Toda máquina mecânica por aqui precisa de Força de Rotação (SU)."
 				"§7A fonte mais básica é o §eWater Wheel§7."
 				""
 				"§eCrie e instale um Water Wheel próximo a um rio."
@@ -69,6 +100,7 @@
 				"§6Dica: §7Quanto mais água fluindo, maior o SU gerado!"
 				"§7Use canais para direcionar água ao redor da roda."
 			]
+			hide_until_deps_complete: true
 			icon: "create:water_wheel"
 			id: "3C00000000000008"
 			rewards: [
@@ -84,6 +116,7 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C0000000000000B"
@@ -97,10 +130,11 @@
 				}
 			]
 			title: "A Roda da Fortuna"
-			x: 2.0d
-			y: 0.0d
+			x: -2.5d
+			y: -6.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7O §eMixer §7e a §eBasin §7são o coração da produção do Create."
 				"§7Com eles você funde ligas, mistura materiais e cria Latão!"
@@ -111,6 +145,7 @@
 				"§6Dica: §7Use o Mixing Basin com Blaze Burner embaixo!"
 				"§7O Latão é necessário para quase toda automação avançada."
 			]
+			hide_until_deps_complete: true
 			icon: "create:brass_ingot"
 			id: "3C0000000000000D"
 			rewards: [
@@ -132,6 +167,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 16L
@@ -147,10 +183,11 @@
 				}
 			]
 			title: "Alquimia Industrial"
-			x: 4.0d
-			y: 0.0d
+			x: -8.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Com Latão, você pode criar §eFunnels§7, §eDeployers§7 e §eSaws§7."
 				"§7É hora de construir sua primeira linha de produção automática."
@@ -160,6 +197,7 @@
 				""
 				"§6Dica: §7Funnels extraem, esteiras transportam, Deployers processam!"
 			]
+			hide_until_deps_complete: true
 			icon: "create:belt_connector"
 			id: "3C00000000000012"
 			rewards: [
@@ -181,6 +219,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C00000000000016"
@@ -194,10 +233,11 @@
 				}
 			]
 			title: "Linha de Produção"
-			x: 6.0d
-			y: 0.0d
+			x: -6.5d
+			y: -2.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7A §eDrill §7(broca) é uma das ferramentas mais poderosas do Create."
 				"§7Com um Contraption, você pode criar mineradores automáticos."
@@ -208,6 +248,7 @@
 				"§6Dica: §7Drills conectadas a Pistons + Gearshift criam"
 				"§7minas automáticas inacreditáveis!"
 			]
+			hide_until_deps_complete: true
 			icon: "create:mechanical_drill"
 			id: "3C00000000000018"
 			rewards: [
@@ -229,6 +270,7 @@
 					xp: 350
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C0000000000001C"
@@ -242,10 +284,11 @@
 				}
 			]
 			title: "Broca e Engrenagem"
-			x: 8.0d
+			x: -11.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Fluidos são parte central do Create."
 				"§7Tanks, Pipes e Pumps permitem transportar e armazenar líquidos."
@@ -257,6 +300,7 @@
 				""
 				"§6Dica: §7Use Fluid Valves para controlar o fluxo!"
 			]
+			hide_until_deps_complete: true
 			icon: "create:fluid_tank"
 			id: "3C0000000000001D"
 			rewards: [
@@ -278,6 +322,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C00000000000021"
@@ -291,10 +336,11 @@
 				}
 			]
 			title: "Engenharia de Fluidos"
-			x: 10.0d
-			y: 0.0d
+			x: -6.5d
+			y: 2.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Água e fogo juntos criam algo que nenhuma engrenagem"
 				"§7simples consegue — §evapor§7. E vapor gera poder em escala."
@@ -306,6 +352,7 @@
 				"§7Automatize o abastecimento de carvão com um Belt + Funnel"
 				"§7e sua engine nunca vai parar."
 			]
+			hide_until_deps_complete: true
 			icon: "create:steam_engine"
 			id: "3C00000000000023"
 			rewards: [
@@ -327,18 +374,20 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3C00000000000027"
 				item: "create:steam_engine"
 				type: "item"
 			}]
 			title: "Era a Vapor"
-			x: 12.0d
-			y: 0.0d
+			x: -8.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
-				"§7§eSteam Rails §7traz trens ao universo do Create."
+				"§7Existem trens de verdade nesse universo de engrenagens."
 				"§7Estações, vagões, rotas automáticas — tudo funciona"
 				"§7com a lógica de engrenagens do Create."
 				""
@@ -348,6 +397,7 @@
 				"§6Dica: §7Trens são ideais para mover recursos entre"
 				"§7bases distantes automaticamente. Configure rotas de ida e volta."
 			]
+			hide_until_deps_complete: true
 			icon: "railways:conductor_whistle"
 			id: "3C00000000000028"
 			rewards: [
@@ -369,16 +419,18 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3C0000000000002C"
 				item: "railways:conductor_whistle"
 				type: "item"
 			}]
 			title: "Rede Ferroviária"
-			x: 14.0d
-			y: 0.0d
+			x: -2.5d
+			y: 6.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Uma rota só com trilho é o começo. A §elocomativa a vapor §7é"
 				"§7o coração do sistema — ela precisa de bogeys (rodeiros),"
@@ -392,6 +444,7 @@
 				""
 				"§8§o(Sinal vermelho significa para. No Rails, significa\\: desastre.)"
 			]
+			hide_until_deps_complete: true
 			icon: "railways:semaphore"
 			id: "3C00000000000101"
 			rewards: [
@@ -413,6 +466,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C00000000000105"
@@ -427,9 +481,10 @@
 			]
 			title: "A Locomotiva"
 			x: 0.0d
-			y: 4.0d
+			y: 11.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Com Create, você pode construir Contraptions — estruturas"
 				"§7que se movem, giram e funcionam como máquinas reais."
@@ -440,6 +495,7 @@
 				"§6Dica: §7Glue (cola) mantém os blocos juntos!"
 				"§7Experimente um elevador ou braço giratório."
 			]
+			hide_until_deps_complete: true
 			icon: "create:mechanical_piston"
 			id: "3C0000000000002D"
 			rewards: [
@@ -467,6 +523,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C00000000000031"
@@ -480,10 +537,11 @@
 				}
 			]
 			title: "Máquinas que se Movem"
-			x: 2.0d
-			y: 4.0d
+			x: 2.5d
+			y: 6.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Por que colher na mão quando máquinas existem?"
 				"§7A §eMechanical Harvester §7colhe plantações inteiras"
@@ -496,6 +554,7 @@
 				"§7quanto maior a fazenda, mais vale a pena automatizar."
 				"§7Adicione um Belt com Chute pra coletar tudo direto em baús."
 			]
+			hide_until_deps_complete: true
 			icon: "create:mechanical_harvester"
 			id: "3C00000000000032"
 			rewards: [
@@ -517,16 +576,18 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3C00000000000036"
 				item: "create:mechanical_harvester"
 				type: "item"
 			}]
 			title: "Fazenda Automatizada"
-			x: 4.0d
-			y: 4.0d
+			x: 8.0d
+			y: 8.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7O §eEnchantment Industry §7(add-on do Create) permite"
 				"§7encantar itens usando XP líquida e automatizar encantamentos!"
@@ -537,13 +598,78 @@
 				"§7Combine com a Drain pra coletar XP do player também,"
 				"§7depois use numa Enchanting Table automatizada."
 			]
+			hide_until_deps_complete: true
 			icon: "create_enchantment_industry:hyper_experience_bottle"
 			id: "3C00000000000037"
 			rewards: [
 				{
-					count: 5
 					id: "3C00000000000038"
-					item: "minecraft:enchanted_book"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D8A3F17C925E4B0"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 3
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "482948E1F2ED4AA0"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C7E5B48D293A61F"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D666D93E3576C75"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:silk_touch"
+								lvl: 1
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -558,26 +684,29 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3C0000000000003B"
 				item: "create_enchantment_industry:hyper_experience_bottle"
 				type: "item"
 			}]
 			title: "Fábrica de Encantamentos"
-			x: 6.0d
-			y: 4.0d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
-				"§7§eCreate Confectionery §7usa o Create para fazer doces!"
+				"§7Toda essa engenharia também sabe fazer doces!"
 				"§7Chocolates, balas e sobremesas com buffs únicos."
 				""
-				"§ePrepare pelo menos 3 tipos de doces do Create Confectionery."
+				"§ePrepare pelo menos 3 tipos de doces feitos com essa engenharia."
 				"§7Cada doce dá um buff diferente."
 				""
 				"§6Dica: §7Chocolate dá velocidade, balas dão salto!"
 				"§7Use o Mechanical Mixer para receitas especiais."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "create_confectionery:full_chocolate_bar"
@@ -610,6 +739,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "490D5FADB202F1DF"
@@ -634,12 +764,13 @@
 				}
 			]
 			title: "Confeitaria Industrial"
-			x: 8.0d
-			y: 4.0d
+			x: 11.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
-				"§7§eCreate: Ultimate Factory §7não adiciona máquina nova —"
+				"§7Não é uma máquina nova —"
 				"§7ele adiciona RECEITAS novas pras máquinas que você já tem."
 				"§7Uma delas: triturar Nether Bricks no Crushing Wheel tem"
 				"§7chance (bem pequena) de soltar Netherite Scrap de bônus."
@@ -651,6 +782,7 @@
 				"§7Esse addon também adiciona Haunting: Apple vira Chorus"
 				"§7Fruit (30% de chance) — uma mecânica nova por trás das cortinas."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:netherite_scrap"
 			id: "3C00000000000046"
 			rewards: [
@@ -672,16 +804,18 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "09023118A79B3252"
 				item: "minecraft:netherite_scrap"
 				type: "item"
 			}]
 			title: "Reciclagem Industrial"
-			x: 10.0d
-			y: 4.0d
+			x: 6.5d
+			y: -2.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Construa uma cadeia de produção que processe automaticamente"
 				"§7minério → lingote → componente → produto final."
@@ -694,6 +828,7 @@
 				""
 				"§8§o(Voce nao construiu uma fabrica. Voce construiu um monstro que come minerio.)"
 			]
+			hide_until_deps_complete: true
 			icon: "create:electron_tube"
 			id: "3C00000000000050"
 			rewards: [
@@ -715,6 +850,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C00000000000054"
@@ -728,21 +864,23 @@
 				}
 			]
 			title: "Fábrica Completa"
-			x: 12.0d
-			y: 4.0d
+			x: 8.0d
+			y: -8.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
-				"§7O Jetpack do Create é um dos itens de mobilidade mais"
+				"§7Esse jetpack mecânico é um dos itens de mobilidade mais"
 				"§7úteis do modpack. Ele usa fluidos como combustível."
 				""
-				"§eCrie um §eCreate Jetpack§7."
-				"§7Configure-o com combustível líquido (lava ou óleo)."
+				"§eCrie um §eNetherite Jetpack§7 — a versão aprimorada,"
+				"§7mais resistente e eficiente que o modelo básico."
 				""
 				"§6Dica: §7O Jetpack tem modos diferentes de voo!"
 				"§7Combine com Curios para usar junto com armadura."
 			]
-			icon: "create_jetpack:jetpack"
+			hide_until_deps_complete: true
+			icon: "create_jetpack:netherite_jetpack"
 			id: "3C00000000000055"
 			rewards: [
 				{
@@ -760,19 +898,21 @@
 				{
 					id: "3C00000000000058"
 					type: "xp"
-					xp: 600
+					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "3C00000000000059"
-				item: "create_jetpack:jetpack"
+				item: "create_jetpack:netherite_jetpack"
 				type: "item"
 			}]
 			title: "Voar com Engrenagens"
-			x: 14.0d
-			y: 4.0d
+			x: 2.5d
+			y: -6.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Combine Mechanical Arm com espadas encantadas pra criar"
 				"§7um braço mecânico que ataca sozinho — e Crushing Wheels"
@@ -784,6 +924,7 @@
 				"§7é a base de qualquer mob grinder automatizado no Create."
 				"§7Lure de mobs com luz e plataformas elevadas."
 			]
+			hide_until_deps_complete: true
 			icon: "create:deployer"
 			id: "3C0000000000005A"
 			rewards: [
@@ -805,6 +946,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C0000000000005E"
@@ -820,9 +962,10 @@
 			]
 			title: "Grinder Automático"
 			x: 0.0d
-			y: 8.0d
+			y: -4.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7A visão final do engenheiro: uma fábrica que respira sozinha."
 				"§7Minério entra. Produto sai. Você não precisa tocar em nada."
@@ -835,6 +978,7 @@
 				""
 				"§8§o(O Create tem 400 blocos diferentes. Você usou uns 15. Está bem assim. Está bem.)"
 			]
+			hide_until_deps_complete: true
 			icon: "create:schematicannon"
 			id: "3C00000000000064"
 			rewards: [
@@ -856,6 +1000,7 @@
 					xp: 2000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C00000000000068"
@@ -875,23 +1020,23 @@
 				}
 			]
 			title: "§6O Engenheiro Supremo"
-			x: 2.0d
-			y: 8.0d
+			x: -1.0d
+			y: -2.5d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
-				"§7§eCreate: Stuff \\& Additions §7expande o kit de ferramentas"
-				"§7e armaduras do Create com versões de Latão, Cobre, Zinco"
+				"§7O kit de ferramentas e armaduras ganhou versões de Latão, Cobre, Zinco"
 				"§7e até Experiência — cada uma com efeitos únicos."
 				""
-				"§eForje e use pelo menos §e1 ferramenta de Latão (Brass)§7"
-				"§edo Create: Stuff \\& Additions."
+				"§eForje e use pelo menos §e1 ferramenta de Latão (Brass)§7."
 				""
 				"§6Dica: §7A Brass Sword tem alcance maior que a vanilla!"
 				"§7Ferramentas de Experiência dão XP extra ao minerar."
 				""
 				"§8§o(Ventilador gigante. Mecanica solida. Fisica questionavel.)"
 			]
+			hide_until_deps_complete: true
 			icon: "create:cogwheel"
 			id: "3C00000000000070"
 			rewards: [
@@ -913,6 +1058,7 @@
 					xp: 350
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3C00000000000074"
@@ -932,10 +1078,11 @@
 				}
 			]
 			title: "Aditivos Cinéticos"
-			x: 4.0d
-			y: 8.0d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7Chega de gambiarra. Chegou a hora de construir de verdade:"
 				"§7engrenagens, prensas e mecanismos que fariam Da Vinci chorar"
@@ -944,6 +1091,7 @@
 				"§eProduza os componentes centrais do Create: Andesite Alloy, Brass Ingot,"
 				"§ePrecision Mechanism e monte um Mechanical Press."
 			]
+			hide_until_deps_complete: true
 			icon: "create:andesite_alloy"
 			id: "2FF4A364818C7C28"
 			rewards: [
@@ -965,6 +1113,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 16L
@@ -991,10 +1140,11 @@
 				}
 			]
 			title: "Engenharia de Precisão"
-			x: 10.0d
-			y: 2.0d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
 				"§7O §eElevator Pulley §7move plataformas inteiras na vertical —"
 				"§7conecte um eixo vertical e ele sobe/desce parando em cada andar"
@@ -1002,12 +1152,13 @@
 				""
 				"§7Já o §eSequenced Gearshift §7executa uma lista de instruções"
 				"§7de movimento em sequência (girar, mover, esperar) — é o mais"
-				"§7próximo que o Create chega de \"programar\" uma máquina."
+				"§7próximo que essa engenharia chega de \"programar\" uma máquina."
 				""
 				"§eConstrua um Elevator Pulley e um Sequenced Gearshift."
 				""
 				"§6Dica: §7Use Display Boards perto do elevador pra ver o andar atual!"
 			]
+			hide_until_deps_complete: true
 			icon: "create:elevator_pulley"
 			id: "268DF08CF9FACB08"
 			rewards: [
@@ -1023,6 +1174,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "0C9CA5A7385A0C64"
@@ -1036,12 +1188,13 @@
 				}
 			]
 			title: "Elevadores e Engrenagens Sequenciadas"
-			x: 12.0d
-			y: 2.0d
+			x: -4.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
-				"§7Create adiciona uma escada de metais alternativa: Copper e Zinc"
+				"§7Existe uma escada de metais alternativa: Copper e Zinc"
 				"§7não são mais estéticos, viram ferramentas e armas de verdade,"
 				"§7intermediárias entre pedra e ferro/diamante."
 				""
@@ -1050,6 +1203,7 @@
 				"§6Dica: §7Zinc também é ingrediente do Latão (Brass) — não gaste"
 				"§7tudo em ferramenta se for automatizar produção de Latão em breve."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "create_sa:copper_pickaxe"
@@ -1071,6 +1225,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "707F3CBB0A0AB711"
@@ -1096,22 +1251,25 @@
 				}
 			]
 			title: "Kit de Sobrevivência Create"
-			x: 14.0d
-			y: 2.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["62A4BC97F8BFD8FA"]
 			description: [
-				"§7Create é mecânico, cheio de engrenagens visíveis."
+				"§7Um lado é mecânico, cheio de engrenagens visíveis."
 				"§7Mekanism é elétrico, cheio de tubos e energia invisível."
-				"§7Um bom engenheiro domina os dois — e sabe fazer eles"
-				"§7conversarem entre si."
+				"§7Um bom engenheiro domina os dois processos de produção."
 				""
 				"§eTenha em mãos Brass Ingot (Create) e Steel Ingot (Mekanism)"
-				"§eao mesmo tempo — prova que você processa recursos nos dois."
+				"§eao mesmo tempo — prova que você já produz os dois materiais."
 				""
-				"§6Dica: §7Mekanism tem cabos de energia pra alimentar motores"
-				"§7do Create em algumas configurações — pesquise combos híbridos!"
+				"§6Dica: §7Isso aqui só verifica que você tem os dois materiais."
+				"§7Combinar as mecânicas de verdade (cabos alimentando motores)"
+				"§7fica pra você experimentar por conta própria — não tem task"
+				"§7pra isso ainda."
 			]
+			hide_until_deps_complete: true
 			icon: "create:brass_ingot"
 			id: "6A49E100E4F94D24"
 			rewards: [
@@ -1127,6 +1285,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 4L
@@ -1142,9 +1301,9 @@
 				}
 			]
 			title: "Duas Escolas de Engenharia"
-			x: 18.0d
-			y: 8.0d
+			x: -3.0d
+			y: 3.0d
 		}
 	]
-	title: "§eCreate — Engenharia Mecânica"
+	title: "§eEngenharia Mecânica"
 }

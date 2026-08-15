@@ -1,0 +1,1491 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	filename: "24_estruturas_do_mundo"
+	group: "7AE9512640318D11"
+	id: "39DF9D5A74251DAA"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"§7Ruínas, vilarejos reconstruídos e naufrágios: o mundo gerado tem mais história do que aparenta."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Compass."
+			]
+			icon: "minecraft:compass"
+			id: "57B16D1E22F8B706"
+			rewards: [{
+				id: "4D2F962C9A4AEC47"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "1AC0E9674FB0104A"
+				item: "minecraft:compass"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: -12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7O mundo esconde dezenas de estruturas únicas — cada uma"
+				"§7com seu próprio design, loot e"
+				"§7perigos. Bandidos são só o começo."
+				""
+				"§eEncontre uma Bandit Tower e uma Bandit Village."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "47806421735DEE16"
+			rewards: [
+				{
+					id: "073A7FA7FEFAFB6F"
+					item: {
+						Count: 1
+						id: "minecraft:crossbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "2E8D0C9A736F154B"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "76971C8AFA7CBCF0"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_bandit_towers"
+					criterion: ""
+					id: "76C7800FBE74485D"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_bandit_village"
+					criterion: ""
+					id: "19619E306D61F038"
+					type: "advancement"
+				}
+			]
+			title: "Fortalezas de Bandidos"
+			x: -12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Os Illagers não vivem só em Woodland Mansions — eles têm"
+				"§7acampamentos, fortes, moinhos e até navios corsários"
+				"§7próprios espalhados pelo mundo."
+				""
+				"§eEncontre: Illager Campsite, Illager Corsair/Galley,"
+				"§eIllager Fort e Illager Windmill."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2178A6CCBB8E31EA"
+			rewards: [
+				{
+					id: "47687DF5CA826C69"
+					item: "minecraft:ominous_banner"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "0718A1D0148FBC0C"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7098474EF274D86B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_illager_campsite"
+					criterion: ""
+					id: "50F0CB03EBF45D8A"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_illager_corsair_or_illager_galley"
+					criterion: ""
+					id: "67F3EFF967D6C946"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_illager_fort"
+					criterion: ""
+					id: "4722F60ACF8C8A37"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_illager_windmill"
+					criterion: ""
+					id: "6F99EFA8719B896B"
+					type: "advancement"
+				}
+			]
+			title: "Domínio Illager"
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Nem tudo relacionado a cogumelo fica na Mushroom Island"
+				"§7vanilla — existe um reino inteiro construído"
+				"§7ao redor deles."
+				""
+				"§eEncontre: Giant Mushroom, Mushroom House, Mushroom Mines"
+				"§ee Mushroom Village."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:red_mushroom_block"
+			id: "31A63BAFB274CA7C"
+			rewards: [
+				{
+					count: 8
+					id: "7A9F3C9EB0C326C4"
+					item: "minecraft:mycelium"
+					type: "item"
+				}
+				{
+					id: "386F708D187498FB"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_giant_mushroom"
+					criterion: ""
+					id: "64B5B0A610934088"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_mushroom_house"
+					criterion: ""
+					id: "5FB6A2BB39FE75DB"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_mushroom_mines"
+					criterion: ""
+					id: "2BFCF707052CD7BA"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_mushroom_village"
+					criterion: ""
+					id: "714CF0271C2785FF"
+					type: "advancement"
+				}
+			]
+			title: "Reino dos Cogumelos"
+			x: -12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7No céu, três torres guardam desafios progressivamente"
+				"§7mais difíceis. Chegar ao topo de todas prova que você"
+				"§7não tem medo de altura — nem do que te espera lá em cima."
+				""
+				"§eEncontre: Heavenly Challenger, Heavenly Conqueror"
+				"§ee Heavenly Rider."
+				""
+				"§6Dica: §7Os nomes não são por acaso — são progressivamente"
+				"§7mais difíceis nessa ordem."
+				"§8§o(Três torres no céu te esperando. A ansiedade de"
+				"§8§oaltura desse modpack é assunto sério.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32C22295B407591D"
+			rewards: [
+				{
+					count: 6
+					id: "1358F15B242EC9B2"
+					item: "minecraft:phantom_membrane"
+					type: "item"
+				}
+				{
+					id: "2FD9D3BFA9235DAE"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_heavenly_challenger"
+					criterion: ""
+					id: "72B01DE7AAC69083"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_heavenly_conqueror"
+					criterion: ""
+					id: "164102F7E38F8719"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_heavenly_rider"
+					criterion: ""
+					id: "14E9CDF91F520220"
+					type: "advancement"
+				}
+			]
+			title: "§e§lTorres Celestiais"
+			x: -12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Navios fantasmas tripulados por piratas mortos-vivos,"
+				"§7faróis abandonados e poços dos desejos — a costa esconde"
+				"§7mais histórias do que parece."
+				""
+				"§eEncontre: Undead Pirate Ship, Lighthouse, Wishing Well"
+				"§ee Fishing Hut."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:nautilus_shell"
+			id: "5F36BA517C606AEF"
+			rewards: [
+				{
+					count: 8
+					id: "25A27E6CEAB918C9"
+					item: "minecraft:prismarine_shard"
+					type: "item"
+				}
+				{
+					id: "3144F142A7AAEA9C"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_undead_pirate_ship"
+					criterion: ""
+					id: "1DD513EA3757E730"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_lighthouse"
+					criterion: ""
+					id: "24BD80F8E6544632"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_wishing_well"
+					criterion: ""
+					id: "1EB222F9D68BE51B"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_fishing_hut"
+					criterion: ""
+					id: "2A2463A2B52DAFEE"
+					type: "advancement"
+				}
+			]
+			title: "Lendas do Mar"
+			x: -7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Templos abandonados, um manicômio esquecido e ruínas"
+				"§7infestadas por algo que definitivamente não deveria estar"
+				"§7lá — nem toda estrutura antiga guarda um tesouro gentil."
+				""
+				"§eEncontre: Abandoned Temple, Infested Temple"
+				"§e(e seu mapa) e Plague Asylum."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:cracked_stone_bricks"
+			id: "09A31D45D4BCA255"
+			rewards: [
+				{
+					count: 10
+					id: "707B452990E5086B"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "596CE61ED4D50AB6"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_abandoned_temple"
+					criterion: ""
+					id: "328FAC8EC7F7D499"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_infested_temple"
+					criterion: ""
+					id: "5611D207E22AB824"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_infested_temple_map"
+					criterion: ""
+					id: "16FFCD3D1D8003A1"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_plague_asylum"
+					criterion: ""
+					id: "5571224840EE257A"
+					type: "advancement"
+				}
+			]
+			title: "Ruínas Amaldiçoadas"
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Antes da era da tecnologia moderna já existia gente"
+				"§7construindo fundições, minas e ninhos mecânicos gigantes"
+				"§7no meio do nada."
+				""
+				"§eEncontre: Foundry, Mechanical Nest, Scorched Mines"
+				"§ee Aviary."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:iron_block"
+			id: "1AB598D20E97A0F2"
+			rewards: [
+				{
+					count: 16
+					id: "4D785C5BD7EAD10F"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "5758A553E8709554"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_foundry"
+					criterion: ""
+					id: "159C1DDE1A92BEDE"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_mechanical_nest"
+					criterion: ""
+					id: "7553FC4702B7757B"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_scorched_mines"
+					criterion: ""
+					id: "27DDA8A4262BE4C8"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_aviary"
+					criterion: ""
+					id: "14D4E4E195A486CE"
+					type: "advancement"
+				}
+			]
+			title: "Complexo Industrial Perdido"
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Nem toda estrutura precisa ser hostil. Um pub no meio da"
+				"§7floresta, uma casa de campo, uma casa de banhos e um"
+				"§7mosteiro tranquilo também fazem parte do mundo."
+				""
+				"§eEncontre: Greenwood Pub, Small Prairie House, Bathhouse"
+				"§ee Monasteries."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:bell"
+			id: "47B3C7BDD7C8AE96"
+			rewards: [
+				{
+					count: 16
+					id: "582356ADA63D0FDD"
+					item: "minecraft:bread"
+					type: "item"
+				}
+				{
+					id: "6513E03E560025E3"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_greenwood_pub"
+					criterion: ""
+					id: "4142A63532DEB134"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_small_prairie_house"
+					criterion: ""
+					id: "560F90C5E845F5E0"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_bathhouse"
+					criterion: ""
+					id: "68ACB8F5B64E5666"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_monasteries"
+					criterion: ""
+					id: "5F46BEB87DDEBB5C"
+					type: "advancement"
+				}
+			]
+			title: "Vida no Interior"
+			x: -7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Uma corça dourada digna dos trabalhos de Hércules, um"
+				"§7forte guardado por Kayra, torres cobertas de espinhos e"
+				"§7até um pequeno dirigível perdido — o mundo tem cantos"
+				"§7bem estranhos."
+				""
+				"§eEncontre: Ceryneian Hind, Keep Kayra, Thornborn Towers,"
+				"§eSmall Blimp e Merchant Campsite."
+				"§8§o(Uma corça mitológica correndo pelo Overworld."
+				"§8§oHércules teria muito mais trabalho hoje em dia.)"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:golden_apple"
+			id: "5F0FB0A953111F0F"
+			rewards: [
+				{
+					count: 10
+					id: "73DCEF451B7CAF98"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "059CFDD9389A9426"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "dungeons_arise:find_ceryneian_hind"
+					criterion: ""
+					id: "00D0378E221E5699"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_keep_kayra"
+					criterion: ""
+					id: "6D96D4A69548B7E2"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_thornborn_towers"
+					criterion: ""
+					id: "5FCF6CED5A14E133"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_small_blimp"
+					criterion: ""
+					id: "2858F9C39DB10EEB"
+					type: "advancement"
+				}
+				{
+					advancement: "dungeons_arise:find_merchant_campsite"
+					criterion: ""
+					id: "197B5598D663EFFF"
+					type: "advancement"
+				}
+			]
+			title: "Mitologia Perdida"
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Vilas e postos avançados comuns foram reconstruídos pra"
+				"§7combinar com cada bioma —"
+				"§7de neve a savana, cada um com seu próprio visual."
+				""
+				"§eEncontre um Village e um Pillager Outpost reimaginados."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:villager_spawn_egg"
+			id: "23892059223ADEE1"
+			rewards: [
+				{
+					count: 8
+					id: "53B34B06B56554B2"
+					item: "minecraft:bell"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "7E0A9C1D638F452B"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "4E5EDF9C98998717"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2F3354632DC9F02D"
+					structure: "#repurposed_structures:collections/villages"
+					type: "structure"
+				}
+				{
+					id: "77E65BF30D00B22F"
+					structure: "#repurposed_structures:collections/outposts"
+					type: "structure"
+				}
+			]
+			title: "Vilarejos Redescobertos"
+			x: -2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Portais quebrados e ruínas cobertas de água ganharam"
+				"§7dezenas de variações — e até as próprias Ancient Cities"
+				"§7têm versões reimaginadas escondidas por aí."
+				""
+				"§eEncontre um Ruined Portal, uma Ocean/Jungle Ruin e uma"
+				"§eAncient City reimaginados."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:echo_shard"
+			id: "79ACDDE108574E04"
+			rewards: [
+				{
+					count: 2
+					id: "2284EA47492DC394"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+				{
+					id: "2245C5B39CC63844"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "70959FC89D82E479"
+					structure: "#repurposed_structures:collections/ruined_portals"
+					type: "structure"
+				}
+				{
+					id: "24E18290A4D61506"
+					structure: "#repurposed_structures:collections/ruins"
+					type: "structure"
+				}
+				{
+					id: "7BAEB5C35432F9BD"
+					structure: "#repurposed_structures:collections/ancient_cities"
+					type: "structure"
+				}
+			]
+			title: "Portais e Ruínas"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Naufrágios e monumentos oceânicos também passaram pela"
+				"§7reforma — cada bioma de oceano ganhou sua própria versão"
+				"§7única dessas estruturas."
+				""
+				"§eEncontre um Shipwreck e um Ocean Monument reimaginados."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:heart_of_the_sea"
+			id: "110650C9C86B03A7"
+			rewards: [
+				{
+					count: 6
+					id: "5601F247C1A36DFD"
+					item: "minecraft:prismarine_crystals"
+					type: "item"
+				}
+				{
+					id: "1E08579B3A79233D"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "368C711F742187B8"
+					structure: "#repurposed_structures:collections/shipwrecks"
+					type: "structure"
+				}
+				{
+					id: "578FC4C89B1D2600"
+					structure: "#repurposed_structures:collections/monuments"
+					type: "structure"
+				}
+			]
+			title: "Tesouros Submersos"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Nem o Nether escapou da reforma. Bastions e Nether"
+				"§7Fortresses ganharam variações próprias pra cada bioma"
+				"§7infernal."
+				""
+				"§eEncontre um Bastion Remnant e uma Nether Fortress"
+				"§ereimaginados."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:blackstone"
+			id: "2886D53455F27503"
+			rewards: [
+				{
+					id: "0FEE4C12B47AB564"
+					item: "minecraft:ancient_debris"
+					type: "item"
+				}
+				{
+					id: "4463E925877E959D"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "482208F2E48C789A"
+					structure: "#repurposed_structures:collections/bastions"
+					type: "structure"
+				}
+				{
+					id: "60B8CBAE8598D6AE"
+					structure: "#repurposed_structures:collections/fortresses"
+					type: "structure"
+				}
+			]
+			title: "Fortalezas do Fogo"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Minas abandonadas e fortalezas do End também têm suas"
+				"§7próprias variações — algumas mais perigosas de navegar"
+				"§7que o normal."
+				""
+				"§eEncontre um Abandoned Mineshaft e uma Stronghold"
+				"§ereimaginados."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:rail"
+			id: "5EF9255D8520DE5A"
+			rewards: [
+				{
+					count: 16
+					id: "297B390A62391C55"
+					item: "minecraft:rail"
+					type: "item"
+				}
+				{
+					id: "621D9B81A4A035E8"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6EF2821269B8D7EE"
+					structure: "#repurposed_structures:collections/mineshafts"
+					type: "structure"
+				}
+				{
+					id: "7819935EF9529E22"
+					structure: "#repurposed_structures:collections/strongholds"
+					type: "structure"
+				}
+			]
+			title: "Câmaras Subterrâneas"
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Templos da selva e pirâmides do deserto — clássicos do"
+				"§7vanilla, reimaginados em versões que combinam com biomas"
+				"§7onde normalmente nunca apareceriam."
+				""
+				"§eEncontre um Jungle/Swamp Temple e uma Desert Pyramid"
+				"§ereimaginados."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:chiseled_sandstone"
+			id: "3EFD6FE09AD328C5"
+			rewards: [
+				{
+					count: 6
+					id: "45B8D7FC186F0044"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "0DDC005260A423C5"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6738B6B0EB4F4922"
+					structure: "#repurposed_structures:collections/temples"
+					type: "structure"
+				}
+				{
+					id: "677AEAF747141F3B"
+					structure: "#repurposed_structures:collections/pyramids"
+					type: "structure"
+				}
+			]
+			title: "Templos e Pirâmides"
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Iglus, cabanas de bruxa e até as próprias End Cities"
+				"§7ganharam versões alternativas espalhadas pelo mundo —"
+				"§7cada uma escondendo seus próprios segredos."
+				""
+				"§eEncontre um Igloo, uma Witch Hut e uma End City"
+				"§ereimaginados."
+				""
+				"§6Dica: §7Junto com Woodland Mansions (já vista antes),"
+				"§7isso completa as 16 variações de estrutura reimaginada."
+				""
+				"§8§o(Uma End City no meio do deserto. A geografia desse"
+				"§8§omundo abandonou toda lógica há muito tempo.)"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:cauldron"
+			id: "0AF49FA119B79DCA"
+			rewards: [
+				{
+					id: "0BFA6703809D7F4A"
+					item: {
+						Count: 1
+						id: "minecraft:elytra"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2905AFD9239093E6"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "559C3DF3A007ADC1"
+					structure: "#repurposed_structures:collections/igloos"
+					type: "structure"
+				}
+				{
+					id: "3B9A74323493F009"
+					structure: "#repurposed_structures:collections/witch_huts"
+					type: "structure"
+				}
+				{
+					id: "7CC4A6B47B509D22"
+					structure: "#repurposed_structures:collections/cities"
+					type: "structure"
+				}
+			]
+			title: "Refúgios Gelados e Sombrios"
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Existem estruturas únicas e cuidadosamente desenhadas"
+				"§7pelo mundo — pequeno em itens próprios, mas gigante em"
+				"§7lugares que valem a pena visitar."
+				""
+				"§eEncontre: The Bearclaw Inn, Winter Wagon, The Redhorn"
+				"§eGuild, Fisherman's Lodge e Hunter's Cabin."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:campfire"
+			id: "3E6F1302084F3BF8"
+			rewards: [
+				{
+					count: 6
+					id: "29040CF98B8319AA"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "7EC4B4049E0CD16E"
+					item: "idas:music_disc_slither"
+					type: "item"
+				}
+				{
+					id: "1B8E5A2F4EC49AC7"
+					item: "idas:music_disc_calidum"
+					type: "item"
+				}
+				{
+					id: "0CEB2848D0EB524D"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "idas:bearclaw_inn"
+					criterion: ""
+					id: "3732C7C4CACC4FB8"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:winter_wagon"
+					criterion: ""
+					id: "5640FA006280651C"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:redhorn_guild"
+					criterion: ""
+					id: "070E2C35945F3E7D"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:fishermans_lodge"
+					criterion: ""
+					id: "6DAF951A6844A6F3"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:hunters_cabin"
+					criterion: ""
+					id: "6E8504DBA411B702"
+					type: "advancement"
+				}
+			]
+			title: "Refúgios dos Viajantes"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Magos de todo tipo escolheram torres isoladas pra chamar"
+				"§7de lar — cada uma guardando seus próprios segredos e"
+				"§7perigos."
+				""
+				"§eEncontre: Archmage's Tower, Wizard Tower, Enchanting Tower"
+				"§ee The Apothecary's Abode."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:enchanting_table"
+			id: "778FA8F17D9CD7B3"
+			rewards: [
+				{
+					count: 8
+					id: "3E63A9500C406AF0"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "19A83260E1152538"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "idas:archmages_tower"
+					criterion: ""
+					id: "2B67D8744D706F0A"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:wizardtower"
+					criterion: ""
+					id: "2062503724766922"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:enchantingtower"
+					criterion: ""
+					id: "2F536929ABF95CA3"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:apothecary_abode"
+					criterion: ""
+					id: "4E37E62CE91C765B"
+					type: "advancement"
+				}
+			]
+			title: "Torres de Magia"
+			x: 2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Nem todo lugar por aí é acolhedor. A Dread Citadel, a"
+				"§7torre do necromante e o toco amaldiçoado da bruxa esperam"
+				"§7só quem tem coragem de menos."
+				""
+				"§eEncontre: Dread Citadel, The Necromancer's Spire,"
+				"§eA Witch's Stump e o Labyrinth of the Serpent."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:wither_skeleton_skull"
+			id: "7956AF235526DF2F"
+			rewards: [
+				{
+					count: 2
+					id: "0A4792BCED3B4916"
+					item: "minecraft:soul_lantern"
+					type: "item"
+				}
+				{
+					id: "63D3C53056520253"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "idas:dread_citadel"
+					criterion: ""
+					id: "0E7421BCB8D62E4E"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:necromancers_spire"
+					criterion: ""
+					id: "42167726BA6845FE"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:witches_treestump"
+					criterion: ""
+					id: "697C396C06771850"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:labyrinth"
+					criterion: ""
+					id: "498A172058A72F51"
+					type: "advancement"
+				}
+			]
+			title: "Covis das Trevas"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Minas antigas, pirâmides, navios afundados e castelos"
+				"§7esquecidos — os clássicos da exploração, reimaginados com"
+				"§7um toque bem próprio."
+				""
+				"§eEncontre: Ancient Mines, The Desert Pyramid, A Sunken"
+				"§eShip, Ruins of the Deep e Castle."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:map"
+			id: "0CA16B2552F16AE6"
+			rewards: [
+				{
+					count: 8
+					id: "22A6EEECFB44F254"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "1ADCCEC00587DFE2"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "idas:ancient_mines"
+					criterion: ""
+					id: "3036B970893AC416"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:desert_pyramid"
+					criterion: ""
+					id: "42D50C6458BFE6BE"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:sunken_ship"
+					criterion: ""
+					id: "435B1503508A48A8"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:ruins_of_the_deep"
+					criterion: ""
+					id: "296E2E53041F8A5A"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:castle"
+					criterion: ""
+					id: "5EB25F9E87F1843B"
+					type: "advancement"
+				}
+			]
+			title: "Tesouros Escondidos"
+			x: 7.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Tinkers e pillagers construíram seus próprios domínios —"
+				"§7um pra criar, outro pra saquear."
+				""
+				"§eEncontre: Tinker's Citadel, Tinker's Workshop e"
+				"§ePillager Fortress."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:anvil"
+			id: "40B570EC374DFBAB"
+			rewards: [
+				{
+					count: 8
+					id: "75F60574E5163383"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "2A81ED08DA23ECEC"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "idas:tinkers_citadel"
+					criterion: ""
+					id: "1E71FBD726BBB6D9"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:tinkers_workshop"
+					criterion: ""
+					id: "2049BCBCDF3BC03E"
+					type: "advancement"
+				}
+				{
+					advancement: "idas:pillager_fortress"
+					criterion: ""
+					id: "0842E78D544BED8D"
+					type: "advancement"
+				}
+			]
+			title: "Oficinas e Fortalezas"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7No coração dessas terras existe uma estrutura diferente de"
+				"§7todas as outras — um portão que, segundo o próprio mod,"
+				"§7conecta múltiplas realidades."
+				""
+				"§eEncontre The Nexus, a estrutura mais rara e misteriosa"
+				"§eque existe."
+				""
+				"§8§o(Um mod de 5 itens escondia 21 estruturas únicas.§8§oÀs vezes o conteúdo mais denso vem no pacote mais discreto.)"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:end_portal_frame"
+			id: "012D8EDB223C56FD"
+			rewards: [
+				{
+					count: 8
+					id: "1462284B71C86839"
+					item: "minecraft:ender_eye"
+					type: "item"
+				}
+				{
+					id: "5475C72C763B89B2"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				advancement: "idas:nexus"
+				criterion: ""
+				id: "355337D74E899FDA"
+				type: "advancement"
+			}]
+			title: "§d§lThe Nexus"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Enquanto uns navios afundam e viram destroço, outros ainda"
+				"§7navegam — tripulados, armados e cheios de porão pra saquear."
+				"§7De um pequeno iate a um galeão decorado como se fosse de ouro."
+				""
+				"§eEncontre: Small Yacht, Pirate Junk, Corsair Corvette,"
+				"§eVictory Frigate e Unicorn Galleon."
+				""
+				"§6Dica: §7Esses navios estão à tona e navegáveis — não confunda"
+				"§7com os destroços afundados ou os corsários abandonados"
+				"§7que você já visitou em outras partes deste capítulo."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:oak_boat"
+			id: "093B5C8BE9D02CE2"
+			rewards: [
+				{
+					count: 12
+					id: "068C42C47247B9F4"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "15DDB6C15F277258"
+					item: "minecraft:nautilus_shell"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "59F401696C240135"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "0F178B3D1ADC586B"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5DF2EB5B4F87C505"
+					structure: "dungeons_arise_seven_seas:small_yacht"
+					type: "structure"
+				}
+				{
+					id: "44486960B2A755C1"
+					structure: "dungeons_arise_seven_seas:pirate_junk"
+					type: "structure"
+				}
+				{
+					id: "299A6D780F274DF8"
+					structure: "dungeons_arise_seven_seas:corsair_corvette"
+					type: "structure"
+				}
+				{
+					id: "6265DA18641258D2"
+					structure: "dungeons_arise_seven_seas:victory_frigate"
+					type: "structure"
+				}
+				{
+					id: "286BFD0812270097"
+					structure: "dungeons_arise_seven_seas:unicorn_galleon"
+					type: "structure"
+				}
+			]
+			title: "A Frota dos Sete Mares"
+			x: 7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Os vilarejos vanilla foram completamente reconstruídos —"
+				"§7cada bioma tem sua própria arquitetura, e alguns escondem"
+				"§7surpresas: existe um vilarejo inteiro debaixo da terra,"
+				"§7e outro construído nas copas das árvores da selva."
+				""
+				"§8§o(O vilarejo subterrâneo tem a melhor vista. Ironicamente.)"
+				""
+				"§eEncontre: Beach Village, Mushroom Village, Underground"
+				"§eVillage, Mesa Fortified Village, Jungle Tree Village"
+				"§ee Mountain Village."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:oak_door"
+			id: "5A2E310D2E08C855"
+			rewards: [
+				{
+					count: 24
+					id: "6556BA3EF9051B65"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7E8EE64EDC3A2691"
+					item: "minecraft:saddle"
+					type: "item"
+				}
+				{
+					id: "545CFB3F014EDE50"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "1E6C5131B601AD95"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3E237ED8199C35AB"
+					structure: "#ctov:village_beach"
+					type: "structure"
+				}
+				{
+					id: "12FAE5D70A1C786A"
+					structure: "#ctov:village_mushroom"
+					type: "structure"
+				}
+				{
+					id: "30FEE88A7C723761"
+					structure: "#ctov:village_underground"
+					type: "structure"
+				}
+				{
+					id: "79E9A44B292B3694"
+					structure: "#ctov:village_mesa_fortified"
+					type: "structure"
+				}
+				{
+					id: "2F860B9119BDC704"
+					structure: "#ctov:village_jungle_tree"
+					type: "structure"
+				}
+				{
+					id: "71A790D5AFB32164"
+					structure: "#ctov:village_mountain"
+					type: "structure"
+				}
+			]
+			title: "Vilarejos ao Redor do Mundo"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Os Pillager Outposts também ganharam roupagem nova pra"
+				"§7cada bioma — a torre continua sendo perigosa, só que agora"
+				"§7com cara de deserto, neve, selva ou pântano."
+				""
+				"§eEncontre: Snowy Pillager Outpost, Jungle Pillager Outpost"
+				"§ee Badlands Pillager Outpost."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "13C9C0D86CD6BA3B"
+			rewards: [
+				{
+					count: 3
+					id: "4B1D7F528509E1D4"
+					item: {
+						Count: 1
+						id: "minecraft:crossbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "7F71E3A21B134F4C"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+				{
+					id: "0680818572E0F50F"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "3F57A9B9319F73E9"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "402D0CCA19F1F684"
+					structure: "ctov:pillager_outpost_snowy"
+					type: "structure"
+				}
+				{
+					id: "13397EFB1D3CF912"
+					structure: "ctov:pillager_outpost_jungle"
+					type: "structure"
+				}
+				{
+					id: "2E9441EC9BEFE3C9"
+					structure: "ctov:pillager_outpost_badlands"
+					type: "structure"
+				}
+			]
+			title: "Avante-Postos Renovados"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "§6Estruturas do Mundo"
+}

@@ -37,10 +37,11 @@
 				{
 					id: "1A00000000000005"
 					type: "xp"
-					xp: 50
+					xp: 10
 				}
 			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					id: "1A00000000000006"
@@ -55,7 +56,7 @@
 			]
 			title: "Do Zero ao Fogo"
 			x: 0.0d
-			y: 0.0d
+			y: -10.0d
 		}
 		{
 			description: [
@@ -100,9 +101,10 @@
 				{
 					id: "1A0000000000000B"
 					type: "xp"
-					xp: 150
+					xp: 30
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 16L
@@ -123,19 +125,18 @@
 				}
 			]
 			title: "A Era do Ferro"
-			x: 2.0d
-			y: 0.0d
+			x: -2.5d
+			y: -6.0d
 		}
 		{
 			description: [
 				"§7As noites aqui não perdoam os despreparados."
-				"§7Mobs de mods como §eBorn in Chaos §7e §eThe Graveyard"
-				"§7são muito mais perigosos do que os vanilla."
+				"§7Algumas criaturas por aí são muito mais perigosas e"
+				"§7distorcidas do que qualquer coisa vanilla."
 				""
-				"§eCrie pelo menos uma peça de armadura de ferro"
-				"§ee uma espada ou machado de ferro."
+				"§eCrie pelo menos uma peça de armadura de ferro."
 				""
-				"§6Dica: §7§eBetterCombat §7ativa combos únicos por arma!"
+				"§6Dica: §7O combate tem combos únicos por arma — ative-os!"
 				"§7Clique com ritmo — não só spam. Cada arma tem seu tempo."
 			]
 			icon: {
@@ -167,36 +168,24 @@
 				{
 					id: "1A00000000000011"
 					type: "xp"
-					xp: 200
+					xp: 40
 				}
 			]
-			tasks: [
-				{
-					id: "1A00000000000012"
-					item: {
-						Count: 1
-						id: "minecraft:iron_chestplate"
-						tag: {
-							Damage: 0
-						}
+			size: 1.5d
+			tasks: [{
+				id: "1A00000000000012"
+				item: {
+					Count: 1
+					id: "minecraft:iron_chestplate"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "1A00000000000013"
-					item: {
-						Count: 1
-						id: "minecraft:iron_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "Forjado para Sobreviver"
-			x: 4.0d
-			y: 0.0d
+			x: 2.5d
+			y: -6.0d
 		}
 		{
 			description: [
@@ -224,7 +213,7 @@
 				{
 					id: "1A00000000000017"
 					type: "xp"
-					xp: 100
+					xp: 20
 				}
 				{
 					id: "6A0B873FED8CA10B"
@@ -232,6 +221,7 @@
 					type: "item"
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:adventure/sleep_in_bed"
 				criterion: ""
@@ -239,8 +229,8 @@
 				type: "advancement"
 			}]
 			title: "Lar Doce Lar"
-			x: 6.0d
-			y: 0.0d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
 			description: [
@@ -271,9 +261,10 @@
 				{
 					id: "1A0000000000001C"
 					type: "xp"
-					xp: 150
+					xp: 30
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "54654192DFACF32C"
@@ -297,20 +288,22 @@
 				}
 			]
 			title: "Arte Culinária"
-			x: 8.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			description: [
 				"§7Para longas expedições, você precisará de comida"
 				"§7que reponha muita fome e dê resistência."
 				""
-				"§ePlante trigo, cenoura e batata."
-				"§eCrie uma fazenda com pelo menos 3 tipos de cultura."
+				"§ePlante uma semente pela primeira vez e tenha em estoque"
+				"§epelo menos 16 Wheat, 8 Carrot e 8 Potato — o sinal de"
+				"§euma fazenda funcionando de verdade."
 				""
-				"§6Dica: §7Serene Seasons faz as estações mudarem!"
-				"§7Plante na primavera para colheitas maiores no verão."
-				"§7Arroz precisa de Rich Soil molhado — vira Rice Bale quando empacotado."
+				"§6Dica: §7plante os 3 numa área de Farmland. Serene Seasons faz as"
+				"§7estações mudarem — plante na primavera para colheitas"
+				"§7maiores no verão. Arroz precisa de Rich Soil molhado —"
+				"§7vira Rice Bale quando empacotado."
 			]
 			icon: "minecraft:wheat_seeds"
 			id: "1A0000000000001F"
@@ -330,32 +323,39 @@
 				{
 					id: "1A00000000000022"
 					type: "xp"
-					xp: 250
+					xp: 50
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
-					count: 32L
+					advancement: "minecraft:husbandry/plant_seed"
+					criterion: ""
+					id: "43B0C7A85EAD6291"
+					type: "advancement"
+				}
+				{
+					count: 16L
 					id: "1A00000000000023"
 					item: "minecraft:wheat"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 8L
 					id: "1A00000000000024"
 					item: "minecraft:carrot"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 8L
 					id: "1A00000000000025"
 					item: "minecraft:potato"
 					type: "item"
 				}
 			]
 			title: "Fazenda Sustentável"
-			x: 10.0d
-			y: 0.0d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			description: [
@@ -385,9 +385,10 @@
 				{
 					id: "1A00000000000029"
 					type: "xp"
-					xp: 250
+					xp: 50
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 8L
@@ -408,8 +409,8 @@
 				}
 			]
 			title: "Olhos de Diamante"
-			x: 12.0d
-			y: 0.0d
+			x: -7.0d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -433,17 +434,40 @@
 					type: "item"
 				}
 				{
-					count: 3
 					id: "1A0000000000002E"
-					item: "minecraft:enchanted_book"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 2
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1BE4C080FE4C10CC"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 2
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
 					id: "1A0000000000002F"
 					type: "xp"
-					xp: 300
+					xp: 60
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "1A00000000000030"
@@ -458,8 +482,8 @@
 				}
 			]
 			title: "Palavras de Poder"
-			x: 14.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -495,9 +519,10 @@
 				{
 					id: "1A00000000000035"
 					type: "xp"
-					xp: 200
+					xp: 40
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				icon: {
 					Count: 1
@@ -513,8 +538,8 @@
 				type: "item"
 			}]
 			title: "Bagagem do Aventureiro"
-			x: 0.0d
-			y: 4.0d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			description: [
@@ -549,9 +574,10 @@
 				{
 					id: "1A0000000000003A"
 					type: "xp"
-					xp: 200
+					xp: 40
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 12L
@@ -572,14 +598,14 @@
 				}
 			]
 			title: "Porta para o Desconhecido"
-			x: 2.0d
-			y: 4.0d
+			x: -9.5d
+			y: 6.0d
 		}
 		{
 			description: [
 				"§7Nem tudo precisa ser minerado ou craftado por você."
 				"§7Os aldeões deste mundo têm nomes próprios graças ao"
-				"§7§eVillager Names §7— eles são pessoas, não NPCs genéricos."
+				"§7Os aldeões agora têm nome — são pessoas, não NPCs genéricos."
 				""
 				"§eEncontre uma aldeia e faça sua primeira troca."
 				""
@@ -604,9 +630,10 @@
 				{
 					id: "1A00000000000045"
 					type: "xp"
-					xp: 150
+					xp: 30
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:adventure/trade"
 				criterion: "villager"
@@ -614,8 +641,8 @@
 				type: "advancement"
 			}]
 			title: "Redes de Comércio"
-			x: 6.0d
-			y: 4.0d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			description: [
@@ -646,9 +673,10 @@
 				{
 					id: "1A0000000000004A"
 					type: "xp"
-					xp: 500
+					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 4L
@@ -663,8 +691,8 @@
 				}
 			]
 			title: "Além do Ferro e Diamante"
-			x: 8.0d
-			y: 4.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			description: [
@@ -702,9 +730,10 @@
 				{
 					id: "1A00000000000050"
 					type: "xp"
-					xp: 400
+					xp: 80
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "1A00000000000051"
 				item: {
@@ -717,8 +746,8 @@
 				type: "item"
 			}]
 			title: "Asas de Liberdade"
-			x: 10.0d
-			y: 4.0d
+			x: 9.5d
+			y: 6.0d
 		}
 		{
 			description: [
@@ -749,9 +778,10 @@
 				{
 					id: "1A00000000000055"
 					type: "xp"
-					xp: 300
+					xp: 60
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 32L
 				id: "1A00000000000057"
@@ -759,8 +789,8 @@
 				type: "item"
 			}]
 			title: "Agricultura Mística"
-			x: 12.0d
-			y: 4.0d
+			x: -12.0d
+			y: 10.0d
 		}
 		{
 			description: [
@@ -770,9 +800,9 @@
 				""
 				"§eCrie um §eSleeping Bag §7e durma em campo aberto."
 				""
-				"§6Aviso: §7§eSleep Tight §7faz monstros espiarem pela janela"
+				"§6Aviso: §7Monstros agora espiam pela janela"
 				"§7enquanto você dorme. Iluminação externa é vital."
-				"§7Sente-se — literalmente — antes de dormir com o §eSit §7mod."
+				"§7Sente-se — literalmente — antes de dormir."
 			]
 			icon: "comforts:sleeping_bag_white"
 			id: "1A00000000000058"
@@ -785,25 +815,26 @@
 				{
 					id: "1A0000000000005A"
 					type: "xp"
-					xp: 100
+					xp: 20
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "1A0000000000005B"
 				item: "comforts:sleeping_bag_white"
 				type: "item"
 			}]
 			title: "Nômade das Noites"
-			x: 14.0d
-			y: 4.0d
+			x: -6.0d
+			y: 10.0d
 		}
 		{
 			description: [
-				"§7§lIron's Spellbooks §r§7adiciona magia baseada em livros."
+				"§7Existe uma magia baseada em livros por aqui."
 				"§7Mesmo que você prefira tecnologia, aprender feitiços básicos"
 				"§7pode salvar sua vida em momentos críticos."
 				""
-				"§eCrie um §eScroll §7ou §eSpell Book §7de Iron's Spellbooks."
+				"§eCrie um §eScroll §7ou §eSpell Book§7."
 				"§eUse pelo menos 1 feitiço em combate."
 				""
 				"§6Dica: §7Feitiços de cura e escudo são os mais úteis no início!"
@@ -820,9 +851,10 @@
 				{
 					id: "5BD3E4D1C8D9BFC1"
 					type: "xp"
-					xp: 200
+					xp: 40
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "1A0000000000005F"
 				item: "irons_spellbooks:scroll"
@@ -830,7 +862,7 @@
 			}]
 			title: "Primeiras Palavras Arcanas"
 			x: 0.0d
-			y: 8.0d
+			y: 10.0d
 		}
 		{
 			description: [
@@ -839,10 +871,10 @@
 				"§7Agora começa a parte boa."
 				""
 				"§7Os outros capítulos estão abertos — siga o que te chama:"
-				"§a⚙ Tecnologia §7— Automatize tudo com §eCreate"
-				"§d✦ Magia §7— Domine as artes com §eArs Nouveau"
+				"§a⚙ Tecnologia §7— Automatize tudo com engrenagens e força motriz"
+				"§d✦ Magia §7— Domine as artes arcanas"
 				"§b✈ Exploração §7— Descubra o mundo com aeronaves e mapas"
-				"§2⚒ Civilizações §7— Construa impérios com §eMineColonies"
+				"§2⚒ Civilizações §7— Construa impérios inteiros"
 				""
 				"§6Não há caminho certo. Só o seu."
 			]
@@ -864,21 +896,22 @@
 				{
 					id: "1A00000000000063"
 					type: "xp"
-					xp: 500
+					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "1A00000000000064"
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
 			title: "§aO Mundo é Seu"
-			x: 2.0d
-			y: 8.0d
+			x: 6.0d
+			y: 10.0d
 		}
 		{
 			description: [
-				"§7§eSerene Seasons §7adiciona estações do ano de verdade —"
+				"§7Existem estações do ano de verdade agora —"
 				"§7primavera, verão, outono e inverno afetam colheitas,"
 				"§7temperatura e até a neve."
 				""
@@ -896,9 +929,10 @@
 				{
 					id: "343631CF59F68577"
 					type: "xp"
-					xp: 100
+					xp: 20
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "5EF2828989F6AB07"
@@ -912,8 +946,8 @@
 				}
 			]
 			title: "As Quatro Estações"
-			x: 4.0d
-			y: 2.0d
+			x: 12.0d
+			y: 10.0d
 		}
 	]
 	title: "§6Primeiros Passos"

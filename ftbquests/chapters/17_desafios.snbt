@@ -8,8 +8,19 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: [
+				"3C00000000000064"
+				"01266555EE478B0B"
+				"4D0000000000005B"
+				"7B0000000000005A"
+				"6A00000000000055"
+			]
 			description: [
 				"§c§lVocê chegou até aqui."
+				""
+				"§7Dominou a engenharia mecânica, as leis da física quântica,"
+				"§7a magia arcana, construiu um império e forjou o arsenal"
+				"§7de um guerreiro lendário."
 				""
 				"§7Isso por si só já diz muito."
 				"§7Mas chegar não é suficiente."
@@ -23,32 +34,41 @@
 				""
 				"§c§lProve que você merece o título."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:nether_star"
 			id: "459BE27BE8C6B6F9"
 			rewards: [
 				{
-					count: 10
 					id: "03E4BECD0D626570"
-					item: "minecraft:experience_bottle"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1A9F5E2C4B7D0331"
+					item: "minecraft:diamond_block"
 					type: "item"
 				}
 				{
 					id: "56BFECFD60B07DA1"
 					type: "xp"
-					xp: 500
+					xp: 15000
 				}
 			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [{
+				advancement: "minecraft:adventure/kill_all_mobs"
+				criterion: ""
 				id: "727E75622EEB7326"
-				item: "minecraft:nether_star"
-				type: "item"
+				type: "advancement"
 			}]
 			title: "§c§lO Caminho do Lendário"
 			x: 0.0d
-			y: 0.0d
+			y: -9.0d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§lDesafio I: O Armeiro Supremo"
 				""
@@ -67,6 +87,7 @@
 				"§7→ Superium → Supremium → §6Awakened Supremium§7."
 				"§7Cada estágio exige essências do anterior."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "mysticalagriculture:awakened_supremium_chestplate"
@@ -104,6 +125,7 @@
 					xp: 15000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3450D1DB8677007B"
@@ -151,10 +173,11 @@
 				}
 			]
 			title: "§6O Armeiro Supremo"
-			x: 2.0d
-			y: 0.0d
+			x: -2.0d
+			y: -5.5d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§lDesafio II: O Arquimago Completo"
 				""
@@ -162,16 +185,17 @@
 				"§7Dominar §ldois §r§7ao ponto de combiná-los"
 				"§7é outra categoria de desafio."
 				""
-				"§7§eArs Nouveau §7e §eIron's Spellbooks §7têm progressões"
+				"§7Existem duas escolas de magia com progressões"
 				"§7completamente independentes. Para este desafio,"
 				"§7você precisa ter chegado ao topo dos dois."
 				""
 				"§eConsiga simultaneamente:"
-				"§e- Archmage Spell Book (Ars Nouveau)"
-				"§e- Netherite Spell Book (Iron's Spellbooks)"
+				"§e- Archmage Spell Book"
+				"§e- Netherite Spell Book"
 				"§e- Dragonskin §7— drop raro do Ender Dragon"
-				"§e- Netherite Mage Chestplate (Iron's Spellbooks)"
+				"§e- Netherite Mage Chestplate"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:archmage_spell_book"
 			id: "4C930C37813660A7"
 			rewards: [
@@ -209,6 +233,7 @@
 					xp: 18000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "0175BC9FBD809552"
@@ -238,118 +263,35 @@
 				}
 			]
 			title: "§dO Arquimago Completo"
-			x: 4.0d
-			y: 0.0d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
-			description: [
-				"§c§lDesafio III: O Senhor das Varas"
-				""
-				"§7§eMana and Artifice §7tem um sistema de progressão"
-				"§7profundo baseado em varas, runas e rituais arcanos."
-				"§7Chegar ao topo exige muitas horas de crafting, exploração e falta de emprego."
-				""
-				"§eConsiga simultaneamente:"
-				"§e- 1 Grimoire do MNA (qualquer faction)"
-				"§e- 1 Wand de Vinteum Avançado (Manaweaver Wand Advanced)"
-				"§e- 64 Vinteum Ingots"
-				"§e- 1 Eldrin Altar construído e ativo"
-				""
-				"§6Dica: §7O §eGrimoire §7é o livro de fações do MNA."
-				"§7O §eEldrin Altar §7processa recursos arcanos de alto nível."
-			]
-			icon: {
-				Count: 1
-				id: "mna:wand_vinteum"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "2482C9D37EECC67F"
-			rewards: [
-				{
-					id: "0B85989C0C81440B"
-					item: "mna:arcane_crown"
-					type: "item"
-				}
-				{
-					id: "28BB4CB7A06134E0"
-					item: "mna:mana_resevoir"
-					type: "item"
-				}
-				{
-					id: "06D602BE46E3C0BA"
-					item: {
-						Count: 1
-						id: "mna:eldritch_orb"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					count: 45
-					id: "235C9C3B2D449EE8"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
-				{
-					id: "7F0D3554698E8EA5"
-					type: "xp"
-					xp: 15000
-				}
-			]
-			tasks: [
-				{
-					id: "2B8CBA75120C75F2"
-					item: "mna:grimoire"
-					type: "item"
-				}
-				{
-					id: "6640E047D7CBE837"
-					item: "mna:manaweaver_wand_advanced"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "68975E3BA1959ECB"
-					item: "mna:vinteum_ingot"
-					type: "item"
-				}
-				{
-					id: "18073B427C6BB460"
-					item: "mna:eldrin_altar"
-					type: "item"
-				}
-			]
-			title: "§5O Senhor das Varas"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§lDesafio IV: O Engenheiro de Ferro"
 				""
-				"§7A automação máxima do §eCreate §7exige recursos raros."
-				"§7A Steam Engine em escala industrial consome enormes"
+				"§7A automação máxima da engenharia mecânica exige recursos"
+				"§7raros. A Steam Engine em escala industrial consome enormes"
 				"§7quantidades de cobre e latão processado."
 				""
 				"§eConsiga simultaneamente:"
-				"§e- 512 Brass Ingots (Create)"
+				"§e- 512 Brass Ingots"
 				"§e- 3 Steam Engines construídas e ativas"
-				"§e- 1 Netherite Backtank (Create)"
-				"§e- 1 Hyper Experience Bottle (Create Enchantment Industry)"
+				"§e- 1 Netherite Backtank"
+				"§e- 1 Hyper Experience Bottle"
 				""
 				"§6Dica: §7Netherite Backtank guarda ar comprimido para"
 				"§7respirar no Nether e no End sem poções!"
 			]
+			hide_until_deps_complete: true
 			icon: "create:netherite_backtank"
 			id: "72B166828B115448"
 			rewards: [
 				{
+					count: 8
 					id: "57627DBAC7BB18DF"
-					item: "create_jetpack:netherite_jetpack"
+					item: "create:shadow_steel"
 					type: "item"
 				}
 				{
@@ -358,8 +300,9 @@
 					type: "item"
 				}
 				{
+					count: 8
 					id: "05BFAF5112886333"
-					item: "create:schematicannon"
+					item: "create:refined_radiance"
 					type: "item"
 				}
 				{
@@ -374,6 +317,7 @@
 					xp: 15000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 512L
@@ -399,15 +343,16 @@
 				}
 			]
 			title: "§6O Engenheiro de Ferro"
-			x: 8.0d
-			y: 0.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§lDesafio V: Conquistador dos Céus"
 				""
-				"§7O §eAether §7guarda os itens mais poderosos das alturas."
-				"§7Chegar ao topo do Aether exige enfrentar suas três"
+				"§7O paraíso celestial guarda os itens mais poderosos das alturas."
+				"§7Chegar ao topo exige enfrentar suas três"
 				"§7dungeons e a Valkyrie Queen — a governante do céu."
 				""
 				"§eConsiga simultaneamente:"
@@ -419,6 +364,7 @@
 				"§6Dica: §7Gravitite levita quando exposto à luz do sol —"
 				"§7minere-o à noite ou com Silk Touch!"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "aether:gravitite_chestplate"
@@ -467,6 +413,7 @@
 					xp: 20000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "598512B999286D26"
@@ -542,23 +489,25 @@
 				}
 			]
 			title: "§eConquistador dos Céus"
-			x: 10.0d
-			y: 0.0d
+			x: 4.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§lDesafio VII: Caçador de Chefes"
-				"§7Os bosses de mods são os inimigos mais poderosos do modpack."
-				"§7Provar que você os dominou exige derrotar cada um e ainda"
-				"§7trazer os drops mais raros dos que soltam item."
+				"§7Os guardiões lendários espalhados pelo mundo são os inimigos"
+				"§7mais poderosos do modpack. Provar que você os dominou exige"
+				"§7derrotar cada um e ainda trazer os drops mais raros dos"
+				"§7que soltam item."
 				""
-				"§eDerrote: Umvuthi e Frostmaw (Mowzie's Mobs), Chaos Knight"
-				"§e(Born in Chaos). Consiga também: The Bossdexium (Bossominium),"
-				"§eMalkuth Trophy (FD Bosses), Frozen Fist (Bosses Rise)."
+				"§eDerrote: Umvuthi e Frostmaw, o Chaos Knight."
+				"§eConsiga também: The Bossdexium, Malkuth Trophy, Ice Gauntlet."
 				""
 				"§6Dica: §7Itens de boss têm baixíssima chance de drop."
 				"§7Prepare-se para múltiplas tentativas."
 			]
+			hide_until_deps_complete: true
 			icon: "mowziesmobs:sol_visage"
 			id: "57FB4D6C1F18453E"
 			rewards: [
@@ -602,6 +551,7 @@
 					xp: 25000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "mowziesmobs:kill_umvuthi"
@@ -635,7 +585,7 @@
 					id: "7734AEED73A36709"
 					item: {
 						Count: 1
-						id: "block_factorys_bosses:frozen_fist"
+						id: "block_factorys_bosses:ice_gauntlet"
 						tag: {
 							Damage: 0
 						}
@@ -644,10 +594,11 @@
 				}
 			]
 			title: "§cCaçador de Chefes"
-			x: 12.0d
-			y: 0.0d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§lDesafio VIII: Mochileiro do Infinito"
 				""
@@ -668,6 +619,7 @@
 				""
 				"§8§o(É tudo sobre inventário. Sempre foi.)"
 			]
+			hide_until_deps_complete: true
 			icon: "sophisticatedbackpacks:netherite_backpack"
 			id: "06C9265A4A347B71"
 			rewards: [
@@ -699,6 +651,7 @@
 					xp: 18000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "0F502992A28EEB57"
@@ -722,10 +675,11 @@
 				}
 			]
 			title: "§bMochileiro do Infinito"
-			x: 14.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§lDesafio IX: Arsenal da Ordem"
 				"§7Knight Quest tem dezenas de armaduras temáticas."
@@ -737,6 +691,7 @@
 				"§6Dica: §7Cada essência tem sua própria cadeia de crafting —"
 				"§7confira o JEI/EMI pra montar a rota mais eficiente."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "knightquest:warlord_chestplate"
@@ -759,7 +714,7 @@
 				}
 				{
 					id: "64934C3CA1A1244F"
-					item: "knightquest:great_chalice"
+					item: "knightquest:filled_goblet"
 					type: "item"
 				}
 				{
@@ -774,6 +729,7 @@
 					xp: 20000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 20L
@@ -804,10 +760,11 @@
 				}
 			]
 			title: "§7Arsenal da Ordem"
-			x: 0.0d
-			y: 4.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§l✦ DESAFIO FINAL I: A Grande Fábrica Arcana ✦"
 				""
@@ -824,12 +781,13 @@
 				"§7Provar esse domínio requer um §lmundo inteiro§r§7 funcionando."
 				"§6Recompensa §7proporcional ao esforço."
 			]
+			hide_until_deps_complete: true
 			icon: "create:linked_controller"
 			id: "69A1B87011C5899B"
 			rewards: [
 				{
 					id: "052F483B2656AAF2"
-					item: "mysticalagriculture:awakened_supremium_staff"
+					item: "mysticalagriculture:awakened_supremium_axe"
 					type: "item"
 				}
 				{
@@ -855,6 +813,7 @@
 					xp: 40000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 100L
@@ -887,10 +846,11 @@
 				}
 			]
 			title: "§6§lA Grande Fábrica Arcana"
-			x: 2.0d
-			y: 4.0d
+			x: -8.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§l✦ DESAFIO FINAL III: O Guerreiro Absoluto ✦"
 				""
@@ -907,6 +867,7 @@
 				""
 				"§7O guerreiro que possui isso sobrevive a qualquer coisa."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "mysticalagriculture:awakened_supremium_chestplate"
@@ -967,6 +928,7 @@
 					xp: 50000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "6662CEAA245C6716"
@@ -1078,14 +1040,15 @@
 				}
 			]
 			title: "§6§lO Guerreiro Absoluto"
-			x: 4.0d
-			y: 4.0d
+			x: -2.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"2B00000000000060"
 				"4A43C5C16149EEE8"
 				"0E0976C3E5AC564D"
+				"459BE27BE8C6B6F9"
 			]
 			description: [
 				"§7Você foi ao Nether e sobreviveu."
@@ -1099,15 +1062,10 @@
 				""
 				"§5§lVocê conquistou todos os mundos."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "728DA301E0D54BC8"
 			rewards: [
-				{
-					count: 30
-					id: "161CC24F9E0B1F7F"
-					item: "minecraft:experience_bottle"
-					type: "item"
-				}
 				{
 					count: 8
 					id: "7F53CD5038702892"
@@ -1115,31 +1073,51 @@
 					type: "item"
 				}
 				{
+					count: 4
+					id: "161CC24F9E0B1F7F"
+					item: "blue_skies:horizonite_ingot"
+					type: "item"
+				}
+				{
+					id: "2DB0C83A95B30156"
+					item: {
+						Count: 1
+						id: "fc:master_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
 					id: "736D430F9A5BCF3F"
 					type: "xp"
-					xp: 5000
+					xp: 22000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "45A9DEEF2FF547FB"
-				item: "minecraft:nether_star"
+				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
 			title: "§5§lConquistador de Dimensões"
-			x: 6.0d
-			y: 4.0d
+			x: 2.5d
+			y: 5.5d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§7Com os recursos de todas as dimensões em mãos,"
-				"§7você pode criar itens impossivelmente raros."
+				"§7você pode provar domínio sobre cada uma delas."
 				""
-				"§eCrie um item que use materiais de pelo menos"
-				"§e§l3 dimensões diferentes §r§7(ex: Netherite + Aether Ore + End Crystal)."
+				"§eTenha em mãos, ao mesmo tempo: Netherite Ingot (Nether),"
+				"§eZanite Gemstone (Aether) e End Crystal (End)."
 				""
 				"§6Cada dimensão contribui com algo único."
-				"§7Combine para criar o maior poder possível!"
+				"§7A verdadeira combinação fica a seu critério — essa é só a prova."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:netherite_ingot"
 			id: "20D4D55C4FE40BCE"
 			rewards: [
@@ -1161,7 +1139,7 @@
 					type: "item"
 				}
 				{
-					count: 20
+					count: 8
 					id: "5BB2FDE175536AC0"
 					item: "minecraft:experience_bottle"
 					type: "item"
@@ -1169,9 +1147,10 @@
 				{
 					id: "599446B5C3AF99F5"
 					type: "xp"
-					xp: 3000
+					xp: 18000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "72C6E1EB2A0FB062"
@@ -1191,9 +1170,10 @@
 			]
 			title: "Poder das Dimensões"
 			x: 8.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§7Você já matou deuses e desmontou dimensões. Agora prove que"
 				"§7também sabe cuidar de bichinho — o desafio final da paciência."
@@ -1201,6 +1181,7 @@
 				"§eTenha ao menos: um Alfalfa Bale (SWEM), um Moa incubado (Aether)"
 				"§ee um Horse Breeding Token (SWEM)."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:nether_star"
 			id: "4928328A642FB290"
 			rewards: [
@@ -1222,6 +1203,7 @@
 					xp: 12000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4D45D2F5E0153BF5"
@@ -1241,10 +1223,11 @@
 				}
 			]
 			title: "§eO Domador Definitivo"
-			x: 16.0d
-			y: 8.0d
+			x: -10.0d
+			y: 9.0d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§7Não basta jogar o modpack — é preciso ter posse física de"
 				"§7pelo menos um item lendário de cada grande sistema."
@@ -1252,6 +1235,7 @@
 				"§eTenha em mãos, ao mesmo tempo: Awakened Supremium Essence,"
 				"§eum Relic equipado, e um Artifact equipado."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:nether_star"
 			id: "17BEA3FEC4515CF3"
 			rewards: [
@@ -1273,6 +1257,7 @@
 					xp: 14000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 4L
@@ -1292,10 +1277,11 @@
 				}
 			]
 			title: "§bO Colecionador Absoluto"
-			x: 18.0d
-			y: 8.0d
+			x: -3.5d
+			y: 9.0d
 		}
 		{
+			dependencies: ["459BE27BE8C6B6F9"]
 			description: [
 				"§c§lDesafio Extra: O Caçador Completo"
 				"§7Twilight Forest tem mais de 50 criaturas diferentes."
@@ -1308,6 +1294,7 @@
 				"§6Dica: §7Alguns são pacíficos (esquilo, cervo, coelho-anão) —"
 				"§7não esqueça deles só porque não atacam primeiro!"
 			]
+			hide_until_deps_complete: true
 			icon: "twilightforest:raven_feather"
 			id: "7612818452F0B3C7"
 			rewards: [
@@ -1323,11 +1310,23 @@
 					type: "item"
 				}
 				{
+					id: "75724EF0C06D3928"
+					item: {
+						Count: 1
+						id: "fc:reiner_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
 					id: "5F374D1CAD5977F8"
 					type: "xp"
-					xp: 5000
+					xp: 14000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "twilightforest:twilight_hunter"
 				criterion: ""
@@ -1335,8 +1334,63 @@
 				type: "advancement"
 			}]
 			title: "O Caçador Completo"
-			x: 36.0d
-			y: 10.0d
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["459BE27BE8C6B6F9"]
+			description: [
+				"§7Ars Nouveau e Iron's Spellbooks são 2 escolas de magia"
+				"§7completamente diferentes — cada uma com seu próprio jeito"
+				"§7de pensar sobre feitiço. Dominar as 2 ao mesmo tempo é outro"
+				"§7nível de compromisso."
+				""
+				"§ePossua ao mesmo tempo: um Archmage"
+				"§eSpell Book (Ars Nouveau) e Legendary Ink (Iron's Spellbooks)."
+			]
+			hide_until_deps_complete: true
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "3C8475F78CF1B0B5"
+			rewards: [
+				{
+					count: 8
+					id: "10AF111D57075C0C"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					id: "171A6D027B217E6D"
+					item: "irons_spellbooks:legendary_ink"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "0A8B0E50F20D3C31"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "73543A7436807983"
+					type: "xp"
+					xp: 5000
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "086464975942F70F"
+					item: "ars_nouveau:archmage_spell_book"
+					type: "item"
+				}
+				{
+					id: "00D4BD4B0A2F6574"
+					item: "irons_spellbooks:legendary_ink"
+					type: "item"
+				}
+			]
+			title: "O Arquimago das Duas Escolas"
+			x: 10.0d
+			y: 9.0d
 		}
 	]
 	title: "§c§lDesafios Finais"

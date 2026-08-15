@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "09_criaturas"
 	group: "69F31F625754AE1E"
@@ -9,17 +9,44 @@
 	quests: [
 		{
 			description: [
-				"§7Este mundo não tem mobs genéricos."
-				"§7§eBorn in Chaos §7trouxe criaturas distorcidas."
-				"§7§eAlex's Mobs §7adicionou fauna que reage ao ambiente."
-				"§7§eLegendary Monsters §7faz qualquer mob comum"
-				"§7virar uma ameaça de outra categoria."
+				"§7Bosses, feras raras e caçadas que vão testar seu equipamento até o limite."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Bone."
+			]
+			icon: "minecraft:bone"
+			id: "0028DC3943F492EA"
+			rewards: [{
+				id: "0B3CDE7BED55A480"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "1C13FB3DE4D9250B"
+				item: "minecraft:bone"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Este mundo não tem mobs genéricos. Criaturas distorcidas"
+				"§7andam ao lado de fauna que reage ao ambiente — e até um mob"
+				"§7comum pode virar uma ameaça de outra categoria por aqui."
 				""
 				"§eDerrote §e50 mobs hostis §7de qualquer tipo."
 				""
-				"§6Dica: §7§eBetterCombat §7tem combos — use-os."
+				"§6Dica: §7O combate por aqui tem combos — use-os."
 				"§7Spam de clique é o jeito mais lento de matar mobs aqui."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:iron_sword"
@@ -31,7 +58,16 @@
 			rewards: [
 				{
 					id: "5E00000000000003"
-					item: "minecraft:enchanted_book"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fire_protection"
+								lvl: 4
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -47,6 +83,7 @@
 				}
 			]
 			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					entity: "minecraft:zombie"
@@ -74,19 +111,22 @@
 				}
 			]
 			title: "Batismo de Fogo"
-			x: 0.0d
-			y: 0.0d
+			x: -0.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eBorn in Chaos §7adiciona bosses únicos ao jogo:"
+				"§7Existem bosses únicos espalhados pelo mundo:"
 				"§7a §eSmith do Caos§7, o §eMutant Zombie §7e outros."
 				""
-				"§eDerrote qualquer boss do mod Born in Chaos."
+				"§eDerrote o §cFallen Chaos Knight§e, o cavaleiro caído"
+				"§eque ainda veste a armadura da batalha que o matou."
 				""
-				"§6Dica: §7Bosses do Born in Chaos têm fases de combate!"
+				"§6Dica: §7Esses bosses costumam ter fases de combate!"
 				"§7Observe os padrões de ataque antes de atacar cegamente."
 			]
+			hide_until_deps_complete: true
 			icon: "born_in_chaos_v1:seedof_chaos"
 			id: "5E0000000000000C"
 			rewards: [
@@ -108,27 +148,30 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
-				advancement: "born_in_chaos_v1:chaos_knight"
-				criterion: "chaos_knight_0"
+				entity: "born_in_chaos_v1:fallen_chaos_knight"
 				id: "7ABE383200DAA18B"
-				type: "advancement"
+				type: "kill"
+				value: 1L
 			}]
 			title: "Filho do Caos"
-			x: 4.0d
-			y: 0.0d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eBossominium §7adiciona bosses variados espalhados pelo mundo,"
+				"§7Existem bosses variados espalhados pelo mundo,"
 				"§7cada um com arena e mecânica própria — alguns são gigantes"
 				"§7de verdade, não só \"mob grande\"."
 				""
-				"§eDerrote um dos bosses grandes do Bossominium."
+				"§eDerrote um dos gigantes que guardam essas arenas."
 				""
 				"§6Dica: §7Use Boss Checklist pra localizar esses bosses!"
 				"§7Tenha poções de cura e velocidade em quantidade."
 			]
+			hide_until_deps_complete: true
 			icon: "bossominium:eye_of_the_badlands"
 			id: "5E00000000000011"
 			rewards: [
@@ -136,6 +179,11 @@
 					count: 8
 					id: "5E00000000000012"
 					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "4828807F6F27D707"
+					item: "bossominium:all_seeing_crystal"
 					type: "item"
 				}
 				{
@@ -150,6 +198,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "bossominium:the_bigger_they_are"
 				criterion: "the_bigger_they_are"
@@ -157,18 +206,20 @@
 				type: "advancement"
 			}]
 			title: "Caçador de Bosses"
-			x: 6.0d
-			y: 0.0d
+			x: -3.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eAlex's Mobs §7adiciona mais de 80 criaturas únicas ao jogo."
+				"§7Mais de 80 criaturas únicas vivem por essas terras."
 				"§7Cada uma tem comportamentos, drops e interações especiais."
 				""
 				"§eDerrote um de cada: Gorila, Crocodilo, Urso Pardo, Cascavel e Serpente Óssea."
 				""
 				"§6Dica: §7O Bone Serpent vive em cavernas profundas, já o Urso Pardo prefere biomas frios."
 			]
+			hide_until_deps_complete: true
 			icon: "alexsmobs:spawn_egg_fly"
 			id: "5E00000000000020"
 			rewards: [
@@ -189,6 +240,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					entity: "alexsmobs:gorilla"
@@ -222,10 +274,11 @@
 				}
 			]
 			title: "Caçador de Espécies"
-			x: 12.0d
-			y: 0.0d
+			x: -1.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7Nas tundras cobertas de neve, existe uma coisa"
 				"§7que não é urso, não é golem e não é wither."
@@ -238,6 +291,7 @@
 				"§7Mantenha distância — o corpo-a-corpo é suicida."
 				"§7Flechas envenenadas ajudam a drená-lo entre ataques."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "mowziesmobs:ice_crystal"
@@ -270,6 +324,7 @@
 					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				entity: "mowziesmobs:frostmaw"
 				id: "5E00000000000029"
@@ -277,12 +332,13 @@
 				value: 1L
 			}]
 			title: "A Fera do Gelo"
-			x: 14.0d
-			y: 0.0d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eBarako §7é o Xamã boss do Mowzie's Mobs."
+				"§7Barako é o Xamã boss das savanas quentes."
 				"§7Ele conjura raios e mobs para se defender."
 				""
 				"§eDerrote o §eBarako the Sun Chief§7."
@@ -290,6 +346,7 @@
 				"§6Dica: §7Barako vive em savanas quentes!"
 				"§7Ele chama reforços — mate os adeptos primeiro."
 			]
+			hide_until_deps_complete: true
 			icon: "mowziesmobs:sol_visage"
 			id: "5E0000000000002A"
 			rewards: [
@@ -310,6 +367,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				entity: "mowziesmobs:umvuthi"
 				id: "5E0000000000002E"
@@ -317,22 +375,24 @@
 				value: 1L
 			}]
 			title: "O Chefe do Sol"
-			x: 0.0d
-			y: 4.0d
+			x: 4.5d
+			y: 3.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7Os Ilusionistas não atacam ao acaso."
 				"§7Eles planejam, coordenam e visam os mais fracos."
-				"§7§eIllager Invasion §7torna os ataques em eventos reais —"
+				"§7Os ataques viraram eventos reais por aqui —"
 				"§7esquadrões organizados, capitães liderando tropas."
 				""
 				"§eDerrote um §eCapitão de Raid §7para provocar"
 				"§7e depois sobreviver ao ataque à aldeia."
 				""
 				"§6Dica: §7Ilusionistas cegam — leve §eleite de vaca§7."
-				"§7§eGuard Villagers §7pode te ajudar se você equipar os aldeões."
+				"§7Aldeões equipados corretamente também podem ajudar na defesa."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -360,6 +420,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:adventure/voluntary_exile"
 				criterion: ""
@@ -367,10 +428,11 @@
 				type: "advancement"
 			}]
 			title: "Defensor da Aldeia"
-			x: 2.0d
-			y: 4.0d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7O §eHaunted Knight §7ronda a Abandoned Crypt — um cavaleiro"
 				"§7morto-vivo preso em armadura enferrujada, ainda lutando"
@@ -381,6 +443,7 @@
 				"§6Dica: §7Ele ataca em combos de espada — não fique parado"
 				"§7bloqueando, ele quebra guarda com facilidade."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "legendary_monsters:knights_sword"
@@ -407,6 +470,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "legendary_monsters:defeat_haunted_knight"
 				criterion: "ambusher"
@@ -414,12 +478,13 @@
 				type: "advancement"
 			}]
 			title: "Lendário Caído"
-			x: 4.0d
-			y: 4.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7O §eLeader Goblin §7comanda as tribos de Goblin's Tyranny —"
+				"§7O §eLeader Goblin §7comanda as tribos goblin da região —"
 				"§7mais forte e melhor equipado que os goblins de caverna comuns,"
 				"§7geralmente cercado de guarda-costas."
 				""
@@ -428,6 +493,7 @@
 				"§6Dica: §7Eles aparecem liderando grupos — limpe os subordinados"
 				"§7primeiro ou você vai apanhar em grupo."
 			]
+			hide_until_deps_complete: true
 			icon: "goblins_tyranny:totem_block"
 			id: "5E00000000000039"
 			rewards: [
@@ -449,6 +515,7 @@
 					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				entity: "goblins_tyranny:leader_goblin"
 				id: "5E0000000000003D"
@@ -456,27 +523,456 @@
 				value: 1L
 			}]
 			title: "Rei dos Goblins"
-			x: 6.0d
-			y: 4.0d
+			x: 5.0d
+			y: -5.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eIDAS §7(Idas' Dungeon Adventuring System) adiciona"
-				"§7masmorras geradas proceduralmente com bosses únicos."
+				"§7Existe uma sociedade inteira de goblins por aqui —"
+				"§7com suas próprias estruturas, esconderijos e um jeito bem"
+				"§7peculiar de dormir a bebedeira."
+				""
+				"§eEncontre sua primeira estrutura goblin, encontre um goblin"
+				"§eescondido dentro de um barril, e acorde um goblin bêbado"
+				"§eque estava dormindo."
+			]
+			hide_until_deps_complete: true
+			icon: "goblins_tyranny:bomb"
+			id: "15AB6BAD7D65301F"
+			rewards: [
+				{
+					count: 3
+					id: "768551F0B27EEED9"
+					item: "goblins_tyranny:goblin_ingot"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "4E8784A5550E8A70"
+					item: "goblins_tyranny:coin"
+					type: "item"
+				}
+				{
+					id: "6446229E6352658B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goblins_tyranny:goblins_encounter_success"
+					criterion: ""
+					id: "049243A44AB9CA83"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:barrel_success"
+					criterion: ""
+					id: "411A250B9132D41D"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:wake_up_success"
+					criterion: ""
+					id: "1F30D89701849863"
+					type: "advancement"
+				}
+			]
+			title: "Primeiro Encontro Goblin"
+			x: 2.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Nem toda missão precisa de força. Um bom disfarce te deixa"
+				"§7andar entre os goblins sem levantar suspeita — até você"
+				"§7decidir que é hora de parar de fingir."
+				""
+				"§eCrie um disfarce de goblin, prove a carne de goblin"
+				"§e(coragem, não gosto), e derrote um goblin em combate"
+				"§eaberto."
+			]
+			hide_until_deps_complete: true
+			icon: "goblins_tyranny:bomb_bag"
+			id: "2961040683162661"
+			rewards: [
+				{
+					id: "3F7CCA0CC098EEFB"
+					item: {
+						Count: 1
+						id: "goblins_tyranny:fake_goblin_ears_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "5F30894B8B019CB6"
+					item: "goblins_tyranny:goblins_meat"
+					type: "item"
+				}
+				{
+					id: "08C0045114D6C422"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goblins_tyranny:goblins_disguise_success"
+					criterion: ""
+					id: "4A69CD3AE6F76F29"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:goblins_meat_success"
+					criterion: ""
+					id: "74F0FABAFFD47059"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:goblins_slayer_success"
+					criterion: ""
+					id: "2262132B52D62141"
+					type: "advancement"
+				}
+			]
+			title: "Disfarce e Infiltração"
+			x: -0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7O bar goblin serve de tudo — licor comum, licor goblin,"
+				"§7licor em chamas (que não é tão seguro quanto parece) e"
+				"§7até um licor mortal de verdade."
+				""
+				"§eCompre licor do bartender, beba um Goblin's Liquor, um"
+				"§eBlazing Liquor, um Deadly Liquor, e dê um mushroom stew"
+				"§epro mercador."
+				""
+				"§8§o(Você bebeu algo chamado 'Deadly Liquor' por curiosidade."
+				"§8§oO nome já avisou, a escolha foi sua.)"
+			]
+			hide_until_deps_complete: true
+			icon: "goblins_tyranny:deadly_liquor_item"
+			id: "105A46CF8771A287"
+			rewards: [
+				{
+					id: "397CFE5FC0C77733"
+					item: "minecraft:milk_bucket"
+					type: "item"
+				}
+				{
+					id: "7C3F98A0E6D251B4"
+					item: "goblins_tyranny:mug"
+					type: "item"
+				}
+				{
+					id: "354BD062441AB88E"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goblins_tyranny:liquor_success"
+					criterion: ""
+					id: "65D0C610258C117A"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:goblin_liquor_success"
+					criterion: ""
+					id: "19C543732857C61D"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:blazing_liquor_success"
+					criterion: ""
+					id: "39006091471E130B"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:deadly_liquor_success"
+					criterion: ""
+					id: "0C54CE87C97E2207"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:mushroom_success"
+					criterion: ""
+					id: "6A433B26C2EDF642"
+					type: "advancement"
+				}
+			]
+			title: "Bar do Goblin"
+			x: -3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Nem todo goblin quer briga. Alguns só querem vender"
+				"§7suas coisas — pro mercador fixo ou pro goblin errante"
+				"§7que aceita moeda de ouro."
+				""
+				"§eCompre algo do mercador goblin, e troque uma moeda de"
+				"§eouro com o goblin errante."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:gold_nugget"
+			id: "3C6E02661BB10473"
+			rewards: [
+				{
+					count: 4
+					id: "7CD443B0E90F76BD"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5E96A7C0421DF3B8"
+					item: "goblins_tyranny:coin"
+					type: "item"
+				}
+				{
+					id: "4C88D8076314110C"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goblins_tyranny:merchant_success"
+					criterion: ""
+					id: "71F53E8164A7F8D3"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:wanderer_success"
+					criterion: ""
+					id: "31BB892FCAAE1A54"
+					type: "advancement"
+				}
+			]
+			title: "Comércio Goblin"
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Goblins adoram explosivo. A bancada do engenheiro produz"
+				"§7bombas de fogo, de veneno, e uma bolsa cheia de surpresas"
+				"§7pra carregar tudo."
+				""
+				"§eUse a bancada de engenheiro, obtenha uma Bomb, uma Fire"
+				"§eBomb, uma Poison Bomb, e abra uma Bomb Bag."
+			]
+			hide_until_deps_complete: true
+			icon: "goblins_tyranny:fire_bomb"
+			id: "0094DC542A22551A"
+			rewards: [
+				{
+					count: 12
+					id: "56109593D95BBD71"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "500EB473BE375EE2"
+					item: "goblins_tyranny:bomb_bag"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1EAFBFA98A738CA6"
+					item: "goblins_tyranny:engineer_scrap"
+					type: "item"
+				}
+				{
+					id: "186B23DBE52EE41B"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goblins_tyranny:engineer_success"
+					criterion: ""
+					id: "1EE894512DE94C63"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:bomb_success"
+					criterion: ""
+					id: "591B511E5DF6119C"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:fire_success"
+					criterion: ""
+					id: "4A239D9C40B255AC"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:poison_success"
+					criterion: ""
+					id: "2B704CF55C4C5771"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:bag_success"
+					criterion: ""
+					id: "3A5E86EE75609F2F"
+					type: "advancement"
+				}
+			]
+			title: "Engenharia Explosiva"
+			x: -8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7O Glitteron é o besouro de estimação favorito dos"
+				"§7goblins — domesticável e equipável com armadura própria."
+				"§7Já o protótipo é tecnologia goblin de verdade, upgradável"
+				"§7até virar o conjunto Skybound completo."
+				""
+				"§eDomestique um Glitteron, equipe uma armadura nele,"
+				"§econsiga um Droblin, obtenha o protótipo goblin, faça o"
+				"§eupgrade dele, e vista o conjunto Skybound completo."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "goblins_tyranny:reinforced_prototype_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2BEB42C7243D765F"
+			rewards: [
+				{
+					id: "39CF531FA6DE5E9D"
+					item: {
+						Count: 1
+						id: "goblins_tyranny:goblin_upgraded_mace"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F82D1E9B5037CA4"
+					item: {
+						Count: 1
+						id: "goblins_tyranny:goblin_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0DE47B196C8A2F35"
+					item: "goblins_tyranny:goblin_ingot"
+					type: "item"
+				}
+				{
+					id: "645CA5B053C26F0B"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "goblins_tyranny:glitteron_success"
+					criterion: ""
+					id: "27881C027048FCF3"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:glitteron_armor_success"
+					criterion: ""
+					id: "0E4676519641F876"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:droblin_success"
+					criterion: ""
+					id: "11E7A90FCE261F75"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:prototype_success"
+					criterion: ""
+					id: "670D10F0CA80A337"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:upgrade_success"
+					criterion: ""
+					id: "60574C343CAE92E2"
+					type: "advancement"
+				}
+				{
+					advancement: "goblins_tyranny:skybound_success"
+					criterion: ""
+					id: "14447966655251A9"
+					type: "advancement"
+				}
+			]
+			title: "§6§lO Glitteron e o Protótipo"
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Existem masmorras geradas proceduralmente com bosses únicos"
+				"§7escondidas por aí."
 				"§7Algumas guardam discos de música raros como tesouro."
 				""
-				"§eExplore uma dungeon do IDAS e encontre o"
+				"§eExplore uma dessas masmorras e encontre o"
 				"§eMusic Disc Slither §7escondido nela."
 				""
-				"§6Dica: §7Masmorras IDAS escalam com seu equipamento!"
+				"§6Dica: §7Essas masmorras escalam com seu equipamento!"
 				"§7Leve comida extra, tochas e itens de cura."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:tripwire_hook"
 			id: "5E0000000000003E"
 			rewards: [
 				{
-					count: 5
 					id: "5E0000000000003F"
+					item: "idas:music_disc_calidum"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "6A9D0C8E731F452B"
 					item: "minecraft:emerald"
 					type: "item"
 				}
@@ -492,18 +988,20 @@
 					xp: 1200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "5E00000000000042"
 				item: "idas:music_disc_slither"
 				type: "item"
 			}]
 			title: "Mestre de Masmorras"
-			x: 8.0d
-			y: 4.0d
+			x: -9.0d
+			y: 2.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eRelics §7adiciona relíquias que concedem habilidades"
+				"§7Existem relíquias que concedem habilidades"
 				"§7passivas únicas — algumas sutis, outras absurdas."
 				""
 				"§7§eBastion Ring §7— escudo ativo on-demand."
@@ -511,12 +1009,13 @@
 				"§7§eShadow Glaive §7— ricocheteante e letal."
 				"§7§eEnders Hand §7— teleporte instantâneo."
 				""
-				"§eCollecte a §eResearching Table §7e pesquise"
+				"§eColete a §eResearching Table §7e pesquise"
 				"§epelo menos §e2 relíquias §7de combate diferentes."
 				""
 				"§6Dica: §7Relíquias são obtidas em baús de dungeon"
 				"§7e derrotando bosses — explora mais, encontra mais."
 			]
+			hide_until_deps_complete: true
 			icon: "relics:space_dissector"
 			id: "5E00000000000301"
 			rewards: [
@@ -537,6 +1036,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "5D510253C44900B6"
@@ -550,10 +1050,11 @@
 				}
 			]
 			title: "Relíquias do Combate"
-			x: 10.0d
-			y: 4.0d
+			x: -8.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7Depois de derrotar Malkuth no Despertar de Qliphoth, o troféu"
 				"§7dele guarda um segredo: serve de ingrediente pra receitas"
@@ -564,6 +1065,7 @@
 				"§6Dica: §7Drops únicos de boss geralmente têm receita própria —"
 				"§7confira o livro de receitas ou o JEI/EMI."
 			]
+			hide_until_deps_complete: true
 			icon: "fdbosses:malkuth_trophy"
 			id: "5E00000000000043"
 			rewards: [
@@ -585,28 +1087,31 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "5E00000000000047"
 				item: "fdbosses:malkuth_trophy"
 				type: "item"
 			}]
 			title: "O Cozinheiro dos Bosses"
-			x: 12.0d
-			y: 4.0d
+			x: -6.0d
+			y: 7.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eKnight Quest §7não tem bosses — é uma forja de armaduras"
+				"§7Não tem boss aqui — é uma forja de armaduras"
 				"§7temáticas gigantesca: dezenas de sets diferentes, do Warlord"
 				"§7ao Silverfish, cada um com visual e status únicos."
 				""
 				"§eForje o set de armadura Warlord."
 				""
-				"§6Dica: §7Explore as receitas do Knight Quest no JEI/EMI —"
+				"§6Dica: §7Explore essas receitas no JEI/EMI —"
 				"§7tem sets temáticos escondidos que valem a pena conferir."
 				""
 				"§8§o(Sem chefe pra derrotar aqui — só uma forja generosa demais.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "knightquest:steel_sword"
@@ -639,6 +1144,7 @@
 					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "5E0000000000004C"
 				item: {
@@ -651,27 +1157,40 @@
 				type: "item"
 			}]
 			title: "Quebra-Cavaleiros"
-			x: 14.0d
-			y: 4.0d
+			x: -3.5d
+			y: 9.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eThe Outer End §7expande o End com novos biomas e criaturas."
-				"§7Novas ilhas flutuantes escondem estruturas e recursos únicos."
+				"§7Além do End que você já conhece, existe um End mais distante"
+				"§7ainda — ilhas flutuantes escondendo estruturas e recursos"
+				"§7que ninguém catalogou direito."
 				""
 				"§eColete os 3 cristais das ilhas: Rose, Mint e Cobalt Crystal —"
-				"§ecada um vem de um bioma diferente do mod."
+				"§ecada um vem de um bioma diferente dessas ilhas."
 				""
 				"§6Dica: §7Leve muita comida e Ender Pearls pra cruzar as ilhas!"
 				"§7Cada cristal também vira uma armadura própria, se você"
 				"§7quiser continuar explorando depois dessa missão."
 			]
+			hide_until_deps_complete: true
 			icon: "outer_end:rose_crystal"
 			id: "5E0000000000004D"
 			rewards: [
 				{
-					count: 8
 					id: "5E0000000000004E"
+					item: "outer_end:music_disc_galactic_wave"
+					type: "item"
+				}
+				{
+					id: "7CA24B3DF1C97A00"
+					item: "outer_end:music_disc_unknown_frontier"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3C0A7D9E682F154B"
 					item: "minecraft:shulker_shell"
 					type: "item"
 				}
@@ -687,6 +1206,7 @@
 					xp: 1200
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "5E00000000000051"
@@ -705,17 +1225,19 @@
 				}
 			]
 			title: "Além do Fim"
-			x: 0.0d
-			y: 8.0d
+			x: -0.5d
+			y: 10.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eRealmRPG Skeletons §7não são mobs — são estátuas decorativas"
+				"§7Estas não são mobs — são estátuas decorativas"
 				"§7de esqueletos em poses variadas, ótimas pra decorar suas construções"
 				"§7ou dar um clima mais sombrio à sua base."
 				""
 				"§eColete 3 esqueletos decorativos diferentes: Comum, Cristal e Queimado."
 			]
+			hide_until_deps_complete: true
 			icon: "realmrpg_skeletons:crystal_skeleton"
 			id: "5E00000000000052"
 			rewards: [
@@ -737,6 +1259,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "5E00000000000056"
@@ -755,10 +1278,11 @@
 				}
 			]
 			title: "Caçador de Mortos"
-			x: 2.0d
-			y: 8.0d
+			x: 2.5d
+			y: 10.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7Você provou seu valor em combate contra criaturas de mods."
 				"§7Agora prove que você é o §l§cCaçador Supremo§r§7."
@@ -771,10 +1295,11 @@
 				""
 				"§6A elite de caçadores não teme nenhum boss!"
 				""
-				"§7§eDica de sobrevivência: §7com §ePlayerRevive §7e §eHardcore Revival§7,"
-				"§7uma morte em grupo não precisa ser o fim — leve sempre um"
+				"§7§eDica de sobrevivência: §7uma morte em grupo não precisa ser"
+				"§7o fim — leve sempre um"
 				"§eDesfibrilador §7na mochila para reanimar aliados em combate!"
 			]
+			hide_until_deps_complete: true
 			icon: "born_in_chaos_v1:seedof_chaos"
 			id: "5E00000000000057"
 			rewards: [
@@ -790,11 +1315,23 @@
 					type: "item"
 				}
 				{
+					id: "5F0F0BA6EE23A4A0"
+					item: {
+						Count: 1
+						id: "fc:victorious_greatsword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
 					id: "5E0000000000005A"
 					type: "xp"
 					xp: 3000
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "born_in_chaos_v1:chaos_knight"
@@ -827,26 +1364,38 @@
 				}
 			]
 			title: "§c§lO Caçador Supremo"
-			x: 4.0d
-			y: 8.0d
+			x: 5.0d
+			y: 9.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eBosses Rise §7é outro mod de bosses independente do Bossominium —"
-				"§7adiciona criaturas titânicas próprias com mecânicas de fases"
+				"§7Existem criaturas titânicas próprias com mecânicas de fases"
 				"§7e arenas exclusivas geradas pelo mundo, incluindo um dragão próprio."
 				""
-				"§eDerrote o Dragão do mod Bosses Rise."
+				"§eDerrote o Dragão titânico."
 				""
-				"§6Dica: §7Bosses Rise costuma avisar com efeitos visuais"
+				"§6Dica: §7Esse tipo de boss costuma avisar com efeitos visuais"
 				"§7e sons antes de invocar ataques em área — fique atento!"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:totem_of_undying"
 			id: "5E0000000000005E"
 			rewards: [
 				{
 					id: "5E0000000000005F"
 					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					id: "1B8BEE39FB47A6C2"
+					item: {
+						Count: 1
+						id: "block_factorys_bosses:dragon_bones_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
@@ -861,6 +1410,7 @@
 					xp: 900
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "block_factorys_bosses:kill_dragon"
 				criterion: "kill"
@@ -868,22 +1418,24 @@
 				type: "advancement"
 			}]
 			title: "A Ascensão"
-			x: 6.0d
+			x: 7.5d
 			y: 8.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eLegendary Monsters §7adiciona criaturas colossais totalmente novas,"
+				"§7Existem criaturas colossais totalmente novas por aqui,"
 				"§7escondidas em estruturas próprias espalhadas pelo mundo —"
 				"§7não são variantes de mobs comuns, são bichos de verdade."
 				""
 				"§eEncontre a Ancient Stronghold e derrote o Ambusher."
 				""
-				"§6Dica: §7Cada chefe do mod tem sua própria estrutura de origem."
+				"§6Dica: §7Cada chefe tem sua própria estrutura de origem."
 				"§7Procure por biomas de pedregulho e cavernas profundas."
 				""
 				"§8§o(O primeiro de muitos bosses que vao te humilhar.)"
 			]
+			hide_until_deps_complete: true
 			icon: "legendary_monsters:chiseled_ancient_dripstone_shard"
 			id: "7A2EF12076CF8048"
 			rewards: [
@@ -898,6 +1450,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "legendary_monsters:defeat_ambusher"
 				criterion: "ambusher"
@@ -905,10 +1458,11 @@
 				type: "advancement"
 			}]
 			title: "Encontrando o Lendário"
-			x: 12.0d
-			y: -2.0d
+			x: 10.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7O §eFrostbitten Golem §7guarda o Templo Congelado — um colosso"
 				"§7de gelo que ataca em área e ignora resistência ao frio comum."
@@ -920,6 +1474,7 @@
 				""
 				"§8§o(Ele e feito de gelo e ainda assim te esquenta o sangue de raiva.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "legendary_monsters:the_great_frost"
@@ -946,6 +1501,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "legendary_monsters:defeat_frostbitten_golem"
 				criterion: "frostbitten_golem"
@@ -953,10 +1509,11 @@
 				type: "advancement"
 			}]
 			title: "O Golem Glacial"
-			x: 16.0d
-			y: 0.0d
+			x: 11.0d
+			y: 3.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7O §eAncient Guardian §7é um Guardião do Oceano evoluído: §7tamanho"
 				"§7triplo, raio laser que atravessa armadura, e Fadiga de Mineração III"
@@ -968,6 +1525,7 @@
 				"§6Dica: §7Poções de Respiração Aquática são essenciais."
 				"§7Respiration III no capacete e Depth Strider nas botas."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "legendary_monsters:monstrous_anchor"
@@ -981,7 +1539,7 @@
 					id: "2EDB0F5BE2226F62"
 					item: {
 						Count: 1
-						id: "legendary_monsters:monstrous_anchor"
+						id: "legendary_monsters:reinforced_monstrous_anchor"
 						tag: {
 							Damage: 0
 						}
@@ -994,6 +1552,7 @@
 					xp: 1200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "legendary_monsters:defeat_the_ancient_guardian"
 				criterion: "guardian"
@@ -1001,10 +1560,11 @@
 				type: "advancement"
 			}]
 			title: "O Guardião Antigo"
-			x: 18.0d
+			x: 11.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7O §eSkeletosaurus §7Lendário é um esqueleto-dinossauro colossal"
 				"§7que usa o §eDinosaur Bone Club §7para causar dano em área."
@@ -1015,6 +1575,7 @@
 				"§6Dica: §7Mantenha distância — o clube tem alcance inesperado."
 				"§7Arcos com §ePower §7são mais eficientes que espadas corpo a corpo."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "legendary_monsters:dinosaur_bone_club"
@@ -1028,7 +1589,7 @@
 					id: "4DB200BFCEB5C3BE"
 					item: {
 						Count: 1
-						id: "legendary_monsters:dinosaur_bone_club"
+						id: "legendary_monsters:dinosaur_bone_shield"
 						tag: {
 							Damage: 0
 						}
@@ -1041,6 +1602,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "legendary_monsters:defeat_skeletosaurus"
 				criterion: "skeletosaurus"
@@ -1048,10 +1610,11 @@
 				type: "advancement"
 			}]
 			title: "O Dragão de Osso"
-			x: 12.0d
-			y: 2.0d
+			x: 11.5d
+			y: -3.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7O §eCloud Golem §7vive no Templo das Nuvens e invoca relâmpagos"
 				"§7constantemente. Solta a Axe of Lightning — cada golpe da machado"
@@ -1063,6 +1626,7 @@
 				"§7A Axe of Lightning é uma das armas mais divertidas do modpack."
 				"§8§o(Relâmpago a cada golpe. O equilíbrio saiu de férias.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "legendary_monsters:axe_of_lightning"
@@ -1073,14 +1637,9 @@
 			id: "58889A50E7C37AC3"
 			rewards: [
 				{
+					count: 8
 					id: "00BDD9C6D7DCDA99"
-					item: {
-						Count: 1
-						id: "legendary_monsters:axe_of_lightning"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "legendary_monsters:bottled_lightning"
 					type: "item"
 				}
 				{
@@ -1089,6 +1648,7 @@
 					xp: 1200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "legendary_monsters:defeat_cloud_golem"
 				criterion: "cloud_golem"
@@ -1096,10 +1656,11 @@
 				type: "advancement"
 			}]
 			title: "O Relâmpago"
-			x: 16.0d
-			y: 4.0d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7O §eWithered Abomination §7ronda as Ruínas da Fortaleza da Alma —"
 				"§7um horror necrótico que solta a Withered Scythe, foice amaldiçoada"
@@ -1110,6 +1671,7 @@
 				"§6Dica: §7Leve Milk Buckets — os efeitos de status dele acumulam rápido."
 				"§8§o(Uma foice roubada de um horror do Nether. Ninguém questionou isso.)"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "legendary_monsters:withered_scythe"
@@ -1120,7 +1682,61 @@
 			id: "075A296669E25C53"
 			rewards: [
 				{
+					count: 6
 					id: "53C30FFD6D2A4D65"
+					item: "legendary_monsters:withered_horn"
+					type: "item"
+				}
+				{
+					id: "46DB54D201A03BF0"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "legendary_monsters:defeat_withered_abomination"
+				criterion: "abomination"
+				id: "22A33F4AB7D69764"
+				type: "advancement"
+			}]
+			title: "A Foice Amaldiçoada"
+			x: 9.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Nem todo gigante vive nas mesmas terras. Alguns dormem"
+				"§7enterrados na areia, outros esperam em ilhas flutuantes"
+				"§7de um mundo que já não é bem o End que você conhece."
+				""
+				"§eDerrote: Sandstone Bomb, o Ancient War Machine, a"
+				"§eChorus Infection, o Tall Guy e o Shulker Box assustador."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "legendary_monsters:withered_scythe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "428ED251CD167552"
+			rewards: [
+				{
+					id: "343DEE87F75C8DA9"
+					item: {
+						Count: 1
+						id: "legendary_monsters:chorus_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A9E1C3F0D852B74"
 					item: {
 						Count: 1
 						id: "legendary_monsters:withered_scythe"
@@ -1131,28 +1747,268 @@
 					type: "item"
 				}
 				{
-					id: "46DB54D201A03BF0"
+					count: 4
+					id: "0D075E921853D13A"
+					item: "legendary_monsters:eye_of_chorus"
+					type: "item"
+				}
+				{
+					id: "382E1F7D61D7190D"
 					type: "xp"
-					xp: 1200
+					xp: 900
 				}
 			]
-			tasks: [{
-				advancement: "legendary_monsters:defeat_withered_abomination"
-				criterion: "abomination"
-				id: "22A33F4AB7D69764"
-				type: "advancement"
-			}]
-			title: "A Foice Amaldiçoada"
-			x: 18.0d
-			y: 4.0d
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_bomber"
+					criterion: ""
+					id: "4301C9FDEA821E83"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_dune_sentinel"
+					criterion: ""
+					id: "5BF38F2852702CF7"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_chorusling"
+					criterion: ""
+					id: "717B3D2B424EDF90"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_endersent"
+					criterion: ""
+					id: "7D522144C717C7D9"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_shulker_mimic"
+					criterion: ""
+					id: "319861BA3F2F26BB"
+					type: "advancement"
+				}
+			]
+			title: "Feras Esquecidas"
+			x: 7.0d
+			y: -10.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eIllager Invasion §7adiciona novos tipos de illager: Alquimistas,"
+				"§7Guardas que já morreram há muito tempo ainda protegem seus"
+				"§7postos. Enquanto isso, o calor do Nether e o verde denso da"
+				"§7selva escondem seus próprios monstros."
+				""
+				"§eDerrote: o Undead Guard, o Cavaleiro Caído, a Besta Ígnea,"
+				"§eo que Teleporta, a Besta Musgosa e o Verme Nojento."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "legendary_monsters:knights_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1313D79A77E22AAF"
+			rewards: [
+				{
+					id: "283B5B90D1737B0F"
+					item: {
+						Count: 1
+						id: "legendary_monsters:knights_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "283B74F0E902333C"
+					item: {
+						Count: 1
+						id: "legendary_monsters:mossy_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3C7D0A9E51F826B4"
+					item: "legendary_monsters:withered_bone"
+					type: "item"
+				}
+				{
+					id: "1D7DFC1A54D5885F"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "legendary_monsters:defeat_haunted_guard"
+					criterion: ""
+					id: "212AB9FC4800623E"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_posessed_paladin"
+					criterion: ""
+					id: "32A2CC8FC2F47917"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_lava_eater"
+					criterion: ""
+					id: "7D02F71B92CC46F6"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_warped_fungussus"
+					criterion: ""
+					id: "011224F026A8ECAB"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_overgrown_colossus"
+					criterion: ""
+					id: "0F2CE78E650C67B0"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:defeat_spiky_bug"
+					criterion: ""
+					id: "76B86496917BDD09"
+					type: "advancement"
+				}
+			]
+			title: "Mortos-Vivos e Fúria Selvagem"
+			x: 4.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Antes de qualquer luta, tem a busca. Cada gigante lendário"
+				"§7tem seu próprio covil escondido — alguns tão bem escondidos"
+				"§7que ninguém teria achado por acaso."
+				""
+				"§eEncontre: o Abandoned Crypt, o Ancient Stronghold, as ruínas"
+				"§eda torre antiga, o Cloudy Temple, o Frostbitten Temple, o"
+				"§eMossy Temple, o Ruined Pyramid, o Shulker Tower, o ninho do"
+				"§eSkeletosaurus, as ruínas da Soul Fortress, e o ninho do"
+				"§eLava Eater."
+				""
+				"§8§o(Onze covis escondidos, cada um pior que o outro."
+				"§8§oQuem quer que tenha construído isso não gostava de visitas.)"
+			]
+			hide_until_deps_complete: true
+			icon: "legendary_monsters:chiseled_ancient_dripstone_shard"
+			id: "72883C842DFD4479"
+			rewards: [
+				{
+					count: 6
+					id: "5B42DFC97B171E7D"
+					item: "minecraft:map"
+					type: "item"
+				}
+				{
+					id: "7D5CAA31EAA85A24"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "legendary_monsters:locate_abandoned_crypt"
+					criterion: ""
+					id: "76C952CA3F76601D"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_ancient_stronghold"
+					criterion: ""
+					id: "1B2B5AEB22E8355B"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_ancient_tower_remains"
+					criterion: ""
+					id: "672F57A2D9003B54"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_cloudy_temple"
+					criterion: ""
+					id: "1B8AAB13BEEB41FA"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_frostbitten_temple"
+					criterion: ""
+					id: "3454D99DAC7D623D"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_mossy_temple"
+					criterion: ""
+					id: "767EE480454136A1"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_ruined_pyramid"
+					criterion: ""
+					id: "455D92EEC3BDEBD5"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_shulker_tower"
+					criterion: ""
+					id: "75EB1F4D984BF177"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_skeletosaurus_nest"
+					criterion: ""
+					id: "6412460DA75D18E6"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_soul_fortress_remains"
+					criterion: ""
+					id: "7E595590A2D76C74"
+					type: "advancement"
+				}
+				{
+					advancement: "legendary_monsters:locate_lava_eater"
+					criterion: ""
+					id: "7DEEC159D8CB5AE9"
+					type: "advancement"
+				}
+			]
+			title: "Exploradores de Ruínas Esquecidas"
+			x: 1.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Existem novos tipos de illager: Alquimistas,"
 				"§7Necromantes, Invocadores... a vila nunca mais foi segura."
 				""
 				"§eCrie uma Imbuing Table e derrote um illager: Alchemist, Marauder ou Necromancer."
 			]
+			hide_until_deps_complete: true
 			icon: "illagerinvasion:imbuing_table"
 			id: "10421EF83D3D48CF"
 			rewards: [
@@ -1168,6 +2024,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4EED154559AF0E78"
@@ -1182,16 +2039,18 @@
 				}
 			]
 			title: "A Segunda Invasão"
-			x: 14.0d
-			y: 2.0d
+			x: -1.5d
+			y: -13.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eUseful Ribbits §7ensina os sapinhos do Ribbits a trabalhar de"
+				"§7Dá pra ensinar esses sapinhos a trabalhar de"
 				"§7verdade — e ainda dá pra montar móveis temáticos pra eles."
 				""
 				"§eConstrua um Ribbit Chest e uma Ribbit Bed."
 			]
+			hide_until_deps_complete: true
 			icon: "useful_ribbits:farmer_ribbit_spawn_egg"
 			id: "5B6F8092A2096A49"
 			rewards: [
@@ -1207,6 +2066,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "19309DBCA5EBAAD8"
@@ -1220,16 +2080,18 @@
 				}
 			]
 			title: "Sapos Contratados"
-			x: 26.0d
-			y: 4.0d
+			x: -4.5d
+			y: -12.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7Goblins organizados são pior que goblins soltos."
-				"§7§eGoblin's Tyranny §7traz tribos inteiras com totens e martelos."
+				"§7Existem tribos goblin inteiras com totens e martelos."
 				""
 				"§eColete um Totem Block e forje um Goblin Hammer."
 			]
+			hide_until_deps_complete: true
 			icon: "goblins_tyranny:totem_block"
 			id: "0581D3E6B07B982E"
 			rewards: [
@@ -1245,6 +2107,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "1156E89A6BC420B6"
@@ -1264,22 +2127,29 @@
 				}
 			]
 			title: "Bando Goblin"
-			x: 20.0d
-			y: 6.0d
+			x: -7.0d
+			y: -11.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7Golem de vela, golem de mel, golem de sculk — se existe"
 				"§7um bloco, alguém fez um golem dele. Construa o seu."
 				""
 				"§eCrie um Peter O'Lantern e uma TNT Air Golem Statue."
 			]
+			hide_until_deps_complete: true
 			icon: "plenty_of_golems:soulsand_golem_spawn_egg"
 			id: "7A7C0298A3C13BA7"
 			rewards: [
 				{
-					count: 8
 					id: "7324AFDC40515C47"
+					item: "plenty_of_golems:golems_staff"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "20F84447B33D59FC"
 					item: "minecraft:honeycomb"
 					type: "item"
 				}
@@ -1289,6 +2159,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "670F7259B0D456CD"
@@ -1302,17 +2173,19 @@
 				}
 			]
 			title: "Exército de Golems"
-			x: 22.0d
-			y: 6.0d
+			x: -9.5d
+			y: -10.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eAnimalistic §7finalmente ganha o destaque que merece:"
+				"§7Essa fauna finalmente ganha o destaque que merece:"
 				"§7talismãs elementais e uma Mesa de Invocação pra chamar"
-				"§7criaturas específicas do mod."
+				"§7companheiros específicos direto pra você."
 				""
 				"§eColete um Black Talisman e construa uma Mesa de Invocação (Mesainvo)."
 			]
+			hide_until_deps_complete: true
 			icon: "animalistic_a:black_talisman"
 			id: "270D3DBE09366A16"
 			rewards: [
@@ -1327,6 +2200,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4C544E2CB607F8AB"
@@ -1340,17 +2214,251 @@
 				}
 			]
 			title: "Talismãs Animais"
-			x: 24.0d
-			y: 8.0d
+			x: -11.5d
+			y: -8.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eFD Bosses §7traz uma trindade de chefes cabalísticos:"
+				"§7Nem tudo no Animalistic é natural puro. Tem lobo mecânico"
+				"§7uivando ondas de rádio, morcego vampiro alfa, e ninfas"
+				"§7aladas que brincam de esconde-esconde."
+				""
+				"§eEncontre: o Mechanical Wolf, o Alpha Bat, e a Bird Nymph."
+			]
+			hide_until_deps_complete: true
+			icon: "animalistic_a:lobo_spawn_egg"
+			id: "65E44CD209E8D811"
+			rewards: [
+				{
+					id: "780FC30D2D705B45"
+					item: "animalistic_a:cyan_talisman"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "3B7E1A9D604C852F"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "2115D2357FCDEEDC"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "animalistic_a:lobos"
+					criterion: ""
+					id: "48F51C014CBD6ACF"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:murcielagos"
+					criterion: ""
+					id: "6776576E63B017C1"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:ninfas"
+					criterion: ""
+					id: "06B0BB305831B181"
+					type: "advancement"
+				}
+			]
+			title: "Fauna Elemental"
+			x: -13.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Pandas vermelhos, tigres (incluindo uma variante albina),"
+				"§7preguiças sonolentas e o Quetzal de penas azuis vívidas —"
+				"§7a diversidade selvagem dessas terras em pleno vigor."
+				""
+				"§eEncontre: Red Panda, Tiger (ou Albino Tiger),"
+				"§eSloth e o Blue Bird (Quetzal)."
+			]
+			hide_until_deps_complete: true
+			icon: "animalistic_a:tigre_spawn_egg"
+			id: "595C97287861CE09"
+			rewards: [
+				{
+					id: "03F47CC0A98E0A92"
+					item: "animalistic_a:orange_talisman"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4FB9003A60831E82"
+					item: "minecraft:sweet_berries"
+					type: "item"
+				}
+				{
+					id: "7D08B68D8886B5CA"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "animalistic_a:panda"
+					criterion: ""
+					id: "1ECE0BE38B55A890"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:tigres"
+					criterion: ""
+					id: "3070DDE028DADE04"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:perezosito"
+					criterion: ""
+					id: "4A6B6DC2D1AE22A1"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:quetzalave"
+					criterion: ""
+					id: "39AAE63995CFD4CD"
+					type: "advancement"
+				}
+			]
+			title: "Selva e Savana"
+			x: -14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Nem tudo que parece um bicho comum é o que aparenta."
+				"§7Aquele pato ali pode ser, na real, um baú andante — e a"
+				"§7coruja mística sabe mais do que aparenta."
+				""
+				"§eEncontre: o Secretary Bird, o Duck (repare bem nele),"
+				"§ea Mystic Owl, e o Ferret."
+			]
+			hide_until_deps_complete: true
+			icon: "animalistic_a:pato_spawn_egg"
+			id: "7A7E090FA79706E1"
+			rewards: [
+				{
+					id: "503A9D57EA315350"
+					item: "animalistic_a:blue_talisman"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5E8A0D9C617B3F42"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "30B51070964118A8"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "animalistic_a:birds"
+					criterion: ""
+					id: "7A628C6A6310C559"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:patos"
+					criterion: ""
+					id: "20F911C70D172C25"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:lechuzas"
+					criterion: ""
+					id: "6132173DAC338C58"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:hurones"
+					criterion: ""
+					id: "08FF1C1D4D203A0D"
+					type: "advancement"
+				}
+			]
+			title: "Aves e Peculiaridades"
+			x: -14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7No fundo d'água mora o maior desafio do Animalistic: um"
+				"§7dragão azul que só aparece pra quem tem coragem de mergulhar"
+				"§7fundo o suficiente — e não está sozinho lá embaixo."
+				""
+				"§eEncontre o Blue Dragon e sobreviva a um encontro com"
+				"§eum tubarão."
+			]
+			hide_until_deps_complete: true
+			icon: "animalistic_a:dragon_azul_spawn_egg"
+			id: "5230DF3886187AA0"
+			rewards: [
+				{
+					id: "005457456440197B"
+					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+				{
+					id: "4C1A9E0D726B8F53"
+					item: "animalistic_a:ancient_talisman"
+					type: "item"
+				}
+				{
+					id: "25B23BE7FE903BB1"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "animalistic_a:dragon"
+					criterion: ""
+					id: "0582BE5C3A0A8C58"
+					type: "advancement"
+				}
+				{
+					advancement: "animalistic_a:tiburocin"
+					criterion: ""
+					id: "39C5710F2B618E4A"
+					type: "advancement"
+				}
+			]
+			title: "§1§lO Dragão das Profundezas"
+			x: -14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Existe uma trindade de chefes cabalísticos:"
 				"§7Chesed, Geburah e Malkuth. Cada um tem uma arena e"
 				"§7mecânica própria — não é pra amador."
 				""
 				"§eDerrote os 3 bosses do Qliphoth Awakening: Chesed, Geburah e Malkuth."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:nether_star"
 			id: "60A8660A370F9544"
 			rewards: [
@@ -1372,6 +2480,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					advancement: "fdbosses:qliphoth_awakening/chesed"
@@ -1393,16 +2502,18 @@
 				}
 			]
 			title: "O Despertar de Qliphoth"
-			x: 26.0d
-			y: 8.0d
+			x: -13.5d
+			y: 6.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7§eBossominium §7reimagina bosses clássicos com fases,"
+				"§7Alguns bosses clássicos foram reimaginados com fases,"
 				"§7arenas e um senso de humor peculiar pra quem gosta de sofrer."
 				""
-				"§eDerrote o boss principal do Bossominium."
+				"§eDerrote o gigante que governa essa arena."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:nether_star"
 			id: "7F84405B3B6578D5"
 			rewards: [
@@ -1423,6 +2534,7 @@
 					xp: 800
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "bossominium:down_with_the_king"
 				criterion: "down_with_the_king"
@@ -1430,19 +2542,21 @@
 				type: "advancement"
 			}]
 			title: "Abaixo o Rei"
-			x: 28.0d
-			y: 8.0d
+			x: -12.0d
+			y: 9.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7Nem todo boss é orgânico. O Tank of Scrap é uma máquina"
 				"§7de guerra improvisada — pesada, lenta, mas absurdamente"
 				"§7resistente a dano corpo a corpo."
 				""
-				"§eDerrote o Tank of Scrap do Bossominium."
+				"§eDerrote o Tank of Scrap."
 				""
 				"§6Dica: §7Ele é lento — kite e use dano à distância."
 			]
+			hide_until_deps_complete: true
 			icon: "bossominium:ancient_core"
 			id: "73D5D035578188CA"
 			rewards: [
@@ -1457,6 +2571,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "bossominium:the_tank_of_scrap"
 				criterion: "the_tank_of_scrap"
@@ -1464,25 +2579,720 @@
 				type: "advancement"
 			}]
 			title: "O Tanque de Ferro-Velho"
-			x: 30.0d
-			y: 8.0d
+			x: -10.0d
+			y: 11.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7O Sandworm do Bosses Rise emerge da areia sem aviso —"
+				"§7Um anel dourado que convoca por si só, e uma matilha de"
+				"§7cães infernais que uiva antes de atacar — nem todo perigo"
+				"§7precisa de aviso maior que esse."
+				""
+				"§eConvoque e derrote: o Golden Ring e o Hell Hound."
+			]
+			hide_until_deps_complete: true
+			icon: "bossominium:gem_of_ender"
+			id: "67B1C1D84F017BCE"
+			rewards: [
+				{
+					count: 2
+					id: "31780792DB4FBE32"
+					item: "bossominium:golden_shard"
+					type: "item"
+				}
+				{
+					id: "010DF4EAC6EFDAA9"
+					item: "bossominium:hells_fur"
+					type: "item"
+				}
+				{
+					id: "53340F0A193A9E28"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "bossominium:be_not_afraid"
+					criterion: ""
+					id: "6660BD1F6702E7EF"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:put_a_ring_on_it"
+					criterion: ""
+					id: "06FE1A55386730A3"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:howl_of_fire"
+					criterion: ""
+					id: "61CD905ADDACE435"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:canine_cracker"
+					criterion: ""
+					id: "577AB29A79BFF90B"
+					type: "advancement"
+				}
+			]
+			title: "Anéis e Presas"
+			x: -8.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Um culto inteiro dedicado a um olho de esmeralda, e um"
+				"§7necromante que sussurra pros mortos — nem tudo que se"
+				"§7convoca deveria mesmo ser convocado."
+				""
+				"§eConvoque e derrote: o Cultisager e o Morsemancer."
+			]
+			hide_until_deps_complete: true
+			icon: "bossominium:eye_of_the_badlands"
+			id: "0B4A31C5279929D1"
+			rewards: [
+				{
+					id: "659A510C27B242A7"
+					item: {
+						Count: 1
+						id: "bossominium:undead_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D1D986004B6545A"
+					item: {
+						Count: 1
+						id: "bossominium:strayed_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E7564ED86F86F2F"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "bossominium:cult_of_the_emerald_eye"
+					criterion: ""
+					id: "52D94432ACD20CBB"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:ritual_complete"
+					criterion: ""
+					id: "650B0EAFD36F1761"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:de_mortuis_educ"
+					criterion: ""
+					id: "7B5A079C462EEE18"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:mortis"
+					criterion: ""
+					id: "5B2FE74043510501"
+					type: "advancement"
+				}
+			]
+			title: "Cultos e Necromancia"
+			x: -5.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Múmias de cripta, guerreiros que se recusam a ficar"
+				"§7mortos, e um rei afogado que ainda espera por seu trono —"
+				"§7as profundezas guardam mais realeza do que parece."
+				""
+				"§eConvoque e derrote a Crypt Mummy e o Strayed Warrior, e"
+				"§econvoque o Drowned King (você já sabe derrotá-lo)."
+			]
+			hide_until_deps_complete: true
+			icon: "bossominium:forest_core"
+			id: "040E725ECABCD822"
+			rewards: [
+				{
+					count: 4
+					id: "6E45C99FB4E6553B"
+					item: "minecraft:prismarine_shard"
+					type: "item"
+				}
+				{
+					id: "7D0A6C9E14F385B2"
+					item: "bossominium:rusted_trident"
+					type: "item"
+				}
+				{
+					id: "2E93B0C7A5D648F1"
+					item: "bossominium:heart_of_the_king"
+					type: "item"
+				}
+				{
+					id: "422F31149961808D"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "bossominium:i_want_my_mummy"
+					criterion: ""
+					id: "2AD3E921A8978468"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:dead_once_again"
+					criterion: ""
+					id: "520D487D03ADEFB4"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:undying_fight"
+					criterion: ""
+					id: "16E8A72A3C41B70A"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:death_to_the_fallen"
+					criterion: ""
+					id: "0BCAE0CA50E2B865"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:submerged_monarch"
+					criterion: ""
+					id: "2D722BE1F2580E01"
+					type: "advancement"
+				}
+			]
+			title: "Guerreiros Caídos e Reis Afogados"
+			x: -2.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7A floresta tem seus próprios guardiões — uma máquina"
+				"§7coberta de musgo e um protetor florestal de verdade,"
+				"§7ambos dispostos a lutar por ela."
+				""
+				"§eConvoque e derrote: o Moss Mech e o Forest Guardian."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 0
+					}
+				}
+				id: "bossominium:the_bossdexium"
+				tag: {
+					Inventory: {
+						Items: [ ]
+						Size: 0
+					}
+				}
+			}
+			id: "08F0E79F7D8F49C8"
+			rewards: [
+				{
+					id: "375E8F4F3CC9A6A7"
+					item: {
+						Count: 1
+						id: "bossominium:forest_mace"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D82C1B0A9F374E6"
+					item: "bossominium:heart_of_the_forest"
+					type: "item"
+				}
+				{
+					id: "642F3BB29E015DE7"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "bossominium:overgrown_hero"
+					criterion: ""
+					id: "576BAF981D64659A"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:fallen_moss"
+					criterion: ""
+					id: "668C2E59F80DDE91"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:floral_destroyer"
+					criterion: ""
+					id: "3EA18CEE6A8E53C4"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:forest_fire"
+					criterion: ""
+					id: "2A52060A6681C784"
+					type: "advancement"
+				}
+			]
+			title: "Florestas e Musgo"
+			x: 0.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Uma ruína que sabe de tudo, um homem feito de pureza"
+				"§7pura, e uma criatura de coro que vive no End — cada um"
+				"§7guarda um enigma próprio."
+				""
+				"§eConvoque e derrote: o Ruin, o Purerman e o Chorus Beast."
+			]
+			hide_until_deps_complete: true
+			icon: "bossominium:gem_of_ender"
+			id: "77B4398E224AA466"
+			rewards: [
+				{
+					id: "4A96839654DB09E0"
+					item: {
+						Count: 1
+						id: "bossominium:ruin_totem"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C1E8B0A96D374F2"
+					item: {
+						Count: 1
+						id: "bossominium:pure_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "33EDC6F373F84B15"
+					item: {
+						Count: 1
+						id: "bossominium:chorus_rapier"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72894DDEEFA9E85E"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "bossominium:the_all_knowing"
+					criterion: ""
+					id: "34C0629CD4D7FA58"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:heart_of_stone"
+					criterion: ""
+					id: "378182CAF254DE86"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:hollow_but_pure"
+					criterion: ""
+					id: "720689C5EA438664"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:pure_form"
+					criterion: ""
+					id: "235068FA02C0C962"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:monster_of_harmony"
+					criterion: ""
+					id: "2D4218E772E99436"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:silence_of_the_chorus"
+					criterion: ""
+					id: "358F3DB34F53F232"
+					type: "advancement"
+				}
+			]
+			title: "Enigmas Antigos"
+			x: 3.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Um tornado inteiro feito de ossos, um ceifador de mil"
+				"§7almas perdidas, e um comerciante vingativo que não"
+				"§7esqueceu o que você fez — três motivos bem diferentes"
+				"§7pra uma boa briga."
+				""
+				"§eConvoque e derrote: o Skelenado, o Soul Reaper e o"
+				"§eVengeful Trader."
+			]
+			hide_until_deps_complete: true
+			icon: "bossominium:ancient_scrap"
+			id: "01C060AC5EC9847B"
+			rewards: [
+				{
+					id: "1A911C2FF9475B29"
+					item: {
+						Count: 1
+						id: "bossominium:bone_pick"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47DBFF55DB7C8C81"
+					item: {
+						Count: 1
+						id: "bossominium:turret_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "076DEB35DC9ED4FE"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "bossominium:skelenados"
+					criterion: ""
+					id: "2249EB82542E46FB"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:skele_slayer"
+					criterion: ""
+					id: "4F39DC0A2E112997"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:the_monster_of_1000_souls"
+					criterion: ""
+					id: "44F9E8982A9C01AE"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:restless_soul"
+					criterion: ""
+					id: "093E8C9711C724D1"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:take_your_revenge"
+					criterion: ""
+					id: "66C89D5D5B3D32AA"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:who_you_gonna_call"
+					criterion: ""
+					id: "01BE253AAC9221D1"
+					type: "advancement"
+				}
+			]
+			title: "Tempestades e Almas"
+			x: 6.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Nem todo boss segue o padrão de convocar e depois lutar."
+				"§7O coração de netherrack já nasce pronto pra briga, e a"
+				"§7Huntress prefere ser convocada sem nenhum aviso prévio."
+				""
+				"§eDerrote o Netherrack Heart, e convoque a Huntress."
+			]
+			hide_until_deps_complete: true
+			icon: "bossominium:corrupted_core"
+			id: "48418A9A60C5189B"
+			rewards: [
+				{
+					id: "6CAC47EE7E53E836"
+					item: "bossominium:enchanted_golden_apple_core"
+					type: "item"
+				}
+				{
+					id: "7D0A9C8E641F3B52"
+					item: "bossominium:flower_of_genesis"
+					type: "item"
+				}
+				{
+					id: "2C1CD7A3766B5ED3"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "bossominium:heart_attack"
+					criterion: ""
+					id: "4B1A275C639890AB"
+					type: "advancement"
+				}
+				{
+					advancement: "bossominium:the_forbidden_fruit"
+					criterion: ""
+					id: "6D3BA8C2AE50D469"
+					type: "advancement"
+				}
+			]
+			title: "§6§lAmeaças Solitárias"
+			x: 9.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Nem toda ameaça da selva é um boss com nome em luzes."
+				"§7Sanguessugas gigantes, plantas carnívoras, tartarugas de"
+				"§7pedra e nagas aladas também merecem respeito."
+				""
+				"§eDerrote: um Bluff, um Foliaath, um Grottol, uma Naga e"
+				"§eum Umvuthana Raptor."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "mowziesmobs:earthrend_gauntlet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "093AAEF879470068"
+			rewards: [
+				{
+					id: "4440828EF00D3D98"
+					item: {
+						Count: 1
+						id: "mowziesmobs:naga_fang_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C1E9A0D874B3F52"
+					item: {
+						Count: 1
+						id: "mowziesmobs:earthrend_gauntlet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1EE856D22E97EABE"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "mowziesmobs:kill_bluff"
+					criterion: ""
+					id: "6C0593764681F4F7"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:kill_foliaath"
+					criterion: ""
+					id: "1D278980E2E9DB6F"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:kill_grottol"
+					criterion: ""
+					id: "42332E93604AEF6D"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:kill_naga"
+					criterion: ""
+					id: "4D1DD779B874C31D"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:kill_umvuthana_raptor"
+					criterion: ""
+					id: "4EF7715B6F381CE3"
+					type: "advancement"
+				}
+			]
+			title: "Feras Esquecidas da Selva"
+			x: 11.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Nem tudo se resolve na porrada. Um disfarce bem feito"
+				"§7engana até uma tribo inteira, um roubo bem planejado tira"
+				"§7um cristal de gelo debaixo do nariz de um gigante, e um"
+				"§7teste de fé literal separa quem acredita de quem hesita."
+				""
+				"§eInfiltre-se disfarçado num bosque Umvuthana, roube um"
+				"§ecristal de gelo de um Frostmaw, complete o desafio do"
+				"§eEscultor, e receba a Bênção do Sol."
+				""
+				"§8§o(Você roubou um cristal de gelo bem debaixo do nariz de"
+				"§8§oum gigante congelado. Ele provavelmente ainda não notou.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "mowziesmobs:ice_crystal"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "465319924D10FC34"
+			rewards: [
+				{
+					id: "6E5E0358251B3417"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "2A7E9C0D861F4B35"
+					item: "mowziesmobs:sol_visage"
+					type: "item"
+				}
+				{
+					id: "4D768AA781506BDD"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "mowziesmobs:sneak_grove"
+					criterion: ""
+					id: "289DC3E8CE50A6CA"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:steal_ice_crystal"
+					criterion: ""
+					id: "5A8995E707A48D4F"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:sculptor_challenge"
+					criterion: ""
+					id: "1B30AEA00DCBD6FB"
+					type: "advancement"
+				}
+				{
+					advancement: "mowziesmobs:suns_blessing"
+					criterion: ""
+					id: "5BE67513D2FF09C3"
+					type: "advancement"
+				}
+			]
+			title: "Astúcia Acima de Força"
+			x: 13.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7O Sandworm titânico emerge da areia sem aviso —"
 				"§7um verme titânico que engole tudo no caminho."
 				""
-				"§eDerrote o Sandworm do Bosses Rise."
+				"§eDerrote o Sandworm titânico."
 				""
 				"§6Dica: §7Ele ataca em linha reta pelo subsolo — fique"
 				"§7se movendo em zigue-zague pra não ser pego de surpresa."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:sand"
 			id: "736870EF7577832E"
 			rewards: [
 				{
-					count: 4
 					id: "29FFAAB7F0541EA3"
+					item: {
+						Count: 1
+						id: "block_factorys_bosses:sandworm_gauntlet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6B9C0D3E51A8F276"
 					item: "minecraft:diamond"
 					type: "item"
 				}
@@ -1492,6 +3302,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "block_factorys_bosses:kill_sandworm"
 				criterion: "kill"
@@ -1499,22 +3310,35 @@
 				type: "advancement"
 			}]
 			title: "A Serpente das Dunas"
-			x: 28.0d
-			y: 10.0d
+			x: 15.5d
+			y: 7.0d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
-				"§7O Yeti do Bosses Rise domina o gelo — ataques em área"
+				"§7O Yeti titânico domina o gelo — ataques em área"
 				"§7que congelam o chão ao redor dele."
 				""
-				"§eDerrote o Yeti do Bosses Rise."
+				"§eDerrote o Yeti titânico."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:blue_ice"
 			id: "5FF82C6430B5B93A"
 			rewards: [
 				{
-					count: 8
 					id: "430DA3B64C387BB4"
+					item: {
+						Count: 1
+						id: "block_factorys_bosses:ice_gauntlet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7E1D9A4C608B2F35"
 					item: "minecraft:packed_ice"
 					type: "item"
 				}
@@ -1524,6 +3348,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "block_factorys_bosses:kill_yeti"
 				criterion: "kill"
@@ -1531,26 +3356,39 @@
 				type: "advancement"
 			}]
 			title: "O Gelo que Anda"
-			x: 30.0d
-			y: 10.0d
+			x: 16.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7O Underworld Knight é um dos bosses mais equipados do"
-				"§7Bosses Rise — luta como um jogador de verdade, com"
+				"§7Esse Underworld Knight luta como um jogador de verdade, com"
 				"§7combos e bloqueio de escudo."
 				""
-				"§eDerrote o Underworld Knight do Bosses Rise."
+				"§eDerrote o Underworld Knight."
 				""
 				"§6Dica: §7Ele bloqueia ataques frontais — quebre a guarda"
 				"§7dele com machado ou ataque pelas costas."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:netherite_scrap"
 			id: "678DBBD94CF15A7F"
 			rewards: [
 				{
-					count: 2
 					id: "366A7F34DA301CC4"
+					item: {
+						Count: 1
+						id: "block_factorys_bosses:knight_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1F5D8A0C93E6B472"
 					item: "minecraft:netherite_scrap"
 					type: "item"
 				}
@@ -1560,6 +3398,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "block_factorys_bosses:kill_underworld_knight"
 				criterion: "kill"
@@ -1567,10 +3406,145 @@
 				type: "advancement"
 			}]
 			title: "O Cavaleiro do Submundo"
-			x: 32.0d
-			y: 10.0d
+			x: 17.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Matar esses quatro gigantes é uma coisa. Fazer isso sem"
+				"§7levar um único golpe é bem diferente — prova de que você"
+				"§7realmente decorou cada padrão de ataque."
+				""
+				"§eDerrote o Dragão, o Sandworm, o Cavaleiro do Submundo e o"
+				"§eYeti sem tomar nenhum dano, e derrote qualquer um deles em"
+				"§emenos de um minuto."
+				""
+				"§8§o(Zero de dano recebido contra quatro gigantes. Ou você é"
+				"§8§omuito bom, ou eles são muito ruins de mira.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "block_factorys_bosses:ice_gauntlet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "04188A1DF0F4564A"
+			rewards: [
+				{
+					id: "66CDE8EF6D44ACE5"
+					item: {
+						Count: 1
+						id: "block_factorys_bosses:dragon_bones_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "48F17E1BA5AE3C5B"
+					type: "xp"
+					xp: 1200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "block_factorys_bosses:no_hit_dragon"
+					criterion: ""
+					id: "04EA502B826B237F"
+					type: "advancement"
+				}
+				{
+					advancement: "block_factorys_bosses:no_hit_sandworm"
+					criterion: ""
+					id: "328B8A27A34F9821"
+					type: "advancement"
+				}
+				{
+					advancement: "block_factorys_bosses:no_hit_underworld_knight"
+					criterion: ""
+					id: "2559A428699CB88A"
+					type: "advancement"
+				}
+				{
+					advancement: "block_factorys_bosses:no_hit_yeti"
+					criterion: ""
+					id: "43549C36A9B51611"
+					type: "advancement"
+				}
+				{
+					advancement: "block_factorys_bosses:kill_boss_under_minute"
+					criterion: ""
+					id: "5776E1614A630CB9"
+					type: "advancement"
+				}
+			]
+			title: "Vitórias Impecáveis"
+			x: 17.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7A prova final: enfrentar os quatro gigantes, um atrás do"
+				"§7outro, sem que ninguém no grupo leve um único golpe em"
+				"§7nenhum dos combates."
+				""
+				"§eDerrote todos os bosses sem que nenhum jogador seja"
+				"§eatingido em nenhuma das lutas."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "block_factorys_bosses:knight_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5E8F4806F1177513"
+			rewards: [
+				{
+					id: "1590270892C8D7B4"
+					item: {
+						Count: 1
+						id: "block_factorys_bosses:dragon_guard_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4D35FFE5D257AEB7"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "64BA064182FFA980"
+					type: "xp"
+					xp: 2500
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				advancement: "block_factorys_bosses:kill_all_bosses"
+				criterion: ""
+				id: "4218B8E63197FE4F"
+				type: "advancement"
+			}]
+			title: "§6§lO Invicto"
+			x: 17.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7A Cave Centipede tem pernas o suficiente pra andar em"
 				"§7qualquer superfície — e a Cave Centipede Leggings feita"
@@ -1579,6 +3553,7 @@
 				""
 				"§eForje a Cave Centipede Leggings."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "alexsmobs:centipede_leggings"
@@ -1600,6 +3575,7 @@
 					xp: 300
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "7BBE8426DE70F647"
 				item: {
@@ -1612,10 +3588,11 @@
 				type: "item"
 			}]
 			title: "Escalador de Paredes"
-			x: 24.0d
-			y: 6.0d
+			x: 16.0d
+			y: -7.5d
 		}
 		{
+			dependencies: ["0028DC3943F492EA"]
 			description: [
 				"§7O Professor Alex Khaan documentou dezenas de espécies"
 				"§7num só livro. Colecione o Animal Dictionary e um item"
@@ -1623,12 +3600,13 @@
 				""
 				"§eObtenha o Animal Dictionary e um Cachalot Whale Tooth."
 			]
+			hide_until_deps_complete: true
 			icon: "alexsmobs:animal_dictionary"
 			id: "314186A86F95AA95"
 			rewards: [
 				{
 					id: "5B0D0D34DA0C8972"
-					item: "minecraft:book"
+					item: "alexsmobs:rocky_shell"
 					type: "item"
 				}
 				{
@@ -1637,6 +3615,7 @@
 					xp: 250
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "56D1193BBEBEF533"
@@ -1650,8 +3629,334 @@
 				}
 			]
 			title: "Catálogo do Professor Khaan"
-			x: 26.0d
-			y: 6.0d
+			x: 15.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0028DC3943F492EA"]
+			description: [
+				"§7Todo açougueiro começa do mesmo jeito: mate um animal"
+				"§7segurando o cutelo pra pegar a carcaça, pendure num gancho,"
+				"§7e drene o sangue antes de continuar — senão vira bagunça."
+				""
+				"§eMate um mob com o Bone Cleaver, pendure a carcaça num Hook"
+				"§ee drene o sangue dela."
+				""
+				"§8§o(Não é pra qualquer estômago, mas o resultado compensa.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "butchery:bone_cleaver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "74348016DB9B83E2"
+			rewards: [
+				{
+					id: "7DD95F7D148B0E74"
+					item: {
+						Count: 1
+						id: "butchery:bone_hacksaw"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "317FC032D45F6AD8"
+					item: {
+						Count: 1
+						id: "butchery:bone_skinning_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3FD44E3433CA6A03"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "butchery:firstcarcass"
+					criterion: ""
+					id: "2230589B879BD797"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:hangingaround"
+					criterion: ""
+					id: "0D760A3508BD1E81"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:first_blood"
+					criterion: ""
+					id: "4FB07D944A3ACEDF"
+					type: "advancement"
+				}
+			]
+			title: "Primeiro Corte"
+			x: 13.0d
+			y: -12.5d
+		}
+		{
+			dependencies: [
+				"74348016DB9B83E2"
+				"0028DC3943F492EA"
+			]
+			description: [
+				"§7Da carcaça drenada até virar couro de verdade tem um processo"
+				"§7inteiro: pele com a faca certa, sal, água, e paciência —"
+				"§7a cura leva um tempinho, não force."
+				""
+				"§ePele a carcaça, coloque a pele no Skin Rack, tempere com sal,"
+				"§emolhe com esponja, e espere a cura terminar."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "butchery:bone_skinning_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1B42D384F48D5A75"
+			rewards: [
+				{
+					count: 8
+					id: "3CC0AD2514141F02"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "6DBEC2DECE5ABD9A"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "791BD9494CB70A39"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "butchery:skininthe_game"
+					criterion: ""
+					id: "329CBBE9C7008DB3"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:step_toward_leather"
+					criterion: ""
+					id: "26DCD740151C0828"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:seasonedtoperfection"
+					criterion: ""
+					id: "21F052E28015925E"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:splish_splash"
+					criterion: ""
+					id: "587B7A1407DB5D21"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:leather_late_than_never"
+					criterion: ""
+					id: "2975560B5A483D72"
+					type: "advancement"
+				}
+			]
+			title: "Do Couro ao Curtume"
+			x: 11.0d
+			y: -14.5d
+		}
+		{
+			dependencies: [
+				"74348016DB9B83E2"
+				"0028DC3943F492EA"
+			]
+			description: [
+				"§7Depois de drenada e pelada, a carcaça ainda rende bastante:"
+				"§7corte o resto com o cutelo, moa no triturador, encape"
+				"§7linguiça de verdade, e asse tudo devagar no espeto."
+				""
+				"§eButcherie o resto da carcaça, moa carne no Meat Grinder,"
+				"§efaça uma linguiça (normal e de sangue), e asse algo"
+				"§eno Wooden Spit Rotisserie."
+				""
+				"§8§o(Sim, dá pra fazer linguiça de sangue. Não, não é obrigatório"
+				"§8§ogostar da ideia.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "butchery:bone_cleaver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4B1C4299A6E47555"
+			rewards: [
+				{
+					id: "26E143E2F7E9EF28"
+					item: {
+						Count: 1
+						id: "butchery:butchers_apron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "548D5FE6C7CAA24F"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "384602531FBE4A6F"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "butchery:cut_abovethe_rest"
+					criterion: ""
+					id: "171910612F2BA1E4"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:every_part_counts"
+					criterion: ""
+					id: "206BA41B18428A3A"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:bloodandgears"
+					criterion: ""
+					id: "3F6326223FF1B9C0"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:the_missing_link"
+					criterion: ""
+					id: "0B5F8956EED832C7"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:the_dark_sausage"
+					criterion: ""
+					id: "594CA411DC2944C1"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:rotisserie_rookie"
+					criterion: ""
+					id: "35E3F0594ABBA4C2"
+					type: "advancement"
+				}
+			]
+			title: "Açougue de Verdade"
+			x: 8.5d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"1B42D384F48D5A75"
+				"4B1C4299A6E47555"
+				"0028DC3943F492EA"
+			]
+			description: [
+				"§7Monte uma sala de troféus com as cabeças que você caçou,"
+				"§7e cuide da limpeza — um Blood Grate embaixo do gancho evita"
+				"§7que o chão vire uma poça. De brinde, o Butchery esconde"
+				"§7segredos espalhados pelo mundo, com recompensa própria pra"
+				"§7quem achar todos."
+				""
+				"§eCrie um Taxidermy Table, monte uma cabeça como troféu,"
+				"§econstrua um Blood Grate, e descubra todos os segredos"
+				"§edo Butchery."
+			]
+			hide_until_deps_complete: true
+			icon: "butchery:cash_register"
+			id: "24E25B35D1FEE2F5"
+			rewards: [
+				{
+					id: "37BFB5C9E1239EBC"
+					item: {
+						Count: 1
+						id: "butchery:bloody_butchers_apron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "1F542B36D5F31C12"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "5759AC21AA118862"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "butchery:the_trophy_maker"
+					criterion: ""
+					id: "73CB25C30494EE84"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:heads_up"
+					criterion: ""
+					id: "1D1C8C482DDA8B2B"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:blood_bank"
+					criterion: ""
+					id: "5D77D543021C2BE1"
+					type: "advancement"
+				}
+				{
+					advancement: "butchery:butcherssecrets"
+					criterion: ""
+					id: "3C8F3892486CC7B6"
+					type: "advancement"
+				}
+			]
+			title: "Sala de Troféus e Segredos"
+			x: 5.5d
+			y: -17.5d
 		}
 	]
 	title: "§cCriaturas e Bosses"

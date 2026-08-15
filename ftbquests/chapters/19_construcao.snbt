@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "19_construcao"
 	group: "7E445E30196C8ACF"
@@ -9,8 +9,36 @@
 	quests: [
 		{
 			description: [
-				"§7§eDouble Doors §7faz portas duplas abrirem juntas, sincronizadas."
-				"§7§eDiagonal Fences §7deixa cercas virarem ângulos de 45°."
+				"§7Blocos decorativos, móveis e tudo que transforma um abrigo numa casa de verdade."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Bricks."
+			]
+			icon: "minecraft:bricks"
+			id: "362EF6E0DA903C6A"
+			rewards: [{
+				id: "41DFE960B6941506"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "1FA73B7B7EB6FE2D"
+				item: "minecraft:bricks"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Portas duplas agora abrem juntas, sincronizadas."
+				"§7Cercas agora conseguem virar ângulos de 45°."
 				""
 				"§7Nenhum dos dois muda absolutamente nada na sua sobrevivência."
 				"§7Mas portas que abrem fora de sincronia incomodam"
@@ -20,6 +48,7 @@
 				""
 				"§8§o(Sim, essa é a missão inteira. Aproveite a simetria.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:oak_door"
 			id: "5F0E9807B505442B"
 			rewards: [
@@ -35,6 +64,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 2L
 				id: "39EF1870F6CCF888"
@@ -42,12 +72,13 @@
 				type: "item"
 			}]
 			title: "Sincronia Perfeita"
-			x: 6.0d
-			y: 4.0d
+			x: -7.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
-				"§7§eHearth and Home §7adiciona decoração temática de lar aconchegante."
+				"§7Existe uma linha de decoração temática de lar aconchegante."
 				"§7Paper Lanterns em 16 cores, telhas, treliças de madeira"
 				"§7e muito mais para dar personalidade à sua base."
 				""
@@ -58,6 +89,7 @@
 				"§7escolha a que combinar com sua decoração."
 				"§7Combine com §eHandcrafted §7para ambientes ainda mais detalhados."
 			]
+			hide_until_deps_complete: true
 			icon: "hearth_and_home:white_paper_lantern"
 			id: "26633316F23357DB"
 			rewards: [
@@ -73,18 +105,20 @@
 					xp: 200
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "23966C064DD67CD3"
 				item: "hearth_and_home:white_paper_lantern"
 				type: "item"
 			}]
 			title: "Calor do Lar"
-			x: 8.0d
-			y: 4.0d
+			x: -4.5d
+			y: -5.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
-				"§7§eDark Paintings §7e §eVisual Workbench §7melhoram"
+				"§7Pinturas sombrias e uma bancada visual melhoram"
 				"§7a experiência visual do jogo."
 				"§7Dark Paintings adiciona dezenas de texturas novas"
 				"§7que aparecem aleatoriamente nas pinturas vanilla."
@@ -97,6 +131,7 @@
 				""
 				"§8§o(Pelo menos uma vai ser perturbadora. É sempre assim.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:painting"
 			id: "07FC9C400F829FAF"
 			rewards: [
@@ -112,6 +147,7 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 5L
 				id: "0CECB1EB0EC10E62"
@@ -119,16 +155,18 @@
 				type: "item"
 			}]
 			title: "Galeria de Arte"
-			x: 10.0d
-			y: 4.0d
+			x: -2.0d
+			y: -7.0d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
 				"§7Caixotes empilhados não são decoração, são um cry for help."
-				"§7§eMrCrayfish's Furniture: Refurbished §7resolve isso."
+				"§7Existe uma linha de móveis inteira que resolve isso."
 				""
 				"§eMonte uma mesa e uma cadeira (de qualquer madeira)."
 			]
+			hide_until_deps_complete: true
 			icon: "refurbished_furniture:oak_table"
 			id: "573219C1DF103036"
 			rewards: [
@@ -144,6 +182,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "1F4AEFBB6E04F477"
@@ -157,16 +196,18 @@
 				}
 			]
 			title: "Mobília de Verdade"
-			x: 16.0d
-			y: 6.0d
+			x: 0.0d
+			y: -9.0d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
-				"§7§eSupplementaries §7enche seu mundo de detalhes que o vanilla"
+				"§7Existem detalhes que o vanilla"
 				"§7esqueceu de inventar: foles, quadros-negros, pilhas de livro..."
 				""
 				"§eCrie um Bellows e um Blackboard."
 			]
+			hide_until_deps_complete: true
 			icon: "supplementaries:bellows"
 			id: "20D11960C2D07DBD"
 			rewards: [
@@ -182,6 +223,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "1DBC4042680E971B"
@@ -195,17 +237,19 @@
 				}
 			]
 			title: "Suplementos do Cotidiano"
-			x: 18.0d
-			y: 6.0d
+			x: 2.0d
+			y: -7.0d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
-				"§7§eFramedBlocks §7deixa qualquer bloco se disfarçar de outro formato."
+				"§7Dá pra fazer qualquer bloco se disfarçar de outro formato."
 				"§7Rampas, painéis, cubos com textura emprestada — o pedreiro que"
 				"§7existe em você finalmente pode brilhar."
 				""
 				"§eCrie um Framed Bookshelf e um Framed Bars."
 			]
+			hide_until_deps_complete: true
 			icon: "framedblocks:framed_bookshelf"
 			id: "3AF369A8998BB993"
 			rewards: [
@@ -221,6 +265,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "2530F72E221829FB"
@@ -234,16 +279,18 @@
 				}
 			]
 			title: "Blocos Camuflados"
-			x: 26.0d
-			y: 6.0d
+			x: 4.5d
+			y: -5.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
-				"§7§eBushier Flowers §7faz suas flores crescerem em touceiras densas"
+				"§7Suas flores agora crescem em touceiras densas"
 				"§7em vez daquele único caule solitário e triste do vanilla."
 				""
 				"§eColha um arbusto de Poppies e um de Wither Roses."
 			]
+			hide_until_deps_complete: true
 			icon: "bushierflowers:grown_poppy"
 			id: "7B6DE0C2227CFC79"
 			rewards: [
@@ -259,6 +306,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "6B3EB4D05F62FF69"
@@ -272,16 +320,18 @@
 				}
 			]
 			title: "Jardim Exagerado"
-			x: 30.0d
-			y: 6.0d
+			x: 7.0d
+			y: -3.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
 				"§7Ter cartas guardadas na mochila é desperdício. Exponha sua"
 				"§7coleção como manda o figurino."
 				""
 				"§eConstrua um Card Display (qualquer madeira)."
 			]
+			hide_until_deps_complete: true
 			icon: "buddycards:oak_card_display"
 			id: "26138E27B9C0DBB1"
 			rewards: [
@@ -297,22 +347,25 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "46EF966C6A6B975E"
 				item: "buddycards:oak_card_display"
 				type: "item"
 			}]
 			title: "Vitrine de Cartas"
-			x: 32.0d
-			y: 6.0d
+			x: 9.0d
+			y: -2.0d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
 				"§7Mesa e cadeira só fazem você comer decentemente."
 				"§7Uma cozinha de verdade precisa de pia."
 				""
 				"§eCrie uma Kitchen Sink e um Workbench (móveis, não o de crafting)."
 			]
+			hide_until_deps_complete: true
 			icon: "refurbished_furniture:oak_kitchen_sink"
 			id: "355344E623394C03"
 			rewards: [
@@ -328,6 +381,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "52DBC875E6C3993B"
@@ -341,16 +395,18 @@
 				}
 			]
 			title: "Cozinha Funcional"
-			x: 18.0d
-			y: 8.0d
+			x: -6.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
 				"§7Shoji, bambu tecido, colunas de pedra — construa algo que"
 				"§7pareça um dojo em vez de um galpão de sobrevivência."
 				""
 				"§eCrie um Shoji e um Bamboo Mat."
 			]
+			hide_until_deps_complete: true
 			icon: "hearth_and_home:shoji"
 			id: "466084FA61CB5F76"
 			rewards: [
@@ -365,6 +421,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "52B97862781EB8F6"
@@ -378,16 +435,18 @@
 				}
 			]
 			title: "Estilo Oriental"
-			x: 18.0d
-			y: 10.0d
+			x: -3.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
 				"§7Nem toda defesa precisa ser high-tech. Espigões de bambu"
 				"§7fazem qualquer invasor repensar a vida."
 				""
 				"§eCrie Bamboo Spikes e um bloco de Ash Bricks."
 			]
+			hide_until_deps_complete: true
 			icon: "supplementaries:bamboo_spikes"
 			id: "214E815314E717FE"
 			rewards: [
@@ -403,6 +462,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "75D5A74A4C59EC98"
@@ -416,16 +476,18 @@
 				}
 			]
 			title: "Defesas Baratas"
-			x: 20.0d
-			y: 6.0d
+			x: 0.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
 				"§7Rampas ajustáveis, painéis duplos, blocos que fingem ser"
 				"§7outra coisa. Isso aqui é engenharia de disfarce de blocos."
 				""
 				"§eCrie um Framed Adjustable Double Slab."
 			]
+			hide_until_deps_complete: true
 			icon: "framedblocks:framed_adj_double_slab"
 			id: "5758A4A9B1E216E6"
 			rewards: [
@@ -441,22 +503,25 @@
 					xp: 150
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "5C35E97D7ACBC44F"
 				item: "framedblocks:framed_adj_double_slab"
 				type: "item"
 			}]
 			title: "Formas Impossíveis"
-			x: 26.0d
-			y: 8.0d
+			x: 3.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
 				"§7Uma boa ponte de corda também merece um pilar decente"
 				"§7pra sustentar. Macaw's Bridges cobre os dois."
 				""
 				"§eConstrua uma Acacia Bridge e um Acacia Bridge Support."
 			]
+			hide_until_deps_complete: true
 			icon: "mcwbridges:acacia_log_bridge_middle"
 			id: "198FAF7750C6FD0A"
 			rewards: [
@@ -472,6 +537,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3739A6883410F963"
@@ -485,16 +551,18 @@
 				}
 			]
 			title: "Travessias Elegantes"
-			x: 24.0d
-			y: 10.0d
+			x: 6.0d
+			y: -0.5d
 		}
 		{
+			dependencies: ["362EF6E0DA903C6A"]
 			description: [
 				"§7Azaleia também vira madeira de construção — não é só"
 				"§7flor decorativa, é matéria-prima de verdade."
 				""
 				"§eCrie uma Azalea Door e um Coconut Door."
 			]
+			hide_until_deps_complete: true
 			icon: "ecologics:azalea_door"
 			id: "18C8DBFAADE60F7E"
 			rewards: [
@@ -510,6 +578,7 @@
 					xp: 100
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "3E78F3D44A9ED82C"
@@ -523,8 +592,707 @@
 				}
 			]
 			title: "Madeira Tropical"
-			x: 28.0d
-			y: 10.0d
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Nem todo objeto de decoração é só enfeite. Um globo pode"
+				"§7girar rápido demais, uma placa de sinalização pode te"
+				"§7guiar até uma vila, e uma mesa giratória serve de"
+				"§7palco improvisado."
+				""
+				"§eGire um globo bem rápido, siga uma Way Sign até uma vila,"
+				"§euse uma Turn Table pra girar você mesmo, e gire um bloco"
+				"§ecom uma Wrench."
+			]
+			hide_until_deps_complete: true
+			icon: "supplementaries:turn_table"
+			id: "59D4BC0EEFB0C725"
+			rewards: [
+				{
+					count: 4
+					id: "72279264E66451EE"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "606D5D05F712CCEC"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "supplementaries:adventure/globe"
+					criterion: ""
+					id: "07098A60EDF6D140"
+					type: "advancement"
+				}
+				{
+					advancement: "supplementaries:adventure/way_sign"
+					criterion: ""
+					id: "648A0C1AEE974CF5"
+					type: "advancement"
+				}
+				{
+					advancement: "supplementaries:husbandry/turn_table"
+					criterion: ""
+					id: "07A40982D90D809E"
+					type: "advancement"
+				}
+				{
+					advancement: "supplementaries:husbandry/wrench"
+					criterion: ""
+					id: "1C52AC7BC58DF6CB"
+					type: "advancement"
+				}
+			]
+			title: "Curiosidades da Casa"
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Nem toda experiência precisa fazer sentido. Beber de um"
+				"§7cálice desconhecido, tomar sopa suspeita, comer sabão"
+				"§7(definitivamente não recomendado) e triturar uma maçã"
+				"§7dourada encantada em pó — tudo isso já foi feito por"
+				"§7alguém, em algum lugar."
+				""
+				"§eBeba de um Goblet, tome uma Suspicious Stew, coma uma"
+				"§ebarra de sabão, e triture uma Enchanted Golden Apple."
+				""
+				"§8§o(Você comeu sabão de propósito. Ninguém vai perguntar"
+				"§8§opor quê, mas todos estão pensando.)"
+			]
+			hide_until_deps_complete: true
+			icon: "supplementaries:goblet"
+			id: "3415220C731E9557"
+			rewards: [
+				{
+					count: 2
+					id: "6C1351196B5E2733"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "59E6AB5E8A9110AE"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "supplementaries:nether/goblet"
+					criterion: ""
+					id: "152F8D5B51F5414D"
+					type: "advancement"
+				}
+				{
+					advancement: "supplementaries:husbandry/sus_stew"
+					criterion: ""
+					id: "5A337468EC448B6D"
+					type: "advancement"
+				}
+				{
+					advancement: "supplementaries:husbandry/soap"
+					criterion: ""
+					id: "1E972FBC8E0BCCC1"
+					type: "advancement"
+				}
+				{
+					advancement: "supplementaries:story/unenchanter"
+					criterion: ""
+					id: "39217160C9ADDF8F"
+					type: "advancement"
+				}
+			]
+			title: "Experimentos Duvidosos"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Um caçador de verdade não guarda só a carne — guarda a"
+				"§7prova. Cada troféu na parede conta a história de uma"
+				"§7batalha que você venceu."
+				""
+				"§eMonte sua sala de troféus: Bear, Wolf, Spider, Witch,"
+				"§eWither Skeleton e Evoker Trophy."
+			]
+			hide_until_deps_complete: true
+			icon: "handcrafted:wither_skeleton_trophy"
+			id: "47AD79F9400504EF"
+			rewards: [
+				{
+					count: 8
+					id: "7EB9E8F32D426FE5"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "34DBBFDD950C8109"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "54252AAFC81AF375"
+					item: "handcrafted:bear_trophy"
+					type: "item"
+				}
+				{
+					id: "653CEED6191A5E56"
+					item: "handcrafted:wolf_trophy"
+					type: "item"
+				}
+				{
+					id: "6353FF2AFD021D94"
+					item: "handcrafted:spider_trophy"
+					type: "item"
+				}
+				{
+					id: "3A98B1F17DD10C1C"
+					item: "handcrafted:witch_trophy"
+					type: "item"
+				}
+				{
+					id: "7918FCBA5A8CFB39"
+					item: "handcrafted:wither_skeleton_trophy"
+					type: "item"
+				}
+				{
+					id: "0642815E49BCD378"
+					item: "handcrafted:evoker_trophy"
+					type: "item"
+				}
+			]
+			title: "Sala de Troféus"
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Uma casa não é só paredes e teto. Cadeira, mesa, cômoda,"
+				"§7prateleira, armário e criado-mudo transformam qualquer"
+				"§7construção numa casa de verdade pra se viver."
+				""
+				"§eConstrua: Chair, Table, Drawer, Shelf, Cupboard e"
+				"§eNightstand — de qualquer madeira."
+			]
+			hide_until_deps_complete: true
+			icon: "handcrafted:oak_cupboard"
+			id: "1CA6EDF52EB403A9"
+			rewards: [
+				{
+					count: 16
+					id: "00CA5CD09074E2A3"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "1399C9269671902B"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6EFC5F50B4904782"
+					item: "handcrafted:oak_chair"
+					type: "item"
+				}
+				{
+					id: "3547F0F32530A0AD"
+					item: "handcrafted:oak_table"
+					type: "item"
+				}
+				{
+					id: "2929D5D1A86E6536"
+					item: "handcrafted:oak_drawer"
+					type: "item"
+				}
+				{
+					id: "3E0E1B75F38EE7F6"
+					item: "handcrafted:oak_shelf"
+					type: "item"
+				}
+				{
+					id: "32A7375083B324DF"
+					item: "handcrafted:oak_cupboard"
+					type: "item"
+				}
+				{
+					id: "4F2CDDFAF5D74468"
+					item: "handcrafted:oak_nightstand"
+					type: "item"
+				}
+			]
+			title: "Móveis pra Casa de Verdade"
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Esqueça tochas e fogueiras — essa é a casa de quem quer"
+				"§7conforto de verdade: banheiro, banheira, computador e"
+				"§7televisão, tudo num só lugar."
+				""
+				"§eInstale: Toilet, Bath, Television, Computer, Fridge"
+				"§ee Microwave."
+			]
+			hide_until_deps_complete: true
+			icon: "refurbished_furniture:oak_toilet"
+			id: "0DFD9AFCEAC59318"
+			rewards: [
+				{
+					count: 8
+					id: "3A2DA0450BAE4E74"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "05EFC0C141CE68C5"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7638D5128E6F4419"
+					item: "refurbished_furniture:oak_toilet"
+					type: "item"
+				}
+				{
+					id: "30C9D5B5BB53FA74"
+					item: "refurbished_furniture:oak_bath"
+					type: "item"
+				}
+				{
+					id: "6B04B6BDED07AF2D"
+					item: "refurbished_furniture:television"
+					type: "item"
+				}
+				{
+					id: "5C4D626E2071EBD4"
+					item: "refurbished_furniture:computer"
+					type: "item"
+				}
+				{
+					id: "00482F033792AEC7"
+					item: "refurbished_furniture:light_fridge"
+					type: "item"
+				}
+				{
+					id: "7BDD44099523A1BA"
+					item: "refurbished_furniture:light_microwave"
+					type: "item"
+				}
+			]
+			title: "Casa Moderna"
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Uma cozinha de verdade precisa de mais que uma fogueira."
+				"§7Fogão, pia, armários e uma torradeira transformam qualquer"
+				"§7canto da casa numa cozinha funcional."
+				""
+				"§eInstale: Stove, Kitchen Sink, Kitchen Cabinetry, Range Hood"
+				"§ee Toaster."
+			]
+			hide_until_deps_complete: true
+			icon: "refurbished_furniture:oak_kitchen_sink"
+			id: "024A7C73B5FF0B8A"
+			rewards: [
+				{
+					count: 8
+					id: "7463C272EB342BF6"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "39F1EBF481A9CC62"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "79A86DA37C3B612C"
+					item: "refurbished_furniture:light_stove"
+					type: "item"
+				}
+				{
+					id: "6DFF77D099AEBE78"
+					item: "refurbished_furniture:oak_kitchen_sink"
+					type: "item"
+				}
+				{
+					id: "6D1F8B0863F58B2E"
+					item: "refurbished_furniture:oak_kitchen_cabinetry"
+					type: "item"
+				}
+				{
+					id: "1A3F0FA33546EB00"
+					item: "refurbished_furniture:light_range_hood"
+					type: "item"
+				}
+				{
+					id: "62758A68B740F748"
+					item: "refurbished_furniture:light_toaster"
+					type: "item"
+				}
+			]
+			title: "Cozinha Industrial"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Do trigo até a pizza pronta é um caminho longo — mas vale"
+				"§7cada etapa. Massa, molho, cobertura, e o forno certo pra"
+				"§7assar tudo."
+				""
+				"§eFaça a massa, prepare uma Raw Meatlovers Pizza, asse até"
+				"§evirar Cooked Meatlovers Pizza, e faça um Cheese Sandwich."
+				""
+				"§8§o(Você fez pizza do zero num mundo cheio de dragões e"
+				"§8§omagia. As prioridades certas, sempre.)"
+			]
+			hide_until_deps_complete: true
+			icon: "refurbished_furniture:cooked_meatlovers_pizza"
+			id: "2511E3D40092D538"
+			rewards: [
+				{
+					count: 16
+					id: "2798CA87CBF1DEEC"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					id: "07BA5F741D85015E"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1FA63B16521C26FF"
+					item: "refurbished_furniture:dough"
+					type: "item"
+				}
+				{
+					id: "64C89EE557F85FDD"
+					item: "refurbished_furniture:raw_meatlovers_pizza"
+					type: "item"
+				}
+				{
+					id: "01E7DF9C85FF7129"
+					item: "refurbished_furniture:cooked_meatlovers_pizza"
+					type: "item"
+				}
+				{
+					id: "73AC69B69C0BB5E0"
+					item: "refurbished_furniture:cheese_sandwich"
+					type: "item"
+				}
+			]
+			title: "Pizzaria Caseira"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Nem só de pedra e granito vive a construção. O Calcite é"
+				"§7um mineral branco e denso, com sua própria linha completa"
+				"§7de blocos entalhados e polidos."
+				""
+				"§eConsiga: Calcite Bricks, Chiseled Calcite, Calcite Column"
+				"§ee Polished Calcite."
+			]
+			hide_until_deps_complete: true
+			icon: "hearth_and_home:chiseled_calcite"
+			id: "7D57CE8589E2B481"
+			rewards: [
+				{
+					count: 4
+					id: "767D28C1F11AD12C"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					id: "0253B5B6056FCCC6"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6B314F4162F6CFCD"
+					item: "hearth_and_home:calcite_bricks"
+					type: "item"
+				}
+				{
+					id: "0D08DEF1520DF0CA"
+					item: "hearth_and_home:chiseled_calcite"
+					type: "item"
+				}
+				{
+					id: "38ADF6EDB5B29B54"
+					item: "hearth_and_home:calcite_column"
+					type: "item"
+				}
+				{
+					id: "387A212C8377586D"
+					item: "hearth_and_home:polished_calcite"
+					type: "item"
+				}
+			]
+			title: "Um Mineral Novo: Calcite"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Um telhado de telha, uma lanterna de papel japonesa, e"
+				"§7piso de parquet transformam qualquer construção simples"
+				"§7em algo com estilo de verdade."
+				""
+				"§eConstrua: Shingles, Paper Lantern, Parquet e Thatch."
+			]
+			hide_until_deps_complete: true
+			icon: "hearth_and_home:thatch"
+			id: "2C2BB4EEBDC8BC39"
+			rewards: [
+				{
+					count: 8
+					id: "778BBE5A78C62927"
+					item: "minecraft:hay_block"
+					type: "item"
+				}
+				{
+					id: "0B6746C030B3A430"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3A65D714DA09499A"
+					item: "hearth_and_home:red_shingles"
+					type: "item"
+				}
+				{
+					id: "64E5BDBAFA414E21"
+					item: "hearth_and_home:red_paper_lantern"
+					type: "item"
+				}
+				{
+					id: "62E4816BDC525BD6"
+					item: "hearth_and_home:oak_parquet"
+					type: "item"
+				}
+				{
+					id: "3165F88EE174C155"
+					item: "hearth_and_home:thatch"
+					type: "item"
+				}
+			]
+			title: "Telhados e Detalhes do Mundo"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Escada de verdade em vez de blocos empilhados, veneziana"
+				"§7na janela, treliça na varanda — o pacote de blocos decorativos"
+				"§7transforma qualquer caixa de bloco numa casa de verdade."
+				""
+				"§eConstrua com: Ladder, Window Frame, House Shutter e Lattice"
+				"§e(qualquer madeira)."
+			]
+			hide_until_deps_complete: true
+			icon: "bf_blockpack:oak_window_frame"
+			id: "0AE8B69949961B62"
+			rewards: [
+				{
+					count: 16
+					id: "12EA08318009FEAF"
+					item: "minecraft:glass_pane"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7FA8CB14B1498C70"
+					item: "minecraft:oak_planks"
+					type: "item"
+				}
+				{
+					id: "56CC4592FF5AA4B4"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "366616D73F6C53B5"
+					item: "bf_blockpack:oak_ladder"
+					type: "item"
+				}
+				{
+					id: "5A20A3F55B485CF8"
+					item: "bf_blockpack:oak_window_frame"
+					type: "item"
+				}
+				{
+					id: "05B106AE3376C65F"
+					item: "bf_blockpack:oak_house_shutter"
+					type: "item"
+				}
+			]
+			title: "Reforma da Casa"
+			x: -4.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Um lar de verdade tem mais que parede e telhado — tem um"
+				"§7aquário no canto, ar-condicionado (decorativo, claro) e"
+				"§7caixotes de fruta perto da cozinha."
+				""
+				"§eConstrua um Air Conditioner, um Aquarium e um Apple Crate."
+			]
+			hide_until_deps_complete: true
+			icon: "bf_blockpack:aquarium"
+			id: "71ABB4C1959BD6BC"
+			rewards: [
+				{
+					count: 3
+					id: "4400ECA99DF082DD"
+					item: "minecraft:tropical_fish_bucket"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "34783F3C84424099"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "7E1C142EAD2BE679"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "4386FCE56A4C06C4"
+					item: "bf_blockpack:air_conditioner"
+					type: "item"
+				}
+				{
+					id: "244F7A77E49128F0"
+					item: "bf_blockpack:aquarium"
+					type: "item"
+				}
+				{
+					id: "108D445DED2789EC"
+					item: "bf_blockpack:apple_crate"
+					type: "item"
+				}
+			]
+			title: "Toque de Modernidade"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["362EF6E0DA903C6A"]
+			description: [
+				"§7Pilares gregos, colunas de ametista, entalhes em andesito —"
+				"§7pra quando um castelo de pedra lisa simplesmente não impressiona"
+				"§7mais ninguém."
+				""
+				"§eConstrua um Andesite Greek Pillar, uma Amethyst Column"
+				"§ee um bloco Chiseled à sua escolha."
+			]
+			hide_until_deps_complete: true
+			icon: "bf_blockpack:andesite_greek_pillar"
+			id: "27D0647DB9C5D3AA"
+			rewards: [
+				{
+					count: 4
+					id: "400FDFB20A5D066F"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "60CA35D39F15D508"
+					item: "minecraft:polished_andesite"
+					type: "item"
+				}
+				{
+					id: "19A7F20EBDC3CD98"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5F5E21D5A24BDAC0"
+					item: "bf_blockpack:andesite_greek_pillar"
+					type: "item"
+				}
+				{
+					id: "0F7BF408E9B67499"
+					item: "bf_blockpack:amethyst_column"
+					type: "item"
+				}
+				{
+					id: "02AF5925BD7F1262"
+					item: "bf_blockpack:quartz_chiseled"
+					type: "item"
+				}
+			]
+			title: "Cantaria Refinada"
+			x: 4.5d
+			y: 8.0d
 		}
 	]
 	title: "§6Construção e Decoração"

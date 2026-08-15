@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "13_end"
 	group: "42DFD8A84753DCE2"
@@ -8,6 +8,34 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"§7Além do dragão: o que sobra do Fim quando a fauna e a flora tomam conta."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Ender Pearl."
+			]
+			icon: "minecraft:ender_pearl"
+			id: "6D8D23FCEACD9E34"
+			rewards: [{
+				id: "74D3B57F43FF4BC1"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "5F358676151AB7A9"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
 				"§7Com Blaze Rods e Ender Pearls, você tem os ingredientes"
 				"§7para criar §eOlhos do End §7e encontrar a Fortaleza."
@@ -18,6 +46,7 @@
 				"§6Dica: §7Siga a direção que o olho voa antes de quebrar!"
 				"§7Costuma estar abaixo de uma stronghold subterrânea."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "6701564232D0A003"
 			rewards: [
@@ -39,6 +68,7 @@
 					xp: 400
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:end/root"
 				criterion: ""
@@ -46,10 +76,11 @@
 				type: "advancement"
 			}]
 			title: "Porta para o Fim"
-			x: 0.0d
-			y: 0.0d
+			x: 3.0d
+			y: 6.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
 				"§7O End expandido pelo §eThe Outer End §7tem:"
 				"§7- Florestas Azure com madeira própria"
@@ -62,6 +93,7 @@
 				"§6Dica: §7Os cristais aparecem como veios (buds) nas ilhas —"
 				"§7explore com cuidado, o Stalker é hostil e persistente."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "outer_end:cobalt_crystal_chestplate"
@@ -89,6 +121,7 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "5096D9346055E5DA"
@@ -114,12 +147,13 @@
 				}
 			]
 			title: "O Fim Expandido"
-			x: 2.0d
-			y: 0.0d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
-				"§7§eThe Outer End §7tem três famílias de cristais:"
+				"§7Existem três famílias de cristais nesse End mais distante:"
 				"§7§eCobalt §7(azul, o mais poderoso), §eMint §7(verde,"
 				"§7com propriedades de velocidade) e §eRose §7(rosa, resistência)."
 				"§7Cada cristal tem armadura, arcos e lanternas exclusivas."
@@ -130,6 +164,7 @@
 				"§6Dica: §7Cristais aparecem como buds (flores) nas paredes"
 				"§7das ilhas flutuantes — procure brilho azulado ou rosado."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "outer_end:mint_crystal_chestplate"
@@ -151,6 +186,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "08D0000000000504"
@@ -176,12 +212,13 @@
 				}
 			]
 			title: "Cristais do Fim"
-			x: 4.0d
-			y: 0.0d
+			x: 7.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
-				"§7§eMoog's End Structures §7adiciona estruturas únicas ao End —"
+				"§7Existem estruturas únicas escondidas pelo End —"
 				"§7ruínas, torres e construções antigas do povo Enderman,"
 				"§7geradas naturalmente pelo mundo."
 				""
@@ -191,6 +228,7 @@
 				"§7você visitou — então essa parte é confiança mesmo. Mas procure"
 				"§7por silhuetas diferentes das ilhas vanilla, elas valem a pena."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:end_stone_bricks"
 			id: "40FD166EC60389ED"
 			rewards: [
@@ -212,6 +250,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				count: 4L
 				id: "149B9DAA79624FEA"
@@ -219,12 +258,13 @@
 				type: "item"
 			}]
 			title: "Ruínas do Fim"
-			x: 6.0d
-			y: 0.0d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
-				"§7§eYung's Better End Island §7refaz a ilha principal do End"
+				"§7A ilha principal do End foi refeita do zero"
 				"§7tornando-a muito mais imponente e detalhada."
 				""
 				"§eExplore a §eMain End Island §7renovada pelo YUNG's."
@@ -233,6 +273,7 @@
 				"§6Dica: §7A ilha reformulada tem áreas secretas!"
 				"§7Explore cada canto antes de enfrentar o dragão."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:end_portal_frame"
 			id: "11DDBC23897B6A43"
 			rewards: [
@@ -243,9 +284,31 @@
 					type: "item"
 				}
 				{
-					count: 3
 					id: "47D35E3419950249"
-					item: "minecraft:enchanted_book"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 4
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D0A2F9C71E834B5"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5
+							}]
+						}
+					}
 					type: "item"
 				}
 				{
@@ -254,16 +317,18 @@
 					xp: 600
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "5C35B989F63FEF2A"
 				item: "minecraft:dragon_breath"
 				type: "item"
 			}]
 			title: "A Ilha Renovada"
-			x: 8.0d
-			y: 0.0d
+			x: 5.5d
+			y: -4.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
 				"§7O §eEnder Dragon §7é o boss final do End vanilla."
 				"§7Destrua os §eEnd Crystals §7nas torres antes de atacar o dragão."
@@ -275,6 +340,7 @@
 				"§7A saída final (portal) aparece ao centro após a morte do Dragão."
 				"§8§o(Dezoito horas de jogo pra isso. Aproveite o momento.)"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "0E0976C3E5AC564D"
 			rewards: [
@@ -294,6 +360,7 @@
 					xp: 2000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:end/kill_dragon"
 				criterion: "killed_dragon"
@@ -301,10 +368,11 @@
 				type: "advancement"
 			}]
 			title: "O Dragão do Fim"
-			x: 0.0d
-			y: -2.0d
+			x: 3.0d
+			y: -6.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
 				"§7Após matar o Dragão, o End externo abre — ilhas flutuantes"
 				"§7com End Cities e End Ships. O End Ship de cada city tem um"
@@ -316,6 +384,7 @@
 				"§6Dica: §7Use um Chorus Fruit para teleportar em caso de queda."
 				"§7End Ships podem estar nos quatro lados da city — procure todos."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:elytra"
@@ -348,6 +417,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:end/find_end_city"
 				criterion: "find_end_city"
@@ -355,10 +425,11 @@
 				type: "advancement"
 			}]
 			title: "End Cities e Elytra"
-			x: 2.0d
-			y: -2.0d
+			x: 0.0d
+			y: -7.0d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
 				"§7§eShulkers §7são os habitantes das End Cities."
 				"§7Eles disparam projéteis que causam §eLevitation §7— efeito de levitação."
@@ -370,6 +441,7 @@
 				"§6Dica: §7Shulkers se fecham na concha quando tomam dano —"
 				"§7espere abrirem para atacar novamente."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:shulker_shell"
 			id: "42E0D831F085D1CE"
 			rewards: [
@@ -391,6 +463,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					count: 2L
@@ -405,11 +478,14 @@
 				}
 			]
 			title: "Shulkers e Caixas"
-			x: 4.0d
-			y: -2.0d
+			x: -3.0d
+			y: -6.5d
 		}
 		{
-			dependencies: ["0E0976C3E5AC564D"]
+			dependencies: [
+				"0E0976C3E5AC564D"
+				"6D8D23FCEACD9E34"
+			]
 			description: [
 				"§7O §eEnder Dragon §7pode ser reinvocado colocando §e4 End Crystals"
 				"§7nos 4 lados do portal central do End."
@@ -421,6 +497,7 @@
 				"§6Dica: §7Dragon Breath é usado para fazer §ePoções Persistentes§7."
 				"§7Cada derrota do Dragão também libera um §eEnd Gateway §7novo."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:dragon_breath"
 			id: "7038415B738C2035"
 			rewards: [
@@ -436,6 +513,7 @@
 					xp: 1500
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:end/respawn_dragon"
 				criterion: "respawn_dragon"
@@ -443,12 +521,13 @@
 				type: "advancement"
 			}]
 			title: "Respirar o Dragão de Novo"
-			x: 4.0d
-			y: 2.0d
+			x: -5.5d
+			y: -4.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
-				"§7§eThe Outer End §7expande o End com ilhas de §eCristais§7:"
+				"§7Existe um End mais distante, com ilhas de §eCristais§7:"
 				"§eCobalt §7(azul, mais forte), §eMint §7(verde, velocidade)"
 				"§7e §eRose §7(rosa, resistência). Cada um tem armadura completa."
 				""
@@ -458,6 +537,7 @@
 				"§6Dica: §7Crystals aparecem como buds brilhantes nas ilhas."
 				"§7Stalkers habitam as ilhas de cristal — cuidado com emboscadas."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "outer_end:cobalt_crystal_chestplate"
@@ -485,6 +565,7 @@
 					xp: 1200
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "0737B4D2075FBA4F"
@@ -510,10 +591,11 @@
 				}
 			]
 			title: "O Cristal Cobalto — Outer End"
-			x: 6.0d
-			y: -2.0d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
 				"§7Com §eElytra §7e a dimensão do End completamente explorada,"
 				"§7você domina o espaço entre mundos."
@@ -526,6 +608,7 @@
 				"§6Dica: §7End Gateways aparecem a cada morte do Dragão."
 				"§7Carregue Chorus Fruit como segurança em caso de queda."
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:chorus_flower"
 			id: "40BC34A26B608549"
 			rewards: [
@@ -547,6 +630,7 @@
 					xp: 1000
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "minecraft:end/explore_end_island"
 				criterion: "explored_end_island"
@@ -554,17 +638,19 @@
 				type: "advancement"
 			}]
 			title: "Além das Estrelas"
-			x: 10.0d
-			y: 0.0d
+			x: -7.0d
+			y: 1.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
-				"§7§eBossominium §7também tem um boss temático do End —"
+				"§7Existe também um boss temático do End por aí —"
 				"§7o Ender Protector guarda um tesouro próprio, diferente"
 				"§7de qualquer coisa vanilla."
 				""
 				"§eDerrote o Ender Protector do Bossominium."
 			]
+			hide_until_deps_complete: true
 			icon: "bossominium:gem_of_ender"
 			id: "247D44091B56F0EB"
 			rewards: [
@@ -579,6 +665,7 @@
 					xp: 700
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				advancement: "bossominium:the_ender_protector"
 				criterion: "the_ender_protector"
@@ -586,10 +673,11 @@
 				type: "advancement"
 			}]
 			title: "O Protetor do Fim"
-			x: 22.0d
-			y: 6.0d
+			x: -5.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["6D8D23FCEACD9E34"]
 			description: [
 				"§7Você já tem o peitoral. Complete o conjunto Rose Crystal"
 				"§7pra ativar o bônus completo do set do Outer End."
@@ -599,6 +687,7 @@
 				"§6Dica: §7Sets completos do Outer End dão bônus especiais"
 				"§7de resistência quando as 4 peças estão equipadas juntas."
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "outer_end:rose_crystal_helmet"
@@ -620,6 +709,7 @@
 					xp: 500
 				}
 			]
+			size: 1.5d
 			tasks: [
 				{
 					id: "22E7922DF4290083"
@@ -645,8 +735,8 @@
 				}
 			]
 			title: "Conjunto Completo: Rosa"
-			x: 24.0d
-			y: 8.0d
+			x: -3.0d
+			y: 6.5d
 		}
 	]
 	title: "§5O Fim e Além"

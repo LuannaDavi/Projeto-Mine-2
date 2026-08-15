@@ -1,0 +1,1257 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	filename: "21_horrores_e_golens"
+	group: "69F31F625754AE1E"
+	id: "0D7F11468539B38A"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"§7Golens de todo tipo e horrores que preferiam continuar escondidos."
+				""
+				"§7Esse capitulo comeca trancado ate voce decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missoes de uma vez."
+				""
+				"§eEntregue: 1x Pumpkin."
+			]
+			icon: "minecraft:pumpkin"
+			id: "3EDBAEFA26F24379"
+			rewards: [{
+				id: "6036E212A7B7B28C"
+				type: "xp"
+				xp: 50
+			}]
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "6EEC7FF719207C79"
+				item: "minecraft:pumpkin"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Um mundo cheio de perigos disse o próprio mod na sua tela"
+				"§7de carregamento. Zumbis de barril, esqueletos decrépitos e"
+				"§7zumbis apodrecidos são só o começo."
+				""
+				"§eSobreviva ao básico: mate Decaying Zombies, Barrel Zombies"
+				"§ee Decrepit Skeletons."
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:seedof_chaos"
+			id: "63E83B9D7FA10B12"
+			rewards: [
+				{
+					count: 8
+					id: "23D7E3675889F7EA"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+				{
+					id: "22A9C016FDDCF3A7"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "born_in_chaos_v1:decaying_zombie"
+					id: "7998E7F6E39D43EB"
+					type: "kill"
+					value: 6L
+				}
+				{
+					entity: "born_in_chaos_v1:barrel_zombie"
+					id: "3F5B690C482E1BB0"
+					type: "kill"
+					value: 3L
+				}
+				{
+					entity: "born_in_chaos_v1:decrepit_skeleton"
+					id: "4E8FA9EF4335E375"
+					type: "kill"
+					value: 5L
+				}
+			]
+			title: "Bem-vindo ao Caos"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Dark Metal não se minera — se recolhe de restos, se forja"
+				"§7em fornalhas comuns, e vira as armas mais afiadas do mod."
+				""
+				"§eConsiga um pedaço de Dark Metal, forje um Dark Metal Ingot,"
+				"§ee crie qualquer arma de Dark Metal."
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:dark_metal_ingot"
+			id: "4778145E8EE0EC47"
+			rewards: [
+				{
+					count: 8
+					id: "259949E9B314A6A6"
+					item: "born_in_chaos_v1:dark_metal_nugget"
+					type: "item"
+				}
+				{
+					id: "5DA22E32C1861630"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:dark_metallurgy"
+					criterion: ""
+					id: "0879FA6352064205"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:dark_forging"
+					criterion: ""
+					id: "087A8F998B498ABD"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:dark_blacksmith"
+					criterion: ""
+					id: "45487A41CF4E2D99"
+					type: "advancement"
+				}
+			]
+			title: "Ferraria das Trevas"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Um verdadeiro escudeiro das trevas não se contenta com uma"
+				"§7arma só — e a Nightmare Armor completa é o ápice da proteção"
+				"§7sombria do mod."
+				""
+				"§eTenha todos os tipos de arma de Dark Metal no inventário"
+				"§eao mesmo tempo, e vista o conjunto completo de Nightmare"
+				"§eArmor."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "born_in_chaos_v1:sharpened_dark_metal_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "24417508638EBD98"
+			rewards: [
+				{
+					id: "583A4FBA76E250F7"
+					item: {
+						Count: 1
+						id: "born_in_chaos_v1:sharpened_dark_metal_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31C23B841FDB939A"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:squireofthe_dark_lord"
+					criterion: ""
+					id: "09A9D0982C454977"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:unitywith_darknessachievement"
+					criterion: ""
+					id: "421F46A3C0B2F752"
+					type: "advancement"
+				}
+			]
+			title: "Arsenal e Armadura Completos"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Os elixires por aqui vão muito além de cura — vampirismo,"
+				"§7proteção contra insetos, e transmutação de espíritos fazem"
+				"§7parte do repertório de qualquer alquimista das trevas."
+				""
+				"§eCrie um Transmuting Elixir, um Elixir of Vampirism, um"
+				"§eElixir of Insect Protection, e use o Transmuting Elixir"
+				"§epra transformar um Seared Spirit em Infernal Spirit."
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:elixir_of_vampirism"
+			id: "451F9E5C7985593B"
+			rewards: [
+				{
+					id: "3F49A03776584127"
+					item: "born_in_chaos_v1:elixirof_wither_resistance"
+					type: "item"
+				}
+				{
+					id: "2B49F508AB15D9CE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:transmutalogy"
+					criterion: ""
+					id: "4B4A4E1712432EC1"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:heart_thief"
+					criterion: ""
+					id: "2649ACE93B48F5DD"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:insect_repellent"
+					criterion: ""
+					id: "7390E4C98ABF6072"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:infernal_medicine"
+					criterion: ""
+					id: "66E4CC2305BFD1DE"
+					type: "advancement"
+				}
+			]
+			title: "Alquimia Sombria"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Phantom Bombs, bombas intoxicantes e bombas estimulantes —"
+				"§7essa linha de explosivos é tão perigosa pra"
+				"§7quem usa quanto pra quem apanha."
+				""
+				"§eCrie um Phantom Bomb, uma bomba de Intoxicação/Estimulação,"
+				"§ee fique sob o efeito dos dois ao mesmo tempo."
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:phantom_bomb"
+			id: "292650BE2C0081D7"
+			rewards: [
+				{
+					count: 16
+					id: "4EBDD4E5D0046CFA"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					id: "28D4BC06111E7346"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:one_explosion_is_good_two_is_better"
+					criterion: ""
+					id: "742CABC6B022C6EB"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:mr_decoction"
+					criterion: ""
+					id: "10D5E53E4087E345"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:shakeand_mix"
+					criterion: ""
+					id: "1F485F9671D2D7B5"
+					type: "advancement"
+				}
+			]
+			title: "Bombas e Explosivos"
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Nem tudo por aqui quer te matar — alguns doces"
+				"§7só querem te confundir, ou te curar de um mau cheiro bem"
+				"§7específico."
+				""
+				"§eColete todos os tipos de doces do mod, crie um Eternal"
+				"§eCandy, coma comida defumada e remova o fedor podre comendo"
+				"§euma Mint Candy."
+				"§8§o(Doces que nunca estragam por serem amaldiçoados."
+				"§8§oA validade eterna sempre tem um preço.)"
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:eternal_candy"
+			id: "79FC80815C522EEE"
+			rewards: [
+				{
+					count: 2
+					id: "57E00703EB91C5C2"
+					item: "born_in_chaos_v1:bagof_candy"
+					type: "item"
+				}
+				{
+					id: "0C4EAE73DD1A0DDD"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:trickor_treat"
+					criterion: ""
+					id: "039F14632B5B3AC3"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:yoursatietywillbe_eternal"
+					criterion: ""
+					id: "309F54E81787D958"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:bypassingthe_expiration_date"
+					criterion: ""
+					id: "03D63DEAB2973244"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:freshen_your_breath"
+					criterion: ""
+					id: "1A28A6949E8AB1F7"
+					type: "advancement"
+				}
+			]
+			title: "Doces Amaldiçoados"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7O Bonescaller convoca esqueletos bebês do nada — mate o"
+				"§7original e o supremo, e depois faça seu próprio bastão pra"
+				"§7fazer o mesmo."
+				""
+				"§eMate o Bonecaller, mate o Supreme Bonescaller, e crie"
+				"§eseu próprio Bonescaller Staff."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "born_in_chaos_v1:bonescaller_staff"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "544AE388EDFB1A1E"
+			rewards: [
+				{
+					count: 16
+					id: "12805A72F2854814"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "10C4B7AF29338C90"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:junior_summoner"
+					criterion: ""
+					id: "666A7F2B85716E63"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:dismantledto_bones"
+					criterion: ""
+					id: "4E9444C81B69C56A"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:compact_necromancy"
+					criterion: ""
+					id: "41C48176C05489B8"
+					type: "advancement"
+				}
+			]
+			title: "Caçador de Ossos"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7A Mãe das Aranhas comanda um exército, o Phantom Creeper"
+				"§7se divide quando atacado, e as armadilhas de Dire Hound"
+				"§7pegam até o caçador mais experiente desprevenido."
+				""
+				"§eMate a Spiders Mother, faça um Phantom Creeper se dividir,"
+				"§ee pise numa armadilha de matilha."
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:fangofthe_hound_leader"
+			id: "27A1D3CFCC2FB037"
+			rewards: [
+				{
+					count: 8
+					id: "4EC5BB603ACD7A55"
+					item: "minecraft:cobweb"
+					type: "item"
+				}
+				{
+					id: "7287819297D92901"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:arachnophobes_nightmare"
+					criterion: ""
+					id: "75684B31111D69DA"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:double_trouble"
+					criterion: ""
+					id: "16317254275F1504"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:unlucky_hunter"
+					criterion: ""
+					id: "2DE7FD04FFBB6415"
+					type: "advancement"
+				}
+			]
+			title: "Aranhas e Armadilhas"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Nem todo zumbi por aqui é genérico. Tem palhaço,"
+				"§7pescador, lenhador e um que só quer bater com um machado."
+				""
+				"§eMate o Zombie Clown, e depois mate Zombie Fishermen,"
+				"§eZombie Lumberjacks e Zombie Bruisers."
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:seedof_chaos"
+			id: "13B4FEB446A0BDDC"
+			rewards: [
+				{
+					id: "319F215519EDA6C0"
+					item: {
+						Count: 1
+						id: "minecraft:fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6FE508557499310C"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:lifeturnedouttobeacomedy"
+					criterion: ""
+					id: "781223C5E16810D5"
+					type: "advancement"
+				}
+				{
+					entity: "born_in_chaos_v1:zombie_fisherman"
+					id: "7179EA4DC398EA17"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "born_in_chaos_v1:zombie_lumberjack"
+					id: "500B593541BD36E6"
+					type: "kill"
+					value: 2L
+				}
+				{
+					entity: "born_in_chaos_v1:zombie_bruiser"
+					id: "3329394BF2B274FA"
+					type: "kill"
+					value: 2L
+				}
+			]
+			title: "Zumbis Peculiares"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Existem ameaças que caçam você de volta por aqui."
+				"§7O Nightmare Stalker persegue, o Lifestealer rouba sua vida,"
+				"§7e alguns zumbis comuns são, na verdade, possuídos pelo"
+				"§7próprio espírito do caos."
+				""
+				"§eMate o Nightmare Stalker, mate o Lifestealer, e derrote"
+				"§eum mob possuído pelo Spirit of Chaos."
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:seedof_chaos"
+			id: "5738D08AD773586A"
+			rewards: [
+				{
+					count: 2
+					id: "031DD1A373C964EF"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					id: "3611382FF996D0CA"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:fighting_nightmares"
+					criterion: ""
+					id: "7BF69C0F7073A120"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:horror_underthe_mantle"
+					criterion: ""
+					id: "17C02656B63DF6C9"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:exorcism"
+					criterion: ""
+					id: "5097270457454382"
+					type: "advancement"
+				}
+			]
+			title: "Caçado pela Escuridão"
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7O Spirit Guide leva almas pro além — mas antes disso, você"
+				"§7pode pegar o sombrero dele. Enquanto isso, os túmulos dos"
+				"§7imortalizados escondem seus próprios segredos."
+				""
+				"§eMate o Spirit Guide, consiga o Spiritual Guide Sombrero,"
+				"§ee lide com os túmulos dos imortalizados espalhados pelo"
+				"§emundo."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "250A283D5D9B4DC9"
+			rewards: [
+				{
+					id: "063DB4BFDD0B910E"
+					item: {
+						Count: 1
+						id: "born_in_chaos_v1:spiritual_guide_sombrero_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4457710A46CD85E4"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:guidetothenextworld"
+					criterion: ""
+					id: "429AFE6827E63173"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:cultural_attribute"
+					criterion: ""
+					id: "0D22A3EE791DB2BB"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:bury_them_all"
+					criterion: ""
+					id: "3CAF38F61D63D446"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:grave_ravager"
+					criterion: ""
+					id: "2CE6B4C3F32BA545"
+					type: "advancement"
+				}
+			]
+			title: "A Passagem dos Mortos"
+			x: -8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7A família Pumpkinhead comanda um pequeno exército montado."
+				"§7Lord e Sir são os dois cavaleiros — e você também pode criar"
+				"§7seu próprio Pumpkin Spirit, se souber como."
+				""
+				"§eMate Lord Pumpkinhead e Sir Pumpkinhead, e crie seu"
+				"§epróprio Pumpkin Spirit."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "born_in_chaos_v1:lord_pumpkinheads_hat_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "69416B4F2C606B84"
+			rewards: [
+				{
+					count: 4
+					id: "6A3FBBA13FC0578E"
+					item: "minecraft:carved_pumpkin"
+					type: "item"
+				}
+				{
+					id: "47BC502E71C0A9D6"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:pumpkin_lord"
+					criterion: ""
+					id: "5342E241A315A021"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:pumpkin_sir"
+					criterion: ""
+					id: "7CF21EEFF316108A"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:scarecrow"
+					criterion: ""
+					id: "0FACFA9200741ACB"
+					type: "advancement"
+				}
+			]
+			title: "Abóboras Malignas"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Esse canto do mundo tem um lado colecionador: chapéus únicos,"
+				"§7charms mágicos e até uma trilha sonora própria pra quem"
+				"§7presta atenção nos detalhes."
+				""
+				"§eColecione todos os chapéus do mod, pegue o chapéu do Lord"
+				"§ePumpkinhead, vista o Damned Demoman's Hat, colecione todos"
+				"§eos tipos de Charm, e junte todos os discos de música do mod."
+				"§8§o(Chapéu de abóbora, de bomba, de sombrero fantasma."
+				"§8§oSua cabeça virou um museu itinerante.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "born_in_chaos_v1:damned_demomans_hat_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "20EB678BAF1EF240"
+			rewards: [
+				{
+					id: "2019CFCA17F89D8C"
+					item: {
+						Count: 1
+						id: "born_in_chaos_v1:charmof_fury"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6962B638BDC7D505"
+					type: "xp"
+					xp: 900
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:hatman"
+					criterion: ""
+					id: "6DB1825A9A1EF92E"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:infernal_hatman"
+					criterion: ""
+					id: "08BACF9BBF86A729"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:explosive_temper"
+					criterion: ""
+					id: "539472D2141AB702"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:charm_collector"
+					criterion: ""
+					id: "0F42202B44F0BFC9"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:symphonyof_chaos"
+					criterion: ""
+					id: "06569E9A6F26AA9B"
+					type: "advancement"
+				}
+			]
+			title: "Chapéus e Curiosidades"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Faça travessuras suficientes e o próprio Krampus vem atrás"
+				"§7de você — algo que, convenhamos, não é exatamente um Papai"
+				"§7Noel comum."
+				""
+				"§eProvoque o Krampus a vir até você, e depois derrote-o."
+				"§8§o(Você provocou o Krampus de propósito."
+				"§8§oIsso diz mais sobre você do que sobre ele.)"
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:seedof_chaos"
+			id: "6CD079EAAC27CF02"
+			rewards: [
+				{
+					count: 6
+					id: "756C9C188863F156"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "23AC242F94CB9C0D"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:naughty_child"
+					criterion: ""
+					id: "2811B66572F57AE5"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:wrong_santa"
+					criterion: ""
+					id: "5278B8FA23FBF02A"
+					type: "advancement"
+				}
+			]
+			title: "Krampus e o Natal Errado"
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7No fundo do lago, nas trincheiras e num vórtice de pura"
+				"§7escuridão vivem as ameaças mais sérias dessas terras."
+				"§7Enfrentá-las todas de uma vez é a prova final."
+				""
+				"§eMate o Dark Vortex, o Glutton Fish e o Skeleton Demoman,"
+				"§ee consiga uma sequência de 5 kills com o Great Reaper Ax"
+				"§eem pouco tempo."
+				""
+				"§6Dica: §7O Great Reaper Ax entra em modo rampage — aproveite"
+				"§7a fúria enquanto durar."
+			]
+			hide_until_deps_complete: true
+			icon: "born_in_chaos_v1:fallen_chaos_knight_spawn_egg"
+			id: "7A8BC759EB11193A"
+			rewards: [
+				{
+					count: 2
+					id: "398724C87EA26D88"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "51CA0FCBB9E7CD38"
+					item: "born_in_chaos_v1:dark_metal_ingot"
+					type: "item"
+				}
+				{
+					id: "67F5F5BDE7253526"
+					type: "xp"
+					xp: 1800
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "born_in_chaos_v1:the_wind_darkening"
+					criterion: ""
+					id: "524B97BC85E56361"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:horrorofthe_depths"
+					criterion: ""
+					id: "266CB6A178BAC689"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:good_demoman"
+					criterion: ""
+					id: "07E033255A48E246"
+					type: "advancement"
+				}
+				{
+					advancement: "born_in_chaos_v1:rampage"
+					criterion: ""
+					id: "2D458B09FC1DAD07"
+					type: "advancement"
+				}
+			]
+			title: "§c§lHorrores do Caos"
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Guardiões adormecidos ficam espalhados por biomas"
+				"§7específicos — cada um feito do material que domina aquele"
+				"§7lugar, esperando alguém saber como acordá-los."
+				""
+				"§eDesperte: First of Sand, First of the Tundra, First of"
+				"§eBasalt, First of the Village e First of Dispenser."
+				""
+				"§6Dica: §7Cada 'First' precisa de um arranjo específico de"
+				"§7blocos pra despertar — pesquise a receita de cada um."
+			]
+			hide_until_deps_complete: true
+			icon: "plenty_of_golems:first_of_sand_statue_item"
+			id: "6317914B03557B91"
+			rewards: [
+				{
+					count: 32
+					id: "19583C4A178D0ACA"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "3645A6BB502CF126"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "plenty_of_golems:a_sand_giant"
+					criterion: ""
+					id: "3A1131A0343A51A4"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:for_long_frozen"
+					criterion: ""
+					id: "678197080D53AE71"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:is_that_an_enemy_or_ally"
+					criterion: ""
+					id: "1E8B1D010E0EF6F0"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:that_isnt_any_ordinary_bell"
+					criterion: ""
+					id: "1433491684BC2992"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:first_of_oak_20"
+					criterion: ""
+					id: "6570274FD218F76D"
+					type: "advancement"
+				}
+			]
+			title: "Desperte os Golens Adormecidos"
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Nem todo golem segue o padrão dos 'Firsts'. Obsidiana,"
+				"§7ametista, carvalho negro e um gigante de espruce inteiro"
+				"§7têm seus próprios rituais de despertar."
+				""
+				"§eDesperte: Obsidian Golem, Amethyst Golem, Dark Oak Golem"
+				"§ee Giant of Spruce."
+			]
+			hide_until_deps_complete: true
+			icon: "plenty_of_golems:obsidian_golem_statue_item"
+			id: "215FFAAD46A8A008"
+			rewards: [
+				{
+					count: 6
+					id: "4B9CD156D8F0C57C"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					id: "473AFDDEF45F5D2C"
+					type: "xp"
+					xp: 600
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "plenty_of_golems:an_obsidian_tower"
+					criterion: ""
+					id: "153CE88E6520D951"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:a_shiny_giant"
+					criterion: ""
+					id: "194538B9B9684157"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:not_a_dark_oak_log"
+					criterion: ""
+					id: "5B721A9268288441"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:angry_birds"
+					criterion: ""
+					id: "369CBE4FC5DF6899"
+					type: "advancement"
+				}
+			]
+			title: "Golens Especiais e o Gigante"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Nem todo golem quer ser seu amigo. O Guardian of the Deep"
+				"§7e o Ancient of Prismarine são hostis de verdade — e o"
+				"§7First of the Dungeon nem precisa ser derrotado pra ser"
+				"§7perigoso, só de acordar já é o suficiente."
+				""
+				"§eDerrote o Guardian of the Deep, derrote o Ancient of"
+				"§ePrismarine, e desperte o First of the Dungeon."
+			]
+			hide_until_deps_complete: true
+			icon: "plenty_of_golems:guardian_of_the_deep_statue_item"
+			id: "79260B3DBF303B6E"
+			rewards: [
+				{
+					count: 8
+					id: "47299F0CE03C9EA5"
+					item: "minecraft:prismarine_crystals"
+					type: "item"
+				}
+				{
+					id: "139D71B13E93840B"
+					type: "xp"
+					xp: 800
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "plenty_of_golems:can_i_have_an_hand"
+					criterion: ""
+					id: "33C3377BC2FC23D7"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:the_ancient_reamins_ancient"
+					criterion: ""
+					id: "69BE8F78B3E24C82"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:a_strange_spawner"
+					criterion: ""
+					id: "5712D4F69AF12EFC"
+					type: "advancement"
+				}
+			]
+			title: "Guardiões Perigosos"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7O Stack Golem é diferente de todos os outros — ele cresce"
+				"§7peça por peça, cada uma empilhada em cima da anterior,"
+				"§7até virar uma torre ambulante."
+				""
+				"§eEmpilhe um Stack Golem até 2, 3 e 4 peças."
+			]
+			hide_until_deps_complete: true
+			icon: "plenty_of_golems:stack_golem_4_piece_spawn_egg"
+			id: "1DEEC0F2966A28B9"
+			rewards: [
+				{
+					count: 4
+					id: "3DA3E9205FEEF4D0"
+					item: "plenty_of_golems:stack_golem_piece"
+					type: "item"
+				}
+				{
+					id: "4A5A1829F7395BAB"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "plenty_of_golems:two_lil_guys"
+					criterion: ""
+					id: "5CEDF02F192BFBD2"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:three_lil_guys"
+					criterion: ""
+					id: "013FF16A8064815E"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:four_lil_guys"
+					criterion: ""
+					id: "0AEB387316FF2359"
+					type: "advancement"
+				}
+			]
+			title: "Golem Empilhado"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7O Dispenser Golem já é útil sozinho — mas com as runas"
+				"§7certas, ele vira uma pequena torre de defesa personalizada."
+				""
+				"§eUpgrade o Dispenser Golem com a Fire Rune e depois com"
+				"§ea Firework Rune."
+			]
+			hide_until_deps_complete: true
+			icon: "plenty_of_golems:fire_rune"
+			id: "4072AA9DC2D9C442"
+			rewards: [
+				{
+					id: "14E0F0C39C171CAB"
+					item: "plenty_of_golems:firework_rune"
+					type: "item"
+				}
+				{
+					id: "4C08EB600648DF90"
+					type: "xp"
+					xp: 400
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "plenty_of_golems:that_some_spicy_taco_bell"
+					criterion: ""
+					id: "406A9C6096A64447"
+					type: "advancement"
+				}
+				{
+					advancement: "plenty_of_golems:woooo_firework"
+					criterion: ""
+					id: "7812E3CB49790DF4"
+					type: "advancement"
+				}
+			]
+			title: "Arsenal do Dispenser"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Alguns golems não lutam — trabalham. Um golem de encantar,"
+				"§7um de biblioteca, e três de ferraria (ferro, ouro e diamante)"
+				"§7tornam a vida muito mais fácil. E tem também o Peter"
+				"§7o'Lantern, que só existe pra ser esquisito mesmo."
+				""
+				"§eConsiga: Smithing Golem (Iron/Gold/Diamond), Enchanting"
+				"§eGolem, Bookshelf Golem e um Peter o'Lantern."
+				"§8§o(Um golem chamado Peter. Ninguém sabe explicar,"
+				"§8§oninguém pediu satisfação.)"
+			]
+			hide_until_deps_complete: true
+			icon: "plenty_of_golems:smithing_golem_diamond_spawn_egg"
+			id: "7E7D021CBF3BEF82"
+			rewards: [
+				{
+					count: 4
+					id: "7849A8EF361F8118"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "560858D74B56FC3C"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "45D059FAF86310A5"
+					item: "plenty_of_golems:smithing_golem_iron_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "72154A84BE0BBE48"
+					item: "plenty_of_golems:smithing_golem_gold_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "021C4A36A795D5EF"
+					item: "plenty_of_golems:smithing_golem_diamond_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "6157D6031A1595DD"
+					item: "plenty_of_golems:enchanting_golem_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "72103AC5DE2B2984"
+					item: "plenty_of_golems:bookshelf_golem_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "62079F1FBD916EB3"
+					item: "plenty_of_golems:peter_o_lantern"
+					type: "item"
+				}
+			]
+			title: "Golens Utilitários"
+			x: -8.0d
+			y: 8.0d
+		}
+	]
+	title: "§4Horrores e Golens"
+}
