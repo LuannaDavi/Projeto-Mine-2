@@ -1,0 +1,1561 @@
+/ ========== TOOLS & ARMOR ==========
+
+/ all wood, stone and gold tools
+group(ID=wooden_sword;ID=wooden_shovel;ID=wooden_pickaxe;ID=wooden_axe;ID=wooden_hoe)@luck=0
+group(ID=stone_sword;ID=stone_shovel;ID=stone_pickaxe;ID=stone_axe;ID=stone_hoe)@luck=0
+group(ID=golden_sword;ID=golden_shovel;ID=golden_pickaxe;ID=golden_axe;ID=golden_hoe)@luck=1
+
+/ 2-3 iron tools
+group:#rand(2,3):(ID=iron_shovel;ID=iron_pickaxe;ID=iron_axe;ID=iron_sword;ID=iron_hoe)@luck=1
+
+/ 1-2 diamond tools
+group:#rand(1,2):(ID=diamond_sword;ID=diamond_shovel;ID=diamond_pickaxe;ID=diamond_axe;ID=diamond_hoe)@luck=2
+
+/ all leather and gold armor
+group(ID=leather_helmet;ID=leather_chestplate;ID=leather_leggings;ID=leather_boots)@luck=0
+group(ID=golden_helmet;ID=golden_chestplate;ID=golden_leggings;ID=golden_boots;ID=golden_horse_armor)@luck=1
+
+/ 2-3 chain and iron armor
+group:#rand(2,3):(ID=chainmail_helmet;ID=chainmail_chestplate;ID=chainmail_leggings;ID=chainmail_boots)@luck=2
+group:#rand(2,3):(ID=iron_helmet;ID=iron_chestplate;ID=iron_leggings;ID=iron_boots;ID=iron_horse_armor)@luck=1
+
+/ 1-2 diamond armor
+group:#rand(1,2):(ID=diamond_helmet;ID=diamond_chestplate;ID=diamond_leggings;ID=diamond_boots;ID=diamond_horse_armor)@luck=2
+
+/ all horse armor
+group(ID=iron_horse_armor;ID=golden_horse_armor;ID=diamond_horse_armor)@luck=2
+
+/ bow and arrows
+group(ID=bow;ID=arrow,amount=#rand(16,32))@luck=1
+
+/ ========== BLOCKS ==========
+
+ID=tnt,amount=8@luck=1
+ID=obsidian,amount=14@luck=1
+ID=enchanting_table@luck=2
+ID=ender_chest,amount=2@luck=0
+ID=beacon@luck=2
+ID=dropper,amount=8@luck=0
+ID=hay_block,amount=8@luck=0
+
+/ chests
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/spawn_bonus_chest"))@luck=0
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/simple_dungeon"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/stronghold_corridor"))@luck=1
+type=block,ID=chest,tileEntity=(Items=#chestLootTable("chests/shipwreck_map"))@luck=1
+
+/ ========= ITEMS ==========
+
+ID=gold_ingot,amount=#rand(8,16)@luck=1
+ID=stick@luck=-1
+ID=painting,amount=4@luck=0
+ID=saddle,amount=2@luck=0
+ID=cake@luck=0
+ID=rotten_flesh@luck=-1
+ID=nether_star@luck=2
+ID=poppy,NBTTag=(display=(Name=#jsonStr(text="Romantic Rose",color=dark_red)))@luck=-1
+ID=rabbit_stew,amount=#rand(5,7)@luck=1
+
+/ ========== GROUPS ==========
+
+/ bookshelves and books
+group(ID=bookshelf,amount=#rand(6,12);ID=book,amount=#rand(8,16))@luck=0
+
+/ pumpkins and jack o'lanterns
+group(ID=pumpkin,amount=#rand(8,16);ID=jack_o_lantern,amount=#rand(8,16))@luck=0
+
+/ golden apples
+group(ID=golden_apple,amount=#rand(2,4);ID=enchanted_golden_apple,amount=#rand(1,2))@luck=2
+
+/ buckets
+group(ID=bucket,amount=#rand(1,2);ID=water_bucket,amount=#rand(1,2);ID=lava_bucket,amount=#rand(1,2);ID=milk_bucket,amount=#rand(1,2))@luck=0
+
+/ meat (raw and cooked)
+group:1:(group(ID=porkchop,amount=#rand(8,16);ID=cooked_porkchop,amount=#rand(4,8));group(ID=salmon,amount=#rand(8,16);ID=cooked_salmon,amount=#rand(4,8));group(ID=beef,amount=#rand(8,16);ID=cooked_beef,amount=#rand(4,8));group(ID=chicken,amount=#rand(8,16);ID=cooked_chicken,amount=#rand(4,8));group(ID=mutton,amount=#rand(8,16);ID=cooked_mutton,amount=#rand(4,8));group(ID=rabbit,amount=#rand(8,16);ID=cooked_rabbit,amount=#rand(4,8)))@luck=1
+
+/ vegetable food (carrots, potatoes, pumpkin pie)
+group:1:(group(ID=carrot,amount=#rand(8,16);ID=golden_carrot,amount=#rand(4,8));group(ID=potato,amount=#rand(8,16);ID=baked_potato,amount=#rand(4,8);ID=poisonous_potato,amount=#rand(2,4));group(ID=pumpkin_pie,amount=#rand(6,12)))@luck=1
+
+/ ender pearls and eyes
+group(ID=ender_pearl,amount=10;ID=ender_eye,amount=5)@luck=2
+
+/ potions
+ID=#randList(potion,splash_potion),NBTTag=(Potion=#randPotion),amount=#rand(4,8)@luck=1
+
+/ spawn eggs
+ID=#randSpawnEgg,amount=#rand(4,8)@luck=1
+
+/ heads
+group:#rand(1,3):(ID=skeleton_skull;ID=wither_skeleton_skull;ID=zombie_head;ID=player_head;ID=creeper_head)@luck=0
+
+/ jukebox and music discs
+group(ID=jukebox;ID=#randList(music_disc_11,music_disc_13,music_disc_blocks,music_disc_chirp,music_disc_far,music_disc_mall,music_disc_mellohi,music_disc_stal,music_disc_strad,music_disc_wait,music_disc_ward),amount=#rand(1,3))@luck=1
+
+/ brewing
+group(ID=ender_pearl,amount=#rand(1,3);ID=blaze_rod,amount=#rand(1,3);ID=ghast_tear,amount=#rand(1,3);ID=gold_nugget,amount=#rand(1,3);ID=nether_wart,amount=#rand(1,3);ID=spider_eye,amount=#rand(1,3);ID=fermented_spider_eye,amount=#rand(1,3);ID=blaze_powder,amount=#rand(1,3);ID=magma_cream,amount=#rand(1,3);ID=ender_eye,amount=#rand(1,3);ID=glistering_melon_slice,amount=#rand(1,3);ID=rabbit_foot,amount=#rand(1,3);type=particle,ID=splashpotion,potion="fire_resistance")@luck=2
+
+/ redstone
+group(ID=dispenser,amount=2;ID=note_block,amount=1;ID=sticky_piston,amount=4;ID=piston,amount=4;ID=tnt,amount=6;ID=lever,amount=2;ID=stone_pressure_plate,amount=2;ID=oak_pressure_plate,amount=2;ID=redstone_torch,amount=8;ID=stone_button,amount=2;ID=oak_trapdoor,amount=2;ID=iron_trapdoor,amount=2;ID=oak_fence_gate,amount=1;ID=redstone_lamp,amount=4;ID=tripwire_hook,amount=2;ID=oak_button,amount=2;ID=light_weighted_pressure_plate,amount=1;ID=heavy_weighted_pressure_plate,amount=1;ID=daylight_detector,amount=1;ID=hopper,amount=4;ID=dropper,amount=#rand(2,4);ID=oak_door,amount=1;ID=iron_door,amount=1;ID=redstone,amount=#rand(32,64);ID=repeater,amount=8;ID=comparator,amount=2;type=particle,ID=splashpotion,potion="healing")@luck=2
+
+/ colorful
+group(group:1:(ID=#randColor_wool,amount=#rand(32,64);ID=#randColor_terracotta,amount=#rand(32,64);ID=#randColor_dye,amount=#rand(32,64));type=particle,ID=splashpotion,potion=#randPotion,amount=10)@luck=1
+
+/ iron, gold, diamond, emerald, lapis, with fireworks
+group(
+    ID=iron_ingot,amount=#rand(8,16);
+    ID=gold_ingot,amount=#rand(8,16);
+    ID=diamond,amount=#rand(8,16);
+    ID=emerald,amount=#rand(8,16);
+    ID=lapis_lazuli,amount=#rand(8,16);
+    type=entity,ID=firework_rocket,NBTTag=(
+        LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=20,posOffset=#circleOffset(0,2)
+)@luck=2
+
+/ quartz
+group(
+    ID=quartz_slab,amount=#rand(4,8);
+    ID=nether_quartz_ore,amount=#rand(16,32);
+    ID=quartz_block,amount=#rand(4,8);
+    ID=quartz_block,damage=1,amount=#rand(4,8);
+    ID=quartz_block,damage=2,amount=#rand(4,8);
+    ID=quartz_stairs,amount=#rand(4,8);ID=quartz,amount=#rand(24,32);
+    type=particle,ID=splashpotion,potion="invisibility"
+)@luck=1
+
+/ fish
+group(ID=fishing_rod;ID=#randList(cod,pufferfish,salmon,tropical_fish),amount=#rand(10,20))@luck=1
+
+/ random jokes
+group:1:(ID=clock,NBTTag=(display=(Name=#jsonStr(text="You're wasting your time")));ID=tropical_fish,NBTTag=(display=(Name=#jsonStr(text="I'm funny")));ID=pufferfish,NBTTag=(display=(Name=#jsonStr(text="Oooooh!"))))@luck=-1
+
+/ flowers
+ID=#randList(dandelion,poppy,blue_orchid,allium,azure_bluet,pink_tulip,oxeye_daisy),amount=64@luck=0
+
+/ enchantment books
+ID=enchanted_book,NBTTag=(StoredEnchantments=#randEnchantment),amount=#rand(7,10)@luck=1
+
+/ prismarine
+group(ID=prismarine,amount=#rand(4,8);ID=prismarine,damage=1,amount=#rand(4,8);ID=prismarine,damage=2,amount=#rand(4,8);ID=sea_lantern,amount=#rand(4,8);ID=prismarine_shard,amount=#rand(15,30);ID=prismarine_crystals,amount=#rand(10,20);type=particle,ID=splashpotion,potion="invisibility")@luck=1
+
+/ ========== ENTITIES ==========
+
+/ lucky mobs
+group:1:(
+    type=entity,ID=pig,NBTTag=(CustomName=#jsonStr(text="Lucky Pig",color=yellow,bold=true),CustomNameVisible=true);
+    type=entity,ID=cow,NBTTag=(CustomName=#jsonStr(text="Lucky Cow",color=yellow,bold=true),CustomNameVisible=true);
+    type=entity,ID=chicken,NBTTag=(CustomName=#jsonStr(text="Lucky Chicken",color=yellow,bold=true),CustomNameVisible=true);
+    type=entity,ID=sheep,NBTTag=(CustomName=#jsonStr(text="Lucky Sheep",color=yellow,bold=true),CustomNameVisible=true);
+    type=entity,ID=rabbit,NBTTag=(CustomName=#jsonStr(text="Lucky Rabbit",color=yellow,bold=true),CustomNameVisible=true);
+    type=entity,ID=squid,NBTTag=(CustomName=#jsonStr(text="Unlucky Squid",color=yellow,bold=true),CustomNameVisible=true)
+)@luck=0
+
+/ colored sheep
+type=entity,ID=sheep,NBTTag=(CustomName=#jsonStr(text="$cM$6r. $eR$aa$2i$bn$3b$5o$dw"),CustomNameVisible=true,Color=#rand(0,15)),posOffset=#circleOffset(4),amount=16@luck=1
+
+/ eggs + diamonds
+group(type=entity,ID=egg,NBTTag=(Motion=#randLaunchMotion(0.6,15)),amount=40;type=entity,ID=item,NBTTag=(Item=(id=diamond,Count=1),Motion=#randLaunchMotion(0.7,18)),amount=20)@luck=2
+
+/ thrown exp bottles
+type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(16,32)@luck=2
+
+
+/ lightning creeper
+group(type=difficulty,ID=hard;type=entity,ID=creeper;type=entity,ID=lightning_bolt)@luck=-2
+/ giant
+group(type=difficulty,ID=hard;type=entity,ID=giant)@luck=-2
+/ ghast
+group(type=difficulty,ID=hard;type=entity,ID=ghast)@chance=0.2@luck=-2
+/ elder guardian
+group(type=difficulty,ID=hard;type=entity,ID=guardian,NBTTag=(Elder=1))@chance=0.5@luck=-2
+/ killer rabbit
+group(type=difficulty,ID=hard;type=entity,ID=rabbit,NBTTag=(RabbitType=99))@luck=-1
+
+/ bob the zombie
+group(type=difficulty,ID=hard;type=entity,ID=zombie,NBTTag=(
+    HandItems=[(id=diamond_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],
+    ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+    HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+    CustomName=#jsonStr(text="Bob",color=blue,bold=true),CustomNameVisible=true)
+)@luck=-2
+
+/ ghostly horseman skeleton
+group(type=difficulty,ID=hard;type=entity,ID=bat,NBTTag=(
+    Silent=true,
+    ActiveEffects=[(Id=14,Duration=100000,Amplifier=1,ShowParticles=false)],
+    Passengers=[(id=skeleton_horse,Tame=true,Type=4,
+        Passengers=[(id=skeleton,
+            HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],
+            ArmorItems=[(id=chainmail_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=chainmail_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=chainmail_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=chainmail_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],
+            HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],
+            CustomName=#jsonStr(text="Ghostly Horseman",color=gray,bold=true),CustomNameVisible=true)
+        ])
+    ])
+)@luck=-2
+
+/ stacked villager and pigs
+type=entity,ID=pig,NBTTag=(Passengers=[(id=pig,Passengers=[(id=pig,Passengers=[(id=pig,Passengers=[(id=pig,Passengers=[(id=pig,Passengers=[(id=pig,Passengers=[(id=pig,Passengers=[(id=villager,VillagerData=(profession=nitwit))])])])])])])])])@luck=0
+
+/ horses
+type=entity,ID=#randList(horse,skeleton_horse,zombie_horse),amount=12,posOffset=#circleOffset(4),NBTTag=(Tame=true,Owner=#pUUIDArray)@luck=1
+
+/ llamas
+type=entity,ID=llama,amount=8,posOffset=#circleOffset(4),NBTTag=(CustomName=#jsonStr(text=#randList(Llaura,Llauretta,Llavender,Llinda,Llisa,Llouise,Llucy,Llydia),color=dark_purple,bold=true),Variant=#rand(0,3),CustomNameVisible=true)@luck=0
+
+/ witch with bats
+group(type=difficulty,ID=hard;type=entity,ID=witch;type=entity,ID=bat,posY=#bPosY+#rand(0,2),posOffset=#circleOffset(0,1),amount=64)@luck=-1
+/ huge slime and magma cube
+group:1:(type=entity,ID=slime,NBTTag=(Size=10);type=entity,ID=magma_cube,NBTTag=(Size=10))@luck=-2
+
+/ pet wolves
+group(type=entity,ID=wolf,amount=#rand(5,10),posOffset=#circleOffset(3),NBTTag=(CollarColor=#rand(0,15),Owner=#pUUIDArray,Sitting=true);type=particle,ID="heart",size=(2,0,2),particleAmount=20)@luck=1
+/ pet cats
+group(type=entity,ID=cat,amount=#rand(5,10),posOffset=#circleOffset(3),NBTTag=(CatType=#rand(0,10),CollarColor=#rand(0,15),Owner=#pUUIDArray,Sitting=true);type=particle,ID="heart",size=(2,0,2),particleAmount=20)@luck=1
+/ pet rabbits
+group(type=entity,ID=rabbit,amount=#rand(5,10),posOffset=#circleOffset(3),NBTTag=(RabbitType=#rand(0,5));type=particle,ID="heart",size=(2,0,2),particleAmount=20)@luck=1
+
+/ hero villagers
+
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=weaponsmith,type=jungle),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=diamond_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Hero's Sword",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Hero's Bow",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=fishing_rod,Count=1,tag=(Enchantments=#luckyFishingRodEnchantments,display=(Name=#jsonStr(text="Hero's Fishing Rod",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=potion,Count=1,tag=(Potion="fire_resistance",CustomPotionEffects=#luckyPotionEffects,display=(Name=#jsonStr(text="Hero's Potion",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(7,12)),sell=(id=splash_potion,Count=1,tag=(Potion="harming",CustomPotionEffects=#unluckyPotionEffects,display=(Name=#jsonStr(text="Evil Potion",color=blue,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Hero Villager",color=blue,bold=true),CustomNameVisible=true
+)@luck=1
+
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=armorer,type=jungle),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(12,17)),sell=(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Hero's Helmet",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(20,25)),sell=(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Hero's Chestplate",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Hero's Leggings",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(12,17)),sell=(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Hero's Boots",color=blue,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Hero Villager",color=blue,bold=true),CustomNameVisible=true
+)@luck=1
+
+type=entity,ID=villager,NBTTag=(
+    VillagerData=(level=3,profession=toolsmith,type=jungle),
+    Offers=(Recipes=[
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=diamond_shovel,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero's Shovel",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=diamond_pickaxe,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero's Pickaxe",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(15,20)),sell=(id=diamond_axe,Count=1,tag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Hero's Axe",color=blue,bold=true)))),maxUses=1),
+        (buy=(id=diamond,Count=#rand(10,15)),sell=(id=diamond_hoe,Count=1,tag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero's Hoe",color=blue,bold=true)))),maxUses=1)
+    ]),
+    CustomName=#jsonStr(text="Hero Villager",color=blue,bold=true),CustomNameVisible=true
+)@luck=1
+
+/ falling blocks (iron, gold, diamond, emerald)
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=iron_block));type=particle,ID=large_smoke,size=(1,2,1),particleAmount=500;type=sound,ID=block.fire.extinguish)@luck=0
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=gold_block));type=particle,ID=flame,size=(1,2,1),particleAmount=500;type=sound,ID=entity.ghast.shoot)@luck=0
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=diamond_block));type=entity,ID=lightning_bolt)@luck=1
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=emerald_block));type=particle,ID=happy_villager,size=(1,2,1),particleAmount=500;type=sound,ID=block.grass.break)@luck=0
+
+group(type=fill,ID=air,size=(1,8,1);type=entity,ID=falling_block,posY=#bPosY+7,NBTTag=(BlockState=(Name=lapis_block));type=particle,ID=splash,size=(1,2,1),particleAmount=1000;type=sound,ID=entity.player.swim)@luck=0
+
+/ colorful pole
+group(type=fill,ID=air,size=(1,51,1);
+    group(
+        NBTTag=(BlockState=(Name=red_glazed_terracotta)),posY=#bPosY+5;
+        NBTTag=(BlockState=(Name=orange_glazed_terracotta)),posY=#bPosY+10;
+        NBTTag=(BlockState=(Name=yellow_glazed_terracotta)),posY=#bPosY+15;
+        NBTTag=(BlockState=(Name=lime_glazed_terracotta)),posY=#bPosY+20;
+        NBTTag=(BlockState=(Name=light_blue_glazed_terracotta)),posY=#bPosY+25;
+        NBTTag=(BlockState=(Name=blue_glazed_terracotta)),posY=#bPosY+30;
+        NBTTag=(BlockState=(Name=purple_glazed_terracotta)),posY=#bPosY+35;
+        NBTTag=(BlockState=(Name=magenta_glazed_terracotta)),posY=#bPosY+40;
+        NBTTag=(BlockState=(Name=pink_glazed_terracotta)),posY=#bPosY+45
+    ),type=entity,ID=falling_block;
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=diamond_block)),posY=#bPosY+50;
+    type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=5.3
+)@luck=2
+
+group(type=fill,ID=air,size=(1,51,1);
+    type=entity,ID=falling_block,NBTTag=(BlockState=(Name=redstone_block)),posY=#bPosY+5;
+    group(posY=#bPosY+10;posY=#bPosY+15;posY=#bPosY+20;posY=#bPosY+25;posY=#bPosY+30;posY=#bPosY+35;posY=#bPosY+40;posY=#bPosY+45;posY=#bPosY+50),type=entity,ID=falling_block,NBTTag=(BlockState=(Name=tnt))
+)@luck=2
+
+/ baby player
+type=entity,ID=armor_stand,NBTTag=(Small=true,NoBasePlate=true,ShowArms=true,HandItems=[(id=stone_pickaxe,Count=1)],ArmorItems=[(id=leather_boots,Count=1,tag=(display=(color=#randColor))),(id=leather_leggings,Count=1,tag=(display=(color=#randColor))),(id=leather_chestplate,Count=1,tag=(display=(color=#randColor))),(id=player_head,Count=1,tag=(SkullOwner=#pName))],Rotation=[#pYaw+180f,0f],CustomName=#jsonStr(text="Baby #pName"),CustomNameVisible=true)@luck=0
+
+
+group(
+    / sword, difficulty, time, potion effects
+    ID=wooden_sword;
+    type=difficulty,ID=hard;
+    type=time,ID=18750;
+    type=effect,ID=slowness,duration=30,amplifier=4;
+    type=effect,ID=blindness,duration=30;
+    group:1:(
+        / zombies, creepers, spiders & cave spiders, silverfish & endermites, guardians
+        type=entity,ID=zombie,amount=#rand(20,50);
+        type=entity,ID=creeper,amount=#rand(10,30);
+        group(type=entity,ID=spider,amount=#rand(15,45);type=entity,ID=cave_spider,amount=#rand(5,10));
+        group(type=entity,ID=silverfish,amount=#rand(15,45);type=entity,ID=endermite,amount=#rand(5,10));
+        type=entity,ID=guardian,amount=#rand(10,30);
+        / all at once
+        group(
+            type=entity,ID=zombie,amount=#rand(20,50);
+            type=entity,ID=creeper,amount=#rand(10,30);
+            group(type=entity,ID=spider,amount=#rand(15,45);type=entity,ID=cave_spider,amount=#rand(5,10);
+            type=entity,ID=silverfish,amount=#rand(15,45);type=entity,ID=endermite,amount=#rand(5,10);
+            type=entity,ID=guardian,amount=#rand(10,30))
+        )
+    ),posOffset=#circleOffset(8,10)
+)@luck=-2
+
+/ ========== STRUCTURES ==========
+
+group(
+    type=structure,ID=cage,pos=#pPos,rotation=#pDirect;
+    type=fill,ID=air,size=(1,70,1),pos=#pPos;type=fill,ID=anvil,size=(1,2,1),pos=(#pPosX,#pPosY+70,#pPosZ)
+)@luck=-2
+
+group(
+    type=structure,ID=cage,pos=#pPos,rotation=#pDirect;
+    type=block,ID=lava,pos=(#pPosX,#pPosY+3,#pPosZ)
+)@luck=-2
+
+
+group(
+    type=fill,ID=air,size=(3,20,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=lava,size=(3,1,3),pos=(#pPosX-1,#pPosY-20,#pPosZ-1);
+    type=fill,ID=cobweb,size=(3,1,3),pos=(#pPosX-1,#pPosY-19,#pPosZ-1)
+)@luck=-2
+
+/ lucky buildings
+type=structure,ID=lucky_fort,pos=#pPos@luck=2
+type=structure,ID=lucky_temple,pos=#pPos@chance=0.4@luck=2
+
+/ bedrock problem
+
+/ explosion
+
+/ choice of 2 lucky blocks
+group:1:(type=structure,ID=lucky_choice_left,rotation=#pDirect;type=structure,ID=lucky_choice_right,rotation=#pDirect)@luck=0
+
+/ wishing wells
+group(
+    type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$bYour wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag='#'randFireworksRocket)),amount=20,posY='#'bPosY+3,posOffset='#'circleOffset(2);
+        ID=gold_ingot,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=diamond,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=emerald,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=lapis_lazuli,amount=#rand(20,30),posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=2
+
+group(
+    type=structure,ID=wishing_well;type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$eYour wish came true! (If you like potatoes)\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        ID=potato,amount=128,posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=baked_potato,amount=64,posY='#'bPosY+10,posOffset='#'circleOffset(2);
+        ID=poisonous_potato,amount=32,posY='#'bPosY+10,posOffset='#'circleOffset(2)
+    )"])
+)@luck=1
+
+group(
+    type=structure,ID=wishing_well;
+    type=message,ID="A wishing well? Maybe you should throw in a coin...";
+    type=command,ID=/give #pName gold_nugget{display:{Name:"{\"text\":\"Coin\",\"color\":\"gold\"}"}};
+    type=block,ID=lucky:lucky_block,posY=#bPosY-3,NBTTag=(Drops=["group(
+        type=message,ID=\"$4Your death wish came true!\";
+        type=block,ID=air,posY='#'bPosY+3;
+        type=block,ID=beacon,posY='#'bPosY+2;
+        type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion='#'randLaunchMotion),posY='#'bPosY+7,amount=20
+    )"])
+)@luck=-2
+
+/ bouncing castle
+type=structure,ID=bouncing_castle,pos=#pPos,rotation=#pDirect
+
+/ giant lucky blocks
+type=structure,ID=giant_lucky_block_good,rotation=#pDirect@luck=2
+
+/ ========== ENCHANTED + LUCKY ITEMS ==========
+
+/ hero's sword
+ID=diamond_sword,NBTTag=(Enchantments=#luckySwordEnchantments,display=(Name=#jsonStr(text="Hero's Sword",color=blue,bold=true)))@luck=2
+
+/ hero's bow
+ID=bow,NBTTag=(Enchantments=#luckyBowEnchantments,display=(Name=#jsonStr(text="Hero's Bow",color=blue,bold=true)))@luck=2
+
+/ hero's crossbow, trident
+group:1:(ID=crossbow,NBTTag=(Enchantments=#luckyCrossbowEnchantments,display=(Name=#jsonStr(text="Hero's Crossbow",color=blue,bold=true)));ID=trident,NBTTag=(Enchantments=#luckyTridentEnchantments,display=(Name=#jsonStr(text="Hero's Trident",color=blue,bold=true))))@luck=2
+
+/ hero's tools
+group:#rand(1,2):(
+    ID=diamond_shovel,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero's Shovel",color=blue,bold=true)));
+    ID=diamond_pickaxe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero's Pickaxe",color=blue,bold=true)));
+    ID=diamond_axe,NBTTag=(Enchantments=#luckyAxeEnchantments,display=(Name=#jsonStr(text="Hero's Axe",color=blue,bold=true)));
+    ID=diamond_hoe,NBTTag=(Enchantments=#luckyToolEnchantments,display=(Name=#jsonStr(text="Hero's Hoe",color=blue,bold=true)));
+    ID=fishing_rod,NBTTag=(Enchantments=#luckyFishingRodEnchantments,display=(Name=#jsonStr(text="Hero's Fishing Rod",color=blue,bold=true)))
+)@luck=2
+
+/ hero's armor
+group:#rand(1,2):(
+    ID=diamond_helmet,NBTTag=(Enchantments=#luckyHelmetEnchantments,display=(Name=#jsonStr(text="Hero's Helmet",color=blue,bold=true)));
+    ID=diamond_chestplate,NBTTag=(Enchantments=#luckyChestplateEnchantments,display=(Name=#jsonStr(text="Hero's Chestplate",color=blue,bold=true)));
+    ID=diamond_leggings,NBTTag=(Enchantments=#luckyLeggingsEnchantments,display=(Name=#jsonStr(text="Hero's Leggings",color=blue,bold=true)));
+    ID=diamond_boots,NBTTag=(Enchantments=#luckyBootsEnchantments,display=(Name=#jsonStr(text="Hero's Boots",color=blue,bold=true)))
+)@luck=2
+
+/ hero's potion
+ID=potion,NBTTag=(
+    Potion="fire_resistance",
+    CustomPotionEffects=#luckyPotionEffects,
+    display=(Name=#jsonStr(text="Hero's Potion",color=blue,bold=true))
+)@luck=2
+
+/ evil potion
+ID=splash_potion,NBTTag=(
+    Potion="harming",
+    CustomPotionEffects=#unluckyPotionEffects,
+    display=(Name=#jsonStr(text="Evil Potion",color=dard_red,bold=true))
+)@luck=1
+
+/ lucky items
+type=item,ID=lucky:lucky_sword@chance=1.5@luck=2
+type=item,ID=lucky:lucky_bow@chance=1.5@luck=2
+type=item,ID=lucky:lucky_potion,NBTTag=(Luck=#randList(100,-100)),amount=#rand(10,15)@chance=1.5@luck=2
+
+group(
+    type=item,ID=lucky:lucky_sword;
+    type=item,ID=lucky:lucky_bow;
+    type=item,ID=lucky:lucky_potion,NBTTag=(Luck=#randList(100,-100)),amount=#rand(10,15);
+    type=entity,ID=firework_rocket,NBTTag=(
+        LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=20,posOffset=#circleOffset(0,2)
+)@luck=2
+
+/ ============================================================
+/ ADICOES PERSONALIZADAS - ITENS DE MODS (EXPANDIDO)
+/ Cole no FINAL de config/lucky/drops.txt
+/ Todos os IDs validados contra os jars reais.
+/ Curadoria evita: itens essenciais de progressao (glyphs,
+/ essences base de craft), e itens isolados muito fortes
+/ (vida extra permanente, elytra infinito, etc).
+/
+/ Faixa de @luck: -2 (pessimo) a +2 (excelente)
+/ ============================================================
+
+/ ========== LUCK -2 (pessimo) ==========
+ID=create:zinc_ingot,amount=#rand(1,2)@luck=-2
+
+/ ========== LUCK -1 (levemente ruim) ==========
+ID=mysticalagriculture:inferium_essence,amount=#rand(2,4)@luck=-1
+ID=create:andesite_alloy,amount=#rand(2,4)@luck=-1
+ID=camping:marshmallow,amount=#rand(2,5)@luck=-1
+ID=swem:horse_armor_cloth@luck=-1
+ID=aether:ambrosium_shard,amount=#rand(2,4)@luck=-1
+
+/ ========== LUCK 0 (neutro / comum) ==========
+ID=farmersdelight:beef_stew@luck=0
+ID=bakery:bundt_cake_slice,amount=#rand(2,5)@luck=0
+ID=create:brass_ingot,amount=#rand(2,4)@luck=0
+ID=ars_nouveau:source_gem,amount=#rand(1,3)@luck=0
+ID=irons_spellbooks:arcane_essence,amount=#rand(2,4)@luck=0
+ID=braziliandelight:carrot_cake@luck=0
+ID=aquaculturedelight:fish_and_chips@luck=0
+ID=buzzier_bees:honey_bread,amount=#rand(1,2)@luck=0
+ID=ecologics:coconut,amount=#rand(1,3)@luck=0
+ID=handcrafted:fox_trophy@luck=0
+ID=irons_spellbooks:copper_spell_book@luck=0
+ID=camping:walking_stick@luck=0
+ID=swem:horse_armor_iron@luck=0
+ID=blue_skies:moonstone_crystal,amount=#rand(1,2)@luck=0
+ID=ironchest:copper_chest@luck=0
+
+/ ========== LUCK 1 (bom) ==========
+ID=sophisticatedbackpacks:backpack@luck=1
+ID=waystones:waystone@luck=1
+ID=artifacts:lucky_scarf@luck=1
+ID=artifacts:running_shoes@luck=1
+ID=relics:jellyfish_necklace@luck=1
+ID=mysticalagriculture:supremium_essence,amount=#rand(2,4)@luck=1
+ID=create:precision_mechanism,amount=#rand(1,2)@luck=1
+ID=braziliandelight:plate_of_feijoada,amount=#rand(1,2)@luck=1
+ID=irons_spellbooks:diamond_spell_book@luck=1
+ID=relics:hunter_belt@luck=1
+ID=moblassos:golden_lasso@luck=1
+ID=handcrafted:wither_skeleton_trophy@luck=1
+ID=swem:horse_armor_diamond@luck=1
+ID=travelersbackpack:diamond_tier_upgrade@luck=1
+ID=aether:diamond_gloves@luck=1
+ID=blue_skies:pyrope_gem,amount=#rand(1,2)@luck=1
+ID=ironchest:gold_chest@luck=1
+
+/ ========== LUCK 2 (excelente / raro) ==========
+ID=relics:elytra_booster@luck=2
+ID=irons_spellbooks:dragonskin_spell_book@luck=2
+ID=ars_nouveau:arcane_core@luck=2
+ID=irons_spellbooks:netherite_spell_book@luck=2
+ID=relics:holy_locket@luck=2
+ID=create:creative_motor@luck=2
+ID=artifacts:crystal_heart@luck=2
+ID=swem:adventure_saddle_netherite@luck=2
+ID=moblassos:diamond_lasso@luck=2
+ID=aether:gold_dungeon_key@luck=2
+ID=ironchest:diamond_chest@luck=2
+
+/ grupo - kit de exploracao raro
+group(ID=waystones:waystone;ID=create:precision_mechanism,amount=2;ID=sophisticatedbackpacks:backpack)@luck=2
+
+/ grupo - kit de festa brasileira
+group(ID=braziliandelight:carrot_cake;ID=braziliandelight:plate_of_feijoada;ID=braziliandelight:brigadeiro_cream,amount=2)@luck=1
+
+/ ============================================================
+/ DROPS ADICIONAIS - VARIEDADE EXTRA
+/ ============================================================
+
+/ ========== EVENTOS POSITIVOS ==========
+
+/ chuva de esmeraldas
+group(ID=emerald,amount=#rand(16,32);type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)),amount=10,posOffset=#circleOffset(0,2))@luck=2
+
+/ kit de sobrevivencia
+group(ID=cooked_beef,amount=#rand(8,16);ID=golden_apple,amount=#rand(2,4);ID=iron_pickaxe;ID=torch,amount=32)@luck=1
+
+/ kit de construcao
+group(ID=oak_log,amount=64;ID=smooth_stone,amount=32;ID=glass,amount=16;ID=ladder,amount=16)@luck=1
+
+/ kit de pocoes
+group(ID=potion,NBTTag=(Potion=minecraft:strong_healing),amount=4;ID=potion,NBTTag=(Potion=minecraft:swiftness),amount=4;ID=potion,NBTTag=(Potion=minecraft:fire_resistance),amount=2)@luck=1
+
+/ chuva de exp
+type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(32,64)@luck=2
+
+/ aldeao mercador especial
+type=entity,ID=villager,NBTTag=(VillagerData=(level=5,profession=librarian,type=plains),CustomName=#jsonStr(text="Lucky Scholar",color=aqua,bold=true),CustomNameVisible=true)@luck=2
+
+/ enderchest + shulker box
+group(ID=ender_chest;ID=purple_shulker_box)@luck=2
+
+/ ========== EVENTOS NEUTROS / SURPRESA ==========
+
+/ fogos de artificio surpresa
+type=entity,ID=firework_rocket,NBTTag=(LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)),amount=40,posOffset=#circleOffset(0,4)@luck=0
+
+/ mensagem misterias
+group:1:(type=message,ID="The stars are aligned in your favor.";type=message,ID="Fortune smiles upon you.";type=message,ID="Today is your lucky day!";type=message,ID="The universe has noticed you.")@luck=1
+
+/ mudanca de hora
+group:1:(type=time,ID=6000;type=time,ID=18000)@luck=0
+
+/ efeito de sorte temporario
+type=effect,ID=luck,duration=300,amplifier=1@luck=1
+
+/ ========== EVENTOS NEGATIVOS (sem destruicao permanente) ==========
+
+/ cegamento temporario
+group(type=effect,ID=blindness,duration=10;type=effect,ID=nausea,duration=10;type=message,ID="Oops.")@luck=-1
+
+/ levitacao
+group(type=effect,ID=levitation,duration=5,amplifier=3;type=message,ID="Up, up and away!")@luck=-1
+
+/ potion ruim
+group(ID=splash_potion,NBTTag=(Potion=minecraft:slowness);type=entity,ID=splash_potion,NBTTag=(Potion=minecraft:weakness,Motion=#randLaunchMotion),amount=4)@luck=-1
+
+/ esqueleto arqueiro
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=bow,Count=1,tag=(Enchantments=[(id=power,lvl=3)]))],ArmorItems=[(id=iron_helmet,Count=1),(id=iron_chestplate,Count=1)],CustomName=#jsonStr(text="Lucky Shooter",color=red,bold=true),CustomNameVisible=true),posOffset=#circleOffset(4,5))@luck=-1
+
+/ enderman zangado
+group(type=difficulty,ID=hard;type=entity,ID=enderman,NBTTag=(AngerTime=1000),posOffset=#circleOffset(2,4),amount=#rand(2,4))@luck=-2
+
+/ trovao sem dano
+type=entity,ID=lightning_bolt@luck=-1
+/ ============================================================
+/ ADICOES PERSONALIZADAS - RODADA 2 (varredura completa dos mods)
+/ Gerado apos verificacao de todos os IDs contra os .jar reais.
+/ Cobre: artifacts, relics, aether, ecologics, buzzier_bees,
+/ camping, handcrafted, moblassos, ironchest, mowziesmobs,
+/ bakery, farm_and_charm, create_confectionery, bygonenether,
+/ cropcritters, knightquest, wind_spellbooks, l2archery,
+/ l2complements, block_factorys_bosses, plenty_of_golems,
+/ mekanismtools, mysticalagriculture, cataclysm,
+/ legendary_monsters, somakespells, outer_end.
+/ Fora do escopo desta rodada (fica para proxima sessao):
+/ chisel, railways, bf_blockpack, quark, create, butchery,
+/ blue_skies, twilightforest, alexscaves, born_in_chaos,
+/ minecolonies, ars_nouveau, irons_spellbooks (parcial),
+/ supplementaries, alexsmobs, infectious, hearth_and_home,
+/ refurbished_furniture, tide, ad_astra, mekanism, ftbquests,
+/ fantasy_weapons, wom, simple_weapons, swem (parcial),
+/ mysti, celestisynth, sophisticatedbackpacks, farmersdelight,
+/ braziliandelight, aquaculturedelight, travelersbackpack,
+/ waystones, e mais ~90 mods menores.
+/ ============================================================
+
+/ ---------- LUCK -1 (levemente ruim / curiosidade) ----------
+ID=ecologics:cooked_prickly_pear,amount=#rand(2,4)@luck=-1
+ID=cropcritters:herbicide@luck=-1
+ID=knightquest:small_essence,amount=#rand(2,4)@luck=-1
+ID=aether:leather_gloves@luck=-1
+
+/ ---------- LUCK 0 (comum) ----------
+ID=artifacts:onion_ring@luck=0
+ID=artifacts:novelty_drinking_hat@luck=0
+ID=artifacts:snowshoes@luck=0
+ID=artifacts:snorkel@luck=0
+ID=artifacts:flippers@luck=0
+ID=ecologics:walnut,amount=#rand(4,8)@luck=0
+ID=ecologics:coconut_slice,amount=#rand(2,4)@luck=0
+ID=ecologics:tropical_stew@luck=0
+ID=buzzier_bees:honey_apple@luck=0
+ID=buzzier_bees:glazed_porkchop@luck=0
+ID=buzzier_bees:bee_bottle@luck=0
+ID=camping:multitool@luck=0
+ID=camping:roasted_marshmallow,amount=#rand(2,4)@luck=0
+ID=camping:marshmallow_on_a_stick,amount=2@luck=0
+ID=bakery:croissant,amount=#rand(2,3)@luck=0
+ID=bakery:sandwich,amount=#rand(1,2)@luck=0
+ID=bakery:jam_roll,amount=#rand(1,2)@luck=0
+ID=farm_and_charm:bacon_with_eggs@luck=0
+ID=farm_and_charm:roasted_chicken@luck=0
+ID=farm_and_charm:dungarees@luck=0
+ID=create_confectionery:honey_candy,amount=#rand(2,4)@luck=0
+ID=create_confectionery:hot_chocolate_bottle@luck=0
+ID=create_confectionery:gingerbread_man@luck=0
+ID=knightquest:filled_goblet@luck=0
+ID=l2archery:diamond_arrow,amount=#rand(8,16)@luck=0
+ID=l2archery:gold_arrow,amount=#rand(8,16)@luck=0
+ID=mekanismtools:bronze_sword@luck=0
+ID=block_factorys_bosses:coin_pile,amount=#rand(2,4)@luck=0
+ID=aether:golden_feather@luck=0
+ID=outer_end:cured_jerky,amount=#rand(2,4)@luck=0
+ID=outer_end:cured_chorus_fruit,amount=#rand(2,4)@luck=0
+ID=plenty_of_golems:fire_rune@luck=0
+
+/ ---------- LUCK 1 (bom) ----------
+ID=artifacts:cowboy_hat@luck=1
+ID=artifacts:digging_claws@luck=1
+ID=artifacts:cloud_in_a_bottle@luck=1
+ID=artifacts:helium_flamingo@luck=1
+ID=artifacts:aqua_dashers@luck=1
+ID=artifacts:bunny_hoppers@luck=1
+ID=relics:leather_belt@luck=1
+ID=relics:aqua_walker@luck=1
+ID=relics:magma_walker@luck=1
+ID=relics:ice_skates@luck=1
+ID=relics:roller_skates@luck=1
+ID=relics:horse_flute@luck=1
+ID=relics:midnight_robe@luck=1
+ID=aether:bronze_dungeon_key@luck=1
+ID=aether:candy_cane_sword@luck=1
+ID=aether:iron_gloves@luck=1
+ID=aether:golden_gloves@luck=1
+ID=aether:blue_moa_egg@luck=1
+ID=aether:white_moa_egg@luck=1
+ID=ecologics:crab_claw,amount=#rand(2,4)@luck=1
+ID=ecologics:crab_meat,amount=#rand(4,8)@luck=1
+ID=buzzier_bees:four_leaf_clover,amount=2@luck=1
+ID=handcrafted:bear_trophy@luck=1
+ID=handcrafted:creeper_trophy@luck=1
+ID=handcrafted:evoker_trophy@luck=1
+ID=handcrafted:pillager_trophy@luck=1
+ID=handcrafted:vindicator_trophy@luck=1
+ID=handcrafted:witch_trophy@luck=1
+ID=handcrafted:blaze_trophy@luck=1
+ID=handcrafted:goat_trophy@luck=1
+ID=handcrafted:hammer@luck=1
+ID=handcrafted:fancy_painting@luck=1
+ID=moblassos:aqua_lasso@luck=1
+ID=moblassos:hostile_lasso@luck=1
+ID=ironchest:copper_to_iron_chest_upgrade@luck=1
+ID=ironchest:iron_to_gold_chest_upgrade@luck=1
+ID=mowziesmobs:naga_fang,amount=#rand(1,3)@luck=1
+ID=mowziesmobs:glowing_jelly,amount=#rand(2,4)@luck=1
+ID=mowziesmobs:ice_crystal,amount=#rand(1,3)@luck=1
+ID=bakery:donut,amount=#rand(1,3)@luck=1
+ID=bakery:chocolate_truffle,amount=#rand(2,4)@luck=1
+ID=farm_and_charm:goulash@luck=1
+ID=farm_and_charm:farmer_salad@luck=1
+ID=farm_and_charm:oatmeal_with_strawberries@luck=1
+ID=create_confectionery:bar_of_caramel,amount=#rand(1,2)@luck=1
+ID=create_confectionery:bar_of_black_chocolate,amount=#rand(1,2)@luck=1
+ID=create_confectionery:bar_of_white_chocolate,amount=#rand(1,2)@luck=1
+ID=create_confectionery:bar_of_ruby_chocolate,amount=#rand(1,2)@luck=1
+ID=bygonenether:netherite_scrap_ingot@luck=1
+ID=bygonenether:crushed_withered_debris,amount=#rand(1,2)@luck=1
+ID=bygonenether:soul_stone,amount=#rand(1,2)@luck=1
+ID=cropcritters:seed_bar,amount=#rand(1,2)@luck=1
+ID=cropcritters:strange_fertilizer,amount=#rand(2,4)@luck=1
+ID=knightquest:great_essence,amount=#rand(1,2)@luck=1
+ID=wind_spellbooks:wind_rune@luck=1
+ID=l2archery:eagle_bow@luck=1
+ID=l2complements:eternium_ingot,amount=#rand(1,3)@luck=1
+ID=l2complements:guardian_eye@luck=1
+ID=l2complements:life_essence,amount=#rand(1,2)@luck=1
+ID=block_factorys_bosses:dragon_bone,amount=#rand(1,3)@luck=1
+ID=block_factorys_bosses:dragon_shank,amount=#rand(1,2)@luck=1
+ID=mekanismtools:osmium_sword@luck=1
+ID=mekanismtools:osmium_pickaxe@luck=1
+ID=mekanismtools:lapis_lazuli_sword@luck=1
+ID=mysticalagriculture:inferium_ingot,amount=#rand(2,4)@luck=1
+ID=mysticalagriculture:prosperity_ingot,amount=#rand(2,4)@luck=1
+ID=mysticalagriculture:prudentium_essence,amount=#rand(2,4)@luck=1
+ID=cataclysm:crystallized_coral_fragments,amount=#rand(2,4)@luck=1
+ID=legendary_monsters:ancient_sandstone_shard,amount=#rand(1,3)@luck=1
+ID=somakespells:ancient_metal_plate,amount=#rand(1,2)@luck=1
+ID=outer_end:floral_paste,amount=#rand(2,4)@luck=1
+ID=outer_end:halite_crystal,amount=#rand(2,4)@luck=1
+
+/ ---------- LUCK 2 (excelente / raro) ----------
+ID=artifacts:power_glove@luck=2
+ID=artifacts:vampiric_glove@luck=2
+ID=artifacts:fire_gauntlet@luck=2
+ID=artifacts:obsidian_skull@luck=2
+ID=artifacts:chorus_totem@luck=2
+ID=relics:magic_mirror@luck=2
+ID=relics:infinity_ham@luck=2
+ID=relics:bastion_ring@luck=2
+ID=relics:enders_hand@luck=2
+ID=relics:reflection_necklace@luck=2
+ID=aether:silver_dungeon_key@luck=2
+ID=aether:black_moa_egg@luck=2
+ID=mowziesmobs:sol_visage@luck=2
+ID=mowziesmobs:geomancer_beads@luck=2
+ID=ironchest:gold_to_diamond_chest_upgrade@luck=2
+ID=knightquest:chaotic_essence,amount=#rand(1,2)@luck=2
+ID=knightquest:radiant_essence@luck=2
+ID=wind_spellbooks:wind_upgrade_orb@luck=2
+ID=l2archery:master_bow@luck=2
+ID=l2complements:guardian_rune@luck=2
+ID=l2complements:resonant_feather,amount=#rand(1,2)@luck=2
+ID=block_factorys_bosses:kraken_tooth,amount=#rand(1,2)@luck=2
+ID=mekanismtools:osmium_shield@luck=2
+ID=mysticalagriculture:tertium_essence,amount=#rand(1,3)@luck=2
+ID=cataclysm:monstrous_horn@luck=2
+ID=cataclysm:essence_of_the_storm@luck=2
+ID=legendary_monsters:primal_ice_shard,amount=#rand(1,2)@luck=2
+ID=legendary_monsters:withered_horn@luck=2
+ID=plenty_of_golems:firework_rune,amount=#rand(1,2)@luck=2
+
+/ grupo - bau de trofeus de caca (handcrafted)
+group:#rand(1,2):(ID=handcrafted:bear_trophy;ID=handcrafted:goat_trophy;ID=handcrafted:blaze_trophy;ID=handcrafted:evoker_trophy)@luck=1
+
+/ grupo - kit doce (bakery + create_confectionery)
+group(ID=bakery:donut,amount=2;ID=create_confectionery:bar_of_caramel;ID=create_confectionery:hot_chocolate_bottle)@luck=1
+
+/ ============================================================
+/ ADICOES PERSONALIZADAS - RODADA 3
+/ Cobre: waystones, sophisticatedbackpacks, travelersbackpack,
+/ farmersdelight, braziliandelight, aquaculturedelight,
+/ ars_nouveau, irons_spellbooks (aneis/amuletos), quark,
+/ supplementaries, alexsmobs, blue_skies (trofeus),
+/ twilightforest (trofeus e charms, sem gear de boss).
+/ hearth_and_home e refurbished_furniture verificados: so tem
+/ blocos decorativos, nada relevante pra dropar.
+/ Fora do escopo ainda: infectious, minecolonies, ad_astra,
+/ mekanism, fantasy_weapons, wom, simple_weapons, swem (resto),
+/ celestisynth, mysti, born_in_chaos, alexscaves, butchery,
+/ chisel, railways, bf_blockpack.
+/ ============================================================
+
+/ ---------- LUCK 0 ----------
+ID=waystones:warp_dust,amount=#rand(2,4)@luck=0
+ID=farmersdelight:hamburger@luck=0
+ID=farmersdelight:fried_rice@luck=0
+ID=farmersdelight:apple_cider@luck=0
+ID=farmersdelight:hot_cocoa@luck=0
+ID=farmersdelight:iron_knife@luck=0
+ID=braziliandelight:coxinha,amount=#rand(1,3)@luck=0
+ID=braziliandelight:cheese_bread,amount=#rand(1,3)@luck=0
+ID=braziliandelight:straw_hat@luck=0
+ID=aquaculturedelight:tuna_spaghetti@luck=0
+ID=aquaculturedelight:catfish_barbecue@luck=0
+ID=ars_nouveau:mundane_belt@luck=0
+ID=quark:seed_pouch@luck=0
+ID=supplementaries:flute@luck=0
+ID=supplementaries:slingshot@luck=0
+ID=supplementaries:bomb,amount=#rand(1,2)@luck=0
+ID=alexsmobs:bear_fur,amount=#rand(1,3)@luck=0
+ID=alexsmobs:bison_fur,amount=#rand(1,3)@luck=0
+ID=alexsmobs:kangaroo_hide,amount=#rand(1,3)@luck=0
+ID=alexsmobs:kangaroo_meat,amount=#rand(2,4)@luck=0
+ID=alexsmobs:emu_feather,amount=#rand(1,3)@luck=0
+ID=alexsmobs:emu_egg,amount=#rand(1,2)@luck=0
+ID=alexsmobs:roadrunner_feather,amount=#rand(1,3)@luck=0
+
+/ ---------- LUCK 1 ----------
+ID=sophisticatedbackpacks:copper_backpack@luck=1
+ID=sophisticatedbackpacks:pickup_upgrade@luck=1
+ID=sophisticatedbackpacks:magnet_upgrade@luck=1
+ID=sophisticatedbackpacks:feeding_upgrade@luck=1
+ID=sophisticatedbackpacks:stack_upgrade_tier_1@luck=1
+ID=travelersbackpack:pickup_upgrade@luck=1
+ID=travelersbackpack:magnet_upgrade@luck=1
+ID=travelersbackpack:feeding_upgrade@luck=1
+ID=travelersbackpack:iron_tier_upgrade@luck=1
+ID=farmersdelight:pasta_with_meatballs@luck=1
+ID=farmersdelight:shepherds_pie@luck=1
+ID=farmersdelight:roast_chicken@luck=1
+ID=farmersdelight:honey_glazed_ham@luck=1
+ID=farmersdelight:diamond_knife@luck=1
+ID=braziliandelight:brigadeiro_ball,amount=#rand(2,4)@luck=1
+ID=braziliandelight:cajuzinho,amount=#rand(2,4)@luck=1
+ID=braziliandelight:peanut_brittle,amount=#rand(2,4)@luck=1
+ID=braziliandelight:milk_caramel,amount=#rand(2,4)@luck=1
+ID=aquaculturedelight:fish_and_chips@luck=1
+ID=aquaculturedelight:halibut_with_tartar_sauce@luck=1
+ID=aquaculturedelight:neptunium_knife@luck=1
+ID=ars_nouveau:amulet_of_mana_boost@luck=1
+ID=ars_nouveau:amulet_of_mana_regen@luck=1
+ID=ars_nouveau:lesser_discount_ring@luck=1
+ID=ars_nouveau:jump_ring@luck=1
+ID=ars_nouveau:whirlisprig_charm@luck=1
+ID=ars_nouveau:wixie_charm@luck=1
+ID=ars_nouveau:starbuncle_charm@luck=1
+ID=ars_nouveau:drygmy_charm@luck=1
+ID=ars_nouveau:bookwyrm_charm@luck=1
+ID=irons_spellbooks:affinity_ring@luck=1
+ID=irons_spellbooks:cast_time_ring@luck=1
+ID=irons_spellbooks:cooldown_ring@luck=1
+ID=irons_spellbooks:mana_ring@luck=1
+ID=irons_spellbooks:silver_ring@luck=1
+ID=irons_spellbooks:fireward_ring@luck=1
+ID=irons_spellbooks:frostward_ring@luck=1
+ID=irons_spellbooks:poisonward_ring@luck=1
+ID=irons_spellbooks:amethyst_resonance_charm@luck=1
+ID=alexsmobs:gazelle_horn,amount=#rand(1,2)@luck=1
+ID=alexsmobs:froststalker_horn,amount=#rand(1,2)@luck=1
+ID=alexsmobs:dropbear_claw,amount=#rand(1,2)@luck=1
+ID=alexsmobs:rocky_shell,amount=#rand(1,2)@luck=1
+ID=blue_skies:alchemist_trophy@luck=1
+ID=blue_skies:arachnarch_trophy@luck=1
+ID=twilightforest:knightmetal_ring@luck=1
+ID=twilightforest:magic_map@luck=1
+ID=twilightforest:minoshroom_trophy@luck=1
+ID=twilightforest:knight_phantom_trophy@luck=1
+
+/ ---------- LUCK 2 ----------
+ID=waystones:attuned_shard@luck=2
+ID=sophisticatedbackpacks:stack_upgrade_tier_2@luck=2
+ID=travelersbackpack:gold_tier_upgrade@luck=2
+ID=ars_nouveau:greater_discount_ring@luck=2
+ID=ars_nouveau:belt_of_levitation@luck=2
+ID=ars_nouveau:ring_of_amplify@luck=2
+ID=ars_nouveau:ring_of_potential@luck=2
+ID=irons_spellbooks:invisibility_ring@luck=2
+ID=irons_spellbooks:concentration_amulet@luck=2
+ID=irons_spellbooks:emerald_stoneplate_ring@luck=2
+ID=blue_skies:summoner_trophy@luck=2
+ID=twilightforest:charm_of_keeping_1@luck=2
+ID=twilightforest:charm_of_life_1@luck=2
+ID=twilightforest:hydra_trophy@luck=2
+ID=twilightforest:naga_trophy@luck=2
+
+/ grupo - sabores do mundo (comidas de mods regionais)
+group(ID=braziliandelight:plate_of_feijoada;ID=aquaculturedelight:fish_and_chips;ID=farmersdelight:hamburger)@luck=1
+
+/ ============================================================
+/ ADICOES PERSONALIZADAS - RODADA 4
+/ Cobre: minecolonies, mekanism (materiais, nao maquinario),
+/ mysti, born_in_chaos, alexscaves (materiais basicos),
+/ ad_astra_tools (Desh/Ostrum/Steel - tier pre-espaco),
+/ butchery (selecao pequena, o resto e ingrediente de receita).
+/ VERIFICADOS E DESCARTADOS nesta rodada:
+/ - infectious: so tem "Advancement Item" genericos (64 deles!),
+/   nada de real pra dropar.
+/ - celestisynth: mod de boss com armadura de dimensao
+/   (Lunar/Solar/Celestial) - fica de fora por ser gear
+/   travado atras de bosses de fim de jogo.
+/ - chisel, railways, bf_blockpack: >95% sao blocos
+/   decorativos/trilhos, sem itens relevantes.
+/ - ad_astra (base): jet_suit e claramente endgame de
+/   progressao espacial, nao incluido.
+/ ============================================================
+
+/ ---------- LUCK 0 ----------
+ID=minecolonies:build_goggles@luck=0
+ID=minecolonies:clipboard@luck=0
+ID=minecolonies:sifter_mesh_iron@luck=0
+ID=minecolonies:cheese_pizza@luck=0
+ID=minecolonies:sushi_roll@luck=0
+ID=minecolonies:tacos@luck=0
+ID=minecolonies:ramen@luck=0
+ID=minecolonies:steak_dinner@luck=0
+ID=mekanism:canteen@luck=0
+ID=mekanism:dosimeter@luck=0
+ID=mekanism:clump_osmium,amount=#rand(3,6)@luck=0
+ID=mekanism:dust_osmium,amount=#rand(3,6)@luck=0
+ID=mysti:bronze_sword@luck=0
+ID=mysti:bronze_helmet@luck=0
+ID=mysti:bronze_chestplate@luck=0
+ID=mysti:bronze_leggings@luck=0
+ID=mysti:bronze_boots@luck=0
+ID=mysti:olive,amount=#rand(3,6)@luck=0
+ID=alexscaves:occult_gem,amount=#rand(1,3)@luck=0
+ID=alexscaves:sea_glass_shards,amount=#rand(2,4)@luck=0
+ID=alexscaves:tectonic_shard,amount=#rand(1,2)@luck=0
+ID=alexscaves:tough_hide,amount=#rand(1,3)@luck=0
+ID=butchery:coin,amount=#rand(3,6)@luck=0
+ID=butchery:butchers_papers@luck=0
+
+/ ---------- LUCK 1 ----------
+ID=minecolonies:santa_hat@luck=1
+ID=minecolonies:pirate_hat@luck=1
+ID=minecolonies:pirate_cap@luck=1
+ID=minecolonies:colonymap@luck=1
+ID=minecolonies:questlog@luck=1
+ID=minecolonies:sifter_mesh_diamond@luck=1
+ID=minecolonies:plate_armor_helmet@luck=1
+ID=minecolonies:plate_armor_chest@luck=1
+ID=minecolonies:plate_armor_legs@luck=1
+ID=minecolonies:plate_armor_boots@luck=1
+ID=minecolonies:pharaoscepter@luck=1
+ID=minecolonies:spear@luck=1
+ID=mekanism:crystal_osmium,amount=#rand(1,3)@luck=1
+ID=mysti:corinthian_helmet@luck=1
+ID=mysti:greek_aspis@luck=1
+ID=mysti:nectar,amount=#rand(1,2)@luck=1
+ID=mysti:invisibility_cap@luck=1
+ID=mysti:celestial_bronze_sword@luck=1
+ID=mysti:celestial_helmet@luck=1
+ID=mysti:ivlis_coin,amount=#rand(2,4)@luck=1
+ID=born_in_chaos_v1:charmof_endurance@luck=1
+ID=born_in_chaos_v1:charmof_fury@luck=1
+ID=born_in_chaos_v1:charmof_power@luck=1
+ID=born_in_chaos_v1:charmof_resistance@luck=1
+ID=born_in_chaos_v1:charmof_stealth@luck=1
+ID=born_in_chaos_v1:bagof_candy@luck=1
+ID=born_in_chaos_v1:chocolate_heart@luck=1
+ID=born_in_chaos_v1:coffee_candy@luck=1
+ID=ad_astra_tools:desh_sword@luck=1
+ID=ad_astra_tools:desh_helmet@luck=1
+ID=ad_astra_tools:desh_chestplate@luck=1
+ID=ad_astra_tools:desh_leggings@luck=1
+ID=ad_astra_tools:desh_boots@luck=1
+ID=ad_astra_tools:ostrumsword@luck=1
+ID=ad_astra_tools:steelsword@luck=1
+ID=butchery:bone_cleaver@luck=1
+ID=butchery:bone_hacksaw@luck=1
+ID=butchery:bloody_butchers_apron_chestplate@luck=1
+
+/ ---------- LUCK 2 ----------
+ID=minecolonies:scroll_buff@luck=2
+ID=minecolonies:scroll_highlight@luck=2
+ID=butchery:cash_register@luck=2
+
+/ grupo - kit do peregrino (minecolonies)
+group(ID=minecolonies:colonymap;ID=minecolonies:build_goggles;ID=minecolonies:clipboard)@luck=0
+
+/ ============================================================
+/ ADICOES PERSONALIZADAS - RODADA 5 (passada final)
+/ Cobre: tide, alexsdelight, endersdelight, ars_elemental,
+/ illagerinvasion, animalistic_a, buddycards (tier basico +
+/ pacotes), wom, fantasy_weapons, simple_weapons,
+/ mekanismadditions, ad_astra__extra_additions, companions,
+/ epicfight, immersive_aircraft (componentes), grapplemod,
+/ vc_gliders, gtbcs_geomancy_plus, scannable, shieldexp,
+/ create_sa (Create Stuff & Additions).
+/
+/ EXCLUIDOS DE PROPOSITO nesta rodada final:
+/ - hwg, hpm: mods de armas modernas/navais (metralhadoras,
+/   lanca-granadas, canhoes) - fora do tema de recompensa e
+/   arriscado demais pra dar de graca num mundo de sobrevivencia.
+/ - bossominium, fdbosses: mods cujo conteudo INTEIRO e loot
+/   de boss (essencias, nucleos, olhos) - dar isso de graca
+/   anula o proposito desses mods.
+/ - goodending, morevillagers, workers, toms_storage,
+/   sophisticatedcore, comforts, domum_ornamentum,
+/   enchantinginfuser: sem itens relevantes (so blocos/decoracao
+/   ou vazios).
+/ - realmrpg_skeletons: so tem spawn eggs.
+/ - bulletsboats: so variacoes de barco, equivalente a vanilla.
+/
+/ Isso fecha a varredura completa da lista de mods do pack.
+/ ============================================================
+
+/ ---------- LUCK 0 ----------
+ID=tide:fish_finder@luck=0
+ID=tide:depth_meter@luck=0
+ID=tide:fishing_journal@luck=0
+ID=tide:golden_bobber@luck=0
+ID=alexsdelight:bison_burger@luck=0
+ID=alexsdelight:kangaroo_stew@luck=0
+ID=alexsdelight:lobster_pasta@luck=0
+ID=endersdelight:chorus_stew@luck=0
+ID=endersdelight:crispy_skewer@luck=0
+ID=ars_elemental:curio_bag@luck=0
+ID=ars_elemental:caster_bag@luck=0
+ID=ars_elemental:lesser_fire_focus@luck=0
+ID=ars_elemental:lesser_water_focus@luck=0
+ID=ars_elemental:lesser_earth_focus@luck=0
+ID=ars_elemental:lesser_air_focus@luck=0
+ID=illagerinvasion:illusionary_dust,amount=#rand(2,4)@luck=0
+ID=illagerinvasion:platinum_chunk,amount=#rand(2,4)@luck=0
+ID=animalistic_a:diamond_nugget,amount=#rand(2,4)@luck=0
+ID=animalistic_a:amber_talisman@luck=0
+ID=wom:golden_staff@luck=0
+ID=wom:iron_staff@luck=0
+ID=fantasy_weapons:weapon_generic_rapier@luck=0
+ID=fantasy_weapons:weapon_old_dagger@luck=0
+ID=fantasy_weapons:weapon_old_broadsword@luck=0
+ID=simple_weapons:iron_katana@luck=0
+ID=simple_weapons:iron_scythe@luck=0
+ID=mekanismadditions:walkie_talkie@luck=0
+ID=mekanismadditions:red_balloon@luck=0
+ID=mekanismadditions:blue_balloon@luck=0
+ID=mekanismadditions:black_balloon@luck=0
+ID=companions:hourglass@luck=0
+ID=companions:eternal_lighter@luck=0
+ID=companions:old_cloth,amount=#rand(2,4)@luck=0
+ID=epicfight:iron_tachi@luck=0
+ID=immersive_aircraft:engine@luck=0
+ID=immersive_aircraft:propeller@luck=0
+ID=immersive_aircraft:sail@luck=0
+ID=immersive_aircraft:telescope@luck=0
+ID=immersive_aircraft:hull@luck=0
+ID=grapplemod:grapplinghook@luck=0
+ID=vc_gliders:paraglider_iron@luck=0
+ID=gtbcs_geomancy_plus:geo_rune@luck=0
+ID=scannable:common_ores_module@luck=0
+ID=shieldexp:diamond_shield@luck=0
+ID=create_sa:copper_sword@luck=0
+ID=create_sa:copper_pickaxe@luck=0
+
+/ ---------- LUCK 1 ----------
+ID=tide:iron_fishing_rod@luck=1
+ID=tide:golden_fishing_rod@luck=1
+ID=tide:fish_satchel@luck=1
+ID=tide:lucky_bait,amount=#rand(2,4)@luck=1
+ID=endersdelight:ender_paella@luck=1
+ID=endersdelight:strange_eclair@luck=1
+ID=ars_elemental:air_bangle@luck=1
+ID=ars_elemental:fire_bangle@luck=1
+ID=ars_elemental:water_bangle@luck=1
+ID=ars_elemental:earth_bangle@luck=1
+ID=ars_elemental:base_bangle@luck=1
+ID=ars_elemental:spell_horn@luck=1
+ID=illagerinvasion:hallowed_gem@luck=1
+ID=illagerinvasion:horn_of_sight@luck=1
+ID=illagerinvasion:platinum_sheet,amount=#rand(1,3)@luck=1
+ID=animalistic_a:ancient_talisman@luck=1
+ID=buddycards:buddycard_pack_base@luck=1
+ID=buddycards:buddysteel_sword@luck=1
+ID=buddycards:buddysteel_pickaxe@luck=1
+ID=buddycards:buddysteel_helmet@luck=1
+ID=buddycards:buddysteel_chestplate@luck=1
+ID=buddycards:buddysteel_leggings@luck=1
+ID=buddycards:buddysteel_boots@luck=1
+ID=buddycards:buddycard_binder_base@luck=1
+ID=wom:golden_greataxe@luck=1
+ID=wom:iron_greataxe@luck=1
+ID=fantasy_weapons:weapon_estoc@luck=1
+ID=fantasy_weapons:weapon_knight_greatsword@luck=1
+ID=simple_weapons:diamond_katana@luck=1
+ID=simple_weapons:diamond_scythe@luck=1
+ID=ad_astra__extra_additions:ostrum_sword@luck=1
+ID=ad_astra__extra_additions:as_ostrum_armor_helmet@luck=1
+ID=ad_astra__extra_additions:as_ostrum_armor_chestplate@luck=1
+ID=companions:crystallized_blood,amount=#rand(1,3)@luck=1
+ID=companions:mage_hat@luck=1
+ID=companions:mage_coat@luck=1
+ID=companions:soul_gem@luck=1
+ID=epicfight:diamond_tachi@luck=1
+ID=epicfight:diamond_longsword@luck=1
+ID=epicfight:diamond_greatsword@luck=1
+ID=epicfight:skillbook@luck=1
+ID=grapplemod:longfallboots@luck=1
+ID=grapplemod:motorhook@luck=1
+ID=vc_gliders:paraglider_gold@luck=1
+ID=vc_gliders:paraglider_diamond@luck=1
+ID=gtbcs_geomancy_plus:geo_upgrade_orb@luck=1
+ID=gtbcs_geomancy_plus:bracelet_of_inversion@luck=1
+ID=scannable:scanner@luck=1
+ID=scannable:entity_module@luck=1
+ID=shieldexp:netherite_shield@luck=1
+ID=create_sa:brass_sword@luck=1
+ID=create_sa:brass_pickaxe@luck=1
+ID=create_sa:zinc_sword@luck=1
+ID=create_sa:zinc_pickaxe@luck=1
+ID=create_sa:heap_of_experience@luck=1
+ID=create_sa:slime_boots@luck=1
+ID=create_sa:slime_helmet@luck=1
+
+/ ---------- LUCK 2 ----------
+ID=tide:diamond_fishing_rod@luck=2
+ID=tide:netherite_fishing_rod@luck=2
+ID=tide:crystal_fishing_rod@luck=2
+ID=tide:prismarine_fishing_rod@luck=2
+ID=tide:dragon_fish@luck=2
+ID=tide:great_white_shark@luck=2
+ID=tide:midas_fish@luck=2
+ID=tide:diamond_bobber@luck=2
+ID=illagerinvasion:primal_essence,amount=#rand(1,2)@luck=2
+ID=buddycards:buddycard_pack_mystery@luck=2
+ID=wom:diamond_staff@luck=2
+ID=wom:diamond_greataxe@luck=2
+ID=wom:netherite_belt@luck=2
+ID=fantasy_weapons:weapon_hero_claymore@luck=2
+ID=simple_weapons:netherite_katana@luck=2
+ID=companions:crystallized_blood_sword@luck=2
+ID=companions:mage_staff@luck=2
+ID=companions:mage_leggings@luck=2
+ID=epicfight:netherite_tachi@luck=2
+ID=vc_gliders:paraglider_netherite@luck=2
+ID=gtbcs_geomancy_plus:ring_of_the_resounding_earth@luck=2
+ID=scannable:rare_ores_module@luck=2
+ID=shieldexp:paragon_shield@luck=2
+ID=create_sa:rose_quartz_sword@luck=2
+ID=create_sa:experience_sword@luck=2
+ID=create_sa:copper_jetpack_chestplate@luck=2
+
+/ grupo - pescador de sorte (tide)
+group(ID=tide:lucky_bait,amount=2;ID=tide:fish_finder;ID=tide:golden_bobber)@luck=1
+
+/ ============================================================
+/ MA SORTE - RODADA 6 (mobs modados, porte medio, sem grief)
+/ Segue o mesmo padrao sintatico do arquivo original (type=entity
+/ dentro de group, com type=difficulty,ID=hard).
+/ Criterio de selecao: predadores/mobs de dungeon de dano medio,
+/ SEM: bosses unicos (Frostmaw, Krampus, Kraken, Leviathan, etc,
+/ que exigem arena/preparo), SEM entidades que colocam ou
+/ quebram bloco (golens de TNT, zumbis-horda gigante, nuke),
+/ SEM enxames descontrolados.
+/ ============================================================
+
+/ ---------- LUCK -1 (susto leve / um mob medio) ----------
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:guard)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:rattlesnake)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=goblins_tyranny:goblin_hunter)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=knightquest:gremlin)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=knightquest:ratman)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:corpse_fly,amount=#rand(2,3))@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=bygonenether:piglin_hunter)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=outer_end:stalker)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=cropcritters:poisonous_potato_critter,amount=#rand(2,4))@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:angry_zombie,amount=2)@luck=-1
+
+/ ---------- LUCK -2 (perigoso de verdade, mas sem destruir o mundo) ----------
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:grizzly_bear)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:tiger)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:snow_leopard)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:sea_bear)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:komodo_dragon)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:haunted_guard)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:flameborn_guard)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:skeletosaurus)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:skeloraptor,amount=#rand(1,2))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=goblins_tyranny:champion_goblin)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:dread_hound,amount=#rand(1,2))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:decrepit_skeleton)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:zombie_bruiser)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:swarmer,amount=#rand(2,3))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=companions:wild_antlion)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=companions:hostile_imp)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=bygonenether:wraither)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=outer_end:entombed)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:big_zombie,amount=#rand(1,2))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:robotic_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:deepling_angler,amount=#rand(1,3))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:obsidian_golem)@luck=-2
+
+/ ============================================================
+/ MA SORTE - RODADA 7 (expansao criativa, porte medio)
+/ Mais mobs de mais mods, e uma secao nova de "maldicoes"
+/ (combos de efeito + mensagem atmosferica), pra ma sorte nao
+/ ser so "spawna mob" - tambem vem como azar mesmo, sem combate.
+/ Continua a mesma regra: sem bosses unicos, sem grief de bloco,
+/ sem enxame descontrolado.
+/ ============================================================
+
+/ ---------- MAIS MOBS @luck=-1 ----------
+group(type=difficulty,ID=hard;type=entity,ID=block_factorys_bosses:frozen_skeleton)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=block_factorys_bosses:crossbow_pirate)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=block_factorys_bosses:pirate_rook)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=block_factorys_bosses:soul_skeleton)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=companions:imp)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=companions:puppet)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:amethyst_crab,amount=#rand(1,2))@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:urchinkin)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=goblins_tyranny:shaman_goblin)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=knightquest:swampman)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=knightquest:bad_patch)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=knightquest:ghastling)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=bygonenether:corpor)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=outer_end:himmelite)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:swat_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:gloomoth)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:corrodent)@luck=-1
+
+/ ---------- MAIS MOBS @luck=-2 (com @chance reduzido) ----------
+group(type=difficulty,ID=hard;type=entity,ID=block_factorys_bosses:pirate_captain)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=companions:mutated_teddy)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=companions:gargoyle)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=companions:soul_mage)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=companions:illager_golem)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:deepling,amount=#rand(1,2))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:deepling_brute)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:deepling_priest)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:deepling_warlock)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:coral_golem)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:deep_one)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:deep_one_knight)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:deep_one_mage)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:forsaken)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:licowitch)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:watcher)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:underzealot)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexscaves:nucleeper)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=goblins_tyranny:knight_goblin)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=bygonenether:warped_enderman)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=outer_end:sinker)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:mutant_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:giant_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:nether_golem)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:endstone_golem)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=mowziesmobs:bluff)@luck=-2
+
+/ ============================================================
+/ MALDICOES - efeitos negativos com mensagem atmosferica.
+/ Ma sorte "silenciosa", sem spawn de mob, pra variar o susto.
+/ ============================================================
+
+/ ---------- @luck=-1 (incomodo, passa rapido) ----------
+group(type=message,ID="Um arrepio percorre sua espinha...";type=effect,ID=nausea,duration=200,amplifier=0;type=effect,ID=hunger,duration=200,amplifier=1)@luck=-1
+group(type=message,ID="Voce pisou em algo que nao devia...";type=effect,ID=poison,duration=100,amplifier=0)@luck=-1
+group(type=message,ID="Uma nevoa fria toma conta de voce.";type=effect,ID=slowness,duration=150,amplifier=1;type=effect,ID=mining_fatigue,duration=150,amplifier=1)@luck=-1
+group(type=message,ID="Voce tropeca, atordoado.";type=effect,ID=nausea,duration=100,amplifier=1;type=effect,ID=blindness,duration=60)@luck=-1
+group(type=message,ID="Sua sorte parece ter ido embora...";type=effect,ID=luck,duration=300,amplifier=-1)@luck=-1
+group(type=message,ID="Voce sente o peso do azar nos ombros.";type=effect,ID=weakness,duration=200,amplifier=0;type=effect,ID=mining_fatigue,duration=200,amplifier=0)@luck=-1
+
+/ ---------- @luck=-2 (mais serio, mas nunca fatal por si so) ----------
+group(type=message,ID="As trevas engolem sua visao por um instante.";type=effect,ID=blindness,duration=200;type=effect,ID=darkness,duration=200;type=effect,ID=slowness,duration=200,amplifier=1)@luck=-2
+group(type=message,ID="Uma maldicao profunda te atinge.";type=effect,ID=weakness,duration=400,amplifier=1;type=effect,ID=mining_fatigue,duration=400,amplifier=1;type=effect,ID=hunger,duration=400,amplifier=1)@luck=-2
+group(type=message,ID="Voce foi marcado. Algo esta te cacando...";type=effect,ID=glowing,duration=600;type=effect,ID=weakness,duration=300,amplifier=1;type=entity,ID=infectious:mutant_zombie)@luck=-2
+group(type=message,ID="O azar puro corre pelas suas veias.";type=effect,ID=luck,duration=600,amplifier=-2;type=effect,ID=unluck,duration=600,amplifier=1)@luck=-2
+group(type=message,ID="Voce ouve um sussurro... e sente muito frio.";type=effect,ID=slowness,duration=300,amplifier=2;type=effect,ID=mining_fatigue,duration=300,amplifier=1)@luck=-2
+
+/ ---------- "Presente envenenado" (prank, sem perigo real) ----------
+group(type=message,ID="Que decepcao... so lixo.";ID=rotten_flesh,amount=#rand(4,8);ID=gravel,amount=#rand(4,8);ID=string,amount=#rand(2,4))@luck=-1
+group(type=message,ID="Parecia um tesouro, mas era so isca.";ID=rotten_flesh,amount=#rand(2,4);type=entity,ID=cataclysm:amethyst_crab)@luck=-1
+
+/ ============================================================
+/ MA SORTE - RODADA 8 (balanceamento final)
+/ Objetivo: aproximar a proporcao positivo/negativo do arquivo.
+/ Traz o tema "cemiterio" (graveyard, praticamente nao usado
+/ ainda) e uma leva grande e divertida do infectious (zumbis
+/ tematicos/comicos - baixo risco individual, otimos pra
+/ variedade em @luck=-1).
+/ ============================================================
+
+/ ---------- graveyard @luck=-1 ----------
+group(type=difficulty,ID=hard;type=entity,ID=graveyard:acolyte)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=graveyard:ghoul)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=graveyard:ghouling)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=graveyard:nameless_hanged)@luck=-1
+
+/ ---------- graveyard @luck=-2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=graveyard:nightmare)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=graveyard:reaper)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=graveyard:revenant)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=graveyard:wraith)@luck=-2
+
+/ ---------- legendary_monsters @luck=-1 ----------
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:ambusher)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:chorusling)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:spiky_bug,amount=#rand(2,3))@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:wandering_eye)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:knights_armor)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:shulker_mimic)@luck=-1
+
+/ ---------- legendary_monsters @luck=-2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:beheaded_knight)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:flame_drifter)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:flameborn_warrior)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:haunted_knight)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:lava_eater)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:posessed_paladin)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:resurrected_knight)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=legendary_monsters:stratling)@luck=-2
+
+/ ---------- cataclysm @luck=-1 / -2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:lionfish)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:hippocamtus)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:draugr)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:elite_draugr)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:royal_draugr)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:ignited_berserker)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:ignited_revenant)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:drowned_host)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:koboleton)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=cataclysm:kobolediator)@luck=-2
+
+/ ---------- plenty_of_golems @luck=-1 / -2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:dust_devil)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:andesite_golemin)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:bone_golem)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:necromins)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:medium_bone_minion,amount=#rand(1,2))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=plenty_of_golems:ranged_bone_minion)@luck=-2
+
+/ ---------- infectious: leva grande de zumbis tematicos @luck=-1 ----------
+/ (a maioria e ameaca baixa individualmente - o susto e a variedade e o visual)
+group(type=difficulty,ID=hard;type=entity,ID=infectious:acid_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:balloon_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:baseball_bat_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:beekeeper_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:bouncer_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:brain_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:bucket_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:claw_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:construction_worker_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:disco_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:fat_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:fire_fighter_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:football_player_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:frozen_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:fungal_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:glitched_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:golden_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:hazmat_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:headless_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:maggot_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:mummy)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:old_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:pumpkin_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:screamer)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:security_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:sleepy_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:spore_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_agent)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_archer)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_astronaut)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_boxer)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_clown)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_cook)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_dancer)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_diver)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_doctor)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_farmer)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_fisherman)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_girl)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_lumberjack)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_miner)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_painter)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_police)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_prisoner)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_runner)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_scientist)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_warrior)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombified_bird)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombified_chicken)@luck=-1
+
+/ ---------- infectious: variantes mais fortes @luck=-2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=infectious:doom_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:muscular_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:psycho_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:radioactive_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombie_soldier)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombified_bear)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombified_boar)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombified_spider)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombified_wolf,amount=#rand(1,2))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:ancient_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:withered_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=infectious:zombified_rex)@luck=-2
+
+/ ============================================================
+/ MA SORTE - RODADA 9 (itens amaldicoados vanilla + maldicoes)
+/ Itens vanilla renomeados via NBT (mesmo truque do arquivo
+/ original com a "Romantic Rose") - zero risco de ID quebrado,
+/ pura ambientacao de azar. Mais combos de efeito tambem.
+/ ============================================================
+
+/ ---------- "presentes" amaldicoados @luck=-1 ----------
+ID=bread,NBTTag=(display=(Name=#jsonStr(text="Pao Mofado",color=dark_green)))@luck=-1
+ID=apple,NBTTag=(display=(Name=#jsonStr(text="Maca Podre",color=dark_green)))@luck=-1
+ID=cooked_beef,NBTTag=(display=(Name=#jsonStr(text="Bife Requentado 3 Vezes",color=gray)))@luck=-1
+ID=potato,NBTTag=(display=(Name=#jsonStr(text="Batata Amaldicoada",color=dark_purple)))@luck=-1
+ID=paper,amount=#rand(1,3),NBTTag=(display=(Name=#jsonStr(text="Carta de Cobranca",color=red)))@luck=-1
+ID=bone,NBTTag=(display=(Name=#jsonStr(text="Osso Roido",color=gray)))@luck=-1
+ID=string,amount=#rand(1,2),NBTTag=(display=(Name=#jsonStr(text="Teia Abandonada",color=gray)))@luck=-1
+ID=coal,NBTTag=(display=(Name=#jsonStr(text="Carvao Molhado (nao pega fogo direito)",color=dark_gray)))@luck=-1
+ID=flint,NBTTag=(display=(Name=#jsonStr(text="Pederneira Cega",color=gray)))@luck=-1
+ID=leather,NBTTag=(display=(Name=#jsonStr(text="Couro Rasgado",color=gray)))@luck=-1
+ID=wooden_hoe,damage=59,NBTTag=(display=(Name=#jsonStr(text="Enxada Quase Quebrada",color=gray)))@luck=-1
+ID=fishing_rod,damage=63,NBTTag=(display=(Name=#jsonStr(text="Vara de Pescar Emprestada (quase no fim)",color=gray)))@luck=-1
+ID=glass_bottle,NBTTag=(display=(Name=#jsonStr(text="Garrafa Vazia... De novo",color=gray)))@luck=-1
+
+/ ---------- "presentes" amaldicoados @luck=-2 ----------
+ID=iron_sword,damage=130,NBTTag=(display=(Name=#jsonStr(text="Espada Enferrujada e Amaldicoada",color=dark_red)),Enchantments=[(id=binding_curse,lvl=1)])@luck=-2
+ID=diamond_pickaxe,damage=1550,NBTTag=(display=(Name=#jsonStr(text="Picareta Exausta",color=gray)),Enchantments=[(id=vanishing_curse,lvl=1)])@luck=-2
+ID=elytra,damage=430,NBTTag=(display=(Name=#jsonStr(text="Elytra Furada",color=dark_red)),Enchantments=[(id=binding_curse,lvl=1)])@luck=-2
+ID=totem_of_undying,NBTTag=(display=(Name=#jsonStr(text="Totem Falso (nao funciona)",color=dark_red)))@luck=-2
+ID=golden_apple,NBTTag=(display=(Name=#jsonStr(text="Maca Dourada Falsificada",color=dark_red)))@luck=-2
+
+/ ---------- MAIS MALDICOES (efeito + mensagem) ----------
+group(type=message,ID="Uma risada distante ecoa ao seu redor...";type=effect,ID=nausea,duration=250,amplifier=1)@luck=-1
+group(type=message,ID="Voce sente que esta sendo observado.";type=effect,ID=blindness,duration=80;type=effect,ID=slowness,duration=150,amplifier=0)@luck=-1
+group(type=message,ID="Seus passos ficam pesados de repente.";type=effect,ID=slowness,duration=250,amplifier=1)@luck=-1
+group(type=message,ID="Algo drenou sua energia.";type=effect,ID=hunger,duration=300,amplifier=1;type=effect,ID=weakness,duration=200,amplifier=0)@luck=-1
+group(type=message,ID="Um vento gelado atravessa seu corpo.";type=effect,ID=mining_fatigue,duration=250,amplifier=1)@luck=-1
+group(type=message,ID="Uma sombra passa por voce. Coincidencia?";type=effect,ID=darkness,duration=150)@luck=-1
+group(type=message,ID="A maldicao do cemiterio te alcanca.";type=effect,ID=weakness,duration=400,amplifier=2;type=effect,ID=hunger,duration=400,amplifier=1;type=effect,ID=nausea,duration=200,amplifier=1)@luck=-2
+group(type=message,ID="Voce acordou de um pesadelo... so que nao estava dormindo.";type=effect,ID=blindness,duration=300;type=effect,ID=darkness,duration=300;type=effect,ID=nausea,duration=300,amplifier=1)@luck=-2
+group(type=message,ID="Uma presenca hostil te encontrou.";type=effect,ID=weakness,duration=300,amplifier=1;type=entity,ID=graveyard:ghoul)@luck=-2
+group(type=message,ID="O chao gelado suga sua forca.";type=effect,ID=slowness,duration=400,amplifier=2;type=effect,ID=mining_fatigue,duration=400,amplifier=2)@luck=-2
+
+/ ============================================================
+/ MA SORTE - RODADA 10 (empurrao final pro balanceamento)
+/ Fauna predadora do Alex's Mobs, o "lado sombrio" do Born in
+/ Chaos, fauna hostil do Twilight Forest (fora dos bosses),
+/ criaturas do Blue Skies, Quark, e os invasores/barbaros do
+/ MineColonies (o proprio sistema de raide do mod - thematic
+/ e apropriado pra "ma sorte").
+/ ============================================================
+
+/ ---------- alexsmobs @luck=-1 ----------
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:cockroach,amount=#rand(2,4))@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:skunk)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:crimson_mosquito,amount=#rand(1,3))@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:jerboa)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:mudskipper)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:mimic_octopus)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:warped_toad)@luck=-1
+
+/ ---------- alexsmobs @luck=-2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:anaconda)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:caiman)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:crocodile)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:tarantula_hawk)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:soul_vulture)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:underminer)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:gorilla)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:rhinoceros)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:hammerhead_shark)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:frilled_shark)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:mantis_shrimp)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:skelewag)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=alexsmobs:spectre)@luck=-2
+
+/ ---------- born_in_chaos_v1 @luck=-1 ----------
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:baby_skeleton)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:baby_spider)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:barrel_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:bloody_gadfly,amount=#rand(2,3))@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:bone_imp)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:corpse_fish)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:glutton_fish)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:maggot,amount=#rand(2,3))@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:mr_pumpkin)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:mrs_pumpkin)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:pumpkin_dunce)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:senor_pumpkin)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:zombie_clown)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:zombie_fisherman)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:zombie_lumberjack)@luck=-1
+
+/ ---------- born_in_chaos_v1 @luck=-2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:bonescaller)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:decaying_zombie)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:diamond_termite,amount=#rand(1,3))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:door_knight)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:firelight)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:infernal_spirit)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:missionary_raider)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:pumpkin_bruiser)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:pumpkin_spirit)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:pumpkinhead)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:siamese_skeletons)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=born_in_chaos_v1:thornshell_crab)@luck=-2
+
+/ ---------- twilightforest @luck=-1 ----------
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:hedge_spider)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:kobold)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:redcap)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:mist_wolf)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:hostile_wolf)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:rising_zombie)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:slime_beetle)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:fire_beetle)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:pinch_beetle)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:helmet_crab)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:blockchain_goblin)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:loyal_zombie)@luck=-1
+
+/ ---------- twilightforest @luck=-2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:king_spider)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:swarm_spider,amount=#rand(1,3))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:redcap_sapper)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:lower_goblin_knight)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:upper_goblin_knight)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:knight_phantom)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:skeleton_druid)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:winter_wolf)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:maze_slime)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:mosquito_swarm,amount=#rand(1,2))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:carminite_broodling)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:carminite_ghastling)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:carminite_ghastguard)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:giant_miner)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:armored_giant)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=twilightforest:yeti)@luck=-2
+
+/ ---------- blue_skies @luck=-1 ----------
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:firefly)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:nyctofly)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:stonelet)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:sliv)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:decaying_spike)@luck=-1
+
+/ ---------- blue_skies @luck=-2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:crogre)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:crynocerous)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:diophyde_prowler)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:infested_swarmer,amount=#rand(1,2))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:jelly_drifter)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:nested_spider)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:polargeist)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:shade_monitor)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:venom_spider)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:whistleshell_crab)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:azulfo)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=blue_skies:charscale_moki)@luck=-2
+
+/ ---------- quark @luck=-1 / -2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=quark:foxhound)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=quark:forgotten)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=quark:wraith)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=quark:gravisand)@luck=-2
+
+/ ---------- minecolonies: barbaros e piratas @luck=-1 ----------
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:barbarian)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:archerbarbarian)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:pirate)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:archerpirate)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:archermummy)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:mummy)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:amazon)@luck=-1
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:amazonspearman)@luck=-1
+
+/ ---------- minecolonies: elites @luck=-2 ----------
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:chiefbarbarian)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:chiefpirate)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:amazonchief)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:drownedpirate)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:drownedarcherpirate)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:drownedchiefpirate)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:norsemenarcher)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:norsemenchief)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:pharao)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=minecolonies:shieldmaiden)@luck=-2
