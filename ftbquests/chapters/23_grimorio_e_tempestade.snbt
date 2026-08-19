@@ -4,7 +4,7 @@
 	filename: "23_grimorio_e_tempestade"
 	group: "6A1D97ECF9A7FC71"
 	id: "3F00000000000023"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -23,7 +23,7 @@
 				"§7Esse capítulo começa trancado até você decidir abri-lo."
 				"§7Entregue o item abaixo pra revelar todas as missões de uma vez."
 			]
-			icon: "irons_spellbooks:iron_spell_book"
+			icon: "irons_spellbooks:arcane_essence"
 			id: "5FE5C4FA0EF0C15F"
 			rewards: [
 				{
@@ -41,8 +41,9 @@
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
+				count: 4
 				id: "14E6A5025C8375CF"
-				item: "irons_spellbooks:iron_spell_book"
+				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
 			title: "Abrir Capitulo"

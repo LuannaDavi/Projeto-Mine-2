@@ -219,6 +219,7 @@
 			x: -2.5d
 			y: 1.0d
 		}
+	
 		{
 			dependencies: ["49DA8823123BE733"]
 			description: [
@@ -232,7 +233,7 @@
 			rewards: [
 				{
 					count: 8
-					id: "6EFE1FED40B5E133"
+					id: "C844EA1A39536DC1"
 					item: "mysticalagriculture:prudentium_essence"
 					type: "item"
 				}
@@ -245,20 +246,20 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4L
+				count: 4
 					id: "7B343910E4B4D12F"
 					item: "mysticalagriculture:iron_seeds"
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "42FA204686FF22E4"
+				count: 4
+					id: "CD6E58A3575EE815"
 					item: "mysticalagriculture:gold_seeds"
 					type: "item"
 				}
 				{
-					count: 2L
-					id: "628483B9167C70A2"
+				count: 2
+					id: "8C621AF11ACE7853"
 					item: "mysticalagriculture:diamond_seeds"
 					type: "item"
 				}
@@ -284,7 +285,7 @@
 					type: "item"
 				}
 				{
-					id: "6369C11AE7EAF45B"
+					id: "A0520272EF343CAD"
 					type: "xp"
 					xp: 350
 				}
@@ -292,13 +293,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4L
-					id: "554C1E36CB7F01F4"
+				count: 4
+					id: "B8B953EA7F495530"
 					item: "mysticalagriculture:soulium_seeds"
 					type: "item"
 				}
 				{
-					id: "2D6EEC02D9445020"
+					id: "B98FA9F724436737"
 					item: "mysticalagriculture:soulium_sword"
 					type: "item"
 				}
@@ -317,26 +318,22 @@
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:supremium_paxel"
 			id: "4A99207458D67631"
-			rewards: [{
-				id: "5EAC1793EE7FB069"
-				type: "xp"
-				xp: 450
-			}]
+			rewards: [
+				{
+					id: "F7C4E0037E3C9DBE"
+					type: "xp"
+					xp: 450
+				}
+			]
 			size: 1.5d
 			tasks: [
 				{
 					id: "4EF793907ECC09BF"
-					item: {
-						Count: 1
-						id: "mysticalagradditions:imperium_paxel"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "mysticalagradditions:imperium_paxel"
 					type: "item"
 				}
 				{
-					id: "7456BE1A9C7779AE"
+					id: "B81E01A95E96E86B"
 					item: "mysticalagradditions:supremium_paxel"
 					type: "item"
 				}
@@ -354,15 +351,15 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:nether_star_shard"
-			id: "6532529966972674"
+			id: "AD975063DD1A7300"
 			rewards: [
 				{
-					id: "1881E52630F88659"
+					id: "8FAAC3990F3B152D"
 					item: "mysticalagradditions:nether_star_shard"
 					type: "item"
 				}
 				{
-					id: "513E5CD8EAD374C0"
+					id: "EEEC07A3CFF22EE8"
 					type: "xp"
 					xp: 600
 				}
@@ -370,13 +367,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4L
-					id: "2D8106EC123F248B"
+				count: 4
+					id: "FB585AA6495D1C82"
 					item: "mysticalagradditions:nether_star_seeds"
 					type: "item"
 				}
 				{
-					count: 2L
+				count: 2
 					id: "43FF30B31D95DBD8"
 					item: "mysticalagradditions:nether_star_essence"
 					type: "item"
@@ -411,13 +408,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4L
+				count: 4
 					id: "10807EE6E840D231"
 					item: "mysticalagradditions:dragon_egg_seeds"
 					type: "item"
 				}
 				{
-					count: 2L
+				count: 2
 					id: "49125D85E79FD4F5"
 					item: "mysticalagradditions:dragon_egg_essence"
 					type: "item"
@@ -436,16 +433,16 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:neutronium_essence"
-			id: "51C323B8A6D548FA"
+			id: "CD1FD51E6655CC9E"
 			rewards: [
 				{
 					count: 2
-					id: "0D2348A18B3A3B68"
+					id: "EB6FF6BF9D85DB62"
 					item: "mysticalagradditions:neutronium_essence"
 					type: "item"
 				}
 				{
-					id: "2E91D59EDA63177E"
+					id: "81405ECAE0BB1DF5"
 					type: "xp"
 					xp: 700
 				}
@@ -453,25 +450,25 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 2L
-					id: "0FFE80B293E01B7A"
+				count: 2
+					id: "A4049C2576C831B6"
 					item: "mysticalagradditions:neutronium_seeds"
 					type: "item"
 				}
 				{
-					count: 2L
+				count: 2
 					id: "14EE7728620CD827"
 					item: "mysticalagradditions:nitro_crystal_seeds"
 					type: "item"
 				}
 				{
-					count: 2L
+				count: 2
 					id: "261281890732E93D"
 					item: "mysticalagradditions:awakened_draconium_seeds"
 					type: "item"
 				}
 				{
-					count: 2L
+				count: 2
 					id: "1A71C5E483083EBC"
 					item: "mysticalagradditions:gaia_spirit_seeds"
 					type: "item"
@@ -490,7 +487,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:insanium_ingot"
-			id: "5F8789FB399E717F"
+			id: "8CE9D4CE9E142A9C"
 			rewards: [
 				{
 					id: "04F5F33D69698F05"
@@ -506,13 +503,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4L
-					id: "4B8301342C2E57B4"
+				count: 4
+					id: "DA8C5DF112D894A1"
 					item: "mysticalagradditions:insanium_essence"
 					type: "item"
 				}
 				{
-					count: 2L
+				count: 2
 					id: "70009E1CDE788B8B"
 					item: "mysticalagradditions:insanium_ingot"
 					type: "item"
@@ -520,8 +517,7 @@
 			]
 			title: "Insanium: Além do Supremium"
 			x: 0.0d
-			y: -2.5d
-		}
-	]
+			y: -3.5d
+		}]
 	title: "§aA Colheita Impossível"
 }

@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 44712661,
+    "spacing": 100,
+    "separation": 50,
+    "exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "minecraft:villages"
+    }
+  },
+  "structures": [
+    {
+      "structure": "iceandfire:graveyard",
+      "weight": 1
+    }
+  ]
+}

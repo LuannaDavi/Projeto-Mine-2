@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 14200531,
+    "spacing": 120,
+    "separation": 60,
+    "exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "minecraft:villages"
+    }
+  },
+  "structures": [
+    {
+      "structure": "iceandfire:mausoleum",
+      "weight": 1
+    }
+  ]
+}

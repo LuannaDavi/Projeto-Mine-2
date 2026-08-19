@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 76489509,
+    "spacing": 110,
+    "separation": 55,
+    "exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "minecraft:villages"
+    }
+  },
+  "structures": [
+    {
+      "structure": "iceandfire:gorgon_temple",
+      "weight": 1
+    }
+  ]
+}

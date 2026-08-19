@@ -998,8 +998,8 @@
 				}
 			]
 			title: "Cemitérios Crescentes"
-			x: 0.5d
-			y: -7.0d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1063,8 +1063,8 @@
 				}
 			]
 			title: "Artefatos e Rituais Sombrios"
-			x: -0.5d
-			y: -3.0d
+			x: -2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1133,8 +1133,8 @@
 				}
 			]
 			title: "Ameaças do Cemitério"
-			x: -4.5d
-			y: -5.0d
+			x: -7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1197,8 +1197,8 @@
 				}
 			]
 			title: "Os Sete Mares"
-			x: -2.5d
-			y: -1.0d
+			x: -4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1247,7 +1247,7 @@
 				}
 			]
 			title: "Cavaleiro Errante"
-			x: -7.0d
+			x: -10.0d
 			y: 0.0d
 		}
 		{
@@ -1299,8 +1299,8 @@
 				type: "item"
 			}]
 			title: "Escalador de Montanhas"
-			x: -3.5d
-			y: 1.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1346,8 +1346,8 @@
 				type: "item"
 			}]
 			title: "Olhos no Horizonte"
-			x: -5.0d
-			y: 5.0d
+			x: -7.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1392,8 +1392,8 @@
 				}
 			]
 			title: "Paraíso Tropical"
-			x: -1.5d
-			y: 3.5d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1435,7 +1435,7 @@
 			]
 			title: "Pontes Decentes"
 			x: 0.0d
-			y: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1474,8 +1474,8 @@
 				}
 			]
 			title: "Acampamento de Verdade"
-			x: 1.5d
-			y: 3.5d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1521,8 +1521,8 @@
 				}
 			]
 			title: "Um Mundo de Biomas"
-			x: 5.0d
-			y: 5.0d
+			x: 7.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1562,8 +1562,8 @@
 				}
 			]
 			title: "Herbário Impossível"
-			x: 3.5d
-			y: 1.5d
+			x: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1603,7 +1603,7 @@
 				}
 			]
 			title: "Estábulo Completo"
-			x: 7.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -1650,8 +1650,8 @@
 				}
 			]
 			title: "Peças de Aeronave"
-			x: 3.5d
-			y: -1.5d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1696,8 +1696,8 @@
 				}
 			]
 			title: "Aquário do Pescador"
-			x: 5.0d
-			y: -5.0d
+			x: 7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1731,8 +1731,8 @@
 				type: "item"
 			}]
 			title: "Aviador Amador"
-			x: 1.5d
-			y: -3.5d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1771,7 +1771,7 @@
 			}]
 			title: "Base Avançada"
 			x: 0.0d
-			y: -16.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1845,8 +1845,8 @@
 				}
 			]
 			title: "Mochilas pra Todo Gosto"
-			x: -3.0d
-			y: -7.0d
+			x: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1920,8 +1920,8 @@
 				}
 			]
 			title: "Ferramentas de Trilha"
-			x: -11.5d
-			y: -11.5d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -1972,8 +1972,8 @@
 				type: "advancement"
 			}]
 			title: "A Fera de Typhon"
-			x: -7.0d
-			y: -3.0d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2018,7 +2018,7 @@
 				type: "advancement"
 			}]
 			title: "O Coliseu Perdido"
-			x: -16.0d
+			x: -6.0d
 			y: 0.0d
 		}
 		{
@@ -2063,8 +2063,8 @@
 				}
 			]
 			title: "Explorador Preparado"
-			x: -7.0d
-			y: 3.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2115,8 +2115,8 @@
 				}
 			]
 			title: "Explore os Biomas Perdidos"
-			x: -11.5d
-			y: 11.5d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2180,8 +2180,8 @@
 				}
 			]
 			title: "Sabores Esquecidos"
-			x: -3.0d
-			y: 7.0d
+			x: -1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2238,7 +2238,7 @@
 			]
 			title: "Perigos e Curiosidades"
 			x: 0.0d
-			y: 16.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2286,8 +2286,8 @@
 				type: "advancement"
 			}]
 			title: "Primeira Pescaria"
-			x: 3.0d
-			y: 7.0d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2347,8 +2347,8 @@
 				}
 			]
 			title: "Pesca Fora do Comum"
-			x: 11.5d
-			y: 11.5d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2388,8 +2388,8 @@
 				type: "advancement"
 			}]
 			title: "Arsenal de Varas"
-			x: 7.0d
-			y: 3.0d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2442,7 +2442,7 @@
 				}
 			]
 			title: "Preservação e Ciência"
-			x: 16.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -2482,8 +2482,8 @@
 				type: "advancement"
 			}]
 			title: "Diário Aquático pela Metade"
-			x: 7.0d
-			y: -3.0d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2529,8 +2529,8 @@
 				type: "advancement"
 			}]
 			title: "§6Um em um Milhão"
-			x: 11.5d
-			y: -11.5d
+			x: 4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2598,8 +2598,8 @@
 				}
 			]
 			title: "§b§lO Círculo Completo"
-			x: 3.0d
-			y: -7.0d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2652,8 +2652,8 @@
 				type: "advancement"
 			}]
 			title: "Primeiro Voo"
-			x: -0.5d
-			y: -7.5d
+			x: 0.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2720,8 +2720,8 @@
 				}
 			]
 			title: "Vento e Fogo"
-			x: -2.0d
-			y: -3.5d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2767,8 +2767,8 @@
 				}
 			]
 			title: "Bússolas do Sábio"
-			x: -6.0d
-			y: -5.5d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["07B3BCD271AE7863"]
@@ -2844,8 +2844,8 @@
 				}
 			]
 			title: "O Relicário"
-			x: -4.0d
-			y: -1.5d
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 	title: "§bO Mundo e seus Biomas"

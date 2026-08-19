@@ -31,7 +31,7 @@
 				type: "item"
 			}]
 			title: "Abrir Capitulo"
-			x: 0.0d
+			x: 11.0d
 			y: 0.0d
 		}
 		{
@@ -83,8 +83,8 @@
 				}
 			]
 			title: "Bem-vindo ao Caos"
-			x: 1.5d
-			y: 1.5d
+			x: 10.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -134,8 +134,8 @@
 				}
 			]
 			title: "Ferraria das Trevas"
-			x: 2.5d
-			y: 2.5d
+			x: 9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -192,8 +192,8 @@
 				}
 			]
 			title: "Arsenal e Armadura Completos"
-			x: 4.0d
-			y: 4.0d
+			x: 7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -250,8 +250,8 @@
 				}
 			]
 			title: "Alquimia Sombria"
-			x: 5.0d
-			y: 5.0d
+			x: 4.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -302,8 +302,8 @@
 				}
 			]
 			title: "Bombas e Explosivos"
-			x: 6.5d
-			y: 6.5d
+			x: 1.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -363,8 +363,8 @@
 				}
 			]
 			title: "Doces Amaldiçoados"
-			x: 8.0d
-			y: 8.0d
+			x: -1.5d
+			y: -9.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -421,8 +421,8 @@
 				}
 			]
 			title: "Caçador de Ossos"
-			x: -1.5d
-			y: -1.5d
+			x: -4.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -473,8 +473,8 @@
 				}
 			]
 			title: "Aranhas e Armadilhas"
-			x: -3.0d
-			y: -3.0d
+			x: -7.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -535,8 +535,8 @@
 				}
 			]
 			title: "Zumbis Peculiares"
-			x: -4.5d
-			y: -4.5d
+			x: -9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -588,8 +588,8 @@
 				}
 			]
 			title: "Caçado pela Escuridão"
-			x: -6.0d
-			y: -6.0d
+			x: -10.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -658,8 +658,8 @@
 				}
 			]
 			title: "A Passagem dos Mortos"
-			x: -8.0d
-			y: -8.0d
+			x: -11.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -716,8 +716,8 @@
 				}
 			]
 			title: "Abóboras Malignas"
-			x: 1.5d
-			y: -1.5d
+			x: -7.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -794,8 +794,8 @@
 				}
 			]
 			title: "Chapéus e Curiosidades"
-			x: 3.0d
-			y: -3.0d
+			x: -6.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -841,8 +841,8 @@
 				}
 			]
 			title: "Krampus e o Natal Errado"
-			x: 4.5d
-			y: -4.5d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -909,8 +909,8 @@
 				}
 			]
 			title: "§c§lHorrores do Caos"
-			x: 6.0d
-			y: -6.0d
+			x: -3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -976,8 +976,8 @@
 				}
 			]
 			title: "Desperte os Golens Adormecidos"
-			x: 8.0d
-			y: -8.0d
+			x: -1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -1034,8 +1034,8 @@
 				}
 			]
 			title: "Golens Especiais e o Gigante"
-			x: -1.5d
-			y: 1.5d
+			x: 1.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -1087,8 +1087,8 @@
 				}
 			]
 			title: "Guardiões Perigosos"
-			x: -3.0d
-			y: 3.0d
+			x: 3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -1138,7 +1138,7 @@
 				}
 			]
 			title: "Golem Empilhado"
-			x: -4.5d
+			x: 4.5d
 			y: 4.5d
 		}
 		{
@@ -1182,8 +1182,8 @@
 				}
 			]
 			title: "Arsenal do Dispenser"
-			x: -6.0d
-			y: 6.0d
+			x: 6.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3EDBAEFA26F24379"]
@@ -1249,8 +1249,8 @@
 				}
 			]
 			title: "Golens Utilitários"
-			x: -8.0d
-			y: 8.0d
+			x: 7.0d
+			y: 1.5d
 		}
 	]
 	title: "§4Horrores e Golens"

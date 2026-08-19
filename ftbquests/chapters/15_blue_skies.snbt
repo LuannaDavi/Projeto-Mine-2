@@ -31,8 +31,8 @@
 				type: "item"
 			}]
 			title: "Abrir Capitulo"
-			x: -7.0d
-			y: 0.0d
+			x: 7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -79,8 +79,8 @@
 				type: "advancement"
 			}]
 			title: "Além das Nuvens"
-			x: -6.5d
-			y: 3.0d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -133,8 +133,8 @@
 				}
 			]
 			title: "Duas Faces do Céu"
-			x: -4.5d
-			y: 5.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -170,8 +170,8 @@
 				type: "advancement"
 			}]
 			title: "O Invocador do Everbright"
-			x: -2.0d
-			y: 6.5d
+			x: 5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -226,8 +226,8 @@
 				}
 			]
 			title: "Minérios das Alturas"
-			x: 0.5d
-			y: 7.0d
+			x: 0.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -267,8 +267,8 @@
 				type: "advancement"
 			}]
 			title: "Destruidor de Estrelas"
-			x: 3.5d
-			y: 6.0d
+			x: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -306,8 +306,8 @@
 				type: "advancement"
 			}]
 			title: "O Alquimista do Crepúsculo"
-			x: 5.5d
-			y: 4.0d
+			x: -8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -355,8 +355,8 @@
 				}
 			]
 			title: "Flora do Everbright"
-			x: 7.0d
-			y: 1.5d
+			x: -9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -396,8 +396,8 @@
 				type: "item"
 			}]
 			title: "Flora do Everdawn"
-			x: 7.0d
-			y: -1.5d
+			x: -7.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -435,8 +435,8 @@
 				type: "item"
 			}]
 			title: "Minerando Falsite"
-			x: 5.5d
-			y: -4.0d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -498,8 +498,8 @@
 				}
 			]
 			title: "Armadura de Horizonite"
-			x: 3.5d
-			y: -6.0d
+			x: 7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -552,8 +552,8 @@
 				}
 			]
 			title: "Os Arcos dos Mundos"
-			x: 0.5d
-			y: -7.0d
+			x: 4.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -613,8 +613,8 @@
 				}
 			]
 			title: "Gemas dos Dois Céus"
-			x: -2.0d
-			y: -6.5d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -660,8 +660,8 @@
 				type: "advancement"
 			}]
 			title: "Golem Artificial"
-			x: -4.5d
-			y: -5.0d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0DFA071C8513FD4D"]
@@ -700,8 +700,8 @@
 				type: "advancement"
 			}]
 			title: "Extermínio de Insetos"
-			x: -6.5d
-			y: -3.0d
+			x: -1.5d
+			y: 3.0d
 		}
 	]
 	title: "§bAlém das Nuvens"

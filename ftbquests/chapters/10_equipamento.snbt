@@ -31,8 +31,8 @@
 				type: "item"
 			}]
 			title: "Abrir Capitulo"
-			x: 0.0d
-			y: 0.0d
+			x: -5.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -148,8 +148,8 @@
 				}
 			]
 			title: "Arsenal de Ferro"
-			x: 0.0d
-			y: -11.0d
+			x: -2.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -218,8 +218,8 @@
 				type: "item"
 			}]
 			title: "Arsenal Expandido"
-			x: -3.0d
-			y: -5.5d
+			x: 0.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -296,8 +296,8 @@
 				}
 			]
 			title: "Mestre dos Combos"
-			x: -9.5d
-			y: -5.5d
+			x: 2.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -349,8 +349,8 @@
 				}
 			]
 			title: "Curios e Relíquias"
-			x: -6.5d
-			y: 0.0d
+			x: 5.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -433,8 +433,8 @@
 				type: "item"
 			}]
 			title: "Encantamentos Incomuns"
-			x: -9.5d
-			y: 5.5d
+			x: -6.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -499,8 +499,8 @@
 				type: "item"
 			}]
 			title: "Infusão de Poder"
-			x: -3.0d
-			y: 5.5d
+			x: -4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -574,8 +574,8 @@
 				}
 			]
 			title: "Arte da Defesa"
-			x: 0.0d
-			y: 11.0d
+			x: -2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -626,8 +626,8 @@
 				type: "item"
 			}]
 			title: "O Arqueiro"
-			x: 3.0d
-			y: 5.5d
+			x: 0.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -679,8 +679,8 @@
 				}
 			]
 			title: "Pólvora e Chumbo"
-			x: 9.5d
-			y: 5.5d
+			x: 2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -723,8 +723,8 @@
 				type: "item"
 			}]
 			title: "Sniper do Mundo"
-			x: 6.5d
-			y: 0.0d
+			x: 4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -767,8 +767,8 @@
 				}
 			]
 			title: "Caçador de Criaturas"
-			x: 9.5d
-			y: -5.5d
+			x: 6.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -827,8 +827,8 @@
 				type: "item"
 			}]
 			title: "Asas de Pano"
-			x: 3.0d
-			y: -5.5d
+			x: -8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -872,8 +872,8 @@
 				type: "item"
 			}]
 			title: "Mochila Suprema"
-			x: 0.0d
-			y: -4.5d
+			x: -6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -919,8 +919,8 @@
 				type: "item"
 			}]
 			title: "Cofre Portátil"
-			x: -1.0d
-			y: -2.0d
+			x: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -964,8 +964,8 @@
 				type: "item"
 			}]
 			title: "Carregador de Mundos"
-			x: -4.0d
-			y: -2.0d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1017,8 +1017,8 @@
 				type: "item"
 			}]
 			title: "Especialização Máxima"
-			x: -2.5d
-			y: 0.0d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1078,8 +1078,8 @@
 				type: "item"
 			}]
 			title: "Um Golpe Decisivo"
-			x: -4.0d
-			y: 2.0d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1171,8 +1171,8 @@
 				}
 			]
 			title: "§6§lGuerreiro Lendário"
-			x: -1.0d
-			y: 2.0d
+			x: 4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1263,8 +1263,8 @@
 				}
 			]
 			title: "Arsenal e Ferramentas Alternativas"
-			x: 0.0d
-			y: 4.5d
+			x: 6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1309,8 +1309,8 @@
 				type: "item"
 			}]
 			title: "Arsenal Fantástico"
-			x: 1.0d
-			y: 2.0d
+			x: 8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1368,8 +1368,8 @@
 				}
 			]
 			title: "Ferro e Katana"
-			x: 4.0d
-			y: 2.0d
+			x: -7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1433,7 +1433,7 @@
 				}
 			]
 			title: "Escudos de Verdade"
-			x: 2.5d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
@@ -1479,8 +1479,8 @@
 				type: "item"
 			}]
 			title: "Escavação em Massa"
-			x: 4.0d
-			y: -2.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1525,8 +1525,8 @@
 				type: "item"
 			}]
 			title: "Escudo da Deusa"
-			x: 1.0d
-			y: -2.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1566,8 +1566,8 @@
 				}
 			]
 			title: "Fábrica de Armas"
-			x: 0.0d
-			y: -9.5d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1607,8 +1607,8 @@
 				}
 			]
 			title: "Braços Mecânicos"
-			x: -2.5d
-			y: -4.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1641,8 +1641,8 @@
 				type: "item"
 			}]
 			title: "Acampamento Portátil"
-			x: -8.5d
-			y: -5.0d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1706,7 +1706,7 @@
 			]
 			title: "Varas de Verdade"
 			x: -5.0d
-			y: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1764,8 +1764,8 @@
 				}
 			]
 			title: "Arsenal Alternativo II"
-			x: -8.5d
-			y: 5.0d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1809,8 +1809,8 @@
 				}
 			]
 			title: "Combatente Híbrido"
-			x: -2.5d
-			y: 4.5d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1854,8 +1854,8 @@
 				}
 			]
 			title: "Caçador Blindado"
-			x: 0.0d
-			y: 9.5d
+			x: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1902,8 +1902,8 @@
 				type: "advancement"
 			}]
 			title: "Escudo em Camadas"
-			x: 2.5d
-			y: 4.5d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1950,8 +1950,8 @@
 				type: "advancement"
 			}]
 			title: "Escudo Lendário"
-			x: 8.5d
-			y: 5.0d
+			x: -2.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -1994,8 +1994,8 @@
 				type: "item"
 			}]
 			title: "Rede de Armazenamento"
-			x: 5.0d
-			y: 0.0d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -2046,8 +2046,8 @@
 				}
 			]
 			title: "Sophisticated Backpacks"
-			x: 8.5d
-			y: -5.0d
+			x: 2.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1C60DB2B8E20699D"]
@@ -2084,8 +2084,8 @@
 				type: "item"
 			}]
 			title: "Tom's Simple Storage"
-			x: 2.5d
-			y: -4.5d
+			x: 0.0d
+			y: 10.0d
 		}
 	]
 	title: "§6Arsenal e Equipamento"

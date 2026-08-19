@@ -131,7 +131,7 @@
 			]
 			title: "A Roda da Fortuna"
 			x: -2.5d
-			y: -6.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -183,8 +183,8 @@
 				}
 			]
 			title: "Alquimia Industrial"
-			x: -8.0d
-			y: -8.0d
+			x: -6.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -233,8 +233,8 @@
 				}
 			]
 			title: "Linha de Produção"
-			x: -6.5d
-			y: -2.5d
+			x: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -284,8 +284,8 @@
 				}
 			]
 			title: "Broca e Engrenagem"
-			x: -11.0d
-			y: 0.0d
+			x: -10.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -336,8 +336,8 @@
 				}
 			]
 			title: "Engenharia de Fluidos"
-			x: -6.5d
-			y: 2.5d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -381,8 +381,8 @@
 				type: "item"
 			}]
 			title: "Era a Vapor"
-			x: -8.0d
-			y: 8.0d
+			x: -10.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -426,8 +426,8 @@
 				type: "item"
 			}]
 			title: "Rede Ferroviária"
-			x: -2.5d
-			y: 6.5d
+			x: -7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -480,8 +480,8 @@
 				}
 			]
 			title: "A Locomotiva"
-			x: 0.0d
-			y: 11.0d
+			x: -6.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -537,8 +537,8 @@
 				}
 			]
 			title: "Máquinas que se Movem"
-			x: 2.5d
-			y: 6.5d
+			x: -2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -583,8 +583,8 @@
 				type: "item"
 			}]
 			title: "Fazenda Automatizada"
-			x: 8.0d
-			y: 8.0d
+			x: 0.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -691,8 +691,8 @@
 				type: "item"
 			}]
 			title: "Fábrica de Encantamentos"
-			x: 6.5d
-			y: 2.5d
+			x: 2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -764,8 +764,8 @@
 				}
 			]
 			title: "Confeitaria Industrial"
-			x: 11.0d
-			y: 0.0d
+			x: 6.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -811,8 +811,8 @@
 				type: "item"
 			}]
 			title: "Reciclagem Industrial"
-			x: 6.5d
-			y: -2.5d
+			x: 7.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -864,8 +864,8 @@
 				}
 			]
 			title: "Fábrica Completa"
-			x: 8.0d
-			y: -8.0d
+			x: 10.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -908,8 +908,8 @@
 				type: "item"
 			}]
 			title: "Voar com Engrenagens"
-			x: 2.5d
-			y: -6.5d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -961,8 +961,8 @@
 				}
 			]
 			title: "Grinder Automático"
-			x: 0.0d
-			y: -4.5d
+			x: 10.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -1020,8 +1020,8 @@
 				}
 			]
 			title: "§6O Engenheiro Supremo"
-			x: -1.0d
-			y: -2.5d
+			x: 7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -1078,8 +1078,8 @@
 				}
 			]
 			title: "Aditivos Cinéticos"
-			x: -3.0d
-			y: -3.0d
+			x: 6.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -1140,8 +1140,8 @@
 				}
 			]
 			title: "Engenharia de Precisão"
-			x: -2.5d
-			y: -1.0d
+			x: 2.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -1188,8 +1188,8 @@
 				}
 			]
 			title: "Elevadores e Engrenagens Sequenciadas"
-			x: -4.5d
-			y: 0.0d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -1251,8 +1251,8 @@
 				}
 			]
 			title: "Kit de Sobrevivência Create"
-			x: -2.5d
-			y: 1.0d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["62A4BC97F8BFD8FA"]
@@ -1301,8 +1301,8 @@
 				}
 			]
 			title: "Duas Escolas de Engenharia"
-			x: -3.0d
-			y: 3.0d
+			x: 4.0d
+			y: 2.5d
 		}
 	]
 	title: "§eEngenharia Mecânica"

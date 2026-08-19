@@ -132,7 +132,7 @@
 			]
 			title: "Novato nas Artes"
 			x: -2.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["06E050829D76E12B"]
@@ -519,7 +519,7 @@
 			]
 			title: "Automação Arcana"
 			x: 2.5d
-			y: -3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["06E050829D76E12B"]
@@ -588,7 +588,7 @@
 			]
 			title: "§dO Arquimago Supremo"
 			x: 0.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["06E050829D76E12B"]
@@ -700,8 +700,8 @@
 				}
 			]
 			title: "Vestes do Fogo"
-			x: -4.0d
-			y: -1.0d
+			x: -5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["06E050829D76E12B"]
@@ -761,8 +761,8 @@
 				}
 			]
 			title: "Vestes da Água"
-			x: -1.5d
-			y: 0.5d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["06E050829D76E12B"]
@@ -823,8 +823,8 @@
 				}
 			]
 			title: "Vestes da Terra"
-			x: -2.5d
-			y: 3.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["06E050829D76E12B"]
@@ -885,8 +885,8 @@
 				}
 			]
 			title: "Vestes do Ar"
-			x: 0.0d
-			y: 1.5d
+			x: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["06E050829D76E12B"]
@@ -927,8 +927,8 @@
 				}
 			]
 			title: "Torres Elementais"
-			x: 2.5d
-			y: 3.0d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["06E050829D76E12B"]
@@ -952,8 +952,8 @@
 				type: "item"
 			}]
 			title: "A Roda do Starbuncle"
-			x: 1.5d
-			y: 0.5d
+			x: 1.0d
+			y: -1.5d
 		}
 	]
 	title: "§dOs Fundamentos da Magia Arcana"

@@ -31,8 +31,8 @@
 				type: "item"
 			}]
 			title: "Abrir Capitulo"
-			x: 0.0d
-			y: 12.0d
+			x: -12.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -85,8 +85,8 @@
 				}
 			]
 			title: "Osmium e Aço"
-			x: 5.0d
-			y: 11.0d
+			x: -7.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -129,8 +129,8 @@
 				}
 			]
 			title: "A Câmara de Enriquecimento"
-			x: 9.0d
-			y: 8.0d
+			x: -2.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -183,8 +183,8 @@
 				}
 			]
 			title: "Rede de Energia"
-			x: 11.5d
-			y: 3.5d
+			x: 2.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -236,8 +236,8 @@
 				}
 			]
 			title: "Circuitos de Controle"
-			x: 12.0d
-			y: -1.5d
+			x: 7.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -282,8 +282,8 @@
 				type: "advancement"
 			}]
 			title: "Ligas e o Metallurgic Infuser"
-			x: 10.5d
-			y: -6.0d
+			x: 12.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -328,8 +328,8 @@
 				}
 			]
 			title: "Fábricas de Processamento"
-			x: 7.0d
-			y: -9.5d
+			x: -12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -382,8 +382,8 @@
 				}
 			]
 			title: "Transporte Logístico"
-			x: 2.5d
-			y: -11.5d
+			x: -7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -436,7 +436,7 @@
 			]
 			title: "Química Industrial"
 			x: -2.5d
-			y: -11.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -475,8 +475,8 @@
 				type: "advancement"
 			}]
 			title: "O Minerador Digital"
-			x: -7.0d
-			y: -9.5d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -528,8 +528,8 @@
 				}
 			]
 			title: "Voando com Hidrogênio"
-			x: -10.5d
-			y: -6.0d
+			x: 7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -575,8 +575,8 @@
 				}
 			]
 			title: "QIO — Armazenamento Quântico"
-			x: -12.0d
-			y: -1.5d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -622,8 +622,8 @@
 				}
 			]
 			title: "Teleportação"
-			x: -11.5d
-			y: 3.5d
+			x: -12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -676,8 +676,8 @@
 				}
 			]
 			title: "Liga Atômica"
-			x: -9.0d
-			y: 8.0d
+			x: -7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -723,8 +723,8 @@
 				type: "advancement"
 			}]
 			title: "MekaSuit — Armadura do Futuro"
-			x: -5.0d
-			y: 11.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -775,8 +775,8 @@
 				}
 			]
 			title: "Induction Matrix"
-			x: -2.0d
-			y: 5.5d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -813,8 +813,8 @@
 				type: "advancement"
 			}]
 			title: "Antimatéria"
-			x: 2.0d
-			y: 5.5d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -866,8 +866,8 @@
 				}
 			]
 			title: "A Tríade dos Metais"
-			x: 5.0d
-			y: 3.5d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -904,8 +904,8 @@
 				type: "item"
 			}]
 			title: "Mekasuit: O Traje Definitivo"
-			x: 6.0d
-			y: 0.0d
+			x: -12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -943,8 +943,8 @@
 				}
 			]
 			title: "Ventos e Sol"
-			x: 5.0d
-			y: -3.5d
+			x: -7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -982,8 +982,8 @@
 				}
 			]
 			title: "Calor e Biomassa"
-			x: 2.0d
-			y: -5.5d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -1006,8 +1006,8 @@
 				type: "item"
 			}]
 			title: "Turbina a Gás"
-			x: -2.0d
-			y: -5.5d
+			x: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -1061,8 +1061,8 @@
 				}
 			]
 			title: "O Núcleo de Fissão"
-			x: -5.0d
-			y: -3.5d
+			x: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -1110,8 +1110,8 @@
 				}
 			]
 			title: "Fusão e Hohlraum"
-			x: -6.0d
-			y: 0.0d
+			x: 12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1434A31CE9FEC99D"]
@@ -1173,8 +1173,8 @@
 				}
 			]
 			title: "Ferramentas de Osmium"
-			x: -5.0d
-			y: 3.5d
+			x: 0.0d
+			y: 8.0d
 		}
 	]
 	title: "§bAs Leis da Física Quântica"

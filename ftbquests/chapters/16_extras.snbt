@@ -1250,7 +1250,7 @@
 			}]
 			title: "Visitante Indesejado"
 			x: 0.0d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1296,8 +1296,8 @@
 				type: "structure"
 			}]
 			title: "O Natal Perdido"
-			x: -1.0d
-			y: -3.5d
+			x: -4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1345,8 +1345,8 @@
 				type: "item"
 			}]
 			title: "Dono do Tempo"
-			x: -3.0d
-			y: -5.0d
+			x: -3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1392,8 +1392,8 @@
 				type: "item"
 			}]
 			title: "A Fábrica que Nunca Dorme"
-			x: -2.5d
-			y: -2.5d
+			x: -5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1438,7 +1438,7 @@
 			]
 			title: "Imersão no Som — Melodies"
 			x: -5.0d
-			y: -3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1477,7 +1477,7 @@
 			}]
 			title: "Scan do Mundo"
 			x: -3.5d
-			y: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1522,8 +1522,8 @@
 				}
 			]
 			title: "Quark: Ferramentas Sensatas"
-			x: -5.5d
-			y: 0.0d
+			x: -4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1573,8 +1573,8 @@
 				}
 			]
 			title: "Quark: Vidro Colorido"
-			x: -3.5d
-			y: 1.0d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1620,9 +1620,10 @@
 				}
 			]
 			title: "Pequenos Ajustes, Grandes Resultados"
-			x: -5.0d
-			y: 3.0d
+			x: 4.0d
+			y: 6.5d
 		}
+	
 		{
 			dependencies: ["2CD27B3D08B629F3"]
 			description: [
@@ -1632,7 +1633,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:luminis_ore"
-			id: "0419B748A6783C7C"
+			id: "B98B901236DB758F"
 			rewards: [
 				{
 					count: 2
@@ -1641,7 +1642,7 @@
 					type: "item"
 				}
 				{
-					id: "4D1B3BA50B05854C"
+					id: "ECBB906A6540A78D"
 					type: "xp"
 					xp: 250
 				}
@@ -1649,21 +1650,21 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4L
+				count: 4
 					id: "5D9A7AB6AE5374FE"
 					item: "buddycards:luminis_ore"
 					type: "item"
 				}
 				{
-					count: 4L
-					id: "1F39879F5D946FC3"
+				count: 4
+					id: "B9C02F3FB575DC61"
 					item: "buddycards:zylex"
 					type: "item"
 				}
 			]
 			title: "Minérios Brilhantes"
-			x: -2.5d
-			y: 2.5d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1674,10 +1675,10 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:buddysteel_ingot"
-			id: "4724897374203336"
+			id: "B7E927A7F81F1511"
 			rewards: [
 				{
-					id: "27E2C2FEE125542B"
+					id: "87DB9F2E29F14624"
 					item: "buddycards:buddysteel_ring"
 					type: "item"
 				}
@@ -1690,26 +1691,20 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4L
-					id: "7DA40DC9E1E072DF"
+				count: 4
+					id: "E2BD15EB58A86D84"
 					item: "buddycards:buddysteel_ingot"
 					type: "item"
 				}
 				{
 					id: "529CD27D58D995D7"
-					item: {
-						Count: 1
-						id: "buddycards:buddysteel_sword"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "buddycards:buddysteel_sword"
 					type: "item"
 				}
 			]
 			title: "Aço Buddysteel"
-			x: -3.0d
-			y: 5.0d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1734,15 +1729,17 @@
 				}
 			]
 			size: 1.5d
-			tasks: [{
-				count: 2L
-				id: "54F8C10560640EE2"
-				item: "buddycards:charged_buddysteel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+				count: 2
+					id: "54F8C10560640EE2"
+					item: "buddycards:charged_buddysteel_ingot"
+					type: "item"
+				}
+			]
 			title: "Carregando o Poder"
-			x: -1.0d
-			y: 3.5d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1753,34 +1750,30 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:true_perfect_buddysteel_ingot"
-			id: "25CBD6C494190551"
+			id: "C7E1747C364E8D93"
 			rewards: [
 				{
 					id: "39D2339927EE144F"
-					item: {
-						Count: 1
-						id: "buddycards:true_perfect_buddysteel_sword"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "buddycards:true_perfect_buddysteel_sword"
 					type: "item"
 				}
 				{
-					id: "5BDA2C052C791347"
+					id: "F190902284E0AB6C"
 					type: "xp"
 					xp: 800
 				}
 			]
 			size: 1.5d
-			tasks: [{
-				id: "4D6E17809E984EDA"
-				item: "buddycards:true_perfect_buddysteel_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "D9097F08992A10FB"
+					item: "buddycards:true_perfect_buddysteel_ingot"
+					type: "item"
+				}
+			]
 			title: "O Ápice: Perfeito de Verdade"
-			x: 0.0d
-			y: 5.5d
+			x: 3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2CD27B3D08B629F3"]
@@ -1790,7 +1783,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:ender_buddycard_binder"
-			id: "322FC33D5296F48A"
+			id: "9706C8FDA2B52BD7"
 			rewards: [
 				{
 					count: 4
@@ -1799,7 +1792,7 @@
 					type: "item"
 				}
 				{
-					id: "503188F1F1C48482"
+					id: "D54D939F53FC0BBC"
 					type: "xp"
 					xp: 250
 				}
@@ -1807,7 +1800,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "111696185F1632BB"
+					id: "E8C4446DBAACA9C0"
 					item: "buddycards:ender_buddycard_binder"
 					type: "item"
 				}
@@ -1818,9 +1811,8 @@
 				}
 			]
 			title: "Guardando a Coleção"
-			x: 1.0d
-			y: 3.5d
-		}
-	]
+			x: 4.0d
+			y: -6.5d
+		}]
 	title: "§6Extras"
 }

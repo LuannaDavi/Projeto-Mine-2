@@ -1,33 +1,8 @@
 {
   "replace": false,
   "values": [
-    "graveyard:large_graveyard_structure",
-    "graveyard:medium_graveyard_structure",
-    "graveyard:small_desert_graveyard_structure",
-    "graveyard:haunted_house_structure",
-    "graveyard:crypt_structure",
-    "graveyard:lich_prison_structure",
-    "graveyard:giant_mushroom_structure",
-    "graveyard:altar_structure",
-    "plenty_of_golems:dungeon_golem_structure",
-    "plenty_of_golems:guardian_of_the_deep_structure",
-    "plenty_of_golems:ancient_prismarine_structure",
-    "block_factorys_bosses:dragon_tower",
-    "block_factorys_bosses:sandworm_nest",
-    "block_factorys_bosses:yeti_hideout",
-    "dungeons_arise:major_structures",
-    "dungeons_arise:minor_structures",
-    "biomeswevegone:aspen_manors",
-    "biomeswevegone:prairie_houses",
-    "legendary_monsters:cloudy_temple",
-    "legendary_monsters:frostbitten_temple",
-    "legendary_monsters:mossy_temple",
-    "legendary_monsters:ruined_pyramid",
-    "infectious:abandoned_house_huge",
-    "infectious:military_base",
-    "infectious:bunker",
-    "infectious:radio_tower",
-    "infectious:abandoned_church",
-    "minecraft:villages"
+    "iceandfire:gorgon_temple",
+    "iceandfire:graveyard",
+    "iceandfire:mausoleum"
   ]
 }

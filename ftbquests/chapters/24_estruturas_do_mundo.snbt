@@ -855,7 +855,7 @@
 			]
 			title: "Templos e Pirâmides"
 			x: 2.5d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["57B16D1E22F8B706"]
@@ -1105,7 +1105,7 @@
 			]
 			title: "Covis das Trevas"
 			x: 2.5d
-			y: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["57B16D1E22F8B706"]
