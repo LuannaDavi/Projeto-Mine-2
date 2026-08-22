@@ -6,3 +6,6 @@ PROBLEMAS ENCONTRADOS:
 
 - Usar qualquer armadura do mod brazilian delight enquanto usa armas do mod epic fight ressurrection pode causar crashs por causa de sua biblioteca de dependência (solução não encontrada)
 - Atacar com armas do mod weapons of miracles(WOM) enquanto se está no ar no criativo pode causar crashes (solução não encontrada)
+
+AVISOS:
+- alguns jars e pacotes de recursos podem estar diferentes dos originais, foram modificados para encaixar no modpack ou corrigir pequenos bugs, deixo aqui total crédito aos autores originais!
