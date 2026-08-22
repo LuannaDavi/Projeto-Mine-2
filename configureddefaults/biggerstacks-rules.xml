@@ -1,0 +1,70 @@
+<ruleset version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://codeberg.org/PORTB/BiggerStacksConfigLib/raw/branch/master/extra/schema.xsd">
+
+    <!-- ================================================= -->
+    <!-- Baldes: mantidos em 1 (recomendacao do proprio      -->
+    <!-- autor do mod, evita bug de troca cheio->vazio ao    -->
+    <!-- colocar liquido). Se quiser mudar isso tambem, me    -->
+    <!-- avisa que eu ajusto.                                 -->
+    <!-- ================================================= -->
+    <rule stacksize="1">
+        <condition>is_bucket</condition>
+    </rule>
+
+    <!-- ================================================= -->
+    <!-- Recursos brutos em massa: minerio, lingote, gema,    -->
+    <!-- po, nugget, plate -- o que mais se acumula no jogo   -->
+    <!-- (Mekanism, Create, Mystical Agriculture, etc)        -->
+    <!-- 1000x o vanilla                                      -->
+    <!-- ================================================= -->
+    <rule stacksize="64000">
+        <or>
+            <condition>tag forge:ores</condition>
+            <condition>tag forge:ingots</condition>
+            <condition>tag forge:raw_materials</condition>
+            <condition>tag forge:gems</condition>
+            <condition>tag forge:dusts</condition>
+            <condition>tag forge:nuggets</condition>
+            <condition>tag forge:plates</condition>
+        </or>
+    </rule>
+
+    <!-- ================================================= -->
+    <!-- Blocos de construcao em geral (pedra, madeira, etc)  -->
+    <!-- 100x o vanilla                                        -->
+    <!-- ================================================= -->
+    <rule stacksize="6400">
+        <condition>is_block</condition>
+        <condition>stacksize gt 1</condition>
+    </rule>
+
+    <!-- ================================================= -->
+    <!-- Comida                                                -->
+    <!-- 10x o vanilla                                         -->
+    <!-- ================================================= -->
+    <rule stacksize="640">
+        <condition>is_food</condition>
+    </rule>
+
+    <!-- ================================================= -->
+    <!-- Pocoes e livros encantados                            -->
+    <!-- 10x o vanilla                                         -->
+    <!-- ================================================= -->
+    <rule stacksize="640">
+        <or>
+            <condition>id minecraft:potion</condition>
+            <condition>id minecraft:splash_potion</condition>
+            <condition>id minecraft:lingering_potion</condition>
+            <condition>id minecraft:enchanted_book</condition>
+        </or>
+    </rule>
+
+    <!-- ================================================= -->
+    <!-- Fallback geral: qualquer outro item que ja empilha   -->
+    <!-- no vanilla (stacksize > 1) sobe para 640.             -->
+    <!-- Fica por ultimo, tem prioridade mais baixa.           -->
+    <!-- ================================================= -->
+    <rule stacksize="640">
+        <condition>stacksize gt 1</condition>
+    </rule>
+
+</ruleset>
