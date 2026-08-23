@@ -5,11 +5,12 @@ INSTALAÇÂO:
 1. Adicione todos os mods na pasta mods e abra o jogo uma vez, provavelmente ele dará erro mas é necessário para que as pastas correspondentes de datapacks e configurações passem a existir(não é necessário baixar a pasta jars corrigidos, a pasta existe por uma questão de organização!).
 2. Feche o jogo e coloque os datapacks e server_scripts na pasta do kubeJS na .minecraft
 3. Coloque as configurações básicas na configureddefaults
-4. Abra o jogo e se nenhum erro acontecer crie um mundo, abra o menu do FTBquests e coloque no modo de edição, crie uma missão aleátoria, não precisa Fazer sentido, é só para a pasta de quests passar a existir.
-5. É importante que você saia do modo de editor em seguida para não estragar a experiência, em seguida coloque as missões na pasta do FTBquests dentro da pasta config, assim as missões vão carregar
 
 DICAS:
 - Existem três mods de mochila no pack, elas não se sobrepõem! a de camping pode ser equipada no curios, a do travelers pode ser equipada clicando com o botão direito e a sophisticated não precisa estar equipada para abrir, basta estar no inventário!
+- caso suas missões na pasta FTBquests não carreguem siga esse passo a passo:
+1. Abra o jogo e crie um mundo, abra o menu do FTBquests e coloque no modo de edição, crie uma missão aleátoria, não precisa Fazer sentido, é só para a pasta de quests passar a existir.
+2. É importante que você saia do modo de editor em seguida para não estragar a experiência, em seguida coloque as missões na pasta do FTBquests dentro da pasta config, se certifique de que está na pasta chapters, assim as missões vão carregar
 
 PROBLEMAS ENCONTRADOS:
 
