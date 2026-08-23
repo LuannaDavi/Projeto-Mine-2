@@ -1057,7 +1057,7 @@
 			tasks: [
 				{
 					id: "6B314F4162F6CFCD"
-					item: "hearth_and_home:calcite_bricks"
+					item: "hearth_and_home:polished_calcite"
 					type: "item"
 				}
 				{
@@ -1295,5 +1295,5 @@
 			y: 8.0d
 		}
 	]
-	title: "§6Construção e Decoração"
+	title: "§1Construção e Decoração"
 }

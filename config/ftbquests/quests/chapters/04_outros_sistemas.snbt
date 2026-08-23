@@ -219,7 +219,6 @@
 			x: -2.5d
 			y: 1.0d
 		}
-	
 		{
 			dependencies: ["49DA8823123BE733"]
 			description: [
@@ -233,7 +232,7 @@
 			rewards: [
 				{
 					count: 8
-					id: "C844EA1A39536DC1"
+					id: "5CADDFFE3D64F3AB"
 					item: "mysticalagriculture:prudentium_essence"
 					type: "item"
 				}
@@ -246,20 +245,20 @@
 			size: 1.5d
 			tasks: [
 				{
-				count: 4
+					count: 4L
 					id: "7B343910E4B4D12F"
 					item: "mysticalagriculture:iron_seeds"
 					type: "item"
 				}
 				{
-				count: 4
-					id: "CD6E58A3575EE815"
+					count: 4L
+					id: "3FB3096617A95E4D"
 					item: "mysticalagriculture:gold_seeds"
 					type: "item"
 				}
 				{
-				count: 2
-					id: "8C621AF11ACE7853"
+					count: 2L
+					id: "50582A1D5473659C"
 					item: "mysticalagriculture:diamond_seeds"
 					type: "item"
 				}
@@ -276,16 +275,23 @@
 				"§7dele têm efeitos que nenhuma liga comum consegue imitar."
 			]
 			hide_until_deps_complete: true
-			icon: "mysticalagriculture:soulium_sword"
+			icon: {
+				Count: 1
+				id: "mysticalagriculture:soulium_dagger"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4634C6B854B72A95"
 			rewards: [
 				{
+					count: 4
 					id: "07562D4406A44220"
-					item: "mysticalagriculture:soulium_pickaxe"
+					item: "mysticalagriculture:soulium_ingot"
 					type: "item"
 				}
 				{
-					id: "A0520272EF343CAD"
+					id: "3B46D0C654BD0DE6"
 					type: "xp"
 					xp: 350
 				}
@@ -293,14 +299,20 @@
 			size: 1.5d
 			tasks: [
 				{
-				count: 4
-					id: "B8B953EA7F495530"
+					count: 4L
+					id: "29E3E363ECA0509F"
 					item: "mysticalagriculture:soulium_seeds"
 					type: "item"
 				}
 				{
-					id: "B98FA9F724436737"
-					item: "mysticalagriculture:soulium_sword"
+					id: "4BF5B23CDF89D71A"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:soulium_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -318,22 +330,26 @@
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:supremium_paxel"
 			id: "4A99207458D67631"
-			rewards: [
-				{
-					id: "F7C4E0037E3C9DBE"
-					type: "xp"
-					xp: 450
-				}
-			]
+			rewards: [{
+				id: "524FD4C062DF7EE7"
+				type: "xp"
+				xp: 450
+			}]
 			size: 1.5d
 			tasks: [
 				{
 					id: "4EF793907ECC09BF"
-					item: "mysticalagradditions:imperium_paxel"
+					item: {
+						Count: 1
+						id: "mysticalagradditions:imperium_paxel"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "B81E01A95E96E86B"
+					id: "7EDF788B7E7D143C"
 					item: "mysticalagradditions:supremium_paxel"
 					type: "item"
 				}
@@ -351,15 +367,15 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:nether_star_shard"
-			id: "AD975063DD1A7300"
+			id: "098FA93EFFB0F653"
 			rewards: [
 				{
-					id: "8FAAC3990F3B152D"
+					id: "268F588AD5E24583"
 					item: "mysticalagradditions:nether_star_shard"
 					type: "item"
 				}
 				{
-					id: "EEEC07A3CFF22EE8"
+					id: "766E60842E575125"
 					type: "xp"
 					xp: 600
 				}
@@ -367,15 +383,15 @@
 			size: 1.5d
 			tasks: [
 				{
-				count: 4
-					id: "FB585AA6495D1C82"
-					item: "mysticalagradditions:nether_star_seeds"
+					count: 4L
+					id: "5D33293CD87C6BEA"
+					item: "mysticalagriculture:nether_star_seeds"
 					type: "item"
 				}
 				{
-				count: 2
+					count: 2L
 					id: "43FF30B31D95DBD8"
-					item: "mysticalagradditions:nether_star_essence"
+					item: "mysticalagriculture:nether_star_essence"
 					type: "item"
 				}
 			]
@@ -408,15 +424,15 @@
 			size: 1.5d
 			tasks: [
 				{
-				count: 4
+					count: 4L
 					id: "10807EE6E840D231"
-					item: "mysticalagradditions:dragon_egg_seeds"
+					item: "mysticalagriculture:dragon_egg_seeds"
 					type: "item"
 				}
 				{
-				count: 2
+					count: 2L
 					id: "49125D85E79FD4F5"
-					item: "mysticalagradditions:dragon_egg_essence"
+					item: "mysticalagriculture:dragon_egg_essence"
 					type: "item"
 				}
 			]
@@ -432,17 +448,17 @@
 				"§7quatro colheitas mais estranhas do mod, todas na mesma fileira."
 			]
 			hide_until_deps_complete: true
-			icon: "mysticalagradditions:neutronium_essence"
-			id: "CD1FD51E6655CC9E"
+			icon: "mysticalagriculture:neutronium_essence"
+			id: "46B3C298BF2888F5"
 			rewards: [
 				{
 					count: 2
-					id: "EB6FF6BF9D85DB62"
-					item: "mysticalagradditions:neutronium_essence"
+					id: "1C48331F23EF4E53"
+					item: "mysticalagriculture:neutronium_essence"
 					type: "item"
 				}
 				{
-					id: "81405ECAE0BB1DF5"
+					id: "7C501F1F6923488E"
 					type: "xp"
 					xp: 700
 				}
@@ -450,27 +466,27 @@
 			size: 1.5d
 			tasks: [
 				{
-				count: 2
-					id: "A4049C2576C831B6"
-					item: "mysticalagradditions:neutronium_seeds"
+					count: 2L
+					id: "3B959767CC4657B1"
+					item: "mysticalagriculture:neutronium_seeds"
 					type: "item"
 				}
 				{
-				count: 2
+					count: 2L
 					id: "14EE7728620CD827"
-					item: "mysticalagradditions:nitro_crystal_seeds"
+					item: "mysticalagriculture:nitro_crystal_seeds"
 					type: "item"
 				}
 				{
-				count: 2
+					count: 2L
 					id: "261281890732E93D"
-					item: "mysticalagradditions:awakened_draconium_seeds"
+					item: "mysticalagriculture:awakened_draconium_seeds"
 					type: "item"
 				}
 				{
-				count: 2
+					count: 2L
 					id: "1A71C5E483083EBC"
-					item: "mysticalagradditions:gaia_spirit_seeds"
+					item: "mysticalagriculture:gaia_spirit_seeds"
 					type: "item"
 				}
 			]
@@ -487,7 +503,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:insanium_ingot"
-			id: "8CE9D4CE9E142A9C"
+			id: "435D8D9ECBF046BE"
 			rewards: [
 				{
 					id: "04F5F33D69698F05"
@@ -503,13 +519,13 @@
 			size: 1.5d
 			tasks: [
 				{
-				count: 4
-					id: "DA8C5DF112D894A1"
+					count: 4L
+					id: "1458A60B5020F905"
 					item: "mysticalagradditions:insanium_essence"
 					type: "item"
 				}
 				{
-				count: 2
+					count: 2L
 					id: "70009E1CDE788B8B"
 					item: "mysticalagradditions:insanium_ingot"
 					type: "item"
@@ -518,6 +534,7 @@
 			title: "Insanium: Além do Supremium"
 			x: 0.0d
 			y: -3.5d
-		}]
-	title: "§aA Colheita Impossível"
+		}
+	]
+	title: "§2A Colheita Impossível"
 }

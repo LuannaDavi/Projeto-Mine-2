@@ -1486,6 +1486,926 @@
 			x: 12.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7As masmorras por aqui não brincam. São enormes,"
+				"§7cheias de armadilhas e habitadas por mobs modificados."
+				"§7Mas os baús dentro delas têm itens que você não"
+				"§7vai encontrar em mais lugar nenhum."
+				""
+				"§eEncontre e explore uma dungeon grande do Dungeons Arise."
+				"§eColete ao menos §e1 item raro §7de baú de dungeon."
+				""
+				"§6Dica: §7Não entre com pressa. Explore cada corredor."
+				"§7Armadilhas de pressão e spawners escondidos matam os impacientes."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:hopper_minecart"
+			id: "2B0000000000000C"
+			rewards: [
+				{
+					count: 3
+					id: "2B0000000000000D"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "2B0000000000000E"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:fortune"
+								lvl: 3
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B0000000000000F"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "dungeons_arise:find_mining_system"
+				criterion: "location0"
+				id: "2B00000000000010"
+				type: "advancement"
+			}]
+			title: "Saquear as Profundezas"
+			x: -10.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Existem dezenas de estruturas únicas geradas pelo mundo —"
+				"§7do §eShinobi Thieves §7escondido em bambuzal até o"
+				"§7imponente §eShiraz Palace §7nas savanas e o"
+				"§eColiseum §7de pedra nos desertos."
+				""
+				"§eEncontre o §eShiraz Palace §7e saqueie o andar"
+				"§emais alto — os baús de topo são os mais valiosos."
+				""
+				"§6Dica: §7Explorer's Compass aponta para estruturas próximas."
+				"§7Leve escadas — muitas estruturas têm vários andares!"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:chiseled_stone_bricks"
+			id: "2B00000000000301"
+			rewards: [
+				{
+					count: 3
+					id: "2B00000000000302"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2B00000000000303"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27CE6BE2D646A3E8"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:protection"
+								lvl: 4
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03B3E7A7624880B9"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sweeping"
+								lvl: 3
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B00000000000304"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "dungeons_arise:find_shiraz_palace"
+				criterion: "location0"
+				id: "2B00000000000305"
+				type: "advancement"
+			}]
+			title: "Palácios e Arenas"
+			x: -7.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Outposts de Pillagers são estruturas vanilla — torres de madeira"
+				"§7guardadas por Pillagers e um Capitão de Raid especial, que"
+				"§7carrega a Bandeira Ominosa e aumenta a dificuldade dos raids."
+				""
+				"§eEncontre um Outpost e derrote o Capitão de Raid que carrega"
+				"§ea Bandeira Ominosa."
+				""
+				"§6Dica: §7Pillagers atiram à distância — avance em zigue-zague"
+				"§7ou use escudo. A bandeira dele é um troféu decorativo!"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:stone_bricks"
+			id: "2B00000000000011"
+			rewards: [
+				{
+					count: 16
+					id: "2B00000000000012"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "2B00000000000013"
+					item: {
+						Count: 1
+						id: "minecraft:crossbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B00000000000014"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "2B00000000000015"
+				item: {
+					Count: 1
+					id: "minecraft:white_banner"
+					tag: {
+						BlockEntityTag: {
+							Patterns: [
+								{
+									Color: 9
+									Pattern: "mr"
+								}
+								{
+									Color: 8
+									Pattern: "bs"
+								}
+								{
+									Color: 7
+									Pattern: "cs"
+								}
+								{
+									Color: 8
+									Pattern: "bo"
+								}
+								{
+									Color: 15
+									Pattern: "ms"
+								}
+								{
+									Color: 8
+									Pattern: "hh"
+								}
+								{
+									Color: 8
+									Pattern: "mc"
+								}
+								{
+									Color: 15
+									Pattern: "bo"
+								}
+							]
+							id: "minecraft:banner"
+						}
+						HideFlags: 32
+						display: {
+							Name: "{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Sentinela das Fronteiras"
+			x: -4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Estruturas comuns foram reimaginadas e espalhadas por"
+				"§7biomas onde normalmente não apareceriam."
+				"§7Uma Woodland Mansion pode aparecer bem longe da floresta!"
+				""
+				"§ePise dentro de uma Woodland Mansion reimaginada."
+				""
+				"§6Dica: §7Olhe ao redor enquanto explora — elas são grandes!"
+				"§7Se a task não completar ao entrar, o mod pode ter mudado"
+				"§7a tag de estrutura entre versões."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:trapped_chest"
+			id: "2B00000000000020"
+			rewards: [
+				{
+					count: 3
+					id: "2B00000000000021"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:looting"
+								lvl: 3
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AE60D9C7B415F82"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 4
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B00000000000022"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "2B00000000000023"
+				structure: "#repurposed_structures:collections/mansions"
+				type: "structure"
+			}]
+			title: "Estruturas Redescobertas"
+			x: -1.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Naufrágios guardam os melhores mapas do jogo."
+				"§7Siga o mapa e cave até encontrar um baú enterrado —"
+				"§7pode ter o §eHeart of the Sea §7dentro."
+				""
+				"§eEncontre um naufrágio e colete seu §emapa do tesouro§7."
+				"§eSiga o mapa e encontre o baú enterrado."
+				""
+				"§6Dica: §7Golfinhos revelam tesouros próximos se você"
+				"§7alimentá-los com peixe cru. Leve sempre algo para pescar."
+				""
+				"§8§o(O X nunca marca o lugar exato. Sempre foi assim.)"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:map"
+			id: "2B00000000000029"
+			rewards: [
+				{
+					id: "2B0000000000002A"
+					item: "artifacts:golden_hook"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2B0000000000002B"
+					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+				{
+					id: "2B0000000000002C"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "2B0000000000002D"
+				item: "minecraft:heart_of_the_sea"
+				type: "item"
+			}]
+			title: "Caçador de Tesouros"
+			x: 2.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Mineshafts, ruínas subterrâneas e cavernas profundas"
+				"§7escondem minérios raros e baús preciosos."
+				""
+				"§eExplore uma Mineshaft Abandonada e colete um baú de minecart."
+				""
+				"§6Dica: §7Tochas ajudam a não se perder nas minas!"
+				"§7Leve comida extra — é fácil ficar preso."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:rail"
+			id: "2B00000000000038"
+			rewards: [
+				{
+					count: 16
+					id: "2B00000000000039"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "2B0000000000003A"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "2B0000000000003B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "2B0000000000003C"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			title: "Minas Abandonadas"
+			x: 5.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7As antigas pirâmides do deserto escondem"
+				"§7armadilhas mortais e baús com loot valioso."
+				""
+				"§eExplore uma Pirâmide do Deserto ou Templo da Selva."
+				"§eDesarme as armadilhas e colete o loot dos baús."
+				""
+				"§6Dica: §7§cNUNCA §7pise nas placas de pressão!"
+				"§7Quebre o bloco embaixo delas para desarmá-las com segurança."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:sandstone"
+			id: "2B0000000000003D"
+			rewards: [
+				{
+					id: "2B0000000000003E"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:blast_protection"
+								lvl: 4
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5CE81B4A9036D2F7"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 4
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2B0000000000003F"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+				{
+					id: "2B00000000000040"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "repurposed_structures:pyramids"
+				criterion: ""
+				id: "2B00000000000041"
+				type: "advancement"
+			}]
+			title: "Relíquias do Deserto"
+			x: 8.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7The Graveyard adiciona cemitérios góticos com mortos-vivos"
+				"§7especiais e estruturas únicas como criptas e mausoléus."
+				""
+				"§eEncontre um cemitério do The Graveyard."
+				"§eSaque a cripta ou mausoléu e escape vivo."
+				""
+				"§6Dica: §7Mobs do Graveyard são resistentes ao fogo!"
+				"§7Leve flechas envenenadas ou espada encantada."
+			]
+			hide_until_deps_complete: true
+			icon: "graveyard:deepslate_gravestone"
+			id: "2B0000000000004C"
+			rewards: [
+				{
+					count: 3
+					id: "2B0000000000004D"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:smite"
+								lvl: 5
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B0000000000004E"
+					item: "artifacts:night_vision_goggles"
+					type: "item"
+				}
+				{
+					id: "2B0000000000004F"
+					type: "xp"
+					xp: 450
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 3L
+				id: "2B00000000000050"
+				item: "graveyard:dark_iron_ingot"
+				type: "item"
+			}]
+			title: "Entre os Mortos"
+			x: 11.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7O §eThe Graveyard §7não é só estrutura — tem bosses. O Ghoul"
+				"§7e o Nightmare guardam cemitérios maiores. O §eLich §7(\"Corrupted"
+				"§7Champion\", não o da Twilight Forest) é o chefe supremo do mod —"
+				"§7um feiticeiro morto-vivo de 3 fases que teleporta e invoca"
+				"§7esqueletos sem parar."
+				""
+				"§eDerrote o Lich (Corrupted Champion) do Graveyard."
+				""
+				"§6Dica: §7Ele muda de forma 2 vezes durante a luta — cada fase"
+				"§7é mais perigosa. Guarde poções de cura pra fase final."
+			]
+			hide_until_deps_complete: true
+			icon: "graveyard:dark_iron_ingot"
+			id: "2B00000000000401"
+			rewards: [
+				{
+					count: 8
+					id: "2B00000000000402"
+					item: "graveyard:dark_iron_ingot"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "2B00000000000403"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "2B00000000000404"
+					type: "xp"
+					xp: 900
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				entity: "graveyard:lich"
+				id: "464DB78085637BCC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "O Lich do Cemitério"
+			x: -8.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Cinco cajados de osso, cada um com nome e maldição"
+				"§7próprios: Zatraq'gul, Nortoq'gul, Mynakta'gul, Xaphnok'gul"
+				"§7e Azrata'gul. Nenhum deles é fácil de conseguir."
+				""
+				"§eColete os 5 cajados nomeados: Staff of Zatraq'gul, Staff"
+				"§eof Nortoq'gul, Staff of Mynakta'gul, Staff of Xaphnok'gul"
+				"§ee Staff of Azrata'gul."
+				""
+				"§8§o(Cinco cajados amaldiçoados com nomes que ninguém"
+				"§8§oconsegue pronunciar de primeira. Nem o segundo.)"
+			]
+			hide_until_deps_complete: true
+			icon: "graveyard:black_bone_staff"
+			id: "12CD37B9A92019AB"
+			rewards: [
+				{
+					count: 8
+					id: "31DF21F547DFD4A0"
+					item: "graveyard:dark_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "7FE03FF522565A16"
+					type: "xp"
+					xp: 700
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3E16530085FEE35C"
+					item: "graveyard:white_bone_staff"
+					type: "item"
+				}
+				{
+					id: "065866EF3AFFDAB0"
+					item: "graveyard:black_bone_staff"
+					type: "item"
+				}
+				{
+					id: "57868DF323E305DE"
+					item: "graveyard:cyan_bone_staff"
+					type: "item"
+				}
+				{
+					id: "56A8BC7885342090"
+					item: "graveyard:purple_bone_staff"
+					type: "item"
+				}
+				{
+					id: "1518BD81D6420DE7"
+					item: "graveyard:red_bone_staff"
+					type: "item"
+				}
+			]
+			title: "§5§lOs Cajados Amaldiçoados"
+			x: -5.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Nem todo cemitério por aqui é igual. Existem versões"
+				"§7médias, grandes, adaptadas pro deserto, e até uma casa"
+				"§7mal-assombrada inteira escondida por aí."
+				""
+				"§eEncontre um Medium Graveyard, um Large Graveyard, um"
+				"§eDesert Graveyard, uma Haunted House, uma Dead Tree e"
+				"§eum Giant Mushroom corrompido."
+			]
+			hide_until_deps_complete: true
+			icon: "graveyard:dark_iron_ingot"
+			id: "1A539D38A9617D7C"
+			rewards: [
+				{
+					count: 8
+					id: "3507384104E92077"
+					item: "minecraft:soul_torch"
+					type: "item"
+				}
+				{
+					id: "3320BDA6BC737BAD"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "graveyard:graveyard/medium_graveyard"
+					criterion: ""
+					id: "27AF45AF026828AA"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/large_graveyard"
+					criterion: ""
+					id: "52DF0FA5F122CC8A"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/desert_graveyard"
+					criterion: ""
+					id: "4882B999038BE5A4"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/haunted_house"
+					criterion: ""
+					id: "0872D8623649E28A"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/dead_tree"
+					criterion: ""
+					id: "6F0D844E49B69E14"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/giant_mushroom"
+					criterion: ""
+					id: "7B49C1BAFCB1D6FE"
+					type: "advancement"
+				}
+			]
+			title: "Cemitérios Crescentes"
+			x: -2.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Sobreviver nesses arredores exige mais que força bruta —"
+				"§7esqueletos escondidos, caixões amaldiçoados e frascos de"
+				"§7sangue fazem parte do trabalho."
+				""
+				"§eEncontre um esqueleto escondido, crie um caixão, equipe"
+				"§eum Ghouling Coffin, obtenha um Vial of Blood, e encontre"
+				"§ea fonte da corrupção do cemitério."
+			]
+			hide_until_deps_complete: true
+			icon: "graveyard:vial_of_blood"
+			id: "02BF69709BCFF210"
+			rewards: [
+				{
+					count: 16
+					id: "2B97E15C7EC0B4D7"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "0E9F8ECBB561DE69"
+					type: "xp"
+					xp: 450
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "graveyard:graveyard/find_skeleton"
+					criterion: ""
+					id: "6E559EC79A475095"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/craft_coffin"
+					criterion: ""
+					id: "2571348913EED549"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/equip_ghouling_coffin"
+					criterion: ""
+					id: "02816C444085ECF6"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/vial_of_blood"
+					criterion: ""
+					id: "2EDA232B82A76796"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/corruption"
+					criterion: ""
+					id: "68242B7249292F45"
+					type: "advancement"
+				}
+			]
+			title: "Artefatos e Rituais Sombrios"
+			x: 0.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Wraiths cegam você antes de atacar, acólitos lutam com"
+				"§7adagas de osso, e uma horda inteira pode aparecer se você"
+				"§7não tomar cuidado."
+				""
+				"§eDerrote um Wraith, mate um inimigo enquanto estiver cego,"
+				"§ederrote um Acolyte com adaga de osso, e sobreviva a uma"
+				"§ehorda inteira."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "graveyard:bone_dagger"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "640FEE41A2BF0F52"
+			rewards: [
+				{
+					id: "6CE5BA71D4E0452C"
+					item: {
+						Count: 1
+						id: "graveyard:bone_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1AB227DCED900262"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					advancement: "graveyard:graveyard/kill_wraith"
+					criterion: ""
+					id: "060D03A9A576CC21"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/kill_while_blinded"
+					criterion: ""
+					id: "2482874AB085594B"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/kill_acolyte_bone_dagger"
+					criterion: ""
+					id: "51364211AE064AB9"
+					type: "advancement"
+				}
+				{
+					advancement: "graveyard:graveyard/kill_horde"
+					criterion: ""
+					id: "07AAFE0BAF344184"
+					type: "advancement"
+				}
+			]
+			title: "Ameaças do Cemitério"
+			x: 3.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Alguém escondeu uma referência a Typhon por aí,"
+				"§7o titã mais mortal da mitologia grega, numa estrutura"
+				"§7oceânica gigantesca."
+				""
+				"§eEncontre a estrutura de Typhon."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:trident"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7AF025316CA2450C"
+			rewards: [
+				{
+					id: "2F5AEE3DE8EBB45F"
+					item: {
+						Count: 1
+						id: "minecraft:trident"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F5AEE3DE8EBB461"
+					item: "minecraft:nautilus_shell"
+					type: "item"
+				}
+				{
+					id: "2769EB9CA4A52A8B"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "dungeons_arise:find_typhon"
+				criterion: "location0"
+				id: "4CED05A734C6B9E3"
+				type: "advancement"
+			}]
+			title: "A Fera de Typhon"
+			x: 6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["57B16D1E22F8B706"]
+			description: [
+				"§7Arenas de combate abandonadas, ecoando lutas que já"
+				"§7aconteceram há muito tempo. Perigosas, mas ricas em loot."
+				""
+				"§eEncontre o Coliseu do When Dungeons Arise."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "75F9E100505E3B5C"
+			rewards: [
+				{
+					id: "2D6A893FBEB7B42A"
+					item: {
+						Count: 1
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "290CFAA728AB21ED"
+					type: "xp"
+					xp: 450
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				advancement: "dungeons_arise:find_coliseum"
+				criterion: "location0"
+				id: "1D2B2EC892196BCB"
+				type: "advancement"
+			}]
+			title: "O Coliseu Perdido"
+			x: 9.5d
+			y: 13.5d
+		}
 	]
-	title: "§6Estruturas do Mundo"
+	title: "§7§lEstruturas do Mundo"
 }

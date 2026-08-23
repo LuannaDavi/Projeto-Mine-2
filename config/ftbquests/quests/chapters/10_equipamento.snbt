@@ -674,7 +674,7 @@
 				}
 				{
 					id: "6EC43B8752E620D5"
-					item: "tacz:ak47"
+					item: "tacz:modern_kinetic_gun"
 					type: "item"
 				}
 			]
@@ -2088,5 +2088,5 @@
 			y: 10.0d
 		}
 	]
-	title: "§6Arsenal e Equipamento"
+	title: "§7Arsenal e Equipamento"
 }

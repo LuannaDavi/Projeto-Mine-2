@@ -1304,6 +1304,656 @@
 			x: 4.0d
 			y: 2.5d
 		}
+		{
+			description: [
+				"§7Com a linha de montagem rodando, a engenhoca sai pronta"
+				"§7do outro lado — sem precisar visitar as Cavernas de Alex"
+				"§7pra cada peça avulsa."
+			]
+			hide_until_deps_complete: true
+			icon: "alexscaves:notor_gizmo"
+			id: "7776F1BC6D609098"
+			rewards: [
+				{
+					id: "6BCA7107A4554B24"
+					item: "alexscaves:occult_gem"
+					type: "item"
+				}
+				{
+					id: "3C8E19A8A0C2613D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "446C10FAEA785C15"
+				item: "alexscaves:notor_gizmo"
+				type: "item"
+			}]
+			title: "Engenhoca Terminada"
+			x: -13.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Redstone sem fio de verdade. Um elo transmite o sinal,"
+				"§7o outro recebe — não importa a distância, contanto que"
+				"§7estejam na mesma frequência."
+			]
+			hide_until_deps_complete: true
+			icon: "create:redstone_link"
+			id: "192BBDF59B4CC6E0"
+			rewards: [
+				{
+					count: 8
+					id: "477FD6820ACB62B3"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "0CF15A49F83F2038"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "3DFE6408F5D60D65"
+				item: "create:redstone_link"
+				type: "item"
+			}]
+			title: "Elo Sem Fio"
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Filtro comum separa por item exato. O de atributos"
+				"§7separa por categoria inteira — todo item enchantado,"
+				"§7todo alimento, toda ferramenta gasta."
+			]
+			hide_until_deps_complete: true
+			icon: "create:attribute_filter"
+			id: "5A7575F89D92A23B"
+			rewards: [
+				{
+					count: 6
+					id: "44A4B410E698878F"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "72C79699BD29851D"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "380A8777B980D127"
+					item: "create:attribute_filter"
+					type: "item"
+				}
+				{
+					id: "66107D8927E36DD2"
+					item: "create:filter"
+					type: "item"
+				}
+			]
+			title: "Filtro Inteligente"
+			x: 13.4d
+			y: 5.55d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Gira sozinha seguindo a posição do sol e da lua."
+				"§7Um relógio-contraption de verdade, sem precisar"
+				"§7de nenhum redstone pra funcionar."
+			]
+			hide_until_deps_complete: true
+			icon: "create:clockwork_bearing"
+			id: "10DEFF28BDA09D73"
+			rewards: [
+				{
+					count: 2
+					id: "028FBBFE1002183A"
+					item: "create:precision_mechanism"
+					type: "item"
+				}
+				{
+					id: "21A9CCE0C60D06CC"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "1383CA6CD2A2644D"
+				item: "create:clockwork_bearing"
+				type: "item"
+			}]
+			title: "A Engrenagem do Relógio"
+			x: 10.25d
+			y: 10.25d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Estica o alcance da sua mão bem além do normal."
+				"§7Ótimo pra alimentar máquinas sem precisar chegar perto."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "create:extendo_grip"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7E38CC945F4EF332"
+			rewards: [
+				{
+					count: 6
+					id: "29CFB0AB915EC3BB"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "64C9CDDB296104A1"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "5660A49B139B889D"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Braço que Alcança Longe"
+			x: 5.55d
+			y: 13.4d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Um tanque de ar comprimido nas costas. Debaixo d'água"
+				"§7vira fôlego extra; na superfície, vira propulsão."
+				""
+				"§6Dica: combine com as botas ou capacete de mergulho pra um kit completo."
+			]
+			hide_until_deps_complete: true
+			icon: "create:copper_backtank"
+			id: "0CB725EC43DF3A99"
+			rewards: [
+				{
+					count: 8
+					id: "1458CAF5A4F0684A"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "64A0A8C6AC9810CC"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "66A9A78BF53A0E2B"
+				item: "create:copper_backtank"
+				type: "item"
+			}]
+			title: "Fôlego de Cobre"
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Controla o fluxo de fluido manualmente ou por redstone."
+				"§7O tubo inteligente decide sozinho pra onde mandar o líquido"
+				"§7com base no que já está cheio."
+			]
+			hide_until_deps_complete: true
+			icon: "create:copper_valve_handle"
+			id: "7B29060C4600B7AF"
+			rewards: [
+				{
+					count: 6
+					id: "6FCB310F243C22A2"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "1D5424BE621A942D"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0D73989AD789F3D4"
+					item: "create:copper_valve_handle"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "09289595AEE11CD0"
+					item: "create:smart_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "Válvula sob Pressão"
+			x: -5.55d
+			y: 13.4d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Mostra números direto do chão de fábrica: quantos itens"
+				"§7passaram, quanto estoque sobrou, o que está travado."
+			]
+			hide_until_deps_complete: true
+			icon: "create:display_board"
+			id: "74708539DA841FBA"
+			rewards: [
+				{
+					count: 8
+					id: "177A55D035304F24"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "2A2B3061F3D2E96E"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5467CF6AE5F4A808"
+					item: "create:display_board"
+					type: "item"
+				}
+				{
+					id: "5DE77E1A2336BD75"
+					item: "create:factory_gauge"
+					type: "item"
+				}
+			]
+			title: "Painel da Fábrica"
+			x: -10.25d
+			y: 10.25d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Conecta um inventário, um trem ou uma dobradiça direto"
+				"§7num painel — sem fio, sem redstone, só proximidade e vínculo."
+			]
+			hide_until_deps_complete: true
+			icon: "create:display_link"
+			id: "61889A32A2D3A90A"
+			rewards: [
+				{
+					count: 6
+					id: "5A6FF189B49191A0"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "47CF9810B22C3DC3"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "4523A37D540980C1"
+				item: "create:display_link"
+				type: "item"
+			}]
+			title: "Vínculo Visual"
+			x: -13.4d
+			y: 5.55d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Uma contraption pode andar sozinha por um trilho horizontal —"
+				"§7sem trem, sem vagão, só engrenagem pura puxando estrutura."
+			]
+			hide_until_deps_complete: true
+			icon: "create:gantry_shaft"
+			id: "74CCFD303D9D1A3C"
+			rewards: [
+				{
+					count: 8
+					id: "346851728D5AE175"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "1D22415D16D99092"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4L
+					id: "7572FD7ECC7F7252"
+					item: "create:gantry_shaft"
+					type: "item"
+				}
+				{
+					id: "22884739D15CDC8A"
+					item: "create:gantry_carriage"
+					type: "item"
+				}
+			]
+			title: "Trilhos no Ar"
+			x: -14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7A arma mais ridícula e mais eficaz do Create. Atira"
+				"§7qualquer coisa empilhável — batata, cenoura, pólvora."
+				""
+				"§8§o(Sim, funciona com fogos de artifício. Sim, é tão bom quanto parece.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "create:potato_cannon"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "481B2A979A4F3BED"
+			rewards: [
+				{
+					count: 16
+					id: "3F442206E0D504E3"
+					item: "minecraft:baked_potato"
+					type: "item"
+				}
+				{
+					id: "73BDD1B128DFEF62"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "64667E66EF6D213E"
+				item: {
+					Count: 1
+					id: "create:potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Canhão de Batata"
+			x: -13.4d
+			y: -5.55d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Capacete e botas de mergulho em netherite. Visão limpa"
+				"§7debaixo d'água e peso o suficiente pra andar no fundo"
+				"§7do oceano sem boiar."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "create:netherite_diving_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "288CA501B0AD1636"
+			rewards: [
+				{
+					count: 2
+					id: "660016EF1E226961"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "10B434B2ADBCE40E"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "332D171802FD475F"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B7778943CA1790D"
+					item: {
+						Count: 1
+						id: "create:netherite_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Mergulhador Blindado"
+			x: -10.25d
+			y: -10.25d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Ninguém no time de desenvolvimento explicou o que esse"
+				"§7sino faz de tão peculiar assim. Toca normal. Só isso mesmo."
+				""
+				"§8§o(A comunidade ainda debate se é só decoração ou se falta algo.)"
+			]
+			hide_until_deps_complete: true
+			icon: "create:peculiar_bell"
+			id: "33C27761BDFB4A12"
+			rewards: [{
+				id: "3A7774367644C8EA"
+				type: "xp"
+				xp: 150
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "25D0189B657DE236"
+				item: "create:peculiar_bell"
+				type: "item"
+			}]
+			title: "O Sino Peculiar"
+			x: -5.55d
+			y: -13.4d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Um controle remoto de verdade — até 4 canais de redstone"
+				"§7sem fio, ativados na palma da mão, de qualquer lugar do mapa."
+			]
+			hide_until_deps_complete: true
+			icon: "create:linked_controller"
+			id: "6620760B9BBA06D6"
+			rewards: [
+				{
+					count: 2
+					id: "19AA3CCCE9FDD53B"
+					item: "create:redstone_link"
+					type: "item"
+				}
+				{
+					id: "068A1C92C4FD963F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "067B9D8A3D4293EB"
+				item: "create:linked_controller"
+				type: "item"
+			}]
+			title: "Controle a Distância"
+			x: 0.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Empacota itens automaticamente pra transporte por trem"
+				"§7ou entrega. A fábrica moderna não solta item avulso —"
+				"§7solta pacote lacrado."
+				""
+				"§6Dica: combine com Display Link e Stock Ticker pra logística completa."
+			]
+			hide_until_deps_complete: true
+			icon: "create:packager"
+			id: "08452BD8F1EE35FA"
+			rewards: [
+				{
+					count: 8
+					id: "3A8FAFFBDCD92E30"
+					item: "create:cardboard_package_10x8"
+					type: "item"
+				}
+				{
+					id: "7F5E8B581E7FFEE4"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0E7F81DE3A81F209"
+					item: "create:packager"
+					type: "item"
+				}
+				{
+					id: "45577AFA327D117A"
+					item: "create:package_filter"
+					type: "item"
+				}
+			]
+			title: "Linha de Empacotamento"
+			x: 5.55d
+			y: -13.4d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Acompanha o estoque de uma rede de pacotes em tempo real."
+				"§7A peça que fecha o ciclo logístico do Create moderno."
+			]
+			hide_until_deps_complete: true
+			icon: "create:stock_ticker"
+			id: "63D6EA536BD219C4"
+			rewards: [
+				{
+					count: 8
+					id: "7517897404389FAF"
+					item: "minecraft:gold_nugget"
+					type: "item"
+				}
+				{
+					id: "1AE77B45745FB30F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "5BD628B8D94E6F37"
+				item: "create:stock_ticker"
+				type: "item"
+			}]
+			title: "Ticker do Mercado"
+			x: 10.25d
+			y: -10.25d
+		}
+		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Chave inglesa pra desmontar, óculos pra ver o fluxo de"
+				"§7energia e fluido, caixa de ferramentas pra carregar tudo."
+				"§7O kit básico de qualquer engenheiro que se preze."
+			]
+			hide_until_deps_complete: true
+			icon: "create:wrench"
+			id: "407B73847979DB70"
+			rewards: [
+				{
+					count: 8
+					id: "31C80655C4E527B7"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "707CC1C71CBD7FCB"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "04E4AA26DF2E1DF1"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "5A0FB9D874939F5D"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "43FF69E1786ADF0B"
+					item: "create:blue_toolbox"
+					type: "item"
+				}
+			]
+			title: "O Kit Completo do Engenheiro"
+			x: 13.4d
+			y: -5.55d
+		}
 	]
-	title: "§eEngenharia Mecânica"
+	title: "§6Engenharia Mecânica"
 }

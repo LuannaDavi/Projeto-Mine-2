@@ -32,21 +32,20 @@
 					type: "item"
 				}
 				{
-					id: "DCDEDAFBE84F38B1"
+					id: "5BB270F0D5451EEA"
 					type: "xp"
 					xp: 50
 				}
 			]
 			shape: "diamond"
 			size: 2.0d
-			tasks: [
-				{
-					count: 4
-					id: "685C3F1C9C6A68A9"
-					item: "iceandfire:silver_nugget"
-					type: "item"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "685C3F1C9C6A68A9"
+				item: "iceandfire:silver_nugget"
+				type: "item"
+			}]
 			title: "Abrir Capitulo"
 			x: 0.0d
 			y: 0.0d
@@ -60,16 +59,16 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:silver_ingot"
-			id: "FB648E1DB1F345A0"
+			id: "175AFB7BF6AB2D18"
 			rewards: [
 				{
 					count: 4
-					id: "E822321B985525D1"
+					id: "5E16D7D5A58BC96C"
 					item: "iceandfire:raw_silver"
 					type: "item"
 				}
 				{
-					id: "E5E8EE66738C5188"
+					id: "122D7FA6814F7F54"
 					type: "xp"
 					xp: 200
 				}
@@ -77,14 +76,14 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4
-					id: "CBE1FDE2A3EF48CF"
+					count: 4L
+					id: "62BBF7CDDCB61F1F"
 					item: "iceandfire:copper_ingot"
 					type: "item"
 				}
 				{
-					count: 4
-					id: "95E17B77223608FE"
+					count: 4L
+					id: "363A8F3B2395DE91"
 					item: "iceandfire:silver_ingot"
 					type: "item"
 				}
@@ -102,7 +101,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:sapphire_gem"
-			id: "F35FAF63FC3AF8D3"
+			id: "33E405E7A1F972A3"
 			rewards: [
 				{
 					id: "616AE39E25E9A77E"
@@ -110,7 +109,7 @@
 					type: "item"
 				}
 				{
-					id: "E74811EC36A621CC"
+					id: "23D62CFA79C0AD38"
 					type: "xp"
 					xp: 200
 				}
@@ -118,13 +117,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 2
+					count: 2L
 					id: "2588E2D6FFD58D78"
 					item: "iceandfire:sapphire_gem"
 					type: "item"
 				}
 				{
-					count: 2
+					count: 2L
 					id: "5A7C565B2402492A"
 					item: "iceandfire:amythest_gem"
 					type: "item"
@@ -143,24 +142,20 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:bestiary"
-			id: "E167CAD78C6ED05E"
-			rewards: [
-				{
-					id: "289C98D054CACEA7"
-					type: "xp"
-					xp: 250
-				}
-			]
+			id: "1B1B9EB69CFCF0EA"
+			rewards: [{
+				id: "289C98D054CACEA7"
+				type: "xp"
+				xp: 250
+			}]
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
-					id: "E1A79EEAB999B3F0"
+					id: "6CBE9F7B67C33E9D"
 					item: "iceandfire:bestiary"
 					type: "item"
 				}
 				{
-					count: 1
 					id: "2E03DE08237F12B0"
 					item: "iceandfire:manuscript"
 					type: "item"
@@ -176,6 +171,10 @@
 				"§7Doze cores diferentes, três elementos, um só destino: virar"
 				"§7uma fera do tamanho de uma casa se você tiver paciência"
 				"§7(e comida) suficiente pra criar."
+				""
+				"§6Dica: §7o ovo eclode de acordo com o elemento — perto de fogo"
+				"§7pra dragão de fogo, debaixo d'água pra gelo, ou na chuva pra"
+				"§7raio. Depois disso é só esperar. Bastante."
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:dragonegg_red"
@@ -194,14 +193,11 @@
 				}
 			]
 			size: 1.5d
-			tasks: [
-				{
-					count: 1
-					id: "506581DD80580CAD"
-					item: "iceandfire:dragonegg_red"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "506581DD80580CAD"
+				item: "iceandfire:dragonegg_red"
+				type: "item"
+			}]
 			title: "Ovo de Dragão"
 			x: -8.0d
 			y: 0.0d
@@ -214,36 +210,40 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:dragon_horn"
-			id: "CFF765E977EA65E4"
+			id: "40B12B52E3AFD6F0"
 			rewards: [
 				{
-					id: "E0645BD22DB6A129"
+					count: 3
+					id: "3C95233042905BF7"
+					item: "iceandfire:dragonbone"
+					type: "item"
+				}
+				{
+					id: "6622C48752D15FFD"
 					type: "xp"
 					xp: 300
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
-			tasks: [
-				{
-					count: 1
-					id: "2B7B954EBDD7E1AC"
-					item: "iceandfire:dragon_horn"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2B7B954EBDD7E1AC"
+				item: "iceandfire:dragon_horn"
+				type: "item"
+			}]
 			title: "Chifre de Dragão"
 			x: -14.0d
 			y: 8.0d
 		}
 		{
-			dependencies: ["CFF765E977EA65E4"]
+			dependencies: ["19502E0497E47D51"]
 			description: [
 				"§7Dragões de fogo não perdoam erro de cálculo. O coração"
 				"§7deles ainda pulsa quente por um bom tempo depois de morto."
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:fire_dragon_heart"
-			id: "DD95A2859E739D13"
+			id: "79DE5A3A07A62318"
 			rewards: [
 				{
 					count: 4
@@ -252,21 +252,21 @@
 					type: "item"
 				}
 				{
-					id: "9A63436B14D67C09"
+					id: "2CB738D1F6014002"
 					type: "xp"
 					xp: 500
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
 					id: "496D51224AB275FE"
 					item: "iceandfire:fire_dragon_heart"
 					type: "item"
 				}
 				{
-					count: 2
+					count: 2L
 					id: "04D24151F6321A84"
 					item: "iceandfire:fire_dragon_blood"
 					type: "item"
@@ -277,7 +277,7 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["CFF765E977EA65E4"]
+			dependencies: ["19502E0497E47D51"]
 			description: [
 				"§7O tipo de dragão que transforma o chão ao redor do ninho"
 				"§7em gelo permanente, só de existir por perto."
@@ -293,21 +293,21 @@
 					type: "item"
 				}
 				{
-					id: "937036A9664EF78F"
+					id: "6F1E02A04DBDE496"
 					type: "xp"
 					xp: 500
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
 					id: "407314C4F365103B"
 					item: "iceandfire:ice_dragon_heart"
 					type: "item"
 				}
 				{
-					count: 2
+					count: 2L
 					id: "39CB66818B1913A6"
 					item: "iceandfire:ice_dragon_blood"
 					type: "item"
@@ -318,7 +318,7 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["CFF765E977EA65E4"]
+			dependencies: ["19502E0497E47D51"]
 			description: [
 				"§7Voa mais rápido, ataca mais rápido, e claramente não tem"
 				"§7paciência pra esperar você recarregar a armadura."
@@ -339,17 +339,17 @@
 					xp: 500
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
 					id: "579F88001389C31B"
 					item: "iceandfire:lightning_dragon_heart"
 					type: "item"
 				}
 				{
-					count: 2
-					id: "F160C01CF3E1D60F"
+					count: 2L
+					id: "3C39F02B068F5B67"
 					item: "iceandfire:lightning_dragon_blood"
 					type: "item"
 				}
@@ -359,23 +359,38 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["DD95A2859E739D13" "10F0657B21C1C3E4" "161E8E58D79FF5A4"]
+			dependencies: [
+				"10F0657B21C1C3E4"
+				"161E8E58D79FF5A4"
+			]
 			description: [
 				"§7Osso de dragão sozinho já é mais resistente que ferro comum."
 				"§7Forjado em ferramenta, vira algo que nenhum minério natural"
 				"§7consegue igualar."
 			]
 			hide_until_deps_complete: true
-			icon: "iceandfire:dragonbone_sword"
+			icon: {
+				Count: 1
+				id: "iceandfire:dragonbone_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7DDE42CFFBD9E584"
 			rewards: [
 				{
-					id: "ABA8650E7D6AB385"
-					item: "iceandfire:dragonbone_pickaxe"
+					id: "43E775C6624AC9B6"
+					item: {
+						Count: 1
+						id: "iceandfire:dragonbone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "DD9DB63219CC43C6"
+					id: "610D291C28A6B191"
 					type: "xp"
 					xp: 450
 				}
@@ -383,15 +398,20 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 6
-					id: "A9FBEE71C70ACFE5"
+					count: 6L
+					id: "2324814DC47E4888"
 					item: "iceandfire:dragonbone"
 					type: "item"
 				}
 				{
-					count: 1
-					id: "B587DB120120AABB"
-					item: "iceandfire:dragonbone_sword"
+					id: "18329DCD63E4F181"
+					item: {
+						Count: 1
+						id: "iceandfire:dragonbone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -412,7 +432,13 @@
 			rewards: [
 				{
 					id: "38F2257EDF736A1D"
-					item: "iceandfire:dragonsteel_fire_sword"
+					item: {
+						Count: 1
+						id: "iceandfire:dragonsteel_fire_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
@@ -424,20 +450,20 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 2
+					count: 2L
 					id: "2FCC6634E3CA650C"
 					item: "iceandfire:dragonsteel_fire_ingot"
 					type: "item"
 				}
 				{
-					count: 2
+					count: 2L
 					id: "009100DC9CA2CC58"
 					item: "iceandfire:dragonsteel_ice_ingot"
 					type: "item"
 				}
 				{
-					count: 2
-					id: "FE1AE60BD7DF09D7"
+					count: 2L
+					id: "39D24209212E58F4"
 					item: "iceandfire:dragonsteel_lightning_ingot"
 					type: "item"
 				}
@@ -463,20 +489,17 @@
 					type: "item"
 				}
 				{
-					id: "FFAEA5FADC7F13B0"
+					id: "39530485DECC2F86"
 					type: "xp"
 					xp: 600
 				}
 			]
 			size: 1.5d
-			tasks: [
-				{
-					count: 1
-					id: "FF9DA882C0345A73"
-					item: "iceandfire:dragonarmor_diamond_body"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1BE8A6B0887EFB70"
+				item: "iceandfire:dragonarmor_diamond_body"
+				type: "item"
+			}]
 			title: "Armadura de Dragão"
 			x: 14.0d
 			y: -8.0d
@@ -488,25 +511,42 @@
 				"§7qualquer discussão com essa criatura."
 			]
 			hide_until_deps_complete: true
-			icon: "iceandfire:cyclops_eye"
+			icon: {
+				Count: 1
+				id: "iceandfire:cyclops_eye"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "06B49DAF3860FEEA"
 			rewards: [
 				{
-					id: "933E6A84314DFF21"
+					count: 3
+					id: "69A648BFF0FD5CF9"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "3614037D6AB0E897"
 					type: "xp"
 					xp: 400
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
-					id: "DA533476B5A81CF2"
-					item: "iceandfire:cyclops_eye"
+					id: "0DEF85598D4D36CB"
+					item: {
+						Count: 1
+						id: "iceandfire:cyclops_eye"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 1
 					id: "3A48349A8BB74A3F"
 					item: "iceandfire:cyclops_skull"
 					type: "item"
@@ -525,25 +565,31 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:hydra_heart"
-			id: "F65CC92D1AB77989"
+			id: "58E561D197A721D0"
 			rewards: [
+				{
+					count: 4
+					id: "73433F2638ED924D"
+					item: "minecraft:emerald"
+					type: "item"
+				}
 				{
 					id: "1EA8E46FAAFE1BF8"
 					type: "xp"
 					xp: 450
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
 					id: "39F681C83C77FB25"
 					item: "iceandfire:hydra_heart"
 					type: "item"
 				}
 				{
-					count: 2
-					id: "DB3A1058AA330185"
+					count: 2L
+					id: "48C50516391E7AF5"
 					item: "iceandfire:hydra_fang"
 					type: "item"
 				}
@@ -559,24 +605,39 @@
 				"§7expressão nesse mod — é literal."
 			]
 			hide_until_deps_complete: true
-			icon: "iceandfire:gorgon_head"
+			icon: {
+				Count: 1
+				id: "iceandfire:gorgon_head"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "121A77C5D0B9FE4B"
 			rewards: [
+				{
+					id: "47C0507522F9DF97"
+					item: "iceandfire:banner_pattern_gorgon"
+					type: "item"
+				}
 				{
 					id: "4BF7B0FDFF5F9B29"
 					type: "xp"
 					xp: 400
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
-			tasks: [
-				{
-					count: 1
-					id: "4B235FAA30FF0F53"
-					item: "iceandfire:gorgon_head"
-					type: "item"
+			tasks: [{
+				id: "4B235FAA30FF0F53"
+				item: {
+					Count: 1
+					id: "iceandfire:gorgon_head"
+					tag: {
+						Damage: 0
+					}
 				}
-			]
+				type: "item"
+			}]
 			title: "O Olhar que Petrifica"
 			x: -2.0d
 			y: -4.0d
@@ -592,23 +653,34 @@
 			id: "1B6C3F27D7535D41"
 			rewards: [
 				{
+					count: 3
+					id: "24B22644126F1573"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
 					id: "2358C33774E18634"
 					type: "xp"
 					xp: 400
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
 					id: "12588D1B36D9AD20"
 					item: "iceandfire:cockatrice_eye"
 					type: "item"
 				}
 				{
-					count: 1
-					id: "E950928651FBCE9F"
-					item: "iceandfire:cockatrice_scepter"
+					id: "69BC39613F3D91BC"
+					item: {
+						Count: 1
+						id: "iceandfire:cockatrice_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -625,7 +697,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:hippogryph_egg"
-			id: "9427FE4EA4EA67FF"
+			id: "35B7036C35969D71"
 			rewards: [
 				{
 					id: "0A864063CA91321E"
@@ -641,14 +713,12 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
 					id: "7AA542689F1606F3"
 					item: "iceandfire:hippogryph_egg"
 					type: "item"
 				}
 				{
-					count: 1
-					id: "F5D2800722C5BFC7"
+					id: "27F3BED30CB22909"
 					item: "iceandfire:hippogryph_talon"
 					type: "item"
 				}
@@ -662,29 +732,42 @@
 			description: [
 				"§7Metade cavalo, metade peixe. O oceano desse mod claramente"
 				"§7não segue as mesmas regras de anatomia que o resto do jogo."
+				""
+				"§8§o(Ninguém no departamento de biologia marinha foi consultado.)"
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:hippocampus_fin"
 			id: "5545766D7D28E838"
 			rewards: [
 				{
+					id: "5890C5181F222C07"
+					item: "iceandfire:banner_pattern_hippocampus"
+					type: "item"
+				}
+				{
 					id: "7D833083067AA64D"
 					type: "xp"
 					xp: 350
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 2
+					count: 2L
 					id: "55A2EF921116AF1C"
 					item: "iceandfire:hippocampus_fin"
 					type: "item"
 				}
 				{
-					count: 1
 					id: "603D28902DE7CAB0"
-					item: "iceandfire:hippocampus_slapper"
+					item: {
+						Count: 1
+						id: "iceandfire:hippocampus_slapper"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -700,11 +783,11 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:seaserpent_skull"
-			id: "AF586126A6235483"
+			id: "6940448173F7E6CB"
 			rewards: [
 				{
 					count: 6
-					id: "FA3E67B6C1AC6681"
+					id: "2644F12B1244ECE5"
 					item: "iceandfire:sea_serpent_scales_blue"
 					type: "item"
 				}
@@ -714,16 +797,16 @@
 					xp: 450
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
-					id: "E108E299F0BA5097"
+					id: "03CECE2D3245DA0B"
 					item: "iceandfire:seaserpent_skull"
 					type: "item"
 				}
 				{
-					count: 2
+					count: 2L
 					id: "675D04F3044FAC8A"
 					item: "iceandfire:sea_serpent_fang"
 					type: "item"
@@ -744,23 +827,39 @@
 			id: "210D21BF51327E0C"
 			rewards: [
 				{
+					id: "731B811BF112C261"
+					item: {
+						Count: 1
+						id: "iceandfire:siren_flute"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
 					id: "02BF1C1F6BBA3BE6"
 					type: "xp"
 					xp: 400
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 1
-					id: "EB3688BCF4D68882"
+					id: "7F55BD72388EF235"
 					item: "iceandfire:siren_tear"
 					type: "item"
 				}
 				{
-					count: 1
-					id: "C009F844EC7C4544"
-					item: "iceandfire:earplugs"
+					id: "79E3CACFABDD40AF"
+					item: {
+						Count: 1
+						id: "iceandfire:earplugs"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -777,25 +876,36 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:stymphalian_feather_bundle"
-			id: "F6ECF9CDC29C37BC"
+			id: "18E0729F65A60E6D"
 			rewards: [
+				{
+					id: "25C76E583ADC5AF0"
+					item: {
+						Count: 1
+						id: "iceandfire:stymphalian_bird_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 				{
 					id: "4A3CADC3A8737976"
 					type: "xp"
 					xp: 350
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 2
-					id: "DC436D7E8E420B16"
+					count: 2L
+					id: "29B132BBA3CCFAB3"
 					item: "iceandfire:stymphalian_feather_bundle"
 					type: "item"
 				}
 				{
-					count: 1
-					id: "FB8AAAF9DBB14C96"
+					id: "13BC68532868E8B6"
 					item: "iceandfire:stymphalian_skull"
 					type: "item"
 				}
@@ -813,25 +923,36 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:amphithere_feather"
-			id: "D6EFC01839884382"
+			id: "7401A6ED1A5A7653"
 			rewards: [
 				{
-					id: "D31CB6BA945D680D"
+					id: "50BF6834D62441C7"
+					item: {
+						Count: 1
+						id: "iceandfire:amphithere_macuahuitl"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "243677805C2AB24E"
 					type: "xp"
 					xp: 350
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 2
-					id: "FAF19E50D17BD38A"
+					count: 2L
+					id: "3A516C6AC39D186C"
 					item: "iceandfire:amphithere_feather"
 					type: "item"
 				}
 				{
-					count: 1
-					id: "8E782023217B1B19"
+					id: "3BB1086B5957AB87"
 					item: "iceandfire:amphithere_skull"
 					type: "item"
 				}
@@ -846,32 +967,40 @@
 				"§7Floresta, gelo ou montanha — não importa o bioma, troll"
 				"§7é sempre grande, sempre burro, e sempre com muita presa"
 				"§7pra arrancar depois."
+				""
+				"§8§o(Se ele te oferecer pra atravessar uma ponte, desconfie.)"
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:troll_tusk"
-			id: "A3EFE2264E2919B6"
+			id: "0F6A2947CA51C797"
 			rewards: [
 				{
 					id: "70BAF92AB9EB88C6"
-					item: "iceandfire:mountain_troll_leather_chestplate"
+					item: {
+						Count: 1
+						id: "iceandfire:mountain_troll_leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "876619D4D6CA2FEF"
+					id: "4BCF11755215CA52"
 					type: "xp"
 					xp: 400
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 3
+					count: 3L
 					id: "588524469CD0CB86"
 					item: "iceandfire:troll_tusk"
 					type: "item"
 				}
 				{
-					count: 1
 					id: "568BCAC930552B61"
 					item: "iceandfire:troll_skull"
 					type: "item"
@@ -893,8 +1022,14 @@
 			id: "09C97C8789F41C14"
 			rewards: [
 				{
-					id: "B0D470892AF431D6"
-					item: "iceandfire:deathworm_gauntlet_red"
+					id: "65FB8D2C3739C7E4"
+					item: {
+						Count: 1
+						id: "iceandfire:deathworm_gauntlet_red"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
@@ -903,17 +1038,18 @@
 					xp: 400
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 2
+					count: 2L
 					id: "23F15FDAA8776931"
 					item: "iceandfire:deathworm_tounge"
 					type: "item"
 				}
 				{
-					count: 2
-					id: "C12C14D22D33D01A"
+					count: 2L
+					id: "4D2465AA32E18E85"
 					item: "iceandfire:deathworm_chitin_red"
 					type: "item"
 				}
@@ -928,6 +1064,9 @@
 				"§7Formigas gigantes com hierarquia própria — operária,"
 				"§7sentinela, realeza e rainha. Mexer com uma é mexer"
 				"§7com a colônia inteira."
+				""
+				"§6Dica: §7ataque só o que precisar. Uma colônia inteira"
+				"§7virando hostil de uma vez é bem mais perigoso do que parece."
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:myrmex_desert_swarm"
@@ -935,7 +1074,13 @@
 			rewards: [
 				{
 					id: "4DE613294E691926"
-					item: "iceandfire:myrmex_desert_sword"
+					item: {
+						Count: 1
+						id: "iceandfire:myrmex_desert_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
@@ -944,16 +1089,17 @@
 					xp: 400
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 4
-					id: "B86B48063EDA5635"
+					count: 4L
+					id: "105173E60AA346F7"
 					item: "iceandfire:myrmex_desert_resin"
 					type: "item"
 				}
 				{
-					count: 2
+					count: 2L
 					id: "36ADE22302AB9DEA"
 					item: "iceandfire:myrmex_desert_chitin"
 					type: "item"
@@ -976,25 +1122,32 @@
 			rewards: [
 				{
 					id: "11989DE5CF7EBAAA"
-					item: "iceandfire:myrmex_jungle_sword"
+					item: {
+						Count: 1
+						id: "iceandfire:myrmex_jungle_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "8706F0BC86A475C2"
+					id: "21FA93319236C107"
 					type: "xp"
 					xp: 400
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [
 				{
-					count: 4
-					id: "AB615F2A4BA11BA7"
+					count: 4L
+					id: "39CC6AACC41A6A0C"
 					item: "iceandfire:myrmex_jungle_resin"
 					type: "item"
 				}
 				{
-					count: 2
+					count: 2L
 					id: "57A2D367DC5079FF"
 					item: "iceandfire:myrmex_jungle_chitin"
 					type: "item"
@@ -1016,20 +1169,24 @@
 			id: "541EFDAB1E9D2070"
 			rewards: [
 				{
-					id: "F0D4CF6876C0C2A3"
+					count: 4
+					id: "57AB5CAAD696590A"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "217335FFF114684F"
 					type: "xp"
 					xp: 300
 				}
 			]
 			size: 1.5d
-			tasks: [
-				{
-					count: 3
-					id: "B132F52DC426D2BA"
-					item: "iceandfire:ectoplasm"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 3L
+				id: "1C58D357D071336F"
+				item: "iceandfire:ectoplasm"
+				type: "item"
+			}]
 			title: "Ectoplasma"
 			x: -1.5d
 			y: -2.0d
@@ -1047,24 +1204,29 @@
 			rewards: [
 				{
 					id: "228C37949A45ED8C"
-					item: "iceandfire:lich_staff"
+					item: {
+						Count: 1
+						id: "iceandfire:lich_staff"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "D89147134A27B46F"
+					id: "7A3754119126646C"
 					type: "xp"
 					xp: 500
 				}
 			]
+			shape: "hexagon"
 			size: 1.5d
-			tasks: [
-				{
-					count: 2
-					id: "28F4B99012E03171"
-					item: "iceandfire:witherbone"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 2L
+				id: "28F4B99012E03171"
+				item: "iceandfire:witherbone"
+				type: "item"
+			}]
 			title: "Osso Amaldiçoado"
 			x: -2.5d
 			y: 0.0d
@@ -1075,14 +1237,23 @@
 				"§7Pequenas, rápidas, e vivem em casinhas minúsculas que elas"
 				"§7mesmas constroem. O pó que soltam ao voar tem mais uso"
 				"§7em poção do que parece à primeira vista."
+				""
+				"§8§o(Sim, são fadas de verdade. Não, elas não concedem desejos."
+				"§8§oPare de perguntar.)"
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:pixie_dust"
-			id: "C3E5BA0050E8BEB3"
+			id: "69FB8817283F2372"
 			rewards: [
 				{
-					id: "C9C77163D106D939"
-					item: "iceandfire:pixie_wand"
+					id: "1F1FC17247B3C562"
+					item: {
+						Count: 1
+						id: "iceandfire:pixie_wand"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
@@ -1092,14 +1263,12 @@
 				}
 			]
 			size: 1.5d
-			tasks: [
-				{
-					count: 4
-					id: "ECA7F75B6E5CADEA"
-					item: "iceandfire:pixie_dust"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 4L
+				id: "09F402AD854842B1"
+				item: "iceandfire:pixie_dust"
+				type: "item"
+			}]
 			title: "Pó de Fada"
 			x: -4.5d
 			y: 2.5d
@@ -1111,9 +1280,21 @@
 				"§7quem tentar roubar sem saber nadar direito."
 			]
 			hide_until_deps_complete: true
-			icon: "iceandfire:tide_trident"
+			icon: {
+				Count: 1
+				id: "iceandfire:tide_trident"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "11EBB85ECB8BB807"
 			rewards: [
+				{
+					count: 8
+					id: "24CCAC97F196B079"
+					item: "minecraft:prismarine_shard"
+					type: "item"
+				}
 				{
 					id: "7C316B10D999B397"
 					type: "xp"
@@ -1121,14 +1302,17 @@
 				}
 			]
 			size: 1.5d
-			tasks: [
-				{
-					count: 1
-					id: "86907EEE1A953901"
-					item: "iceandfire:tide_trident"
-					type: "item"
+			tasks: [{
+				id: "67203851C28181C1"
+				item: {
+					Count: 1
+					id: "iceandfire:tide_trident"
+					tag: {
+						Damage: 0
+					}
 				}
-			]
+				type: "item"
+			}]
 			title: "O Tridente das Marés"
 			x: -1.5d
 			y: 2.0d
@@ -1140,9 +1324,21 @@
 				"§7resolver o problema com um arpão."
 			]
 			hide_until_deps_complete: true
-			icon: "iceandfire:fishing_spear"
+			icon: {
+				Count: 1
+				id: "iceandfire:fishing_spear"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "354C0E6E71D1A22E"
 			rewards: [
+				{
+					count: 2
+					id: "44A0F0F6E0B0B6FA"
+					item: "minecraft:emerald"
+					type: "item"
+				}
 				{
 					id: "24E0964B4CA588A8"
 					type: "xp"
@@ -1150,29 +1346,44 @@
 				}
 			]
 			size: 1.5d
-			tasks: [
-				{
-					count: 1
-					id: "37A2CAF98EC0F85B"
-					item: "iceandfire:fishing_spear"
-					type: "item"
+			tasks: [{
+				id: "37A2CAF98EC0F85B"
+				item: {
+					Count: 1
+					id: "iceandfire:fishing_spear"
+					tag: {
+						Damage: 0
+					}
 				}
-			]
+				type: "item"
+			}]
 			title: "Lança de Pesca"
 			x: 1.5d
 			y: 2.0d
 		}
 		{
-			dependencies: ["33AB9EA0EBA7159F" "01242E07F981472D"]
+			dependencies: [
+				"33AB9EA0EBA7159F"
+				"01242E07F981472D"
+			]
 			description: [
 				"§7Um portal feito de pedra que não deveria existir na"
 				"§7superfície leva direto pro Reino Dread — e ninguém"
 				"§7volta de lá com a mesma cara de antes."
+				""
+				"§6Dica: §7monte a moldura com o bloco de portal e ative-a"
+				"§7com os fragmentos sombrios. Leve equipamento decente —"
+				"§7o Reino Dread não perdoa quem entra despreparado."
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:dread_portal"
 			id: "265DE87B1CFFE980"
 			rewards: [
+				{
+					id: "1644E7F4529CE199"
+					item: "iceandfire:banner_pattern_dread"
+					type: "item"
+				}
 				{
 					id: "2A252505B3627EB0"
 					type: "xp"
@@ -1182,14 +1393,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 4
+					count: 4L
 					id: "321DAC45AEEC63E3"
 					item: "iceandfire:dread_shard"
 					type: "item"
 				}
 				{
-					count: 1
-					id: "AF6043A2DAFFF7ED"
+					id: "218D5532422B74C7"
 					item: "iceandfire:dread_portal"
 					type: "item"
 				}
@@ -1206,8 +1416,19 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:dread_stone"
-			id: "8AC51444CBDDB25A"
+			id: "23FB130B7B368EB2"
 			rewards: [
+				{
+					id: "1C7E9FE58F8B7662"
+					item: {
+						Count: 1
+						id: "iceandfire:dread_knight_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 				{
 					id: "33DCED171489F3BD"
 					type: "xp"
@@ -1217,13 +1438,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					count: 8
-					id: "934C2085B0926DCF"
+					count: 8L
+					id: "5D744BD5F71DB7DE"
 					item: "iceandfire:dread_stone"
 					type: "item"
 				}
 				{
-					count: 8
+					count: 8L
 					id: "0D0983B9EA15112F"
 					item: "iceandfire:dread_stone_bricks"
 					type: "item"
@@ -1234,40 +1455,53 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["8AC51444CBDDB25A"]
+			dependencies: ["19502E0497E47D51"]
 			description: [
 				"§7O que espera no fim do Reino Dread não pede licença nem"
 				"§7dá segunda chance. Derrote a Rainha e prove que sobreviveu"
 				"§7ao lugar inteiro."
+				""
+				"§6Dica: §7leve tudo que você tem — poção, comida, escudo."
+				"§7Não existe volta rápida se as coisas derem errado lá dentro."
 			]
 			hide_until_deps_complete: true
-			icon: "iceandfire:dread_queen_sword"
+			icon: {
+				Count: 1
+				id: "iceandfire:dread_queen_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "1CB95B2962125867"
 			rewards: [
 				{
-					id: "D7BF721B253F8B37"
+					id: "40978A5D063A8A1A"
 					item: "iceandfire:dread_key"
 					type: "item"
 				}
 				{
-					id: "E0EA01F5A2B2623B"
+					id: "5FAD1FC782B6919C"
 					type: "xp"
 					xp: 1200
 				}
 			]
+			shape: "gear"
 			size: 1.5d
-			tasks: [
-				{
-					count: 1
-					id: "F7A5E821F61FC649"
-					item: "iceandfire:dread_queen_sword"
-					type: "item"
+			tasks: [{
+				id: "3AFFD67E1720FCCE"
+				item: {
+					Count: 1
+					id: "iceandfire:dread_queen_sword"
+					tag: {
+						Damage: 0
+					}
 				}
-			]
+				type: "item"
+			}]
 			title: "A Rainha do Dread"
 			x: 1.5d
 			y: -2.0d
 		}
 	]
-	title: "§bGelo e Fogo"
+	title: "§3Gelo e Fogo"
 }

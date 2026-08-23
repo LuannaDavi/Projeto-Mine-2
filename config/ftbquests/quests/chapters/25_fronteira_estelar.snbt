@@ -178,6 +178,8 @@
 			description: [
 				"§7Lá fora não existe ar. O traje espacial completo é a única coisa"
 				"§7entre você e o vácuo absoluto."
+				""
+				"§8§o(Prender a respiração não é uma estratégia válida aqui.)"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -355,6 +357,8 @@
 				"§6Dica: §7dizem que existe queijo na Lua. Ninguém sabe explicar por quê."
 				""
 				"§eDecole rumo à Lua com o traje, o oxigênio e a plataforma prontos."
+				""
+				"§8§o(A NASA nunca confirmou. A NASA também nunca desmentiu.)"
 			]
 			hide_until_deps_complete: true
 			icon: "ad_astra:cheese"
@@ -554,6 +558,9 @@
 				""
 				"§7(Opcional por enquanto — mas o calorite daqui faz falta mais"
 				"§7pra frente, então não demore demais pra visitar.)"
+				""
+				"§8§o(A pressão atmosférica de Vênus esmagaria uma sonda comum."
+				"§8§oSeu traje aparentemente discorda dessa física.)"
 			]
 			hide_until_deps_complete: true
 			icon: "ad_astra:venus_gold_ore"
@@ -931,26 +938,21 @@
 		{
 			dependencies: ["0EFCD1B737AC8948"]
 			description: [
-				"§7Cinco mundos eram só o começo. Além deles, dezenas de outros"
-				"§7sistemas esperam — cada um com seu próprio céu, sua própria"
-				"§7gravidade, seus próprios perigos. Ninguém marcou o mapa por você."
+				"§7Cinco mundos catalogados, e ainda assim naves continuam"
+				"§7voltando com minério que não bate com nenhum deles. Centauro,"
+				"§7dizem — de um sistema que ninguém marcou no mapa ainda."
 				""
 				"§eEssa missão não tem prazo nem exigência de completar tudo."
-				"§eÉ só um convite: continue subindo."
+				"§eÉ só um convite: continue minerando o desconhecido."
 			]
 			hide_until_deps_complete: true
 			icon: "ad_astra_tools:centaur_ingot"
 			id: "5E72D4DC0AF4CAB7"
 			rewards: [
 				{
+					count: 2
 					id: "01105A1584AE23EA"
-					item: {
-						Count: 1
-						id: "minecraft:elytra"
-						tag: {
-							Damage: 0
-						}
-					}
+					item: "minecraft:totem_of_undying"
 					type: "item"
 				}
 				{
@@ -970,5 +972,5 @@
 			y: 7.0d
 		}
 	]
-	title: "§bFronteira Estelar"
+	title: "§9§lFronteira Estelar"
 }

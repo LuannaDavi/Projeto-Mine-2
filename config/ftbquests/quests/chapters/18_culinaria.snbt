@@ -883,7 +883,7 @@
 				"§ePotato with Roast Meat e o Bolo de Morango da Vovó."
 			]
 			hide_until_deps_complete: true
-			icon: "farm_and_charm:farmers_bread"
+			icon: "farm_and_charm:farmers_bread_block"
 			id: "7D3F2E8E9513B45C"
 			rewards: [
 				{
@@ -909,27 +909,27 @@
 			tasks: [
 				{
 					id: "1D5B4DE424F42C68"
-					item: "farm_and_charm:farmers_bread"
+					item: "farm_and_charm:farmers_bread_block"
 					type: "item"
 				}
 				{
 					id: "6DBC2EC6C2C141A4"
-					item: "farm_and_charm:roasted_corn"
+					item: "farm_and_charm:roasted_corn_block"
 					type: "item"
 				}
 				{
 					id: "5A37C6B0CF5E10C3"
-					item: "farm_and_charm:stuffed_chicken"
+					item: "farm_and_charm:stuffed_chicken_block"
 					type: "item"
 				}
 				{
 					id: "1F66464B77CD7851"
-					item: "farm_and_charm:potato_with_roast_meat"
+					item: "farm_and_charm:potato_with_roast_meat_block"
 					type: "item"
 				}
 				{
 					id: "7625211AAA26BA8B"
-					item: "farm_and_charm:grandmothers_strawberry_cake"
+					item: "farm_and_charm:grandmothers_strawberry_cake_block"
 					type: "item"
 				}
 			]
@@ -972,7 +972,7 @@
 				}
 				{
 					id: "7DAFDC945AC2B72B"
-					item: "bakery:quiche"
+					item: "bakery:chocolate_tart"
 					type: "item"
 				}
 				{
@@ -1118,5 +1118,5 @@
 			y: 8.5d
 		}
 	]
-	title: "§eCulinária do Mundo"
+	title: "§6Culinária do Mundo"
 }

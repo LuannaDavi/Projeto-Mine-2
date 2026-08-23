@@ -1623,7 +1623,6 @@
 			x: 4.0d
 			y: 6.5d
 		}
-	
 		{
 			dependencies: ["2CD27B3D08B629F3"]
 			description: [
@@ -1633,7 +1632,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:luminis_ore"
-			id: "B98B901236DB758F"
+			id: "52510ABE3E928F48"
 			rewards: [
 				{
 					count: 2
@@ -1642,7 +1641,7 @@
 					type: "item"
 				}
 				{
-					id: "ECBB906A6540A78D"
+					id: "28EE149B0B9746FC"
 					type: "xp"
 					xp: 250
 				}
@@ -1650,14 +1649,14 @@
 			size: 1.5d
 			tasks: [
 				{
-				count: 4
+					count: 4L
 					id: "5D9A7AB6AE5374FE"
 					item: "buddycards:luminis_ore"
 					type: "item"
 				}
 				{
-				count: 4
-					id: "B9C02F3FB575DC61"
+					count: 4L
+					id: "553A99F3F14CD97C"
 					item: "buddycards:zylex"
 					type: "item"
 				}
@@ -1675,10 +1674,10 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:buddysteel_ingot"
-			id: "B7E927A7F81F1511"
+			id: "7BC9352218DA96DA"
 			rewards: [
 				{
-					id: "87DB9F2E29F14624"
+					id: "5CD06B7D7B29E9B6"
 					item: "buddycards:buddysteel_ring"
 					type: "item"
 				}
@@ -1691,14 +1690,20 @@
 			size: 1.5d
 			tasks: [
 				{
-				count: 4
-					id: "E2BD15EB58A86D84"
+					count: 4L
+					id: "619ED6B7812D83C6"
 					item: "buddycards:buddysteel_ingot"
 					type: "item"
 				}
 				{
 					id: "529CD27D58D995D7"
-					item: "buddycards:buddysteel_sword"
+					item: {
+						Count: 1
+						id: "buddycards:buddysteel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1729,14 +1734,12 @@
 				}
 			]
 			size: 1.5d
-			tasks: [
-				{
-				count: 2
-					id: "54F8C10560640EE2"
-					item: "buddycards:charged_buddysteel_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 2L
+				id: "54F8C10560640EE2"
+				item: "buddycards:charged_buddysteel_ingot"
+				type: "item"
+			}]
 			title: "Carregando o Poder"
 			x: 5.0d
 			y: -1.5d
@@ -1750,27 +1753,31 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:true_perfect_buddysteel_ingot"
-			id: "C7E1747C364E8D93"
+			id: "22B9E634FE719758"
 			rewards: [
 				{
 					id: "39D2339927EE144F"
-					item: "buddycards:true_perfect_buddysteel_sword"
+					item: {
+						Count: 1
+						id: "buddycards:true_perfect_buddysteel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "F190902284E0AB6C"
+					id: "67830194C5E3A668"
 					type: "xp"
 					xp: 800
 				}
 			]
 			size: 1.5d
-			tasks: [
-				{
-					id: "D9097F08992A10FB"
-					item: "buddycards:true_perfect_buddysteel_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "444F642D2D2E5CB9"
+				item: "buddycards:true_perfect_buddysteel_ingot"
+				type: "item"
+			}]
 			title: "O Ápice: Perfeito de Verdade"
 			x: 3.5d
 			y: -3.5d
@@ -1783,7 +1790,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:ender_buddycard_binder"
-			id: "9706C8FDA2B52BD7"
+			id: "44550C18C8553517"
 			rewards: [
 				{
 					count: 4
@@ -1792,7 +1799,7 @@
 					type: "item"
 				}
 				{
-					id: "D54D939F53FC0BBC"
+					id: "79CE2C6945C8A0EF"
 					type: "xp"
 					xp: 250
 				}
@@ -1800,7 +1807,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "E8C4446DBAACA9C0"
+					id: "50CF9F46EEBB848B"
 					item: "buddycards:ender_buddycard_binder"
 					type: "item"
 				}
@@ -1813,6 +1820,7 @@
 			title: "Guardando a Coleção"
 			x: 4.0d
 			y: -6.5d
-		}]
-	title: "§6Extras"
+		}
+	]
+	title: "§6§oExtras"
 }

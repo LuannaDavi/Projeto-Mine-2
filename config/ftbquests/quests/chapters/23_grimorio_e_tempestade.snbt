@@ -4,7 +4,7 @@
 	filename: "23_grimorio_e_tempestade"
 	group: "6A1D97ECF9A7FC71"
 	id: "3F00000000000023"
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -25,23 +25,16 @@
 			]
 			icon: "irons_spellbooks:arcane_essence"
 			id: "5FE5C4FA0EF0C15F"
-			rewards: [
-				{
-					count: 4
-					id: "325365716B6F888A"
-					item: "irons_spellbooks:arcane_essence"
-					type: "item"
-				}
-				{
-					id: "566A85AB68223C86"
-					type: "xp"
-					xp: 50
-				}
-			]
+			rewards: [{
+				id: "325365716B6F888A"
+				type: "xp"
+				xp: 50
+			}]
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
-				count: 4
+				consume_items: true
+				count: 4L
 				id: "14E6A5025C8375CF"
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
@@ -536,7 +529,13 @@
 			rewards: [
 				{
 					id: "385FD1ECD7F6D72E"
-					item: "irons_spellbooks:diamond_spell_book"
+					item: "irons_spellbooks:iron_spell_book"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6A1E9B2F4C0D7E33"
+					item: "irons_spellbooks:fire_upgrade_orb"
 					type: "item"
 				}
 				{
@@ -587,7 +586,7 @@
 				{
 					count: 2L
 					id: "7E81E3C67B9DE61F"
-					item: "somakespells:aqua_rune"
+					item: "somakespells:scroll_aqua"
 					type: "item"
 				}
 			]
@@ -613,7 +612,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "47D84702396E24E7"
-				item: "somakespells:resonance_canticle_spell_book"
+				item: "irons_spellbooks:amethyst_resonance_charm"
 				type: "item"
 			}]
 			title: "Batidas Sônicas"
@@ -839,6 +838,9 @@
 				"§7Ninguém no time de lore conseguiu explicar como uma espada"
 				"§7de luz acabou num mod de magia medieval. Ela simplesmente"
 				"§7apareceu um dia, e agora é tarde demais pra tirar."
+				""
+				"§8§o(Vamos fingir que isso é um artefato ancestral esquecido"
+				"§8§oe seguir em frente.)"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -849,11 +851,19 @@
 				}
 			}
 			id: "718AF53A98393D1C"
-			rewards: [{
-				id: "619AF1A80DDDA4B5"
-				type: "xp"
-				xp: 400
-			}]
+			rewards: [
+				{
+					count: 6
+					id: "619AF1A80DDDA4B5"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					id: "5C9A1E33F8B02A64"
+					type: "xp"
+					xp: 400
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "0698DB929765737B"
@@ -876,6 +886,9 @@
 				"§7Ninguém sabe por que ele é chamado de proibido. A julgar"
 				"§7pelo peso, provavelmente é só porque ninguém mais consegue"
 				"§7levantar essa coisa."
+				""
+				"§8§o(Proibido por decreto ou proibido por bom senso? O time"
+				"§8§ode lore se recusa a comentar.)"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -886,11 +899,19 @@
 				}
 			}
 			id: "1861B341D4480D4D"
-			rewards: [{
-				id: "7876C06FBD5A1F06"
-				type: "xp"
-				xp: 500
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "7876C06FBD5A1F06"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					id: "2D7C4A916E0F3B58"
+					type: "xp"
+					xp: 500
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "6CDB1291DCEF3445"

@@ -808,6 +808,473 @@
 			x: 0.0d
 			y: -8.0d
 		}
+		{
+			dependencies: ["35740D78B0D23F9A"]
+			description: [
+				"§7A armadura Fênix chegou faltando as ferramentas — alguém"
+				"§7esqueceu de fundir o resto do conjunto. Bom saber que"
+				"§7ainda dá tempo de completar."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "lost_aether_content:phoenix_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "491AF0A20664C088"
+			rewards: [
+				{
+					count: 6
+					id: "45C1BC1257A5197E"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "0F0E861A33E591AC"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "3B7E575023277333"
+					item: {
+						Count: 1
+						id: "lost_aether_content:phoenix_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1299BDD9521DE02F"
+					item: {
+						Count: 1
+						id: "lost_aether_content:phoenix_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ferramentas Fênix"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["35740D78B0D23F9A"]
+			description: [
+				"§7Um acessório puramente estético — mas depois de tanto"
+				"§7esforço pra montar o conjunto inteiro, ninguém vai"
+				"§7reclamar de um capuz chique de bônus."
+				""
+				"§8§o(Sim, é só decoração. Não, isso não te deixa mais forte.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "lost_aether_content:phoenix_cape"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7500883CB4454BAF"
+			rewards: [
+				{
+					count: 8
+					id: "235FB06507DD45EA"
+					item: "minecraft:feather"
+					type: "item"
+				}
+				{
+					id: "30ED8C561233C3F4"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "333DE0C0A96DD891"
+				item: {
+					Count: 1
+					id: "lost_aether_content:phoenix_cape"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Capa da Fênix"
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7Conteúdo cortado do jogo original, recuperado e jogado de"
+				"§7volta no céu: uma baleia colossal que nada pelas nuvens"
+				"§7como se fossem água."
+				""
+				"§eDerrote o Rei das Baleias-Aéreas."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "darkpaintings:textures/painting/whale_dream.png"
+				}
+			}
+			id: "0813585CC6529CE7"
+			rewards: [
+				{
+					id: "00C1DB04C3CA32AD"
+					item: {
+						Count: 1
+						id: "aether:shield_of_repulsion"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0C1C9FCE777A90D4"
+					type: "xp"
+					xp: 550
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "lost_aether_content:aerwhale_king"
+				id: "5398961049127C74"
+				type: "kill"
+				value: 1L
+			}]
+			title: "O Rei das Baleias-Aéreas"
+			x: 0.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7Luvas encontradas nas profundezas de uma das masmorras."
+				"§7Ninguém sabe direito quem as forjou, só que dão um"
+				"§7empurrão extra em cada soco."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "lost_aether_content:power_gloves"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "42B2DD9DF3ED6C00"
+			rewards: [
+				{
+					count: 4
+					id: "51194D0805B1E85B"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "2BD0573C0105BB74"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "2BD0F3374A21BFF1"
+				item: {
+					Count: 1
+					id: "lost_aether_content:power_gloves"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Luvas de Força"
+			x: -2.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7Escudos alternativos achados em baús de masmorra — cada"
+				"§7um com um estilo de defesa próprio."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "lost_aether_content:sentry_shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "30393118BB893283"
+			rewards: [
+				{
+					count: 3
+					id: "19798429452051E1"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "56E30321FA73FA5D"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "71CE8B3B54831F1F"
+				item: {
+					Count: 1
+					id: "lost_aether_content:sentry_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Escudo Sentinela"
+			x: 2.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7Toda masmorra tem sua chave de bônus — a de platina abre"
+				"§7algo que a chave comum não abre."
+			]
+			hide_until_deps_complete: true
+			icon: "lost_aether_content:platinum_key"
+			id: "5B402FD897E453BE"
+			rewards: [
+				{
+					count: 2
+					id: "4B1D73B3823FB259"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "0A891652C2F640B4"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "73B290AB1D3FDA0C"
+				item: "lost_aether_content:platinum_key"
+				type: "item"
+			}]
+			title: "Chave de Platina"
+			x: -4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7Zanite é resistente. Gravitite é leve. Reforjar um dos"
+				"§7dois com um molde certo transforma a peça em algo"
+				"§7completamente diferente."
+				""
+				"§6Dica: §7use a bigorna com o molde de reforja, a peça de"
+				"§7armadura base e o ingrediente certo pra cada caminho."
+			]
+			hide_until_deps_complete: true
+			icon: "aether_treasure_reforging:neptune_mesh"
+			id: "3DE00995CD7D6E24"
+			rewards: [
+				{
+					count: 2
+					id: "21DE882E90A755CC"
+					item: "aether:zanite_gemstone"
+					type: "item"
+				}
+				{
+					id: "2EE4AB966134566F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "540E76BA436E57D4"
+					item: "aether_treasure_reforging:neptune_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "1108A18D58C16326"
+					item: "aether_treasure_reforging:neptune_mesh"
+					type: "item"
+				}
+			]
+			title: "Reforja de Netuno"
+			x: 4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7O mesmo molde que reforça a armadura Gravitite com o"
+				"§7calor do lingote Piral — um passo a mais rumo ao"
+				"§7conjunto Fênix completo."
+			]
+			hide_until_deps_complete: true
+			icon: "aether_treasure_reforging:pyral_ingot"
+			id: "0FF3DA4DED5F376B"
+			rewards: [
+				{
+					count: 2
+					id: "157EC08A3C25E581"
+					item: "aether:enchanted_gravitite"
+					type: "item"
+				}
+				{
+					id: "02E87E5B8C02A980"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "58D0480DC92A665B"
+					item: "aether_treasure_reforging:phoenix_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "683B5777BAE8E008"
+					item: "aether_treasure_reforging:pyral_ingot"
+					type: "item"
+				}
+			]
+			title: "Reforja Fênix"
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7O lingote Valkyrum carrega o mesmo peso da lança das"
+				"§7Valquírias. Reforjar equipamento Gravitite com ele é"
+				"§7reservado pra quem já provou valor na masmorra delas."
+			]
+			hide_until_deps_complete: true
+			icon: "aether_treasure_reforging:valkyrum_ingot"
+			id: "5488EDC546E74C0D"
+			rewards: [
+				{
+					count: 2
+					id: "6A7A5EA7630892BC"
+					item: "aether:enchanted_gravitite"
+					type: "item"
+				}
+				{
+					id: "43086A36FCD6F74D"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0E9B16448B37843F"
+					item: "aether_treasure_reforging:valkyrie_upgrade_smithing_template"
+					type: "item"
+				}
+				{
+					id: "027E0D2AC58FFE3B"
+					item: "aether_treasure_reforging:valkyrum_ingot"
+					type: "item"
+				}
+			]
+			title: "Reforja da Valquíria"
+			x: 2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7Seu Moa carrega você pelos céus há um bom tempo sem nada"
+				"§7de proteção. Uma armadura de Zanite resolve isso."
+			]
+			hide_until_deps_complete: true
+			icon: "aether_protect_your_moa:zanite_moa_armor"
+			id: "1C112E87C15CE215"
+			rewards: [
+				{
+					id: "7FA470F5D637AAA6"
+					item: "aether:blue_moa_egg"
+					type: "item"
+				}
+				{
+					id: "2D7C19AA456377F9"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "63D08E7353AD8229"
+				item: "aether_protect_your_moa:zanite_moa_armor"
+				type: "item"
+			}]
+			title: "Armadura do Moa"
+			x: -4.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["0F937D7B23367E19"]
+			description: [
+				"§7Uma máscara encontrada em algum canto esquecido do"
+				"§7Aether. Ninguém sabe o propósito original dela."
+				""
+				"§8§o(O nome é literalmente \"Swetty Mask\". O time de tradução"
+				"§8§odesistiu de tentar explicar.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "lost_aether_content:swetty_mask"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "028C975F566FA88E"
+			rewards: [{
+				id: "58C14AF6BA9C94F5"
+				type: "xp"
+				xp: 150
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "334B2DD877535352"
+				item: {
+					Count: 1
+					id: "lost_aether_content:swetty_mask"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "A Máscara Suada"
+			x: 4.0d
+			y: -13.0d
+		}
 	]
-	title: "§eO Paraíso Celestial"
+	title: "§fO Paraíso Celestial"
 }

@@ -743,7 +743,7 @@
 				}
 				{
 					id: "4723134361096A7D"
-					item: "irons_spellbooks:scroll_pouch"
+					item: "irons_spellbooks:legendary_ink"
 					type: "item"
 				}
 				{
@@ -1161,5 +1161,5 @@
 			y: -11.0d
 		}
 	]
-	title: "§2Floresta Crepuscular"
+	title: "§a§lFloresta Crepuscular"
 }

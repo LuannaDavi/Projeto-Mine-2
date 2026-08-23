@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "circle"
 	filename: "17_desafios"
 	group: "5BB53CE50BE47A33"
@@ -201,7 +201,7 @@
 			rewards: [
 				{
 					id: "473E0D2D0CEA06C7"
-					item: "irons_spellbooks:scroll_pouch"
+					item: "irons_spellbooks:legendary_ink"
 					type: "item"
 				}
 				{
@@ -714,7 +714,7 @@
 				}
 				{
 					id: "64934C3CA1A1244F"
-					item: "knightquest:filled_goblet"
+					item: "knightquest:radiant_essence"
 					type: "item"
 				}
 				{
@@ -750,7 +750,7 @@
 				}
 				{
 					id: "1D6751953836309F"
-					item: "knightquest:great_essence"
+					item: "knightquest:radiant_essence"
 					type: "item"
 				}
 				{
@@ -1391,6 +1391,286 @@
 			title: "O Arquimago das Duas Escolas"
 			x: 10.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["459BE27BE8C6B6F9"]
+			description: [
+				"§7Uma colônia de verdade não é só um punhado de casas —"
+				"§7é logística. Suprimentos vindo de navio, colonos"
+				"§7treinados, e um punhado de pergaminhos que só quem"
+				"§7já geriu uma cidade inteira sabe usar direito."
+				""
+				"§eEntregue: um kit de suprimentos completo e um pergaminho"
+				"§ede buff — prova de que sua colônia rodou de verdade."
+			]
+			hide_until_deps_complete: true
+			icon: "minecolonies:supplychestdeployer"
+			id: "0FCC4405DF25D2F0"
+			rewards: [
+				{
+					count: 8
+					id: "5761A222171BB166"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "1276BD50A4EDC98E"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "5CD85091579EBEEB"
+					type: "xp"
+					xp: 14000
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "39DC923B5408D38F"
+					item: "minecolonies:supplychestdeployer"
+					type: "item"
+				}
+				{
+					id: "79BF098F8068E2B3"
+					item: "minecolonies:scroll_buff"
+					type: "item"
+				}
+			]
+			title: "§6§lO Colono Supremo"
+			x: -10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["459BE27BE8C6B6F9"]
+			description: [
+				"§7Um Minerador Digital sozinho já é automação séria."
+				"§7Ter um rodando de forma estável, minerando sem parar,"
+				"§7é a prova de que sua base de energia aguenta o tranco."
+				""
+				"§eEntregue um Minerador Digital funcional."
+			]
+			hide_until_deps_complete: true
+			icon: "mekanism:digital_miner"
+			id: "7AD270D214F25A4F"
+			rewards: [
+				{
+					count: 8
+					id: "47575904F461BCFD"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "5358DBDD44222C04"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "3FCD423E51D5A124"
+					type: "xp"
+					xp: 14000
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "1CFEEC520D109647"
+				item: "mekanism:digital_miner"
+				type: "item"
+			}]
+			title: "§7§lExtração Sem Limites"
+			x: -6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["459BE27BE8C6B6F9"]
+			description: [
+				"§7Você não só visitou cada canto desse modpack — trouxe"
+				"§7prova de cada um. Uma chave do Reino Dread, uma medalha"
+				"§7do Aether, um troféu da Twilight Forest, uma lança do"
+				"§7Além das Nuvens, e um lingote refinado no espaço."
+				""
+				"§eEntregue um item marcante de cada grande dimensão/sistema"
+				"§eexplorado no modpack."
+			]
+			hide_until_deps_complete: true
+			icon: "iceandfire:dread_key"
+			id: "2CC8CBFEACE07001"
+			rewards: [
+				{
+					id: "6EB6F2235598E822"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "44FBA41C99F868F4"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "13F1CAA62A6CB244"
+					type: "xp"
+					xp: 16000
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "66F037DCA874A65C"
+					item: "iceandfire:dread_key"
+					type: "item"
+				}
+				{
+					id: "1543E7160AFDCE45"
+					item: "aether:victory_medal"
+					type: "item"
+				}
+				{
+					id: "47AA4B3F53E61C3A"
+					item: "twilightforest:trophy_pedestal"
+					type: "item"
+				}
+				{
+					id: "7A4B51D6B00F8A90"
+					item: {
+						Count: 1
+						id: "blue_skies:dusk_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AA26907A5CC295A"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+			]
+			title: "§d§lA Coleção de Troféus"
+			x: -2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["459BE27BE8C6B6F9"]
+			description: [
+				"§7Roda de Trituração e Engrenagem Sequenciada — as duas"
+				"§7peças que separam uma fábrica de Create decorativa de"
+				"§7uma fábrica de Create que produz de verdade."
+				""
+				"§eEntregue uma Roda de Trituração e uma Engrenagem"
+				"§eSequenciada."
+			]
+			hide_until_deps_complete: true
+			icon: "create:sequenced_gearshift"
+			id: "26C9A3153D6CBF41"
+			rewards: [
+				{
+					count: 8
+					id: "0F4E2042368B76F5"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "298052C1E1A38A02"
+					item: "minecraft:experience_bottle"
+					type: "item"
+				}
+				{
+					id: "4E654679947219CF"
+					type: "xp"
+					xp: 14000
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "42A0593E716072C5"
+					item: "create:crushing_wheel"
+					type: "item"
+				}
+				{
+					id: "4145E84FB7B82BF0"
+					item: "create:sequenced_gearshift"
+					type: "item"
+				}
+			]
+			title: "§e§lEngenharia Sem Limites"
+			x: 2.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"459BE27BE8C6B6F9"
+				"5010FC4E5854B6EF"
+				"4C930C37813660A7"
+				"72B166828B115448"
+				"05DE9367682739A8"
+				"57FB4D6C1F18453E"
+				"06C9265A4A347B71"
+				"1314677B1371FE42"
+				"69A1B87011C5899B"
+				"0EE3CF886DD39C10"
+				"728DA301E0D54BC8"
+				"20D4D55C4FE40BCE"
+				"4928328A642FB290"
+				"17BEA3FEC4515CF3"
+				"7612818452F0B3C7"
+				"3C8475F78CF1B0B5"
+				"0FCC4405DF25D2F0"
+				"26C9A3153D6CBF41"
+			]
+			description: [
+				"§4§lVocê fez tudo."
+				""
+				"§7Cada capítulo, cada boss, cada sistema, cada dimensão."
+				"§7Não existe mais nada esperando por você nesse modpack —"
+				"§7só a certeza de que você o dominou por completo."
+				""
+				"§eEntregue uma Estrela do Nether como selo final —"
+				"§eo símbolo de que nada mais ficou pra trás."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:nether_star"
+			id: "589E1246E4DEA06C"
+			rewards: [
+				{
+					count: 16
+					id: "0629F4E2E9563151"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "24DB63326CE5C710"
+					item: "minecraft:totem_of_undying"
+					type: "item"
+				}
+				{
+					count: 6
+					id: "1CE3DDF95ABCBA10"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "7D9E1B43D8AAA02C"
+					type: "xp"
+					xp: 50000
+				}
+			]
+			shape: "gear"
+			size: 2.5d
+			tasks: [{
+				id: "5873384C1C021866"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "§4§l§oO Fim de Tudo"
+			x: 0.0d
+			y: 16.0d
 		}
 	]
 	title: "§c§lDesafios Finais"
