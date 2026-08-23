@@ -16,3 +16,4 @@ PROBLEMAS ENCONTRADOS:
 
 AVISOS:
 - alguns jars e pacotes de recursos podem estar diferentes dos originais, foram modificados para encaixar no modpack ou corrigir pequenos bugs, deixo aqui total crédito aos autores originais!
+- as missões ainda apresentam pequenos bugs que estão sendo corrigidos aos poucos!
