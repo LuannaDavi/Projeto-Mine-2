@@ -7,7 +7,7 @@ INSTALAÇÂO:
 3. Coloque as configurações básicas na configureddefaults
 
 DICAS:
-- Existem três mods de mochila no pack, elas não se sobrepõem! a de camping pode ser equipada no curios, a do travelers pode ser equipada clicando com o botão direito e a sophisticated não precisa estar equipada para abrir, basta estar no inventário!
+- Existem três mods de mochila no pack, elas não se sobrepõem! A de camping pode ser equipada no curios, a do travelers pode ser equipada clicando com o botão direito e a sophisticated não precisa estar equipada para abrir, basta estar no inventário!
 - caso suas missões na pasta FTBquests não carreguem siga esse passo a passo:
 1. Abra o jogo e crie um mundo, abra o menu do FTBquests e coloque no modo de edição, crie uma missão aleátoria, não precisa Fazer sentido, é só para a pasta de quests passar a existir.
 2. É importante que você saia do modo de editor em seguida para não estragar a experiência, em seguida coloque as missões na pasta do FTBquests dentro da pasta config, se certifique de que está na pasta chapters, assim as missões vão carregar
@@ -22,3 +22,5 @@ AVISOS:
 - As missões ainda apresentam pequenos bugs que estão sendo corrigidos aos poucos!
 - Se o options.txt não funcionar na configureddefaults tente colocar ele na defaultconfigs e solto na .minecraft!
 - O options.txt é a configuração de teclas, a versão para mac ainda não foi desenvolvida por isso é preciso editar manualmente!
+- Os resourcepacks são totalmente opcionais!
+- Por mais que existam versões mais novas de alguns mods o modpack mantém alguns mods em versões mais antigas por questões de compatibilidade e estabilidade!
