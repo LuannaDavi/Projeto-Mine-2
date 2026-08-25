@@ -2,14 +2,23 @@
 
 Um modpack para Minecraft focado em **fantasia, aventura e tecnologia**, com mais de 250 mods cobrindo civilização, magia, exploração, combate e construção.
 
+<<<<<<< HEAD
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-62B47A?style=flat-square)
 ![Forge](https://img.shields.io/badge/Forge-47.4.20-3C5A99?style=flat-square)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=flat-square)
+=======
+DICAS:
+- Existem três mods de mochila no pack, elas não se sobrepõem! A de camping pode ser equipada no curios, a do travelers pode ser equipada clicando com o botão direito e a sophisticated não precisa estar equipada para abrir, basta estar no inventário!
+- caso suas missões na pasta FTBquests não carreguem siga esse passo a passo:
+1. Abra o jogo e crie um mundo, abra o menu do FTBquests e coloque no modo de edição, crie uma missão aleátoria, não precisa Fazer sentido, é só para a pasta de quests passar a existir.
+2. É importante que você saia do modo de editor em seguida para não estragar a experiência, em seguida coloque as missões na pasta do FTBquests dentro da pasta config, se certifique de que está na pasta chapters, assim as missões vão carregar
+>>>>>>> db5f9ebc0e0480679445b3fbed4e2653b2ded878
 
 ---
 
 ## 📋 Requisitos
 
+<<<<<<< HEAD
 | | |
 |---|---|
 | **Versão do Minecraft** | 1.20.1 |
@@ -79,3 +88,12 @@ Este modpack reúne o trabalho de centenas de criadores de mods da comunidade Mi
 ## 📄 Licença
 
 O conteúdo original deste repositório (scripts KubeJS, datapacks de correção, configuração de missões) está disponível sob a **licença MIT** — veja o arquivo [`LICENSE`](LICENSE). Os mods individuais mantêm suas próprias licenças, definidas por seus autores originais.
+=======
+AVISOS:
+- Alguns jars e pacotes de recursos podem estar diferentes dos originais, foram modificados para encaixar no modpack ou corrigir pequenos bugs, deixo aqui total crédito aos autores originais!
+- As missões ainda apresentam pequenos bugs que estão sendo corrigidos aos poucos!
+- Se o options.txt não funcionar na configureddefaults tente colocar ele na defaultconfigs e solto na .minecraft!
+- O options.txt é a configuração de teclas, a versão para mac ainda não foi desenvolvida por isso é preciso editar manualmente!
+- Os resourcepacks são totalmente opcionais!
+- Por mais que existam versões mais novas de alguns mods o modpack mantém alguns mods em versões mais antigas por questões de compatibilidade e estabilidade!
+>>>>>>> db5f9ebc0e0480679445b3fbed4e2653b2ded878
