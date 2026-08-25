@@ -21,7 +21,7 @@ EntityEvents.spawned(event => {
     }
 
     if (random > 0.92) {
-      entity.equipmentSlot('feet', Item.of('born_in_chaos_v1:cursed_boots'));
+      entity.setFeetArmorItem(Item.of('born_in_chaos_v1:cursed_boots'));
     }
   }
 
@@ -120,10 +120,10 @@ EntityEvents.spawned(event => {
     }
     // Legendary monsters tem chance de armadura
     if (random > 0.70) {
-      entity.equipmentSlot('chest', Item.of('minecraft:iron_chestplate'));
+      entity.setChestArmorItem(Item.of('minecraft:iron_chestplate'));
     }
     if (random > 0.80) {
-      entity.equipmentSlot('head', Item.of('minecraft:iron_helmet'));
+      entity.setHeadArmorItem(Item.of('minecraft:iron_helmet'));
     }
   }
 
