@@ -2,7 +2,6 @@
 
 Um modpack para Minecraft focado em **fantasia, aventura e tecnologia**, com mais de 250 mods cobrindo civilização, magia, exploração, combate e construção.
 
-<<<<<<< HEAD
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-62B47A?style=flat-square)
 ![Forge](https://img.shields.io/badge/Forge-47.4.20-3C5A99?style=flat-square)
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=flat-square)
@@ -12,13 +11,13 @@ DICAS:
 - caso suas missões na pasta FTBquests não carreguem siga esse passo a passo:
 1. Abra o jogo e crie um mundo, abra o menu do FTBquests e coloque no modo de edição, crie uma missão aleátoria, não precisa Fazer sentido, é só para a pasta de quests passar a existir.
 2. É importante que você saia do modo de editor em seguida para não estragar a experiência, em seguida coloque as missões na pasta do FTBquests dentro da pasta config, se certifique de que está na pasta chapters, assim as missões vão carregar
->>>>>>> db5f9ebc0e0480679445b3fbed4e2653b2ded878
+
 
 ---
 
 ## 📋 Requisitos
 
-<<<<<<< HEAD
+
 | | |
 |---|---|
 | **Versão do Minecraft** | 1.20.1 |
@@ -96,4 +95,4 @@ AVISOS:
 - O options.txt é a configuração de teclas, a versão para mac ainda não foi desenvolvida por isso é preciso editar manualmente!
 - Os resourcepacks são totalmente opcionais!
 - Por mais que existam versões mais novas de alguns mods o modpack mantém alguns mods em versões mais antigas por questões de compatibilidade e estabilidade!
->>>>>>> db5f9ebc0e0480679445b3fbed4e2653b2ded878
+
