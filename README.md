@@ -8,10 +8,6 @@ Um modpack para Minecraft focado em **fantasia, aventura e tecnologia**, com mai
 =======
 DICAS:
 - Existem três mods de mochila no pack, elas não se sobrepõem! A de camping pode ser equipada no curios, a do travelers pode ser equipada clicando com o botão direito e a sophisticated não precisa estar equipada para abrir, basta estar no inventário!
-- caso suas missões na pasta FTBquests não carreguem siga esse passo a passo:
-1. Abra o jogo e crie um mundo, abra o menu do FTBquests e coloque no modo de edição, crie uma missão aleátoria, não precisa Fazer sentido, é só para a pasta de quests passar a existir.
-2. É importante que você saia do modo de editor em seguida para não estragar a experiência, em seguida coloque as missões na pasta do FTBquests dentro da pasta config, se certifique de que está na pasta chapters, assim as missões vão carregar
-
 
 ---
 
