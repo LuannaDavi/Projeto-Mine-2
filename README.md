@@ -88,6 +88,7 @@ Este modpack reúne o trabalho de centenas de criadores de mods da comunidade Mi
 ---
 
 🌍 Mundos e exploração
+
 Ad Astra (+ Extra Additions, More Structures, Tools) - bota um foguete de pé, sai do planeta e vai visitar a Lua, Marte e além. Tem oxigênio pra gerenciar, então não esquece o capacete.
 
 Aether - o contraponto celestial do Nether. Ilhas flutuantes, moas pra montar, e um paraíso que também quer te matar, só que educadamente.
