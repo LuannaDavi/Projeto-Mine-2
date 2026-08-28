@@ -79,11 +79,7 @@ Este modpack reúne o trabalho de centenas de criadores de mods da comunidade Mi
 
 ---
 
-## 📄 Licença
-
-O conteúdo original deste repositório (scripts KubeJS, datapacks de correção, configuração de missões) está disponível sob a **licença MIT** — veja o arquivo [`LICENSE`](LICENSE). Os mods individuais mantêm suas próprias licenças, definidas por seus autores originais.
-=======
-AVISOS:
+## 📄AVISOS:
 - Alguns jars e pacotes de recursos podem estar diferentes dos originais, foram modificados para encaixar no modpack ou corrigir pequenos bugs, deixo aqui total crédito aos autores originais!
 - As missões ainda apresentam pequenos bugs que estão sendo corrigidos aos poucos!
 - Se o options.txt não funcionar na configureddefaults tente colocar ele na defaultconfigs e solto na .minecraft!
