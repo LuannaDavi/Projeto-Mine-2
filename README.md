@@ -1,4 +1,4 @@
-# 🐉 Projeto Mine-2 — "sem nome definido"
+# 🐉 Projeto Mine-2 - "sem nome definido"
 
 Um modpack para Minecraft focado em **fantasia, aventura e tecnologia**, com mais de 250 mods cobrindo civilização, magia, exploração, combate e construção.
 
