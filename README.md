@@ -63,7 +63,6 @@ Se as missões da pasta `ftbquests` não aparecerem no jogo, siga este passo ext
 |---|---|
 | Usar qualquer armadura do **Brazilian Delight** junto com armas do **Epic Fight Ressurection** pode causar crash, por conflito na biblioteca de dependências | Sem solução encontrada |
 | Atacar com armas do **Weapons of Miracles (WOM)** enquanto no ar, em modo criativo, pode causar crash | Sem solução encontrada |
-| O **EMI** pode travar o jogo ao usar a transferência automática de receita (botão de craft rápido) em certas telas, por incompatibilidade com o compat interno do JEI | Sem solução encontrada — evite usar a transferência automática de receita pelo EMI como contorno |
 
 ---
 
