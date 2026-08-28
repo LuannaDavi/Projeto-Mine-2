@@ -84,8 +84,10 @@ Este modpack reúne o trabalho de centenas de criadores de mods da comunidade Mi
 
 ## 🎒 O que tem pra fazer no pack.
 - Um raio-x dos mods que mais moldam a experiência do Dodona - os que adicionam mundo, criaturas, itens e sistemas novos de verdade. (Bibliotecas, compats e mods só de script ficaram de fora dessa lista — são o motor por baixo do capô, não o que você vai ver na tela.)
+  
 ---
--🌍 Mundos e exploração
+
+🌍 Mundos e exploração
 Ad Astra (+ Extra Additions, More Structures, Tools) - bota um foguete de pé, sai do planeta e vai visitar a Lua, Marte e além. Tem oxigênio pra gerenciar, então não esquece o capacete.
 
 Aether - o contraponto celestial do Nether. Ilhas flutuantes, moas pra montar, e um paraíso que também quer te matar, só que educadamente.
@@ -102,9 +104,9 @@ Repurposed Structures - reconstrói estruturas vanilla (vilas, cidades soterrada
 
 Dungeons Arise (+ Seven Seas) - masmorras e fortalezas espalhadas pelo mapa, incluindo variantes marítimas pra quem gosta de saquear navio afundado.
 
-Yung's Better End Island - retrabalha as ilhas do End pra ficarem menos "sala vazia" e mais "vale a pena explorar".
 ---
--🐉 Criaturas e monstros
+
+🐉 Criaturas e monstros
 
 Ice and Fire - dragões de verdade, do tipo que voa, cospe elemento e tem covil cheio de tesouro.
 Também traz ciclopes, górgonas, hidras e um bestiário digno de mitologia.
@@ -128,7 +130,9 @@ Guard Villagers — dá arma e armadura pros aldeões se defenderem sozinhos —
 
 Buddycards — cartas colecionáveis de criaturas do mod, porque até monstro merece um card genial.
 
--🏰 Civilização e construção
+---
+
+🏰 Civilização e construção
 
 MineColonies — construa e gerencie uma colônia inteira, com colonos que têm profissão, IA própria e reclamam se você não constrói a casa certa.
 
@@ -145,7 +149,9 @@ Waystones — pedras de teleporte espalhadas pelo mundo — não mais correr 500
 
 Quark — pacote "vanilla+": dezenas de pequenos adicionais que parecem que sempre estiveram no jogo.
 
--⚔️ Combate e armas
+---
+
+⚔️ Combate e armas
 
 Epic Fight (Ressurection) — troca o combate padrão por um sistema de combos, esquiva e postura, tipo jogo de ação de verdade.
 
@@ -161,26 +167,34 @@ Relics — itens únicos e lendários com efeitos especiais, bons de caçar como
 
 Artifacts — parecido, itens especiais espalhados pelo mundo com bônus únicos ao equipar.
 
--🔮 Magia
+---
+
+🔮 Magia
 Ars Nouveau (+ Creo, Elemental) — sistema de magia baseado em glifos que você combina pra criar seu próprio feitiço, do zero.
 
 Necronomicon — grimório de magia sombria, temática de pacto e ritual.
 
 Irons Spellbooks já entra também aqui — é armas e magia ao mesmo tempo.
 
+---
+
 🍲 Comida e culinária
 Farmer's Delight (+ Aquaculture, Brazilian, Ender's, Chef's Delight e mais) — culinária de verdade: corta, cozinha, empratado bonito. A base de um ecossistema de comida gigante no pack.
 
 Mystical Agriculture (+ Agradditions) — agricultura mágica pra plantar até minério — planta essência de ferro, colhe lingote.
 
--⚙️ Tecnologia e automação
+---
+
+⚙️ Tecnologia e automação
 Create (+ Confectionery, Stuff Additions, Enchantment Industry, Jetpack e vários addons) — engenharia mecânica visual: engrenagens, esteiras, contraptions que você monta peça por peça e vê funcionando.
 
 Mekanism (+ Additions, Generators, Tools) — tecnologia industrial pesada, do gerador básico ao reator de fusão.
 
 Steam Rails — trilhos e trens funcionais, ótimo combo com o Create.
 
--🎒 Armazenamento e utilidade
+---
+
+🎒 Armazenamento e utilidade
 
 Sophisticated Backpacks — mochila modular com upgrades (filtro automático, fornalha portátil, etc.)
 
