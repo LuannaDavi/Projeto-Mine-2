@@ -70,20 +70,14 @@ Se as missões da pasta `ftbquests` não aparecerem no jogo, siga este passo ext
 
 - Alguns jars e pacotes de recursos foram modificados para se encaixar no modpack ou corrigir pequenos bugs. Todo o crédito pelo conteúdo original permanece com os respectivos autores.
 - As missões ainda apresentam pequenos bugs, sendo corrigidos aos poucos.
+- Se o options.txt não funcionar na configureddefaults tente colocar ele na defaultconfigs e solto na .minecraft.
+- O options.txt é a configuração de teclas, a versão para mac ainda não foi desenvolvida por isso é preciso editar manualmente.
+- Os resourcepacks são totalmente opcionais.
+- Por mais que existam versões mais novas de alguns mods o modpack mantém alguns mods em versões mais antigas por questões de compatibilidade e estabilidade.
 
 ---
 
 ## 🎮​ Créditos
 
 Este modpack reúne o trabalho de centenas de criadores de mods da comunidade Minecraft. Todo o crédito pelos mods individuais pertence aos seus respectivos autores — este repositório organiza, configura e adapta esse conteúdo, sem reivindicar autoria sobre o trabalho original de terceiros.
-
----
-
-## 📄AVISOS:
-- Alguns jars e pacotes de recursos podem estar diferentes dos originais, foram modificados para encaixar no modpack ou corrigir pequenos bugs, deixo aqui total crédito aos autores originais!
-- As missões ainda apresentam pequenos bugs que estão sendo corrigidos aos poucos!
-- Se o options.txt não funcionar na configureddefaults tente colocar ele na defaultconfigs e solto na .minecraft!
-- O options.txt é a configuração de teclas, a versão para mac ainda não foi desenvolvida por isso é preciso editar manualmente!
-- Os resourcepacks são totalmente opcionais!
-- Por mais que existam versões mais novas de alguns mods o modpack mantém alguns mods em versões mais antigas por questões de compatibilidade e estabilidade!
 
