@@ -171,6 +171,7 @@ Artifacts — parecido, itens especiais espalhados pelo mundo com bônus únicos
 ---
 
 🔮 Magia
+
 Ars Nouveau (+ Creo, Elemental) — sistema de magia baseado em glifos que você combina pra criar seu próprio feitiço, do zero.
 
 Necronomicon — grimório de magia sombria, temática de pacto e ritual.
@@ -180,6 +181,7 @@ Irons Spellbooks já entra também aqui — é armas e magia ao mesmo tempo.
 ---
 
 🍲 Comida e culinária
+
 Farmer's Delight (+ Aquaculture, Brazilian, Ender's, Chef's Delight e mais) — culinária de verdade: corta, cozinha, empratado bonito. A base de um ecossistema de comida gigante no pack.
 
 Mystical Agriculture (+ Agradditions) — agricultura mágica pra plantar até minério — planta essência de ferro, colhe lingote.
@@ -187,6 +189,7 @@ Mystical Agriculture (+ Agradditions) — agricultura mágica pra plantar até m
 ---
 
 ⚙️ Tecnologia e automação
+
 Create (+ Confectionery, Stuff Additions, Enchantment Industry, Jetpack e vários addons) — engenharia mecânica visual: engrenagens, esteiras, contraptions que você monta peça por peça e vê funcionando.
 
 Mekanism (+ Additions, Generators, Tools) — tecnologia industrial pesada, do gerador básico ao reator de fusão.
