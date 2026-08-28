@@ -83,7 +83,7 @@ Este modpack reúne o trabalho de centenas de criadores de mods da comunidade Mi
 ---
 
 ## 🎒 O que tem pra fazer no pack.
-- Um raio-x dos mods que mais moldam a experiência do Dodona - os que adicionam mundo, criaturas, itens e sistemas novos de verdade. (Bibliotecas, compats e mods só de script ficaram de fora dessa lista — são o motor por baixo do capô, não o que você vai ver na tela.)
+- Um raio-x dos mods que mais moldam a experiência do Modpack - os que adicionam mundo, criaturas, itens e sistemas novos de verdade. (Bibliotecas, compats e mods só de script ficaram de fora dessa lista — são o motor por baixo do capô, não o que você vai ver na tela.)
   
 ---
 
