@@ -35,7 +35,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1434A31CE9FEC99D"]
+			dependencies: ["49DA8823123BE733"]
 			description: [
 				"§7Mystical Agriculture + Create = farm de recursos automática."
 				"§7Depois do Inferium, o próximo tier é o Prudentium — mais"
@@ -80,7 +80,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["1434A31CE9FEC99D"]
+			dependencies: ["49DA8823123BE733"]
 			description: [
 				"§7O §eMystical Agriculture §7tem 5 tiers de essências:"
 				"§eInferium → Prudentium → Tertium → Imperium → Supremium§7."
@@ -232,7 +232,7 @@
 			rewards: [
 				{
 					count: 8
-					id: "5CADDFFE3D64F3AB"
+					id: "01F8F14C8A43EF18"
 					item: "mysticalagriculture:prudentium_essence"
 					type: "item"
 				}
@@ -252,13 +252,13 @@
 				}
 				{
 					count: 4L
-					id: "3FB3096617A95E4D"
+					id: "6794B5E508CF56C4"
 					item: "mysticalagriculture:gold_seeds"
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "50582A1D5473659C"
+					id: "5A7A0EEF117BAF5E"
 					item: "mysticalagriculture:diamond_seeds"
 					type: "item"
 				}
@@ -291,7 +291,7 @@
 					type: "item"
 				}
 				{
-					id: "3B46D0C654BD0DE6"
+					id: "4E3581FE9FC5FA84"
 					type: "xp"
 					xp: 350
 				}
@@ -300,12 +300,12 @@
 			tasks: [
 				{
 					count: 4L
-					id: "29E3E363ECA0509F"
+					id: "3DED826AF0DE562B"
 					item: "mysticalagriculture:soulium_seeds"
 					type: "item"
 				}
 				{
-					id: "4BF5B23CDF89D71A"
+					id: "38C311D7E005A22E"
 					item: {
 						Count: 1
 						id: "mysticalagriculture:soulium_dagger"
@@ -331,7 +331,7 @@
 			icon: "mysticalagradditions:supremium_paxel"
 			id: "4A99207458D67631"
 			rewards: [{
-				id: "524FD4C062DF7EE7"
+				id: "5942A7857B8B9424"
 				type: "xp"
 				xp: 450
 			}]
@@ -349,7 +349,7 @@
 					type: "item"
 				}
 				{
-					id: "7EDF788B7E7D143C"
+					id: "05F014B613549A60"
 					item: "mysticalagradditions:supremium_paxel"
 					type: "item"
 				}
@@ -367,15 +367,15 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:nether_star_shard"
-			id: "098FA93EFFB0F653"
+			id: "70D02C36FA4BC804"
 			rewards: [
 				{
-					id: "268F588AD5E24583"
+					id: "1C247589D6AB0902"
 					item: "mysticalagradditions:nether_star_shard"
 					type: "item"
 				}
 				{
-					id: "766E60842E575125"
+					id: "5304A54766FB2E51"
 					type: "xp"
 					xp: 600
 				}
@@ -384,7 +384,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "5D33293CD87C6BEA"
+					id: "5D0EBA8BCED6A239"
 					item: "mysticalagriculture:nether_star_seeds"
 					type: "item"
 				}
@@ -449,16 +449,16 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mysticalagriculture:neutronium_essence"
-			id: "46B3C298BF2888F5"
+			id: "1DDCE80D6AB96033"
 			rewards: [
 				{
 					count: 2
-					id: "1C48331F23EF4E53"
+					id: "53E0A118EF42601E"
 					item: "mysticalagriculture:neutronium_essence"
 					type: "item"
 				}
 				{
-					id: "7C501F1F6923488E"
+					id: "1DE7CE2F3CCD1163"
 					type: "xp"
 					xp: 700
 				}
@@ -467,7 +467,7 @@
 			tasks: [
 				{
 					count: 2L
-					id: "3B959767CC4657B1"
+					id: "39C6621A3FBDFEED"
 					item: "mysticalagriculture:neutronium_seeds"
 					type: "item"
 				}
@@ -503,7 +503,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mysticalagradditions:insanium_ingot"
-			id: "435D8D9ECBF046BE"
+			id: "4366F97B0B773269"
 			rewards: [
 				{
 					id: "04F5F33D69698F05"
@@ -520,7 +520,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "1458A60B5020F905"
+					id: "33D11709EE7B7B3D"
 					item: "mysticalagradditions:insanium_essence"
 					type: "item"
 				}
@@ -534,6 +534,453 @@
 			title: "Insanium: Além do Supremium"
 			x: 0.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Tudo começa com Inferium. A essência mais fraca, mais comum,"
+				"§7e ainda assim a base de literalmente tudo que vem depois —"
+				"§7sem ela, não existe Prudentium, não existe Supremium, nada."
+				""
+				"§eColete 16 Inferium Essence."
+				""
+				"§6Dica: §7Inferium Seeds crescem em qualquer terra normal. É"
+				"§7o primeiro passo mais barato de todo o mod."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:inferium_essence"
+			id: "0560B930A37735EC"
+			rewards: [
+				{
+					count: 8
+					id: "E413782483CA8C71"
+					item: "mysticalagriculture:inferium_seeds"
+					type: "item"
+				}
+				{
+					id: "93211D94DE2B5430"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 16L
+				id: "D90881DEDDC513E6"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			title: "Primeira Colheita"
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Achou uma semente rara e só tem 1 unidade? O Reprocessador"
+				"§7transforma ela de volta em Inferium Essence — arriscado,"
+				"§7mas às vezes vale mais a pena do que replantar do zero."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:seed_reprocessor"
+			id: "45E0E709825CF2FC"
+			rewards: [
+				{
+					count: 16
+					id: "2B3500B2FF4AA909"
+					item: "mysticalagriculture:inferium_essence"
+					type: "item"
+				}
+				{
+					id: "331372F7C4F4895A"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "FD2F77743ECC05EF"
+				item: "mysticalagriculture:seed_reprocessor"
+				type: "item"
+			}]
+			title: "O Reprocessador"
+			x: -7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Acelerador de crescimento é o Growth Accelerator — planta"
+				"§7num raio inteiro cresce mais rápido. Regador é ferramenta:"
+				"§7molha um talhão inteiro sem precisar de água por perto."
+				""
+				"§6Dica: §7cada tier de acelerador cobre uma área maior. Prudentium"
+				"§7já é um salto e tanto sobre o Inferium básico."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:prudentium_growth_accelerator"
+			id: "D9391E9882DEC995"
+			rewards: [
+				{
+					count: 4
+					id: "C96702789BB00AE6"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "A04BC271F7E3624A"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "C38EFBF605011760"
+					item: "mysticalagriculture:prudentium_growth_accelerator"
+					type: "item"
+				}
+				{
+					id: "2CF74104C9227082"
+					item: "mysticalagriculture:prudentium_watering_can"
+					type: "item"
+				}
+			]
+			title: "Solo Acelerado"
+			x: -3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Prudentium não é só essência — é uma linha inteira de"
+				"§7ferramentas e armadura própria, um degrau real acima do"
+				"§7Inferium, bem antes de chegar perto do Supremium."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "mysticalagriculture:prudentium_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "C8DBBAE93C693AA8"
+			rewards: [
+				{
+					count: 4
+					id: "FD8CFFD1B943AD33"
+					item: "mysticalagriculture:prudentium_ingot"
+					type: "item"
+				}
+				{
+					id: "99797F06A9FBEDC7"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5BC72BD9685365B2"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2566B83DBC57F3C8"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:prudentium_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arsenal Prudentium"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Um degrau acima do Prudentium. A armadura Tertium já"
+				"§7aguenta o tranco de biomas mais hostis sem precisar de"
+				"§7encantamento extra."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "mysticalagriculture:tertium_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A743AC220EAB5D1"
+			rewards: [
+				{
+					count: 4
+					id: "449E8564A5B4EEF6"
+					item: "mysticalagriculture:tertium_ingot"
+					type: "item"
+				}
+				{
+					id: "8FA63752CDBB8221"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "AB586A91EFD56944"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:tertium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "DF3B3CDA2CE5F882"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:tertium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Conjunto Tertium"
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Esmeralda, lápis, redstone, carvão — os minérios mais"
+				"§7comuns de comércio e encantamento, todos disponíveis numa"
+				"§7fileira de plantação em vez de uma escavada inteira."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:emerald_seeds"
+			id: "3B5C96979BFBD098"
+			rewards: [
+				{
+					count: 6
+					id: "7D06EC4DB4323B2C"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					id: "AFDAA6EE85448E66"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "D34839B8CFECA5CB"
+					item: "mysticalagriculture:emerald_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "A8CAC80D5B5B6ED5"
+					item: "mysticalagriculture:lapis_lazuli_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0467A926EA795F99"
+					item: "mysticalagriculture:redstone_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "B01D8E07B1147968"
+					item: "mysticalagriculture:coal_seeds"
+					type: "item"
+				}
+			]
+			title: "Fazenda dos Minérios de Comércio"
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7Steeleaf, Slimesteel, Pig Iron, Queen's Slime — materiais"
+				"§7de mods de ferramentas modulares, disponíveis igual"
+				"§7qualquer outro mineral: você planta, você colhe."
+				""
+				"§6Dica: §7se você trabalha com ferramentas modulares, essas"
+				"§7sementes economizam viagens longas atrás de material raro."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:steeleaf_seeds"
+			id: "8A26FE4B4A2360C4"
+			rewards: [
+				{
+					count: 6
+					id: "396E9249F5904CEA"
+					item: "mysticalagriculture:tertium_essence"
+					type: "item"
+				}
+				{
+					id: "61D1C8A578E49CCE"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "A7A9F5A83BB0A6F0"
+					item: "mysticalagriculture:steeleaf_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "D38103F8B9D316AD"
+					item: "mysticalagriculture:slimesteel_seeds"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0FB01EA4C83DB085"
+					item: "mysticalagriculture:pig_iron_seeds"
+					type: "item"
+				}
+			]
+			title: "Sementes de Ferramentas Modulares"
+			x: -7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["49DA8823123BE733"]
+			description: [
+				"§7O Altar de Infusão acelera a produção de essência através"
+				"§7de um ritual — quatro pedestais ao redor, energia mágica"
+				"§7fluindo, e o Inferium se acumula bem mais rápido que na roça."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:infusion_altar"
+			id: "DEAB985595668B88"
+			rewards: [
+				{
+					count: 4
+					id: "D48CD011E634FEF2"
+					item: "mysticalagriculture:imperium_essence"
+					type: "item"
+				}
+				{
+					id: "3D562AB75D2D85C2"
+					type: "xp"
+					xp: 450
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "5C901CE1B2B096FD"
+				item: "mysticalagriculture:infusion_altar"
+				type: "item"
+			}]
+			title: "Altar de Infusão"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1DE9947939F4B163"]
+			description: [
+				"§7O Altar do Despertar é o último passo antes do Awakened"
+				"§7Supremium — o mod inteiro converge pra essa estrutura."
+				"§7Construir ela é, sozinho, uma prova de compromisso."
+			]
+			hide_until_deps_complete: true
+			icon: "mysticalagriculture:awakening_altar"
+			id: "767C90105FC324AA"
+			rewards: [
+				{
+					count: 4
+					id: "97319746BC7DAFCB"
+					item: "mysticalagriculture:awakened_supremium_essence"
+					type: "item"
+				}
+				{
+					id: "E25E92C1BAC4CCD1"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "F3CD2BD92571251D"
+				item: "mysticalagriculture:awakening_altar"
+				type: "item"
+			}]
+			title: "Altar do Despertar"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4634C6B854B72A95"]
+			description: [
+				"§7Vara de pesca que nunca precisa de isca, fio que nunca"
+				"§7arrebenta. Curiosamente prática pra quem já domina o resto"
+				"§7da progressão e só quer conveniência de sobra."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "mysticalagriculture:tertium_fishing_rod"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "916B631B2B47F175"
+			rewards: [
+				{
+					count: 16
+					id: "A0A536B5E71B10ED"
+					item: "minecraft:cod"
+					type: "item"
+				}
+				{
+					id: "14CF95954405037C"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "8BF1877215D56B8E"
+				item: {
+					Count: 1
+					id: "mysticalagriculture:tertium_fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Vara de Pescar Mística"
+			x: 0.0d
+			y: 4.0d
 		}
 	]
 	title: "§2A Colheita Impossível"

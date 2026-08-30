@@ -32,7 +32,7 @@
 			}]
 			title: "Abrir Capitulo"
 			x: 0.0d
-			y: 0.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -82,8 +82,8 @@
 				type: "advancement"
 			}]
 			title: "Paraíso Celestial"
-			x: 2.0d
-			y: 0.0d
+			x: 0d
+			y: -7d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -139,8 +139,8 @@
 				type: "advancement"
 			}]
 			title: "O Espírito do Sol"
-			x: 4.0d
-			y: 0.0d
+			x: 6d
+			y: 3d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -199,8 +199,8 @@
 				type: "advancement"
 			}]
 			title: "A Rainha das Valquírias"
-			x: 6.0d
-			y: 0.0d
+			x: -2d
+			y: -4d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -248,8 +248,8 @@
 				type: "advancement"
 			}]
 			title: "A Masmorra de Bronze"
-			x: 8.0d
-			y: 0.0d
+			x: -4d
+			y: 9d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -296,8 +296,8 @@
 				type: "advancement"
 			}]
 			title: "O Minério que Voa"
-			x: -2.0d
-			y: 0.0d
+			x: 0d
+			y: 9d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -350,8 +350,8 @@
 				}
 			]
 			title: "Recursos do Aether"
-			x: -4.0d
-			y: 0.0d
+			x: -12d
+			y: 9d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -388,8 +388,8 @@
 				type: "advancement"
 			}]
 			title: "Criaturas do Paraíso"
-			x: -6.0d
-			y: 0.0d
+			x: -8d
+			y: 9d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -473,8 +473,8 @@
 				}
 			]
 			title: "Armadura de Zanite"
-			x: -8.0d
-			y: 0.0d
+			x: 4d
+			y: 9d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -512,8 +512,8 @@
 				type: "item"
 			}]
 			title: "O Encantador do Aether"
-			x: 0.0d
-			y: 2.5d
+			x: -6d
+			y: 6d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -578,8 +578,8 @@
 				}
 			]
 			title: "Ferramentas e Armas Únicas"
-			x: 0.0d
-			y: 5.5d
+			x: -10d
+			y: 6d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -619,8 +619,8 @@
 				value: 1L
 			}]
 			title: "Cuidado com o Olhar"
-			x: 0.0d
-			y: 8.0d
+			x: -2d
+			y: 6d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -676,8 +676,8 @@
 				type: "item"
 			}]
 			title: "A Lança da Valquíria"
-			x: 0.0d
-			y: -2.5d
+			x: 4d
+			y: -1d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -711,8 +711,8 @@
 				type: "advancement"
 			}]
 			title: "A Masmorra de Bronze: Slider"
-			x: 0.0d
-			y: -5.5d
+			x: 8d
+			y: 9d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -805,8 +805,8 @@
 				}
 			]
 			title: "Armadura Fênix"
-			x: 0.0d
-			y: -8.0d
+			x: 2d
+			y: 3d
 		}
 		{
 			dependencies: ["35740D78B0D23F9A"]
@@ -823,11 +823,11 @@
 					Damage: 0
 				}
 			}
-			id: "491AF0A20664C088"
+			id: "0FA8358BCA0BD244"
 			rewards: [
 				{
 					count: 6
-					id: "45C1BC1257A5197E"
+					id: "73218E49A082CB2A"
 					item: "minecraft:blaze_rod"
 					type: "item"
 				}
@@ -840,7 +840,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "3B7E575023277333"
+					id: "683A73C25DCCC329"
 					item: {
 						Count: 1
 						id: "lost_aether_content:phoenix_sword"
@@ -851,7 +851,7 @@
 					type: "item"
 				}
 				{
-					id: "1299BDD9521DE02F"
+					id: "7FA2D3C63E5676A5"
 					item: {
 						Count: 1
 						id: "lost_aether_content:phoenix_pickaxe"
@@ -863,8 +863,8 @@
 				}
 			]
 			title: "Ferramentas Fênix"
-			x: 0.0d
-			y: -10.5d
+			x: 1d
+			y: 1d
 		}
 		{
 			dependencies: ["35740D78B0D23F9A"]
@@ -892,7 +892,7 @@
 					type: "item"
 				}
 				{
-					id: "30ED8C561233C3F4"
+					id: "1CC78EACD4F109A1"
 					type: "xp"
 					xp: 150
 				}
@@ -910,8 +910,8 @@
 				type: "item"
 			}]
 			title: "Capa da Fênix"
-			x: 0.0d
-			y: -13.0d
+			x: 3d
+			y: 1d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -925,18 +925,18 @@
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
-				id: "ftbquests:custom_icon"
+				id: "lost_aether_content:agility_boots"
 				tag: {
-					Icon: "darkpaintings:textures/painting/whale_dream.png"
+					Damage: 0
 				}
 			}
 			id: "0813585CC6529CE7"
 			rewards: [
 				{
-					id: "00C1DB04C3CA32AD"
+					id: "33AB3699CA163067"
 					item: {
 						Count: 1
-						id: "aether:shield_of_repulsion"
+						id: "lost_aether_content:agility_boots"
 						tag: {
 							Damage: 0
 						}
@@ -944,7 +944,7 @@
 					type: "item"
 				}
 				{
-					id: "0C1C9FCE777A90D4"
+					id: "49C50B1AE061C3D1"
 					type: "xp"
 					xp: 550
 				}
@@ -953,13 +953,13 @@
 			size: 1.5d
 			tasks: [{
 				entity: "lost_aether_content:aerwhale_king"
-				id: "5398961049127C74"
+				id: "56B90F8421B392B8"
 				type: "kill"
 				value: 1L
 			}]
 			title: "O Rei das Baleias-Aéreas"
-			x: 0.0d
-			y: -15.5d
+			x: 2d
+			y: -4d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -976,7 +976,7 @@
 					Damage: 0
 				}
 			}
-			id: "42B2DD9DF3ED6C00"
+			id: "63CB0DDBBF1C39A1"
 			rewards: [
 				{
 					count: 4
@@ -985,7 +985,7 @@
 					type: "item"
 				}
 				{
-					id: "2BD0573C0105BB74"
+					id: "51A26A2FDB59E16F"
 					type: "xp"
 					xp: 250
 				}
@@ -1003,8 +1003,8 @@
 				type: "item"
 			}]
 			title: "Luvas de Força"
-			x: -2.0d
-			y: -10.5d
+			x: 2d
+			y: 6d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -1024,12 +1024,12 @@
 			rewards: [
 				{
 					count: 3
-					id: "19798429452051E1"
+					id: "0FAFDB5D0A9305EE"
 					item: "minecraft:iron_ingot"
 					type: "item"
 				}
 				{
-					id: "56E30321FA73FA5D"
+					id: "71742E50E9F507C7"
 					type: "xp"
 					xp: 250
 				}
@@ -1047,8 +1047,8 @@
 				type: "item"
 			}]
 			title: "Escudo Sentinela"
-			x: 2.0d
-			y: -10.5d
+			x: 6d
+			y: 6d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -1062,25 +1062,25 @@
 			rewards: [
 				{
 					count: 2
-					id: "4B1D73B3823FB259"
+					id: "773A30881ED406AF"
 					item: "minecraft:gold_ingot"
 					type: "item"
 				}
 				{
-					id: "0A891652C2F640B4"
+					id: "41F69275E8A8567B"
 					type: "xp"
 					xp: 200
 				}
 			]
 			size: 1.5d
 			tasks: [{
-				id: "73B290AB1D3FDA0C"
+				id: "77F942F60BA47AFE"
 				item: "lost_aether_content:platinum_key"
 				type: "item"
 			}]
 			title: "Chave de Platina"
-			x: -4.0d
-			y: -10.5d
+			x: 12d
+			y: 9d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -1098,12 +1098,12 @@
 			rewards: [
 				{
 					count: 2
-					id: "21DE882E90A755CC"
+					id: "3E09184BF0DB9EE5"
 					item: "aether:zanite_gemstone"
 					type: "item"
 				}
 				{
-					id: "2EE4AB966134566F"
+					id: "7985D288826E6262"
 					type: "xp"
 					xp: 300
 				}
@@ -1111,7 +1111,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "540E76BA436E57D4"
+					id: "2895561965B3B66D"
 					item: "aether_treasure_reforging:neptune_upgrade_smithing_template"
 					type: "item"
 				}
@@ -1122,8 +1122,8 @@
 				}
 			]
 			title: "Reforja de Netuno"
-			x: 4.0d
-			y: -10.5d
+			x: -2d
+			y: 3d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -1151,19 +1151,19 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "58D0480DC92A665B"
+					id: "21AFB09D8AF1BC5A"
 					item: "aether_treasure_reforging:phoenix_upgrade_smithing_template"
 					type: "item"
 				}
 				{
-					id: "683B5777BAE8E008"
+					id: "2AA02E92896338D5"
 					item: "aether_treasure_reforging:pyral_ingot"
 					type: "item"
 				}
 			]
 			title: "Reforja Fênix"
-			x: -2.0d
-			y: -13.0d
+			x: -4d
+			y: -1d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -1178,7 +1178,7 @@
 			rewards: [
 				{
 					count: 2
-					id: "6A7A5EA7630892BC"
+					id: "189C137AA0039889"
 					item: "aether:enchanted_gravitite"
 					type: "item"
 				}
@@ -1191,19 +1191,19 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "0E9B16448B37843F"
+					id: "5857BF2E58362388"
 					item: "aether_treasure_reforging:valkyrie_upgrade_smithing_template"
 					type: "item"
 				}
 				{
-					id: "027E0D2AC58FFE3B"
+					id: "158CD1141CC69D81"
 					item: "aether_treasure_reforging:valkyrum_ingot"
 					type: "item"
 				}
 			]
 			title: "Reforja da Valquíria"
-			x: 2.0d
-			y: -13.0d
+			x: 0d
+			y: -1d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -1213,15 +1213,15 @@
 			]
 			hide_until_deps_complete: true
 			icon: "aether_protect_your_moa:zanite_moa_armor"
-			id: "1C112E87C15CE215"
+			id: "396DA1BB82446F99"
 			rewards: [
 				{
-					id: "7FA470F5D637AAA6"
+					id: "4D641AAC3B44887D"
 					item: "aether:blue_moa_egg"
 					type: "item"
 				}
 				{
-					id: "2D7C19AA456377F9"
+					id: "5AD92EA57E00B88B"
 					type: "xp"
 					xp: 250
 				}
@@ -1233,8 +1233,8 @@
 				type: "item"
 			}]
 			title: "Armadura do Moa"
-			x: -4.0d
-			y: -13.0d
+			x: -6d
+			y: 3d
 		}
 		{
 			dependencies: ["0F937D7B23367E19"]
@@ -1272,8 +1272,8 @@
 				type: "item"
 			}]
 			title: "A Máscara Suada"
-			x: 4.0d
-			y: -13.0d
+			x: 10d
+			y: 6d
 		}
 	]
 	title: "§fO Paraíso Celestial"

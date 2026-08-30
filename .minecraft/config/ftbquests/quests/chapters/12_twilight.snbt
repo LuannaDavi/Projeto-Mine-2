@@ -32,7 +32,7 @@
 			}]
 			title: "Abrir Capitulo"
 			x: 0.0d
-			y: 9.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -79,8 +79,8 @@
 				type: "advancement"
 			}]
 			title: "A Floresta Encantada"
-			x: 0.0d
-			y: 5.0d
+			x: -10d
+			y: 11d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -129,8 +129,8 @@
 				type: "advancement"
 			}]
 			title: "A Serpente da Floresta"
-			x: 0.0d
-			y: 1.0d
+			x: 0d
+			y: 8d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -178,8 +178,8 @@
 				type: "advancement"
 			}]
 			title: "O Lich Eterno"
-			x: 0.0d
-			y: -3.5d
+			x: 0d
+			y: 5d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -222,8 +222,8 @@
 				type: "advancement"
 			}]
 			title: "A Rainha do Gelo"
-			x: 0.0d
-			y: -11.0d
+			x: 0d
+			y: -7d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -271,8 +271,8 @@
 				type: "advancement"
 			}]
 			title: "O Urghast das Sombras"
-			x: -3.0d
-			y: -9.5d
+			x: 0d
+			y: -4d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -330,8 +330,8 @@
 				type: "advancement"
 			}]
 			title: "A Hidra das Chamas"
-			x: -3.0d
-			y: -6.5d
+			x: 0d
+			y: -1d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -370,8 +370,8 @@
 				type: "advancement"
 			}]
 			title: "Cavaleiros Fantasmas"
-			x: 0.0d
-			y: -5.5d
+			x: 0d
+			y: 2d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -409,8 +409,8 @@
 				type: "advancement"
 			}]
 			title: "O Yeti das Geleiras"
-			x: 3.0d
-			y: -6.5d
+			x: 0d
+			y: -10d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -466,8 +466,8 @@
 				type: "advancement"
 			}]
 			title: "O Gigante das Cavernas"
-			x: 3.0d
-			y: -9.5d
+			x: 0d
+			y: -13d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -572,8 +572,8 @@
 				}
 			]
 			title: "§2Senhor da Floresta Crepuscular"
-			x: -4.0d
-			y: -13.0d
+			x: -3d
+			y: -17d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -702,8 +702,8 @@
 				}
 			]
 			title: "§2§lO Fim da Floresta"
-			x: -6.5d
-			y: -6.5d
+			x: 3d
+			y: -17d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -818,8 +818,8 @@
 				}
 			]
 			title: "§6§l✦ O Lendário ✦"
-			x: 0.0d
-			y: -1.5d
+			x: 0d
+			y: -20d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -858,8 +858,8 @@
 				type: "advancement"
 			}]
 			title: "O Mapa Mágico"
-			x: 6.5d
-			y: -6.5d
+			x: -5d
+			y: 11d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -902,8 +902,8 @@
 				type: "item"
 			}]
 			title: "O Labirinto e o Minoshroom"
-			x: 4.0d
-			y: -13.0d
+			x: -8d
+			y: -12d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -965,8 +965,8 @@
 				}
 			]
 			title: "Armadura Fiery"
-			x: 0.0d
-			y: -16.5d
+			x: -4d
+			y: -14d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -1035,8 +1035,8 @@
 				}
 			]
 			title: "Armas da Floresta"
-			x: -9.5d
-			y: -11.0d
+			x: 0d
+			y: 11d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -1080,8 +1080,8 @@
 				type: "advancement"
 			}]
 			title: "A Progressão da Floresta"
-			x: -6.0d
-			y: -1.5d
+			x: 5d
+			y: 11d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -1116,8 +1116,8 @@
 				type: "advancement"
 			}]
 			title: "Pé de Feijão Gigante"
-			x: 6.0d
-			y: -1.5d
+			x: 4d
+			y: -14d
 		}
 		{
 			dependencies: ["48BF449A5DA017A7"]
@@ -1157,8 +1157,158 @@
 				type: "advancement"
 			}]
 			title: "Terra dos Gigantes"
-			x: 9.5d
-			y: -11.0d
+			x: 8d
+			y: -12d
+		}
+		{
+			dependencies: ["48BF449A5DA017A7"]
+			description: [
+				"§7Nem toda clareira da Floresta Crepuscular está vazia. Algumas"
+				"§7esconderam vilas inteiras esse tempo todo — alquimistas,"
+				"§7caçadores, fazendeiros, cada um com sua própria bancada."
+				""
+				"§eEncontre uma vila crepuscular e traga uma Mesa de Alquimia"
+				"§ecomo prova."
+			]
+			icon: "tf_dnv:alchemy_table"
+			id: "4EBD3897AA9CC1B0"
+			rewards: [
+				{
+					count: 3
+					id: "1B6ADED73545623D"
+					item: "tf_dnv:trader_token"
+					type: "item"
+				}
+				{
+					id: "625034D1B000BC78"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "4ECBA5BBA17ED911"
+				item: "tf_dnv:alchemy_table"
+				type: "item"
+			}]
+			title: "Vilas do Crepúsculo"
+			x: 10d
+			y: 11d
+		}
+		{
+			dependencies: ["4EBD3897AA9CC1B0"]
+			description: [
+				"§7Nem sempre a vila que você quer está perto. O Mercador do"
+				"§7Crepúsculo caminha entre elas, trocando token por"
+				"§7equipamento que nenhum ferreiro comum vende."
+				""
+				"§6Dica: §7ele não é hostil — aproveite pra negociar."
+			]
+			icon: "tf_dnv:trader_token"
+			id: "478904ED46E63192"
+			rewards: [
+				{
+					id: "672AC03A93026487"
+					item: {
+						Count: 1
+						id: "tf_dnv:miner_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37022CF480227BFE"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "6C83942DFEDB1C63"
+				item: "tf_dnv:trader_token"
+				type: "item"
+			}]
+			title: "O Mercador Itinerante"
+			x: 12d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4EBD3897AA9CC1B0"]
+			description: [
+				"§7Musgo comum não corta pedra. Musgo da Floresta Crepuscular,"
+				"§7moldado por um ferreiro da vila, corta."
+			]
+			icon: {
+				Count: 1
+				id: "tf_dnv:moss_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "41360E1949CDB191"
+			rewards: [
+				{
+					count: 4
+					id: "1FBDD7E6BB1270DB"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "76D41AC0356FD322"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "4174AE12DAB81D40"
+				item: {
+					Count: 1
+					id: "tf_dnv:moss_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Picareta de Musgo"
+			x: 9d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4EBD3897AA9CC1B0"]
+			description: [
+				"§7Chove esporo na Floresta Crepuscular com uma frequência"
+				"§7preocupante. Um guarda-chuva feito de cogumelo resolve"
+				"§7isso de um jeito estranhamente elegante."
+				""
+				"§8§o(Sim, funciona debaixo d'água também. Não perguntem como.)"
+			]
+			icon: "tf_dnv:shroombrella"
+			id: "5E41D83C754CB696"
+			rewards: [
+				{
+					id: "3F74ED3A6EC9C8D7"
+					item: "tf_dnv:mycologist_table"
+					type: "item"
+				}
+				{
+					id: "05CF614824055535"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "1604604F5E7D1793"
+				item: "tf_dnv:shroombrella"
+				type: "item"
+			}]
+			title: "Guarda-chuva Fungoide"
+			x: 10.5d
+			y: 6.5d
 		}
 	]
 	title: "§a§lFloresta Crepuscular"

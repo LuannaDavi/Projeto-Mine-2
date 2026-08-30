@@ -1252,6 +1252,316 @@
 			x: 7.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Os \"Primeiros\" são golems ancestrais — Basalto, Areia,"
+				"§7Tundra e Vila, cada um guardião de um bioma que o mod"
+				"§7decidiu que precisava de proteção extra."
+				""
+				"§6Dica: §7esses são mais fortes que golems comuns —"
+				"§7prepare-se antes de provocar mais de um por vez."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:basalt"
+			id: "F31C3DBCFD3A291D"
+			rewards: [
+				{
+					count: 4
+					id: "EC26A2184E210291"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "18926B1B909925CF"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					entity: "plenty_of_golems:first_of_basalt"
+					id: "55AED0E9D505D36E"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:first_of_sand"
+					id: "6246BB9226201DE2"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:first_of_the_tundra"
+					id: "5C8D632808176F21"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:first_of_the_village"
+					id: "2B5B095682C5D735"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Os Primeiros"
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Concreto colorido ganhou vida — vermelho, azul e verde,"
+				"§7cada um do tamanho de uma parede inteira andando."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:red_concrete"
+			id: "68C7A62ED20C8415"
+			rewards: [
+				{
+					count: 8
+					id: "3C14AC680B47A815"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					id: "C29CF9B3A3796F4D"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "plenty_of_golems:red_concrete_golemin"
+					id: "42C6E37A2291934B"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:blue_concrete_golemin"
+					id: "152470E7EB67FD5C"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:green_concrete_golemin"
+					id: "3B14DD60F73887C1"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:andesite_golemin"
+					id: "901D08941A1D5A8A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Golens de Concreto e Andesito"
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Obsidiana, Nether e Endstone — três materiais raros que"
+				"§7ganharam guardiões próprios, cada um só encontrado no"
+				"§7bioma que empresta o nome."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:obsidian"
+			id: "E5503DA89309459D"
+			rewards: [
+				{
+					count: 4
+					id: "BFE76B152A0AF3BD"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "FAA3F0824F9FCF7D"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "plenty_of_golems:obsidian_golem"
+					id: "BDC0FE0E62127D33"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:nether_golem"
+					id: "7181D86BFCA0D8BE"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:endstone_golem"
+					id: "E83E507C26906833"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Golens de Material Nobre"
+			x: 15.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Slicer corta rápido, Flockersket atira de longe, e"
+				"§7Necromins comanda os dois — um pequeno exército de ossos"
+				"§7reanimados protegendo o que não deveria ser incomodado."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:bone"
+			id: "24879912E58AF313"
+			rewards: [
+				{
+					count: 8
+					id: "37DB249AD0A4D43D"
+					item: "minecraft:bone"
+					type: "item"
+				}
+				{
+					id: "0867F61DC9DBFADE"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "plenty_of_golems:medium_bone_minion"
+					id: "75155617B380BE4F"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:ranged_bone_minion"
+					id: "33366E49C097BE4C"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "plenty_of_golems:necromins"
+					id: "81390EE184506FE3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Pequeno Exército de Ossos"
+			x: 17.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Nem todo golem quer briga. Composter, Vela, Feno, Mel"
+				"§7e Melancia são golems utilitários — cada um automatiza"
+				"§7uma tarefinha doméstica que ninguém gosta de fazer."
+				""
+				"§6Dica: §7esses golems são pacíficos — se defendem quando"
+				"§7atacados, mas não perseguem o jogador."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:composter"
+			id: "D49B18549BF946CF"
+			rewards: [
+				{
+					count: 8
+					id: "193F3F32B9A59AB8"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "24ABE9C69C48BC93"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "B61AF4A219031B35"
+					item: "plenty_of_golems:composter_golem_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "B6DF43ABA02E8E31"
+					item: "plenty_of_golems:candle_golem_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "4016F3B53E7EED89"
+					item: "plenty_of_golems:hay_golem_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "B6D434302E3E7BAF"
+					item: "plenty_of_golems:honey_golem_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "C8B869711B23782B"
+					item: "plenty_of_golems:melon_golem_spawn_egg"
+					type: "item"
+				}
+			]
+			title: "Golens da Casa"
+			x: 19.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3EDBAEFA26F24379"]
+			description: [
+				"§7Carvalho Escuro, Tábua de Selva, Tijolo de Barro — cada"
+				"§7bioma florestal ganhou seu próprio golem de construção,"
+				"§7feito literalmente do material que está por perto."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:dark_oak_planks"
+			id: "63DEAF1339BB8407"
+			rewards: [
+				{
+					count: 16
+					id: "0AF7FD65D4DC7B3D"
+					item: "minecraft:dark_oak_log"
+					type: "item"
+				}
+				{
+					id: "BB63BB847643C375"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "B5DF5152C7062328"
+					item: "plenty_of_golems:dark_oak_golem_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "7D8DD5849BDEC69E"
+					item: "plenty_of_golems:jungle_plank_golem_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "9C10836ABA88D9E4"
+					item: "plenty_of_golems:mud_brick_golem_spawn_egg"
+					type: "item"
+				}
+			]
+			title: "Golens de Madeira e Barro"
+			x: 13.0d
+			y: 2.0d
+		}
 	]
 	title: "§4§lHorrores e Golens"
 }

@@ -703,6 +703,189 @@
 			x: -1.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["764AE93E857BEC7D"]
+			description: [
+				"§7Você já tem o peitoral e o capacete. Complete a armadura"
+				"§7de Horizonite pra ativar a regeneração passiva completa."
+				""
+				"§eForje a Horizonite Leggings e as Horizonite Boots."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "blue_skies:horizonite_leggings"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "EC032EBC1F4F5B95"
+			rewards: [
+				{
+					count: 8
+					id: "FBD6967B60410B85"
+					item: "blue_skies:horizonite_ingot"
+					type: "item"
+				}
+				{
+					id: "C07EE1C0FA00C75B"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "D2C7F76ED685D659"
+					item: {
+						Count: 1
+						id: "blue_skies:horizonite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "E795DBE56D874A6A"
+					item: {
+						Count: 1
+						id: "blue_skies:horizonite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Armadura de Horizonite Completa"
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0DFA071C8513FD4D"]
+			description: [
+				"§7Diopside é uma das cinco gemas raras de Blue Skies — e"
+				"§7tem linha de ferramentas própria, esquecida por quem só"
+				"§7corre atrás de Falsite e Horizonite."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "blue_skies:diopside_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "B9AA8C0522573A18"
+			rewards: [
+				{
+					count: 4
+					id: "4CC613D7A928D8A7"
+					item: "blue_skies:diopside_gem"
+					type: "item"
+				}
+				{
+					id: "7DDEE3EAC5CB3513"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "CBDA021D08727CAF"
+					item: {
+						Count: 1
+						id: "blue_skies:diopside_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B652712114AA978"
+					item: {
+						Count: 1
+						id: "blue_skies:diopside_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ferramentas de Diopside"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0DFA071C8513FD4D"]
+			description: [
+				"§7A torta de Comet Berry é doce o suficiente pra disfarçar"
+				"§7o fato de que a fruta cresceu literalmente flutuando"
+				"§7no céu, longe de qualquer solo de verdade."
+			]
+			hide_until_deps_complete: true
+			icon: "blue_skies:comet_berry_pie"
+			id: "483CD9B2575AA66C"
+			rewards: [
+				{
+					count: 8
+					id: "E30B7C5E503A4D8D"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "A442203B94991D32"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "50D180654B94026F"
+				item: "blue_skies:comet_berry_pie"
+				type: "item"
+			}]
+			title: "Torta de Bagas do Cometa"
+			x: 2.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["579018B31576D2D2"]
+			description: [
+				"§7A Forja de Horizonite processa o mineral mais raro do"
+				"§7Everdawn com eficiência maior que qualquer fornalha comum."
+			]
+			hide_until_deps_complete: true
+			icon: "blue_skies:horizonite_forge"
+			id: "7D66ABD6AB7F09F1"
+			rewards: [
+				{
+					count: 4
+					id: "E042B8630DFB0B0E"
+					item: "blue_skies:horizonite_ingot"
+					type: "item"
+				}
+				{
+					id: "79D6EB7DE5E2A3B0"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "413B9490A92E966A"
+				item: "blue_skies:horizonite_forge"
+				type: "item"
+			}]
+			title: "Forja de Horizonite"
+			x: 5.0d
+			y: 5.0d
+		}
 	]
 	title: "§9Além das Nuvens"
 }

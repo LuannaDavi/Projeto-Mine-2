@@ -41,7 +41,7 @@
 			}]
 			title: "Abrir Capitulo"
 			x: 0.0d
-			y: -13.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -76,8 +76,8 @@
 				type: "item"
 			}]
 			title: "Grimório em Branco"
-			x: -5.0d
-			y: -8.5d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -108,8 +108,8 @@
 				type: "item"
 			}]
 			title: "Bigorna Arcana"
-			x: 5.0d
-			y: -8.5d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -189,12 +189,16 @@
 				}
 			]
 			title: "Vestes de Aprendiz"
-			x: -7.5d
-			y: -4.5d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
-			description: ["§7A mais direta de todas as escolas: aponte, queime, repita."]
+			description: [
+				"§7A mais direta de todas as escolas: aponte, queime, repita."
+				"§7Simples de aprender, dolorosa de enfrentar — e a porta de"
+				"§7entrada preferida de quem só quer ver coisas pegando fogo."
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:fire_rune"
 			id: "7AF5AF37B501DC39"
@@ -218,8 +222,8 @@
 				type: "item"
 			}]
 			title: "Escola do Fogo"
-			x: -4.5d
-			y: -4.5d
+			x: 0.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -250,8 +254,8 @@
 				type: "item"
 			}]
 			title: "Escola do Gelo"
-			x: -1.5d
-			y: -4.5d
+			x: 4.87d
+			y: -7.57d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -282,8 +286,8 @@
 				type: "item"
 			}]
 			title: "Escola do Raio"
-			x: 1.5d
-			y: -4.5d
+			x: 8.19d
+			y: -3.74d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -314,8 +318,8 @@
 				type: "item"
 			}]
 			title: "Escola Sagrada"
-			x: 4.5d
-			y: -4.5d
+			x: 8.91d
+			y: 1.28d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -346,8 +350,8 @@
 				type: "item"
 			}]
 			title: "Escola da Natureza"
-			x: 7.5d
-			y: -4.5d
+			x: 6.8d
+			y: 5.89d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -378,8 +382,8 @@
 				type: "item"
 			}]
 			title: "Escola Ender"
-			x: -10.0d
-			y: 0.0d
+			x: 2.54d
+			y: 8.64d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -410,8 +414,8 @@
 				type: "item"
 			}]
 			title: "Escola da Evocação"
-			x: -8.0d
-			y: 0.0d
+			x: -2.54d
+			y: 8.64d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -449,8 +453,8 @@
 				}
 			]
 			title: "Escola do Sangue"
-			x: -5.5d
-			y: 0.0d
+			x: -6.8d
+			y: 5.89d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -481,8 +485,8 @@
 				type: "item"
 			}]
 			title: "Manuscrito Eldritch"
-			x: -3.5d
-			y: 0.0d
+			x: 3.8d
+			y: -12.95d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -514,7 +518,7 @@
 				type: "item"
 			}]
 			title: "Anéis de Afinidade"
-			x: -1.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
@@ -552,8 +556,8 @@
 				type: "item"
 			}]
 			title: "Câmara de Ascensão"
-			x: 1.0d
-			y: 0.0d
+			x: 10.2d
+			y: -8.84d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -591,57 +595,80 @@
 				}
 			]
 			title: "Correntes de Aquamante"
-			x: 3.5d
-			y: 0.0d
+			x: -4.87d
+			y: -7.57d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
 			description: [
-				"§7Sim, existe uma escola de magia baseada em som. Não,"
-				"§7ninguém vai explicar por que o nome do livro parece"
-				"§7capa de disco de rock."
+				"§7Lava não é só dano de contato — pra quem domina essa escola,"
+				"§7ela também é arma à distância. Bolas de magma guiadas,"
+				"§7erupções sob os pés do inimigo, tudo regado a fogo líquido."
+				""
+				"§6Dica: §7essa escola compensa bem quem já usa equipamento"
+				"§7com resistência a fogo — você vai ficar perto da própria magia."
 			]
 			hide_until_deps_complete: true
-			icon: "somakespells:resonance_canticle_spell_book"
+			icon: "somakespells:burning_magma_spell_book"
 			id: "1366424513C11382"
-			rewards: [{
-				id: "19127E5EC36D2604"
-				type: "xp"
-				xp: 350
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "19127E5EC36D2604"
+					item: "somakespells:magmarium_ingot"
+					type: "item"
+				}
+				{
+					id: "0F4C7B9E2A6D1358"
+					type: "xp"
+					xp: 350
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "47D84702396E24E7"
-				item: "irons_spellbooks:amethyst_resonance_charm"
+				item: "somakespells:burning_magma_spell_book"
 				type: "item"
 			}]
-			title: "Batidas Sônicas"
-			x: 5.5d
-			y: 0.0d
+			title: "Magma em Erupção"
+			x: -8.91d
+			y: 1.28d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
 			description: [
-				"§7Magia que se apoia em equilíbrio e padrões perfeitos —"
-				"§7quebrar a simetria do inimigo é metade do dano."
+				"§7Magia de luz e purificação — cura quem precisa, queima"
+				"§7quem não deveria estar ali. A escola preferida de quem"
+				"§7prefere resolver as coisas sem ficar tomando dano."
+				""
+				"§6Dica: §7ótima escolha pra combinar com uma classe de suporte"
+				"§7ou pra sobreviver sozinho em missões mais longas."
 			]
 			hide_until_deps_complete: true
-			icon: "somakespells:axiomatic_codex_spell_book"
+			icon: "somakespells:dawnlit_gospel_spell_book"
 			id: "54687CB6F5903D05"
-			rewards: [{
-				id: "021E70129C93EA07"
-				type: "xp"
-				xp: 350
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "021E70129C93EA07"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "3D8A6F1C0E92B475"
+					type: "xp"
+					xp: 350
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "3B70AB96D488884A"
-				item: "somakespells:axiomatic_codex_spell_book"
+				item: "somakespells:dawnlit_gospel_spell_book"
 				type: "item"
 			}]
-			title: "Códice Axiomático"
-			x: 8.0d
-			y: 0.0d
+			title: "Evangelho do Amanhecer"
+			x: -8.19d
+			y: -3.74d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -653,11 +680,19 @@
 			hide_until_deps_complete: true
 			icon: "somakespells:stoneheart_codex_spell_book"
 			id: "21F202CCB223776A"
-			rewards: [{
-				id: "5DE8A860C30835C0"
-				type: "xp"
-				xp: 350
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "5DE8A860C30835C0"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "0A6D3F81E5C29B74"
+					type: "xp"
+					xp: 350
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "51658890C15F2A65"
@@ -665,8 +700,8 @@
 				type: "item"
 			}]
 			title: "Coração de Pedra"
-			x: 10.0d
-			y: 0.0d
+			x: 13.36d
+			y: -1.92d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -677,11 +712,19 @@
 			hide_until_deps_complete: true
 			icon: "somakespells:starless_grimoire_spell_book"
 			id: "47C3F9318C7B0699"
-			rewards: [{
-				id: "1C05657D33695253"
-				type: "xp"
-				xp: 350
-			}]
+			rewards: [
+				{
+					count: 6
+					id: "1C05657D33695253"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "4F0A9D6E7C2B8153"
+					type: "xp"
+					xp: 350
+				}
+			]
 			size: 1.5d
 			tasks: [{
 				id: "5EFC14B348164E0C"
@@ -689,8 +732,8 @@
 				type: "item"
 			}]
 			title: "Grimório Sem Estrelas"
-			x: -7.5d
-			y: 4.5d
+			x: 12.28d
+			y: 5.61d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -727,8 +770,8 @@
 				}
 			]
 			title: "Chama Infernal"
-			x: -4.5d
-			y: 4.5d
+			x: 7.3d
+			y: 11.36d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -778,8 +821,8 @@
 				}
 			]
 			title: "Liga de Abyssium"
-			x: -1.5d
-			y: 4.5d
+			x: 0.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -829,8 +872,8 @@
 				}
 			]
 			title: "Liga de Ceranium"
-			x: 1.5d
-			y: 4.5d
+			x: -7.3d
+			y: 11.36d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -877,8 +920,8 @@
 				type: "item"
 			}]
 			title: "O Sabre que Não Deveria Existir"
-			x: 4.5d
-			y: 4.5d
+			x: -12.28d
+			y: 5.61d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -925,8 +968,8 @@
 				type: "item"
 			}]
 			title: "O Martelo Proibido"
-			x: 7.5d
-			y: 4.5d
+			x: -13.36d
+			y: -1.92d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -965,8 +1008,8 @@
 				}
 			]
 			title: "O Livro das Tempestades"
-			x: -5.0d
-			y: 8.5d
+			x: -10.2d
+			y: -8.84d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -1043,8 +1086,8 @@
 				}
 			]
 			title: "Vestes do Aeromante"
-			x: 0.0d
-			y: 8.5d
+			x: -3.8d
+			y: -12.95d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -1075,8 +1118,8 @@
 				type: "item"
 			}]
 			title: "O Necronomicon"
-			x: 5.0d
-			y: 8.5d
+			x: -2.5d
+			y: 17.0d
 		}
 		{
 			dependencies: ["5FE5C4FA0EF0C15F"]
@@ -1107,8 +1150,8 @@
 				type: "item"
 			}]
 			title: "O Rei Morto Ainda Governa"
-			x: 0.0d
-			y: 13.0d
+			x: 2.5d
+			y: 17.0d
 		}
 	]
 	title: "§dTintas e Tempestades"

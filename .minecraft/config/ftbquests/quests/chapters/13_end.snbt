@@ -32,7 +32,7 @@
 			}]
 			title: "Abrir Capitulo"
 			x: 0.0d
-			y: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -76,8 +76,8 @@
 				type: "advancement"
 			}]
 			title: "Porta para o Fim"
-			x: 3.0d
-			y: 6.5d
+			x: 0.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -147,8 +147,8 @@
 				}
 			]
 			title: "O Fim Expandido"
-			x: 5.5d
-			y: 4.5d
+			x: 2.22d
+			y: -6.11d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -212,8 +212,8 @@
 				}
 			]
 			title: "Cristais do Fim"
-			x: 7.0d
-			y: 1.5d
+			x: 7.07d
+			y: -8.43d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -258,8 +258,8 @@
 				type: "item"
 			}]
 			title: "Ruínas do Fim"
-			x: 7.0d
-			y: -1.5d
+			x: 5.63d
+			y: -3.25d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -324,8 +324,8 @@
 				type: "item"
 			}]
 			title: "A Ilha Renovada"
-			x: 5.5d
-			y: -4.5d
+			x: 10.83d
+			y: -1.91d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -368,8 +368,8 @@
 				type: "advancement"
 			}]
 			title: "O Dragão do Fim"
-			x: 3.0d
-			y: -6.5d
+			x: 6.4d
+			y: 1.13d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -425,8 +425,8 @@
 				type: "advancement"
 			}]
 			title: "End Cities e Elytra"
-			x: 0.0d
-			y: -7.0d
+			x: 9.53d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -478,8 +478,8 @@
 				}
 			]
 			title: "Shulkers e Caixas"
-			x: -3.0d
-			y: -6.5d
+			x: 4.18d
+			y: 4.98d
 		}
 		{
 			dependencies: [
@@ -521,8 +521,8 @@
 				type: "advancement"
 			}]
 			title: "Respirar o Dragão de Novo"
-			x: -5.5d
-			y: -4.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -591,8 +591,8 @@
 				}
 			]
 			title: "O Cristal Cobalto — Outer End"
-			x: -7.0d
-			y: -1.5d
+			x: 3.76d
+			y: 10.34d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -638,8 +638,8 @@
 				type: "advancement"
 			}]
 			title: "Além das Estrelas"
-			x: -7.0d
-			y: 1.5d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -673,8 +673,8 @@
 				type: "advancement"
 			}]
 			title: "O Protetor do Fim"
-			x: -5.5d
-			y: 4.5d
+			x: -3.76d
+			y: 10.34d
 		}
 		{
 			dependencies: ["6D8D23FCEACD9E34"]
@@ -735,8 +735,262 @@
 				}
 			]
 			title: "Conjunto Completo: Rosa"
-			x: -3.0d
-			y: 6.5d
+			x: -4.18d
+			y: 4.98d
+		}
+		{
+			dependencies: ["6D8D23FCEACD9E34"]
+			description: [
+				"§7Você já tem o peitoral de Menta. Complete o resto do"
+				"§7conjunto pra ativar o bônus de velocidade completo."
+				""
+				"§eForje o Mint Crystal Helmet e as Mint Crystal Boots."
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "outer_end:mint_crystal_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "8B216776C71BC334"
+			rewards: [
+				{
+					count: 4
+					id: "FD58C130E43C8FE1"
+					item: "outer_end:mint_crystal_shard"
+					type: "item"
+				}
+				{
+					id: "1F42F4068843FB65"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2AA67517A760616A"
+					item: {
+						Count: 1
+						id: "outer_end:mint_crystal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "D2FB0246734E8523"
+					item: {
+						Count: 1
+						id: "outer_end:mint_crystal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Conjunto Completo: Menta"
+			x: -9.53d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6D8D23FCEACD9E34"]
+			description: [
+				"§7O Fim distante tem fauna própria: o Entombed guarda ruínas"
+				"§7soterradas, o Himmelite paira nas alturas, o Stalker"
+				"§7persegue silenciosamente, e o Sinker ataca à distância com"
+				"§7laser e shuriken ao mesmo tempo."
+				""
+				"§eDerrote 1 de cada: Entombed, Himmelite, Stalker e Sinker."
+				""
+				"§6Dica: §7o Sinker é o mais perigoso do grupo — ele ataca de"
+				"§7longe, então feche a distância rápido ou use um arco."
+			]
+			hide_until_deps_complete: true
+			icon: "outer_end:mint_crystal_arrow"
+			id: "C1681A78F57F53C9"
+			rewards: [
+				{
+					count: 3
+					id: "6DF15FE96302A3F8"
+					item: "outer_end:rose_crystal"
+					type: "item"
+				}
+				{
+					id: "45CE47A02DF69E8E"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					entity: "outer_end:entombed"
+					id: "4317FC2AC280215D"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "outer_end:himmelite"
+					id: "AA6D0CBA878E764D"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "outer_end:stalker"
+					id: "70FA4CE9E9A5FA98"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "outer_end:sinker"
+					id: "4E7EFAAC86B684B8"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Fauna do Fim Distante"
+			x: -6.4d
+			y: 1.13d
+		}
+		{
+			dependencies: ["6D8D23FCEACD9E34"]
+			description: [
+				"§7O Purpur Golem é o guardião silencioso das construções"
+				"§7roxas do End — não ataca sem motivo, mas não recua também."
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:purpur_block"
+			id: "DB575EF01BD9DB9D"
+			rewards: [
+				{
+					count: 8
+					id: "760CA0F26D441988"
+					item: "minecraft:purpur_block"
+					type: "item"
+				}
+				{
+					id: "4356D53EEB69DB7E"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				entity: "outer_end:purpur_golem"
+				id: "875CF0B3072E7961"
+				type: "kill"
+				value: 1L
+			}]
+			title: "O Guardião de Púrpura"
+			x: -10.83d
+			y: -1.91d
+		}
+		{
+			dependencies: ["6D8D23FCEACD9E34"]
+			description: [
+				"§7Lampiões que brilham sozinhos, feitos do cristal verde"
+				"§7mais comum do Outer End — decoração útil pra quem já"
+				"§7explorou fundo demais nesse End estendido."
+			]
+			hide_until_deps_complete: true
+			icon: "outer_end:mint_crystal_lamp"
+			id: "A7EE1A368D78602F"
+			rewards: [
+				{
+					count: 8
+					id: "E7036730BCD5F694"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "365DE5725500D67C"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "CC4B95005AC85B19"
+				item: "outer_end:mint_crystal_lamp"
+				type: "item"
+			}]
+			title: "Lampiões de Cristal"
+			x: -5.63d
+			y: -3.25d
+		}
+		{
+			dependencies: ["6D8D23FCEACD9E34"]
+			description: [
+				"§7Bagas que crescem só nas ilhas de cristal de Menta —"
+				"§7doces, brilhantes, e surpreendentemente nutritivas pra"
+				"§7algo que cresce num bioma sem solo de verdade."
+			]
+			hide_until_deps_complete: true
+			icon: "outer_end:mint_crystalline_berries"
+			id: "FF55DB8180CF996A"
+			rewards: [
+				{
+					count: 8
+					id: "37D57DC083D6FC30"
+					item: "minecraft:glow_berries"
+					type: "item"
+				}
+				{
+					id: "7A7720B241F784F1"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "F6F82C946786291C"
+				item: "outer_end:mint_crystalline_berries"
+				type: "item"
+			}]
+			title: "Bagas Cristalinas"
+			x: -7.07d
+			y: -8.43d
+		}
+		{
+			dependencies: ["6D8D23FCEACD9E34"]
+			description: [
+				"§7Vidro que não estilhaça igual o comum — as ilhas"
+				"§7distantes do End usam esse material pra tudo, das"
+				"§7janelas às estufas de cristal."
+			]
+			hide_until_deps_complete: true
+			icon: "outer_end:mint_crystal_glass"
+			id: "100DB72AEB2814D0"
+			rewards: [
+				{
+					count: 16
+					id: "4F5E47D5849FB80A"
+					item: "minecraft:glass"
+					type: "item"
+				}
+				{
+					id: "618070014C441878"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "6167656081F96E15"
+				item: "outer_end:mint_crystal_glass"
+				type: "item"
+			}]
+			title: "Vidro do Fim"
+			x: -2.22d
+			y: -6.11d
 		}
 	]
 	title: "§8§lO Fim e Além"

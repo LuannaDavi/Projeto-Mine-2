@@ -1157,7 +1157,7 @@
 				"§eHouses, e encontre todas as vilas habitadas do mod."
 			]
 			hide_until_deps_complete: true
-			icon: "biomeswevegone:blueberry_bush"
+			icon: "aether:blue_berry"
 			id: "05EF234DE68429D6"
 			rewards: [
 				{
@@ -1280,7 +1280,7 @@
 				"§8§oA botânica desse mod tem prioridades estranhas.)"
 			]
 			hide_until_deps_complete: true
-			icon: "biomeswevegone:cattail"
+			icon: "goodending:cattail"
 			id: "1A4E55FDC356297A"
 			rewards: [
 				{

@@ -31,7 +31,7 @@
 				type: "item"
 			}]
 			title: "Abrir Capitulo"
-			x: 0.0d
+			x: -2.0d
 			y: 9.0d
 		}
 		{
@@ -76,8 +76,8 @@
 				type: "item"
 			}]
 			title: "O Prato Duvidoso"
-			x: 2.5d
-			y: 8.5d
+			x: 1.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6FF849C911BA222A"]
@@ -876,70 +876,6 @@
 		{
 			dependencies: ["6FF849C911BA222A"]
 			description: [
-				"§7Existe um clima de fazenda europeia por aqui: pão caseiro,"
-				"§7milho assado, frango recheado e o bolo de morango da vovó."
-				""
-				"§ePrepare: Farmer's Bread, Roasted Corn, Stuffed Chicken,"
-				"§ePotato with Roast Meat e o Bolo de Morango da Vovó."
-			]
-			hide_until_deps_complete: true
-			icon: "farm_and_charm:farmers_bread_block"
-			id: "7D3F2E8E9513B45C"
-			rewards: [
-				{
-					count: 8
-					id: "5381F4FABB480D13"
-					item: "farm_and_charm:strawberry_bag"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "29A9C7B1DF00E441"
-					item: "farm_and_charm:corn_bag"
-					type: "item"
-				}
-				{
-					id: "5810C017A9DEE440"
-					type: "xp"
-					xp: 450
-				}
-			]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "1D5B4DE424F42C68"
-					item: "farm_and_charm:farmers_bread_block"
-					type: "item"
-				}
-				{
-					id: "6DBC2EC6C2C141A4"
-					item: "farm_and_charm:roasted_corn_block"
-					type: "item"
-				}
-				{
-					id: "5A37C6B0CF5E10C3"
-					item: "farm_and_charm:stuffed_chicken_block"
-					type: "item"
-				}
-				{
-					id: "1F66464B77CD7851"
-					item: "farm_and_charm:potato_with_roast_meat_block"
-					type: "item"
-				}
-				{
-					id: "7625211AAA26BA8B"
-					item: "farm_and_charm:grandmothers_strawberry_cake_block"
-					type: "item"
-				}
-			]
-			title: "Fazenda com Charme"
-			x: -8.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["6FF849C911BA222A"]
-			description: [
 				"§7A padaria tem muito mais que pão — pudim, quiche, torta"
 				"§7linzer e um bolo de chocolate à altura de qualquer confeiteiro."
 				""
@@ -992,8 +928,8 @@
 				}
 			]
 			title: "Confeitaria Fina"
-			x: -7.0d
-			y: 6.0d
+			x: -8.25d
+			y: 3.75d
 		}
 		{
 			dependencies: ["6FF849C911BA222A"]
@@ -1050,8 +986,8 @@
 				}
 			]
 			title: "Banquete do Mar"
-			x: -5.0d
-			y: 7.5d
+			x: -6.75d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6FF849C911BA222A"]
@@ -1114,8 +1050,266 @@
 				}
 			]
 			title: "§5Alta Gastronomia do Fim"
-			x: -2.5d
-			y: 8.5d
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Três chocolates, três personalidades: amargo intenso,"
+				"§7branco doce e ruby com aquele toque ácido natural da"
+				"§7fava que ninguém espera até provar."
+			]
+			hide_until_deps_complete: true
+			icon: "create_confectionery:full_ruby_chocolate_bar"
+			id: "8EA868FF47AE0220"
+			rewards: [
+				{
+					count: 4
+					id: "AF3A015DB96B2D73"
+					item: "create_confectionery:cocoa_butter"
+					type: "item"
+				}
+				{
+					id: "DB95BCAFF3ACED3D"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "933EC00B0576C77B"
+					item: "create_confectionery:full_black_chocolate_bar"
+					type: "item"
+				}
+				{
+					id: "433F9A119F3D6304"
+					item: "create_confectionery:full_white_chocolate_bar"
+					type: "item"
+				}
+				{
+					id: "E91B2F64B0AD2BF6"
+					item: "create_confectionery:full_ruby_chocolate_bar"
+					type: "item"
+				}
+			]
+			title: "Chocolate em Três Sabores"
+			x: -9.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Um bonequinho de gengibre, uma bengala de doce — e sim,"
+				"§7dá pra forjar ferramentas inteiras de bala de bengala."
+				""
+				"§8§o(Picareta de bala de bengala. Sim, funciona de verdade.)"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "create_confectionery:candy_cane_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "A8D9CF15684DFE30"
+			rewards: [
+				{
+					count: 4
+					id: "BE9E62166AACA824"
+					item: "create_confectionery:candy_cane"
+					type: "item"
+				}
+				{
+					id: "AD8D19AE6F9BA75C"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "E1D3480E6E6CD5D8"
+					item: "create_confectionery:gingerbread_man"
+					type: "item"
+				}
+				{
+					id: "EB1ADF1F5E78A7CB"
+					item: {
+						Count: 1
+						id: "create_confectionery:candy_cane_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Doces de Natal"
+			x: -11.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Marshmallow com chocolate derretido por cima — a sobremesa"
+				"§7mais simples que o Create Confectionery tem, e ainda"
+				"§7assim uma das melhores."
+			]
+			hide_until_deps_complete: true
+			icon: "create_confectionery:chocolate_glazed_marshmallow"
+			id: "DC149DDBEB945EA2"
+			rewards: [
+				{
+					count: 6
+					id: "CB7A1EDD20BB16A9"
+					item: "create_confectionery:marshmallow"
+					type: "item"
+				}
+				{
+					id: "E6582951B55DD412"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "D8FE208884813DD1"
+				item: "create_confectionery:chocolate_glazed_marshmallow"
+				type: "item"
+			}]
+			title: "Marshmallow Glaceado"
+			x: -13.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Garrafas de captura: prenda uma abelha, um endermite ou"
+				"§7até um silverfish vivo dentro de vidro — decoração viva"
+				"§7pra quem gosta de coisa estranha na prateleira."
+				""
+				"§6Dica: §7a garrafa de abelha brava (Angry) captura a"
+				"§7versão irritada — cuidado ao encher."
+			]
+			hide_until_deps_complete: true
+			icon: "buzzier_bees:bee_bottle"
+			id: "BA77CAB2014F6104"
+			rewards: [
+				{
+					count: 4
+					id: "7AE667BF83AAEB1B"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "B1BD3DA02A9A7077"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "02A9B8EC3FD7C15D"
+					item: "buzzier_bees:bee_bottle"
+					type: "item"
+				}
+				{
+					id: "654FEA924B851D3C"
+					item: "buzzier_bees:endermite_bottle"
+					type: "item"
+				}
+				{
+					id: "760C77AB243AB258"
+					item: "buzzier_bees:silverfish_bottle"
+					type: "item"
+				}
+			]
+			title: "Garrafas de Captura"
+			x: -11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Pão com mel, maçã com mel, porco glaceado com mel — a"
+				"§7abelha rende mais que só favo de mel comum, se você"
+				"§7souber usar direito."
+			]
+			hide_until_deps_complete: true
+			icon: "buzzier_bees:honey_bread"
+			id: "6F47A8A51B06C6F4"
+			rewards: [
+				{
+					count: 4
+					id: "07A4ECA74B60E6C0"
+					item: "minecraft:honey_bottle"
+					type: "item"
+				}
+				{
+					id: "A81DEFFAA831859A"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2569530FE5C748D8"
+					item: "buzzier_bees:honey_bread"
+					type: "item"
+				}
+				{
+					id: "FB6B765E2B650898"
+					item: "buzzier_bees:honey_apple"
+					type: "item"
+				}
+				{
+					id: "542E586C165A38ED"
+					item: "buzzier_bees:glazed_porkchop"
+					type: "item"
+				}
+			]
+			title: "Tudo com Mel"
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6FF849C911BA222A"]
+			description: [
+				"§7Mel cristalizado guarda tudo do favo, mas numa forma"
+				"§7sólida e brilhante — decoração e ingrediente ao mesmo"
+				"§7tempo, e bonito o suficiente pra virar bloco de exibição."
+			]
+			hide_until_deps_complete: true
+			icon: "buzzier_bees:crystallized_honey_block"
+			id: "DF0F648FE7B0D5F4"
+			rewards: [
+				{
+					count: 6
+					id: "C0180DC453A8DE60"
+					item: "minecraft:honeycomb"
+					type: "item"
+				}
+				{
+					id: "D8351EBBDF62F24B"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "E73B7D7654F5FA2F"
+				item: "buzzier_bees:crystallized_honey_block"
+				type: "item"
+			}]
+			title: "Mel Cristalizado"
+			x: -13.0d
+			y: 4.0d
 		}
 	]
 	title: "§6Culinária do Mundo"

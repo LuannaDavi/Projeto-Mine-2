@@ -675,8 +675,8 @@
 				}
 			]
 			title: "§bMochileiro do Infinito"
-			x: 0.0d
-			y: 2.0d
+			x: 12.75d
+			y: 12.0d
 		}
 		{
 			dependencies: ["459BE27BE8C6B6F9"]
@@ -1415,7 +1415,7 @@
 				}
 				{
 					count: 32
-					id: "1276BD50A4EDC98E"
+					id: "7ADE5A38D5D2D4B7"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
@@ -1433,14 +1433,14 @@
 					type: "item"
 				}
 				{
-					id: "79BF098F8068E2B3"
+					id: "54A6013DB7DA51DA"
 					item: "minecolonies:scroll_buff"
 					type: "item"
 				}
 			]
 			title: "§6§lO Colono Supremo"
-			x: -10.0d
-			y: 12.5d
+			x: -12.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["459BE27BE8C6B6F9"]
@@ -1453,7 +1453,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "mekanism:digital_miner"
-			id: "7AD270D214F25A4F"
+			id: "34AE09A400DA222C"
 			rewards: [
 				{
 					count: 8
@@ -1463,7 +1463,7 @@
 				}
 				{
 					count: 32
-					id: "5358DBDD44222C04"
+					id: "093D13C058330592"
 					item: "minecraft:experience_bottle"
 					type: "item"
 				}
@@ -1496,7 +1496,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:dread_key"
-			id: "2CC8CBFEACE07001"
+			id: "4492816632AF40BC"
 			rewards: [
 				{
 					id: "6EB6F2235598E822"
@@ -1505,12 +1505,12 @@
 				}
 				{
 					count: 4
-					id: "44FBA41C99F868F4"
+					id: "3DFB9574BFBEEDC5"
 					item: "minecraft:enchanted_golden_apple"
 					type: "item"
 				}
 				{
-					id: "13F1CAA62A6CB244"
+					id: "50BED98F9EF76CBA"
 					type: "xp"
 					xp: 16000
 				}
@@ -1523,12 +1523,12 @@
 					type: "item"
 				}
 				{
-					id: "1543E7160AFDCE45"
+					id: "3D7C66CAA6C92AB7"
 					item: "aether:victory_medal"
 					type: "item"
 				}
 				{
-					id: "47AA4B3F53E61C3A"
+					id: "298CA096020CCC0A"
 					item: "twilightforest:trophy_pedestal"
 					type: "item"
 				}
@@ -1544,14 +1544,14 @@
 					type: "item"
 				}
 				{
-					id: "7AA26907A5CC295A"
+					id: "1462CE3709B1E1F7"
 					item: "ad_astra:desh_ingot"
 					type: "item"
 				}
 			]
 			title: "§d§lA Coleção de Troféus"
-			x: -2.0d
-			y: 12.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["459BE27BE8C6B6F9"]
@@ -1599,8 +1599,8 @@
 				}
 			]
 			title: "§e§lEngenharia Sem Limites"
-			x: 2.0d
-			y: 12.5d
+			x: 5.25d
+			y: 12.75d
 		}
 		{
 			dependencies: [
@@ -1630,35 +1630,67 @@
 				"§7Não existe mais nada esperando por você nesse modpack —"
 				"§7só a certeza de que você o dominou por completo."
 				""
+				"§7Esse baú final não tem material de crafting. É só troféu:"
+				"§7uma peça de armadura Valquíria genuína, a espada Awakened"
+				"§7Supremium completa, o Livro Netherite dos magos, e um"
+				"§7pingente de Dragonsteel — um pedaço de cada sistema que"
+				"§7você dominou até o fim."
+				""
 				"§eEntregue uma Estrela do Nether como selo final —"
 				"§eo símbolo de que nada mais ficou pra trás."
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:nether_star"
-			id: "589E1246E4DEA06C"
+			id: "5E5079937F0799D4"
 			rewards: [
 				{
-					count: 16
-					id: "0629F4E2E9563151"
-					item: "minecraft:netherite_ingot"
+					id: "4350C42DE23326FE"
+					item: {
+						Count: 1
+						id: "aether:valkyrie_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 4
-					id: "24DB63326CE5C710"
+					id: "188B7DABB5B18454"
+					item: {
+						Count: 1
+						id: "mysticalagriculture:awakened_supremium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CE3DDF95ABCBA10"
+					item: "irons_spellbooks:netherite_spell_book"
+					type: "item"
+				}
+				{
+					id: "3A5F918C0D274B6E"
+					item: {
+						Count: 1
+						id: "iceandfire:dragonarmor_dragonsteel_fire_body"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "6C1A0F5E93D82471"
 					item: "minecraft:totem_of_undying"
 					type: "item"
 				}
 				{
-					count: 6
-					id: "1CE3DDF95ABCBA10"
-					item: "minecraft:enchanted_golden_apple"
-					type: "item"
-				}
-				{
-					id: "7D9E1B43D8AAA02C"
+					id: "18A10A0F0258A9FB"
 					type: "xp"
-					xp: 50000
+					xp: 80000
 				}
 			]
 			shape: "gear"

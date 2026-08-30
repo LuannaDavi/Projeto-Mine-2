@@ -2085,11 +2085,11 @@
 		{
 			dependencies: ["2EB2997884F4D8C4"]
 			description: [
-				"§7Nem todo bandido usa espada. Merc e Spy são mercenários"
-				"§7armados que aparecem em grupo e não hesitam em atirar."
-				"§7Sobreviva ao tiroteio e recolha o que sobrar."
+				"§7Nem todo bandido usa espada. Zombie Agent e Zombie Police"
+				"§7são mercenários armados que aparecem em grupo e não"
+				"§7hesitam em atirar. Sobreviva ao tiroteio e recolha o que sobrar."
 				""
-				"§eDerrote um Merc e um Spy."
+				"§eDerrote um Zombie Agent e um Zombie Police."
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -2153,13 +2153,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					entity: "hwg:merc"
+					entity: "infectious:zombie_agent"
 					id: "396F161AD75C6B93"
 					type: "kill"
 					value: 1L
 				}
 				{
-					entity: "hwg:spy"
+					entity: "infectious:zombie_police"
 					id: "2BC385A11E6A5CB0"
 					type: "kill"
 					value: 1L
@@ -2280,15 +2280,14 @@
 				"2EB2997884F4D8C4"
 			]
 			description: [
-				"§7No fundo de biomas específicos rondam os Technodemons —"
-				"§7demônios blindados vindos de algum lugar entre o inferno"
-				"§7e uma fábrica de armas. O Greater é o comandante; o Lesser"
-				"§7vem em bando."
+				"§7No fundo de biomas específicos rondam esquadrões armados —"
+				"§7restos de uma operação militar que deu terrivelmente"
+				"§7errado. O Soldado é o comandante; o SWAT vem em bando."
 				""
-				"§8§o(De algum jeito, um demônio armado é menos assustador"
+				"§8§o(De algum jeito, um zumbi armado é menos assustador"
 				"§8§odo que a fatura de munição.)"
 				""
-				"§eDerrote um Greater Technodemon e um Lesser Technodemon."
+				"§eDerrote um Zombie Soldier e um SWAT Zombie."
 			]
 			hide_until_deps_complete: true
 			icon: "pointblank:m134minigun"
@@ -2319,19 +2318,19 @@
 			size: 1.5d
 			tasks: [
 				{
-					entity: "hwg:technodemon_greater_1"
+					entity: "infectious:zombie_soldier"
 					id: "2FE3F6C9F99B0971"
 					type: "kill"
 					value: 1L
 				}
 				{
-					entity: "hwg:technodemon_lesser_1"
+					entity: "infectious:swat_zombie"
 					id: "0F8B071445FCA864"
 					type: "kill"
 					value: 1L
 				}
 			]
-			title: "Caçada aos Tecnodemônios"
+			title: "Caçada aos Esquadrões Perdidos"
 			x: -5.0d
 			y: -3.5d
 		}

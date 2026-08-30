@@ -1,0 +1,987 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: "circle"
+	filename: "22_ferreiro_modular"
+	group: "69F31F625754AE1E"
+	id: "9F08617DB2FF6B91"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"§7Ferramentas modulares: cabo, cabeça e extra, cada peça"
+				"§7trocável, cada material com propriedades próprias."
+				"§7Combine errado e a ferramenta é ruim. Combine certo e"
+				"§7ela supera qualquer coisa feita numa bigorna comum."
+				""
+				"§eDa primeira fundição ao Manyullyn, passando por bronze,"
+				"§eaço e uma escória de slime que ninguém pediu pra existir."
+				""
+				"§6Dica: §7monte a Fundição antes de mais nada — sem ela,"
+				"§7nenhuma liga desse capítulo é possível."
+				""
+				"§7Esse capítulo começa trancado até você decidir abri-lo."
+				"§7Entregue o item abaixo pra revelar todas as missões de uma vez."
+			]
+			icon: "tconstruct:pattern"
+			id: "811C8E414BA8B2A0"
+			rewards: [{
+				id: "0280355A7EBD1607"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				count: 4
+				id: "841F0F5DB9869E7B"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			title: "Abrir Capitulo"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Uma estrutura oca de tijolos vitrificados, com um dreno na base"
+				"§7e uma torneira apontando pra fora. Derreta minério aqui e o metal"
+				"§7líquido sai pronto pro molde — sem forja, sem martelo, só calor."
+				""
+				"§6Dica: §7quanto maior a fundição, mais metal derrete de uma vez. Comece pequeno — 3x3x3 já funciona."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:smeltery_controller"
+			id: "519C0833EC3FECAF"
+			rewards: [
+				{
+					count: 16
+					id: "15C82A6519757C36"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				},
+				{
+					id: "D29D64B14464B555"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1BF77ECFF7383DCB"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				},
+				{
+					count: 32
+					id: "9F78153516E5B1AC"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				},
+				{
+					id: "D333AF7EB33BB598"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				},
+				{
+					id: "5AADE48327AE1611"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+			]
+			title: "A Fundição"
+			x: -15d
+			y: -8d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Ferramentas modulares não nascem prontas — nascem em peças."
+				""
+				"§6Dica: §7use um Padrão de madeira pra desenhar a peça, depois substitua pelo material de verdade."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:part_builder"
+			id: "D1D6C1B44438F64B"
+			rewards: [
+				{
+					count: 4
+					id: "DE5037B6E07BD520"
+					item: "tconstruct:pattern"
+					type: "item"
+				},
+				{
+					id: "DAA5C784DCD31E59"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "4567D9041DC85852"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+			]
+			title: "Bancada de Peças"
+			x: -11d
+			y: -9.5d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7É aqui que cabo, cabeça e extra viram uma ferramenta de verdade —"
+				"§7e onde modificadores são aplicados depois."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:tinker_station"
+			id: "1264805BD64F70F6"
+			rewards: [
+				{
+					id: "6D1AA7EAFA90D9CB"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1776265FC9BABBCE"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+			]
+			title: "Estação do Ferreiro"
+			x: -8d
+			y: -10.5d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Areia comum faz molde de uso único. Areia vermelha aguenta mais"
+				"§7calor. Molde de ouro é permanente — investimento caro, mas nunca"
+				"§7mais precisa refazer o mesmo molde duas vezes."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:ingot_cast"
+			id: "E500735AA354FF67"
+			rewards: [
+				{
+					count: 2
+					id: "4C8BC44268EB5DB5"
+					item: "tconstruct:blank_cast"
+					type: "item"
+				},
+				{
+					id: "C870B1D79ADB3940"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "0F0287ED5B2C5621"
+					item: "tconstruct:ingot_cast"
+					type: "item"
+				},
+				{
+					id: "7EA40031F4697364"
+					item: "tconstruct:pick_head_cast"
+					type: "item"
+				}
+			]
+			title: "Moldes de Areia e Ouro"
+			x: -8d
+			y: -11.5d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7A ferramenta mais básica de todas — e ainda assim, feita do jeito"
+				"§7certo, já supera uma picareta de diamante comum."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:pickaxe", tag: {Damage: 0}}
+			id: "3FBE02C1A2A8A82A"
+			rewards: [
+				{
+					count: 2
+					id: "0D7BD10886D696F4"
+					item: "minecraft:diamond"
+					type: "item"
+				},
+				{
+					id: "63F4521FEE7F45A1"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "F8C695B9B349CDD3"
+					item: "{
+						Count: 1
+						id: "tconstruct:pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}"
+					type: "item"
+				}
+			]
+			title: "Primeira Picareta"
+			x: -4d
+			y: -12d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Corte de verdade depende mais do material da lâmina do que"
+				"§7qualquer encantamento consegue compensar."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:sword", tag: {Damage: 0}}
+			id: "6A28A2F7BF90347C"
+			rewards: [
+				{
+					count: 4
+					id: "64787F21799B2A15"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				},
+				{
+					id: "AEF941EB03098A96"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "EB807701349C166A"
+					item: "{
+						Count: 1
+						id: "tconstruct:sword"
+						tag: {
+							Damage: 0
+						}
+					}"
+					type: "item"
+				}
+			]
+			title: "Lâmina Modular"
+			x: 0d
+			y: -12d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Rápido, leve, corta madeira quase tão bem quanto um machado de"
+				"§7verdade — e ainda serve como arma decente no aperto."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:hand_axe", tag: {Damage: 0}}
+			id: "6D4807D826B88A82"
+			rewards: [
+				{
+					count: 16
+					id: "03A9687E81AE73D6"
+					item: "minecraft:oak_log"
+					type: "item"
+				},
+				{
+					id: "0807E279BEEA2440"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "76F76B89D5820CDC"
+					item: {
+						Count: 1
+						id: "tconstruct:hand_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Machado de Mão"
+			x: 4d
+			y: -12d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Mattock: metade pá, metade enxada. Cava terra e planta ao mesmo"
+				"§7tempo — economiza um slot inteiro do cinturão de ferramentas."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:mattock", tag: {Damage: 0}}
+			id: "EF4734F69F266234"
+			rewards: [
+				{
+					count: 16
+					id: "8F44FBAEE4F0290F"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				},
+				{
+					id: "103CD6085E590A17"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "A74B732BB249D96D"
+					item: {
+						Count: 1
+						id: "tconstruct:mattock"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Enxada Dupla"
+			x: 7d
+			y: -11.5d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Pá com área de efeito — cava um bloco de terra ou areia e os"
+				"§7vizinhos vêm junto. Terraformar deixou de ser sofrimento."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:excavator", tag: {Damage: 0}}
+			id: "136AD6BE8B6A4E75"
+			rewards: [
+				{
+					count: 16
+					id: "403FA1D8D7F795A6"
+					item: "minecraft:gravel"
+					type: "item"
+				},
+				{
+					id: "445EB4286DCFB73F"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "FE05506C3057B4F5"
+					item: {
+						Count: 1
+						id: "tconstruct:excavator"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Escavadeira"
+			x: 7.5d
+			y: -10d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7War Pick: dano de picareta e de arma na mesma peça, sem trocar"
+				"§7de mão no meio da masmorra. Kama: rápida, área pequena, ótima"
+				"§7pra colher plantação inteira num só golpe."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:war_pick", tag: {Damage: 0}}
+			id: "CD5CE3FA15377AFC"
+			rewards: [
+				{
+					count: 16
+					id: "7FE46FE33FCE38DE"
+					item: "minecraft:wheat"
+					type: "item"
+				},
+				{
+					id: "DC613A5C12948474"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "EBD688EEC1E294F5"
+					item: {
+						Count: 1
+						id: "tconstruct:war_pick"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				},
+				{
+					id: "65A9CD67451F7ADF"
+					item: {
+						Count: 1
+						id: "tconstruct:kama"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Picareta de Guerra e Foice"
+			x: 3.5d
+			y: -7d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Pesado, lento, devastador contra mobs grandes. O tipo de arma"
+				"§7que faz você repensar se realmente precisa de mais mobilidade."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:cleaver", tag: {Damage: 0}}
+			id: "3EE9CC4E266FA723"
+			rewards: [
+				{
+					count: 16
+					id: "1CD65971EBE8A0F7"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				},
+				{
+					id: "3FA9D88A6F05F5BE"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "8A5BB07F0845B2B0"
+					item: {
+						Count: 1
+						id: "tconstruct:cleaver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cutelo"
+			x: 3.5d
+			y: -3d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Broad Axe corta uma árvore inteira de uma vez, direto na raiz."
+				"§7Sledge Hammer mina em área — e a Vein Hammer, ainda mais forte,"
+				"§7pega o veio de minério inteiro se você acertar o bloco certo."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:sledge_hammer", tag: {Damage: 0}}
+			id: "D761A94FFC425E83"
+			rewards: [
+				{
+					count: 6
+					id: "AAD72EC49CC340A6"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				},
+				{
+					id: "3AFFBA44F17BB1AC"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "05C8EC5A2C53C1AF"
+					item: {
+						Count: 1
+						id: "tconstruct:broad_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				},
+				{
+					id: "D35AE9A3D846B7ED"
+					item: {
+						Count: 1
+						id: "tconstruct:sledge_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Machado Largo e Marreta"
+			x: 3.5d
+			y: 0d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Longbow: distância e precisão. Crossbow: menos alcance, mas"
+				"§7dispara sem precisar segurar o botão puxando a corda pra sempre."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:longbow", tag: {Damage: 0}}
+			id: "B857DDFB954EE390"
+			rewards: [
+				{
+					count: 32
+					id: "EDCB0E739C32B717"
+					item: "minecraft:arrow"
+					type: "item"
+				},
+				{
+					id: "121F10CDBB628909"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "4C78C657D54D1437"
+					item: {
+						Count: 1
+						id: "tconstruct:longbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				},
+				{
+					id: "E63E2A1DD2B5FB66"
+					item: {
+						Count: 1
+						id: "tconstruct:crossbow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arco e Besta Modulares"
+			x: 6d
+			y: 2d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Metade escudo, metade estandarte de guerra — bloqueia dano e"
+				"§7ainda dá pra golpear com ele quando a paciência acaba."
+				""
+				"§8§o(Sim, é um escudo que também é uma placa de rua. Não perguntem.)"
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:battlesign", tag: {Damage: 0}}
+			id: "EEB111E1227DACA0"
+			rewards: [
+				{
+					id: "F21DB242DEA66983"
+					item: "minecraft:shield"
+					type: "item"
+				},
+				{
+					id: "E2D6029ED6CCB75D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "6CA42D6F6BB5EB09"
+					item: {
+						Count: 1
+						id: "tconstruct:battlesign"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Estandarte de Batalha"
+			x: 7.5d
+			y: 4d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Pig Iron mistura ferro com sangue de porco — sim, literalmente."
+				"§7Rose Gold é ouro com cobre. Amethyst Bronze é bronze comum com"
+				"§7ametista. Todas mais fortes que seus componentes separados."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:pig_iron_ingot"
+			id: "46682254C784651D"
+			rewards: [
+				{
+					count: 2
+					id: "0B169254A5A23A8E"
+					item: "tconstruct:cobalt_ingot"
+					type: "item"
+				},
+				{
+					id: "275B2283AE23DAA9"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4
+					id: "4CF318714C3BF58A"
+					item: "tconstruct:pig_iron_ingot"
+					type: "item"
+				},
+				{
+					count: 4
+					id: "D2C6C01DD358DEA2"
+					item: "tconstruct:rose_gold_ingot"
+					type: "item"
+				},
+				{
+					count: 4
+					id: "EEDB672BAD96BC4C"
+					item: "tconstruct:amethyst_bronze_ingot"
+					type: "item"
+				}
+			]
+			title: "Ligas do Ferreiro"
+			x: 7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Cobalt não se encontra em qualquer caverna — é preciso ir fundo,"
+				"§7bem fundo, antes de achar o brilho azulado característico dele."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:cobalt_ingot"
+			id: "4FE810B065B1D579"
+			rewards: [
+				{
+					count: 2
+					id: "7BDE6FA42B6ED5BF"
+					item: "tconstruct:hepatizon_ingot"
+					type: "item"
+				},
+				{
+					id: "09DBB0429FC8E99A"
+					type: "xp"
+					xp: 450
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4
+					id: "EA383BD2255E8936"
+					item: "tconstruct:cobalt_ingot"
+					type: "item"
+				}
+			]
+			title: "Minério das Profundezas"
+			x: 4d
+			y: 7.5d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7A liga mais cobiçada da forja modular. Roxo, quase preto, com"
+				"§7propriedades que nenhum material comum consegue igualar."
+				""
+				"§6Dica: §7Manyullyn é frágil sozinho, mas praticamente indestrutível como reforço numa ferramenta mista."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:sword", tag: {Damage: 0}}
+			id: "B3E88EB4BF32E5DD"
+			rewards: [
+				{
+					count: 2
+					id: "79D40B11C97B5C63"
+					item: "tconstruct:manyullyn_ingot"
+					type: "item"
+				},
+				{
+					id: "E01C630C9E8A8387"
+					type: "xp"
+					xp: 600
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4
+					id: "B8E586CB826F8A1B"
+					item: "tconstruct:manyullyn_ingot"
+					type: "item"
+				}
+			]
+			title: "Manyullyn — O Ápice"
+			x: 0d
+			y: 7.8d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Forjado com almas presas em vez de carvão comum — o resultado"
+				"§7é um metal que parece sussurrar enquanto é trabalhado."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:soulsteel_ingot"
+			id: "C75C5444F6E01747"
+			rewards: [
+				{
+					count: 8
+					id: "D93DE0B5D9698E5B"
+					item: "minecraft:soul_sand"
+					type: "item"
+				},
+				{
+					id: "25722182BF286698"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4
+					id: "CF8BD31E0F4A217D"
+					item: "tconstruct:soulsteel_ingot"
+					type: "item"
+				}
+			]
+			title: "Aço da Alma"
+			x: -4d
+			y: 7.5d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Quatro bastões, quatro tipos de slime: terra, fim, éter e céu."
+				"§7Cada um teleporta o portador de um jeito diferente — nenhum"
+				"§7deles totalmente seguro na primeira tentativa."
+				""
+				"§8§o(O bastão do Fim tem uma taxa de sucesso de teleporte curiosamente similar à do ender pearl comum.)"
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:ender_staff", tag: {Damage: 0}}
+			id: "FFEFE4EF950D863A"
+			rewards: [
+				{
+					count: 16
+					id: "08353C412F4FB362"
+					item: "minecraft:slime_ball"
+					type: "item"
+				},
+				{
+					id: "859A8E6531268511"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "91F6C993B5B96E7D"
+					item: {
+						Count: 1
+						id: "tconstruct:earth_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				},
+				{
+					id: "FE71CD7DDD0BF56B"
+					item: {
+						Count: 1
+						id: "tconstruct:ender_staff"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bastões de Escória Viva"
+			x: -7.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Ninguém sabe ao certo de qual rainha — só que o material rosa"
+				"§7brilhante que sobra depois de derreter esse slime específico"
+				"§7é bom o suficiente pra virar arma de ponta."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:queens_slime_ingot"
+			id: "8E2D32E2CA86F39D"
+			rewards: [
+				{
+					count: 2
+					id: "E00091E47104DA92"
+					item: "tconstruct:queens_slime_ingot"
+					type: "item"
+				},
+				{
+					id: "FB2142A037F973F1"
+					type: "xp"
+					xp: 550
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4
+					id: "BBE0C6F779619670"
+					item: "tconstruct:queens_slime_ingot"
+					type: "item"
+				}
+			]
+			title: "Escória da Rainha"
+			x: -7.5d
+			y: 4d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7A fusão final: Queen's Slime com metal de cavaleiro esquecido."
+				""
+				"§6Dica: §7essa é a liga mais rara do mod inteiro — Queen's Slime já é raro, e Knightslime precisa de mais."
+			]
+			hide_until_deps_complete: true
+			icon: {Count: 1, id: "tconstruct:knightslime_ingot", tag: {Damage: 0}}
+			id: "15BF6B109A236EBE"
+			rewards: [
+				{
+					count: 2
+					id: "57894D78DA7099DA"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				},
+				{
+					id: "9E84DFB2D90E7EAC"
+					type: "xp"
+					xp: 700
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 4
+					id: "77BFFAD18F904205"
+					item: "tconstruct:knightslime_ingot"
+					type: "item"
+				}
+			]
+			title: "Knightslime — A Armadura Impossível"
+			x: -6d
+			y: 2d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7A Fantastic Foundry substitui a fundição comum quando o volume"
+				"§7de metal derretido já não é mais suficiente. Menos tijolos,"
+				"§7mais capacidade, e um controlador que aguenta o fluxo constante."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:foundry_controller"
+			id: "77B223A7ABBB6404"
+			rewards: [
+				{
+					count: 16
+					id: "7CF458010808EEAF"
+					item: "tconstruct:scorched_bricks"
+					type: "item"
+				},
+				{
+					id: "7B0888C79B8E5D39"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "7F756A09AAB15807"
+					item: "tconstruct:foundry_controller"
+					type: "item"
+				}
+			]
+			title: "A Fundição Avançada"
+			x: -3.5d
+			y: 0d
+		}
+		{
+			dependencies: ["811C8E414BA8B2A0"]
+			description: [
+				"§7Uma ferramenta pronta ainda pode melhorar — a Bigorna do"
+				"§7Ferreiro aplica modificadores: reparo automático, luminescência,"
+				"§7redirecionamento de dano, e muito mais, direto na ferramenta."
+				""
+				"§6Dica: §7cada slot de modificador na ferramenta é limitado — escolha bem o que aplicar primeiro."
+			]
+			hide_until_deps_complete: true
+			icon: "tconstruct:tinkers_anvil"
+			id: "8DA36D53E433CD81"
+			rewards: [
+				{
+					id: "12D0DE8463227997"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5060B3C333DC183A"
+					item: "tconstruct:tinkers_anvil"
+					type: "item"
+				}
+			]
+			title: "Bigorna de Modificadores"
+			x: -3.5d
+			y: -4d
+		}
+	]
+	title: "§6Ferreiro Modular"
+}

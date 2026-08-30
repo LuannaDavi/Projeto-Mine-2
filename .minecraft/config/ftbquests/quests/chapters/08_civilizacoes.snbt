@@ -319,9 +319,9 @@
 					type: "item"
 				}
 				{
-					count: 3
+					count: 4
 					id: "7B00000000000022"
-					item: "minecraft:emerald"
+					item: "simpledwarves:dwarven_ale"
 					type: "item"
 				}
 				{
@@ -360,9 +360,8 @@
 			id: "7B00000000000025"
 			rewards: [
 				{
-					count: 16
 					id: "7B00000000000026"
-					item: "minecraft:emerald"
+					item: "tmg:phantom_ring"
 					type: "item"
 				}
 				{
@@ -2154,6 +2153,359 @@
 			title: "Pequenos Mercadores Selvagens"
 			x: -4.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7Uma colônia grande demais vira bagunça rápido — colono"
+				"§7cortando árvore no meio da plantação, minerador cavando"
+				"§7dentro da própria casa. A Ferramenta de Zoneamento resolve"
+				"§7isso: marque dois cantos e prenda o colono na área certa."
+			]
+			icon: "minecolonies_compatibility:restrict_tool"
+			id: "25873E8214A5575E"
+			rewards: [
+				{
+					count: 8
+					id: "3BA164EDCB38B8D6"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "719A3F3AB3BCB882"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "390B8087C78A7D08"
+				item: "minecolonies_compatibility:restrict_tool"
+				type: "item"
+			}]
+			title: "Ferramenta de Zoneamento"
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7A colônia ganhou profissões novas: Açougueiro, Pomarista,"
+				"§7Gerente de Fluidos e até um Comandante de Guarda — cada"
+				"§7um deles luta bem melhor com o equipamento certo em mãos."
+				""
+				"§6Dica: §7equipe seus guardas com armadura de placas pra"
+				"§7colônias que enfrentam ataques frequentes de bárbaros."
+			]
+			icon: "minecolonies:chiefsword"
+			id: "435860E18C91530A"
+			rewards: [
+				{
+					id: "04758C47ECCB247A"
+					item: {
+						Count: 1
+						id: "minecolonies:plate_armor_chest"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B7A1D9E4F6C3852"
+					item: {
+						Count: 1
+						id: "minecolonies:plate_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "24D599A8F15361A9"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "5BBAE5D63DACEA10"
+				item: {
+					Count: 1
+					id: "minecolonies:chiefsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Arsenal do Colono"
+			x: -6.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7Nem toda Waystone precisa ser feita de pedra comum."
+				"§7Blackstone aguenta o clima do Nether, Deepslate combina"
+				"§7com bases subterrâneas, End Stone marca portais do Fim."
+			]
+			hide_until_deps_complete: true
+			icon: "waystones:blackstone_waystone"
+			id: "A15CF6B75E6C41FB"
+			rewards: [
+				{
+					count: 2
+					id: "4C2A96D327DF7142"
+					item: "waystones:warp_dust"
+					type: "item"
+				}
+				{
+					id: "1976EDB211233EED"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "61A4FACB5A7A9BA3"
+					item: "waystones:blackstone_waystone"
+					type: "item"
+				}
+				{
+					id: "06C803A9F3420D1D"
+					item: "waystones:deepslate_waystone"
+					type: "item"
+				}
+				{
+					id: "8A4F2332186EC417"
+					item: "waystones:end_stone_waystone"
+					type: "item"
+				}
+			]
+			title: "Variantes Regionais de Waystone"
+			x: -9.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7Sharestone é uma Waystone que sua equipe inteira pode"
+				"§7compartilhar — cada cor identifica um destino diferente"
+				"§7sem precisar nomear nada."
+				""
+				"§6Dica: §7ótimo pra bases de time onde todo mundo entra e"
+				"§7sai de lugares diferentes o tempo todo."
+			]
+			hide_until_deps_complete: true
+			icon: "waystones:sharestone"
+			id: "9EA186773C398545"
+			rewards: [
+				{
+					count: 3
+					id: "3D075CFAF2CDAA7E"
+					item: "waystones:blue_sharestone"
+					type: "item"
+				}
+				{
+					id: "AB78A314D566D84D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "A306531C3A35FAB4"
+				item: "waystones:sharestone"
+				type: "item"
+			}]
+			title: "Sharestone — A Waystone do Time"
+			x: -11.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7Warp Stone amplifica teleporte. Warp Plate estabiliza a"
+				"§7chegada. Warp Dust é o pó residual de quem já teleportou"
+				"§7demais num único dia — surpreendentemente útil em receita."
+			]
+			hide_until_deps_complete: true
+			icon: "waystones:warp_stone"
+			id: "B9EED0A8402BAA23"
+			rewards: [
+				{
+					count: 4
+					id: "72DC88E3843CD95D"
+					item: "waystones:attuned_shard"
+					type: "item"
+				}
+				{
+					id: "FD8BDA31375D39B8"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "AA8738E785C22BAD"
+					item: "waystones:warp_stone"
+					type: "item"
+				}
+				{
+					id: "99E5F0BB17D4A768"
+					item: "waystones:warp_plate"
+					type: "item"
+				}
+			]
+			title: "Pedra e Placa de Deformação"
+			x: -9.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7Return Scroll leva de volta pro último ponto marcado."
+				"§7Bound Scroll é mais específico — vincula pra uma Waystone"
+				"§7só, sem escolha na hora de usar."
+			]
+			hide_until_deps_complete: true
+			icon: "waystones:return_scroll"
+			id: "216CD5E130CD7416"
+			rewards: [
+				{
+					count: 3
+					id: "C64EB21E0AA9F1B0"
+					item: "waystones:return_scroll"
+					type: "item"
+				}
+				{
+					id: "124C041022C876DB"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "2D335B73ED2CC810"
+				item: "waystones:bound_scroll"
+				type: "item"
+			}]
+			title: "Pergaminhos de Retorno"
+			x: -11.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7Uma rede de cabos conectando baú, fornalha e máquina —"
+				"§7tudo acessível de um terminal só, sem precisar caminhar"
+				"§7até cada armazenamento individual."
+				""
+				"§eConstrua um Conector de Inventário e um Terminal de"
+				"§eArmazenamento."
+			]
+			hide_until_deps_complete: true
+			icon: "toms_storage:ts.storage_terminal"
+			id: "76A647F2AF417557"
+			rewards: [
+				{
+					count: 8
+					id: "C229D72FEB7B1629"
+					item: "toms_storage:ts.inventory_cable"
+					type: "item"
+				}
+				{
+					id: "589D950D373C811A"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "A007224902F1D642"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "62A32C81BCEA1A2E"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+			]
+			title: "Rede de Armazenamento"
+			x: -13.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7O Terminal de Crafting puxa ingrediente de qualquer baú"
+				"§7conectado à rede — não precisa mais carregar material"
+				"§7de um lado pro outro só pra montar uma receita."
+			]
+			hide_until_deps_complete: true
+			icon: "toms_storage:ts.crafting_terminal"
+			id: "244BCA0BFF683D22"
+			rewards: [
+				{
+					count: 4
+					id: "F0FDAAAA284A8FB7"
+					item: "toms_storage:ts.item_filter"
+					type: "item"
+				}
+				{
+					id: "6644737D505F1FAE"
+					type: "xp"
+					xp: 350
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "1B4C50FE5B74C305"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			title: "Terminal de Crafting"
+			x: -13.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["68B8AFCF615C3DAC"]
+			description: [
+				"§7Terminal sem fio: acesso à rede inteira de armazenamento"
+				"§7de qualquer lugar do mapa, sem precisar estar perto de"
+				"§7nenhum cabo. O upgrade que separa base pequena de império."
+			]
+			hide_until_deps_complete: true
+			icon: "toms_storage:ts.adv_wireless_terminal"
+			id: "5903C54C05D3B13F"
+			rewards: [
+				{
+					count: 2
+					id: "AA3F5F544FF51E7F"
+					item: "toms_storage:ts.level_emitter"
+					type: "item"
+				}
+				{
+					id: "4A835CF0D50E8AB2"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "BA0D8EF13CF961C5"
+				item: "toms_storage:ts.adv_wireless_terminal"
+				type: "item"
+			}]
+			title: "Terminal Sem Fio"
+			x: -15.0d
+			y: -13.0d
 		}
 	]
 	title: "§eCivilizações"

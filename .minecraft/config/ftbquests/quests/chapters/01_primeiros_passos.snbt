@@ -513,7 +513,12 @@
 				}
 				{
 					id: "1A00000000000034"
-					item: "sophisticatedbackpacks:copper_backpack"
+					item: "travelersbackpack:pickup_upgrade"
+					type: "item"
+				}
+				{
+					id: "3F8B2A6E51D9C704"
+					item: "travelersbackpack:tanks_upgrade"
 					type: "item"
 				}
 				{

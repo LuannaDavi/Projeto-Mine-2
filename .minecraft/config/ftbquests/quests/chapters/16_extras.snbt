@@ -1632,7 +1632,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:luminis_ore"
-			id: "52510ABE3E928F48"
+			id: "3C8028FB92896730"
 			rewards: [
 				{
 					count: 2
@@ -1641,7 +1641,7 @@
 					type: "item"
 				}
 				{
-					id: "28EE149B0B9746FC"
+					id: "0DB78E74CFB71973"
 					type: "xp"
 					xp: 250
 				}
@@ -1656,7 +1656,7 @@
 				}
 				{
 					count: 4L
-					id: "553A99F3F14CD97C"
+					id: "1F3E253C267507C6"
 					item: "buddycards:zylex"
 					type: "item"
 				}
@@ -1674,10 +1674,10 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:buddysteel_ingot"
-			id: "7BC9352218DA96DA"
+			id: "4C5FAF9A131C40EC"
 			rewards: [
 				{
-					id: "5CD06B7D7B29E9B6"
+					id: "7D976689C42B8ADC"
 					item: "buddycards:buddysteel_ring"
 					type: "item"
 				}
@@ -1691,7 +1691,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "619ED6B7812D83C6"
+					id: "5B1E794913110309"
 					item: "buddycards:buddysteel_ingot"
 					type: "item"
 				}
@@ -1753,7 +1753,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "buddycards:true_perfect_buddysteel_ingot"
-			id: "22B9E634FE719758"
+			id: "20FCC945E9C1F993"
 			rewards: [
 				{
 					id: "39D2339927EE144F"
@@ -1767,14 +1767,14 @@
 					type: "item"
 				}
 				{
-					id: "67830194C5E3A668"
+					id: "1141BCCF1EBD4AD2"
 					type: "xp"
 					xp: 800
 				}
 			]
 			size: 1.5d
 			tasks: [{
-				id: "444F642D2D2E5CB9"
+				id: "73DEDBE5557AF0CA"
 				item: "buddycards:true_perfect_buddysteel_ingot"
 				type: "item"
 			}]
@@ -1789,8 +1789,8 @@
 				"§7guarda sua coleção em segurança — e ainda fica bonito na estante."
 			]
 			hide_until_deps_complete: true
-			icon: "buddycards:ender_buddycard_binder"
-			id: "44550C18C8553517"
+			icon: "buddycards:large_buddycard_binder_end"
+			id: "730F3AE8E817FAF2"
 			rewards: [
 				{
 					count: 4
@@ -1799,7 +1799,7 @@
 					type: "item"
 				}
 				{
-					id: "79CE2C6945C8A0EF"
+					id: "5486B66BA4874618"
 					type: "xp"
 					xp: 250
 				}
@@ -1807,8 +1807,8 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "50CF9F46EEBB848B"
-					item: "buddycards:ender_buddycard_binder"
+					id: "303241A91CC665B2"
+					item: "buddycards:buddycard_binder_end"
 					type: "item"
 				}
 				{

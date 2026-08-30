@@ -105,9 +105,9 @@
 			id: "3C00000000000008"
 			rewards: [
 				{
-					count: 8
+					count: 6
 					id: "3C00000000000009"
-					item: "create:brass_ingot"
+					item: "create:cogwheel"
 					type: "item"
 				}
 				{
@@ -793,9 +793,15 @@
 					type: "item"
 				}
 				{
-					count: 64
+					count: 32
 					id: "3C00000000000048"
-					item: "create:brass_ingot"
+					item: "create:crushed_raw_gold"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1A5F8B3E4D9C2076"
+					item: "create:precision_mechanism"
 					type: "item"
 				}
 				{
@@ -1047,9 +1053,9 @@
 					type: "item"
 				}
 				{
-					count: 8
+					count: 4
 					id: "3C00000000000072"
-					item: "create:brass_ingot"
+					item: "create:electron_tube"
 					type: "item"
 				}
 				{
@@ -1305,6 +1311,49 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["0A88116A5831A8C4"]
+			description: [
+				"§7Nem tudo que sai quebrado das Cavernas de Alex precisa"
+				"§7ser terminado à mão. Uma prensa e um misturador bem"
+				"§7posicionados fazem o resto do trabalho sujo."
+				""
+				"§6Dica: §7processe os itens \"incompletos\" em linha de"
+				"§7montagem — sai bem mais rápido que montar um por um."
+			]
+			icon: "create_alexscaves_compat:incomplete_notor_gizmo"
+			id: "07ADB174A90B7E65"
+			rewards: [
+				{
+					count: 4
+					id: "7F5B09DAF034D953"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "56EBCF0952265D77"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "7072C62A10EDE7DB"
+					item: "create_alexscaves_compat:incomplete_notor_gizmo"
+					type: "item"
+				}
+				{
+					id: "60E52CB64E330FDC"
+					item: "create_alexscaves_compat:incomplete_telecore"
+					type: "item"
+				}
+			]
+			title: "Peças Incompletas"
+			x: -12.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["07ADB174A90B7E65"]
 			description: [
 				"§7Com a linha de montagem rodando, a engenhoca sai pronta"
 				"§7do outro lado — sem precisar visitar as Cavernas de Alex"
@@ -1312,15 +1361,15 @@
 			]
 			hide_until_deps_complete: true
 			icon: "alexscaves:notor_gizmo"
-			id: "7776F1BC6D609098"
+			id: "596407BB81EAE4D8"
 			rewards: [
 				{
-					id: "6BCA7107A4554B24"
+					id: "68AAACDAAC76E166"
 					item: "alexscaves:occult_gem"
 					type: "item"
 				}
 				{
-					id: "3C8E19A8A0C2613D"
+					id: "2809408425EB82B8"
 					type: "xp"
 					xp: 300
 				}
@@ -1353,7 +1402,7 @@
 					type: "item"
 				}
 				{
-					id: "0CF15A49F83F2038"
+					id: "448BF82FA9653D04"
 					type: "xp"
 					xp: 200
 				}
@@ -1361,7 +1410,7 @@
 			size: 1.5d
 			tasks: [{
 				count: 2L
-				id: "3DFE6408F5D60D65"
+				id: "0A27B9582154C403"
 				item: "create:redstone_link"
 				type: "item"
 			}]
@@ -1378,16 +1427,16 @@
 			]
 			hide_until_deps_complete: true
 			icon: "create:attribute_filter"
-			id: "5A7575F89D92A23B"
+			id: "126A980292D5907F"
 			rewards: [
 				{
 					count: 6
-					id: "44A4B410E698878F"
+					id: "442281D6E9A0588C"
 					item: "create:brass_ingot"
 					type: "item"
 				}
 				{
-					id: "72C79699BD29851D"
+					id: "486EC9FA4A1FFE04"
 					type: "xp"
 					xp: 200
 				}
@@ -1400,7 +1449,7 @@
 					type: "item"
 				}
 				{
-					id: "66107D8927E36DD2"
+					id: "4F0AD6250C2423DD"
 					item: "create:filter"
 					type: "item"
 				}
@@ -1418,7 +1467,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "create:clockwork_bearing"
-			id: "10DEFF28BDA09D73"
+			id: "3E8F63664B0022D6"
 			rewards: [
 				{
 					count: 2
@@ -1427,7 +1476,7 @@
 					type: "item"
 				}
 				{
-					id: "21A9CCE0C60D06CC"
+					id: "3B7842ED7E46BB4D"
 					type: "xp"
 					xp: 250
 				}
@@ -1460,7 +1509,7 @@
 			rewards: [
 				{
 					count: 6
-					id: "29CFB0AB915EC3BB"
+					id: "223B40715549F6E5"
 					item: "minecraft:leather"
 					type: "item"
 				}
@@ -1496,11 +1545,11 @@
 			]
 			hide_until_deps_complete: true
 			icon: "create:copper_backtank"
-			id: "0CB725EC43DF3A99"
+			id: "1EF12C626BF0634A"
 			rewards: [
 				{
 					count: 8
-					id: "1458CAF5A4F0684A"
+					id: "386E724F30AF114E"
 					item: "minecraft:copper_ingot"
 					type: "item"
 				}
@@ -1529,16 +1578,16 @@
 			]
 			hide_until_deps_complete: true
 			icon: "create:copper_valve_handle"
-			id: "7B29060C4600B7AF"
+			id: "59529EEFFA3389F9"
 			rewards: [
 				{
 					count: 6
-					id: "6FCB310F243C22A2"
+					id: "7CDA63F71C202D82"
 					item: "create:fluid_pipe"
 					type: "item"
 				}
 				{
-					id: "1D5424BE621A942D"
+					id: "0C697039B1CA31D1"
 					type: "xp"
 					xp: 200
 				}
@@ -1546,13 +1595,13 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "0D73989AD789F3D4"
+					id: "1E4BC57752A411E9"
 					item: "create:copper_valve_handle"
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "09289595AEE11CD0"
+					id: "5A384141E1DF6BBC"
 					item: "create:smart_fluid_pipe"
 					type: "item"
 				}
@@ -1578,7 +1627,7 @@
 					type: "item"
 				}
 				{
-					id: "2A2B3061F3D2E96E"
+					id: "3FBE4E8B9AE55634"
 					type: "xp"
 					xp: 200
 				}
@@ -1586,7 +1635,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "5467CF6AE5F4A808"
+					id: "52F35DC5E6AC4CE2"
 					item: "create:display_board"
 					type: "item"
 				}
@@ -1608,11 +1657,11 @@
 			]
 			hide_until_deps_complete: true
 			icon: "create:display_link"
-			id: "61889A32A2D3A90A"
+			id: "6CB3D798DDF4A2D1"
 			rewards: [
 				{
 					count: 6
-					id: "5A6FF189B49191A0"
+					id: "41F54A8C10F554B5"
 					item: "create:andesite_alloy"
 					type: "item"
 				}
@@ -1640,16 +1689,16 @@
 			]
 			hide_until_deps_complete: true
 			icon: "create:gantry_shaft"
-			id: "74CCFD303D9D1A3C"
+			id: "010609084A783A4F"
 			rewards: [
 				{
 					count: 8
-					id: "346851728D5AE175"
+					id: "55E923C30245851F"
 					item: "create:shaft"
 					type: "item"
 				}
 				{
-					id: "1D22415D16D99092"
+					id: "31701EA666A7B87C"
 					type: "xp"
 					xp: 250
 				}
@@ -1658,7 +1707,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "7572FD7ECC7F7252"
+					id: "2F03BA8812CFFC26"
 					item: "create:gantry_shaft"
 					type: "item"
 				}
@@ -1692,19 +1741,19 @@
 			rewards: [
 				{
 					count: 16
-					id: "3F442206E0D504E3"
+					id: "3496DF9E6A676BE3"
 					item: "minecraft:baked_potato"
 					type: "item"
 				}
 				{
-					id: "73BDD1B128DFEF62"
+					id: "38BEEA1C6B9E15BB"
 					type: "xp"
 					xp: 150
 				}
 			]
 			size: 1.5d
 			tasks: [{
-				id: "64667E66EF6D213E"
+				id: "1BF9E55634BE9528"
 				item: {
 					Count: 1
 					id: "create:potato_cannon"
@@ -1733,7 +1782,7 @@
 					Damage: 0
 				}
 			}
-			id: "288CA501B0AD1636"
+			id: "70C406D58B21D8BA"
 			rewards: [
 				{
 					count: 2
@@ -1742,7 +1791,7 @@
 					type: "item"
 				}
 				{
-					id: "10B434B2ADBCE40E"
+					id: "3F4CF9B9B5B051C4"
 					type: "xp"
 					xp: 300
 				}
@@ -1750,7 +1799,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "332D171802FD475F"
+					id: "2C74C97B9C17D0A8"
 					item: {
 						Count: 1
 						id: "create:netherite_diving_helmet"
@@ -1761,7 +1810,7 @@
 					type: "item"
 				}
 				{
-					id: "7B7778943CA1790D"
+					id: "05FC7755EC7D3FCA"
 					item: {
 						Count: 1
 						id: "create:netherite_diving_boots"
@@ -1786,7 +1835,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "create:peculiar_bell"
-			id: "33C27761BDFB4A12"
+			id: "4C592D905633C600"
 			rewards: [{
 				id: "3A7774367644C8EA"
 				type: "xp"
@@ -1794,7 +1843,7 @@
 			}]
 			size: 1.5d
 			tasks: [{
-				id: "25D0189B657DE236"
+				id: "047B2E8848E08F01"
 				item: "create:peculiar_bell"
 				type: "item"
 			}]
@@ -1810,11 +1859,11 @@
 			]
 			hide_until_deps_complete: true
 			icon: "create:linked_controller"
-			id: "6620760B9BBA06D6"
+			id: "138F31D35B9EECA3"
 			rewards: [
 				{
 					count: 2
-					id: "19AA3CCCE9FDD53B"
+					id: "7533681167970A57"
 					item: "create:redstone_link"
 					type: "item"
 				}
@@ -1826,7 +1875,7 @@
 			]
 			size: 1.5d
 			tasks: [{
-				id: "067B9D8A3D4293EB"
+				id: "1C13515F9547FE09"
 				item: "create:linked_controller"
 				type: "item"
 			}]
@@ -1849,12 +1898,12 @@
 			rewards: [
 				{
 					count: 8
-					id: "3A8FAFFBDCD92E30"
+					id: "61E0B44E3C2D0BD8"
 					item: "create:cardboard_package_10x8"
 					type: "item"
 				}
 				{
-					id: "7F5E8B581E7FFEE4"
+					id: "663D1749383601D7"
 					type: "xp"
 					xp: 250
 				}
@@ -1940,12 +1989,12 @@
 					type: "item"
 				}
 				{
-					id: "5A0FB9D874939F5D"
+					id: "2B595586116177D4"
 					item: "create:goggles"
 					type: "item"
 				}
 				{
-					id: "43FF69E1786ADF0B"
+					id: "530F0844AE269FC9"
 					item: "create:blue_toolbox"
 					type: "item"
 				}

@@ -32,7 +32,7 @@
 					type: "item"
 				}
 				{
-					id: "5BB270F0D5451EEA"
+					id: "46DEABEA1EF4FD4B"
 					type: "xp"
 					xp: 50
 				}
@@ -59,16 +59,16 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:silver_ingot"
-			id: "175AFB7BF6AB2D18"
+			id: "60AD3F428C431226"
 			rewards: [
 				{
 					count: 4
-					id: "5E16D7D5A58BC96C"
+					id: "31687FC50D6C2736"
 					item: "iceandfire:raw_silver"
 					type: "item"
 				}
 				{
-					id: "122D7FA6814F7F54"
+					id: "4E2DA34701ECF590"
 					type: "xp"
 					xp: 200
 				}
@@ -77,20 +77,20 @@
 			tasks: [
 				{
 					count: 4L
-					id: "62BBF7CDDCB61F1F"
+					id: "1E644F4DC8CD2B78"
 					item: "iceandfire:copper_ingot"
 					type: "item"
 				}
 				{
 					count: 4L
-					id: "363A8F3B2395DE91"
+					id: "6A97D36AFC0B369E"
 					item: "iceandfire:silver_ingot"
 					type: "item"
 				}
 			]
 			title: "Cobre e Prata"
-			x: 0.0d
-			y: -16.0d
+			x: 12d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -101,7 +101,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:sapphire_gem"
-			id: "33E405E7A1F972A3"
+			id: "12C82E97669FA863"
 			rewards: [
 				{
 					id: "616AE39E25E9A77E"
@@ -109,7 +109,7 @@
 					type: "item"
 				}
 				{
-					id: "23D62CFA79C0AD38"
+					id: "1E32906067B81FEA"
 					type: "xp"
 					xp: 200
 				}
@@ -130,8 +130,8 @@
 				}
 			]
 			title: "Joias da Terra"
-			x: -4.0d
-			y: -7.0d
+			x: 15d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -142,7 +142,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:bestiary"
-			id: "1B1B9EB69CFCF0EA"
+			id: "3D9D9E3251AC2CE1"
 			rewards: [{
 				id: "289C98D054CACEA7"
 				type: "xp"
@@ -151,7 +151,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "6CBE9F7B67C33E9D"
+					id: "153CE2B4328AE5AE"
 					item: "iceandfire:bestiary"
 					type: "item"
 				}
@@ -162,8 +162,8 @@
 				}
 			]
 			title: "O Bestiário"
-			x: -14.0d
-			y: -8.0d
+			x: 12d
+			y: -4d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -199,8 +199,8 @@
 				type: "item"
 			}]
 			title: "Ovo de Dragão"
-			x: -8.0d
-			y: 0.0d
+			x: 0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1DDCBDDD6DAA9609"]
@@ -210,7 +210,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:dragon_horn"
-			id: "40B12B52E3AFD6F0"
+			id: "1BA23586FF5D63D2"
 			rewards: [
 				{
 					count: 3
@@ -219,7 +219,7 @@
 					type: "item"
 				}
 				{
-					id: "6622C48752D15FFD"
+					id: "6582F5CFA201E6A7"
 					type: "xp"
 					xp: 300
 				}
@@ -232,8 +232,8 @@
 				type: "item"
 			}]
 			title: "Chifre de Dragão"
-			x: -14.0d
-			y: 8.0d
+			x: 0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -243,7 +243,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:fire_dragon_heart"
-			id: "79DE5A3A07A62318"
+			id: "6F70E338F12B9EE6"
 			rewards: [
 				{
 					count: 4
@@ -252,7 +252,7 @@
 					type: "item"
 				}
 				{
-					id: "2CB738D1F6014002"
+					id: "55094A7AD08C9310"
 					type: "xp"
 					xp: 500
 				}
@@ -273,8 +273,8 @@
 				}
 			]
 			title: "Coração de Fogo"
-			x: -4.0d
-			y: 7.0d
+			x: 6d
+			y: -4d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -293,7 +293,7 @@
 					type: "item"
 				}
 				{
-					id: "6F1E02A04DBDE496"
+					id: "300896B65E5D29CF"
 					type: "xp"
 					xp: 500
 				}
@@ -314,8 +314,8 @@
 				}
 			]
 			title: "Coração de Gelo"
-			x: 0.0d
-			y: 16.0d
+			x: -6d
+			y: -4d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -349,14 +349,14 @@
 				}
 				{
 					count: 2L
-					id: "3C39F02B068F5B67"
+					id: "0345451EB6E48F1A"
 					item: "iceandfire:lightning_dragon_blood"
 					type: "item"
 				}
 			]
 			title: "Coração do Raio"
-			x: 4.0d
-			y: 7.0d
+			x: 9d
+			y: -6d
 		}
 		{
 			dependencies: [
@@ -379,7 +379,7 @@
 			id: "7DDE42CFFBD9E584"
 			rewards: [
 				{
-					id: "43E775C6624AC9B6"
+					id: "06066AC418F9BBC7"
 					item: {
 						Count: 1
 						id: "iceandfire:dragonbone_pickaxe"
@@ -390,7 +390,7 @@
 					type: "item"
 				}
 				{
-					id: "610D291C28A6B191"
+					id: "779E5CF87FAE8890"
 					type: "xp"
 					xp: 450
 				}
@@ -399,12 +399,12 @@
 			tasks: [
 				{
 					count: 6L
-					id: "2324814DC47E4888"
+					id: "487D906D96B25929"
 					item: "iceandfire:dragonbone"
 					type: "item"
 				}
 				{
-					id: "18329DCD63E4F181"
+					id: "5F3224949A11161D"
 					item: {
 						Count: 1
 						id: "iceandfire:dragonbone_sword"
@@ -416,8 +416,8 @@
 				}
 			]
 			title: "Ossos que Viram Aço"
-			x: 14.0d
-			y: 8.0d
+			x: 0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7DDE42CFFBD9E584"]
@@ -463,14 +463,14 @@
 				}
 				{
 					count: 2L
-					id: "39D24209212E58F4"
+					id: "064FD7508D5BDFCA"
 					item: "iceandfire:dragonsteel_lightning_ingot"
 					type: "item"
 				}
 			]
 			title: "Dragonsteel: As Três Fúrias"
-			x: 8.0d
-			y: 0.0d
+			x: 0d
+			y: -13.5d
 		}
 		{
 			dependencies: ["6F69FC90A2F3199E"]
@@ -489,20 +489,20 @@
 					type: "item"
 				}
 				{
-					id: "39530485DECC2F86"
+					id: "0ADEDF7419DEEF44"
 					type: "xp"
 					xp: 600
 				}
 			]
 			size: 1.5d
 			tasks: [{
-				id: "1BE8A6B0887EFB70"
+				id: "67B175C7D093D7E9"
 				item: "iceandfire:dragonarmor_diamond_body"
 				type: "item"
 			}]
 			title: "Armadura de Dragão"
-			x: 14.0d
-			y: -8.0d
+			x: 0d
+			y: -16.5d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -522,12 +522,12 @@
 			rewards: [
 				{
 					count: 3
-					id: "69A648BFF0FD5CF9"
+					id: "0D6862678843D47A"
 					item: "minecraft:diamond"
 					type: "item"
 				}
 				{
-					id: "3614037D6AB0E897"
+					id: "624C8295C3AD4C93"
 					type: "xp"
 					xp: 400
 				}
@@ -536,7 +536,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "0DEF85598D4D36CB"
+					id: "39CD8E799DC8A52F"
 					item: {
 						Count: 1
 						id: "iceandfire:cyclops_eye"
@@ -553,8 +553,8 @@
 				}
 			]
 			title: "O Olho do Ciclope"
-			x: 4.0d
-			y: -7.0d
+			x: -15d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -565,7 +565,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:hydra_heart"
-			id: "58E561D197A721D0"
+			id: "231517092658B4B8"
 			rewards: [
 				{
 					count: 4
@@ -589,14 +589,14 @@
 				}
 				{
 					count: 2L
-					id: "48C50516391E7AF5"
+					id: "3C35A31BD7432B27"
 					item: "iceandfire:hydra_fang"
 					type: "item"
 				}
 			]
 			title: "As Cabeças da Hidra"
-			x: 0.0d
-			y: -9.0d
+			x: -12d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -639,8 +639,8 @@
 				type: "item"
 			}]
 			title: "O Olhar que Petrifica"
-			x: -2.0d
-			y: -4.0d
+			x: -9d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -654,7 +654,7 @@
 			rewards: [
 				{
 					count: 3
-					id: "24B22644126F1573"
+					id: "32BD8AB9AB4CC8C6"
 					item: "minecraft:diamond"
 					type: "item"
 				}
@@ -673,7 +673,7 @@
 					type: "item"
 				}
 				{
-					id: "69BC39613F3D91BC"
+					id: "56A382A3FF96453B"
 					item: {
 						Count: 1
 						id: "iceandfire:cockatrice_scepter"
@@ -685,8 +685,8 @@
 				}
 			]
 			title: "Bico de Cockatrice"
-			x: -7.5d
-			y: -4.5d
+			x: -6d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -697,7 +697,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:hippogryph_egg"
-			id: "35B7036C35969D71"
+			id: "219FF37C1D70C423"
 			rewards: [
 				{
 					id: "0A864063CA91321E"
@@ -718,14 +718,14 @@
 					type: "item"
 				}
 				{
-					id: "27F3BED30CB22909"
+					id: "3C0C1F0E006D4193"
 					item: "iceandfire:hippogryph_talon"
 					type: "item"
 				}
 			]
 			title: "Ovo de Hipogrifo"
-			x: -4.5d
-			y: 0.0d
+			x: -6d
+			y: -8d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -772,8 +772,8 @@
 				}
 			]
 			title: "Nadadeira do Hipocampo"
-			x: -7.5d
-			y: 4.5d
+			x: -12d
+			y: -4d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -783,11 +783,11 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:seaserpent_skull"
-			id: "6940448173F7E6CB"
+			id: "068BECA928B5F3A8"
 			rewards: [
 				{
 					count: 6
-					id: "2644F12B1244ECE5"
+					id: "14EA759163650006"
 					item: "iceandfire:sea_serpent_scales_blue"
 					type: "item"
 				}
@@ -801,7 +801,7 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "03CECE2D3245DA0B"
+					id: "670974AD1047873A"
 					item: "iceandfire:seaserpent_skull"
 					type: "item"
 				}
@@ -813,8 +813,8 @@
 				}
 			]
 			title: "Escamas da Serpente Marinha"
-			x: -2.5d
-			y: 4.0d
+			x: -9d
+			y: -6d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -827,7 +827,7 @@
 			id: "210D21BF51327E0C"
 			rewards: [
 				{
-					id: "731B811BF112C261"
+					id: "447096DA994D21CE"
 					item: {
 						Count: 1
 						id: "iceandfire:siren_flute"
@@ -847,12 +847,12 @@
 			size: 1.5d
 			tasks: [
 				{
-					id: "7F55BD72388EF235"
+					id: "18F53C35319E2B45"
 					item: "iceandfire:siren_tear"
 					type: "item"
 				}
 				{
-					id: "79E3CACFABDD40AF"
+					id: "2805C157E7B952C7"
 					item: {
 						Count: 1
 						id: "iceandfire:earplugs"
@@ -864,8 +864,8 @@
 				}
 			]
 			title: "Lágrima da Sereia"
-			x: 0.0d
-			y: 9.0d
+			x: -9d
+			y: -2d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -876,10 +876,10 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:stymphalian_feather_bundle"
-			id: "18E0729F65A60E6D"
+			id: "6EFE25A832AD9B00"
 			rewards: [
 				{
-					id: "25C76E583ADC5AF0"
+					id: "33DFA16CC9C05B03"
 					item: {
 						Count: 1
 						id: "iceandfire:stymphalian_bird_dagger"
@@ -900,19 +900,19 @@
 			tasks: [
 				{
 					count: 2L
-					id: "29B132BBA3CCFAB3"
+					id: "4D4DA76F8533AD25"
 					item: "iceandfire:stymphalian_feather_bundle"
 					type: "item"
 				}
 				{
-					id: "13BC68532868E8B6"
+					id: "611E89403C82623E"
 					item: "iceandfire:stymphalian_skull"
 					type: "item"
 				}
 			]
 			title: "Penas do Pássaro de Estínfalo"
-			x: 2.0d
-			y: 4.0d
+			x: -3d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -923,7 +923,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:amphithere_feather"
-			id: "7401A6ED1A5A7653"
+			id: "44435B3BC1FC763F"
 			rewards: [
 				{
 					id: "50BF6834D62441C7"
@@ -937,7 +937,7 @@
 					type: "item"
 				}
 				{
-					id: "243677805C2AB24E"
+					id: "312C94A23D8CC977"
 					type: "xp"
 					xp: 350
 				}
@@ -947,19 +947,19 @@
 			tasks: [
 				{
 					count: 2L
-					id: "3A516C6AC39D186C"
+					id: "7EC55FE2AEBB79B2"
 					item: "iceandfire:amphithere_feather"
 					type: "item"
 				}
 				{
-					id: "3BB1086B5957AB87"
+					id: "0F8DBD34D9449793"
 					item: "iceandfire:amphithere_skull"
 					type: "item"
 				}
 			]
 			title: "Pena da Anfíptere"
-			x: 7.5d
-			y: 4.5d
+			x: 0d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -972,7 +972,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:troll_tusk"
-			id: "0F6A2947CA51C797"
+			id: "3E3FF62EDF3A4D90"
 			rewards: [
 				{
 					id: "70BAF92AB9EB88C6"
@@ -986,7 +986,7 @@
 					type: "item"
 				}
 				{
-					id: "4BCF11755215CA52"
+					id: "002FBB5C0855FD73"
 					type: "xp"
 					xp: 400
 				}
@@ -1007,8 +1007,8 @@
 				}
 			]
 			title: "Presas de Troll"
-			x: 4.5d
-			y: 0.0d
+			x: 9d
+			y: -2d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1022,7 +1022,7 @@
 			id: "09C97C8789F41C14"
 			rewards: [
 				{
-					id: "65FB8D2C3739C7E4"
+					id: "242B004299D8EA79"
 					item: {
 						Count: 1
 						id: "iceandfire:deathworm_gauntlet_red"
@@ -1049,14 +1049,14 @@
 				}
 				{
 					count: 2L
-					id: "4D2465AA32E18E85"
+					id: "07DBBABDBC6088C8"
 					item: "iceandfire:deathworm_chitin_red"
 					type: "item"
 				}
 			]
 			title: "Língua do Verme da Morte"
-			x: 7.5d
-			y: -4.5d
+			x: 3d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1094,7 +1094,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "105173E60AA346F7"
+					id: "7C58892BFFEF293A"
 					item: "iceandfire:myrmex_desert_resin"
 					type: "item"
 				}
@@ -1106,8 +1106,8 @@
 				}
 			]
 			title: "Colônia do Deserto"
-			x: 2.5d
-			y: -4.0d
+			x: 6d
+			y: -8d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1132,7 +1132,7 @@
 					type: "item"
 				}
 				{
-					id: "21FA93319236C107"
+					id: "47A3E2BB6EADB07F"
 					type: "xp"
 					xp: 400
 				}
@@ -1142,7 +1142,7 @@
 			tasks: [
 				{
 					count: 4L
-					id: "39CC6AACC41A6A0C"
+					id: "2904EEEC55B95CE6"
 					item: "iceandfire:myrmex_jungle_resin"
 					type: "item"
 				}
@@ -1154,8 +1154,8 @@
 				}
 			]
 			title: "Colônia da Selva"
-			x: 0.0d
-			y: -5.5d
+			x: 12d
+			y: -8d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1175,7 +1175,7 @@
 					type: "item"
 				}
 				{
-					id: "217335FFF114684F"
+					id: "3091CE54460BE151"
 					type: "xp"
 					xp: 300
 				}
@@ -1183,13 +1183,13 @@
 			size: 1.5d
 			tasks: [{
 				count: 3L
-				id: "1C58D357D071336F"
+				id: "30915B77E053DB5F"
 				item: "iceandfire:ectoplasm"
 				type: "item"
 			}]
 			title: "Ectoplasma"
-			x: -1.5d
-			y: -2.0d
+			x: 6d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1214,7 +1214,7 @@
 					type: "item"
 				}
 				{
-					id: "7A3754119126646C"
+					id: "2703A0E40BD6F20F"
 					type: "xp"
 					xp: 500
 				}
@@ -1228,8 +1228,8 @@
 				type: "item"
 			}]
 			title: "Osso Amaldiçoado"
-			x: -2.5d
-			y: 0.0d
+			x: 9d
+			y: -10d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1243,10 +1243,10 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:pixie_dust"
-			id: "69FB8817283F2372"
+			id: "42A7AD3F5BDDB66C"
 			rewards: [
 				{
-					id: "1F1FC17247B3C562"
+					id: "4A6C53CDC847A2CE"
 					item: {
 						Count: 1
 						id: "iceandfire:pixie_wand"
@@ -1265,13 +1265,13 @@
 			size: 1.5d
 			tasks: [{
 				count: 4L
-				id: "09F402AD854842B1"
+				id: "5AC5E363D1468944"
 				item: "iceandfire:pixie_dust"
 				type: "item"
 			}]
 			title: "Pó de Fada"
-			x: -4.5d
-			y: 2.5d
+			x: 9d
+			y: 3d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1291,7 +1291,7 @@
 			rewards: [
 				{
 					count: 8
-					id: "24CCAC97F196B079"
+					id: "5C4FEAA665DC9012"
 					item: "minecraft:prismarine_shard"
 					type: "item"
 				}
@@ -1303,7 +1303,7 @@
 			]
 			size: 1.5d
 			tasks: [{
-				id: "67203851C28181C1"
+				id: "52507F040FB2BD0C"
 				item: {
 					Count: 1
 					id: "iceandfire:tide_trident"
@@ -1314,8 +1314,8 @@
 				type: "item"
 			}]
 			title: "O Tridente das Marés"
-			x: -1.5d
-			y: 2.0d
+			x: -12d
+			y: -8d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1358,8 +1358,8 @@
 				type: "item"
 			}]
 			title: "Lança de Pesca"
-			x: 1.5d
-			y: 2.0d
+			x: -9d
+			y: -10d
 		}
 		{
 			dependencies: [
@@ -1380,7 +1380,7 @@
 			id: "265DE87B1CFFE980"
 			rewards: [
 				{
-					id: "1644E7F4529CE199"
+					id: "5CD3605768EE5CFF"
 					item: "iceandfire:banner_pattern_dread"
 					type: "item"
 				}
@@ -1399,14 +1399,14 @@
 					type: "item"
 				}
 				{
-					id: "218D5532422B74C7"
+					id: "50D04C137E86DD85"
 					item: "iceandfire:dread_portal"
 					type: "item"
 				}
 			]
 			title: "O Portal Sombrio"
-			x: 4.5d
-			y: 2.5d
+			x: -2d
+			y: 7.5d
 		}
 		{
 			dependencies: ["265DE87B1CFFE980"]
@@ -1416,10 +1416,10 @@
 			]
 			hide_until_deps_complete: true
 			icon: "iceandfire:dread_stone"
-			id: "23FB130B7B368EB2"
+			id: "2C959956BBEE38CF"
 			rewards: [
 				{
-					id: "1C7E9FE58F8B7662"
+					id: "2736D07C9CEFA15E"
 					item: {
 						Count: 1
 						id: "iceandfire:dread_knight_sword"
@@ -1439,7 +1439,7 @@
 			tasks: [
 				{
 					count: 8L
-					id: "5D744BD5F71DB7DE"
+					id: "6DA4A8A4ED53FB21"
 					item: "iceandfire:dread_stone"
 					type: "item"
 				}
@@ -1451,8 +1451,8 @@
 				}
 			]
 			title: "Pedra do Reino Dread"
-			x: 2.5d
-			y: 0.0d
+			x: 0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["19502E0497E47D51"]
@@ -1475,12 +1475,12 @@
 			id: "1CB95B2962125867"
 			rewards: [
 				{
-					id: "40978A5D063A8A1A"
+					id: "227076E3AB618F9B"
 					item: "iceandfire:dread_key"
 					type: "item"
 				}
 				{
-					id: "5FAD1FC782B6919C"
+					id: "629D01CCCB13D6F7"
 					type: "xp"
 					xp: 1200
 				}
@@ -1488,7 +1488,7 @@
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
-				id: "3AFFD67E1720FCCE"
+				id: "394F038DBA135462"
 				item: {
 					Count: 1
 					id: "iceandfire:dread_queen_sword"
@@ -1499,8 +1499,8 @@
 				type: "item"
 			}]
 			title: "A Rainha do Dread"
-			x: 1.5d
-			y: -2.0d
+			x: 2d
+			y: 11.5d
 		}
 	]
 	title: "§3Gelo e Fogo"
