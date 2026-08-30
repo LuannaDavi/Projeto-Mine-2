@@ -1,4 +1,3 @@
-AdvancementPlaques-1.20.1-forge-1.6.9.jar
 ad_astra-forge-1.20.1-1.15.20.jar
 ad_astra_extra_additions-1.20.1-1.1.1.jar
 ad_astra_more_structures-1.20.1-forge.jar
@@ -9,6 +8,7 @@ AI-Improvements-1.20-0.5.2.jar
 alexscaves-2.0.2.jar
 alexsdelight-1.5.jar
 alexsmobs-1.22.9.jar
+alternate_current-mc1.20-1.7.0.jar
 amendments-1.20-2.2.5.jar
 Animalistic_mod_1.2.2_1.20.1.jar
 Animation_Overhaul-forge-1.20.x-1.3.1.jar
@@ -20,6 +20,7 @@ ars_creo-1.20.1-4.3.0.jar
 ars_elemental-1.20.1-0.6.8.0.jar
 ars_nouveau-1.20.1-4.12.7-all.jar
 artifacts-forge-9.5.19.jar
+baguettelib-1.20.1-Forge-1.1.6.jar
 balm-forge-1.20.1-7.3.41-all.jar
 BetterAdvancements-Forge-1.20.1-0.4.2.60.jar
 bettercombat-forge-1.9.0+1.20.1.jar
@@ -64,6 +65,7 @@ Controlling-forge-1.20.1-12.0.2.jar
 Corgilib-Forge-1.20.1-4.0.3.4.jar
 coroutil-forge-1.20.1-1.3.7.jar
 corpse-forge-1.20.1-1.0.23.jar
+corpsecurioscompat-1.20.1-Forge-4.0.1.jar
 create-1.20.1-6.0.8.jar
 create-confectionery1.20.1_v1.1.3.jar
 create-stuff-additions1.20.1_v2.1.2.jar
@@ -84,6 +86,7 @@ curios-forge-5.14.1+1.20.1.jar
 DarkPaintings-Forge-1.20.1-17.0.6.jar
 Data_Anchor-forge-1.20.1-1.0.0.20.jar
 deltaboxlib-forge-2.2.0+1.20.1.jar
+dh_dimension_toggler-1.0.2.jar
 DiagonalFences-v8.1.5-1.20.1-Forge.jar
 diffs_tools-1.0.0-forge-1.20.1.jar
 DistantHorizons-3.2.0-b-1.20.1-fabric-forge.jar
@@ -104,7 +107,7 @@ efs_iss-1.0.3.jar
 efs_tacz-1.0.1.jar
 elytraslot-forge-6.4.4+1.20.1.jar
 embeddium-0.3.31+mc1.20.1.jar
-emi-1.1.24+1.20.1+forge.jar
+emi-1.1.24+1.20.1+forge-fixed.jar
 emi-letsdo-compat-1.8.2.jar
 emiffect-forge-1.1.2+mc1.20.1.jar
 EMIProfessions-forge-1.20.1-1.0.4.jar
@@ -113,6 +116,7 @@ emi_loot-0.7.9+1.20.1+forge.jar
 emotecraft-for-MC1.20.1-2.2.7-b.build.50-forge.jar
 EnchantingInfuser-v8.0.3-1.20.1-Forge.jar
 EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar
+enchantment_custom_table-2.0.1-forge-mc1.20.1.jar
 endersdelight-forge-1.20.1-1.1.3.jar
 Enhanced-Celestials-forge-1.20.1-5.0.3.2.jar
 epic-fight-20.14.17-mc1.20.1-forge.jar
@@ -122,6 +126,8 @@ EpicFight-Resurrection-forge1.20.1-0.20.12.2.jar
 epicfightsmartitems-1.2.0-forge-1.20.1.jar
 epictweaks-forge-1.20.1-1.1.1.jar
 ExplorersCompass-1.20.1-1.4.0-forge.jar
+ExtraLib-3.0.12-1.20.1-Forge.jar
+ExtraQuests-1.7.0-1.20.1-Forge.jar
 fallingleaves-1.20.1-2.1.2.jar
 FallingTree-1.20.1-4.3.4.jar
 FantasiaCraft-0_1_0.jar
@@ -173,6 +179,7 @@ Infectious-forge-1.20.1-1.7.jar
 integrated_api-1.7.4+1.20.1-forge.jar
 InventoryProfilesNext-forge-1.20-1.10.20.jar
 ironchest-1.20.1-14.4.4.jar
+ironfurnaces-1.20.1-4.1.8.jar
 irons_lib-1.20.1-2.1.0.jar
 irons_spellbooks-1.20.1-3.16.2.jar
 ItemPhysicLite_FORGE_v1.6.11_mc1.20.1.jar
@@ -244,6 +251,7 @@ PresenceFootsteps-1.20.1-1.9.1-beta.1.jar
 Prism-1.20.1-forge-1.0.5.jar
 PuzzlesLib-v8.1.33-1.20.1-Forge.jar
 Quark-4.0-462.jar
+radium-mc1.20.1-0.12.4+git.26c9d8e.jar
 realmrpg_skeletons-1.1.0-forge-1.20.1.jar
 recruits-1.20.1-1.15.2.jar
 refurbished_furniture-forge-1.20.1-1.0.20.jar
@@ -270,6 +278,7 @@ somakespells-1.0.8-1.20.1.jar
 sophisticatedbackpacks-1.20.1-3.24.60.1982.jar
 sophisticatedcore-1.20.1-1.3.70.2166.jar
 sound-physics-remastered-forge-1.20.1-1.5.1.jar
+spark-1.10.53-forge.jar
 spawnanimations-v1.11.2-mc1.17-1.21.5-mod.jar
 Steam_Rails-1.7.2+forge-mc1.20.1.jar
 structure_gel-1.20.1-2.16.2.jar
@@ -296,6 +305,7 @@ TravelersTitles-1.20-Forge-4.0.2.jar
 traveloptics-6.3.0-1.20.1.jar
 twilightforest-1.20.1-4.3.2508-universal.jar
 UniversalEnchants-v8.0.0-1.20.1-Forge.jar
+unsafe-world-random-access-detector-1.1.0+forge.jar
 useful_ribbits-1.0.2-forge-1.20.1.jar
 villagernames-1.20.1-8.5.jar
 VisualWorkbench-v8.0.1-1.20.1-Forge.jar
