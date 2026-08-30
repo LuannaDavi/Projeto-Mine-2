@@ -1,0 +1,11 @@
+{
+  "name": "Nether",
+  "category": "guia:dimensoes",
+  "icon": "minecraft:netherrack",
+  "pages": [
+    {
+      "type": "text",
+      "text": "O Nether reinventado, com cantos e perigos que a versão original nunca teve."
+    }
+  ]
+}

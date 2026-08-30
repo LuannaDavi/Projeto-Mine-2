@@ -1,0 +1,11 @@
+{
+  "name": "Aether",
+  "category": "guia:dimensoes",
+  "icon": "aether:ambrosium_shard",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Ilhas flutuantes, um paraíso logo acima das nuvens que ninguém no chão sabia que existia."
+    }
+  ]
+}

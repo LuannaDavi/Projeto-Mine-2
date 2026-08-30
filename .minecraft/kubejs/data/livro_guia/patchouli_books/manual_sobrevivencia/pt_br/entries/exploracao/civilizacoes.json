@@ -1,0 +1,11 @@
+{
+  "name": "Civilizações",
+  "category": "guia:exploracao",
+  "icon": "minecolonies:supplycampdeployer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Aldeias, comércio, exércitos de recrutas e a fundação da sua própria colônia."
+    }
+  ]
+}

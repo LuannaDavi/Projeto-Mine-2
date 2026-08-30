@@ -1,0 +1,11 @@
+{
+  "name": "Create",
+  "category": "guia:tecnologia",
+  "icon": "create:cogwheel",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Engrenagens, esteiras e contraptions que fazem o trabalho pesado por você — a era da automação mecânica começa aqui."
+    }
+  ]
+}

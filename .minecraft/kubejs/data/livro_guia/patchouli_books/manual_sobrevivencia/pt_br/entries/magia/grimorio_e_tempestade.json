@@ -1,0 +1,21 @@
+{
+  "name": "Grimório e Tempestade",
+  "category": "guia:magia",
+  "icon": "irons_spellbooks:arcane_essence",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Um grimório em branco não é fraco — é uma pergunta esperando resposta. Runas, afinidades e escolas inteiras de magia cabem dentro de páginas que ainda não foram escritas."
+    },
+    {
+      "type": "text",
+      "text": "Do primeiro grimório de cobre ao Necronomicon, passando por mares, tempestades sônicas e uma espada de luz que ninguém sabe explicar como parou aqui.\n\n$(li)Dica: depois de aberto, escolha uma escola pra começar — não precisa aprender todas na ordem. É o seu grimório.$()"
+    },
+    {
+      "type": "link",
+      "text": "O Iron's Spellbooks tem um guia próprio, com toda a progressão de feitiços explicada em detalhe.",
+      "link_text": "Abrir o guia oficial do Iron's Spellbooks",
+      "entry": "irons_spellbooks:progression/early_game"
+    }
+  ]
+}

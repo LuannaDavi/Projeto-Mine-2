@@ -1,0 +1,11 @@
+{
+  "name": "Criaturas",
+  "category": "guia:combate",
+  "icon": "minecraft:bone",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Bosses, feras raras e caçadas que vão testar seu equipamento até o limite."
+    }
+  ]
+}

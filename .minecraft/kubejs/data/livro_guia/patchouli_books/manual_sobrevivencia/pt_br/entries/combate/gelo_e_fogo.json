@@ -1,0 +1,15 @@
+{
+  "name": "Gelo e Fogo",
+  "category": "guia:combate",
+  "icon": "iceandfire:dragonscales_red",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Gelo, fogo e raio caem do céu com asas. Nas profundezas, uma rainha maldita espera atrás de um portal que ninguém deveria ter aberto a primeira vez."
+    },
+    {
+      "type": "text",
+      "text": "Dragões, mitologia grega inteira, trolls, fadas, e uma dimensão paralela cheia de coisas que só querem sua morte.\n\n$(li)Dica: comece pesquisando cobre e prata — são os minérios básicos desse mod, achados perto da superfície.$()"
+    }
+  ]
+}

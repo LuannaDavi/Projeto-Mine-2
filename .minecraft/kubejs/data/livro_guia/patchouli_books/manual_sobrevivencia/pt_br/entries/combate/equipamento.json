@@ -1,0 +1,11 @@
+{
+  "name": "Equipamento",
+  "category": "guia:combate",
+  "icon": "minecraft:netherite_chestplate",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Armaduras, escudos e armas — monte o arsenal que vai te levar pro resto da jornada."
+    }
+  ]
+}

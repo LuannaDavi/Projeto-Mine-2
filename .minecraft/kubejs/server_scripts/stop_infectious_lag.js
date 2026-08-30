@@ -52,56 +52,35 @@
 //   - EntityEvents.spawned, cancelavel via event.cancel()
 // ============================================================
 
-// ============================================================
-// stop_infectious_lag.js
-// Impede o bug de spawn do Infectious que gera o spam de "Tried
-// to add entity ... but it was marked as removed already".
-//
-// Causa raiz real (confirmada via decompilacao de
-// ZombieOnInitialEntitySpawnProcedure.class e mais de 50
-// procedures irmãs, uma por variante de zumbi):
-//   O proprio mod tenta descartar (discard) o zumbi NO MOMENTO
-//   do spawn quando: nao ha jogador num raio de 10 blocos E
-//   (luz baixa OU exposto ao ceu). Isso parece ser a tentativa
-//   (mal feita) do mod de simular "queimar no sol" -- mas como
-//   roda durante o proprio processo de adicionar a entidade ao
-//   mundo (nao depois, num tick normal), cria uma corrida: o
-//   jogo ainda esta registrando a entidade quando o mod manda
-//   descartar ela, gerando o erro repetidamente. Como spawn
-//   natural sem jogador por perto e o cenario mais comum do
-//   jogo, isso acontece o tempo todo.
-//
-// Historico: v1 mirava so o ajudante mutation_trigger (funcionou
-// mas nao era a causa principal). v2 tentava detectar UUID
-// duplicado (nao funcionou, a causa nao e duplicacao de UUID).
-// v3 (esta versao) ataca a causa raiz de verdade: cancela o
-// spawn ANTES do mod ter chance de rodar sua logica de descarte
-// -- replicando a mesma condicao que o mod usa, mas de forma
-// limpa, sem a corrida.
-//
-// API confirmada via decompilacao do kubejs-forge-2001.6.5-build.26.jar:
-//   - EntityEvents.spawned, cancelavel via event.cancel()
-// ============================================================
+// UUID -> tick em que foi visto pela ultima vez
+const seenUUIDs = new Map()
+let tickCounter = 0
+
+ServerEvents.tick(event => {
+    tickCounter++
+    // limpa entradas com mais de 10 segundos (200 ticks) a cada
+    // 5 segundos, pra nao vazar memoria numa sessao longa
+    if (tickCounter % 100 === 0) {
+        for (const [uuid, seenAt] of seenUUIDs) {
+            if (tickCounter - seenAt > 200) {
+                seenUUIDs.delete(uuid)
+            }
+        }
+    }
+})
 
 EntityEvents.spawned(event => {
     let id = event.entity.type
-    if (!id.startsWith('infectious:') || !id.includes('zombie')) return
+    if (!id.startsWith('infectious:')) return
 
-    let level = event.entity.level
-    let pos = event.entity.blockPosition()
+    let uuid = event.entity.uuid.toString()
 
-    // mesma condicao usada pelo mod: sem jogador num raio de 10
-    // blocos E (luz baixa OU exposto ao ceu)
-    let nearbyPlayer = level.getNearestPlayer(event.entity, 10)
-    if (nearbyPlayer) return // tem jogador perto, deixa nascer normal
-
-    let lowLight = level.getMaxLocalRawBrightness(pos) <= 4
-    let exposedToSky = level.canSeeSky(pos)
-
-    if (lowLight || exposedToSky) {
-        // essa entidade ia se autodestruir no mesmo instante por
-        // causa da logica do proprio mod -- cancela o spawn de
-        // forma limpa em vez de deixar a corrida acontecer
+    if (seenUUIDs.has(uuid)) {
+        // essa entidade ja tentou nascer antes, ha pouco tempo --
+        // isso e a re-adicao bugada, cancela
         event.cancel()
+        return
     }
+
+    seenUUIDs.set(uuid, tickCounter)
 })

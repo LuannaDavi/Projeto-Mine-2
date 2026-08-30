@@ -1,0 +1,11 @@
+{
+  "name": "Mekanism",
+  "category": "guia:tecnologia",
+  "icon": "mekanism:digital_miner",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Reatores, tubos de energia e máquinas que dobram as leis da física a seu favor."
+    }
+  ]
+}

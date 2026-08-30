@@ -1,0 +1,17 @@
+{
+  "name": "Mystical Agriculture",
+  "category": "guia:tecnologia",
+  "icon": "mysticalagriculture:inferium_essence",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Agricultura mágica pra plantar até minério — planta essência de ferro, colhe lingote. Do Inferium ao Supremium, cada essência é um degrau de progressão."
+    },
+    {
+      "type": "link",
+      "text": "O próprio mod tem um guia completo, cobrindo desde a primeira semente até os augmentos de ferramenta mais avançados.",
+      "link_text": "Abrir o guia oficial do Mystical Agriculture",
+      "entry": "mysticalagriculture:advances/mystical_fertilizer"
+    }
+  ]
+}

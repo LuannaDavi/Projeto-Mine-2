@@ -1,0 +1,15 @@
+{
+  "name": "O Caminho do Lendário",
+  "category": "guia:desafios",
+  "icon": "minecraft:nether_star",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Você chegou até aqui. Dominou a engenharia mecânica, as leis da física quântica, a magia arcana, construiu um império e forjou o arsenal de um guerreiro lendário. Isso por si só já diz muito."
+    },
+    {
+      "type": "text",
+      "text": "Mas chegar não é suficiente. Estes desafios não foram feitos para serem rápidos. Cada um exige horas de preparação, recursos raros e domínio real dos sistemas deste modpack.\n\nNão existe atalho. Não existe sorte. Só trabalho, paciência e vontade. Prove que você merece o título."
+    }
+  ]
+}

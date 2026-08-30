@@ -1,0 +1,17 @@
+{
+  "name": "Ars Nouveau",
+  "category": "guia:magia",
+  "icon": "ars_nouveau:novice_spell_book",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Grimórios, glifos e feitiços moldáveis à sua escolha — seu primeiro contato com a magia arcana."
+    },
+    {
+      "type": "link",
+      "text": "Quer aprender a combinar glifos de verdade? O próprio guia do Ars Nouveau explica cada peça do sistema, passo a passo.",
+      "link_text": "Abrir o Manual Desgastado (guia oficial do mod)",
+      "entry": "ars_nouveau:glyphs_1/glyph_ignite"
+    }
+  ]
+}

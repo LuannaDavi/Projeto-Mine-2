@@ -1,0 +1,11 @@
+{
+  "name": "Exploração",
+  "category": "guia:exploracao",
+  "icon": "minecraft:compass",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Estruturas escondidas, pesca lendária, ruínas de todo tipo de bioma — o mundo é maior do que parece."
+    }
+  ]
+}

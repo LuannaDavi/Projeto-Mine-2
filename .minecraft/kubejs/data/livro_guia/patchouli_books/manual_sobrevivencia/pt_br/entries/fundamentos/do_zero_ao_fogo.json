@@ -1,0 +1,15 @@
+{
+  "name": "Do Zero ao Fogo",
+  "category": "guia:fundamentos",
+  "icon": "minecraft:furnace",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Bem-vindo a este mundo vasto e perigoso. Você acordou sem nada. O primeiro passo é simples: construa uma mesa de trabalho e uma fornalha de pedra."
+    },
+    {
+      "type": "text",
+      "text": "$(li)Dica: colete madeira, faça tábuas, depois a mesa. Com a fornalha, você poderá fundir minérios.$()\n\nGraças ao FallingTree, basta cortar a base de uma árvore e o resto cai automaticamente — corte rápido garantido!"
+    }
+  ]
+}

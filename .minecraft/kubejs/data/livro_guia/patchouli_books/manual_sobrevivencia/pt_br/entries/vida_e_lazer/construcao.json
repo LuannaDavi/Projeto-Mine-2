@@ -1,0 +1,11 @@
+{
+  "name": "Construção",
+  "category": "guia:vida_e_lazer",
+  "icon": "supplementaries:wood_gate",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Blocos decorativos, móveis e tudo que transforma um abrigo numa casa de verdade."
+    }
+  ]
+}

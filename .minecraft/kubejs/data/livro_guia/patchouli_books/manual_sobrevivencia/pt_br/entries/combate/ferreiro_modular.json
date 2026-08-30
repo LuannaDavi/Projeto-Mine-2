@@ -1,0 +1,15 @@
+{
+  "name": "Ferreiro Modular",
+  "category": "guia:combate",
+  "icon": "tconstruct:pattern",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Ferramentas modulares: cabo, cabeça e extra, cada peça trocável, cada material com propriedades próprias. Combine errado e a ferramenta é ruim. Combine certo e ela supera qualquer coisa feita numa bigorna comum."
+    },
+    {
+      "type": "text",
+      "text": "Da primeira fundição ao Manyullyn, passando por bronze, aço e uma escória de slime que ninguém pediu pra existir.\n\n$(li)Dica: monte a Fundição antes de mais nada — sem ela, nenhuma liga desse capítulo é possível.$()"
+    }
+  ]
+}

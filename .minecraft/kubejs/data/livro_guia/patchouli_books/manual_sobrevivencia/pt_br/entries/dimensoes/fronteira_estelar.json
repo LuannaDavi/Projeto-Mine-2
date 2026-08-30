@@ -1,0 +1,21 @@
+{
+  "name": "Fronteira Estelar",
+  "category": "guia:dimensoes",
+  "icon": "ad_astra:steel_ingot",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Além da atmosfera existe um silêncio absoluto — e cinco mundos esperando por quem tiver coragem (e aço suficiente) para alcançá-los."
+    },
+    {
+      "type": "text",
+      "text": "Da fornalha etriônica ao traje de netherite espacial: essa é a progressão mais longa e mais isolada do pacote. Ninguém vem te buscar.\n\n$(li)Dica: comece juntando ferro. Muito ferro. O primeiro aço vem daí.$()"
+    },
+    {
+      "type": "link",
+      "text": "O Ad Astra tem o próprio guia de sobrevivência espacial, o Astrodux, cobrindo desde o primeiro lançamento até como sobreviver em Marte.",
+      "link_text": "Abrir o Astrodux (guia oficial do Ad Astra)",
+      "entry": "ad_astra:the_first_launch/fuel"
+    }
+  ]
+}

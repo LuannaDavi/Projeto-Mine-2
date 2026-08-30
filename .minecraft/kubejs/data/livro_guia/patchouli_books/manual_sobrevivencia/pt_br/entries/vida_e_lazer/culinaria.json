@@ -1,0 +1,11 @@
+{
+  "name": "Culinária",
+  "category": "guia:vida_e_lazer",
+  "icon": "farmersdelight:cutting_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Pratos do mundo inteiro — porque sobreviver bem também é comer bem."
+    }
+  ]
+}
