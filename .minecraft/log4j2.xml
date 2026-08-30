@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  log4j2.xml customizado — baseado no padrão do Forge 1.20.1, com um filtro
+  extra pra derrubar o spam do bug conhecido de "basalt columns configuredfeature"
+  causado pela combinação Distant Horizons + mods com features de colunas de
+  basalto (Bygone Nether, Repurposed Structures, Cataclysm, etc).
+
+  O que esse filtro faz: qualquer linha de log cuja MENSAGEM contenha o texto
+  "configuredfeature that is trying to place blocks outside the 3x3 safe chunk
+  area" é DESCARTADA antes de ser escrita no console ou no latest.log — não
+  importa qual mod está reclamando (Bygone Nether, Repurposed Structures,
+  Cataclysm, etc, todos usam essa mesma frase). Isso não conserta a causa raiz
+  (ajustar o modo de geração do Distant Horizons pra "Pre-existing Only" é o
+  que resolve de fato, como conversamos), mas garante que, mesmo que o aviso
+  volte a acontecer, ele não vai mais inundar disco/CPU com gigabytes de log.
+
+  COMO USAR:
+  1. Salve este arquivo como log4j2.xml na pasta raiz da sua instância
+     (a mesma pasta onde fica o .minecraft, ou dentro dela).
+  2. Garanta que o user_jvm_args.txt (que também vou te dar) tenha a linha:
+       -Dlog4j.configurationFile=log4j2.xml
+     (ajuste o caminho se salvar em outro lugar)
+-->
+<Configuration status="WARN" packages="com.mojang.util">
+    <Appenders>
+        <Console name="SysOut" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{HH:mm:ss}] [%t/%level] [%logger]: %msg{nolookups}%n" />
+            <filters>
+                <RegexFilter regex="(?s).*configuredfeature that is trying to place blocks outside the 3x3 safe chunk area.*"
+                             onMatch="DENY" onMismatch="NEUTRAL" useRawMsg="true" />
+                <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </filters>
+        </Console>
+
+        <Queue name="ServerGuiConsole" ignoreExceptions="true">
+            <PatternLayout pattern="[%d{HH:mm:ss}] [%t/%level]: %msg{nolookups}%n" />
+            <filters>
+                <RegexFilter regex="(?s).*configuredfeature that is trying to place blocks outside the 3x3 safe chunk area.*"
+                             onMatch="DENY" onMismatch="NEUTRAL" useRawMsg="true" />
+            </filters>
+        </Queue>
+
+        <RollingRandomAccessFile name="File" fileName="logs/latest.log" filePattern="logs/%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="[%d{HH:mm:ss}] [%t/%level] [%logger]: %msg{nolookups}%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <OnStartupTriggeringPolicy />
+            </Policies>
+            <filters>
+                <RegexFilter regex="(?s).*configuredfeature that is trying to place blocks outside the 3x3 safe chunk area.*"
+                             onMatch="DENY" onMismatch="NEUTRAL" useRawMsg="true" />
+                <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            </filters>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="DebugFile" fileName="logs/debug.log" filePattern="logs/debug-%i.log.gz">
+            <PatternLayout pattern="[%d{HH:mm:ss}] [%t/%level] [%logger]: %msg{nolookups}%n" />
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="200MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="5" fileIndex="min"/>
+            <filters>
+                <RegexFilter regex="(?s).*configuredfeature that is trying to place blocks outside the 3x3 safe chunk area.*"
+                             onMatch="DENY" onMismatch="NEUTRAL" useRawMsg="true" />
+            </filters>
+        </RollingRandomAccessFile>
+    </Appenders>
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="SysOut" level="info" />
+            <AppenderRef ref="File" level="info" />
+            <AppenderRef ref="DebugFile" level="debug" />
+            <AppenderRef ref="ServerGuiConsole" level="info" />
+        </Root>
+    </Loggers>
+</Configuration>

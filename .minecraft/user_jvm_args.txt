@@ -1,0 +1,59 @@
+# user_jvm_args.txt
+# Onde colocar: na pasta raiz da instância (mesma pasta do mods/, config/, etc).
+# A maioria dos launchers (CurseForge, Prism, MultiMC, o instalador oficial do
+# Forge) le esse arquivo automaticamente. Se o seu launcher tiver um campo
+# separado de "JVM Arguments"/"Java Arguments" nas configs da instância, cole
+# o conteudo (sem os comentarios) la em vez de usar este arquivo.
+#
+# Linhas comecando com # sao comentarios e sao ignoradas.
+
+# --- Memoria: ajustado pros seus 16GB de RAM ---
+# Deixamos ~5GB pro Windows + launcher + navegador. Xms = Xmx pra evitar
+# pausas de redimensionamento de heap durante o jogo.
+-Xms10G
+-Xmx10G
+
+# --- Aponta pro filtro de log que elimina o spam do bug basalt columns ---
+# (precisa do log4j2.xml na mesma pasta, ou ajuste o caminho abaixo)
+-Dlog4j.configurationFile=log4j2.xml
+
+# --- Aikar's Flags: reduzem pausas de Garbage Collection em modpacks grandes ---
+-XX:+UseG1GC
+-XX:+ParallelRefProcEnabled
+-XX:MaxGCPauseMillis=200
+-XX:+UnlockExperimentalVMOptions
+-XX:+DisableExplicitGC
+-XX:+AlwaysPreTouch
+-XX:G1NewSizePercent=30
+-XX:G1MaxNewSizePercent=40
+-XX:G1HeapRegionSize=8M
+-XX:G1ReservePercent=20
+-XX:G1HeapWastePercent=5
+-XX:G1MixedGCCountTarget=4
+-XX:InitiatingHeapOccupancyPercent=15
+-XX:G1MixedGCLiveThresholdPercent=90
+-XX:G1RSetUpdatingPauseTimePercent=5
+-XX:SurvivorRatio=32
+-XX:+PerfDisableSharedMem
+-XX:MaxTenuringThreshold=1
+
+# ============================================================================
+# PARA RODAR EM MAQUINAS MAIS SIMPLES (pouca RAM / poucos nucleos):
+# ============================================================================
+# As flags do G1GC acima (Aikar's Flags) ja ajudam MUITO em qualquer maquina,
+# entao pode manter elas iguais. O que muda pra PC mais fraco e so a memoria
+# alocada. Comente as duas linhas -Xms10G/-Xmx10G acima e descomente o par
+# abaixo que combinar com a RAM TOTAL da maquina (nunca aloque mais de ~50-60%
+# da RAM fisica total, senao o sistema operacional fica sem memoria e trava):
+#
+#   8GB de RAM total  -> -Xms3G  -Xmx3G   (modpack vai rodar pesado, ainda assim)
+#   12GB de RAM total -> -Xms5G  -Xmx5G
+#   16GB de RAM total -> -Xms10G -Xmx10G  (configuracao atual acima)
+#   32GB de RAM total -> -Xms14G -Xmx14G
+#
+# Alem da RAM, pra PC mais fraco tambem vale reduzir no jogo (nao precisa
+# mexer neste arquivo pra isso):
+#   - Distant Horizons: LOD Render Distance Radius mais baixo (32-48) e
+#     "No. of World Generation Threads" = 1
+#   - Video settings: Render Distance vanilla mais baixo (8-10 chunks)
+#   - Simulation Distance mais baixo nas opcoes do mundo
