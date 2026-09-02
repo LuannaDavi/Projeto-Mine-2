@@ -1,4 +1,4 @@
-# 🐉 Projeto Mine-2 — "sem nome definido"
+# 🐉 Projeto Mine-2 - "sem nome definido"
 
 Um modpack para Minecraft focado em **fantasia, aventura e tecnologia**, com mais de 250 mods cobrindo civilização, magia, exploração, combate e construção.
 
@@ -71,7 +71,7 @@ Se as missões da pasta `ftbquests` não aparecerem no jogo, siga este passo ext
 
 ## 🗺️ Missões (FTB Quests)
 
-O pack tem uma progressão própria de missões, organizada em 8 grupos e 27 capítulos, cobrindo praticamente todo o conteúdo relevante do modpack — não é só "matar X, coletar Y", cada capítulo tem sua própria introdução e tom.
+O pack tem uma progressão própria de missões, organizada em 8 grupos e 27 capítulos, cobrindo praticamente todo o conteúdo relevante do modpack - não é só "matar X, coletar Y", cada capítulo tem sua própria introdução e tom.
 
 ### 🌱 Fundamentos
 - **Do Zero ao Fogo** - o começo de tudo: mesa de trabalho, fornalha, primeiros passos de sobrevivência.
