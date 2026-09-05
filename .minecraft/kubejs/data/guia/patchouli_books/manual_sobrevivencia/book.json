@@ -2,8 +2,7 @@
   "name": "Manual de Sobrevivência",
   "landing_text": "Um guia rápido pelos sistemas deste modpack, organizado do mesmo jeito que as missões: por grupo, do básico ao avançado.",
   "icon": "minecraft:book",
-  "model": "patchouli:book_brown",
-  "creative_tab": "minecraft:tools_and_utilities",
+  "model": "patchouli:book_red",
   "show_progress": false,
   "dont_generate_book": false
 }
